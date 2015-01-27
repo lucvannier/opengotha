@@ -1,0 +1,356 @@
+OpenGothaV3.40.01
+*****************
+14/10/2014
+Bug Fix A problem occured in pairing when McMahon zero was different of 30K. Fixed
+
+OpenGothaV3.40
+**************
+10/10/2014
+New     An optionnal Autoscroll feature in HTML files
+New     Save system simplified
+New     In "Players Manager" frame, a new tool : Search by AGA Id
+New     Clubs Groups. 
+New     Upload of tournament files to opengotha.info
+New     FFG Rating list is parsed from http://ffg.jeudego.org/echelle/echtxt/ech_ffg_V3.txt
+
+OpenGothaV3.39
+**************
+21/09/2014
+Bug Fix Save issues. Fixed
+Bug Fix AGA expiration date was no longer visible. Fixed
+
+OpenGothaV3.38
+**************
+29/06/2014
+New     In "Experimental tools", delete remote files also deletes directories
+New     Grade is now preferred to rank in most displays, printings and exports
+New     Result sheets
+New     FFG "Licence loisir" is highlighted in "Players Manager" frame.
+Upd	Terminology update
+
+OpenGothaV3.37
+**************
+03/03/2014
+New     FTP Upload of HTML files to OpenGotha site
+New     Professional ranks are managed
+New     A "HA[hx]" field included into .h9 export files
+
+OpenGothaV3.36
+**************
+22/12/2013
+New     Zero value for MMS may be set between 30K and 1D (it was previously set as 30K).
+New     New saving facilities
+Bug Fix A problem occured with loading rating list under Linux. Fixed.
+Bug Fix Pairing 2 players with one above and one below Secondary criteria aplying thresholds 
+        was nearly impossible. Fixed
+
+OpenGothaV3.35
+**************
+08/10/2013
+Detail  Thinking time is now, by default, Standard Byo-Yomi system
+New     Print & Export facilities are now grouped in a "Print & Export shop" frame
+        New export facilities including Games list in html
+
+OpenGothaV3.34
+**************
+28/08/2013
+New     In Games .. Pair Frame, no selection in Games table = all games selected
+New     In Games .. Pair Frame, players may be sorted by score(default), rank or name
+New     In Games .. Pair Frame, a "search for player" utility
+New     The Draw up/down compensation system is now optional
+New     When a tournament has n rounds, participations of a player in (virtual) rounds n+1, n+2, ...
+        are set to value of participation in round n
+New     An new tool to discard selected rounds. Useful, for example, to split a main tournament 
+        into two week-tournaments.
+New     When pairing two teams already paired in a previous round, a warning message is displayed
+New     In the Matches list, Handicaps are printed 
+New     An experimental tool : Force participation for all players
+New     An experimental tool : Force case for countries and clubs
+Bug Fix In Players Manager frame, Grade TextField was not properly reset. Fixed
+Bug Fix Geographical criteria were not properly managed. Fixed
+Bug Fix In Teams pairing with handicap games, board 1 colors might be wrong. Fixed 
+
+OpenGothaV3.33
+**************
+09/07/2013
+New     Replace text in buttons : "Close" instead of "Quit this frame"  
+Bug fix In team tournaments, clicking on a player's name might be uncorrectly processed. Fixed
+New     In Games Results, Teams presentation, the number of wins is displayed for each team
+Bug fix In Players Manager Frame, Grade was misinterpreted for double-digit kyu players. Fixed
+New     In Players Manager Frame, Grade is displayed (relevant with EGF rating list)
+Detail  "Mac-Mahon" changed to "McMahon" when referring to the tournament system
+
+OpenGothaV3.32
+**************
+06/03/2013
+New     In Teams pairing, handicaps, if any, are atomatically computed
+New     In Tournament Parameters, forbidden characters :  \ / : * ? " < > | are automatically deleted from  tournament short name
+Bug Fix Pb with EGF rating list when player's name + firstName exceeded 23 characters. The limit is now set to 37 characters
+
+OpenGothaV3.31
+**************
+26/01/2013
+Bug Fix     Team pairing did not work in some circumstances. Fixed
+
+OpenGothaV3.30
+**************
+22/12/2012
+New         New Format for FFG rating list : ech_ffg_new
+New         Game results frame can be displayed with a team presentation
+New         A new print : Match list with individual games 
+New         If a team pairing is attempted with a player not "FIN" or not participant, an error message is displayed
+Int issue   When a team pairing is made, previously existing games for the players of the teams for current round are first removed if any
+New         Swisscat system is back
+Bug Fix     SOSW-2 calculation was wrong. Fixed.
+New         A new pairing parameter : Applying secondary criteria for players above MacMahon bar
+New         Number of categories limit is set to 9 instead of 5
+
+OpenGothaV3.29
+**************
+21/09/2012
+New         Remove MDR as Team placement criterion
+New         Team members may vary for each round
+New         Save menu item always opens a dialog box where the user can confirm or modify the directory/filename 
+            where the tournament should be saved
+New         Recent files list was fed by Open actions
+            It is now fed by Save actions as well
+
+OpenGothaV3.28
+**************
+12/08/2012
+New         Strasbourg scores (STS and SOSTS)
+
+OpenGothaV3.27
+**************
+10/05/2012
+New         Rounding down NBW and MMS is now optionnal
+New         ffg licence status and aga expiration date are now displayed and kept after registration
+New         In Games .. Pair frame, possibility to print a list of unpaired players
+Bug Fix     Bug when importing players with neither club nor games played. Fixed
+Int issue   in JFrPlayersManager and JFrUpdateRatings, formWindowClosed launches the garbage collector
+
+OpenGothaV3.26
+**************
+10/03/2012
+New         Main frame title bar displays the current tournament file
+New         A Memory Manager frame 
+New         "Handicap + 1" option
+Int issue   Quit Players Manager and Update ratings frames launch the garbage collector
+
+OpenGothaV3.25
+**************
+18/02/2012
+New         Player photo in Players Manager frame
+Bug Fix     A pairing issue in Swisscat system. Fixed.
+Bug Fix     There were some character coding issues in xml files. 
+            xml, html and csv files are now encoded in UTF-8.
+            h9, tou and aga export files are encoded in ISO-8859-15.
+Bug Fix     The context menu in the Pair frame did not show up in very special case. Fixed
+Bug Fix     Exchanging colors of a game does not change the winner any more
+            
+OpenGothaV3.24
+**************
+25/01/2012
+New         AGA features : Aga rating list and Aga export.
+New         Improved remote logging utility
+New         new data in General Tournament parameters : Director
+            Frames size limited to 1000X600
+Bug Fix     Some games were not imported from old OpenGotha xml files. Fixed.
+            
+OpenGothaV3.23
+**************
+08/12/2011
+New         Import facility for vbs files (Vertical-Bar-separated files) 
+Improvement In ergonomy of pop-up menus
+New         Shortcuts for main Menu items
+New         Accepts all Unicode characters, including East-European and Asian characters
+New         .gth format is replaced by xml-compliant, human-readable .xml file.
+New         From European ratings list, grade can be optionnaly chosen to define rank
+New         New game options to complete export files for EGF rating list.
+Int issue   Data version 201
+
+OpenGothaV3.22
+**************
+21/03/2011
+Bug Fix     It was not possible to change placement criteria. Fixed
+
+OpenGothaV3.21
+**************
+08/03/2011
+New         Team tournament management
+New         Import facility for tournaments from Christoph Gerlach MacMahon program.
+New         Import facility for tournaments from Geoff Kaniuk GoDraw program.
+New         remote logging utility
+Improvement Default threshold to apply secondary criteria is set to 1D (previous was 4D)
+Improvement SODOS tie-break included.
+Improvement More secure exception management in client/server mode and in data compatibility issues.
+Bug Fix     Special Results values (absent, bye) were not correctly imported from xml files. Fixed.
+Bug Fix     In Standings, bye players results where shown as "O=" even if "0+" was the correct value. Fixed
+Bug Fix     In Results for EGF, a problem occured with long player names (>21 car). Fixed
+Int. issue  Replace obsolete Hashtable by HashMap classes
+Int. issue  Data version 106
+
+OpenGothaV3.20
+**************
+04/10/2010
+Improvement Doc is now also available in French.
+
+OpenGothaV3.19
+**************
+17/06/2010
+Bug Fix     On some systems, rating lists with non-ASCII characters were not correctly read. Fixed
+Improvement When necessary, OpenGotha tries its best to find a proper directory with a tournamentfifes directory.
+            Useful with Linux.
+
+OpenGothaV3.18
+**************
+15/03/2010
+Bug Fix     FFG Licence numbers were not in exported tou file. Fixed
+Bug Fix     Exceptions happened in XML Export function. Fixed
+Bug Fix     When changing color in a game, update in a running Result frame was
+            not made. Fixed.
+Bug Fix     When a modification was made to a Player, the games played by this
+            player where not simultaneously modified. Fixed
+
+OpenGothaV3.17
+**************
+29/01/2010
+New         Pairing from a client is now possible.
+New         Pairing report enhanced : List of draw-up/draw-down and unbalanced White/Black
+New         Import Players and Games from h9 file
+New         "Next" facility in Player searching
+New         A progress bar associated with rating lists download
+Improvement Weight increased for Balance W/B in pairing. Algorithm enhanced.
+Improvement EGF rating list also includes non-european players
+Improvement New design for RMI management. RMI Manager frame enhanced
+Improvement In tou and h9 exported files, blanks in players names are replaced with "_"
+Bug Fix     Fix a bug about draw-up/draw-down balance
+Bug Fix     After changing from Swisscat to Mac-Mahon or Swiss system, pairing happened to fail.
+            Fixed
+Int. issue  New Internal design for scoring and pairing. Nothing visible for user.
+
+OpenGothaV3.16
+**************
+25/10/2009
+New         A help set
+New         A pairing report
+New         In the control panel, unterminated steps are highlighted in red
+
+OpenGothaV3.15
+**************
+21/09/2009
+New         MMS and and NBW points due to absences and bye are rounded down.
+New         Default results are differenciated (x-x!) from normal results (x-x)
+New         Games with a default result are kept or dropped out of h9 file according to user's choice
+New         In Games .. Pair, it is now possible to manually define table numbers
+New         User can define his own css for html export. If he does not, a default css is used
+New         Alpha-2 codes for countries available in Players Manager frame
+New         More than one DC/SDC criterion is not allowed
+New         In case of directory path problem, OpenGotha detects the problem and asks the user for correct path
+Bug Fix     Direct Confrontation bug fix
+Int issue   Internationalization bundle removed
+
+OpenGothaV3.14
+**************
+07/07/2009
+New         A Warning dialog box when unpairing more than one game
+Bug Fix     Player names with a "_" were truncated. Fixed
+Int issue   A new synchronization system between clients and server. Updating is now based on a polling system 
+            instead of the previous listeners system.
+            This makes opengotha more robust.
+New         Internationalized texts are abandonned
+
+OpenGothaV3.13
+**************
+03/06/2009
+New         It is now possible to base handicap strategy on rank
+New         Import/export facilities for xml files
+
+OpenGothaV3.12
+**************
+05/05/2009
+New         In Games .. Resuls, a seach facility to quickly find a table, knowing a part of a player's name
+New         In Players Manager, by default, the Welcome sheet is not printed
+New         New EGF Rating List format accepted
+New         Main Gotha Frame is enlarged to 1000 X 700
+Bug Fix     A bug appeared in V3.11 Temporary placement parameter set not OK in Standings. Fixed
+Bug Fix     In Results printings, Winner's font is now bold and Loser's font is plain.
+
+OpenGothaV3.11
+**************
+19/03/2009
+New         Usage of SwissCat system is now discouraged
+New         Players Manager Frame : Integrated downloading of ratinglists
+New         Players Manager Frame : Printing of a personalizable "Welcome-Sheet"
+
+OpenGothaV3.10
+**************
+19/11/2008
+New         Round-robin Frame
+New         Recent tournaments in Tournament menu
+Improvement In Games .. Pair, new "Previous games" Panel
+Improvement Tournament system can be dynamically changed
+Improvement Case normalization more sophisticated, thanks to Tilo Dickopp
+Improvement The displayed round in Standings tab is, by default, the presumably current round
+Improvement Non-playing players are no longer included in export files (tou, h9 and html files)
+Improvement Non-playing players are no longer included in standings tab. Same for Standings printing.
+Bug Fix     Change handicap ceiling did not work properly in Options .. Tournament. Fixed
+
+OpenGothaV3.09
+**************
+10/09/2008
+New         Auxiliary informations management
+New         It is now possible to print standings without category placement criterion, even in a "Swiss with categories" tournament
+New         In .h9 files, scores and tie-breaks are given
+Improvement The "Do you want to save current tournament" dialog box shows up only when necessary and a Cancel Button is added
+Improvement Add buttons in JFrPlayersQuickCheck
+
+OpenGothaV3.08
+**************
+04/05/2008
+New         German version
+New         Case of players names are automatically set to "Name Firstname" form
+New         Save and SaveAs are reserved to Server and Stand-alone modes
+New         When unpairing all players, the bye player, if exists, is now also unassigned
+New         In Games list printing, only winners are now in a bold font 
+Bug Fix     Fixes a deadlock issue in Games Pair.
+SPR Fix     The secondary criterion threshold is now applied to current Mac-Mahon score instead of registration rank.
+            Permeability isues between different ranks are thus solved.
+
+OpenGothaV3.07
+**************
+05/01/2008
+New         Multilingual : English, French and Spanish
+New         It is no longer possible to pair "PRE" players.
+
+OpenGothaV3.06
+**************
+09/12/2007
+Bug Fix     An error occured when printing a game with a player without club
+            Fix : When a club or country is not defined, a default empty string is printed
+Int issue   Redesign notification system for better synchronization
+
+OpenGothaV3.05
+**************
+30/11/2007
+New         Separate sheets for each category in standings print-out.
+New         In Players List, PRE-Registered players are printed in RED and their name suffixed with "(P)"
+Sec issue   Removing a player is now impossible when the player is assigned as well as a bye player as into a game.
+
+OpenGothaV3.04 
+**************
+06/11/2007
+New         A welcome page with picture and flowchart
+New         Print-out Tournament parameters
+New         A warning is issued when pairing already paired players
+New         A warning is issued when pairing "PRE" players
+
+OpenGothaV3.03 
+**************
+29/10/2007
+SPR Fix     In Tournament Parameters DialogBox, Pairing Tab, Change On No Random/Accept random radio buttons 
+            had not effect on the enable status of deterministic random check box.
+            Fixed
+SPR Fix     Unexpected threshold effect in applying the "No Handicap for players above" parameter.
+            Fixed : The threshold now works like a bar.
+

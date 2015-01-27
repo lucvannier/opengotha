@@ -1,0 +1,102 @@
+<html>
+  <head>
+    <title>Pairing evaluation function</title>
+  </head>
+  <body>
+      <h1 align="center">Pairing evaluation function</h1>
+      OpenGotha's pairing evaluation function delivers, for a given pair of players and for a given round, a cost value
+      which takes into account evaluation criteria.
+      
+      <h2>Base criteria</h2>
+      <h3>Avoid duplicate games</h3>
+      Set to 500 000 * 10^9 if the two players have not yet played each other.
+      <br>Set to 0 if the two players have already played each other.
+      <h3>Random</h3>
+      If the option is selected, set to a value between 0 and 10^9
+      <br>The deterministic function is a scrambling function of players names
+      <br>The non-deterministic function is based on standard Java method.
+      <h3>Balance White and Black</h3>
+      For each player, the number of games played with White and no handicap is compared with the number of games played with Black and no handicap.
+      <br>If both players give a strictly opposed result, then set to 1 000 000.
+      <br>If one player's balance is 0 and the other one's is greater than 1, then set to 500 000.
+      <br>Else set to 0.
+     
+      <h2>Main criteria</h2>
+      <h3>Avoid mixing categories</h3>
+      <br>If both players belong to the same category, then set to 20 000 * 10^9.
+      <br>else set to coef * 20 000 * 10^9 where coef is a number between 0.0 and 1.0, computed by a <a href="#concavity">concavity function</a>
+      <h3>Minimize score difference</h3>
+      Aims at pairing inside a group.
+      <br>If both players have equal score then set to 100 * 10^9.
+      <br>else set to coef * 100 * 10^9 where coef is a number between 0.0 and 1.0, computed by a <a href="#concavity">concavity function</a>
+      <h3>Draw-up Draw-down</h3>
+      Aims at choosing players according to their positions inside their group (Top/Middle/Bottom) and at
+      correcting previous draw-ups/draw-downs.
+      <br>If players have a group distance >=4, set to 0
+      <br> else 4 scenarii :
+      <ul>
+          <li>scenario = 0 : One of the players has been already drawn in the same sense</li>
+          <li>scenario = 1 : Normal conditions (does not correct anything and no previous drawn in the same sense)</li>
+          <li>scenario = 2 : It corrects a previous DU/DD for one player</li>
+          <li>scenario = 3 : It corrects a previous DU/DD for both players</li>
+      </ul>
+      If scenario = 0, set to 0
+      <br>Else take in account the position of the player inside a group. This gives a value between 0 and 33 333 333
+      <br>If scenario = 2, add 33 333 333
+      <br>If scenario = 3, add 66 666 666
+      <br>Set to the resulting value, which is a number between 0 and 99 999 999
+      <br>If players belong to different categories, decrease the resulting value
+      <h3>Seeding</h3>
+      Aims at pairing according to chosen seeding system : "Split and Random", "Split and Fold" or "Split and Slip".
+      <br> The cost of this criterion is between 0 and maxSeeding = 5 000 000
+      <br>cla1 and cla2 being the internal placement ( 0 to groupSize - 1) of players inside the group ...
+      <ul>
+          <li>Split and Random.
+              <br> If both players are not in the same half of the group, the cost is randomly chosen between 0.8 * maxSeeding and 1.0 * maxSeeding
+              <br> else cost = 0
+          </li>
+          <li>Split and Fold.
+              <br> x = cla1 + cla2 - (groupSize - 1)
+              <br> cost = maxSeeding - maxSeeding * x^2 / (groupSize - 1)^2
+          </li>
+          <li>Split and Slip.
+              <br> x = 2 * |cla1 - cla2| - groupSize
+              <br> cost = maxSeeding - maxSeeding * x^2 / groupSize^2
+          </li>
+      </ul>
+
+     
+      <h2>Secondary criteria</h2>
+      <h3>Are secondary criteria relevant for these players ?</h3>
+      Secondary criteria are not applied for players above a certain ranking, as set by the organizer (by default, 1D) and, optionnaly (by default, secondary criteria applied), for players with a number of wins >= (number of rounds) /2.
+      <br>When both players are concerned by secondary criteria, the function values are set as computed.
+      <br>When both players are excluded from secondary criteria, the function values are set as to the maximum possible.
+      <br>When one player is excluded from secondary criteria and the other player is not, an intermediate value will be computed (see sources for details)
+      <h3>Minimize handicap</h3>
+      The maximum value is 20 000 * 10^9 . The minimum is 0
+      <br>Between the extrema, set to coef * 20 000 * 10^9 where coef is a number between 0.0 and 1.0, computed by a <a href="#concavity">concavity function</a> a If MMS difference is 0, set it to Secondary criteria are not applied for players above a certain ranking, as set by the organizer (by default, 4D) and, optionnaly (by default, secondary criteria applied), for players with a number of wins >= (number of rounds) /2.
+      <h3>Geographical criteria</h3>
+      A malus value is computed for if both players belong to the same club. An other one for if both players belong to the same country. The values of the malus depends on the "Prefer a group gap of ..." as defined by the user.
+      The geographical malus is set as a worse value between both malus.
+
+      <h2><a name="concavity">Concavity function</a></h2>
+      The concavity function is used to compute the weight of several criteria.
+      <br>Let us see why this function is necessary and how it is used.
+      <br>An example : have a tournament where you have 1 player 1K, 2 players 2K, 2 players 3K, ... 2 players 10K and 1 player 11K.
+      The parity issue will result in a choice between :
+      <ul>
+          <li> Pair everybody with his same rank fellow. And fix the parity issue by pairing the 1K with the 11K.</li>
+          <li> Pair the 1K with a 2K, the other 2K with a 3K, etc.</li>
+      </ul>
+      Any human organizer would choose the second option, but the computer might not, if you don't take care.
+      <br>Assume that in your evaluation function, the base value for a pair is 1000 and you give a penalty of 100 * d for a d kyu rank difference.
+      <br>The sum of values will be, in both cases 9000.
+      <br>Now, with the concavity function.
+      <br>Instead of 1000 - 100*d, you use 1000 * (1.0 - x) * (1.0 + k * x)) (OpenGotha uses 0.5 for k. x = d/maxRange, d/10 here)
+      <br>Then, the sum of values will be 9 * 1000 + 0 = 9000 in solution 1 and 10 * 945 = 9450 in solution 2 
+      <br>OpenGotha prefers solution 2.
+      <h2><a name="details">All the details</a></h2>
+      OpenGotha is hosted by GitHub. Sources are available from lucvannier/gotha github repository</a>
+      <br>In Tournament.java, see the costValue method.
+  </body>
+</html>

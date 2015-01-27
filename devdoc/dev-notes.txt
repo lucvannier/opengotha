@@ -1,0 +1,200 @@
+ant
+***
+To make the stubs file, include into build.xml the following lines :
+     <target name="-post-compile">
+         <echo message="Running rmic ..."/>
+         <rmic base="${build.classes.dir}" includes="**/Tournament.class/>
+     </target>
+
+jar
+***
+Content of manifest.mf :
+Main-Class: info.vannier.gotha/JFrGothaStart
+Class-Path: lib/jhall.jar lib/ftp4j-1.7.2.jar lib/zxing-j2se-1.7.jar lib/zxing.jar
+
+To make jar by command line :
+=============================
+build\classes> jar cvfm opengotha.jar [manifest-path]manifest.mf gotha/*.* com/glaforge/i18n/io/*.class mw/go/confrontation/*.class
+
+Creates opengotha.jar
+
+To make jar by NetBeans :
+=========================
+Clean and Build Main Project
+
+File paths
+**********
+Path issues occur for :
+- ratinglists
+- tournamentfiles
+- resources (like icons)
+
+ratinglists and tournamentfiles and other resources are based on running directory
+===================================================
+Up to 3.10, Directory paths were defined from String BASE_DIR = System.getProperty("user.dir");
+But this did not work properly under Linux
+From 3.11, Directory paths are defined from running directory, which is initialized in Gotha constructor
+ 
+
+Distribution
+************
+Files to be included :
+opengotha.jar
++ /lib/ 4 .jar
++ /gothahelp
++ /resources
++ /documents
++ /ratinglists
++ /tournamentfiles
++ /exportfiles
++ /welcomesheet
+
+Template for JFrxxx classes 
+***************************
+New JFrame form ...
+
+public class JFrPlayerManager extends javax.swing.JFrame{
+
+layout = null
+JFrxxx properties :
+    defaultCloseOperation : DISPOSE 
+    not resizable 
+
+Required fields:
+===============
+private static final long REFRESH_DELAY = 2000;
+private long lastComponentsUpdateTime = 0;
+
+private TournamentInterface tournament;
+
+Required constructor: (should look like :)
+=====================
+The constructor with no argument should be replaced by :
+    public JFrPlayerManager(TournamentInterface tournament) throws RemoteException{
+        this.tournament = tournament;
+                
+        initComponents();
+        customInitComponents();
+        setupRefreshTimer();
+    }
+
+Refresh mechanism
+=================
+Views are refreshed by a Timer. This timer is set up by setupRefreshTimer() invoked in constructor
+ActionListener taskPerformer = new ActionListener(){
+    public void actionPerformed(ActionEvent evt){
+        try {
+            if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
+                updateAllViews();
+            }
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrGamesResults.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }
+};
+new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer).start();
+
+updateAllViews should  contain :
+this.lastComponentsUpdateTime = tournament.getCurrentTournamentTime();
+
+customInitComponents() should begin by :
+========================================
+    private void customInitComponents()throws RemoteException{
+        int w = ...;
+        int h = ...;
+        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+        setBounds((dim.width - w)/2, (dim.height -h)/2, w, h);
+
+        setIconImage(Gotha.getIconImage());
+
+        updateAllViews();
+    }
+
+Close button should be :
+=======================
+    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {                                        
+        dispose();
+    }   
+
+tournamentChanged method should look like :
+===========================================
+private void tournamentChanged(){
+    try {
+        if (!tournament.isOpen()){
+            dispose();
+            return;
+        }
+        tournament.setLastTournamentModificationTime(tournament.getCurrentTournamentTime());
+    } catch (RemoteException ex) {
+        Logger.getLogger(JFrDiscardRounds.class.getName()).log(Level.SEVERE, null, ex);
+    }
+
+    updateAllViews();
+}
+
+main
+====
+should be removed                               
+
+Close, Quit and Exit issues
+***************************
+All JFrxxx classes have a "default Close operation" set to DISPOSE
+Quit buttons and Exit menu items run dispose()
+
+GothaHelp
+*********
+GothaHelp contents are stored in html files.
+hepset.hs, map.xml, toc.xml and index.xml define the map, table of contents and index
+To export the helpset to PDF, use a tool like Helen2.22, Add Document/Folder, define the cover page and it is done
+The current set is defined by Preferences gothaprefs help
+	With Windows, gothaprefs are in Registry, HKEY_CURRENT_USER/Software/JavaSoft/Prefs/info/vannier/opengotha 
+
+TournamentPrinting
+******************
+
+Everything is processed in TournamentPrinting
+
+Example with Print Players List :
+=================================
+
+2 static methods:
+public static void printPlayersList(TournamentInterface tournament) 
+public static void printPlayersList(TournamentInterface tournament, int playersSortType)
+
+3 TournamentPrinting constructors
+
+1 method : makePrinting(int printType, int printSubType, boolean askForPrinter)
+1 metod to prepare printing : preparePrintPlayersList
+1 callback method : print 
+1 method to print a page :printAPageOfPlayersList 
+
+To print a Players List, call one of the two  printPlayersList methods
+    3 methods call the two arguments method : JFrPlayersManager, JFrPlayersQuickCheck, JFrUpdateRatings
+    1 method calls the one argument method
+
+The printPlayersList methods create a TournamentPrinting object and calls makePrinting
+makePrinting 
+    calls preparePrintPlayersList which prepares an ArrayList of ordered players
+    starts the PrinterJob
+
+print is a callback methos. Two parts :
+- A preparation of the layOut (only run at first page)
+- Calls printAPageOfPlayersList() to make actual printing
+ 
+All print facilities
+======================
+printPlayersList
+printTeamsList
+printTournametParameters
+printGamesList
+printNotPlayingPlayersList
+printStandings
+printMatchesList
+printTeamsStandings
+
+Save Tournament issues
+**********************
+Two menu items for tournament saving
+"Save as" saves the tournament into a file whose name is based on tournament short name. 
+If a different file name is chosen by the user, this file name is used to update short name
+"Save a copy" saves a copy according to users choice. Tournament short name is never modified by this menu item.

@@ -1,0 +1,11 @@
+Manifest-Version: 1.0
+Ant-Version: Apache Ant 1.7.0
+Created-By: 14.1-b02-90 (Apple Inc.)
+Bundle-Name: ZXing
+Bundle-Vendor: ZXing Project
+Bundle-SymbolicName: ZXing
+Bundle-Version: 1.4
+Export-Package: com.google.zxing,com.google.zxing.common,com.google.zx
+ ing.client.result
+Bug-Bundle-Type: Application
+

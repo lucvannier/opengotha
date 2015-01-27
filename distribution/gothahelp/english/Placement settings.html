@@ -1,0 +1,100 @@
+<html>
+    <head>
+        <title>Placement settings</title>
+    </head>
+    <body>
+        <h1 align="center">
+            Placement settings 
+        </h1>
+       <h2 align="center">
+             Glossary
+        </h2>
+       
+        <ul>
+            <li><a name="NBW">NBW</a>
+                <br>Number Of Wins.
+            </li>
+
+            <li><a name="MMS">MMS</a>
+                <br>McMahon Score
+                <br>At the beginning of the tournament, each player is given a starting McMahon score (SMMS) which is usually based upon his ranking.
+                For instance, a 1 dan player starts with 30 points, a 20 kyu player starts with 10 points.
+                After each round the MMS of each player is increased by 1 for a win, 1/2 for a draw, 0 for a loss.
+                <br>When a player is absent or bye, he is given points according to values defined in special results panel of <a href ="General parameters.html">General parameters</a>
+                Default values are 1/2 point for absence and 1 point for bye.
+                <br>But if the sum of such points is not an integer, it is rounded down to the closest integer.
+            </li>
+            <li>Rank
+                <br>As defined at registration time. Value is between 30K and 9D.
+            </li>
+            <li>Rating
+                <br>As defined in the reference rating list. Value is between -2950 and 850. When EGF rating list is used, Rating = GoR -2050
+            </li>
+            <li>CUSSW
+                <br>Cumulative Sum of Scores (NBW).
+                <br>CUSSW after round r is the sum of NBW as computed after round 1 + NBW as computed after round 2 + ... + NBW as computed after round r
+            </li>
+            <li>CUSSM
+                <br>Cumulative Sum of Scores (MMS).
+                <br>CUSSM after round r is the sum of MMS as computed after round 1 + MMS as computed after round 2 + ... + MMS as computed after round r
+            </li>
+            <li>SOSW, SOSM
+                <br>Sum Of Opponents scores. SOSW is based on NBW. SOSM is based on MMS.
+                <br>If the player does not participate in a round, the opponent's score is replaced by the starting score of the player himself.
+                <br>In handicap games, the opponent's MMS is corrected according to the handicap before addition to the SOSM
+            </li>
+            <li>SOSW-1, SOSW-2, SOSM-1, SOSM-2
+                <br>Same as SOSW and SOSM but after elimination of 1 or 2 worst opponents scores
+            <li>SODOSSW, SODOSSM
+                <br>Sum Of Defeated Opponents scores.
+            </li>
+            <li>SOSOSW, SOSOSM
+                <br>Sum of Opponents' SOS
+            </li>
+            <li>EXT, EXR
+                <br>Exploits Tentes, Exploits Reussis. The idea is to take in account the <i>difficulty</i> of the game. A game
+                is assumed to be difficult for a player if the actual handicap (AH) was,
+                for that player, more difficult than Natural Handicap (NH)
+                <ul>
+                    <li>if AH &lt; NH, then coef = 0 (easy game)</li>
+                    <li>if AH = NH, then coef = 1 (normal game)</li>
+                    <li>if AH = NH +1 then coef = 2 ( difficult game)</li>
+                    <li>if AH &gt;= NH +2 then coef = 3 (very difficult game)</li>
+                </ul>
+                ET is the sum of opponents scores, with coef as a weight factor
+                <br>ER is the sum of defeated opponents scores, with coef as a weight factor
+            </li>
+            <li>DC
+                <br>Direct Confrontation. This performs a special sort on players having the same score for higher priority parameters than DC, so that a player is above the ones he has defeated.
+                DC numeric value has no meaning by itself, it is set to enforce rank given by following algorithm:
+                <br>- This applies to a group of players equal according to higher priority settings, looking only at results of games played against each other.
+                <br>- It detects and removes cycles of victories, by putting players forming a cycle in a single "node" sharing all victories and defeats against other players of the group.
+                <br>- Considering all players with no victory against the group, take the one (or the ones, there can be ties) with the lowest score for parameters after DC. Rank this player last.
+                <br>- Remove ranked player from the group and iterate previous step.
+
+            </li>
+            <li>SDC
+                <br>Simplified Direct Confrontation. Considering players having the same score for higher priority parameters than SDC:
+                <br>- if they all have played against each others, SDC value for a player is the number of victory amongs its peers.
+                <br>- if they haven't, SDC value is 0 for all of them.
+            </li>
+            <li>STS
+                <br>STrasbourg Score. Used ONLY for a tournament, where the players of the top group play in a single elimination bracket to decide the champion, while other players play a classic McMahon tournament.
+                <br>- When a player of the top group loses a game, he joins the classic McMahon tournament.
+                The loosers of semi-finals play a match for the 3rd place.
+                <br>- STS is equal to <a href="#MMS">MMS</a> for all players, except for the 4 players of the top group reaching the semi-finals:
+                <ul>
+                    <li>at each round, STS is increased according to MMS rules.</li> 
+                    <li>but a win in quarter or semi-finals gives a bonus of 2 STS points.</li>
+                </ul>
+                <br>- STS used as first placement criterion aims at ranking players (Standings tab -> use temporary set) according to the elimination bracket results.
+                                <br>- The pairing of the players in the elimination bracket has to be done manually. For a tournament with n rounds, the number of players in the McMahon top group, who enter the elimination bracket, must be set to 2<sup>n</sup>.     
+               
+            </li>
+            <li>SOSTS
+                <br>Sum Of Opponents' STS
+            </li>
+
+        </ul>
+    </body>
+</html>

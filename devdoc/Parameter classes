@@ -1,0 +1,60 @@
+Parameter classes
+*****************
+
+List of classes
+===============
+TournamentParameterSet
+GeneralParameterSet
+HandicapParameterSet
+PlacementParameterSet
+PairingParameterSet
+
+TeamTournamentParameterSet
+TeamGeneralParameterSet
+TeamPlacementParameterSet
+
+Each class has
+2 constructors :
+- One without parameters and an empty body
+- One with one parameter dedicated to cloning
+
+The following classes
+    TournamentParameterSet
+    GeneralParameterSet
+    HandicapParameterSet
+    PlacementParameterSet
+    PairingParameterSet
+  have 3 init methods :
+    initForMM()
+    initForSwiss()
+    initForSwissCat()
+
+TournamentParameterSet has 2 initBase methods
+GeneralParameterSet has 1 initBase method
+
+The following classes
+    TeamTournamentParameterSet
+    TeamGeneralParameterSet
+    TeamPlacementParameterSet
+  have 1 init() method
+
+TeamTournamentParameterSet and TeamGeneralParameterSet have 1 additional init(int teamSize)
+
+
+
+
+The normal process for creating a Tournament and the associated TournamentParameterSet is :
+- to construct a tps by the default constructor of TournamentParameterSet
+which will construct the 4 parameter set objects by their default constructors
+- to invoke initBase and initForXXX
+which will invoke the desirable init of parameter set members
+
+- to construct a ttps by the default constructor of TeamTournamentParameterSet
+which will construct the 2 team parameter set objects by their default constructors
+- to invoke init
+which will invoke the desirable init of parameter set members
+
+- to construct a Tournament by the default constructor of Tournament
+- to add the tps to the Tournament by tournament.setTournamentParameterSet(tps);
+- to add the ttps to the Tournament by tournament.setTournamentParameterSet(tps);
+

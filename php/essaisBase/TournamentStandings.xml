@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="ISO-8859-1" standalone="no"?>
+<?xml-stylesheet xmlns:xsl="httm://www.w3.org/1999/xhtml" type="text/xsl" href="TournamentStandings.xsl"?>
+<TournamentStandings>
+<Players>
+<Player club="63Ce" country="" firstName="Julien" name="Payrat" participating="11111111111111111111" rank="1K" rating="-9" ratingOrigin="FFG" registeringStatus="FIN" smmsCorrection="0" />
+<Player club="63Ce" country="" firstName="Romain" name="Fabre" participating="11111111111111111111" rank="3K" rating="-285" ratingOrigin="FFG" registeringStatus="FIN" smmsCorrection="0" />
+</Players>
+</TournamentStandings>

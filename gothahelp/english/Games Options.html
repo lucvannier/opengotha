@@ -1,0 +1,71 @@
+<html>
+    <head>
+        <title>Games Options</title>
+    </head>
+    <body>
+        <h1 align="center">
+            Games Options
+        </h1>
+        The informations in this frame is used to export results for rating lists
+        <p align="center">
+            <img alt="gamessettings.jpg" src="images/gamessettings.jpg">
+        </p>
+        <p>
+            You can choose between 4 time systems.
+        <ul>
+            <li>Sudden death</li>
+            Basic time and no additional time
+            <li>Standard Byo-yomi</li>
+            Basic time and additional time for each move
+            <li>Canadian Byo-yomi</li>
+            Basic time and additional time for each series of moves
+            <li>Fisher</li>
+            Bonus time is added to the credit of the player after each move, starting from the first move of the game.
+
+        </ul>
+        <h2>EGF classes</h2>
+        Depending on the time settings, OpenGotha computes the class (A, B, C, or no class) according to EGF rules.
+        <br>
+        EGF recognizes three tournament categories:
+        <ul>
+            <li><b>class A</b> - 
+                well organised tournament recognised by an EGF member<br>
+                time limit requirements: adjusted time minimum 75 minutes, 
+                basic time minimum 60 minutes (45 for Fischer)<br>
+                <b>weight for inclusion to EGF ratings: 1.00 </b><br>
+
+                <i>In addition tournaments with handicaps in the top bar are not included in class A.</i>
+            </li>
+            <li><b>class B</b> - 
+                well organized tournament recognized by an EGF member <br>
+                time limit requirements: adjusted time minimum 50 minutes, basic 
+                time minimum 40 minutes (30 for Fischer)<br>
+                <b>weight for inclusion to EGF ratings: 0.75</b>
+            </li>
+
+            <li><b>class C</b> - 
+                casual or club tournament recognized by an EGF member <br>
+                time limit requirements: adjusted time minimum 30 minutes, basic 
+                time minimum 25 minutes (20 for Fischer)<br>
+                <b>weight for inclusion to EGF ratings: 0.50</b>
+            </li>
+        </ul>
+
+        <b><u>Adjusted time:</u></b><br>
+        is calculated as:
+        <ul> 
+            <li><b>Sudden death</b> - basic time.</li>
+            <li><b>Standard byoyomi</b> - basic time + time equivalent to 45 moves.<br>
+                e.g.: basic time: 60 minutes, byoyomi: 30 seconds per move:<br>60 + (45 x 30") = 82.5 minutes</li>
+
+            <li><b>Canadian byoyomi</b> - basic time + time equivalent to 60 moves.<br>
+                e.g.: basic time: 75 minutes, byoyomi: 12 moves in 5 minutes:<br>75 + (60 x (5 / 12)) = 100 minutes</li>
+            <li><b>Fischer</b> - basic time + bonus time equivalent to 120 moves.<br>
+                e.g.: basic time: 45 minutes, bonus per move: 15 seconds:<br>45 + (120 x 15") = 75 minutes</li>
+
+        </ul>
+        Sudden death - implying adjusted time = basic time - is acceptable,
+        provided all other criteria are met.
+ 
+</body>
+</html>

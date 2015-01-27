@@ -1,0 +1,73 @@
+Team Tournament model
+*********************
+
+Team class
+**********
+String name
+Player[] teamMembers
+
+TeamParameterSet
+****************
+TeamGeneralParameterSet teamGeneralParameterSet
+TeamPlacementParameterSet teamPlacementParameterSet
+
+TeamGeneralParameterSet
+***********************
+int teamSize // max 10
+
+TeamPlacementParameterSet
+*************************
+final static int TPL_MAX_NUMBER_OF_CRITERIA = 6;
+final static int TPL_CRIT_NUL    = 0;       // Null criterion
+final static int TPL_CRIT_TEAMPOINTS = 1;
+final static int TPL_CRIT_SOST = 11;
+final static int TPL_CRIT_BOARDWINS = 12;
+final static int TPL_CRIT_BOARDWINS_9UB = 109;  // 9 Upper Boards
+final static int TPL_CRIT_BOARDWINS_8UB = 108;
+final static int TPL_CRIT_BOARDWINS_7UB = 107;
+final static int TPL_CRIT_BOARDWINS_6UB = 106;
+final static int TPL_CRIT_BOARDWINS_5UB = 105;
+final static int TPL_CRIT_BOARDWINS_4UB = 104;
+final static int TPL_CRIT_BOARDWINS_3UB = 103;
+final static int TPL_CRIT_BOARDWINS_2UB = 102;
+final static int TPL_CRIT_BOARDWINS_1UB = 101;
+
+final static int TPL_CRIT_MEAN_RATING = 201;
+final static int TPL_CRIT_MEDIAN_RATING = 202;
+
+int[] plaCriteria
+
+Tournament
+**********
++ HashMap<String, Team> hmTeams
+
+Team Tournament issues
+**********************
+Réflexions 19/11/2012
+Les tournois par équipes faits selon les règlements de la FFG font un départage assez aléatoire
+
+Constat du problème :
+=====================
+.....
+
+Améliorer le système sans remettre en cause les tie-breaks
+==========================================================
+L'appariement devra essayer d'équilibrer la difficulté des parties
+Calcul de la difficulté
+Sur chaque GoBan, la difficulté d'une partie prend une valeur de 0 à 4 :
+Si nivxy est le niveau du joueur y de l'équipe x
+
+Si niv1y - niv2y  > 300             diff = -2
+Si 100 < niv1y - niv1y <= 300       diff = -1
+Si -100 <= niv1y - niv1y <= 100     diff = 0
+Si -300 <= niv1y - niv1y < -100     diff = +1
+Si -300 < niv1y - niv1y             diff = +2
+
+La difficulté d'un match est la sonne des difficultés, ce qui pour des équipes de 4 joueurs donne une diffMatch entre -8 et + 8
+
+
+Améliorer le système en changeant les tie-breaks
+================================================
+Team points (TP), TSOS (TeamSos)
+Et on conserve en appariement suisse, sb en split and fold
+

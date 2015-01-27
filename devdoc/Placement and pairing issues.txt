@@ -1,0 +1,19 @@
+Placement and pairing issues
+****************************
+updated 02/01/2009
+
+Placement and pairing informations are store in ScoredPlayer object
+ScoredPlayer inhérits Player and contains 3 additional groups of information :
+- Base scoring info with all placement values for all rounds, but without dc and sdc (Direct confrontation)
+- Direct confrontation placement values. These values are relevant for the current round.
+- Pairing info.
+Moreover ScoredPlayer contains gps, a GeneralParameterSet data member,
+which determines some of the placement and pairing info like Mac-Mahon scores.
+
+- Base scoring info is updated by Tournament.fillBaseScoringInfoIfNecessary
+- Direct confrontation is updated by Tournament.fillDirScoringInfo
+- Pairing info is updated by Tournament.fillPairingInfo
+
+- Tournament.fillBaseScoringInfoIfNecessary is invoked by 3 Tournament methods
+- Tournament.fillDirScoring is invoked by Tournament.orderedScoredPlayersList
+- Tournament.fillPairingInfo is invoked by Tournament.makeAutomaticPairing

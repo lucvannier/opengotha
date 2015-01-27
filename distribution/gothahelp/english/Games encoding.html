@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+  <head>
+    <title>Games encoding</title>
+  </head>
+  <body>
+      <h1 align="center">Games encoding</h1>
+      <b><i>When displayed in a frame like Games .. Results</i></b>, a game is represented by a string of 1 to 4 characters.
+      <br><br>
+      <table align="center" border="1">
+            <tr align="center"><th>Result</th><th>Encoding</th></tr>
+            <tr align="center"><td>Unknown</td><td>-</td></tr>
+            <tr align="center"><td>White wins</td><td>1-0</td></tr>
+            <tr align="center"><td>Black wins</td><td>0-1</td></tr>
+            <tr align="center"><td>Equal</td><td>&frac12;-&frac12;</td></tr>
+            <tr align="center"><td>Both win</td><td>1-1</td></tr>
+            <tr align="center"><td>Both lose</td><td>0-0</td></tr>
+            <tr align="center"><td>White wins by default</td><td>1-0!</td></tr>
+            <tr align="center"><td>Black wins by default</td><td>0-1!</td></tr>
+            <tr align="center"><td>Equal by default</td><td>&frac12;-&frac12;!</td></tr>
+            <tr align="center"><td>Both win by default</td><td>1-1!</td></tr>
+            <tr align="center"><td>Both lose by default</td><td>0-0!</td></tr>
+        </table>
+      <br>
+      A result is declared "by default" when one player or both did not show up.
+      <br><br>
+    <b><i>When displayed in a table like in the Standings Tab or in an export file like html export file</i></b>, a game is represented by  a string of up to 8 characters
+    <br>char 1-4 : opponent number
+    <br>char 5 : result : + for win, - for lose, = for &frac12;
+    <br>char 6 : "/" or "" (empty) for "normal" result. "!" for "by default" result
+    <br>char 6 or 7 : colour : w for white, b for black, ? for unknown colour.
+    <br>char 7 or 8 : handicap : from 0 to 9
+    <br>For a dummy game (absent, bye or unassigned) the string is "0-/","0=/" or "0+/" meaning loss, equal or win. The result  is always a loss for unassigned, and may be loss, equal or win for absent or bye, depending
+    on user's choice in <a href="General%20parameters.html">General parameters</a>
+  </body>
+</html>

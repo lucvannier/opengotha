@@ -1,0 +1,76 @@
+<html>
+    <head>
+        <title>Pairing settings</title>
+    </head>
+    <body>
+        <h1 align="center">
+            Pairing settings
+        </h1>
+        Pairing settings refer to a subset of pairing criteria as described by the <a href="Pairing evaluation function.html">Pairing evaluation function.</a>
+        <br><br>
+        <p align="center">
+            <img src="images/pairingsettings_001.jpg" alt="Pairing settings" >
+        </p>
+        <h2>Main criteria</h2>
+        A "group" is a set of players with same score for main placement criterion (MMS or NBW).
+        <h3>Avoid mixing categories</h3>
+        Relevant in "Swiss with categories" only. When selected, the pairing will prefer intra-category pairing.
+        <h3>Minimize score difference</h3>
+        Always selected. Pairing prefers to pair players with equal or neighboring main score, MMS or NBW.
+        <h3>Seeding system</h3>
+        Inside a group, players are ordered according to their placement. Each player of the higher half of the group will be paired with a player of the lower half.
+        <br>"Split and Fold" will prefer pairs on the "1 - n, 2 - n-1, ..." scheme
+        <br>"Split and Slip" will prefer pairs on the "1 - n/2+1, 2 - n/2+2, ..." scheme
+        <br>"Split and Random" will make random choice.
+        <br>You can choose a different system for former rounds and latter rounds.
+        <br>And, for former rounds, you can add a sorting on rating. This is the recommended mode if you want to avoid a game between two best players in the former rounds.
+        <h3>When pairing players from different groups ...</h3>
+        Difficulties or impossibility to make intra-group pairing (due to uneven size of a group, for instance) may occur.
+        <br>When this occurs, OpenGotha will choose one player in the group and this player will be paired with a player of a stronger or weaker group.
+        <br>OpenGotha will try to do not draw-up or draw-down a player twice in the same direction. 
+        <br>It will also try to compensate a previous draw-up by a draw-down and vice versa. However, you may inhibit this compensation system by unchecking the "Compensate a previous Draw up/down by a Draw down/up" checkbox.
+        <br>It will also prefer to chose drawn-up and drawn-down players according to your choice, in the top, middle or bottom of the group.
+
+        <h2>Base criteria</h2>
+        <h3>Avoid pairing same pair twice</h3>
+        Always selected
+        <h3>Random</h3>
+        OpenGotha can introduce randomness as part of the pairing process. If you choose to accept random, you will have to choose between :
+        <ul>
+            <li> Deterministic random. Two successive pairings will give exactly the same pairing</li>
+            <li> Non-Deterministic random. Two successive pairings may give different pairings</li>
+        </ul>
+         <h3>Balance White and Black</h3>
+         Tends to give the same number of games with white and black for a given player.
+
+        <h2>Secondary criteria</h2>
+        Secondary criteria are  "Minimize handicap" criterion and geographical criteria.
+        Secondary criteria are, by default, applied.
+        But you can exclude these criteria for some defined players :
+        <ul>
+            <li>Players above a certain rank</li>
+            <li>Players with a good performance in previous games.
+                <br>For instance, in a 10 rounds tournament, if you select this option, then players having at least 5 wins in their previous games will not be concerned by these secondary criteria.
+            </li>
+            <li>Players above the McMahon bar</li>
+
+        </ul>
+        <h3>Minimize handicap</h3>
+        This criterion is already taken in account in McMahon system because intra-group pairing will not lead to handicaps.
+        <br> It is relevant in Swisscat system.
+        <br>Details in <a href="Pairing evaluation function.html">Pairing evaluation function.</a>
+        <h3>Avoid intra-country, intra-clubs-groups and intra-club pairing</h3>
+        This determines what is acceptable to avoid intra pairing.
+        <br>For instance, in a McMahon tournament,
+        if you choose 3 as the group gap, which is the default value for intra-club pairing,
+        then OpenGotha will prefer to pair a given player with another player coming from another club even if their
+        MMS difference is up to 3 points rather than to pair him with a player coming from the same club with same MMS value.
+        <h3>Avoid intra-clubs-groups pairing </h3>
+        This criterion is a way to avoid pairing players coming from a given group of clubs. 
+        <br>In certain towns (e.g. Toulouse), 
+        you may have several clubs (31To, 31Pi, 31Ba) and players from these clubs often play together. 
+        <br>Define these clubs groups <a href="Edit clubs groups.html">Edit clubs groups button</a>
+        <br><br><br><br>
+
+    </body>
+</html>

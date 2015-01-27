@@ -1,0 +1,4 @@
+10/11/2014
+**********
+NetBeans 7.3.1 produces a "copylibs doesn’t support the “excludeFromCopy” attribute"
+Fix : in build-xmpl.xml, line 837 delete excludeFromCopy attribute

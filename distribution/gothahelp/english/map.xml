@@ -1,0 +1,62 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE map PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Map Version 2.0//EN"
+                     "http://java.sun.com/products/javahelp/map_2_0.dtd">
+
+<map version="1.0">
+	<mapID target="gotha.icon" url="../resources/gothalogo16.jpg"/>
+	<mapID target="Starting OpenGotha" url="Starting OpenGotha.html"/>
+	<mapID target="Tournament menu" url="Tournament menu.html"/>
+	<mapID target="Create a new tournament" url="Create a new tournament.html"/>
+	<mapID target="Save facilities" url="Save facilities.html"/>
+	<mapID target="Import facilities" url="Import facilities.html"/>
+	<mapID target="Players menu" url="Players menu.html"/>
+	<mapID target="Players Manager frame" url="Players Manager frame.html"/>
+	<mapID target="Players Quick check frame" url="Players Quick check frame.html"/>
+	<mapID target="Update ratings frame" url="Update ratings frame.html"/>
+	<mapID target="McMahon groups frame" url="McMahon groups frame.html"/>
+	<mapID target="Teams Manager frame" url="Teams Manager frame.html"/>
+	<mapID target="Games menu" url="Games menu.html"/>
+	<mapID target="Games Pair frame" url="Games Pair frame.html"/>
+	<mapID target="Games Results frame" url="Games Results frame.html"/>
+	<mapID target="Games Round-robin frame" url="Games Round-robin frame.html"/>
+	<mapID target="Teams Pairing frame" url="Teams Pairing frame.html"/>
+	<mapID target="Publish menu" url="Publish menu.html"/>
+	<mapID target="Contents tab" url="Contents tab.html"/>
+	<mapID target="Parameters tab" url="Parameters tab.html"/>
+	<mapID target="Publish tab" url="Publish tab.html"/>
+	<mapID target="Options menu" url="Options menu.html"/>
+	<mapID target="Tournament Options" url="Tournament Options.html"/>
+	<mapID target="General settings" url="General settings.html"/>
+	<mapID target="Handicap settings" url="Handicap settings.html"/>
+	<mapID target="Placement settings" url="Placement settings.html"/>
+	<mapID target="Pairing settings" url="Pairing settings.html"/>
+	<mapID target="Edit clubs groups" url="Edit clubs groups.html"/>
+	<mapID target="Team Placement settings" url="Team Placement settings.html"/>
+	<mapID target="Games Options" url="Games Options.html"/>
+	<mapID target="Preferences frame" url="Preferences frame.html"/>
+	<mapID target="Tools menu" url="Tools menu.html"/>
+	<mapID target="Discard rounds frame" url="Discard rounds frame.html"/>
+	<mapID target="Players Manager frame" url="Players Manager frame.html"/>
+	<mapID target="Players Quick check frame" url="Players Quick check frame.html"/>
+	<mapID target="McMahon groups frame" url="McMahon groups frame.html"/>
+	<mapID target="Appendices" url="Appendices.html"/>
+	<mapID target="Games encoding" url="Games encoding.html"/>
+	<mapID target="Pairing algorithm" url="Pairing algorithm.html"/>
+	<mapID target="Pairing evaluation function" url="Pairing evaluation function.html"/>
+	<mapID target="Compatibility issues" url="Compatibility issues.html"/>
+	<mapID target="Teams Manager frame" url="Teams Manager frame.html"/>
+	<mapID target="Teams Pairing frame" url="Teams Pairing frame.html"/>
+	<mapID target="Update ratings frame" url="Update ratings frame.html"/>
+	<mapID target="Vbar-separated format" url="vbarseparatedformat.html"/>
+	<mapID target="Save facilities1" url="Save facilities.html"/>
+	<mapID target="Contents tab1" url="Contents tab.html"/>
+	<mapID target="Parameters tab1" url="Parameters tab.html"/>
+	<mapID target="Publish menu1" url="Publish menu.html"/>
+	<mapID target="Publish tab1" url="Publish tab.html"/>
+	<mapID target="General settings1" url="General settings.html"/>
+	<mapID target="Handicap settings1" url="Handicap settings.html"/>
+	<mapID target="Pairing settings1" url="Pairing settings.html"/>
+	<mapID target="Placement settings1" url="Placement settings.html"/>
+	<mapID target="Team Placement settings1" url="Team Placement settings.html"/>
+	<mapID target="Edit clubs groups1" url="Edit clubs groups.html"/>
+</map>

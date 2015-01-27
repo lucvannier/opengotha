@@ -1,0 +1,301 @@
+/* style de la chartre graphique */
+body
+{
+margin-left: 0px;
+margin-top: 5px;
+margin-right: 0px;
+margin-bottom: 5px;
+color: #0F457D;
+font-family: Verdana;
+font-size: 11px;
+border:none;
+}
+h1
+{
+font-size: 160%;
+}
+h2
+{
+font-size: 130%;
+margin-bottom: 15px; margin-top: 15px;
+}
+h3
+{
+font-size: 120%;
+margin-bottom: 15px; margin-top: 15px;
+}
+h4
+{
+font-size: 110%;
+margin-bottom: 15px; margin-top: 15px;
+}
+th
+{
+color:white;
+background-color:#0057B4;
+font-family: Verdana;
+font-size: 11px;
+}
+td
+{
+color: #0F457D;
+font-family: Verdana;
+font-size: 11px;
+}
+a
+{
+color: #0F457D;
+text-decoration: underline;
+}
+a:visited
+{
+color: #0F457D;
+text-decoration: underline;
+}
+a:active
+{
+color: #0F457D;
+text-decoration: underline;
+}
+a:hover
+{
+color: #0F457D;
+text-decoration: underline;
+}
+input
+{
+font-family: Verdana;
+font-size: 10px;
+}
+select
+{
+font-family: Verdana;
+font-size: 10px;
+}
+textarea
+{
+font-family: Verdana;
+font-size: 10px;
+}
+p
+{
+text-align: left;
+margin-top: 10px; margin-bottom: 10px
+}
+p.footer
+{
+text-align: center;
+}
+table.simple {
+padding:0;
+border-spacing:0;
+border-collapse:collapse;
+}
+table.simple th.left {
+border-right:thin solid white;
+border-left:thin solid #0057B4;
+}
+table.simple th.middle {
+border-right:thin solid white;
+border-left:thin solid white;
+}
+table.simple th.right {
+border-right:thin solid #0057B4;
+border-left:thin solid white;
+}
+table.simple th.alone {
+border-right:thin solid #0057B4;
+border-left:thin solid #0057B4;
+}
+table.simple td {
+border:thin solid #0057B4;
+background-color:white;
+}
+table.simple td.premier {
+background-color:white;
+}
+table.simple td.impair {
+background-color:#EAF3FF;
+}
+table.simple td.pair {
+background-color:white;
+}
+table.simple td.participation {
+font-family: Courier;
+font-size : 14px;
+}
+table.groupe {
+padding:0;
+border-spacing:0;
+border-collapse:collapse;
+}
+table.groupe td.impair {
+background-color:#EAF3FF;
+border:thin solid #EAF3FF;
+}
+table.groupe td.pair {
+background-color:white;
+border:thin solid white;
+}
+strong{font-weight: bold;}
+em {font-style:italic;}
+em.mini {font-size: 8px;}
+
+input.recherche {
+background-color: #0057B4;
+color: #FFFFFF;
+border-style: solid;
+border-color: #FFFFFF;
+border-width: 1px;
+font-weight: bold;
+}
+
+table.content {
+background-color: #ECF5FF;
+border-width:0;
+border-style:none;
+}
+table.content td {
+background-color: #F8FBFF;
+}
+td.menu {
+background-color:#F3F9FF;
+}
+td.recherche {
+background-color:#DEEEFF;
+}
+td.menuHr {
+background-color:#9CBED2;
+}
+td.border {
+background-color:#7CA8D5;
+}
+
+
+/* Complements WS  pour la gestion des licences */
+
+input.bouton {
+/*font-weight: bold;
+color:#0F457D;*/
+padding:2px;
+font-size:100%;
+}
+
+.bloc_entete{
+	border: 1px double #0057B4;
+	margin-top:10px;
+	padding-left:5px;
+	padding-right:5px;
+	background-color: #FFFFFF;
+	text-align: justify;
+}
+
+table.simple th.title1 {
+border-right:thin solid #0057B4;
+border-left:thin solid #0057B4;
+border-bottom:thin solid white;
+}
+
+/* Barres de menus menu1 (haute) et menu2 (basse)*/
+
+#menu1 {
+	margin: 0 3px 0 3px;
+	padding: 0;
+}
+
+#menu1 ul {
+	padding: 0;
+	margin: 0;
+	background-color: #369;
+  	font-size: 100%;
+	font-weight: normal;   	
+	color: #fff;
+	float: left;
+	width: 100%; 
+	border-bottom: 1px solid #fff;
+}
+
+#menu1 ul li { 
+	display: inline;
+}
+
+#menu1 ul li a {
+	padding: 2px 5px;
+	background-color: #369;
+	color: #fff;
+	text-decoration: none;
+	float: left;
+	border-right: 1px solid #fff;
+}
+
+#menu1 ul li a:hover {
+	background-color: #0F457D;
+	color: #fff;
+}
+
+#menu2 {
+	margin: 0 3px 0 3px;
+	padding: 0;
+}
+
+#menu2 ul {
+	padding: 0;
+	margin: 0;
+  	font-size: 100%;
+	font-weight: normal;   	
+	float: left;
+	width: 100%; 
+	border-top: 1px solid #0F457D; 
+}
+
+#menu2 ul li { 
+	display: inline;
+}
+
+#menu2 ul li a {
+	padding: 2px 5px;
+	text-decoration: none;
+	float: left;
+	border-right: 1px solid #fff;
+}
+
+#menu2 ul li a:hover {
+	background-color: #369;
+	color: #fff;
+}
+
+/* Infobulles */
+a.info {
+   position: relative;
+   color: none;
+   text-decoration: none;
+}
+a.info img{
+	border:none;
+}
+a.info span {
+   display: none;
+}
+a.info:hover {
+   background: none;
+   z-index: 500;
+   cursor: help;
+}
+a.info:hover span {
+	text-align:left;
+	display: inline;
+	position: absolute;
+	text-decoration: none;
+
+	white-space: nowrap; 
+
+	top: 0px; 
+	right: 10px;
+	background: white;
+
+	color: #0F457D;
+	padding: 3px;
+
+	border: 2px solid #0F457D;
+	border-left: 4px solid #0F457D;
+}

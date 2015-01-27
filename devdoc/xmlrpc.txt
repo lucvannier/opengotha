@@ -1,0 +1,20 @@
+XMLRPC
+******
+XMLRPC has been implemented in OpenGothaV3.22.03. 
+Tests are OK
+Removed out in V3.22.04, waiting for an actual demand
+
+Server
+======
+Code is in OGXmlRpcServer class
+OGXmlRpcServer contains :
+- 1 method to start the WebServer, on port 8099 (def value)
+- x methods to answer to clients requests
+The OGXmlRpcServer.properties file contains :
+ogxmlrpcserver=rpcserver.OGXmlRpcServer
+
+To start the WebServer :             OGXmlRpcServer.startOGXmlRpcServer();
+
+Client php
+==========
+To test from a php page : og_welcome.php

@@ -1,0 +1,30 @@
+<html>
+    <head>
+        <title>Pairing algorithm</title>
+    </head>
+    <body>
+        <h1 align="center">Pairing algorithm</h1>
+        <br>
+        OpenGotha's pairing system is based on <a href="Pairing evaluation function.html">an evaluation function</a> and a maximum matching algorithm.
+        <br>To pair a set of n players, OpenGotha first computes a cost for each pair of players, that is to say n*(n-1)/2 costs. The cost is computed by an evaluation function.
+        A low cost means an undesirable pairing while a high cost means a desirable pairing.
+        Then these n*(n-1)/2 costs are input to the maximum matching algorithm which finds the set of n/2 couples that gives the maximum sum of costs.
+
+        <h2>The maximum matching algorithm</h2>
+        OpenGotha's pairing system is based on an O(n^3) implementation of Edmonds' algorithm, as presented by Harold N. Gabow.
+        The development is part of the UCSB JICOS project. Adaptation for OpenGotha has been made by Jean-Fran&ccedil;ois Bocquet.
+        <br>Descriptions of Maximum matching algorithms, Edmond's algorithm and Gabow's implementation can be found in :
+        <ul>
+            <li>J. Edmonds, "An introduction to matching," Notes of Engineering Summer Conference,
+                Univ. of Michigan, Ann Arbor, 1967.</li>
+            <li>C. Gerlach, Ein Mac-Mahon-Losungsprogram f&uuml;r Go-Turniere unter Benutzung von Maximum Weight Perfect Matching :
+                    <br>http://www.cgerlach.de/go/diplom.pdf
+            </li>
+            <li>B. Korte, "Combinatorial Optimization", Springer, available on Google books :
+                <br>http://books.google.com/books?id=tu6nz572uJIC&printsec=frontcover&dq=Combinatorial+Optimization
+            </li>
+        </ul>
+
+        <br>
+    </body>
+</html>

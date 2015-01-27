@@ -1,0 +1,92 @@
+Import files and Rating lists
+*****************************
+
+OpenGotha assumes that files are encoded with ISO-8859-15 character set.
+ISO-8859-15 roughly covers western-European language
+
+Reading a file with Java:
+FileInputStream fis = new FileInputStream(f);
+BufferedReader d = new BufferedReader(new InputStreamReader(fis, java.nio.charset.Charset.forName("ISO-8859-15")));
+replace "ISO-8859-15" by "UTF-8" or any other Character set
+
+Displaying characters in a swing component:
+use usual strings. You can define string constants by "\u3055" to display the corresponding japanese character
+Don't forget to install the proper font in the underlying OS.
+
+Export files (from V3.23)
+*************************
+Example with ? (Kong) (Unicode = 5B54)
+xml tournament files    &#23380 (=5B54)
+h9 and tou              ?       (=3F20)
+csv                     E5AD94  (=UTF8(5B54))
+html                    E5AD94  (=UTF8(5B54))
+
+        try {
+            output = new BufferedWriter(new FileWriter(f));
+        } catch (IOException ex) {
+            Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
+            return;
+        }
+
+ExternalDocument.generateXMLFile
+================================
+output = new BufferedWriter(new FileWriter(xmlFile));
+ExternalDocument.generateH9File and .generateTouFile
+====================================================
+output = new BufferedWriter(new FileWriter(f));
+ExternalDocument.generateHTMLFile
+=================================
+public final static String DEFAULT_CHARSET="UTF-8";
+FileOutputStream fos = new  FileOutputStream(f);
+output = new BufferedWriter(new OutputStreamWriter(fos, DEFAULT_CHARSET));
+output.write("<html>");
+output.write("<head>");
+output.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=" + DEFAULT_CHARSET + "\">");
+...
+ExternalDocument.generatePlayersCSVFile
+=======================================
+FileOutputStream fos = new  FileOutputStream(f);
+output = new BufferedWriter(new OutputStreamWriter(fos, DEFAULT_CHARSET));
+
+Bug in V3.23 and V3.24
+**********************
+Detected by Paul Barratou
+In 3.22 and before, when a player is input with non-latin characters, say "R�mi", it is stored as is in .xml file "R�mi"
+La valeur des attributs "blackplayer" et "whiteplayer" �tant calcul�e par l'ancien algo de getPlayerByObsoleteCanonicalName 
+correspond � "REMI".
+En 3.23, le nouvel algo est celui de Player.computeKeyString qui conserve plus fid�lement le nom : replaceAll(" ", "").toUpperCase()
+Le player de la game n'est donc associ� � aucun Player et la game est ignor�e.
+
+Pour r�soudre ce pb,
+ds     ExternalDocument.importGamesFromXMLFile(File sourceFile, TournamentInterface tournament),
+si la version fu fichier xml est <= 200, c'est l'ancien algo qui est utilisé.
+
+NB : Ce pb n'appara�t pas forc�ment pour les caract�res non-Latin 1. Par exemple le catract�re turc ? d'un player est stock� &#305; 
+Et la m�thode String.toUpperCase() le convertit en le caract�re latin I. 
+
+Lors de l'import par 3.23 l'attribut du player tel que trouv� dans la game ne correspond pas � un player. La game est donc ignor�e.
+En 3
+
+// Comments to be updated
+NetBeans affiche "Windows-1252" comme encoding.
+En OpenGothaV3.24.03, passage à UTF8
+
+L'encoding de la sauvegarde de fichiers xml se fait différemment selon que la sauvegarde est faite depuis opengotha lancé par NetBeans
+ou par opengotha depuis un .jar par java -jar opengotha.jar. Ds ce dernier cas l'encoding est Cp1252. 
+Pour forcer l'encodage UTF-8 : java -jar "-Dfile.encoding=UTF-8" -jar opengotha.jar
+
+transformer.setOutputProperty(OutputKeys.ENCODING, ExternalDocument.DEFAULT_CHARSET);
+output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(xmlFile), DEFAULT_CHARSET));
+// End of Comments to be updated
+
+Caractéres turcs
+****************
+clavier turc = :
+qwertyuıopğü
+asdfghjklşi,
+zxcvbnmöç.
+
+QWERTYUIOPĞÜ
+ASDFGHJKLŞİ;
+ZXCVBNMÖÇ:
+

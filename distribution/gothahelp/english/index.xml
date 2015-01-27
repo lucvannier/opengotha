@@ -1,0 +1,51 @@
+<?xml version='1.0' encoding='ISO-8859-1'?>
+<!DOCTYPE index PUBLIC "-//Sun Microsystems Inc.//DTD JavaHelp Index Version 2.0//EN"
+                       "http://java.sun.com/products/javahelp/index_2_0.dtd">
+
+<index version="2.0">
+    <indexitem text="Starting OpenGotha" target="Starting OpenGotha" />
+    <indexitem text="Tournament menu" target="Tournament menu" />
+    <indexitem text="Create a new tournament" target="Create a new tournament" />
+    <indexitem text="Save facilities" target="Save facilities" />
+    <indexitem text="Import facilities" target="Import facilities" />
+
+    <indexitem text="Players menu" target="Players menu" />
+    <indexitem text="Players Manager frame" target="Players Manager frame" />
+    <indexitem text="Players Quick check frame" target="Players Quick check frame" />
+    <indexitem text="Update ratings frame" target="Update ratings frame" />
+    <indexitem text="McMahon groups frame" target="McMahon groups frame" />
+    <indexitem text="Teams Manager frame" target="Teams Manager frame" />
+
+    <indexitem text="Games menu" target="Games menu" />
+    <indexitem text="Games Pair frame" target="Games Pair frame" />
+    <indexitem text="Games Results frame" target="Games Results frame" />
+    <indexitem text="Games Round-robin frame" target="Games Round-robin frame" />
+    <indexitem text="Teams Pairing frame" target="Teams Pairing frame" />
+    
+    <indexitem text="Publish menu" target="Publish menu" />
+    <indexitem text="Contents" target="Contents tab" />
+    <indexitem text="Parameters" target="Parameters tab" />
+    <indexitem text="Publish" target="Publish tab" />
+
+    <indexitem text="Options menu" target="Options menu" />
+    <indexitem text="Tournament Options" target="Tournament Options" />
+    <indexitem text="General settings" target="General settings" />
+    <indexitem text="Handicap settings" target="Handicap settings" />
+    <indexitem text="Placement settings" target="Placement settings" />
+    <indexitem text="Pairing settings" target="Pairing settings" />
+    <indexitem text="Edit clubs groups" target="Edit clubs groups" />
+    <indexitem text="Team Placement settings" target="Team Placement settings" />
+    
+    <indexitem text="Games Options" target="Games Options" />
+    <indexitem text="Preferences frame" target="Preferences frame" />
+
+    <indexitem text="Tools menu" target="Tools menu" />
+    <indexitem text="Discard rounds frame" target="Discard rounds frame" />
+      
+    <indexitem text="Appendices" target="Appendices" />
+    <indexitem text="Games encoding" target="Games encoding" />
+    <indexitem text="Pairing algorithm" target="Pairing algorithm" />
+    <indexitem text="Pairing evaluation function" target="Pairing evaluation function" />
+    <indexitem text="Compatibility issues" target="Compatibility issues" />
+    <indexitem text="Vbar-separated format" target="Vbar-separated format" />
+</index>

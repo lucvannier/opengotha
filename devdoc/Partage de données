@@ -1,0 +1,33 @@
+Partage de données. Idées stratégiques
+**************************************
+Le partage de données de tournnoi peut viser les objectifs suivants :
+Obj1 : Gérer les données Tournoi depuis un ensemble de postes reliés par réseau local
+Obj2 : Gérer des données auxiliaires (Fric, Hébergement, ...) à l'aide d'un outil type Spreadsheet
+Obj3 : Post-traitement de données de tournoi pour par exemple des objectifs statistiques
+Obj4 : Permettre l'import de données Tournoi saisies par un outil indépendant de Gotha (typiquement : Les données d'inscription saisies sur un site WEB)
+
+
+Partage de données. Idées techniques
+************************************
+
+Idée 1 : Utilisation RMI 
+Bien adapté à Obj1
+Ne traite pas les autres objectifs
+
+Idée 2 : Utilisation Base de données
+Obj1 : No pb! Mais il faut réécrire OpenGotha pour transformer RMI en DB
+Obj2 : Une solution serait d'utiliser un tableur (OOo Calc) avec lien aux données DB, les données Tournoi n'étant 
+accessibles qu'en lecture. Les données Aux étant exclusivement traitées (et éventuellement partagées) par un tableur 
+(ou plusieurs postes partageant une même feuille de calcul)
+Obj3 : Pas difficile. + simple que Obj2
+Obj4 : Pas simple : Intégrer un mini-serveur WEB comprenant des requêtes de type WEB Service.
+ 
+Points techniques à résoudre
+****************************
+Les données Tournoi étant résidentes sur HSQL
+- Depuis Calc, accéder en ReadOnly aux données HSQL(avec mise à jour en temps réel) 
+et compléter sous Calc pour les données Aux
+Les données Calc ne sont pas réimportées sur HSQL
+Les données Aux sont partagées entre les différents utilisateurs de Calc 
+(qui ont un accès temps réel en RW aux données Aux et un accès temps réel en Read-Only aux données Tournoi)
+- Ecrire des WEB Services (et test en PHP) permettant d'accéder aux données HSQL.

@@ -1,0 +1,15 @@
+RMI Usage in OpenGotha
+**********************
+
+Server mode
+===========
+Adding, removing and extracting tournaments from the Regisrtry are made from GothaRMIServer static methods.
+
+JFrGothaStart does not do anything about RMI.
+    It just memorizes IP address into "java.rmi.server.hostname" property
+JFrGotha
+    adds (and sometimes removes) a Tournament out of the registry when creating or opening a Tournament
+
+Client mode
+===========
+The link with a tournament is made from JFrGothaStart by GothaRMIClient.getTournament

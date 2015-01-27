@@ -1,0 +1,25 @@
+<html>
+  <head>
+    <title>VBar-separated format</title>
+  </head>
+  <body>
+    <h1 align="center">
+       VBar-separated format
+    </h1>
+    vBar-separated format has been defined by Christoph Gerlach. It is supported by OpenGotha to facilitate transition from MacMahon program to OpenGotha.
+    <br>Each row of the file holds the dataset for one player and has to follow this format :
+    <br><br><b>name|firstname|rank|club|country|rating|registration</b>
+    <br><br><b>name : </b>
+    <br><br><b>firstname : </b>
+    <br><br><b>rank : </b> Number followed by "d" or "D" is interpreted as Dan, everything else as Kyu; the limits are 30 Kyu - 9 Dan
+    <br><br><b>club : </b> Truncated after 4 characters
+    <br><br><b>country : </b> Truncated to 2 characters. Ignored if 0 or 1 character is supplied.
+    <br><br><b>rating : </b>from 0 to 2900.
+    <br><br><b>registration : </b>"p" for Preliminary "f" = Final.
+    <br><br><b>Notes</b>
+    <ul>
+        <li>Fields must be separated by "|"</li>
+        <li>";" declares the rest of the row as a comment.</li>
+    </ul>
+   </body>
+</html>

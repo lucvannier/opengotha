@@ -1,0 +1,2 @@
+To xml-validate tournament file, add :
+<!DOCTYPE Tournament SYSTEM "tournament.dtd">

@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!ELEMENT Tournament (Players?, Games?, ByePlayers?, Teams?, TournamentParameterSet?, TeamTournamentParameterSet?, ClubsGroups?)>
+<!ATTLIST Tournament dataVersion CDATA "200">
+<!ELEMENT Players (Player*)>
+<!ELEMENT Games (Game*)>
+<!ELEMENT ByePlayers (ByePlayer*)>
+
+<!ELEMENT Player (#PCDATA)>
+<!ATTLIST Player name CDATA #REQUIRED>
+<!ATTLIST Player firstName CDATA #REQUIRED>
+<!ATTLIST Player country CDATA "">
+<!ATTLIST Player club CDATA "">
+<!ATTLIST Player egfPin CDATA "">
+<!ATTLIST Player ffgLicence CDATA "">
+<!ATTLIST Player ffgLicenceStatus CDATA "">
+<!ATTLIST Player agaId CDATA "">
+<!ATTLIST Player agaExpirationDate CDATA "">
+<!ATTLIST Player rank CDATA "30K">
+<!ATTLIST Player rating CDATA "-2950">
+<!ATTLIST Player ratingOrigin CDATA "">
+<!ATTLIST Player grade CDATA "">
+<!ATTLIST Player smmsCorrection CDATA "0">
+<!ATTLIST Player participating CDATA "11111111111111111111">
+<!ATTLIST Player registeringStatus CDATA "FIN">
+
+<!ELEMENT Game (#PCDATA)>
+<!ATTLIST Game roundNumber CDATA #REQUIRED>
+<!ATTLIST Game tableNumber CDATA #REQUIRED>
+<!ATTLIST Game whitePlayer CDATA #REQUIRED>
+<!ATTLIST Game blackPlayer CDATA #REQUIRED>
+<!ATTLIST Game knownColor  CDATA "true">
+<!ATTLIST Game handicap    CDATA "0">
+<!ATTLIST Game result      CDATA "RESULT_UNKNOWN">
+
+<!ELEMENT ByePlayer (#PCDATA)>
+<!ATTLIST ByePlayer roundNumber CDATA #REQUIRED>
+<!ATTLIST ByePlayer player CDATA #REQUIRED>
+
+<!ELEMENT Teams (Team+)>
+<!ELEMENT Team (Board+)>
+<!ATTLIST Team teamNumber CDATA #REQUIRED>
+<!ATTLIST Team teamName CDATA #REQUIRED>
+<!ELEMENT Board (#PCDATA)>
+<!ATTLIST Board roundNumber CDATA #REQUIRED>
+<!ATTLIST Board boardNumber CDATA #REQUIRED>
+<!ATTLIST Board player CDATA #REQUIRED>
+
+<!ELEMENT TournamentParameterSet (GeneralParameterSet?, HandicapParameterSet?, PlacementParameterSet?, PairingParameterSet?, DPParameterSet?, PublishParameterSet?)>
+
+<!ELEMENT GeneralParameterSet (Categories?)>
+<!ATTLIST GeneralParameterSet shortName CDATA "defaultshortname">
+<!ATTLIST GeneralParameterSet name CDATA "defaultname">
+<!ATTLIST GeneralParameterSet location CDATA "location">
+<!ATTLIST GeneralParameterSet director CDATA "director">
+<!ATTLIST GeneralParameterSet beginDate CDATA "2009-01-01">
+<!ATTLIST GeneralParameterSet endDate CDATA "2009-01-01">
+<!ATTLIST GeneralParameterSet basicTime CDATA "60">
+<!ATTLIST GeneralParameterSet complementaryTimeSystem CDATA "CANBYOYOMI">
+<!ATTLIST GeneralParameterSet stdByoYomiTime CDATA "30">
+<!ATTLIST GeneralParameterSet nbMovesCanTime CDATA "15">
+<!ATTLIST GeneralParameterSet canByoYomiTime CDATA "300">
+<!ATTLIST GeneralParameterSet fischerTime CDATA "5">
+<!ATTLIST GeneralParameterSet size CDATA "19">
+<!ATTLIST GeneralParameterSet komi CDATA "7.5">
+<!ATTLIST GeneralParameterSet numberOfRounds CDATA "5">
+<!ATTLIST GeneralParameterSet numberOfCategories CDATA "1">
+<!ATTLIST GeneralParameterSet genMMFloor CDATA "20K">
+<!ATTLIST GeneralParameterSet genMMBar CDATA "4D">
+<!ATTLIST GeneralParameterSet genMMZero CDATA "30K">
+<!ATTLIST GeneralParameterSet genNBW2ValueAbsent CDATA "0">
+<!ATTLIST GeneralParameterSet genNBW2ValueBye CDATA "1">
+<!ATTLIST GeneralParameterSet genMMS2ValueAbsent CDATA "1">
+<!ATTLIST GeneralParameterSet genMMS2ValueBye CDATA "1">
+<!ATTLIST GeneralParameterSet genRoundDownNBWMMS CDATA "true">
+
+<!ELEMENT Categories (Category+)>
+<!ELEMENT Category (#PCDATA)>
+<!ATTLIST Category number CDATA "1">
+<!ATTLIST Category lowerLimit CDATA "30K">
+
+<!ELEMENT HandicapParameterSet (#PCDATA)>
+<!ATTLIST HandicapParameterSet hdBasedOnMMS CDATA "true">
+<!ATTLIST HandicapParameterSet hdNoHdRankThreshold CDATA "1D">
+<!ATTLIST HandicapParameterSet hdCorrection CDATA "1">
+<!ATTLIST HandicapParameterSet hdCeiling CDATA "9">
+
+<!ELEMENT PlacementParameterSet (PlacementCriteria?)>
+<!ELEMENT PlacementCriteria (PlacementCriterion+)>
+<!ELEMENT PlacementCriterion (#PCDATA)>
+<!ATTLIST PlacementCriterion number CDATA "1">
+<!ATTLIST PlacementCriterion name CDATA "MMS">
+
+<!ATTLIST HandicapParameterSet hdNoHdRankThreshold CDATA "1D">
+<!ATTLIST HandicapParameterSet hdCorrection CDATA "1">
+<!ATTLIST HandicapParameterSet hdCeiling CDATA "9">
+
+<!ELEMENT DPParameterSet (#PCDATA)>
+<!ATTLIST DPParameterSet playerSortType CDATA "name">
+<!ATTLIST DPParameterSet gameFormat CDATA "full">
+
+<!ATTLIST DPParameterSet showPlayerGrade CDATA "true">
+<!ATTLIST DPParameterSet showPlayerCountry CDATA "false">
+<!ATTLIST DPParameterSet showPlayerClub CDATA "true">
+
+<!ATTLIST DPParameterSet showByePlayer CDATA "true">
+<!ATTLIST DPParameterSet showNotPairedPlayers CDATA "true">
+<!ATTLIST DPParameterSet showNotParticipatingPlayers CDATA "false">
+<!ATTLIST DPParameterSet showNotFinallyRegisteredPlayers CDATA "false">
+
+<!ATTLIST DPParameterSet displayNumCol CDATA "true">
+<!ATTLIST DPParameterSet displayPlCol CDATA "true">
+<!ATTLIST DPParameterSet displayCoCol CDATA "true">
+<!ATTLIST DPParameterSet displayClCol CDATA "true">
+
+<!ATTLIST DPParameterSet displayIndGamesInMatches CDATA "true">
+
+<!ELEMENT PublishParameterSet (#PCDATA)>
+<!ATTLIST PublishParameterSet print CDATA "true">
+<!ATTLIST PublishParameterSet exportToLocalFile CDATA "true">
+<!ATTLIST PublishParameterSet exportHFToOGSite CDATA "false">
+<!ATTLIST PublishParameterSet exportTFToOGSite CDATA "true">
+<!ATTLIST PublishParameterSet exportToUDSite CDATA "false">
+<!ATTLIST PublishParameterSet htmlAutoScroll CDATA "false">
+
+<!ELEMENT PairingParameterSet (#PCDATA)>
+<!ATTLIST PairingParameterSet paiStandardNX1Factor                      CDATA "0.5">
+<!ATTLIST PairingParameterSet paiBaAvoidDuplGame                        CDATA "500000000000000">
+<!ATTLIST PairingParameterSet paiBaRandom                               CDATA "0">
+<!ATTLIST PairingParameterSet paiBaDeterministic                        CDATA "true">
+<!ATTLIST PairingParameterSet paiBaBalanceWB                            CDATA "1000">
+<!ATTLIST PairingParameterSet paiMaAvoidMixingCategories                CDATA "20000000000000">
+<!ATTLIST PairingParameterSet paiMaMinimizeScoreDifference              CDATA "100000000000">
+<!ATTLIST PairingParameterSet paiMaDUDDWeight                           CDATA "100000000">
+<!ATTLIST PairingParameterSet paiMaCompensateDUDD                       CDATA "true"> 
+<!ATTLIST PairingParameterSet paiMaDUDDUpperMode                        CDATA "MID"> <!-- "TOP", "MID" or "BOT" -->
+<!ATTLIST PairingParameterSet paiMaDUDDLowerMode                        CDATA "MID">
+<!ATTLIST PairingParameterSet paiMaMaximizeSeeding                      CDATA "5000000">
+<!ATTLIST PairingParameterSet paiMaLastRoundForSeedSystem1              CDATA "2">
+<!ATTLIST PairingParameterSet paiMaSeedSystem1                          CDATA "SPLITANDRANDOM">
+<!ATTLIST PairingParameterSet paiMaSeedSystem2                          CDATA "SPLITANDFOLD">
+<!ATTLIST PairingParameterSet paiMaAdditionalPlacementCritSystem1       CDATA "RATING">
+<!ATTLIST PairingParameterSet paiMaAdditionalPlacementCritSystem2       CDATA "NULL">
+<!ATTLIST PairingParameterSet paiSeBarThresholdActive                   CDATA "true">
+<!ATTLIST PairingParameterSet paiSeRankThreshold                        CDATA "4D">
+<!ATTLIST PairingParameterSet paiSeNbWinsThresholdActive                CDATA "true">
+<!ATTLIST PairingParameterSet paiSeDefSecCrit                           CDATA "100000000000">
+<!ATTLIST PairingParameterSet paiSeMinimizeHandicap                     CDATA "0">
+<!ATTLIST PairingParameterSet paiSeAvoidSameGeo                         CDATA "100000000000">
+<!ATTLIST PairingParameterSet paiSePreferMMSDiffRatherThanSameCountry   CDATA "1">
+<!ATTLIST PairingParameterSet paiSePreferMMSDiffRatherThanSameClubsGroup CDATA "2">
+<!ATTLIST PairingParameterSet paiSePreferMMSDiffRatherThanSameClub      CDATA "3">
+
+<!ELEMENT TeamTournamentParameterSet (TeamGeneralParameterSet?, TeamPlacementParameterSet?)>
+
+<!ELEMENT TeamGeneralParameterSet (#PCDATA)>
+<!ATTLIST TeamGeneralParameterSet teamSize CDATA "4">
+
+<!ELEMENT TeamPlacementParameterSet (PlacementCriteria)>
+
+<!ELEMENT ClubsGroups (ClubsGroup*)>
+<!ELEMENT ClubsGroup (Club*)>
+<!ATTLIST ClubsGroup name CDATA #REQUIRED>
+<!ELEMENT Club  (#PCDATA)>
+<!ATTLIST Club name CDATA #REQUIRED>

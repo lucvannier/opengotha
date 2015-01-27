@@ -1,0 +1,52 @@
+Utilisation remote de OpenGotha
+
+Accès http :
+************
+- Serveur Tomcat sur xiong; Config NAT port 8080 ouvert
+    tournamentfiles contient les fichiers .gth (dont egc2009.gth)
+- client n'importe où sur le Net
+    Si nécessaire, 
+	http://82.226.203.232:8080/OG/addtournament.jsp?tournamentname=egc2009
+	http://82.226.203.232:8080/OG/listtournaments.jsp
+    Puis :
+    	http://82.226.203.232:8080/OG/nbplayers.jsp?tournamentname=egc2009
+ 
+
+Accès RMI :
+***********
+- Serveur OpenGotha tournant sur xiong avec egc2009; Config NAT port 1099 ouvert
+- client n'importe où sur le Net 
+    lancement OpenGotha en mode client (server sur sur 82.226.203.232:8080)
+  foncttionnement normal 
+
+
+Utilisation OpenGotha avec Tomcat7 embedded
+*******************************************
+Les jar utiles : 
+apache-tomcat-7.0.11-embed.zip
+apache-tomcat-7.0.11.zip
+
+    public static void main(String[] args) throws Exception {
+        String appBase = ".";
+
+        Tomcat monTomcat = new Tomcat();
+        monTomcat.setPort(8888);
+        monTomcat.setBaseDir(".");
+        monTomcat.getHost().setAppBase(appBase);
+
+        String contextPath = "/";
+
+        StandardServer server = (StandardServer)monTomcat.getServer();
+        AprLifecycleListener listener = new AprLifecycleListener();
+        server.addLifecycleListener(listener);
+
+        monTomcat.addWebapp(contextPath, appBase);
+
+        
+        monTomcat.start();
+        monTomcat.getServer().await();
+    }
+
+Une fois éxécuté et index.jsp placé dans le répertoire de base (ds MonTomcat e.g. si projet MonTomcat)
+http://localhost:8888/index.jsp
+ou si contextPath = "/OG" , http://localhost:8888/OG/index.jsp

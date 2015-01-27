@@ -12,7 +12,7 @@ import java.util.prefs.Preferences;
 /**
  * LogElements contains a set of LogElement
  * A LogElement 
- * @author Luc
+ * @author Luc Vannier
  * 
  */
 public class LogElements {
@@ -95,7 +95,7 @@ public class LogElements {
 
 /**
  * 
- * @author Luc
+ * @author Luc Vannier
  */
 class LogElement{
     private String name;

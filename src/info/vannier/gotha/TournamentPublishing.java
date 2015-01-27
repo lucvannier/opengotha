@@ -15,7 +15,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class TournamentPublishing {
     public static final int TYPE_DEFAULT = 0;

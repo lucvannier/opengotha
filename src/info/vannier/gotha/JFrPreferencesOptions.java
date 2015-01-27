@@ -15,7 +15,7 @@ import java.util.prefs.Preferences;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class JFrPreferencesOptions extends javax.swing.JFrame {
     private static final long REFRESH_DELAY = 2000;

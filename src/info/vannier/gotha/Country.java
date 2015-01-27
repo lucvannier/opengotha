@@ -2,7 +2,7 @@ package info.vannier.gotha;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class Country{
     String name;

@@ -2,7 +2,7 @@ package info.vannier.gotha;
 
 /**
  * Display and Print ParameterSet
- * @author Luc
+ * @author Luc Vannier
  */
 public class DPParameterSet implements java.io.Serializable{
     private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;

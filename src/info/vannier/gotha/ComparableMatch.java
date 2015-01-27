@@ -8,7 +8,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class ComparableMatch{
     public int board0TableNumber;

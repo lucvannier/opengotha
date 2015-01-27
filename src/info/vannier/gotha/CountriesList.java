@@ -1,5 +1,6 @@
 /*
  * CountriesList.java
+ * @author Luc Vannier
  *
  */
 

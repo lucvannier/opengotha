@@ -12,7 +12,7 @@ import java.util.HashMap;
  * dc and sdc are updated by (and only by) fillDirScoringInfo(), according to pps and round number  as defined in argument.
  * 
  * ScoredPlayer does not contain any information about pairing
- * @author Luc
+ * @author Luc Vannier
  */
 public class ScoredPlayer extends Player implements java.io.Serializable{
     private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;

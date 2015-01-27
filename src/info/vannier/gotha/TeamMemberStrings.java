@@ -7,7 +7,7 @@ import java.util.Collections;
 /**
  * TeamMemberStrings describes a member of a team.
  * It contains a set of methods dedicated to print or display a players list
- * @author Luc
+ * @author Luc Vannier
  */
 public class TeamMemberStrings {
     public String strTeamNumber;

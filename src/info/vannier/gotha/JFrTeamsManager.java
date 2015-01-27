@@ -24,7 +24,7 @@ import javax.swing.table.DefaultTableModel;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class JFrTeamsManager extends javax.swing.JFrame {
     private static final long REFRESH_DELAY = 2000;

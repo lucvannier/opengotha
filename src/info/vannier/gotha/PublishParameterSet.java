@@ -2,7 +2,7 @@ package info.vannier.gotha;
 
 /**
  * Display and Print ParameterSet
- * @author Luc
+ * @author Luc Vannier
  */
 public class PublishParameterSet implements java.io.Serializable{   
     private boolean print = true;

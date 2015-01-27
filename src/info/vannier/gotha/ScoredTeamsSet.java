@@ -21,7 +21,7 @@ import java.util.logging.Logger;
  * <br>- getOrderedTeamsList
  * <br>- getHalfMatchString
  * <br>
- * @author Luc
+ * @author Luc Vannier
  */
 public class ScoredTeamsSet implements java.io.Serializable{
     private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;

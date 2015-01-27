@@ -21,7 +21,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class JFrExperimentalTools extends javax.swing.JFrame {
     private static final long REFRESH_DELAY = 2000;

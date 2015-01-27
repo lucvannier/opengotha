@@ -12,7 +12,7 @@ import java.util.logging.Logger;
 
 /**
  * Only static members
- * @author Luc
+ * @author Luc Vannier
  */
 public class GothaRMIServer {
 

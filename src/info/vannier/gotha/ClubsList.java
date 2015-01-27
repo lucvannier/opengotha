@@ -8,7 +8,7 @@ import java.util.HashMap;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class ClubsList {
     private HashMap<String, Club> hmClubs; 

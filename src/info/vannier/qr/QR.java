@@ -29,7 +29,7 @@ import javax.swing.JPanel;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class QR {
     

@@ -22,7 +22,7 @@ import javax.swing.table.TableColumnModel;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class JFrTeamsPairing extends javax.swing.JFrame {
 

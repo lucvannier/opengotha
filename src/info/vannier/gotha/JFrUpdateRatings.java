@@ -21,7 +21,7 @@ import javax.swing.table.*;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class JFrUpdateRatings extends javax.swing.JFrame {
     private static final long REFRESH_DELAY = 2000;

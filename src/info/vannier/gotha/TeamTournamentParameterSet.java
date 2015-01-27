@@ -7,7 +7,7 @@ package info.vannier.gotha;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class TeamTournamentParameterSet implements java.io.Serializable{
     private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;

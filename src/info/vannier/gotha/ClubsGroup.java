@@ -6,7 +6,7 @@ import java.util.HashMap;
 
 /**
  * ClubsGroup is 
- * @author Luc
+ * @author Luc Vannier
  */
 public class ClubsGroup implements java.io.Serializable{
     private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;

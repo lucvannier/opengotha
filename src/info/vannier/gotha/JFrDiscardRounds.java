@@ -18,7 +18,7 @@ import javax.swing.JOptionPane;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class JFrDiscardRounds extends javax.swing.JFrame {
     private static final long REFRESH_DELAY = 2000;

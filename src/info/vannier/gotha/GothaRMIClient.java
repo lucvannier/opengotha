@@ -9,7 +9,7 @@ import java.util.logging.Logger;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class GothaRMIClient {
     private String clientUniqueId;

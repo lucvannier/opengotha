@@ -10,7 +10,7 @@ import java.util.Comparator;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class TeamComparator implements Comparator<Team>, Serializable{
     public final static int NO_ORDER = 0;

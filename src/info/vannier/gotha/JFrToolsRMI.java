@@ -14,7 +14,7 @@ import java.util.ArrayList;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class JFrToolsRMI extends javax.swing.JFrame {
     private static final long REFRESH_DELAY = 500;

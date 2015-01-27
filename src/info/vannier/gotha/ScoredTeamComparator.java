@@ -5,7 +5,7 @@ import java.util.Comparator;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class ScoredTeamComparator implements Comparator<ScoredTeam>, Serializable{
     private boolean bKeepExAequo = false;

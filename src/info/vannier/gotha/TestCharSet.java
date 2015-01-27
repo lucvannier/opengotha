@@ -6,7 +6,7 @@ package info.vannier.gotha;
 
 /**
  *
- * @author Luc
+ * @author Luc Vannier
  */
 public class TestCharSet {
      /**

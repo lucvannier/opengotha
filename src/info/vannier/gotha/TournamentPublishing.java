@@ -1,11 +1,5 @@
 package info.vannier.gotha;
 
-import it.sauronsoftware.ftp4j.FTPAbortedException;
-import it.sauronsoftware.ftp4j.FTPClient;
-import it.sauronsoftware.ftp4j.FTPDataTransferException;
-import it.sauronsoftware.ftp4j.FTPException;
-import it.sauronsoftware.ftp4j.FTPIllegalReplyException;
-import it.sauronsoftware.ftp4j.FTPListParseException;
 import java.io.File;
 import java.io.IOException;
 import java.rmi.RemoteException;
@@ -58,9 +52,7 @@ public class TournamentPublishing {
         
         File f;
         f = exportToLocalFile(tournament, tps, roundNumber, type, subtype);
-        
-        if (pubPS.isExportHFToOGSite()) sendByFTPToOGSite(tournament, f);
-        
+                
     }
     
     private static void print(TournamentInterface tournament, TournamentParameterSet tps, int roundNumber, int type, int subtype){
@@ -130,159 +122,6 @@ public class TournamentPublishing {
         return f;
     }
     
-    public static FTPClient connectToFTPOGSite() throws Exception{ 
-        String strHost = "s206369267.onlinehome.fr";
-        String strLogin = "u45348341-ogt";
-        String strPassword = "hmeannnk";
-        
-        FTPClient client = new FTPClient();
-        client.connect(strHost);
-        client.login(strLogin, strPassword);
-        
-        return client;
-    }
 
 
-     public static String sendByFTPToOGSite(TournamentInterface tournament, File f) {
-        GeneralParameterSet gps = null;
-        String shortName = "defaultTournament";
-        try {
-            gps = tournament.getTournamentParameterSet().getGeneralParameterSet();
-            shortName = tournament.getTournamentParameterSet().getGeneralParameterSet().getShortName();
-        } catch (RemoteException ex) {
-            Logger.getLogger(JFrPublish.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        FTPClient client = null;
-        try {
-            client = connectToFTPOGSite();
-        } catch (Exception ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-             return "Error - FTP connection has failed";
-        }
-        
-        String dirName = new SimpleDateFormat("yyyyMMdd").format(gps.getBeginDate()) + shortName;
-        try {
-            client.createDirectory(dirName);
-        } catch (Exception ex) {
-            // System.out.println("Création de répertoire a échoué");
-        }
-        try {
-            client.changeDirectory(dirName);
-            client.upload(f);
-        } catch (IllegalStateException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPIllegalReplyException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPDataTransferException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPAbortedException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        try {
-            File cssFile = new java.io.File(f.getParent(), "current.css");
-            client.upload(cssFile);
-//            File idxFile = new java.io.File(f.getParent(), "index.php");
-//            client.upload(idxFile);
-            client.upload(new java.io.File(f.getParent(), "whitestone.png"));
-            client.upload(new java.io.File(f.getParent(), "blackstone.png"));
-        } catch (Exception ex) {
-            //System.out.println("Exception" + ex.toString());
-        }
-        try {
-            client.disconnect(true);
-        } catch (Exception ex) {
-            Logger.getLogger(JFrPublish.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-        String strURL = "" + f.getName() + " has been successfully uploaded to opengotha.info/tournaments/" + dirName + "/" + f.getName();
-        return strURL;
-    }
-
-    public static String deleteOGHTMLFiles(TournamentInterface tournament) {
-        GeneralParameterSet gps = null;
-        String shortName = "defaultTournament";
-        try {
-            gps = tournament.getTournamentParameterSet().getGeneralParameterSet();
-            shortName = tournament.getTournamentParameterSet().getGeneralParameterSet().getShortName();
-        } catch (RemoteException ex) {
-            Logger.getLogger(JFrPublish.class.getName()).log(Level.SEVERE, null, ex);
-        }
-                
-        FTPClient client = null;
-        try {
-            client = connectToFTPOGSite();
-            
-        } catch (Exception ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-             return "Error - FTP connection has failed";
-        }
-
-        String dirName = new SimpleDateFormat("yyyyMMdd").format(gps.getBeginDate()) + shortName;
-
-        String[] files = null;
-        int nbDeletedHTMLFiles = 0;
-        int nbDeletedFiles = 0;
-        int nbDeletedDir = 0;
-        try {
-            client.changeDirectory(dirName);
-            files = client.listNames();
-            for (int i = 0; i < files.length; i++){
-                String fn = files[i];
-                if (fn.endsWith(".html")){
-                    client.deleteFile(fn);
-                    nbDeletedFiles++;
-                    nbDeletedHTMLFiles++;
-                }
-                if (fn.endsWith(".css") || fn.endsWith(".png")){
-                    client.deleteFile(fn);
-                    nbDeletedFiles++;
-                }
-            }
-            
-        } catch (IllegalStateException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPIllegalReplyException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPDataTransferException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPAbortedException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPListParseException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-        
-        try {
-            client.changeDirectoryUp();
-            client.deleteDirectory(dirName);
-            nbDeletedDir++;
-        } catch (IllegalStateException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPIllegalReplyException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPException ex) {
-            Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        try {
-            client.disconnect(true);
-        } catch (Exception ex) {
-            Logger.getLogger(JFrPublish.class.getName()).log(Level.SEVERE, null, ex);
-        } 
-
-        return "" + nbDeletedFiles + " files have been deleted, including " + nbDeletedHTMLFiles + " html files." +
-                "\n" + nbDeletedDir + " directory has  been deleted.";
-    }
 }

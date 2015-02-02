@@ -4,8 +4,6 @@
  */
 package info.vannier.gotha;
 
-import com.google.zxing.WriterException;
-import info.vannier.qr.QR;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -189,14 +187,11 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlWelcome = new javax.swing.JPanel();
         lblTournamentPicture = new javax.swing.JLabel();
         lblFlowChart = new javax.swing.JLabel();
-        pnlQRW = new javax.swing.JPanel();
         pnlControlPanel = new javax.swing.JPanel();
         pnlIntControlPanel = new javax.swing.JPanel();
         scpControlPanel = new javax.swing.JScrollPane();
         tblControlPanel = new javax.swing.JTable();
         lblWarningPRE = new javax.swing.JLabel();
-        pnlQRCP = new javax.swing.JPanel();
-        lblOGCP = new javax.swing.JLabel();
         pnlStandings = new javax.swing.JPanel();
         pnlIntStandings = new javax.swing.JPanel();
         lblStandingsAfter = new javax.swing.JLabel();
@@ -530,11 +525,6 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlWelcome.add(lblFlowChart);
         lblFlowChart.setBounds(20, 320, 760, 190);
 
-        pnlQRW.setPreferredSize(new java.awt.Dimension(90, 90));
-        pnlQRW.setLayout(null);
-        pnlWelcome.add(pnlQRW);
-        pnlQRW.setBounds(680, 210, 100, 100);
-
         tpnGotha.addTab("Welcome", pnlWelcome);
 
         pnlControlPanel.setLayout(null);
@@ -578,17 +568,6 @@ public class JFrGotha extends javax.swing.JFrame {
         lblWarningPRE.setForeground(new java.awt.Color(255, 0, 0));
         pnlIntControlPanel.add(lblWarningPRE);
         lblWarningPRE.setBounds(10, 250, 510, 20);
-
-        pnlQRCP.setLayout(null);
-        pnlIntControlPanel.add(pnlQRCP);
-        pnlQRCP.setBounds(650, 150, 100, 100);
-
-        lblOGCP.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        lblOGCP.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblOGCP.setText("http://opengotha.info/tournaments/...");
-        lblOGCP.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
-        pnlIntControlPanel.add(lblOGCP);
-        lblOGCP.setBounds(190, 400, 360, 20);
 
         pnlControlPanel.add(pnlIntControlPanel);
         pnlIntControlPanel.setBounds(0, 0, 790, 470);
@@ -1618,22 +1597,10 @@ public class JFrGotha extends javax.swing.JFrame {
         int wFC = lblFlowChart.getWidth();
         int yFlowCart = lblTournamentPicture.getY() + lblTournamentPicture.getHeight() + 10;
         lblFlowChart.setLocation((w - wFC) / 2, yFlowCart);
-        
-        int wPNLQRW = this.pnlQRW.getWidth();
-        int hPNLQRW = this.pnlQRW.getHeight();
-        int xPNLQRW = lblFlowChart.getX() + lblFlowChart.getWidth() - wPNLQRW;
-        int yPNLQRW = lblFlowChart.getY() - hPNLQRW;
-
-        this.pnlQRW.setLocation(xPNLQRW, yPNLQRW);
-        
+                
         this.pnlIntControlPanel.setBounds(0, 0, w - 10, h - 30);
         int wCP = scpControlPanel.getWidth();
         this.scpControlPanel.setLocation((w - wCP) / 2, 100);
-
-        int wQR = this.pnlQRCP.getWidth();
-        this.pnlQRCP.setLocation((w - wQR) / 2, 300);
-        int wOG = this.lblOGCP.getWidth();
-        this.lblOGCP.setLocation((w - wOG) / 2, 395);
         
         this.pnlIntTeamsPanel.setBounds(0, 0, w - 10, h - 30);
         int wTeamsP = scpTeamsPanel.getWidth();
@@ -2282,11 +2249,7 @@ public class JFrGotha extends javax.swing.JFrame {
     }
     
     private void updateWelcomePanel() throws RemoteException {        
-        try {
-            QR.createQRJButton("http://opengotha.info/", this.pnlQRW);          
-        } catch (WriterException ex) {
-            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        
     }
  
     private void updateControlPanel() throws RemoteException {
@@ -2375,29 +2338,6 @@ public class JFrGotha extends javax.swing.JFrame {
                     + "players have a Preliminary registering status");
         }
         
-        // Aceess to opengotha.info
-        PublishParameterSet pubPS = tps.getPublishParameterSet();
-        GeneralParameterSet gps = tps.getGeneralParameterSet();
-        boolean bExportHFOG = pubPS.isExportHFToOGSite();
-        if (bExportHFOG) {
-            String dirName = new SimpleDateFormat("yyyyMMdd").format(gps.getBeginDate()) + tournament.getShortName() + "/";
-            String strURL = "http://opengotha.info/tournaments/" + dirName;
-            try {
-                QR.createQRJButton(strURL, this.pnlQRCP);
-            } catch (WriterException ex) {
-                Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            
-            this.pnlQRCP.setVisible(true);
-            
-            this.lblOGCP.setText(strURL);
-            this.lblOGCP.setVisible(true);
-            
-        }
-        else{
-            this.pnlQRCP.setVisible(false);
-            this.lblOGCP.setVisible(false);
-        }
     }
 
     // TODO : UpdateTeamsPanel should use TeamMemberStrings (See TournamentPrinting or ExternalDocument.generateTeamsListHTMLFile 
@@ -2516,16 +2456,7 @@ public class JFrGotha extends javax.swing.JFrame {
                     tournament.setHasBeenSavedOnce(true);
                     this.addRecentTournament("" + f);
                     this.tournamentChanged();
-                    
-                    // Eventually send the file to opengotha.info
-                    try {
-                        if(tournament.getTournamentParameterSet().getPublishParameterSet().isExportTFToOGSite()){    
-                            TournamentPublishing.sendByFTPToOGSite(tournament, f);
-                        }
-                    } catch (RemoteException ex) {
-                        Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
-                    }
-   
+                       
                     return true;
                 }
                return true;
@@ -2574,7 +2505,6 @@ public class JFrGotha extends javax.swing.JFrame {
     }
 
     private void mniHelpAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniHelpAboutActionPerformed
-//        LogElements.incrementElement("help.about", "");
         javax.swing.JTextArea txa = new javax.swing.JTextArea(Gotha.getCopyLeftText() + Gotha.getThanksToText());
         txa.setFont(new Font("Tahoma", Font.PLAIN, 11));
         JOptionPane.showMessageDialog(this, txa, "OpenGotha",
@@ -2606,18 +2536,7 @@ public class JFrGotha extends javax.swing.JFrame {
         
         // Make actual save
         this.saveTournament(f);
-        
-        // Eventually send the file to opengotha.info
-        try {
-            if(tournament.getTournamentParameterSet().getPublishParameterSet().isExportTFToOGSite()){    
-                TournamentPublishing.sendByFTPToOGSite(tournament, f);
-            }
-        } catch (RemoteException ex) {
-            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-
-        
+                
         try {
             tournament.setHasBeenSavedOnce(true);
         } catch (RemoteException ex) {
@@ -3483,7 +3402,6 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private javax.swing.JPopupMenu.Separator jSeparator7;
     private javax.swing.JPopupMenu.Separator jSeparator8;
     private javax.swing.JLabel lblFlowChart;
-    private javax.swing.JLabel lblOGCP;
     private javax.swing.JLabel lblRecommended;
     private javax.swing.JLabel lblStandingsAfter;
     private javax.swing.JLabel lblTeamUpdateTime;
@@ -3539,8 +3457,6 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private javax.swing.JPanel pnlIntTeamsStandings;
     private javax.swing.JPanel pnlObjectsToImport;
     private javax.swing.JPanel pnlPS;
-    private javax.swing.JPanel pnlQRCP;
-    private javax.swing.JPanel pnlQRW;
     private javax.swing.JPanel pnlStandings;
     private javax.swing.JPanel pnlSystem;
     private javax.swing.JPanel pnlTeamPS;

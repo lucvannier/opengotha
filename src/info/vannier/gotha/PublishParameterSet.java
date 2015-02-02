@@ -8,8 +8,8 @@ public class PublishParameterSet implements java.io.Serializable{
     private boolean print = true;
     private boolean exportToLocalFile   = true;
     private boolean exportHFToOGSite = false;
-    private boolean exportTFToOGSite = true;
-    private boolean exportToUDSite = false;
+    private boolean exportTFToOGSite = true;    // to OpenGotha Site
+    private boolean exportToUDSite = false;     // to User Defined Site
     private boolean htmlAutoScroll = false;
 
     public PublishParameterSet() {             

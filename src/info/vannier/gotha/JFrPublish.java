@@ -1,7 +1,5 @@
 package info.vannier.gotha;
 
-import com.google.zxing.WriterException;
-import info.vannier.qr.QR;
 import java.awt.Component;
 import java.awt.Dimension;
 import java.awt.Toolkit;
@@ -66,15 +64,6 @@ public class JFrPublish extends javax.swing.JFrame {
         jLabel4 = new javax.swing.JLabel();
         grpSortType = new javax.swing.ButtonGroup();
         grpRemote = new javax.swing.ButtonGroup();
-        dlgFTPSite = new javax.swing.JDialog();
-        jLabel6 = new javax.swing.JLabel();
-        jLabel7 = new javax.swing.JLabel();
-        jLabel8 = new javax.swing.JLabel();
-        txfHost = new javax.swing.JTextField();
-        txfLogin = new javax.swing.JTextField();
-        pwfPassword = new javax.swing.JPasswordField();
-        btnDlgFTPSiteOK = new javax.swing.JButton();
-        ckbKeepIDs = new javax.swing.JCheckBox();
         jLabel9 = new javax.swing.JLabel();
         jCheckBox1 = new javax.swing.JCheckBox();
         btnClose = new javax.swing.JButton();
@@ -109,12 +98,6 @@ public class JFrPublish extends javax.swing.JFrame {
         pnlActions = new javax.swing.JPanel();
         ckbPrint = new javax.swing.JCheckBox();
         ckbExportToLocalFile = new javax.swing.JCheckBox();
-        ckbExportHFToOGSite = new javax.swing.JCheckBox();
-        ckbExportToUDSite = new javax.swing.JCheckBox();
-        btnTestFTP = new javax.swing.JButton();
-        pnlQR = new javax.swing.JPanel();
-        lblQR = new javax.swing.JLabel();
-        ckbExportTFToOGSite = new javax.swing.JCheckBox();
         jPanel1 = new javax.swing.JPanel();
         ckbHTMLAutoscroll = new javax.swing.JCheckBox();
         pnlPub = new javax.swing.JPanel();
@@ -137,42 +120,6 @@ public class JFrPublish extends javax.swing.JFrame {
         btnHelp = new javax.swing.JButton();
 
         jLabel4.setText("jLabel4");
-
-        dlgFTPSite.setModal(true);
-        dlgFTPSite.getContentPane().setLayout(null);
-
-        jLabel6.setText("Host");
-        dlgFTPSite.getContentPane().add(jLabel6);
-        jLabel6.setBounds(110, 40, 90, 14);
-
-        jLabel7.setText("Login");
-        dlgFTPSite.getContentPane().add(jLabel7);
-        jLabel7.setBounds(110, 90, 90, 14);
-
-        jLabel8.setText("Password");
-        dlgFTPSite.getContentPane().add(jLabel8);
-        jLabel8.setBounds(110, 130, 90, 14);
-        dlgFTPSite.getContentPane().add(txfHost);
-        txfHost.setBounds(230, 40, 140, 20);
-        dlgFTPSite.getContentPane().add(txfLogin);
-        txfLogin.setBounds(230, 80, 140, 20);
-
-        pwfPassword.setText("jPasswordField1");
-        dlgFTPSite.getContentPane().add(pwfPassword);
-        pwfPassword.setBounds(230, 130, 140, 20);
-
-        btnDlgFTPSiteOK.setText("OK");
-        btnDlgFTPSiteOK.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnDlgFTPSiteOKActionPerformed(evt);
-            }
-        });
-        dlgFTPSite.getContentPane().add(btnDlgFTPSiteOK);
-        btnDlgFTPSiteOK.setBounds(100, 220, 270, 23);
-
-        ckbKeepIDs.setText("keep identifiers");
-        dlgFTPSite.getContentPane().add(ckbKeepIDs);
-        ckbKeepIDs.setBounds(110, 170, 190, 23);
 
         jLabel9.setText("jLabel9");
 
@@ -431,67 +378,6 @@ public class JFrPublish extends javax.swing.JFrame {
         pnlActions.add(ckbExportToLocalFile);
         ckbExportToLocalFile.setBounds(10, 70, 240, 23);
 
-        ckbExportHFToOGSite.setSelected(true);
-        ckbExportHFToOGSite.setText("Export html files to OpenGotha Site");
-        ckbExportHFToOGSite.setToolTipText("Check this checkbox to enable real-time acess to OpenGotha files from any computer, tablet or smartphone.");
-        ckbExportHFToOGSite.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                allParametersCKBActionPerformed(evt);
-            }
-        });
-        pnlActions.add(ckbExportHFToOGSite);
-        ckbExportHFToOGSite.setBounds(10, 150, 280, 23);
-
-        ckbExportToUDSite.setText("Export to User Defined Site");
-        ckbExportToUDSite.setEnabled(false);
-        ckbExportToUDSite.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                allParametersCKBActionPerformed(evt);
-            }
-        });
-        pnlActions.add(ckbExportToUDSite);
-        ckbExportToUDSite.setBounds(10, 360, 210, 23);
-
-        btnTestFTP.setText("Test FTP");
-        btnTestFTP.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnTestFTPActionPerformed(evt);
-            }
-        });
-        pnlActions.add(btnTestFTP);
-        btnTestFTP.setBounds(290, 150, 90, 20);
-
-        javax.swing.GroupLayout pnlQRLayout = new javax.swing.GroupLayout(pnlQR);
-        pnlQR.setLayout(pnlQRLayout);
-        pnlQRLayout.setHorizontalGroup(
-            pnlQRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-        pnlQRLayout.setVerticalGroup(
-            pnlQRLayout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
-            .addGap(0, 100, Short.MAX_VALUE)
-        );
-
-        pnlActions.add(pnlQR);
-        pnlQR.setBounds(90, 180, 100, 100);
-
-        lblQR.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
-        lblQR.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblQR.setText("http://opengotha.info/tournaments/...");
-        pnlActions.add(lblQR);
-        lblQR.setBounds(10, 280, 290, 20);
-
-        ckbExportTFToOGSite.setSelected(true);
-        ckbExportTFToOGSite.setText("Export tournament file to OpenGotha Site");
-        ckbExportTFToOGSite.setToolTipText("Check this checkbox to enable real-time acess to OpenGotha files from any computer, tablet or smartphone.");
-        ckbExportTFToOGSite.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                allParametersCKBActionPerformed(evt);
-            }
-        });
-        pnlActions.add(ckbExportTFToOGSite);
-        ckbExportTFToOGSite.setBounds(10, 110, 280, 23);
-
         pnlPar.add(pnlActions);
         pnlActions.setBounds(20, 20, 400, 430);
 
@@ -689,19 +575,8 @@ public class JFrPublish extends javax.swing.JFrame {
         this.tpnPublish.setSelectedComponent(pnlPub);
 
         this.rdbSortByRank.setVisible(false);
-        int wFTP = JFrGotha.SMALL_FRAME_WIDTH;
-        int hFTP = JFrGotha.SMALL_FRAME_HEIGHT;
-        Dimension dimFTP = Toolkit.getDefaultToolkit().getScreenSize();
-        dlgFTPSite.setBounds((dimFTP.width - wFTP) / 2, (dimFTP.height - hFTP) / 2, wFTP, hFTP);
-        dlgFTPSite.setTitle("FTP Site");
-        dlgFTPSite.setIconImage(Gotha.getIconImage());
         updateAllViews();
     }
-
-    private void btnDlgFTPSiteOKActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDlgFTPSiteOKActionPerformed
-
-        this.dlgFTPSite.dispose();
-    }//GEN-LAST:event_btnDlgFTPSiteOKActionPerformed
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
         dispose();
@@ -827,13 +702,6 @@ public class JFrPublish extends javax.swing.JFrame {
     private void btnHelpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHelpActionPerformed
         Gotha.displayGothaHelp("Publish menu");
     }//GEN-LAST:event_btnHelpActionPerformed
-
-    private void btnTestFTPActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnTestFTPActionPerformed
-        File f = new File(Gotha.exportHTMLDirectory, "testfile.html");
-
-        String strReport = TournamentPublishing.sendByFTPToOGSite(tournament, f);
-        JOptionPane.showMessageDialog(this, strReport);
-    }//GEN-LAST:event_btnTestFTPActionPerformed
 
     private void allSortRDBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_allSortRDBActionPerformed
         TournamentParameterSet tps;
@@ -1026,24 +894,6 @@ public class JFrPublish extends javax.swing.JFrame {
             pubPS.setExportToLocalFile(newValue);
             somethingHasChanged = true;
         }
-        oldValue = pubPS.isExportHFToOGSite();
-        newValue = this.ckbExportHFToOGSite.isSelected();
-        if (newValue != oldValue) {
-            pubPS.setExportHFToOGSite(newValue);
-            somethingHasChanged = true;
-        }
-        oldValue = pubPS.isExportTFToOGSite();
-        newValue = this.ckbExportTFToOGSite.isSelected();
-        if (newValue != oldValue) {
-            pubPS.setExportTFToOGSite(newValue);
-            somethingHasChanged = true;
-        }
-        oldValue = pubPS.isExportToUDSite();
-        newValue = this.ckbExportToUDSite.isSelected();
-        if (newValue != oldValue) {
-            pubPS.setExportToUDSite(newValue);
-            somethingHasChanged = true;
-        }
         oldValue = pubPS.isHtmlAutoScroll();
         newValue = this.ckbHTMLAutoscroll.isSelected();
         if (newValue != oldValue) {
@@ -1229,36 +1079,14 @@ public class JFrPublish extends javax.swing.JFrame {
 
         this.ckbPrint.setSelected(pubPS.isPrint());
         this.ckbExportToLocalFile.setSelected(pubPS.isExportToLocalFile());
-        this.ckbExportHFToOGSite.setSelected(pubPS.isExportHFToOGSite());
-        this.ckbExportTFToOGSite.setSelected(pubPS.isExportTFToOGSite());
-        this.ckbExportToUDSite.setSelected(pubPS.isExportToUDSite());
+
         this.ckbHTMLAutoscroll.setSelected(pubPS.isHtmlAutoScroll());
         
-        // Aceess to opengotha.info
-        boolean bExportOG = pubPS.isExportHFToOGSite();
-        if (bExportOG) {
-            String dirName = new SimpleDateFormat("yyyyMMdd").format(gps.getBeginDate()) + tournament.getShortName() + "/";
-            String strURL = "http://opengotha.info/tournaments/" + dirName;
-            try {
-                QR.createQRJButton(strURL, this.pnlQR);
-            } catch (WriterException ex) {
-                Logger.getLogger(JFrPublish.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            this.pnlQR.setVisible(true);
-            this.lblQR.setVisible(true);
-            this.lblQR.setText(strURL);
-        }
-        else{
-            this.pnlQR.setVisible(false);
-            this.lblQR.setVisible(false);
-        }
-
     }
 
 
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnClose;
-    private javax.swing.JButton btnDlgFTPSiteOK;
     private javax.swing.JButton btnExportPlayersCSV;
     private javax.swing.JButton btnExportRLAGA;
     private javax.swing.JButton btnExportRLEGF;
@@ -1273,18 +1101,13 @@ public class JFrPublish extends javax.swing.JFrame {
     private javax.swing.JButton btnPublishSt;
     private javax.swing.JButton btnPublishTL;
     private javax.swing.JButton btnPublishTS;
-    private javax.swing.JButton btnTestFTP;
     private javax.swing.JCheckBox ckbDisplayClCol;
     private javax.swing.JCheckBox ckbDisplayCoCol;
     private javax.swing.JCheckBox ckbDisplayIndGames;
     private javax.swing.JCheckBox ckbDisplayNumCol;
     private javax.swing.JCheckBox ckbDisplayPlCol;
-    private javax.swing.JCheckBox ckbExportHFToOGSite;
-    private javax.swing.JCheckBox ckbExportTFToOGSite;
     private javax.swing.JCheckBox ckbExportToLocalFile;
-    private javax.swing.JCheckBox ckbExportToUDSite;
     private javax.swing.JCheckBox ckbHTMLAutoscroll;
-    private javax.swing.JCheckBox ckbKeepIDs;
     private javax.swing.JCheckBox ckbPrint;
     private javax.swing.JCheckBox ckbShowByePlayer;
     private javax.swing.JCheckBox ckbShowNotFinallyRegisteredPlayers;
@@ -1293,7 +1116,6 @@ public class JFrPublish extends javax.swing.JFrame {
     private javax.swing.JCheckBox ckbShowPlayerClub;
     private javax.swing.JCheckBox ckbShowPlayerCountry;
     private javax.swing.JCheckBox ckbShowPlayerGrade;
-    private javax.swing.JDialog dlgFTPSite;
     private javax.swing.ButtonGroup grpGameFormat;
     private javax.swing.ButtonGroup grpRemote;
     private javax.swing.ButtonGroup grpSortType;
@@ -1303,12 +1125,8 @@ public class JFrPublish extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel5;
-    private javax.swing.JLabel jLabel6;
-    private javax.swing.JLabel jLabel7;
-    private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
-    private javax.swing.JLabel lblQR;
     private javax.swing.JPanel pnlActions;
     private javax.swing.JPanel pnlContents;
     private javax.swing.JPanel pnlGL;
@@ -1317,10 +1135,8 @@ public class JFrPublish extends javax.swing.JFrame {
     private javax.swing.JPanel pnlPL;
     private javax.swing.JPanel pnlPar;
     private javax.swing.JPanel pnlPub;
-    private javax.swing.JPanel pnlQR;
     private javax.swing.JPanel pnlSt;
     private javax.swing.JPanel pnlTeams;
-    private javax.swing.JPasswordField pwfPassword;
     private javax.swing.JRadioButton rdbGameFormatFull;
     private javax.swing.JRadioButton rdbGameFormatShort;
     private javax.swing.JRadioButton rdbSortByGrade;
@@ -1328,7 +1144,5 @@ public class JFrPublish extends javax.swing.JFrame {
     private javax.swing.JRadioButton rdbSortByRank;
     private javax.swing.JSpinner spnRoundNumber;
     private javax.swing.JTabbedPane tpnPublish;
-    private javax.swing.JTextField txfHost;
-    private javax.swing.JTextField txfLogin;
     // End of variables declaration//GEN-END:variables
 }

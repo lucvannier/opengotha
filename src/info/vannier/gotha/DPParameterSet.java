@@ -23,6 +23,7 @@ public class DPParameterSet implements java.io.Serializable{
     private boolean showNotParticipatingPlayers     = false;
     private boolean showNotFinallyRegisteredPlayers = true;
     
+    private boolean displayNPPlayers = false;
 
     private boolean displayNumCol = true;
     private boolean displayPlCol  = true;
@@ -47,7 +48,9 @@ public class DPParameterSet implements java.io.Serializable{
         this.showNotPairedPlayers = dpps.showNotPairedPlayers;
         this.showNotParticipatingPlayers = dpps.showNotParticipatingPlayers;
         this.showNotFinallyRegisteredPlayers = dpps.showNotFinallyRegisteredPlayers;
-                
+        
+        this.displayNPPlayers = dpps.displayNPPlayers;
+        
         this.displayNumCol = dpps.displayNumCol;
         this.displayPlCol = dpps.displayPlCol;
         this.displayCoCol = dpps.displayCoCol;
@@ -72,6 +75,7 @@ public class DPParameterSet implements java.io.Serializable{
     }
     
     public void commonInit(){
+        this.displayNPPlayers = false;
         this.displayNumCol = true;
         this.displayPlCol = true;
         this.displayIndGamesInMatches = true;
@@ -271,6 +275,20 @@ public class DPParameterSet implements java.io.Serializable{
      */
     public void setShowNotFinallyRegisteredPlayers(boolean showNotFinallyRegisteredPlayers) {
         this.showNotFinallyRegisteredPlayers = showNotFinallyRegisteredPlayers;
+    }
+
+    /**
+     * @return the displayNPPlayers
+     */
+    public boolean isDisplayNPPlayers() {
+        return displayNPPlayers;
+    }
+
+    /**
+     * @param displayNPPlayers the displayNPPlayers to set
+     */
+    public void setDisplayNPPlayers(boolean displayNPPlayers) {
+        this.displayNPPlayers = displayNPPlayers;
     }
 
 }

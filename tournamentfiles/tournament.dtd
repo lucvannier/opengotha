@@ -108,6 +108,8 @@
 <!ATTLIST DPParameterSet showNotParticipatingPlayers CDATA "false">
 <!ATTLIST DPParameterSet showNotFinallyRegisteredPlayers CDATA "false">
 
+<!ATTLIST DPParameterSet displayNPPlayers CDATA "false">
+
 <!ATTLIST DPParameterSet displayNumCol CDATA "true">
 <!ATTLIST DPParameterSet displayPlCol CDATA "true">
 <!ATTLIST DPParameterSet displayCoCol CDATA "true">
@@ -118,9 +120,6 @@
 <!ELEMENT PublishParameterSet (#PCDATA)>
 <!ATTLIST PublishParameterSet print CDATA "true">
 <!ATTLIST PublishParameterSet exportToLocalFile CDATA "true">
-<!ATTLIST PublishParameterSet exportHFToOGSite CDATA "false">
-<!ATTLIST PublishParameterSet exportTFToOGSite CDATA "true">
-<!ATTLIST PublishParameterSet exportToUDSite CDATA "false">
 <!ATTLIST PublishParameterSet htmlAutoScroll CDATA "false">
 
 <!ELEMENT PairingParameterSet (#PCDATA)>

@@ -44,6 +44,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
         btnClose = new javax.swing.JButton();
         btnGenerateGames = new javax.swing.JButton();
         btnMakeTeams = new javax.swing.JButton();
+        jComboBox1 = new javax.swing.JComboBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Build test tournament");
@@ -106,6 +107,10 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
         });
         getContentPane().add(btnMakeTeams);
         btnMakeTeams.setBounds(150, 150, 410, 30);
+
+        jComboBox1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        getContentPane().add(jComboBox1);
+        jComboBox1.setBounds(30, 120, 56, 20);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -555,6 +560,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
     private javax.swing.JButton btnMakeTeams;
     private javax.swing.JComboBox cbxPlayers;
     private javax.swing.JComboBox cbxSystem;
+    private javax.swing.JComboBox jComboBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;

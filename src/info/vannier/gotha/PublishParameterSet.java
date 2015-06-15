@@ -7,9 +7,6 @@ package info.vannier.gotha;
 public class PublishParameterSet implements java.io.Serializable{   
     private boolean print = true;
     private boolean exportToLocalFile   = true;
-    private boolean exportHFToOGSite = false;
-    private boolean exportTFToOGSite = true;    // to OpenGotha Site
-    private boolean exportToUDSite = false;     // to User Defined Site
     private boolean htmlAutoScroll = false;
 
     public PublishParameterSet() {             
@@ -34,9 +31,6 @@ public class PublishParameterSet implements java.io.Serializable{
     public void commonInit(){
         this.print = true;
         this.exportToLocalFile = true;
-        this.exportHFToOGSite = false;
-        this.exportTFToOGSite = false;
-        this.exportToUDSite = false;
     }
 
     /**
@@ -65,47 +59,6 @@ public class PublishParameterSet implements java.io.Serializable{
      */
     public void setExportToLocalFile(boolean exportToLocalFile) {
         this.exportToLocalFile = exportToLocalFile;
-    }
-
-    /**
-     * @return the exportHFToOGSite
-     */
-    public boolean isExportHFToOGSite() {
-        return exportHFToOGSite;
-    }
-
-    /**
-     * @param exportHFToOGSite the exportHFToOGSite to set
-     */
-    public void setExportHFToOGSite(boolean exportToOGSite) {
-        this.exportHFToOGSite = exportToOGSite;
-    }
-    /**
-     * @return the exportTFToOGSite
-     */
-    public boolean isExportTFToOGSite() {
-        return exportTFToOGSite;
-    }
-
-    /**
-     * @param exportTFToOGSite the exportHFToOGSite to set
-     */
-    public void setExportTFToOGSite(boolean exportTFToOGSite) {
-        this.exportTFToOGSite = exportTFToOGSite;
-    }
-
-    /**
-     * @return the exportToUDSite
-     */
-    public boolean isExportToUDSite() {
-        return exportToUDSite;
-    }
-
-    /**
-     * @param exportToUDSite the exportToUDSite to set
-     */
-    public void setExportToUDSite(boolean exportToUDSite) {
-        this.exportToUDSite = exportToUDSite;
     }
 
     /**

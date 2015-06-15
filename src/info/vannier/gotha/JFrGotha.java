@@ -36,9 +36,7 @@ public class JFrGotha extends javax.swing.JFrame {
     private static final int NUM_COL = 0;
     private static final int PL_COL = 1;
     private static final int NAME_COL = 2;
-//    private static final int RANK_COL = 3;
     private static final int GRADE_COL = 3;
-//    private static final int COUNTRY_COL = RANK_COL + 1;
     private static final int COUNTRY_COL = GRADE_COL + 1;
     private static final int CLUB_COL = COUNTRY_COL + 1;
     private static final int NBW_COL = CLUB_COL + 1;
@@ -256,6 +254,7 @@ public class JFrGotha extends javax.swing.JFrame {
         mniImportWallist = new javax.swing.JMenuItem();
         mniImportVBS = new javax.swing.JMenuItem();
         mniImportXML = new javax.swing.JMenuItem();
+        mniExport = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JSeparator();
         mniExit = new javax.swing.JMenuItem();
         jSeparator4 = new javax.swing.JSeparator();
@@ -472,11 +471,6 @@ public class JFrGotha extends javax.swing.JFrame {
         chkClubsGroups.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         chkClubsGroups.setSelected(true);
         chkClubsGroups.setText("Clubs Groups");
-        chkClubsGroups.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                chkClubsGroupsActionPerformed(evt);
-            }
-        });
         pnlObjectsToImport.add(chkClubsGroups);
         chkClubsGroups.setBounds(20, 140, 190, 23);
 
@@ -566,8 +560,9 @@ public class JFrGotha extends javax.swing.JFrame {
         scpControlPanel.setBounds(180, 50, 370, 180);
 
         lblWarningPRE.setForeground(new java.awt.Color(255, 0, 0));
+        lblWarningPRE.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         pnlIntControlPanel.add(lblWarningPRE);
-        lblWarningPRE.setBounds(10, 250, 510, 20);
+        lblWarningPRE.setBounds(150, 260, 510, 20);
 
         pnlControlPanel.add(pnlIntControlPanel);
         pnlIntControlPanel.setBounds(0, 0, 790, 470);
@@ -1057,6 +1052,15 @@ public class JFrGotha extends javax.swing.JFrame {
         mnuImport.add(mniImportXML);
 
         mnuTournament.add(mnuImport);
+
+        mniExport.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        mniExport.setText("Export...");
+        mniExport.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mniExportActionPerformed(evt);
+            }
+        });
+        mnuTournament.add(mniExport);
         mnuTournament.add(jSeparator2);
 
         mniExit.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
@@ -1596,15 +1600,17 @@ public class JFrGotha extends javax.swing.JFrame {
         lblTournamentPicture.setLocation((w - wTP) / 2, 5);
         int wFC = lblFlowChart.getWidth();
         int yFlowCart = lblTournamentPicture.getY() + lblTournamentPicture.getHeight() + 10;
-        lblFlowChart.setLocation((w - wFC) / 2, yFlowCart);
+        lblFlowChart.setLocation((w - 10 - wFC) / 2, yFlowCart);
                 
         this.pnlIntControlPanel.setBounds(0, 0, w - 10, h - 30);
         int wCP = scpControlPanel.getWidth();
-        this.scpControlPanel.setLocation((w - wCP) / 2, 100);
+        this.scpControlPanel.setLocation((w - 10 - wCP) / 2, 100);
+        int wWarning = this.lblWarningPRE.getWidth();
+        this.lblWarningPRE.setLocation((w - 10 - wWarning) / 2, 100 + scpControlPanel.getHeight() + 30);
         
         this.pnlIntTeamsPanel.setBounds(0, 0, w - 10, h - 30);
         int wTeamsP = scpTeamsPanel.getWidth();
-        this.scpTeamsPanel.setLocation((w - wTeamsP) / 2, 10);
+        this.scpTeamsPanel.setLocation((w - 10 - wTeamsP) / 2, 10);
 
         this.pnlIntStandings.setBounds(0, 0, w - 10, h - 30);
         this.scpStandings.setBounds(190, 10, w - 200, h - 100);
@@ -1938,8 +1944,18 @@ public class JFrGotha extends javax.swing.JFrame {
         ArrayList<ScoredPlayer> alOrderedScoredPlayers = new ArrayList<ScoredPlayer>();
         try {
             alOrderedScoredPlayers = tournament.orderedScoredPlayersList(displayedRoundNumber, displayedTPS.getPlacementParameterSet());
-            // Eliminate non-players
-            alOrderedScoredPlayers = eliminateNonImpliedPlayers(alOrderedScoredPlayers);
+
+            DPParameterSet dpps = tps.getDPParameterSet();
+            if (!dpps.isDisplayNPPlayers()){
+                // Eliminate non-players
+                for (Iterator<ScoredPlayer> it = alOrderedScoredPlayers.iterator(); it.hasNext();) {
+                    ScoredPlayer sP = it.next();
+                    if (!tournament.isPlayerImplied(sP)) {
+                        it.remove();
+                    }
+                }
+            }
+
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2214,39 +2230,6 @@ public class JFrGotha extends javax.swing.JFrame {
         String strTime = sdf.format(dh);
         lblTeamUpdateTime.setText("updated at : " + strTime);
     }
-
-    private ArrayList<ScoredPlayer> eliminateNonImpliedPlayers(ArrayList<ScoredPlayer> alSP) {
-        HashMap<Player, Boolean> hmPlayersImplied = new HashMap<Player, Boolean>();
-        try {
-            ArrayList<Game> alG = tournament.gamesList();
-            for (Game g : alG) {
-                Player wP = g.getWhitePlayer();
-                hmPlayersImplied.put(wP, true);
-                Player bP = g.getBlackPlayer();
-                hmPlayersImplied.put(bP, true);
-            }
-            for (int r = 0; r < Gotha.MAX_NUMBER_OF_ROUNDS; r++) {
-                Player byeP = tournament.getByePlayer(r);
-                if (byeP != null) {
-                    hmPlayersImplied.put(byeP, true);
-                }
-            }
-            for (Iterator<ScoredPlayer> it = alSP.iterator(); it.hasNext();) {
-                ScoredPlayer sP = it.next();
-                Boolean b = hmPlayersImplied.get(sP);
-                if (b == null) {
-                    continue;
-                }
-                if (!b) {
-                    it.remove();
-                }
-            }
-
-        } catch (RemoteException ex) {
-            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        return alSP;
-    }
     
     private void updateWelcomePanel() throws RemoteException {        
         
@@ -2330,14 +2313,13 @@ public class JFrGotha extends javax.swing.JFrame {
             }
         }
         if (nbPreliminary == 1) {
-            lblWarningPRE.setText("Warning!" + nbPreliminary
-                    + "player has a Preliminary registering status");
+            lblWarningPRE.setText("Warning ! " + nbPreliminary
+                    + " player has a Preliminary registering status");
         }
         if (nbPreliminary > 1) {
-            lblWarningPRE.setText("Warning!" + nbPreliminary
-                    + "players have a Preliminary registering status");
+            lblWarningPRE.setText("Warning ! " + nbPreliminary
+                    + " players have a Preliminary registering status");
         }
-        
     }
 
     // TODO : UpdateTeamsPanel should use TeamMemberStrings (See TournamentPrinting or ExternalDocument.generateTeamsListHTMLFile 
@@ -3057,9 +3039,10 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         }
     }//GEN-LAST:event_mniPublishActionPerformed
 
-    private void chkClubsGroupsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_chkClubsGroupsActionPerformed
-        // TODO add your handling code here:
-    }//GEN-LAST:event_chkClubsGroupsActionPerformed
+    private void mniExportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniExportActionPerformed
+        String strMessage = "Html exports are available from the Publish menu";
+        JOptionPane.showMessageDialog(this, strMessage, "Message", JOptionPane.INFORMATION_MESSAGE);
+    }//GEN-LAST:event_mniExportActionPerformed
 
 
     private File chooseAFile(File path, String extension) {
@@ -3414,6 +3397,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private javax.swing.JMenuItem mniDiscardRounds;
     private javax.swing.JMenuItem mniExit;
     private javax.swing.JMenuItem mniExperimentalTools;
+    private javax.swing.JMenuItem mniExport;
     private javax.swing.JMenuItem mniGamesOptions;
     private javax.swing.JMenuItem mniHelpAbout;
     private javax.swing.JMenuItem mniImportH9;

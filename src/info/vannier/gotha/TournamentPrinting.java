@@ -16,6 +16,7 @@ import java.rmi.RemoteException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 import javax.swing.JOptionPane;
@@ -479,6 +480,16 @@ public class TournamentPrinting implements Printable {
  
         try {
             this.alOrderedScoredPlayers = tournament.orderedScoredPlayersList(roundNumber, pps);
+            if (!dpps.isDisplayNPPlayers()){
+                // Eliminate non-players
+                for (Iterator<ScoredPlayer> it = alOrderedScoredPlayers.iterator(); it.hasNext();) {
+                    ScoredPlayer sP = it.next();
+                    if (!tournament.isPlayerImplied(sP)) {
+                        it.remove();
+                    }
+                }
+            }
+
         } catch (RemoteException ex) {
             Logger.getLogger(TournamentPrinting.class.getName()).log(Level.SEVERE, null, ex);
         }

@@ -34,9 +34,9 @@ import javax.swing.JProgressBar;
 public class Gotha {
 
     static Locale locale = Locale.getDefault();
-    static final long GOTHA_VERSION = 340L;
-    static final long GOTHA_MINOR_VERSION = 4L;
-    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2015, Calendar.JANUARY, 31)).getTime();
+    static final long GOTHA_VERSION = 341L;
+    static final long GOTHA_MINOR_VERSION = 0L;
+    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2015, Calendar.JUNE, 15)).getTime();
     // Data version for serialization
     static final long GOTHA_DATA_VERSION = 201L;
     
@@ -62,8 +62,7 @@ public class Gotha {
     static String clientName = "";  // relevant in Client mode
     static String strPreferences = "info/vannier/opengotha";
     static File runningDirectory;
-    // obsolete in V3.35.01
-    //    static File tournamentDirectory; // obsolete in V3.35.01
+
     static File exportDirectory;
     static File exportHTMLDirectory;
 //    static File exportXMLDirectory;
@@ -229,10 +228,8 @@ public class Gotha {
             char c = s.charAt(iC);
            if (c > 127) 
                s = s.replace(c, '?');
-        }
-        
+        }        
         return s;
-
     }
 
     /**
@@ -421,7 +418,6 @@ public class Gotha {
      * <br> loopback addresses
      * <br> stops elimination process when only one address remains.
      * <br> if several addresses remains, returns the first one
-     * @param alIPAd
      * @return
      */
     public static InetAddress getBestIPAd() {
@@ -464,7 +460,7 @@ public class Gotha {
     }
 
     public static void displayGothaHelp(String topic) {
-        HelpSet hs = null;
+        HelpSet hs;
         // What is the help language ?
         
         String strHelpDirectory = "english";
@@ -492,8 +488,7 @@ public class Gotha {
 
         String strK = "ratingListsDownload";
         String strRLD = gothaPrefs.get(strK, "true");
-        if (strRLD.equals("true")) return true;
-        else return false;
+        return strRLD.equals("true");
     }
 
     public static boolean isPhotosDownloadEnabled(){
@@ -502,8 +497,7 @@ public class Gotha {
 
         String strK = "photosDownload";
         String strPD = gothaPrefs.get(strK, "true");
-        if (strPD.equals("true")) return true;
-        else return false;
+        return strPD.equals("true");
     }
     
     public static boolean isJournalingReportEnabled(){
@@ -512,8 +506,7 @@ public class Gotha {
 
         String strK = "journalingReport";
         String strIA = gothaPrefs.get(strK, "true");
-        if (strIA.equals("true")) return true;
-        else return false;
+        return strIA.equals("true");
     }
     
     public static void setRatingListsDownloadEnabled(boolean enabled){
@@ -546,6 +539,7 @@ class GothaImageLoader extends Thread{
         this.strURL = strURL;
         this.lbl = lbl;
     }
+    @Override
     public void run(){
         URL url = null;
         try {              

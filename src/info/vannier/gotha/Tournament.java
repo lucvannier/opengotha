@@ -1422,7 +1422,7 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
         int minWeight = 1000 * (Gotha.MAX_NUMBER_OF_ROUNDS - 1) + 38 + 1; // Nobody can have such a weight neither more
 
         for (Player p : alPlayers) {
-            int weightForBye = p.getRank();
+            int weightForBye = p.getRank() + this.mms2(p, roundNumber);
             for (int r = 0; r < roundNumber; r++) {
                 if (byePlayers[r] == null) {
                     continue;
@@ -1431,7 +1431,7 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
                     weightForBye += 1000;
                 }
             }
-            if (weightForBye < minWeight) {
+            if (weightForBye <= minWeight) {
                 minWeight = weightForBye;
                 bestPlayerForBye = p;
             }

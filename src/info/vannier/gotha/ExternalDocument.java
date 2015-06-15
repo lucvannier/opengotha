@@ -958,6 +958,9 @@ public class ExternalDocument {
             String strShowNotFinallyRegisteredPlayers = extractNodeValue(nnmDPPS, "showNotFinallyRegisteredPlayers", "true");
             dpps.setShowNotFinallyRegisteredPlayers(Boolean.valueOf(strShowNotFinallyRegisteredPlayers).booleanValue());
 
+            String strDisplayNPPlayers = extractNodeValue(nnmDPPS, "displayNPPlayers", "false");
+            dpps.setDisplayNPPlayers(Boolean.valueOf(strDisplayNPPlayers).booleanValue());
+            
             String strDisplayNumCol = extractNodeValue(nnmDPPS, "displayNumCol", "true");
             dpps.setDisplayNumCol(Boolean.valueOf(strDisplayNumCol).booleanValue());
             String strDisplayPlCol = extractNodeValue(nnmDPPS, "displayPlCol", "true");
@@ -983,12 +986,6 @@ public class ExternalDocument {
             pubPS.setPrint(Boolean.valueOf(strPrint).booleanValue());
             String strExportToLocalFile = extractNodeValue(nnmPubPS, "exportToLocalFile", "true");
             pubPS.setExportToLocalFile(Boolean.valueOf(strExportToLocalFile).booleanValue());
-            String strExportHFToOGSite = extractNodeValue(nnmPubPS, "exportHFToOGSite", "false");
-            pubPS.setExportHFToOGSite(Boolean.valueOf(strExportHFToOGSite).booleanValue());
-            String strExportTFToOGSite = extractNodeValue(nnmPubPS, "exportTFToOGSite", "true");
-            pubPS.setExportTFToOGSite(Boolean.valueOf(strExportTFToOGSite).booleanValue());
-            String strExportToUDSite = extractNodeValue(nnmPubPS, "exportToUDSite", "false");
-            pubPS.setExportToUDSite(Boolean.valueOf(strExportToUDSite).booleanValue());  
             String strHtmlAutoScroll = extractNodeValue(nnmPubPS, "htmlAutoScroll", "false");
             pubPS.setHtmlAutoScroll(Boolean.valueOf(strHtmlAutoScroll).booleanValue());  
         }
@@ -2079,7 +2076,7 @@ public class ExternalDocument {
     }    
 
     
-        public static File generateStandingsHTMLFile(TournamentInterface tournament, int round){
+    public static File generateStandingsHTMLFile(TournamentInterface tournament, int round){
         String shortName = "TournamentShortName";
         try {
             shortName = tournament.getShortName();
@@ -2569,11 +2566,15 @@ public class ExternalDocument {
 //        int roundNumber = gps.getNumberOfRounds() - 1;
         try {
             alOrderedScoredPlayers = tournament.orderedScoredPlayersList(roundNumber, pps);
-            // Eliminate non-players
-            for (Iterator<ScoredPlayer> it = alOrderedScoredPlayers.iterator(); it.hasNext();) {
-                ScoredPlayer sP = it.next();
-                if (!tournament.isPlayerImplied(sP)) {
-                    it.remove();
+            
+            DPParameterSet dpps = tps.getDPParameterSet();
+            if (!dpps.isDisplayNPPlayers()){
+                // Eliminate non-players
+                for (Iterator<ScoredPlayer> it = alOrderedScoredPlayers.iterator(); it.hasNext();) {
+                    ScoredPlayer sP = it.next();
+                    if (!tournament.isPlayerImplied(sP)) {
+                        it.remove();
+                    }
                 }
             }
         } catch (RemoteException ex) {
@@ -2694,7 +2695,7 @@ public class ExternalDocument {
         try {
             // Headers       
            
-        output.write("<html>");
+            output.write("<html>");
             output.write("<head>");
             output.write("<meta http-equiv=\"Content-Type\" content=\"text/html; charset=" + DEFAULT_CHARSET + "\">");
             output.write("<title>" + gps.getName() + "</title>");
@@ -3515,6 +3516,8 @@ public class ExternalDocument {
         emDPParameterSet.setAttribute("showNotPairedPlayers", Boolean.valueOf(dpps.isShowNotPairedPlayers()).toString());
         emDPParameterSet.setAttribute("showNotParticipatingPlayers", Boolean.valueOf(dpps.isShowNotParticipatingPlayers()).toString());
         emDPParameterSet.setAttribute("showNotFinallyRegisteredPlayers", Boolean.valueOf(dpps.isShowNotFinallyRegisteredPlayers()).toString());
+
+        emDPParameterSet.setAttribute("displayNPPlayers", Boolean.valueOf(dpps.isDisplayNPPlayers()).toString());
         
         emDPParameterSet.setAttribute("displayNumCol", Boolean.valueOf(dpps.isDisplayNumCol()).toString());
         emDPParameterSet.setAttribute("displayPlCol", Boolean.valueOf(dpps.isDisplayPlCol()).toString());
@@ -3530,9 +3533,6 @@ public class ExternalDocument {
         
         emPublishParameterSet.setAttribute("print", Boolean.valueOf(pubPS.isPrint()).toString());
         emPublishParameterSet.setAttribute("exportToLocalFile", Boolean.valueOf(pubPS.isExportToLocalFile()).toString());
-        emPublishParameterSet.setAttribute("exportHFToOGSite", Boolean.valueOf(pubPS.isExportHFToOGSite()).toString());
-        emPublishParameterSet.setAttribute("exportTFToOGSite", Boolean.valueOf(pubPS.isExportTFToOGSite()).toString());
-        emPublishParameterSet.setAttribute("exportToUDSite", Boolean.valueOf(pubPS.isExportToUDSite()).toString());
         emPublishParameterSet.setAttribute("htmlAutoScroll", Boolean.valueOf(pubPS.isHtmlAutoScroll()).toString());
         
         emTournamentParameterSet.appendChild(emPublishParameterSet);

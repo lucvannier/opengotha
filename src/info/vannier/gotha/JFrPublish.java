@@ -85,13 +85,14 @@ public class JFrPublish extends javax.swing.JFrame {
         ckbShowNotParticipatingPlayers = new javax.swing.JCheckBox();
         ckbShowNotFinallyRegisteredPlayers = new javax.swing.JCheckBox();
         pnlSt = new javax.swing.JPanel();
-        rdbGameFormatFull = new javax.swing.JRadioButton();
-        rdbGameFormatShort = new javax.swing.JRadioButton();
+        ckbDisplayNPPlayers = new javax.swing.JCheckBox();
         ckbDisplayNumCol = new javax.swing.JCheckBox();
         ckbDisplayPlCol = new javax.swing.JCheckBox();
         ckbDisplayCoCol = new javax.swing.JCheckBox();
         ckbDisplayClCol = new javax.swing.JCheckBox();
         jLabel5 = new javax.swing.JLabel();
+        rdbGameFormatFull = new javax.swing.JRadioButton();
+        rdbGameFormatShort = new javax.swing.JRadioButton();
         pnlML = new javax.swing.JPanel();
         ckbDisplayIndGames = new javax.swing.JCheckBox();
         pnlPar = new javax.swing.JPanel();
@@ -269,25 +270,14 @@ public class JFrPublish extends javax.swing.JFrame {
         pnlSt.setBorder(javax.swing.BorderFactory.createTitledBorder("Standings"));
         pnlSt.setLayout(null);
 
-        grpGameFormat.add(rdbGameFormatFull);
-        rdbGameFormatFull.setText("Full (123+/w4)");
-        rdbGameFormatFull.addActionListener(new java.awt.event.ActionListener() {
+        ckbDisplayNPPlayers.setText("display non-playing players");
+        ckbDisplayNPPlayers.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                allGameFormatRDBActionPerformed(evt);
+                allContentsCKBActionPerformed(evt);
             }
         });
-        pnlSt.add(rdbGameFormatFull);
-        rdbGameFormatFull.setBounds(450, 30, 180, 23);
-
-        grpGameFormat.add(rdbGameFormatShort);
-        rdbGameFormatShort.setText("Short (123+)");
-        rdbGameFormatShort.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                allGameFormatRDBActionPerformed(evt);
-            }
-        });
-        pnlSt.add(rdbGameFormatShort);
-        rdbGameFormatShort.setBounds(450, 60, 180, 20);
+        pnlSt.add(ckbDisplayNPPlayers);
+        ckbDisplayNPPlayers.setBounds(10, 60, 180, 23);
 
         ckbDisplayNumCol.setSelected(true);
         ckbDisplayNumCol.setText("display Num column");
@@ -297,7 +287,7 @@ public class JFrPublish extends javax.swing.JFrame {
             }
         });
         pnlSt.add(ckbDisplayNumCol);
-        ckbDisplayNumCol.setBounds(110, 30, 180, 23);
+        ckbDisplayNumCol.setBounds(210, 30, 180, 23);
 
         ckbDisplayPlCol.setSelected(true);
         ckbDisplayPlCol.setText("display Pl column");
@@ -307,7 +297,7 @@ public class JFrPublish extends javax.swing.JFrame {
             }
         });
         pnlSt.add(ckbDisplayPlCol);
-        ckbDisplayPlCol.setBounds(110, 50, 180, 23);
+        ckbDisplayPlCol.setBounds(210, 50, 180, 23);
 
         ckbDisplayCoCol.setText("display Country column");
         ckbDisplayCoCol.addActionListener(new java.awt.event.ActionListener() {
@@ -316,7 +306,7 @@ public class JFrPublish extends javax.swing.JFrame {
             }
         });
         pnlSt.add(ckbDisplayCoCol);
-        ckbDisplayCoCol.setBounds(110, 70, 180, 20);
+        ckbDisplayCoCol.setBounds(210, 70, 180, 20);
 
         ckbDisplayClCol.setText("display Club column");
         ckbDisplayClCol.addActionListener(new java.awt.event.ActionListener() {
@@ -325,11 +315,31 @@ public class JFrPublish extends javax.swing.JFrame {
             }
         });
         pnlSt.add(ckbDisplayClCol);
-        ckbDisplayClCol.setBounds(110, 90, 180, 23);
+        ckbDisplayClCol.setBounds(210, 90, 180, 23);
 
         jLabel5.setText("Game format");
         pnlSt.add(jLabel5);
-        jLabel5.setBounds(340, 40, 110, 20);
+        jLabel5.setBounds(400, 50, 110, 20);
+
+        grpGameFormat.add(rdbGameFormatFull);
+        rdbGameFormatFull.setText("Full (123+/w4)");
+        rdbGameFormatFull.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                allGameFormatRDBActionPerformed(evt);
+            }
+        });
+        pnlSt.add(rdbGameFormatFull);
+        rdbGameFormatFull.setBounds(510, 40, 150, 23);
+
+        grpGameFormat.add(rdbGameFormatShort);
+        rdbGameFormatShort.setText("Short (123+)");
+        rdbGameFormatShort.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                allGameFormatRDBActionPerformed(evt);
+            }
+        });
+        pnlSt.add(rdbGameFormatShort);
+        rdbGameFormatShort.setBounds(510, 70, 150, 20);
 
         pnlContents.add(pnlSt);
         pnlSt.setBounds(10, 230, 670, 150);
@@ -825,7 +835,14 @@ public class JFrPublish extends javax.swing.JFrame {
             dpps.setShowNotFinallyRegisteredPlayers(newValue);
             somethingHasChanged = true;
         }
-                
+    
+        oldValue = dpps.isDisplayNPPlayers();
+        newValue = this.ckbDisplayNPPlayers.isSelected();
+        if (newValue != oldValue) {
+            dpps.setDisplayNPPlayers(newValue);
+            somethingHasChanged = true;
+        }    
+        
         oldValue = dpps.isDisplayNumCol();
         newValue = this.ckbDisplayNumCol.isSelected();
         if (newValue != oldValue) {
@@ -1061,6 +1078,8 @@ public class JFrPublish extends javax.swing.JFrame {
         this.ckbShowPlayerCountry.setSelected(dpps.isShowPlayerCountry());
         this.ckbShowPlayerClub.setSelected(dpps.isShowPlayerClub());
 
+        this.ckbDisplayNPPlayers.setSelected(dpps.isDisplayNPPlayers());
+        
         this.ckbDisplayNumCol.setSelected(dpps.isDisplayNumCol());
         this.ckbDisplayPlCol.setSelected(dpps.isDisplayPlCol());
         this.ckbDisplayCoCol.setSelected(dpps.isDisplayCoCol());
@@ -1104,6 +1123,7 @@ public class JFrPublish extends javax.swing.JFrame {
     private javax.swing.JCheckBox ckbDisplayClCol;
     private javax.swing.JCheckBox ckbDisplayCoCol;
     private javax.swing.JCheckBox ckbDisplayIndGames;
+    private javax.swing.JCheckBox ckbDisplayNPPlayers;
     private javax.swing.JCheckBox ckbDisplayNumCol;
     private javax.swing.JCheckBox ckbDisplayPlCol;
     private javax.swing.JCheckBox ckbExportToLocalFile;

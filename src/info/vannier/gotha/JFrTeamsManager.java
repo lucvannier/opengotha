@@ -732,7 +732,7 @@ public class JFrTeamsManager extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnHelpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHelpActionPerformed
-        Gotha.displayGothaHelp("Publish menu");
+        Gotha.displayGothaHelp("Teams Manager frame");
 }//GEN-LAST:event_btnHelpActionPerformed
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed

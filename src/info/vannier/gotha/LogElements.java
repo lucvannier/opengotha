@@ -1,4 +1,3 @@
-
 package info.vannier.gotha;
 
 import java.io.BufferedInputStream;

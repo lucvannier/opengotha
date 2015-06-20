@@ -1,4 +1,4 @@
-#Echelle au 15/06/2015 06:46:29
+#Echelle au 20/06/2015 06:45:30
 AAIJ René                               243 e ------- xxxx NL
 AAKERBLOM Charlie                       397 e ------- xxxx SE
 ABADIA Mickaël                        -1400 - 9728205 94MJ FR
@@ -1914,7 +1914,7 @@ CHAIX Thomas                          -9999 - 0450200 81Al FR
 CHALABI Hugo                          -9999 L 1500194 44NE FR
 CHALANDON Benoîte                     -9999 - 9119002 69TJ FR
 CHALLARD Jérôme                        -800 - 9727511 08Ch FR
-CHALLAT Alexandre                      -100 - 1200321 17Ro FR
+CHALLAT Alexandre                       -50 L 1200321 17Ro FR
 CHALLET Johan                         -1500 - 0627801 78Mg FR
 CHALOIN Jean-Marie                    -1100 - 9379303 06So FR
 CHAMALET Samuel                           0 - 0900101 92An FR
@@ -2261,6 +2261,7 @@ COHEN Julien                          -1300 - 0900043 44Na FR
 COHEN Laurence                        -1300 - 9925011 75Pa FR
 COHEN Marcel                           -500 - 0120004 92An FR
 COINAUD Kaloyan                       -1500 - 0621013 92An FR
+COISPEAU Quentin                      -9999 L 1500305 29Co FR
 COL Sylvain                            -600 - 1000483 34Mo FR
 COLAS Brigitte                        -1900 - 0637506 37To FR
 COLAS Sylvain                         -1500 - 9337003 44Na FR
@@ -3184,7 +3185,7 @@ DOUCHY Malween                        -9999 - 9913011 38Gr FR
 DOUGUINE Timour                         367 e ------- xxxx RU
 DOUIEK Mourad                         -2000 - 0474727 84VJ FR
 DOULIEZ Alain                         -9999 - 9752006 31To FR
-DOUMERC Jérôme                        -9999 C 1400025 31Pi FR
+DOUMERC Jérôme                        -9999 L 1400025 31Pi FR
 DOURON Guillaume                         46 L 1000011 34Mo FR
 DOUSSOT Patrice                        -437 L 9183003 21Di FR
 DOUTRE Gabriel                         -700 - 0700487 13Ma FR
@@ -6095,7 +6096,7 @@ LE_MOAL J                             -9999 - 9133021 29Br FR
 LE_MOIGNO Ronan                       -1500 - 0511201 74Cl FR
 LE_MORTELLEC Jean-Michel              -1600 - 0750000 95Fr FR
 LE_MORVAN Eric                         -158 L 0411000 60UT FR
-LE_MORVAN Hervé                       -1300 - 0411002 54Na FR
+LE_MORVAN Hervé                       -1300 - 0411002 44MN FR
 LE_MOUAL Maud                         -2000 - 0521906 94Ca FR
 LE_MOUAL Maxime                        -700 - 9821907 94Ca FR
 LE_MOUAL Michel                       -1500 - 9921900 94Ca FR
@@ -9279,6 +9280,7 @@ SAINT-PAUL Florent                    -1202 L 1300253 69Ly FR
 SAINT-PAUL Guilhem                    -9999 - 9754001 40Mo FR
 SAINT-PAUL Noël                        -132 L 9060200 40Mo FR
 SAINT-PIERRE Jean                      -400 - 9070100 34Mo FR
+SAINTMACARY Yan                       -9999 - 1500306 64Ba FR
 SAITHANU Worawut                      -9999 - 1000417 31To FR
 SAJFULLIN Ruslan                        431 e ------- xxxx RU
 Sakai Fujikazu                          163 e ------- xxxx JP
@@ -10981,7 +10983,7 @@ ZHANG Yi                                481 e ------- xxxx XX
 ZHANG Yizhou                            400 - 0224800 78Ma FR
 ZHANG Yuanbo                            383 e ------- xxxx UK
 Zhao Baolong                            684 e ------- xxxx CN
-ZHAO Pei                                500 - 0621201 75Al FR
+ZHAO Pei                                536 L 0621201 92Bo FR
 ZHAO Stéphane                          -200 - 0025012 75Pa FR
 ZHAO Xudong                            -100 - 0078001 00L2 FR
 ZHENG Peng                              -45 L 1500039 31To FR

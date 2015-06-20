@@ -509,9 +509,9 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlWelcome.setLayout(null);
 
         lblTournamentPicture.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
-        lblTournamentPicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info/vannier/gotha/smartphone565X312.png"))); // NOI18N
+        lblTournamentPicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info/vannier/gotha/claira242X311.png"))); // NOI18N
         pnlWelcome.add(lblTournamentPicture);
-        lblTournamentPicture.setBounds(77, 5, 615, 312);
+        lblTournamentPicture.setBounds(274, 5, 221, 312);
 
         lblFlowChart.setBackground(new java.awt.Color(255, 255, 255));
         lblFlowChart.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);

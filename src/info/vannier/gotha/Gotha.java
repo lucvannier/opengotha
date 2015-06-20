@@ -2,7 +2,6 @@
  * Gotha.java
  * 
  */
-
 package info.vannier.gotha;
 
 import java.awt.Image;
@@ -34,9 +33,9 @@ import javax.swing.JProgressBar;
 public class Gotha {
 
     static Locale locale = Locale.getDefault();
-    static final long GOTHA_VERSION = 341L;
+    static final long GOTHA_VERSION = 342L;
     static final long GOTHA_MINOR_VERSION = 0L;
-    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2015, Calendar.JUNE, 15)).getTime();
+    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2015, Calendar.JUNE, 20)).getTime();
     // Data version for serialization
     static final long GOTHA_DATA_VERSION = 201L;
     

@@ -70,4 +70,10 @@
     nbproject/build-impl.xml file. 
 
     -->
+        
+    <target name="-post-compile">
+        <echo message="Running rmic ..."/>
+        <rmic base="${build.classes.dir}" includes="**/Tournament.class" />
+    </target>
+
 </project>

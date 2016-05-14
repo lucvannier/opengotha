@@ -354,6 +354,10 @@ public class Player implements java.io.Serializable{
         int rank = -99;
         try{
             int numPart = new Integer(strDraft.substring(0, strDraft.length() -1)).intValue();
+            if (lastChar >= 0x30 && lastChar <= 0x39){
+                lastChar ='k';
+                numPart = new Integer(strDraft.substring(0, strDraft.length())).intValue();
+            }
             if (lastChar == 'k' || lastChar == 'K') rank = - numPart;
             else if(lastChar == 'd' || lastChar == 'D') rank = numPart - 1;
             else if(lastChar == 'p' || lastChar == 'P'){
@@ -370,7 +374,6 @@ public class Player implements java.io.Serializable{
             rank = -99;
         }
         return rank;
-        
     }
     
     /**

@@ -1,3 +1,9 @@
+OpenGothaV3.43
+**************
+14/05/2016
+        in Players Manager, a grade without D, K, P is considered as k
+Bug Fix Server mode was bugged. Fixed
+
 OpenGothaV3.42
 **************
 20/06/2015

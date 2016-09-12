@@ -246,7 +246,6 @@ public class JFrPlayersManager extends javax.swing.JFrame {
                 this.btnUpdateRatingList.setText("Update AGA rating list from ...");
                 this.btnSearchId.setVisible(true);
                 this.txfSearchId.setVisible(true);
-
                 break;
             default :
                 this.btnUpdateRatingList.setText("Update rating list");
@@ -1185,15 +1184,15 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_cbxRatingListItemStateChanged
 
+    // See also JFrRatings.useRatingList, which should stay a clone
     private void useRatingList(int typeRatingList) {
         switch (typeRatingList) {
             case RatingList.TYPE_EGF:
                 lblRatingList.setText("Searching for EGF rating list");
-                ratingList = new RatingList(RatingList.TYPE_EGF, new File(Gotha.runningDirectory, "ratinglists/egf_db.txt"));
+                this.ratingList = new RatingList(RatingList.TYPE_EGF, new File(Gotha.runningDirectory, "ratinglists/egf_db.txt"));
                 break;
             case RatingList.TYPE_FFG:
                 lblRatingList.setText("Searching for FFG rating list");
-//                ratingList = new RatingList(RatingList.TYPE_FFG, new File(Gotha.runningDirectory, "ratinglists/ech_ffg_new.txt"));
                 ratingList = new RatingList(RatingList.TYPE_FFG, new File(Gotha.runningDirectory, "ratinglists/ech_ffg_V3.txt"));
                 break;
             case RatingList.TYPE_AGA:
@@ -1233,7 +1232,6 @@ public class JFrPlayersManager extends javax.swing.JFrame {
                     ratingList.getStrPublicationDate() +
                     " " + nbPlayersInRL + " players");
         }
-
     }
 
     private void btnResetActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnResetActionPerformed
@@ -1447,7 +1445,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         
 
     }//GEN-LAST:event_processRatingListChangeEvent
-
+    // See also btnUpdateRatingListActionPerformed, which should stay a clone
     private void btnUpdateRatingListActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateRatingListActionPerformed
         int rlType = RatingList.TYPE_UNDEFINED;
         if (!Gotha.isRatingListsDownloadEnabled()){
@@ -1472,9 +1470,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
                 strPrompt = "Download EGF Rating List from :";
                 break;
             case RatingList.TYPE_FFG:
-//                strDefaultURL = "http://ffg.jeudego.org/echelle/echtxt/ech_ffg_new.txt";
                 strDefaultURL = "http://ffg.jeudego.org/echelle/echtxt/ech_ffg_V3.txt";
-//                fDefaultFile = new File(Gotha.runningDirectory, "ratinglists/ech_ffg_new.txt");
                 fDefaultFile = new File(Gotha.runningDirectory, "ratinglists/ech_ffg_V3.txt");
                 strPrompt = "Download FFG Rating List from :";
                 break;
@@ -1499,7 +1495,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         } catch (IOException ex) {
             JOptionPane.showMessageDialog(this, "Unreachable file\nRating list could not be loaded", "Message", JOptionPane.ERROR_MESSAGE);
         }
-        useRatingList(rlType);        
+        this.useRatingList(rlType);        
 
     }//GEN-LAST:event_btnUpdateRatingListActionPerformed
 

@@ -1,3 +1,9 @@
+OpenGothaV3.43.01
+*****************
+12/09/2016
+New Add a save menu item
+New Update ratings was available for EGF ratings. It is now also available for FFG and AGA     
+
 OpenGothaV3.43
 **************
 14/05/2016

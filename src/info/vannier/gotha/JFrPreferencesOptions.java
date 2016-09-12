@@ -12,6 +12,7 @@ import java.util.logging.Level;
 import java.util.logging.Logger;
 import java.util.prefs.BackingStoreException;
 import java.util.prefs.Preferences;
+import javax.swing.table.DefaultTableModel;
 
 /**
  *
@@ -50,40 +51,68 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
     private void initComponents() {
 
         grpHelpLanguage = new javax.swing.ButtonGroup();
-        pnlPref = new javax.swing.JPanel();
-        btnClose = new javax.swing.JButton();
-        btnClear = new javax.swing.JButton();
+        jScrollPane2 = new javax.swing.JScrollPane();
+        jTable1 = new javax.swing.JTable();
+        pnlAllPreferences = new javax.swing.JPanel();
+        scpAllPreferences = new javax.swing.JScrollPane();
+        tblAllPreferences = new javax.swing.JTable();
+        btnClearAllPreferences = new javax.swing.JButton();
         pnlInternetAccess = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
         ckbJournaling = new javax.swing.JCheckBox();
         ckbRatingLists = new javax.swing.JCheckBox();
         ckbPhotos = new javax.swing.JCheckBox();
         btnHelp = new javax.swing.JButton();
+        btnClose = new javax.swing.JButton();
+
+        jTable1.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null},
+                {null, null, null, null}
+            },
+            new String [] {
+                "Title 1", "Title 2", "Title 3", "Title 4"
+            }
+        ));
+        jScrollPane2.setViewportView(jTable1);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Preferences");
         setResizable(false);
         getContentPane().setLayout(null);
 
-        pnlPref.setLayout(null);
+        pnlAllPreferences.setBorder(javax.swing.BorderFactory.createTitledBorder("All OpenGotha Preferences"));
+        pnlAllPreferences.setLayout(null);
 
-        btnClose.setText("Close");
-        btnClose.addActionListener(new java.awt.event.ActionListener() {
+        tblAllPreferences.setModel(new javax.swing.table.DefaultTableModel(
+            new Object [][] {
+                {null, null},
+                {null, null},
+                {null, null},
+                {null, null}
+            },
+            new String [] {
+                "key", "value"
+            }
+        ));
+        scpAllPreferences.setViewportView(tblAllPreferences);
+
+        pnlAllPreferences.add(scpAllPreferences);
+        scpAllPreferences.setBounds(10, 20, 750, 190);
+
+        btnClearAllPreferences.setText("Clear all OpenGotha Preferences");
+        btnClearAllPreferences.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnCloseActionPerformed(evt);
+                btnClearAllPreferencesActionPerformed(evt);
             }
         });
-        pnlPref.add(btnClose);
-        btnClose.setBounds(150, 280, 250, 30);
+        pnlAllPreferences.add(btnClearAllPreferences);
+        btnClearAllPreferences.setBounds(10, 230, 750, 23);
 
-        btnClear.setText("Clear OpenGotha Preferences");
-        btnClear.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnClearActionPerformed(evt);
-            }
-        });
-        pnlPref.add(btnClear);
-        btnClear.setBounds(20, 20, 380, 30);
+        getContentPane().add(pnlAllPreferences);
+        pnlAllPreferences.setBounds(10, 20, 770, 260);
 
         pnlInternetAccess.setBorder(javax.swing.BorderFactory.createTitledBorder("Internet access"));
         pnlInternetAccess.setLayout(null);
@@ -122,8 +151,8 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         pnlInternetAccess.add(ckbPhotos);
         ckbPhotos.setBounds(30, 80, 170, 23);
 
-        pnlPref.add(pnlInternetAccess);
-        pnlInternetAccess.setBounds(10, 100, 390, 150);
+        getContentPane().add(pnlInternetAccess);
+        pnlInternetAccess.setBounds(10, 310, 770, 150);
 
         btnHelp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info/vannier/gotha/gothalogo16.jpg"))); // NOI18N
         btnHelp.setText("help");
@@ -132,11 +161,17 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
                 btnHelpActionPerformed(evt);
             }
         });
-        pnlPref.add(btnHelp);
-        btnHelp.setBounds(20, 280, 120, 30);
+        getContentPane().add(btnHelp);
+        btnHelp.setBounds(10, 470, 120, 30);
 
-        getContentPane().add(pnlPref);
-        pnlPref.setBounds(0, 0, 410, 320);
+        btnClose.setText("Close");
+        btnClose.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                btnCloseActionPerformed(evt);
+            }
+        });
+        getContentPane().add(btnClose);
+        btnClose.setBounds(150, 470, 630, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -145,7 +180,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         dispose();
 }//GEN-LAST:event_btnCloseActionPerformed
 
-    private void btnClearActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearActionPerformed
+    private void btnClearAllPreferencesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearAllPreferencesActionPerformed
         Preferences prefsRoot = Preferences.userRoot();
         Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
         try {
@@ -157,8 +192,8 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         Gotha.setPhotosDownloadEnabled(true);
         Gotha.setJournalingReportEnabled(true);
 
-        updatePnlPref();
-    }//GEN-LAST:event_btnClearActionPerformed
+        updateAllViews();
+    }//GEN-LAST:event_btnClearAllPreferencesActionPerformed
 
     private void btnHelpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHelpActionPerformed
         Gotha.displayGothaHelp("Preferences frame");
@@ -175,7 +210,10 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
     private void ckbRatingListsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckbRatingListsActionPerformed
         Gotha.setRatingListsDownloadEnabled(this.ckbRatingLists.isSelected());
     }//GEN-LAST:event_ckbRatingListsActionPerformed
-
+    
+    private void displayAllPreferences(){
+    }
+    
     private void customInitComponents(){
         int w = JFrGotha.MEDIUM_FRAME_WIDTH;
         int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
@@ -183,21 +221,48 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         setBounds((dim.width - w)/2, (dim.height -h)/2, w, h);
 
         setIconImage(Gotha.getIconImage());
-        this.updatePnlPref();
+        this.updateAllViews();
     }
     private void updateAllViews(){
         updatePnlPref();
+        updatePnlInternetAccess();
     }
+    
     private void updatePnlPref(){
+        Preferences prefsRoot = Preferences.userRoot();
+        Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
+        String[] strPrefs = null;
+        try {
+            strPrefs = gothaPrefs.keys();
+        } catch (BackingStoreException ex) {
+            Logger.getLogger(JFrPreferencesOptions.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        int len;
+        if (strPrefs == null) len = 0;
+        else len = strPrefs.length;
+        DefaultTableModel model = (DefaultTableModel) tblAllPreferences.getModel();
+        model.setRowCount(len);
+        for (int i = 0; i < len; i++){
+            String key = strPrefs[i];
+            System.out.println("" + key);
+            String value = gothaPrefs.get(key, "def");
+            System.out.println("" + value);
+            
+            model.setValueAt(key, i, 0);
+            model.setValueAt(value, i, 1);
+        }
+    }
+
+    private void updatePnlInternetAccess(){
         this.ckbRatingLists.setSelected(Gotha.isRatingListsDownloadEnabled());
         this.ckbPhotos.setSelected(Gotha.isPhotosDownloadEnabled());
         this.ckbJournaling.setSelected(Gotha.isJournalingReportEnabled());
-        
     }
 
-
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
-    private javax.swing.JButton btnClear;
+    private javax.swing.JButton btnClearAllPreferences;
     private javax.swing.JButton btnClose;
     private javax.swing.JButton btnHelp;
     private javax.swing.JCheckBox ckbJournaling;
@@ -205,8 +270,12 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
     private javax.swing.JCheckBox ckbRatingLists;
     private javax.swing.ButtonGroup grpHelpLanguage;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JScrollPane jScrollPane2;
+    private javax.swing.JTable jTable1;
+    private javax.swing.JPanel pnlAllPreferences;
     private javax.swing.JPanel pnlInternetAccess;
-    private javax.swing.JPanel pnlPref;
+    private javax.swing.JScrollPane scpAllPreferences;
+    private javax.swing.JTable tblAllPreferences;
     // End of variables declaration//GEN-END:variables
 
 }

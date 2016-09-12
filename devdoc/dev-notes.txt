@@ -29,6 +29,27 @@ Path issues occur for :
 - tournamentfiles
 - resources (like icons)
 
+Save tournament file 
+********************
+From 3.43.01
+3 ways to save
+- Save
+- Save as ...
+- Save a copy ...
+
+The default file name is always homonym of tournament short name. When you save (by save as ...) to a file, 
+ the default file name becomes the name of this file and the short name becomes the name of this file.
+The default directory for saving tournament is the last directory where this file has been saved. Before the first save, the directory used is the "runningdirectory"/tournamentfiles.
+
+The purpose of "Save a copy ..." is to keep a track of different states of the tournament without changing the default file name. For instance, you will keep myTournamentBeforeRound1, myTournamentAfterRound1.xml, etc.
+The default directory for saving tournament is the last directory where a copy has been saved. Before the first save, the directory used is "runningdirectory"/tournamentfiles/copies.
+
+
+
+
+
+
+
 ratinglists and tournamentfiles and other resources are based on running directory
 ===================================================
 Up to 3.10, Directory paths were defined from String BASE_DIR = System.getProperty("user.dir");

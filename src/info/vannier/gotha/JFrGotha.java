@@ -244,6 +244,7 @@ public class JFrGotha extends javax.swing.JFrame {
         mniNew = new javax.swing.JMenuItem();
         mniOpen = new javax.swing.JMenuItem();
         mnuOpenRecent = new javax.swing.JMenu();
+        mniSave = new javax.swing.JMenuItem();
         mniSaveAs = new javax.swing.JMenuItem();
         mniSaveACopy = new javax.swing.JMenuItem();
         mniClose = new javax.swing.JMenuItem();
@@ -973,6 +974,15 @@ public class JFrGotha extends javax.swing.JFrame {
         mnuOpenRecent.setText("Open Recent ... ");
         mnuOpenRecent.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         mnuTournament.add(mnuOpenRecent);
+
+        mniSave.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.CTRL_MASK));
+        mniSave.setText("jMenuItem1");
+        mniSave.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mniSaveActionPerformed(evt);
+            }
+        });
+        mnuTournament.add(mniSave);
 
         mniSaveAs.setAccelerator(javax.swing.KeyStroke.getKeyStroke(java.awt.event.KeyEvent.VK_S, java.awt.event.InputEvent.SHIFT_MASK | java.awt.event.InputEvent.CTRL_MASK));
         mniSaveAs.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
@@ -2513,6 +2523,7 @@ public class JFrGotha extends javax.swing.JFrame {
         }
         
         File f =  this.chooseASaveFile(this.getDefaultSaveAsFileName());
+        if (f == null) return;
         
         updateShortNameFromFile(f);
         
@@ -3020,6 +3031,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
             
 //        File f = saveAs(strTC);
         File f = this.chooseASaveFile(strTC);
+        if (f == null) return;
         this.updateShortNameFromFile(f);
         saveTournament(f);
         gothaPrefs.put("tournamentCopy", "" + f);
@@ -3043,6 +3055,31 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         String strMessage = "Html exports are available from the Publish menu";
         JOptionPane.showMessageDialog(this, strMessage, "Message", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_mniExportActionPerformed
+
+    private void mniSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniSaveActionPerformed
+        if (tournament == null) {
+            JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        
+        File f =  new File (this.getDefaultSaveAsFileName());
+        if (f == null) return;
+        
+        updateShortNameFromFile(f);
+        
+        // Make actual save
+        this.saveTournament(f);
+                
+        try {
+            tournament.setHasBeenSavedOnce(true);
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        this.addRecentTournament("" + f);
+        
+        this.tournamentChanged();
+
+    }//GEN-LAST:event_mniSaveActionPerformed
 
 
     private File chooseAFile(File path, String extension) {
@@ -3418,6 +3455,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private javax.swing.JMenuItem mniRMI;
     private javax.swing.JMenuItem mniRR;
     private javax.swing.JMenuItem mniResults;
+    private javax.swing.JMenuItem mniSave;
     private javax.swing.JMenuItem mniSaveACopy;
     private javax.swing.JMenuItem mniSaveAs;
     private javax.swing.JMenuItem mniTeamsManager;

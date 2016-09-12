@@ -40,13 +40,13 @@ public class RatingList {
         
         // Build HashMap based on egfPin
         hmPinRatedPlayers = new HashMap<String, RatedPlayer>();
-        for (RatedPlayer rp : alRatedPlayers){
+        for (RatedPlayer rp : this.alRatedPlayers){
             hmPinRatedPlayers.put(rp.getEgfPin(), rp);
         }
 
         // Build HashMap based on Name and firstName
         hmNaFiRatedPlayers = new HashMap<String, RatedPlayer>();
-        for (RatedPlayer rp : alRatedPlayers){
+        for (RatedPlayer rp : this.alRatedPlayers){
             String strNaFi = (rp.getName() + rp.getFirstName()).replaceAll(" ", "").toUpperCase();
             hmNaFiRatedPlayers.put(strNaFi, rp);
         }
@@ -105,7 +105,7 @@ public class RatingList {
                     String strGrade = strLine.substring(60,63);
                     RatedPlayer rP = new RatedPlayer(
                             strPin, "", "", "", "", strName, strFirstName, strCountry, strClub, rating, strGrade, "EGF");
-                    alRatedPlayers.add(rP);
+                    this.alRatedPlayers.add(rP);
                 }
             }
 
@@ -139,7 +139,7 @@ public class RatingList {
 
                      RatedPlayer rP = new RatedPlayer(
                             "", strFfgLicence, strFfgLicenceStatus, "", "", strName, strFirstName, strCountry, strClub, rating, "", "FFG");
-                    alRatedPlayers.add(rP);
+                    this.alRatedPlayers.add(rP);
                 }
             }
  
@@ -196,13 +196,13 @@ public class RatingList {
                 
                 RatedPlayer rP = new RatedPlayer(
                         "", "", "", agaID, agaExpirationDate, name, firstName, country, club, rawRating, "", "AGA");
-                alRatedPlayers.add(rP);
+                this.alRatedPlayers.add(rP);
             }
         } 
     }
 
     public int indexOf(RatedPlayer rp){
-        return alRatedPlayers.indexOf(rp);
+        return this.alRatedPlayers.indexOf(rp);
     }
     
     public RatedPlayer getRatedPlayer(String egfPin){       
@@ -246,13 +246,13 @@ public class RatingList {
     }
     
     public ArrayList<RatedPlayer> getALRatedPlayers() {
-        return alRatedPlayers;
+        return this.alRatedPlayers;
     }
 
     public RatedPlayer getRatedPlayer(int line){
         RatedPlayer rp = null;
         try{
-            rp = alRatedPlayers.get(line);
+            rp = this.alRatedPlayers.get(line);
         }catch(Exception e){
             rp = null;
         }
@@ -267,9 +267,9 @@ public class RatingList {
      */
     
     public int getRatedPlayerByAGAID(String strId){
-        int nbRP = alRatedPlayers.size();
+        int nbRP = this.alRatedPlayers.size();
         for (int i = 0; i < nbRP; i++){
-            RatedPlayer rp = alRatedPlayers.get(i);
+            RatedPlayer rp = this.alRatedPlayers.get(i);
             if (rp.getAgaId().contentEquals(strId)) return i;
         }
         return -1;     

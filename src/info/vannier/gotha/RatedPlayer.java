@@ -88,7 +88,7 @@ public class RatedPlayer {
 
         int rr = getRawRating();
         String strRR = "" + rawRating;
-        
+                
         if (getRatingOrigin().equals("AGA")){
             // Generate a eeee.ff string
             int e = rr /100;
@@ -103,12 +103,12 @@ public class RatedPlayer {
     }
     
     public int getStdRating() {
-        int stdRating = rawRating;
-        if (ratingOrigin.compareTo("FFG") == 0) stdRating = rawRating + 2050;
+        int stdRating = this.rawRating;
+        if (ratingOrigin.compareTo("FFG") == 0) stdRating = this.rawRating + 2050;
         if(ratingOrigin.compareTo("AGA") == 0){
-            if (rawRating >= 100) stdRating =  rawRating + 1950;
-            if (rawRating <= -100) stdRating = rawRating + 2150;
-            if (rawRating > -100 && rawRating < 100) stdRating = 2050;            
+            if (this.rawRating >= 100) stdRating =  this.rawRating + 1950;
+            if (this.rawRating <= -100) stdRating = this.rawRating + 2150;
+            if (this.rawRating > -100 && this.rawRating < 100) stdRating = 2050;            
         }
             
         stdRating = Math.min(stdRating, Player.MAX_RATING);

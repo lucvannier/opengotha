@@ -65,7 +65,7 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
      */
     private transient long lastBaseScoringInfoRefreshTime = 0;
     /**
-     * time of last Alter of base scoring info
+     * time of last Alter of Tournament modification
      */
     private transient long lastTournamentModificationTime = System.currentTimeMillis();
     public transient ScoredTeamsSet scoredTeamsSet;

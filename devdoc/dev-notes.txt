@@ -45,11 +45,6 @@ The purpose of "Save a copy ..." is to keep a track of different states of the t
 The default directory for saving tournament is the last directory where a copy has been saved. Before the first save, the directory used is "runningdirectory"/tournamentfiles/copies.
 
 
-
-
-
-
-
 ratinglists and tournamentfiles and other resources are based on running directory
 ===================================================
 Up to 3.10, Directory paths were defined from String BASE_DIR = System.getProperty("user.dir");

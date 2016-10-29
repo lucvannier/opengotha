@@ -33,9 +33,9 @@ import javax.swing.JProgressBar;
 public class Gotha {
 
     static Locale locale = Locale.getDefault();
-    static final long GOTHA_VERSION = 343L;
-    static final long GOTHA_MINOR_VERSION = 1L;
-    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2016, Calendar.SEPTEMBER, 2)).getTime();
+    static final long GOTHA_VERSION = 344L;
+    static final long GOTHA_MINOR_VERSION = 0L;
+    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2016, Calendar.OCTOBER, 29)).getTime();
     // Data version for serialization
     static final long GOTHA_DATA_VERSION = 201L;
     
@@ -253,7 +253,7 @@ public class Gotha {
      * The substring begins at the specified beginIndex and extends to the character at index endIndex - 1. 
      * Thus the length of the substring is endIndex-beginIndex.
      * <br>The difference with the substring method of String class is that sousChaine always returns a String and does not throw any exception.
-     * <br>If beginIndex >=  str's length an empty String is returned
+     * <br>If beginIndex >=  str's length, an empty String is returned
      * <br>If endIndex <= beginIndex  an empty String is returned
      * <br> if endIndex > str's length, the returned string is shortened to str's length - beginIndex
      */
@@ -284,6 +284,7 @@ public class Gotha {
 
     /**
      * for debug purpose
+     * @param str
      */
     public static void printTopChrono(String str) {
         long topC = System.nanoTime();
@@ -303,9 +304,8 @@ public class Gotha {
         Calendar currentCal = Calendar.getInstance();
         
         SimpleDateFormat sdf = new SimpleDateFormat("MM/dd/yyy");
-        Date d = null;
         try {
-            d = sdf.parse(strDate);
+            Date d = sdf.parse(strDate);
             Calendar c = Calendar.getInstance();
             c.setTime(d);
             c.add(Calendar.DAY_OF_MONTH, 1);
@@ -528,7 +528,6 @@ public class Gotha {
         String strK = "journalingReport";
         gothaPrefs.put(strK, "" + enabled);
     }
-
 }
 
 class GothaImageLoader extends Thread{

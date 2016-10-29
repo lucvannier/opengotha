@@ -1,13 +1,13 @@
-OpenGothaV3.43.01
-*****************
-12/09/2016
-New Add a save menu item
+OpenGothaV3.44
+**************
+29/10/2016
+New Additional save features
 New Update ratings was available for EGF ratings. It is now also available for FFG and AGA     
 
 OpenGothaV3.43
 **************
 14/05/2016
-        in Players Manager, a grade without D, K, P is considered as k
+New     In Players Manager, a grade without D, K, P is considered as k
 Bug Fix Server mode was bugged. Fixed
 
 OpenGothaV3.42

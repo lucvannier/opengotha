@@ -25,16 +25,23 @@ public class JFrToolsMemory extends javax.swing.JFrame {
         setupRefreshTimer();
     }
 
+    
+    private volatile boolean running = true;
+    javax.swing.Timer timer = null;
     private void setupRefreshTimer() {
-        ActionListener taskPerformer = new ActionListener() {
-
+        ActionListener taskPerformer;
+        taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
+//                System.out.println("actionPerformed");
+                if (!running){
+                    timer.stop();
+                }
                 updateComponents();
             }
         };
-
-        new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer).start();
+        timer = new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer);
+        timer.start();
     }
 
     private void customInitComponents(){
@@ -78,8 +85,13 @@ public class JFrToolsMemory extends javax.swing.JFrame {
         btnRunGB = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Memory Manager");
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
         getContentPane().setLayout(null);
 
         jLabel1.setText("Max Memory : ");
@@ -120,13 +132,22 @@ public class JFrToolsMemory extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        dispose();
+        cleanClose();
     }//GEN-LAST:event_btnCloseActionPerformed
+
+    private void cleanClose(){
+        running = false;
+        dispose();
+    }
 
     private void btnRunGBActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRunGBActionPerformed
         Runtime.getRuntime().gc();
         this.updateComponents();
     }//GEN-LAST:event_btnRunGBActionPerformed
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        cleanClose();
+    }//GEN-LAST:event_formWindowClosing
 
     /**
      * @param args the command line arguments

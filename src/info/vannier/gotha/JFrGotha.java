@@ -2475,7 +2475,7 @@ public class JFrGotha extends javax.swing.JFrame {
         // if current extension is not .xml, add .xml
         String suffix = null;
         String s = f.getName();
-        System.out.println("Tournament.saveTournament. " + "s = " + s);
+//        System.out.println("Tournament.saveTournament. " + "s = " + s);
         int i = s.lastIndexOf('.');
         if (i > 0 && i < s.length() - 1) {
             suffix = s.substring(i + 1).toLowerCase();
@@ -2497,8 +2497,8 @@ public class JFrGotha extends javax.swing.JFrame {
 //        } catch (RemoteException ex) {
 //            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
 //        }
-
-        this.tournamentChanged();
+//
+//        this.tournamentChanged();
         return f;
         
     }

@@ -35,7 +35,7 @@ public class Gotha {
     static Locale locale = Locale.getDefault();
     static final long GOTHA_VERSION = 344L;
     static final long GOTHA_MINOR_VERSION = 0L;
-    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2016, Calendar.OCTOBER, 29)).getTime();
+    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2016, Calendar.NOVEMBER, 5)).getTime();
     // Data version for serialization
     static final long GOTHA_DATA_VERSION = 201L;
     

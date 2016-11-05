@@ -22,6 +22,7 @@ public class JFrGothaStart extends javax.swing.JFrame {
     /** Creates new form JFrGothaStart */
     public JFrGothaStart() {
         // Log Platform and JDK elements
+        
         String strOS = System.getProperty("os.name") + " " + System.getProperty("os.arch") + " " + System.getProperty("os.version");
         LogElements.incrementElement("gotha.os", strOS);
         String strJRE = System.getProperty("java.version") + " " + System.getProperty("java.vm.name");
@@ -153,7 +154,6 @@ public class JFrGothaStart extends javax.swing.JFrame {
             System.setProperty("java.rmi.server.hostname", strIPAd);
 
             Gotha.runningMode = Gotha.RUNNING_MODE_SRV;
-
         }
 
         if (grpRunningMode.getSelection() == this.rdbClient.getModel()) {

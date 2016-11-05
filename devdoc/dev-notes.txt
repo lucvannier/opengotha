@@ -73,7 +73,7 @@ public class JFrPlayerManager extends javax.swing.JFrame{
 
 layout = null
 JFrxxx properties :
-    defaultCloseOperation : DISPOSE 
+    defaultCloseOperation : DO_NOTHING
     not resizable 
 
 Required fields:
@@ -97,18 +97,29 @@ The constructor with no argument should be replaced by :
 Refresh mechanism
 =================
 Views are refreshed by a Timer. This timer is set up by setupRefreshTimer() invoked in constructor
-ActionListener taskPerformer = new ActionListener(){
-    public void actionPerformed(ActionEvent evt){
-        try {
-            if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
-                updateAllViews();
+
+    private volatile boolean running = true;
+    javax.swing.Timer timer = null;
+    private void setupRefreshTimer() {
+        ActionListener taskPerformer;
+        taskPerformer = new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent evt) {
+                if (!running){
+                    timer.stop();
+                }
+                try {
+                    if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
+                        updateAllViews();
+                    }
+                } catch (RemoteException ex) {
+                    Logger.getLogger(JFrGamesResults.class.getName()).log(Level.SEVERE, null, ex);
+                }
             }
-        } catch (RemoteException ex) {
-            Logger.getLogger(JFrGamesResults.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        };
+        timer = new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer);
+        timer.start();
     }
-};
-new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer).start();
 
 updateAllViews should  contain :
 this.lastComponentsUpdateTime = tournament.getCurrentTournamentTime();
@@ -126,18 +137,13 @@ customInitComponents() should begin by :
         updateAllViews();
     }
 
-Close button should be :
-=======================
-    private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {                                        
-        dispose();
-    }   
 
 tournamentChanged method should look like :
 ===========================================
 private void tournamentChanged(){
     try {
         if (!tournament.isOpen()){
-            dispose();
+            cleanClose();
             return;
         }
         tournament.setLastTournamentModificationTime(tournament.getCurrentTournamentTime());
@@ -154,8 +160,16 @@ should be removed
 
 Close, Quit and Exit issues
 ***************************
-All JFrxxx classes have a "default Close operation" set to DISPOSE
-Quit buttons and Exit menu items run dispose()
+All JFrxxx classes have a "default Close operation" set to DO_NOTHING
+The windowClosing event calls the cleanClose() method;
+Close buttons also call the cleanClose() method.
+
+cleanClose() sets the running variable to false;
+
+No direct dispose() anywhere except in cleanClose();
+
+The JFrGotha exit item menu calls a specific method
+The JFrGothaStart has a "default Close operation" set to EXIT_ON_CLOSE
 
 GothaHelp
 *********

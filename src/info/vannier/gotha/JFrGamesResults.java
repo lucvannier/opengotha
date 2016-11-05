@@ -60,11 +60,17 @@ public class JFrGamesResults extends javax.swing.JFrame {
         setupRefreshTimer();
     }
 
+    private volatile boolean running = true;
+    javax.swing.Timer timer = null;
     private void setupRefreshTimer() {
-        ActionListener taskPerformer = new ActionListener() {
-
+        ActionListener taskPerformer;
+        taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
+//                System.out.println("actionPerformed");
+                if (!running){
+                    timer.stop();
+                }
                 try {
                     if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
                         updateAllViews();
@@ -74,7 +80,8 @@ public class JFrGamesResults extends javax.swing.JFrame {
                 }
             }
         };
-        new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer).start();
+        timer = new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer);
+        timer.start();
     }
 
     /**
@@ -284,7 +291,7 @@ public class JFrGamesResults extends javax.swing.JFrame {
         btnHelp = new javax.swing.JButton();
         ckbTeamOrder = new javax.swing.JCheckBox();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Games .. Results");
         setResizable(false);
         getContentPane().setLayout(null);
@@ -518,8 +525,13 @@ public class JFrGamesResults extends javax.swing.JFrame {
     }//GEN-LAST:event_btnPrintActionPerformed
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        dispose();
+        cleanClose();
     }//GEN-LAST:event_btnCloseActionPerformed
+
+    private void cleanClose(){
+        running = false;
+        dispose();
+    }
 
     private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnSearchActionPerformed
         String strSearchPlayer = this.txfSearchPlayer.getText().toLowerCase();
@@ -607,7 +619,7 @@ public class JFrGamesResults extends javax.swing.JFrame {
 
     private void updateAllViews() {
         try {
-            if (!tournament.isOpen()) dispose();
+            if (!tournament.isOpen()) cleanClose();
             this.lastComponentsUpdateTime = tournament.getCurrentTournamentTime();
             setTitle("Games .. Results. " + tournament.getFullName());
         } catch (RemoteException ex) {

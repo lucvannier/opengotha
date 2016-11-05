@@ -64,20 +64,28 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         setupRefreshTimer();
     }
 
+    private volatile boolean running = true;
+    javax.swing.Timer timer = null;
     private void setupRefreshTimer() {
-        ActionListener taskPerformer = new ActionListener() {
+        ActionListener taskPerformer;
+        taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
+                System.out.println("actionPerformed");
+                if (!running){
+                    timer.stop();
+                }
                 try {
                     if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
                         updateAllViews();
                     }
                 } catch (RemoteException ex) {
-                    Logger.getLogger(JFrPlayersManager.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(JFrGamesResults.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
         };
-        new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer).start();
+        timer = new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer);
+        timer.start();
     }
 
     /** This method is called from within the constructor to
@@ -259,11 +267,9 @@ public class JFrPlayersManager extends javax.swing.JFrame {
             this.rdbRankFromGrade.setVisible(true);
         }
         if (ratingList.getRatingListType() == RatingList.TYPE_FFG) {
-//            this.rdbRankFromGoR.setEnabled(true);
             this.rdbRankFromGoR.setSelected(true);
         }
         if (ratingList.getRatingListType() == RatingList.TYPE_AGA) {
-//            this.rdbRankFromGoR.setEnabled(true);
             this.rdbRankFromGoR.setSelected(true);
         }
         
@@ -491,13 +497,16 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         });
         pupRegisteredPlayers.add(mniCancel);
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Players Manager");
         setIconImage(getIconImage());
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosed(java.awt.event.WindowEvent evt) {
                 formWindowClosed(evt);
+            }
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
             }
         });
         getContentPane().setLayout(null);
@@ -1085,8 +1094,13 @@ public class JFrPlayersManager extends javax.swing.JFrame {
     }//GEN-LAST:event_tblRegisteredPlayersMouseClicked
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        this.dispose();
+        this.cleanClose();
     }//GEN-LAST:event_btnCloseActionPerformed
+
+    private void cleanClose(){
+        running = false;
+        dispose();
+    }
 
     private void btnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrintActionPerformed
         TournamentPrinting.printPlayersList(tournament, playersSortType);
@@ -1533,6 +1547,10 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         
         
     }//GEN-LAST:event_btnSearchIdActionPerformed
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        cleanClose();
+    }//GEN-LAST:event_formWindowClosing
     
     private void manageRankGradeAndRatingValues(){
         if (txfRank.getText().equals("") && !txfGrade.getText().equals("")){
@@ -1878,8 +1896,14 @@ public class JFrPlayersManager extends javax.swing.JFrame {
     }
 
     private void updateAllViews() {
+//        System.out.println("\nJFrPlayersManager.updateAllViews");
+
         try {
-            if (!tournament.isOpen()) dispose();
+//            System.out.println("getCurrentTournamentTime " + tournament.getCurrentTournamentTime()%1000000);
+//            System.out.println("tournament.getLastTournamentModificationTime " + tournament.getLastTournamentModificationTime()%1000000);
+//            System.out.println("lastComponentsUpdateTime " + lastComponentsUpdateTime%1000000);
+
+            if (!tournament.isOpen()) cleanClose();
             this.lastComponentsUpdateTime = tournament.getCurrentTournamentTime();
             setTitle("Players Manager. " + tournament.getFullName());
             updatePnlRegisteredPlayers(tournament.playersList());

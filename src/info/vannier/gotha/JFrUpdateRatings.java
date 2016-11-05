@@ -59,20 +59,28 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         setupRefreshTimer();
     }
     
+    private volatile boolean running = true;
+    javax.swing.Timer timer = null;
     private void setupRefreshTimer() {
-        ActionListener taskPerformer = new ActionListener() {
+        ActionListener taskPerformer;
+        taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
+//                System.out.println("actionPerformed");
+                if (!running){
+                    timer.stop();
+                }
                 try {
                     if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
                         updateAllViews();
                     }
                 } catch (RemoteException ex) {
-                    Logger.getLogger(JFrPlayersManager.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(JFrGamesResults.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
         };
-        new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer).start();
+        timer = new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer);
+        timer.start();
     }
     
     /** This method is called from within the constructor to
@@ -214,12 +222,15 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         rdbFFG = new javax.swing.JRadioButton();
         rdbAGA = new javax.swing.JRadioButton();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Update ratings");
         setResizable(false);
         addWindowListener(new java.awt.event.WindowAdapter() {
             public void windowClosed(java.awt.event.WindowEvent evt) {
                 formWindowClosed(evt);
+            }
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
             }
         });
         getContentPane().setLayout(null);
@@ -391,8 +402,13 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
 }//GEN-LAST:event_btnHelpActionPerformed
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        dispose();
+        cleanClose();
 }//GEN-LAST:event_btnCloseActionPerformed
+
+    private void cleanClose(){
+        running = false;
+        dispose();
+    }
 
     private void btnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrintActionPerformed
         TournamentPrinting.printPlayersList(tournament, playersSortType);
@@ -654,6 +670,10 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         updatePnlPlayers(playersList);
     }//GEN-LAST:event_rdbRLChangeEvent
 
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        cleanClose();
+    }//GEN-LAST:event_formWindowClosing
+
     private void resetRatingListControls() {                
         int rlType = RatingList.TYPE_UNDEFINED;
         
@@ -765,7 +785,7 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
 
     private void updateAllViews() {
         try {
-            if (!tournament.isOpen()) dispose();
+            if (!tournament.isOpen()) cleanClose();
             this.lastComponentsUpdateTime = tournament.getCurrentTournamentTime();
             setTitle("Update ratings. " + tournament.getFullName());
         } catch (RemoteException ex) {

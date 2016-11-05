@@ -1,3 +1,9 @@
+OpenGothaV3.44.01
+*****************
+05/11/2016
+Int issue   New more robust process to close frames.
+New         Preferences frame also displays log preferences
+
 OpenGothaV3.44
 **************
 29/10/2016
@@ -16,7 +22,7 @@ OpenGothaV3.42
         Doc updated
 
 OpenGothaV3.41
-**************
+*************
 10/06/2015
 Bug Fix A problem occured in pairing when McMahon zero was different of 30K. Fixed
 New     Choice of bye players depends on mms (strong mms = no bye)

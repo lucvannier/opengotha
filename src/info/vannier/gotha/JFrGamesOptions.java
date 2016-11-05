@@ -21,11 +21,17 @@ public class JFrGamesOptions extends javax.swing.JFrame {
     private long lastComponentsUpdateTime = 0;
     private TournamentInterface tournament;
 
+    private volatile boolean running = true;
+    javax.swing.Timer timer = null;
     private void setupRefreshTimer() {
-        ActionListener taskPerformer = new ActionListener() {
-
+        ActionListener taskPerformer;
+        taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
+//                System.out.println("actionPerformed");
+                if (!running){
+                    timer.stop();
+                }
                 try {
                     if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
                         updateAllViews();
@@ -35,7 +41,8 @@ public class JFrGamesOptions extends javax.swing.JFrame {
                 }
             }
         };
-        new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer).start();
+        timer = new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer);
+        timer.start();
     }
 
     public JFrGamesOptions(TournamentInterface tournament) throws RemoteException {
@@ -80,9 +87,14 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         jLabel7 = new javax.swing.JLabel();
         lblEGFClass = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Games settings");
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
         getContentPane().setLayout(null);
 
         pnlGam.setLayout(null);
@@ -261,7 +273,11 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         try {
             TournamentParameterSet tps = tournament.getTournamentParameterSet();
             GeneralParameterSet gps = tps.getGeneralParameterSet();
-            gps.setStrKomi(txfKomi.getText());
+            String oldKomi = gps.getStrKomi();
+            String newKomi = txfKomi.getText();
+            if (newKomi.compareTo(oldKomi) == 0) return;
+            
+            gps.setStrKomi(newKomi);
             tournament.setTournamentParameterSet(tps);
             this.tournamentChanged();
         } catch (RemoteException ex) {
@@ -273,7 +289,12 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         try {
             TournamentParameterSet tps = tournament.getTournamentParameterSet();
             GeneralParameterSet gps = tps.getGeneralParameterSet();
-            gps.setStrSize(txfSize.getText());
+
+            String oldStrSize = gps.getStrSize();
+            String newStrSize = txfSize.getText();
+            if (newStrSize.compareTo(oldStrSize) == 0) return;
+            
+            gps.setStrSize(newStrSize);
             tournament.setTournamentParameterSet(tps);
             this.tournamentChanged();
         } catch (RemoteException ex) {
@@ -306,9 +327,14 @@ public class JFrGamesOptions extends javax.swing.JFrame {
     }//GEN-LAST:event_txfBasicTimeFocusLost
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        dispose();
+        cleanClose();
     }//GEN-LAST:event_btnCloseActionPerformed
 
+    private void cleanClose(){
+        running = false;
+        dispose();
+    }
+    
     private void btnHelpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHelpActionPerformed
         Gotha.displayGothaHelp("Games Options");
 }//GEN-LAST:event_btnHelpActionPerformed
@@ -446,6 +472,10 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_txfCanNbMovesFocusLost
 
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        cleanClose();
+    }//GEN-LAST:event_formWindowClosing
+
     private void customInitComponents() throws RemoteException {
         int w = JFrGotha.MEDIUM_FRAME_WIDTH;
         int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
@@ -460,6 +490,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
 
     private void tournamentChanged() {
         try {
+//            System.out.println("\ntournamentChanged. Appel setLastTournamentModificationTime. " + tournament.getCurrentTournamentTime()%1000000);
             tournament.setLastTournamentModificationTime(tournament.getCurrentTournamentTime());
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGamesOptions.class.getName()).log(Level.SEVERE, null, ex);
@@ -469,9 +500,14 @@ public class JFrGamesOptions extends javax.swing.JFrame {
     }
 
     private void updateAllViews() {
+//        System.out.println("\nJFrGamesOptions.updateAllViews");
         this.pnlGam.setVisible(true);
         try {
-            if (!tournament.isOpen()) dispose();
+//            System.out.println("getCurrentTournamentTime " + tournament.getCurrentTournamentTime()%1000000);
+//            System.out.println("tournament.getLastTournamentModificationTime " + tournament.getLastTournamentModificationTime()%1000000);
+//            System.out.println("lastComponentsUpdateTime " + lastComponentsUpdateTime%1000000);
+
+            if (!tournament.isOpen()) cleanClose();
             this.lastComponentsUpdateTime = tournament.getCurrentTournamentTime();
             setTitle("Games Settings. " + tournament.getFullName());
             updatePnlGam();

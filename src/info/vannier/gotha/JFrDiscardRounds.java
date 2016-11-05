@@ -37,10 +37,17 @@ public class JFrDiscardRounds extends javax.swing.JFrame {
         setupRefreshTimer();
     }
 
-    private void setupRefreshTimer(){
-        ActionListener taskPerformer = new ActionListener(){
+    private volatile boolean running = true;
+    javax.swing.Timer timer = null;
+    private void setupRefreshTimer() {
+        ActionListener taskPerformer;
+        taskPerformer = new ActionListener() {
             @Override
-            public void actionPerformed(ActionEvent evt){
+            public void actionPerformed(ActionEvent evt) {
+//                System.out.println("actionPerformed");
+                if (!running){
+                    timer.stop();
+                }
                 try {
                     if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
                         updateAllViews();
@@ -50,7 +57,8 @@ public class JFrDiscardRounds extends javax.swing.JFrame {
                 }
             }
         };
-        new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer).start();
+        timer = new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer);
+        timer.start();
     }
 
  
@@ -73,9 +81,14 @@ public class JFrDiscardRounds extends javax.swing.JFrame {
         btnDiscardRounds = new javax.swing.JButton();
         jLabel3 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Discard rounds");
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
         getContentPane().setLayout(null);
 
         btnClose.setText("Close");
@@ -140,8 +153,13 @@ public class JFrDiscardRounds extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        dispose();
+        cleanClose();
     }//GEN-LAST:event_btnCloseActionPerformed
+
+    private void cleanClose(){
+        running = false;
+        dispose();
+    }
 
     private void btnHelpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnHelpActionPerformed
 //        JOptionPane.showMessageDialog(this, " This help will be available shortly");
@@ -311,6 +329,10 @@ public class JFrDiscardRounds extends javax.swing.JFrame {
 
     }//GEN-LAST:event_btnDiscardRoundsActionPerformed
 
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        cleanClose();
+    }//GEN-LAST:event_formWindowClosing
+
     private void customInitComponents()throws RemoteException{
         int w = JFrGotha.SMALL_FRAME_WIDTH;
         int h = JFrGotha.SMALL_FRAME_HEIGHT;
@@ -334,7 +356,7 @@ public class JFrDiscardRounds extends javax.swing.JFrame {
     
     private void updateAllViews(){
         try {
-            if (!tournament.isOpen()) dispose();
+            if (!tournament.isOpen()) cleanClose();
             this.lastComponentsUpdateTime = tournament.getCurrentTournamentTime();
             setTitle("Discard rounds. " + tournament.getFullName());        
         } catch (RemoteException ex) {
@@ -358,7 +380,7 @@ public class JFrDiscardRounds extends javax.swing.JFrame {
     private void tournamentChanged(){
         try {
             if (!tournament.isOpen()){
-                dispose();
+                cleanClose();
                 return;
             }
             tournament.setLastTournamentModificationTime(tournament.getCurrentTournamentTime());

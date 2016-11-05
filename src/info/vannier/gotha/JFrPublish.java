@@ -34,23 +34,30 @@ public class JFrPublish extends javax.swing.JFrame {
         setupRefreshTimer();
     }
    
+    private volatile boolean running = true;
+    javax.swing.Timer timer = null;
     private void setupRefreshTimer() {
-        ActionListener taskPerformer = new ActionListener() {
+        ActionListener taskPerformer;
+        taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
+//                System.out.println("actionPerformed");
+                if (!running){
+                    timer.stop();
+                }
                 try {
-
                     if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
                         updateAllViews();
                     }
                 } catch (RemoteException ex) {
-                    Logger.getLogger(JFrPublish.class.getName()).log(Level.SEVERE, null, ex);
+                    Logger.getLogger(JFrGamesResults.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
         };
-        new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer).start();
+        timer = new javax.swing.Timer((int) REFRESH_DELAY, taskPerformer);
+        timer.start();
+        
     }
-
     /**
      * This method is called from within the constructor to initialize the form.
      * WARNING: Do NOT modify this code. The content of this method is always
@@ -126,8 +133,13 @@ public class JFrPublish extends javax.swing.JFrame {
 
         jCheckBox1.setText("jCheckBox1");
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
         getContentPane().setLayout(null);
 
         btnClose.setText("Close");
@@ -589,8 +601,13 @@ public class JFrPublish extends javax.swing.JFrame {
     }
 
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
-        dispose();
+        cleanClose();
     }//GEN-LAST:event_btnCloseActionPerformed
+
+    private void cleanClose(){
+        running = false;
+        dispose();
+    }
 
     private void btnExportRLFFGActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnExportRLFFGActionPerformed
         if (tournament == null) {
@@ -966,6 +983,10 @@ public class JFrPublish extends javax.swing.JFrame {
         TournamentPrinting.printResultSheets(tournament, processedRoundNumber);
     }//GEN-LAST:event_btnPrintRSActionPerformed
 
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        cleanClose();
+    }//GEN-LAST:event_formWindowClosing
+
     private void demandedDisplayedRoundNumberHasChanged(int demandedRN) {
         int numberOfRounds = 0;
         try {
@@ -997,7 +1018,7 @@ public class JFrPublish extends javax.swing.JFrame {
     private void updateAllViews() {
         try {
             if (!tournament.isOpen()) {
-                dispose();
+                cleanClose();
             }
             this.lastComponentsUpdateTime = tournament.getCurrentTournamentTime();
             setTitle("Publish. " + tournament.getFullName());

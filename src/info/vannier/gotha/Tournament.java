@@ -2954,6 +2954,7 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
     @Override
     public void setLastTournamentModificationTime(long lastTournamentModificationTime) throws RemoteException {
         this.lastTournamentModificationTime = lastTournamentModificationTime;
+//        System.out.println("\nsetLastTournamentModificationTime. lastTournamentModificationTime " + lastTournamentModificationTime%1000000);
     }
 
     @Override

@@ -17,11 +17,13 @@ import java.util.HashMap;
 public class ScoredPlayer extends Player implements java.io.Serializable{
     private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
 
-    public final static int UNKNOWN = 0;
-    public final static int ABSENT = -3;
-    public final static int NOT_ASSIGNED = -2;
-    public final static int BYE = -1;
-    public final static int PAIRED = 1;
+    // For a given round and a given player, the status should be one and only one of the status below  
+
+    public final static int UNKNOWN = 0;        // For a given round and a given player, this status should not happen in actual round/actual player  
+    public final static int ABSENT = -3;        // For a given round and a given player, qualifies the fact that this player has been declared as not participating
+    public final static int NOT_ASSIGNED = -2;  // For a given round and a given player, qualifies the fact that this player has been assigned as a neither as bye nor to a real game
+    public final static int BYE = -1;           // For a given round and a given player, qualifies the fact that this player has been assigned as a Bye player
+    public final static int PAIRED = 1;         // For a given round and a given player, qualifies the fact that this player has been assigned to a real game
 
     /** generalParameterSet is a part of ScoredPlayer because mms is dependent on McMahon bars and floors */
     private GeneralParameterSet generalParameterSet;
@@ -36,7 +38,11 @@ public class ScoredPlayer extends Player implements java.io.Serializable{
     private int[] nbwX2;       // number of wins * 2
     private int[] mmsX2;       // mcmahon score * 2
     private int[] stsX2;       // strasbourg score *2
-
+        // Virtual scores : half points are given for not played games
+    private int[] nbwVirtualX2;       // number of wins * 2
+    private int[] mmsVirtualX2;       // mcmahon score * 2
+    private int[] stsVirtualX2;       // Strasbourg score * 2
+    
     // Second level scores
     private int[] cuswX2;      // Sum of successive nbw2
     private int[] cusmX2;      // Sum of successive mms2
@@ -89,6 +95,19 @@ public class ScoredPlayer extends Player implements java.io.Serializable{
     public void setGame(int rn, Game g){
         if (isValidRoundNumber(rn)) gameArray[rn] = g;
     }
+    public boolean gameWasPlayed(int rn){
+        Game g = getGame(rn);
+        boolean gWP = true;
+        if (g == null) return false; // not paired
+        int result = g.getResult();
+        if (result == Game.RESULT_UNKNOWN) gWP = false;
+        if (result == Game.RESULT_WHITEWINS_BYDEF) gWP = false;
+        if (result == Game.RESULT_BLACKWINS_BYDEF) gWP = false;
+        if (result == Game.RESULT_EQUAL_BYDEF) gWP = false;
+        if (result == Game.RESULT_BOTHLOSE_BYDEF) gWP = false;
+        if (result == Game.RESULT_BOTHWIN_BYDEF) gWP = false;
+        return gWP;   
+    }
     public int getNBWX2(int rn){
         if (isValidRoundNumber(rn)) return nbwX2[rn];
         else return 0;
@@ -110,6 +129,29 @@ public class ScoredPlayer extends Player implements java.io.Serializable{
     public void setSTSX2(int rn, int value){
         if (isValidRoundNumber(rn)) stsX2[rn] = value;
     }
+        
+    public int getNBWVirtualX2(int rn){
+        if (isValidRoundNumber(rn)) return nbwVirtualX2[rn];
+        else return 0;
+    }
+    public void setNBWVirtualX2(int rn, int value){
+        if (isValidRoundNumber(rn)) nbwVirtualX2[rn] = value;
+    }
+    public int getMMSVirtualX2(int rn){
+        if (isValidRoundNumber(rn)) return mmsVirtualX2[rn];
+        else return 0;
+    }
+    public void setMMSVirtualX2(int rn, int value){
+        if (isValidRoundNumber(rn)) mmsVirtualX2[rn] = value;
+    }
+    public int getSTSVirtualX2(int rn){
+        if (isValidRoundNumber(rn)) return stsVirtualX2[rn];
+        else return 0;
+    }
+    public void setSTSVirtualX2(int rn, int value){
+        if (isValidRoundNumber(rn)) stsVirtualX2[rn] = value;
+    }
+    
     public int getCUSWX2(int rn){
         if (isValidRoundNumber(rn)) return cuswX2[rn];
         else return 0;
@@ -241,6 +283,9 @@ public class ScoredPlayer extends Player implements java.io.Serializable{
         nbwX2  = new int[numberOfRounds];
         mmsX2  = new int[numberOfRounds];
         stsX2  = new int[numberOfRounds];
+        nbwVirtualX2  = new int[numberOfRounds];
+        mmsVirtualX2  = new int[numberOfRounds];
+        stsVirtualX2  = new int[numberOfRounds];
         
         cuswX2 = new int[numberOfRounds];
         cusmX2 = new int[numberOfRounds];
@@ -271,6 +316,9 @@ public class ScoredPlayer extends Player implements java.io.Serializable{
             nbwX2[r] = 0;
             mmsX2[r] = 0;
             stsX2[r] = 0;
+            nbwVirtualX2[r] = 0;
+            mmsVirtualX2[r] = 0;
+            stsVirtualX2[r] = 0;
             
             cuswX2[r] = 0;
             cusmX2[r] = 0;

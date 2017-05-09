@@ -773,6 +773,10 @@ public class ExternalDocument {
         
         String strGenRoundDownNBWMMS = extractNodeValue(nnmGPS, "genRoundDownNBWMMS", "true");
         gps.setGenRoundDownNBWMMS(Boolean.valueOf(strGenRoundDownNBWMMS).booleanValue());
+        
+        String strGenCountNotPlayedGamesAsHalfPoint = extractNodeValue(nnmGPS, "genCountNotPlayedGamesAsHalfPoint", "false");
+        gps.setGenCountNotPlayedGamesAsHalfPoint(Boolean.valueOf(strGenCountNotPlayedGamesAsHalfPoint).booleanValue());
+
 
         tps.setGeneralParameterSet(gps);
 
@@ -3340,6 +3344,7 @@ public class ExternalDocument {
         emGeneralParameterSet.setAttribute("genMMS2ValueAbsent", "" + gps.getGenMMS2ValueAbsent());
         emGeneralParameterSet.setAttribute("genMMS2ValueBye", "" + gps.getGenMMS2ValueBye());
         emGeneralParameterSet.setAttribute("genRoundDownNBWMMS", "" + gps.isGenRoundDownNBWMMS());
+        emGeneralParameterSet.setAttribute("genCountNotPlayedGamesAsHalfPoint", "" + gps.isGenCountNotPlayedGamesAsHalfPoint());
         
 
         if (gps.getNumberOfCategories() > 1) {

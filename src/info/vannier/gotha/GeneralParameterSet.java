@@ -83,6 +83,7 @@ public class GeneralParameterSet implements java.io.Serializable{
     private int genMMS2ValueBye = 2;        // 2 * Number of MMS points for a player not paired in a round   
     
     private boolean genRoundDownNBWMMS = true;
+    private boolean genCountNotPlayedGamesAsHalfPoint = false;
     
     public GeneralParameterSet() {
     }
@@ -122,6 +123,7 @@ public class GeneralParameterSet implements java.io.Serializable{
         this.genMMS2ValueAbsent = gps.getGenMMS2ValueAbsent();
         this.genMMS2ValueBye = gps.getGenMMS2ValueBye();
         this.genRoundDownNBWMMS = gps.isGenRoundDownNBWMMS();
+        this.genCountNotPlayedGamesAsHalfPoint = gps.isGenCountNotPlayedGamesAsHalfPoint();
     }
 
     public void initBase(String shortName, String name, String location, String director,
@@ -156,6 +158,7 @@ public class GeneralParameterSet implements java.io.Serializable{
         genMMS2ValueBye         = 2; 
         
         this.genRoundDownNBWMMS = true;
+        this.genCountNotPlayedGamesAsHalfPoint = false;
     }
     
     public void initForSwiss(){
@@ -171,6 +174,7 @@ public class GeneralParameterSet implements java.io.Serializable{
         genMMS2ValueBye         = 2;    // Not relevant     
 
         this.genRoundDownNBWMMS = true;
+        this.genCountNotPlayedGamesAsHalfPoint = false;
     }
     
     public void initForSwissCat(){
@@ -188,6 +192,7 @@ public class GeneralParameterSet implements java.io.Serializable{
         genMMS2ValueBye         = 2;    // Not relevant     
         
         this.genRoundDownNBWMMS = true;
+        this.genCountNotPlayedGamesAsHalfPoint = false;
     }
         
     public String getShortName() {
@@ -483,4 +488,17 @@ public class GeneralParameterSet implements java.io.Serializable{
         this.genRoundDownNBWMMS = roundDownNBWMMS;
     }
 
+    /**
+     * @return the countNotPlayedGamesAsHalfPoint
+     */
+    public boolean isGenCountNotPlayedGamesAsHalfPoint() {
+        return genCountNotPlayedGamesAsHalfPoint;
+    }
+
+    /**
+     * @param countNotPlayedGamesAsHalfPoint 
+     */
+    public void setGenCountNotPlayedGamesAsHalfPoint(boolean countNotPlayedGamesAsHalfPoint) {
+        this.genCountNotPlayedGamesAsHalfPoint = countNotPlayedGamesAsHalfPoint;
+    }
 }

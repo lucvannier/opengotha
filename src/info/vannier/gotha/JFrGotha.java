@@ -1749,7 +1749,7 @@ public class JFrGotha extends javax.swing.JFrame {
                         // Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
                     } catch (Exception ex) {
                         String strMessage = "Some problem occured with file : " + f.getName();
-                        strMessage += "\nThe content of this file does not comply with OpenGotha Data version " + Gotha.GOTHA_DATA_VERSION;
+                        strMessage += "\nThe file was not found or The content of this file does not comply with OpenGotha Data version " + Gotha.GOTHA_DATA_VERSION;
                         strMessage += "\nHint : Read the Compatibility issues in the OpenGotha help";
                         strMessage += "\n\nThe tournament has not been opened";
                         JOptionPane.showMessageDialog(JFrGotha.this, strMessage, "Message", JOptionPane.ERROR_MESSAGE);
@@ -2955,7 +2955,7 @@ private void mniOpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
         JOptionPane.showMessageDialog(this, " File not found", "Message", JOptionPane.ERROR_MESSAGE);
     } catch (Exception ex) {
         String strMessage = "Some problem occured with file : " + f.getName();
-        strMessage += "\nThe content of this file does not comply with OpenGotha Data version " + Gotha.GOTHA_DATA_VERSION;
+        strMessage += "\nThe file was not found or The content of this file does not comply with OpenGotha Data version " + Gotha.GOTHA_DATA_VERSION;
         strMessage += "\nHint : Read the Compatibility issues in the OpenGotha help";
         strMessage += "\n\nThe tournament has not been opened";
         JOptionPane.showMessageDialog(JFrGotha.this, strMessage, "Message", JOptionPane.ERROR_MESSAGE);

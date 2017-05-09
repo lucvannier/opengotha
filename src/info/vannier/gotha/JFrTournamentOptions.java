@@ -50,7 +50,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                System.out.println("actionPerformed");
                 if (!running){
                     timer.stop();
                 }
@@ -108,7 +107,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         ckbResetParameters = new javax.swing.JCheckBox();
         grpNewSystem = new javax.swing.ButtonGroup();
         grpHdBase = new javax.swing.ButtonGroup();
-        grpGameFormat = new javax.swing.ButtonGroup();
         dlgEditClubsGroups = new javax.swing.JDialog();
         btnDlgEditClubsGroupsClose = new javax.swing.JButton();
         scpClubs = new javax.swing.JScrollPane();
@@ -173,6 +171,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         jLabel17 = new javax.swing.JLabel();
         jLabel18 = new javax.swing.JLabel();
         ckbRoundDown = new javax.swing.JCheckBox();
+        ckbCountNPG = new javax.swing.JCheckBox();
         btnChangeSystem = new javax.swing.JButton();
         btnHelpGeneral = new javax.swing.JButton();
         pnlHan = new javax.swing.JPanel();
@@ -833,8 +832,18 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         pnlSpecialResults.add(ckbRoundDown);
         ckbRoundDown.setBounds(10, 110, 260, 23);
 
+        ckbCountNPG.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        ckbCountNPG.setText("For SOS, count not played games As Half Point");
+        ckbCountNPG.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                ckbCountNPGFocusLost(evt);
+            }
+        });
+        pnlSpecialResults.add(ckbCountNPG);
+        ckbCountNPG.setBounds(10, 140, 260, 21);
+
         pnlGen.add(pnlSpecialResults);
-        pnlSpecialResults.setBounds(10, 250, 280, 150);
+        pnlSpecialResults.setBounds(10, 250, 280, 180);
 
         btnChangeSystem.setText("Change or Reset Tournament system");
         btnChangeSystem.addActionListener(new java.awt.event.ActionListener() {
@@ -1886,19 +1895,44 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         }
         
         int oldPreferMMSDiffRatherThanSameCountry = paiPS.getPaiSePreferMMSDiffRatherThanSameCountry();
-        int newPreferMMSDiffRatherThanSameCountry = new Integer(this.txfSeCountry.getText()).intValue();
+        int newPreferMMSDiffRatherThanSameCountry;
+        try {
+            newPreferMMSDiffRatherThanSameCountry = Integer.parseInt(this.txfSeCountry.getText());
+        }
+        catch(NumberFormatException e){
+            newPreferMMSDiffRatherThanSameCountry = oldPreferMMSDiffRatherThanSameCountry;
+            this.txfSeCountry.setText("" + oldPreferMMSDiffRatherThanSameCountry);
+        }
         if (newPreferMMSDiffRatherThanSameCountry != oldPreferMMSDiffRatherThanSameCountry){
             paiPS.setPaiSePreferMMSDiffRatherThanSameCountry(newPreferMMSDiffRatherThanSameCountry);
             bSomethingHasChanged = true;            
         }
+        
         int oldPreferMMSDiffRatherThanSameClubsGroup = paiPS.getPaiSePreferMMSDiffRatherThanSameClubsGroup();
-        int newPreferMMSDiffRatherThanSameClubsGroup = new Integer(this.txfSeClubsGroup.getText()).intValue();
+        int newPreferMMSDiffRatherThanSameClubsGroup;
+        try{
+            newPreferMMSDiffRatherThanSameClubsGroup = Integer.parseInt(this.txfSeClubsGroup.getText());
+        }
+        catch(NumberFormatException e){
+            newPreferMMSDiffRatherThanSameClubsGroup = oldPreferMMSDiffRatherThanSameClubsGroup;
+            this.txfSeClubsGroup.setText("" + oldPreferMMSDiffRatherThanSameClubsGroup);
+        }
         if (newPreferMMSDiffRatherThanSameClubsGroup != oldPreferMMSDiffRatherThanSameClubsGroup){
             paiPS.setPaiSePreferMMSDiffRatherThanSameClubsGroup(newPreferMMSDiffRatherThanSameClubsGroup);
             bSomethingHasChanged = true; 
         }
+        
         int oldPreferMMSDiffRatherThanSameClub = paiPS.getPaiSePreferMMSDiffRatherThanSameClub();
-        int newPreferMMSDiffRatherThanSameClub = new Integer(this.txfSeClub.getText()).intValue();
+        int newPreferMMSDiffRatherThanSameClub;
+        // newPreferMMSDiffRatherThanSameClub = Integer.parseInt(this.txfSeClub.getText());
+        try{
+            newPreferMMSDiffRatherThanSameClub = Integer.parseInt(this.txfSeClub.getText());
+        }
+        catch(NumberFormatException e){
+            newPreferMMSDiffRatherThanSameClub = oldPreferMMSDiffRatherThanSameClub;
+            this.txfSeClub.setText("" + oldPreferMMSDiffRatherThanSameClub);
+        }
+        
         if (newPreferMMSDiffRatherThanSameClub != oldPreferMMSDiffRatherThanSameClub){
             paiPS.setPaiSePreferMMSDiffRatherThanSameClub(newPreferMMSDiffRatherThanSameClub);
             bSomethingHasChanged = true; 
@@ -2781,7 +2815,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             gps.setGenRoundDownNBWMMS(newRoundDown);
             bSomethingHasChanged = true;
         }
-
+        
         if (bSomethingHasChanged){
             try {
                 tournament.setTournamentParameterSet(tps);
@@ -2960,6 +2994,34 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         cleanClose();        
     }//GEN-LAST:event_formWindowClosing
+
+    private void ckbCountNPGFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_ckbCountNPGFocusLost
+        TournamentParameterSet tps;
+        GeneralParameterSet gps;
+        try {
+            tps = tournament.getTournamentParameterSet();
+            gps = tps.getGeneralParameterSet();
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrTournamentOptions.class.getName()).log(Level.SEVERE, null, ex);
+            return;
+        }   
+        
+        boolean bSomethingHasChanged = false;
+        boolean newCountNPG = this.ckbCountNPG.isSelected();
+        if (newCountNPG != gps.isGenCountNotPlayedGamesAsHalfPoint()){
+            gps.setGenCountNotPlayedGamesAsHalfPoint(newCountNPG);
+            bSomethingHasChanged = true;
+        }
+        
+        if (bSomethingHasChanged){
+            try {
+                tournament.setTournamentParameterSet(tps);
+                this.tournamentChanged();
+            } catch (RemoteException ex) {
+                Logger.getLogger(JFrTournamentOptions.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_ckbCountNPGFocusLost
 
     private void updHdBase(){
         TournamentParameterSet tps;
@@ -3228,6 +3290,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         }
         
         this.ckbRoundDown.setSelected(gps.isGenRoundDownNBWMMS());
+        this.ckbCountNPG.setSelected(gps.isGenCountNotPlayedGamesAsHalfPoint());
     }
     
     private void updatePnlHan()throws RemoteException{
@@ -3517,6 +3580,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
     private javax.swing.JCheckBox ckbAvoidPairingSamePair;
     private javax.swing.JCheckBox ckbBalanceWB;
     private javax.swing.JCheckBox ckbCompensate;
+    private javax.swing.JCheckBox ckbCountNPG;
     private javax.swing.JCheckBox ckbDeterministic;
     private javax.swing.JCheckBox ckbMinimizeScoreDifference;
     private javax.swing.JCheckBox ckbResetParameters;
@@ -3532,7 +3596,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
     private javax.swing.ButtonGroup grpByeNBW;
     private javax.swing.ButtonGroup grpDUDDLG;
     private javax.swing.ButtonGroup grpDUDDUG;
-    private javax.swing.ButtonGroup grpGameFormat;
     private javax.swing.ButtonGroup grpHdBase;
     private javax.swing.ButtonGroup grpHdCorrection;
     private javax.swing.ButtonGroup grpNewSystem;

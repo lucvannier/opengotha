@@ -45,7 +45,6 @@ public class JFrExperimentalTools extends javax.swing.JFrame {
         taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                System.out.println("actionPerformed");
                 if (!running){
                     timer.stop();
                 }

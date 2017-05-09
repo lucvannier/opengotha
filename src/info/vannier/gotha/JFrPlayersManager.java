@@ -71,7 +71,6 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                System.out.println("actionPerformed");
                 if (!running){
                     timer.stop();
                 }
@@ -1896,13 +1895,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
     }
 
     private void updateAllViews() {
-//        System.out.println("\nJFrPlayersManager.updateAllViews");
-
         try {
-//            System.out.println("getCurrentTournamentTime " + tournament.getCurrentTournamentTime()%1000000);
-//            System.out.println("tournament.getLastTournamentModificationTime " + tournament.getLastTournamentModificationTime()%1000000);
-//            System.out.println("lastComponentsUpdateTime " + lastComponentsUpdateTime%1000000);
-
             if (!tournament.isOpen()) cleanClose();
             this.lastComponentsUpdateTime = tournament.getCurrentTournamentTime();
             setTitle("Players Manager. " + tournament.getFullName());

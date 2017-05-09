@@ -2251,10 +2251,17 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
                 if (r == 0) {
                     sp.setNBWX2(r, 0);
                     sp.setMMSX2(r, 2 * sp.smms(gps));
+                    sp.setNBWVirtualX2(r, 0);
+                    sp.setMMSVirtualX2(r, 2 * sp.smms(gps));
                 } else {
                     sp.setNBWX2(r, sp.getNBWX2(r - 1));
                     sp.setMMSX2(r, sp.getMMSX2(r - 1));
+                    sp.setNBWVirtualX2(r, sp.getNBWVirtualX2(r - 1));
+                    sp.setMMSVirtualX2(r, sp.getMMSVirtualX2(r - 1));
                 }
+                
+//                if ( r == numberOfRoundsToCompute - 1)
+//                    System.out.println("r = " + r + " name = " + sp.getName() + " NBWX2 = " + sp.getNBWX2(r) + " NBWVirtualX2 = " + sp.getNBWVirtualX2(r));
             }
 
             // Points from games
@@ -2346,6 +2353,79 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
                 sp.setSTSX2(nbRounds - 1, sp.getSTSX2(nbRounds - 1) + 4);
             }
         }
+        
+        // 2bis) nbwVirtualX2 and mmsVirtualX2
+        for (int r = 0; r < numberOfRoundsToCompute; r++) {
+            // Initialize
+            for (ScoredPlayer sp : hmScoredPlayers.values()) {
+                if (r == 0) {
+                    sp.setNBWVirtualX2(r, 0);
+                    sp.setMMSVirtualX2(r, 2 * sp.smms(gps));
+                } else {
+                    sp.setNBWVirtualX2(r, sp.getNBWVirtualX2(r - 1));
+                    sp.setMMSVirtualX2(r, sp.getMMSVirtualX2(r - 1));
+                }
+            }
+
+            // Points from games
+            for (Game g : hmGames.values()) {
+                if (g.getRoundNumber() != r) {
+                    continue;
+                }
+                Player wP = g.getWhitePlayer();
+                Player bP = g.getBlackPlayer();
+                if (wP == null) {
+                    continue;
+                }
+                if (bP == null) {
+                    continue;
+                }
+                ScoredPlayer wSP = hmScoredPlayers.get(wP.getKeyString());
+                ScoredPlayer bSP = hmScoredPlayers.get(bP.getKeyString());
+                switch (g.getResult()) {
+                    case Game.RESULT_BOTHLOSE:
+                    case Game.RESULT_BOTHLOSE_BYDEF: // All "BYDEF" results are separately processed
+                    case Game.RESULT_WHITEWINS_BYDEF:
+                    case Game.RESULT_BLACKWINS_BYDEF:
+                    case Game.RESULT_EQUAL_BYDEF:
+                    case Game.RESULT_BOTHWIN_BYDEF:
+                    case Game.RESULT_UNKNOWN:
+                        break;
+                    case Game.RESULT_WHITEWINS:
+                        wSP.setNBWVirtualX2(r, wSP.getNBWVirtualX2(r) + 2);
+                        wSP.setMMSVirtualX2(r, wSP.getMMSVirtualX2(r) + 2);
+                        break;
+                    case Game.RESULT_BLACKWINS:
+                        bSP.setNBWVirtualX2(r, bSP.getNBWVirtualX2(r) + 2);
+                        bSP.setMMSVirtualX2(r, bSP.getMMSVirtualX2(r) + 2);
+                        break;
+                    case Game.RESULT_EQUAL:
+                        wSP.setNBWVirtualX2(r, wSP.getNBWVirtualX2(r) + 1);
+                        wSP.setMMSVirtualX2(r, wSP.getMMSVirtualX2(r) + 1);
+                        bSP.setNBWVirtualX2(r, bSP.getNBWVirtualX2(r) + 1);
+                        bSP.setMMSVirtualX2(r, bSP.getMMSVirtualX2(r) + 1);
+                        break;
+                    case Game.RESULT_BOTHWIN:
+                        wSP.setNBWVirtualX2(r, wSP.getNBWVirtualX2(r) + 2);
+                        wSP.setMMSVirtualX2(r, wSP.getMMSVirtualX2(r) + 2);
+                        bSP.setNBWVirtualX2(r, bSP.getNBWVirtualX2(r) + 2);
+                        bSP.setMMSVirtualX2(r, bSP.getMMSVirtualX2(r) + 2);
+                        break;
+                }
+            }
+        }
+        for (ScoredPlayer sp : hmScoredPlayers.values()) {
+            for (int r = 0; r < numberOfRoundsToCompute; r++) {
+                if (!sp.gameWasPlayed(r)){ 
+                    sp.setNBWVirtualX2(r, sp.getNBWVirtualX2(r) + 1);
+                    sp.setMMSVirtualX2(r, sp.getMMSVirtualX2(r) + 1);
+                }
+            }
+            
+//            System.out.println(" name = " + sp.getName() + " NBWX2 = " + sp.getNBWX2(2) + " NBWVirtualX2 = " + sp.getNBWVirtualX2(2));
+
+
+        }
 
         // 3) CUSSW and CUSSM
         for (ScoredPlayer sp : hmScoredPlayers.values()) {
@@ -2358,23 +2438,34 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
         }
 
         // 4.1) SOSW, SOSWM1, SOSWM2,SODOSW
+        boolean bVirtual = this.getTournamentParameterSet().getGeneralParameterSet().isGenCountNotPlayedGamesAsHalfPoint();
         for (int r = 0; r < numberOfRoundsToCompute; r++) {
             for (ScoredPlayer sp : hmScoredPlayers.values()) {
                 int[] oswX2 = new int[numberOfRoundsToCompute];
                 int[] doswX4 = new int[numberOfRoundsToCompute];    // Defeated opponents score
+//                int[] osmX2  = new int[numberOfRoundsToCompute];
+//                int[] dosmX4 = new int[numberOfRoundsToCompute];    // Defeated opponents score
+//                int[] ostsX2 = new int[numberOfRoundsToCompute];
 
                 for (int rr = 0; rr <= r; rr++) {
                     if (sp.getParticipation(rr) != ScoredPlayer.PAIRED) {
                         oswX2[rr] = 0;
                         doswX4[rr] = 0;
+//                        osmX2[rr] = 2 * sp.smms(gps);
+//                        ostsX2[rr] = 2 * sp.smms(gps);
                     } else {
                         Game g = sp.getGame(rr);
                         Player opp = this.opponent(g, sp);
                         int result = getWX2(g, sp);
 
                         ScoredPlayer sOpp = hmScoredPlayers.get(opp.getKeyString());
-                        oswX2[rr] = sOpp.getNBWX2(r);
-                        doswX4[rr] = oswX2[rr] * result;
+                        if (bVirtual){
+                            oswX2[rr] = sOpp.getNBWVirtualX2(r);
+                        }
+                        else{
+                            oswX2[rr] = sOpp.getNBWX2(r);
+                        }                       
+                        doswX4[rr] = oswX2[rr] * result;                        
                     }
                 }
                 int sosX2 = 0;
@@ -2419,7 +2510,6 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
                 }
                 sp.setSOSWM1X2(r, sosM1X2);
                 sp.setSOSWM2X2(r, sosM2X2);
-
             }
         }
 
@@ -2436,10 +2526,21 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
                     } else {
                         Game g = sp.getGame(rr);
                         Player opp = opponent(g, sp);
+                        int result = getWX2(g, sp);                       
                         ScoredPlayer sOpp = hmScoredPlayers.get(opp.getKeyString());
+                        
+                       if (bVirtual){
+                            osmX2[rr] = sOpp.getMMSVirtualX2(r);
+                            ostsX2[rr] = sOpp.getSTSVirtualX2(r);
+                        }
+                        else{
+                            osmX2[rr] = sOpp.getMMSX2(r);
+                            ostsX2[rr] = sOpp.getSTSX2(r);
+                        }                       
+                         
                         osmX2[rr] = sOpp.getMMSX2(r);
                         ostsX2[rr] = sOpp.getSTSX2(r);
-
+                        
                         if (g.getWhitePlayer().hasSameKeyString(sp)) {
                             osmX2[rr] += 2 * g.getHandicap();
                             ostsX2[rr] += 2 * g.getHandicap();
@@ -2498,6 +2599,8 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
                 }
             }
         }
+        
+                
         
         // 5) SOSOSW and SOSOSM
         for (int r = 0; r < numberOfRoundsToCompute; r++) {
@@ -2954,7 +3057,6 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
     @Override
     public void setLastTournamentModificationTime(long lastTournamentModificationTime) throws RemoteException {
         this.lastTournamentModificationTime = lastTournamentModificationTime;
-//        System.out.println("\nsetLastTournamentModificationTime. lastTournamentModificationTime " + lastTournamentModificationTime%1000000);
     }
 
     @Override

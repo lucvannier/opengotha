@@ -2862,7 +2862,7 @@
 <ByePlayer player="GROOTAYA_DE" roundNumber="4"/>
 </ByePlayers>
 <TournamentParameterSet>
-<GeneralParameterSet basicTime="150" beginDate="2013-07-28" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Krzysztof Grabowski" endDate="2013-08-10" fischerTime="10" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="Olsztyn" name="EGC2013mainEssai" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="10" shortName="egc2013Essai" size="19" stdByoYomiTime="60"/>
+<GeneralParameterSet basicTime="150" beginDate="2013-07-28" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Krzysztof Grabowski" endDate="2013-08-10" fischerTime="10" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="Olsztyn" name="EGC2013main" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="10" shortName="egc2013Essai" size="19" stdByoYomiTime="60"/>
 <HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="3" hdNoHdRankThreshold="30K"/>
 <PlacementParameterSet>
 <PlacementCriteria>

@@ -1,3 +1,11 @@
+OpenGothaV3.44.05
+*****************
+26/05/2017
+Int issue   New more robust process to close frames.
+New         Preferences frame also displays log preferences
+New         "Virtual SOS"
+Improvement New "Draw-up Draw-down" algorithm in Pairing evaluation function 
+
 OpenGothaV3.44
 **************
 29/10/2016
@@ -16,7 +24,7 @@ OpenGothaV3.42
         Doc updated
 
 OpenGothaV3.41
-**************
+*************
 10/06/2015
 Bug Fix A problem occured in pairing when McMahon zero was different of 30K. Fixed
 New     Choice of bye players depends on mms (strong mms = no bye)

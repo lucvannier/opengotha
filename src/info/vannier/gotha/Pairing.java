@@ -209,23 +209,41 @@ public class Pairing {
             }
         }
 
+        int nbDUDDPlayers = 0; // players having at least 1 DU or 1 DD
         int nbUnbalancedDUDDPlayers = 0;
+        int sumBal = 0; // sum of absolute values of balances
         String strReport = "";
         for (int i = 0; i < nbPlayers; i++){
             Player p = alP.get(i);
-            int bal = nbDU[i] -nbDD[i];
+            if (nbDU[i] == 0 && nbDD[i] == 0) continue;
+            nbDUDDPlayers++;
+
+            int bal = nbDU[i] - nbDD[i];
+            if (bal == 0){
+                String strBal = "" + bal;
+                strReport +="\nBAL " + p.fullName() + " " + Player.convertIntToKD(p.getRank()) + " balance = " + strBal +
+                        " " + nbDU[i] + "DU " + nbDD[i] + "DD";
+            }
             if (bal != 0){
                 nbUnbalancedDUDDPlayers++;
+                sumBal += Math.abs(bal);
                 String strBal = "" + bal;
                 if (bal > 0) strBal = "+" + bal;
-                strReport +="\n" + p.fullName() + " " + Player.convertIntToKD(p.getRank()) + " balance = " + strBal +
+                strReport +="\nUNB " + p.fullName() + " " + Player.convertIntToKD(p.getRank()) + " balance = " + strBal +
                         " " + nbDU[i] + "DU " + nbDD[i] + "DD";
-
             }
         }
 
-        strReport = "Number of players with an unbalanced MMS draw up/down : " + nbUnbalancedDUDDPlayers +
+        strReport = "MMS draw up/down from round 1  to round " +
+                (roundNumber + 1) +
+                "\nNumber of players with at least one draw up or one draw down :" + 
+                nbDUDDPlayers +
+                "\nNumber of players with an unbalanced MMS draw up/down :" + 
+                nbUnbalancedDUDDPlayers +
                 strReport;
+        
+        strReport += "\nSum of absolute values of balances " +
+                sumBal;
 
         return strReport;
     }

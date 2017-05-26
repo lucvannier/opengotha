@@ -833,7 +833,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         ckbRoundDown.setBounds(10, 110, 260, 23);
 
         ckbCountNPG.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        ckbCountNPG.setText("For SOS, count not played games As Half Point");
+        ckbCountNPG.setText("For SOS, count not played games as half point");
         ckbCountNPG.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 ckbCountNPGFocusLost(evt);

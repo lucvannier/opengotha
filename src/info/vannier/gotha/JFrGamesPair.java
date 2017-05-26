@@ -688,7 +688,7 @@ public class JFrGamesPair extends javax.swing.JFrame {
         dlgPairingReport.getContentPane().add(ckbIntraClub);
         ckbIntraClub.setBounds(10, 130, 260, 23);
 
-        btnGenerateReport.setText("Generate report");
+        btnGenerateReport.setText("Generate/Refresh report");
         btnGenerateReport.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnGenerateReportActionPerformed(evt);
@@ -1428,9 +1428,13 @@ public class JFrGamesPair extends javax.swing.JFrame {
         dlgPairingReport.setTitle("Pairing report");
         dlgPairingReport.setIconImage(Gotha.getIconImage());
         dlgPairingReport.setVisible(true);
+        generateReport();
     }//GEN-LAST:event_btnReportActionPerformed
 
     private void btnGenerateReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateReportActionPerformed
+        generateReport();
+    }//GEN-LAST:event_btnGenerateReportActionPerformed
+    private void generateReport(){
         String strReport = "";
         strReport += "Round " + (processedRoundNumber + 1) + "\n\n";
 
@@ -1460,8 +1464,8 @@ public class JFrGamesPair extends javax.swing.JFrame {
         }
 
         txaReport.setText(strReport);
-    }//GEN-LAST:event_btnGenerateReportActionPerformed
-
+    
+    }
     private void btnDlgPairingReportCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnDlgPairingReportCloseActionPerformed
         this.dlgPairingReport.dispose();
     }//GEN-LAST:event_btnDlgPairingReportCloseActionPerformed

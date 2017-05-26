@@ -73,6 +73,7 @@
 <!ATTLIST GeneralParameterSet genMMS2ValueAbsent CDATA "1">
 <!ATTLIST GeneralParameterSet genMMS2ValueBye CDATA "1">
 <!ATTLIST GeneralParameterSet genRoundDownNBWMMS CDATA "true">
+<!ATTLIST GeneralParameterSet genCountNotPlayedGamesAsHalfPoint CDATA "false">
 
 <!ELEMENT Categories (Category+)>
 <!ELEMENT Category (#PCDATA)>

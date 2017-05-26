@@ -33,18 +33,24 @@
       Aims at choosing players according to their positions inside their group (Top/Middle/Bottom) and at
       correcting previous draw-ups/draw-downs.
       <br>If players have a group distance >=4, set to 0
-      <br> else 4 scenarii :
+      <br> else 5 scenarii :
       <ul>
-          <li>scenario = 0 : One of the players has been already drawn in the same sense</li>
-          <li>scenario = 1 : Normal conditions (does not correct anything and no previous drawn in the same sense)</li>
-          <li>scenario = 2 : It corrects a previous DU/DD for one player</li>
-          <li>scenario = 3 : It corrects a previous DU/DD for both players</li>
+          <li>scenario = 0 : Both players have been already drawn up/down in the same sense</li>
+          <li>scenario = 1 : One of the players has been already drawn up/down in the same sense</li>
+          <li>scenario = 2 : Normal conditions (does not correct anything and no previous draw in the same sense.
+           This case also occurs if one DU/DD is increased, while one is compensated</li>         
+          <li>scenario = 3 : It corrects a previous DU/DD for one player</li>
+          <li>scenario = 4 : It corrects a previous DU/DD for both players</li>
       </ul>
       If scenario = 0, set to 0
-      <br>Else take in account the position of the player inside a group. This gives a value between 0 and 33 333 333
-      <br>If scenario = 2, add 33 333 333
-      <br>If scenario = 3, add 66 666 666
-      <br>Set to the resulting value, which is a number between 0 and 99 999 999
+      <br>Else take in account the position of each player inside his group. 
+      This gives a value between 0 and 20 000 000, according to the choice of "choose player in the top/middle/bottom" parameter. 
+      <br>If scenario = 1, add 20 000 000
+      <br>If scenario = 2, add 40 000 000
+      <br>If scenario = 3, add 60 000 000
+      <br>If scenario = 4, add 80 000 000
+      
+      <br>Set to the resulting value, which is a number between 0 and 100 000 000 
       <br>If players belong to different categories, decrease the resulting value
       <h3>Seeding</h3>
       Aims at pairing according to chosen seeding system : "Split and Random", "Split and Fold" or "Split and Slip".
@@ -76,8 +82,8 @@
       The maximum value is 20 000 * 10^9 . The minimum is 0
       <br>Between the extrema, set to coef * 20 000 * 10^9 where coef is a number between 0.0 and 1.0, computed by a <a href="#concavity">concavity function</a> a If MMS difference is 0, set it to Secondary criteria are not applied for players above a certain ranking, as set by the organizer (by default, 4D) and, optionnaly (by default, secondary criteria applied), for players with a number of wins >= (number of rounds) /2.
       <h3>Geographical criteria</h3>
-      A malus value is computed for if both players belong to the same club. An other one for if both players belong to the same country. The values of the malus depends on the "Prefer a group gap of ..." as defined by the user.
-      The geographical malus is set as a worse value between both malus.
+      A malus value is computed if both players belong to the same club. An other one if both players belong to the same country. The values of the malus depends on the "Prefer a group gap of ..." as defined by the user.
+      The geographical malus is set as the worse value between both malus.
 
       <h2><a name="concavity">Concavity function</a></h2>
       The concavity function is used to compute the weight of several criteria.
@@ -89,7 +95,7 @@
           <li> Pair the 1K with a 2K, the other 2K with a 3K, etc.</li>
       </ul>
       Any human organizer would choose the second option, but the computer might not, if you don't take care.
-      <br>Assume that in your evaluation function, the base value for a pair is 1000 and you give a penalty of 100 * d for a d kyu rank difference.
+      <br>Assume that in your evaluation function, the base value for a pair is 1000 and you give a penalty of 100 * d for a dan/kyu rank difference.
       <br>The sum of values will be, in both cases 9000.
       <br>Now, with the concavity function.
       <br>Instead of 1000 - 100*d, you use 1000 * (1.0 - x) * (1.0 + k * x)) (OpenGotha uses 0.5 for k. x = d/maxRange, d/10 here)

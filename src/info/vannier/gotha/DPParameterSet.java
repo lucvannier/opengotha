@@ -14,7 +14,6 @@ public class DPParameterSet implements java.io.Serializable{
     private int gameFormat = DP_GAME_FORMAT_FULL;
         
     private boolean showPlayerGrade               = true;
-//    private boolean showPlayerRank               = true;
     private boolean showPlayerCountry            = false;
     private boolean showPlayerClub               = true;
 

@@ -1,10 +1,11 @@
-OpenGothaV3.44.05
+OpenGothaV3.44.06
 *****************
 26/05/2017
 Int issue   New more robust process to close frames.
 New         Preferences frame also displays log preferences
 New         "Virtual SOS"
 Improvement New "Draw-up Draw-down" algorithm in Pairing evaluation function 
+Improvement Frames and dialog boxes are now opened close to the ancestor frame 
 
 OpenGothaV3.44
 **************

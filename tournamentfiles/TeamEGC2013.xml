@@ -2537,7 +2537,7 @@
 </Team>
 </Teams>
 <TournamentParameterSet>
-<GeneralParameterSet basicTime="20" beginDate="2013-07-31" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Krzysztof Bozek" endDate="2013-07-31" fischerTime="10" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="Olsztyn" name="TeamEGC2013" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="6" shortName="TeamEGC2013" size="19" stdByoYomiTime="20"/>
+<GeneralParameterSet basicTime="20" beginDate="2013-07-31" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Krzysztof Bozek" endDate="2013-07-31" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="Olsztyn" name="TeamEGC2013" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="6" shortName="TeamEGC2013" size="19" stdByoYomiTime="20"/>
 <HandicapParameterSet hdBasedOnMMS="false" hdCeiling="9" hdCorrection="2" hdNoHdRankThreshold="8D"/>
 <PlacementParameterSet>
 <PlacementCriteria>

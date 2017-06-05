@@ -8,8 +8,6 @@
  */
 package info.vannier.gotha;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -515,15 +513,7 @@ public class JFrExperimentalTools extends javax.swing.JFrame {
      * Unlike initComponents, customInitComponents is editable
      */
     private void customInitComponents() throws RemoteException {
-        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
-        int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((dim.width - w) / 2, (dim.height - h) / 2, w, h);
-
-        setIconImage(Gotha.getIconImage());
- 
-        updateComponents();
-   
+        updateComponents();  
     }
 
 

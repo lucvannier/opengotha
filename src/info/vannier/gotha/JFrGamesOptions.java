@@ -3,8 +3,6 @@
  */
 package info.vannier.gotha;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.rmi.RemoteException;
@@ -28,7 +26,6 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-//                System.out.println("actionPerformed");
                 if (!running){
                     timer.stop();
                 }
@@ -477,20 +474,11 @@ public class JFrGamesOptions extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowClosing
 
     private void customInitComponents() throws RemoteException {
-        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
-        int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((dim.width - w) / 2, (dim.height - h) / 2, w, h);
-
-        setIconImage(Gotha.getIconImage());
-
-        setIconImage(Gotha.getIconImage());
         this.updatePnlGam();
     }
 
     private void tournamentChanged() {
         try {
-//            System.out.println("\ntournamentChanged. Appel setLastTournamentModificationTime. " + tournament.getCurrentTournamentTime()%1000000);
             tournament.setLastTournamentModificationTime(tournament.getCurrentTournamentTime());
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGamesOptions.class.getName()).log(Level.SEVERE, null, ex);
@@ -500,13 +488,8 @@ public class JFrGamesOptions extends javax.swing.JFrame {
     }
 
     private void updateAllViews() {
-//        System.out.println("\nJFrGamesOptions.updateAllViews");
-        this.pnlGam.setVisible(true);
+       this.pnlGam.setVisible(true);
         try {
-//            System.out.println("getCurrentTournamentTime " + tournament.getCurrentTournamentTime()%1000000);
-//            System.out.println("tournament.getLastTournamentModificationTime " + tournament.getLastTournamentModificationTime()%1000000);
-//            System.out.println("lastComponentsUpdateTime " + lastComponentsUpdateTime%1000000);
-
             if (!tournament.isOpen()) cleanClose();
             this.lastComponentsUpdateTime = tournament.getCurrentTournamentTime();
             setTitle("Games Settings. " + tournament.getFullName());

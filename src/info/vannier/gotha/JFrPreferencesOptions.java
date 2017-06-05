@@ -4,8 +4,6 @@
 
 package info.vannier.gotha;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.util.logging.Level;
@@ -280,12 +278,6 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
     }//GEN-LAST:event_btnClearLogPreferencesActionPerformed
         
     private void customInitComponents(){
-        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
-        int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((dim.width - w)/2, (dim.height -h)/2, w, h);
-
-        setIconImage(Gotha.getIconImage());
         this.updateAllViews();
     }
     private void updateAllViews(){
@@ -311,10 +303,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         model.setRowCount(len);
         for (int i = 0; i < len; i++){
             String key = strPrefs[i];
-//            System.out.println("" + key);
-            String value = gothaPrefs.get(key, "def");
-//            System.out.println("" + value);
-            
+            String value = gothaPrefs.get(key, "def");            
             model.setValueAt(key, i, 0);
             model.setValueAt(value, i, 1);
         }

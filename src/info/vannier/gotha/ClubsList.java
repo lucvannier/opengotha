@@ -28,7 +28,6 @@ public class ClubsList {
             if (previousClub == null) previousClubName ="null";
             else previousClubName = previousClub.getName();
             i++;
-//            System.out.println("" + i + " previousClub.name = " + previousClubName + "c.name= " + c.getName());
 
             hmClubs.put(c.getName(), c);
         }

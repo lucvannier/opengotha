@@ -66,7 +66,6 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-//                System.out.println("actionPerformed");
                 if (!running){
                     timer.stop();
                 }
@@ -88,13 +87,6 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
      * Unlike initComponents, customInitComponents is editable
      */
     private void customInitComponents() throws RemoteException {
-        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
-        int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((dim.width - w) / 2, (dim.height - h) / 2, w, h);
-
-        setIconImage(Gotha.getIconImage());
-
         this.pgbRatingList.setVisible(false);
         
         initRatingListRDBControls();
@@ -208,7 +200,7 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         btnHelp = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
         pnlPlayersList = new javax.swing.JPanel();
-        cbxRatingList = new javax.swing.JComboBox();
+        cbxRatingList = new javax.swing.JComboBox<>();
         btnPrint = new javax.swing.JButton();
         scpPlayers = new javax.swing.JScrollPane();
         tblPlayers = new javax.swing.JTable();
@@ -257,7 +249,7 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         pnlPlayersList.setBorder(javax.swing.BorderFactory.createTitledBorder("Players"));
         pnlPlayersList.setLayout(null);
 
-        cbxRatingList.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbxRatingList.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxRatingList.setFocusCycleRoot(true);
         cbxRatingList.addItemListener(new java.awt.event.ItemListener() {
             public void itemStateChanged(java.awt.event.ItemEvent evt) {
@@ -760,7 +752,7 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
     private javax.swing.JButton btnUpdateAllRatings;
     private javax.swing.JButton btnUpdateRatingList;
     private javax.swing.JButton btnUpdateSelRatings;
-    private javax.swing.JComboBox cbxRatingList;
+    private javax.swing.JComboBox<String> cbxRatingList;
     private javax.swing.ButtonGroup grpRatingList;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel lblRatingList;

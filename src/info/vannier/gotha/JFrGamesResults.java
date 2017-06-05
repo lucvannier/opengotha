@@ -89,12 +89,6 @@ public class JFrGamesResults extends javax.swing.JFrame {
      * Unlike initComponents, customInitComponents is editable
      */
     private void customInitComponents() throws RemoteException {
-        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
-        int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((dim.width - w) / 2, (dim.height - h) / 2, w, h);
-        setIconImage(Gotha.getIconImage());
-
         initGamesComponents();
         this.updateAllViews();
         
@@ -291,7 +285,7 @@ public class JFrGamesResults extends javax.swing.JFrame {
         btnHelp = new javax.swing.JButton();
         ckbTeamOrder = new javax.swing.JCheckBox();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DISPOSE_ON_CLOSE);
         setTitle("Games .. Results");
         setResizable(false);
         getContentPane().setLayout(null);

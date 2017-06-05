@@ -7,6 +7,7 @@ import java.awt.Dimension;
 import java.awt.Point;
 import java.awt.Rectangle;
 import java.awt.Toolkit;
+import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.awt.event.InputEvent;
@@ -67,7 +68,6 @@ public class JFrGamesPair extends javax.swing.JFrame {
         taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-//                System.out.println("actionPerformed");
                 if (!running){
                     timer.stop();
                 }
@@ -88,14 +88,7 @@ public class JFrGamesPair extends javax.swing.JFrame {
      * initialize the form.
      * Unlike initComponents, customInitComponents is editable
      */
-    private void customInitComponents() throws RemoteException {
-        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
-        int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((dim.width - w) / 2, (dim.height - h) / 2, w, h);
-
-        setIconImage(Gotha.getIconImage());
-        
+    private void customInitComponents() throws RemoteException {    
         getRootPane().setDefaultButton(btnSearch);
         initPlayersComponents();
         initPreviousGamesComponents();
@@ -1421,16 +1414,25 @@ public class JFrGamesPair extends javax.swing.JFrame {
 
     private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportActionPerformed
 //        LogElements.incrementElement("games.pairingreport", "");
-        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
-        int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        dlgPairingReport.setBounds((dim.width - w) / 2, (dim.height - h) / 2, w, h);
-        dlgPairingReport.setTitle("Pairing report");
-        dlgPairingReport.setIconImage(Gotha.getIconImage());
-        dlgPairingReport.setVisible(true);
+//        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
+//        int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
+//        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+//        dlgPairingReport.setBounds((dim.width - w) / 2, (dim.height - h) / 2, w, h);
+//        dlgPairingReport.setTitle("Pairing report");
+//        dlgPairingReport.setIconImage(Gotha.getIconImage());
+//        dlgPairingReport.setVisible(true);
+        displayFrame(dlgPairingReport, JFrGotha.MEDIUM_FRAME_WIDTH, JFrGotha.MEDIUM_FRAME_HEIGHT);
         generateReport();
     }//GEN-LAST:event_btnReportActionPerformed
 
+    private void displayFrame(Window win, int w, int h){
+        Rectangle newRect = this.getBounds();
+        win.setLocation(newRect.x + 10, newRect.y + 60);
+        win.setSize(w, h);
+        win.setVisible(true);
+        win.setIconImage(Gotha.getIconImage());
+    }
+    
     private void btnGenerateReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnGenerateReportActionPerformed
         generateReport();
     }//GEN-LAST:event_btnGenerateReportActionPerformed

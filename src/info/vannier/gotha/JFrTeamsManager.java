@@ -4,9 +4,7 @@
 
 package info.vannier.gotha;
 
-import java.awt.Dimension;
 import java.awt.Point;
-import java.awt.Toolkit;
 import java.awt.datatransfer.DataFlavor;
 import java.awt.datatransfer.UnsupportedFlavorException;
 import java.awt.event.ActionEvent;
@@ -56,7 +54,6 @@ public class JFrTeamsManager extends javax.swing.JFrame {
 
     /** Creates new form JFrTeamsManager */
     public JFrTeamsManager(TournamentInterface tournament) throws RemoteException{
-//        LogElements.incrementElement("players.tm", "");
         this.tournament = tournament;
         processedRoundNumber = tournament.presumablyCurrentRoundNumber();
  
@@ -73,7 +70,6 @@ public class JFrTeamsManager extends javax.swing.JFrame {
         taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-//                System.out.println("actionPerformed");
                 if (!running){
                     timer.stop();
                 }
@@ -91,13 +87,6 @@ public class JFrTeamsManager extends javax.swing.JFrame {
     }
 
     private void customInitComponents() throws RemoteException {
-        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
-        int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((dim.width - w) / 2, (dim.height - h) / 2, w, h);
-
-        setIconImage(Gotha.getIconImage());
-
         initPlayersComponents();
         initTeamsComponents();
         initDnDIssues();

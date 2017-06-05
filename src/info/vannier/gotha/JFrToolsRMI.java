@@ -4,16 +4,10 @@
 
 package info.vannier.gotha;
 
-import java.awt.Dimension;
-import java.awt.Toolkit;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
-import java.rmi.RemoteException;
 import java.rmi.registry.Registry;
 import java.util.ArrayList;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-
 
 /**
  *
@@ -37,7 +31,6 @@ public class JFrToolsRMI extends javax.swing.JFrame {
         taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-//                System.out.println("actionPerformed");
                 if (!running){
                     timer.stop();
                 }
@@ -59,10 +52,10 @@ public class JFrToolsRMI extends javax.swing.JFrame {
     private void initComponents() {
 
         scpRegistryContents = new javax.swing.JScrollPane();
-        lstRegistryContents = new javax.swing.JList();
+        lstRegistryContents = new javax.swing.JList<>();
         btnUnbind = new javax.swing.JButton();
         scpClients = new javax.swing.JScrollPane();
-        lstClients = new javax.swing.JList();
+        lstClients = new javax.swing.JList<>();
         lblClients = new javax.swing.JLabel();
         lblClients1 = new javax.swing.JLabel();
         btnForgetNonActiveClients = new javax.swing.JButton();
@@ -94,10 +87,10 @@ public class JFrToolsRMI extends javax.swing.JFrame {
         getContentPane().add(btnUnbind);
         btnUnbind.setBounds(20, 230, 200, 23);
 
-        lstClients.setModel(new javax.swing.AbstractListModel() {
+        lstClients.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
             public int getSize() { return strings.length; }
-            public Object getElementAt(int i) { return strings[i]; }
+            public String getElementAt(int i) { return strings[i]; }
         });
         scpClients.setViewportView(lstClients);
 
@@ -139,11 +132,11 @@ public class JFrToolsRMI extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void customInitComponents(){
-        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
-        int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((dim.width - w)/2, (dim.height -h)/2, w, h);
-        setIconImage(Gotha.getIconImage());
+//        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
+//        int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
+//        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
+//        setBounds((dim.width - w)/2, (dim.height -h)/2, w, h);
+//        setIconImage(Gotha.getIconImage());
 
         updateComponents();
     }
@@ -205,8 +198,8 @@ public class JFrToolsRMI extends javax.swing.JFrame {
     private javax.swing.JCheckBox ckbRTUpdate;
     private javax.swing.JLabel lblClients;
     private javax.swing.JLabel lblClients1;
-    private javax.swing.JList lstClients;
-    private javax.swing.JList lstRegistryContents;
+    private javax.swing.JList<String> lstClients;
+    private javax.swing.JList<String> lstRegistryContents;
     private javax.swing.JScrollPane scpClients;
     private javax.swing.JScrollPane scpRegistryContents;
     // End of variables declaration//GEN-END:variables

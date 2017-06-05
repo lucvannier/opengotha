@@ -216,7 +216,7 @@ public class AutoCompletion extends PlainDocument {
     
     private static void createAndShowGUI() {
         // the combo box (add/modify items if you like to)
-        final JComboBox comboBox = new JComboBox(new Object[] {"Ester", "Jordi", "Jordina", "Jorge", "Sergi"});
+        final JComboBox comboBox = new javax.swing.JComboBox<>(new Object[] {"Ester", "Jordi", "Jordina", "Jorge", "Sergi"});
         enable(comboBox);
         
         // create and show a window containing the combo box

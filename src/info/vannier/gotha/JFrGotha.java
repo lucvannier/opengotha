@@ -200,14 +200,14 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlPS = new javax.swing.JPanel();
         rdbCurrentPS = new javax.swing.JRadioButton();
         rdbTemporaryPS = new javax.swing.JRadioButton();
-        cbxCrit1 = new javax.swing.JComboBox();
+        cbxCrit1 = new javax.swing.JComboBox<>();
         jLabel3 = new javax.swing.JLabel();
         jLabel4 = new javax.swing.JLabel();
-        cbxCrit2 = new javax.swing.JComboBox();
+        cbxCrit2 = new javax.swing.JComboBox<>();
         jLabel5 = new javax.swing.JLabel();
-        cbxCrit3 = new javax.swing.JComboBox();
+        cbxCrit3 = new javax.swing.JComboBox<>();
         jLabel6 = new javax.swing.JLabel();
-        cbxCrit4 = new javax.swing.JComboBox();
+        cbxCrit4 = new javax.swing.JComboBox<>();
         scpStandings = new javax.swing.JScrollPane();
         tblStandings = new javax.swing.JTable();
         btnPrintStandings = new javax.swing.JButton();
@@ -227,17 +227,17 @@ public class JFrGotha extends javax.swing.JFrame {
         rdbCurrentTeamPS = new javax.swing.JRadioButton();
         rdbTemporaryTeamPS = new javax.swing.JRadioButton();
         jLabel9 = new javax.swing.JLabel();
-        cbxTeamCrit1 = new javax.swing.JComboBox();
+        cbxTeamCrit1 = new javax.swing.JComboBox<>();
         jLabel14 = new javax.swing.JLabel();
-        cbxTeamCrit2 = new javax.swing.JComboBox();
+        cbxTeamCrit2 = new javax.swing.JComboBox<>();
         jLabel15 = new javax.swing.JLabel();
-        cbxTeamCrit3 = new javax.swing.JComboBox();
+        cbxTeamCrit3 = new javax.swing.JComboBox<>();
         jLabel16 = new javax.swing.JLabel();
-        cbxTeamCrit4 = new javax.swing.JComboBox();
+        cbxTeamCrit4 = new javax.swing.JComboBox<>();
         jLabel17 = new javax.swing.JLabel();
-        cbxTeamCrit5 = new javax.swing.JComboBox();
+        cbxTeamCrit5 = new javax.swing.JComboBox<>();
         jLabel18 = new javax.swing.JLabel();
-        cbxTeamCrit6 = new javax.swing.JComboBox();
+        cbxTeamCrit6 = new javax.swing.JComboBox<>();
         scpTeamsStandings = new javax.swing.JScrollPane();
         tblTeamsStandings = new javax.swing.JTable();
         lblTeamUpdateTime = new javax.swing.JLabel();
@@ -611,7 +611,7 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlPS.add(rdbTemporaryPS);
         rdbTemporaryPS.setBounds(10, 40, 170, 13);
 
-        cbxCrit1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbxCrit1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxCrit1.setEnabled(false);
         cbxCrit1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -631,7 +631,7 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlPS.add(jLabel4);
         jLabel4.setBounds(10, 100, 34, 13);
 
-        cbxCrit2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbxCrit2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxCrit2.setEnabled(false);
         cbxCrit2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -646,7 +646,7 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlPS.add(jLabel5);
         jLabel5.setBounds(10, 130, 34, 13);
 
-        cbxCrit3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbxCrit3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxCrit3.setEnabled(false);
         cbxCrit3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -661,7 +661,7 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlPS.add(jLabel6);
         jLabel6.setBounds(10, 160, 34, 13);
 
-        cbxCrit4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbxCrit4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxCrit4.setEnabled(false);
         cbxCrit4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -814,7 +814,7 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlTeamPS.add(jLabel9);
         jLabel9.setBounds(10, 70, 34, 13);
 
-        cbxTeamCrit1.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbxTeamCrit1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxTeamCrit1.setEnabled(false);
         cbxTeamCrit1.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -829,7 +829,7 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlTeamPS.add(jLabel14);
         jLabel14.setBounds(10, 100, 34, 13);
 
-        cbxTeamCrit2.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbxTeamCrit2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxTeamCrit2.setEnabled(false);
         cbxTeamCrit2.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -844,7 +844,7 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlTeamPS.add(jLabel15);
         jLabel15.setBounds(10, 130, 34, 13);
 
-        cbxTeamCrit3.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbxTeamCrit3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxTeamCrit3.setEnabled(false);
         cbxTeamCrit3.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -859,7 +859,7 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlTeamPS.add(jLabel16);
         jLabel16.setBounds(10, 160, 34, 13);
 
-        cbxTeamCrit4.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbxTeamCrit4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxTeamCrit4.setEnabled(false);
         cbxTeamCrit4.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -874,7 +874,7 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlTeamPS.add(jLabel17);
         jLabel17.setBounds(10, 190, 34, 13);
 
-        cbxTeamCrit5.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbxTeamCrit5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxTeamCrit5.setEnabled(false);
         cbxTeamCrit5.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -889,7 +889,7 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlTeamPS.add(jLabel18);
         jLabel18.setBounds(10, 220, 34, 13);
 
-        cbxTeamCrit6.setModel(new javax.swing.DefaultComboBoxModel(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
+        cbxTeamCrit6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxTeamCrit6.setEnabled(false);
         cbxTeamCrit6.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
@@ -1323,7 +1323,7 @@ public class JFrGotha extends javax.swing.JFrame {
 
         try {
             JFrame jfr = new JFrGamesOptions(tournament);
-            jfr.setVisible(true);
+            this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1359,7 +1359,7 @@ public class JFrGotha extends javax.swing.JFrame {
 
         try {
             JFrame jfr = new JFrPlayersMMG(tournament);
-            jfr.setVisible(true);
+            this.displayFrame(jfr, BIG_FRAME_WIDTH, BIG_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1372,7 +1372,7 @@ public class JFrGotha extends javax.swing.JFrame {
         }
         try {
             JFrame jfr = new JFrBuildTestTournament(tournament);
-            jfr.setVisible(true);
+            this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1491,7 +1491,7 @@ public class JFrGotha extends javax.swing.JFrame {
         }
         try {
             JFrame jfr = new JFrTournamentOptions(tournament);
-            jfr.setVisible(true);
+            this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1502,13 +1502,8 @@ public class JFrGotha extends javax.swing.JFrame {
         if (!saveCurrentTournamentIfNecessary()) {
             return;
         }
-        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
-        int h = JFrGotha.SMALL_FRAME_HEIGHT;
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        dlgNew.setBounds((dim.width - w) / 2, (dim.height - h) / 2, w, h);
         dlgNew.setTitle("Create a new tournament");
-        dlgNew.setIconImage(Gotha.getIconImage());
-
+        this.displayFrame(dlgNew, MEDIUM_FRAME_WIDTH, SMALL_FRAME_HEIGHT);
 
         this.rdbMcMahon.setSelected(true);
         this.txfNumberOfRounds.setText("5");
@@ -1565,12 +1560,11 @@ public class JFrGotha extends javax.swing.JFrame {
             return;
         }
         try {
-            JFrame jfr = new JFrGamesResults(tournament);
-            jfr.setVisible(true);
+            JFrame jfr = new JFrGamesResults(tournament);   
+            displayFrame(jfr, JFrGotha.MEDIUM_FRAME_WIDTH, JFrGotha.MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
-
     }//GEN-LAST:event_mniResultsActionPerformed
 
     private void mniPairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniPairActionPerformed
@@ -1580,7 +1574,7 @@ public class JFrGotha extends javax.swing.JFrame {
         }
         try {
             JFrame jfr = new JFrGamesPair(tournament);
-            jfr.setVisible(true);
+            displayFrame(jfr, JFrGotha.MEDIUM_FRAME_WIDTH, JFrGotha.MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1594,7 +1588,7 @@ public class JFrGotha extends javax.swing.JFrame {
         }
         try {
             JFrame jfr = new JFrPlayersQuickCheck(tournament);
-            jfr.setVisible(true);
+            displayFrame(jfr, JFrGotha.MEDIUM_FRAME_WIDTH, JFrGotha.MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1762,17 +1756,17 @@ public class JFrGotha extends javax.swing.JFrame {
     }
 
     private void initCriteriaAndStandingsComponents() throws RemoteException {
-        cbxCrit1.setModel(new DefaultComboBoxModel(PlacementParameterSet.criteriaLongNames()));
-        cbxCrit2.setModel(new DefaultComboBoxModel(PlacementParameterSet.criteriaLongNames()));
-        cbxCrit3.setModel(new DefaultComboBoxModel(PlacementParameterSet.criteriaLongNames()));
-        cbxCrit4.setModel(new DefaultComboBoxModel(PlacementParameterSet.criteriaLongNames()));
+        cbxCrit1.setModel(new DefaultComboBoxModel<String>(PlacementParameterSet.criteriaLongNames()));
+        cbxCrit2.setModel(new DefaultComboBoxModel<String>(PlacementParameterSet.criteriaLongNames()));
+        cbxCrit3.setModel(new DefaultComboBoxModel<String>(PlacementParameterSet.criteriaLongNames()));
+        cbxCrit4.setModel(new DefaultComboBoxModel<String>(PlacementParameterSet.criteriaLongNames()));
 
-        cbxTeamCrit1.setModel(new DefaultComboBoxModel(TeamPlacementParameterSet.criteriaLongNames()));
-        cbxTeamCrit2.setModel(new DefaultComboBoxModel(TeamPlacementParameterSet.criteriaLongNames()));
-        cbxTeamCrit3.setModel(new DefaultComboBoxModel(TeamPlacementParameterSet.criteriaLongNames()));
-        cbxTeamCrit4.setModel(new DefaultComboBoxModel(TeamPlacementParameterSet.criteriaLongNames()));
-        cbxTeamCrit5.setModel(new DefaultComboBoxModel(TeamPlacementParameterSet.criteriaLongNames()));
-        cbxTeamCrit6.setModel(new DefaultComboBoxModel(TeamPlacementParameterSet.criteriaLongNames()));
+        cbxTeamCrit1.setModel(new DefaultComboBoxModel<String>(TeamPlacementParameterSet.criteriaLongNames()));
+        cbxTeamCrit2.setModel(new DefaultComboBoxModel<String>(TeamPlacementParameterSet.criteriaLongNames()));
+        cbxTeamCrit3.setModel(new DefaultComboBoxModel<String>(TeamPlacementParameterSet.criteriaLongNames()));
+        cbxTeamCrit4.setModel(new DefaultComboBoxModel<String>(TeamPlacementParameterSet.criteriaLongNames()));
+        cbxTeamCrit5.setModel(new DefaultComboBoxModel<String>(TeamPlacementParameterSet.criteriaLongNames()));
+        cbxTeamCrit6.setModel(new DefaultComboBoxModel<String>(TeamPlacementParameterSet.criteriaLongNames()));
 
         if (tournament == null) {
             return;
@@ -2475,7 +2469,6 @@ public class JFrGotha extends javax.swing.JFrame {
         // if current extension is not .xml, add .xml
         String suffix = null;
         String s = f.getName();
-//        System.out.println("Tournament.saveTournament. " + "s = " + s);
         int i = s.lastIndexOf('.');
         if (i > 0 && i < s.length() - 1) {
             suffix = s.substring(i + 1).toLowerCase();
@@ -2489,16 +2482,7 @@ public class JFrGotha extends javax.swing.JFrame {
         }
 
         ExternalDocument.generateXMLFile(t, f);
-// Commented out in V3.43.02. Because it is done in the code calling saveTournament.
-// This is better because some calls to saveTournament dont require this to be done (save A Copy, save work file) 
-//        try {
-//            t.setChangeSinceLastSaveAsFalse();
-//            t.setHasBeenSavedOnce(true);
-//        } catch (RemoteException ex) {
-//            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//
-//        this.tournamentChanged();
+        
         return f;
         
     }
@@ -2517,7 +2501,7 @@ public class JFrGotha extends javax.swing.JFrame {
         }
         try {
             JFrame jfr = new JFrPlayersManager(tournament);
-            jfr.setVisible(true);
+            this.displayFrame(jfr, BIG_FRAME_WIDTH, BIG_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2640,7 +2624,7 @@ private void mniRRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
     }
     try {
         JFrame jfr = new JFrGamesRR(tournament);
-        jfr.setVisible(true);
+        this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
     } catch (RemoteException ex) {
         Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
     }
@@ -2649,7 +2633,7 @@ private void mniRRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:e
 
 private void mniRMIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniRMIActionPerformed
     JFrame jfr = new JFrToolsRMI();
-    jfr.setVisible(true);
+    this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
 }//GEN-LAST:event_mniRMIActionPerformed
 
 private void mniOpenGothaHelpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniOpenGothaHelpActionPerformed
@@ -2865,8 +2849,7 @@ private void mniImportH9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
 
 private void mniPreferencesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniPreferencesActionPerformed
     JFrame jfr = new JFrPreferencesOptions();
-    jfr.setVisible(true);
-
+    this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
 }//GEN-LAST:event_mniPreferencesActionPerformed
 
 private void mniImportWallistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniImportWallistActionPerformed
@@ -2880,7 +2863,7 @@ private void mniTeamsManagerActionPerformed(java.awt.event.ActionEvent evt) {//G
     }
     try {
         JFrame jfr = new JFrTeamsManager(tournament);
-        jfr.setVisible(true);
+        this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
     } catch (RemoteException ex) {
         Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
     }
@@ -2921,7 +2904,7 @@ private void mniTeamsPairingActionPerformed(java.awt.event.ActionEvent evt) {//G
     }
     try {
         JFrame jfr = new JFrTeamsPairing(tournament);
-        jfr.setVisible(true);
+        this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
     } catch (RemoteException ex) {
         Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
     }
@@ -2980,7 +2963,7 @@ private void mniUpdateRatingsActionPerformed(java.awt.event.ActionEvent evt) {//
 
     try {
         JFrame jfr = new JFrUpdateRatings(tournament);
-        jfr.setVisible(true);
+        displayFrame(jfr, JFrGotha.MEDIUM_FRAME_WIDTH, JFrGotha.MEDIUM_FRAME_HEIGHT);
     } catch (RemoteException ex) {
         Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
     }
@@ -2990,7 +2973,7 @@ private void mniExperimentalToolsActionPerformed(java.awt.event.ActionEvent evt)
     JFrame jfr = null;
     try {
         jfr = new JFrExperimentalTools(tournament);
-        jfr.setVisible(true);
+        this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
     } catch (RemoteException ex) {
         Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
     }
@@ -2998,7 +2981,7 @@ private void mniExperimentalToolsActionPerformed(java.awt.event.ActionEvent evt)
 
 private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniMemoryActionPerformed
     JFrame jfr = new JFrToolsMemory();
-    jfr.setVisible(true);
+    this.displayFrame(jfr, SMALL_FRAME_WIDTH, SMALL_FRAME_HEIGHT);
 }//GEN-LAST:event_mniMemoryActionPerformed
 
     private void mniDiscardRoundsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniDiscardRoundsActionPerformed
@@ -3008,7 +2991,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         }
         try {
             JFrame jfr = new JFrDiscardRounds(tournament);
-            jfr.setVisible(true);
+            this.displayFrame(jfr, SMALL_FRAME_WIDTH, SMALL_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -3049,7 +3032,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         }
         try {
             JFrame jfr = new JFrPublish(tournament);
-            jfr.setVisible(true);
+        this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -3106,27 +3089,16 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         
         // check whether a more recent work file has been saved for this tournament
         // Is there a work tournament ?
-//        System.out.println("f.getAbsoluteFile()  = " + f.getAbsoluteFile());
-//        System.out.println("f.getAbsolutePath()  = " + f.getAbsolutePath());
-//        System.out.println("f.getCanonicalFile() = " + f.getCanonicalFile());
-//        System.out.println("f.getName()          = " + f.getName());
-//        System.out.println("f.getPath()          = " + f.getPath());
-//        System.out.println("f.lastModified()     = " + f.lastModified());
-//    
-//        System.out.println("Gotha.runningDirectory = " + Gotha.runningDirectory);
 
         String strDir = Gotha.runningDirectory + "/tournamentfiles";
         String strNE = f.getName();
         String strFN = strNE.substring(0, strNE.indexOf("."));
         String strWorkNE= strFN + "_work.xml";
-//        System.out.println("strWorkNE = " + strWorkNE);
         String strDNE = strDir + "/" + strWorkNE;
-//        System.out.println("strDNE = " + strDNE);
         File fW = new File(strDNE);
         
         long timeF = f.lastModified();
         long timeFW = fW.lastModified();
-//        if (timeFW - timeF > 2 * JFrGotha.REFRESH_DELAY) System.out.println("delai = " + (timeFW - timeF));
         if (timeFW - timeF > 2 * JFrGotha.REFRESH_DELAY){
             String strMes = "A work file has been found which is more recent than the regularly saved tournament file.\n";
             strMes += "\n Do you want to restore tournament from the work file ? (click OK)";
@@ -3399,6 +3371,15 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         dtcr.setHorizontalAlignment(align);
         tcm.getColumn(col).setCellRenderer(dtcr);
     }
+    
+    private void displayFrame(Window win, int w, int h){
+        Rectangle newRect = this.getBounds();
+        win.setLocation(newRect.x + 10, newRect.y + 60);
+        win.setSize(w, h);
+        win.setVisible(true);
+        win.setIconImage(Gotha.getIconImage());
+    }
+    
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnDlgImportXMLCancel;
     private javax.swing.JButton btnDlgImportXMLOK;
@@ -3408,16 +3389,16 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private javax.swing.JButton btnPrintStandings;
     private javax.swing.JButton btnPrintTeamsStandings;
     private javax.swing.JButton btnSearch;
-    private javax.swing.JComboBox cbxCrit1;
-    private javax.swing.JComboBox cbxCrit2;
-    private javax.swing.JComboBox cbxCrit3;
-    private javax.swing.JComboBox cbxCrit4;
-    private javax.swing.JComboBox cbxTeamCrit1;
-    private javax.swing.JComboBox cbxTeamCrit2;
-    private javax.swing.JComboBox cbxTeamCrit3;
-    private javax.swing.JComboBox cbxTeamCrit4;
-    private javax.swing.JComboBox cbxTeamCrit5;
-    private javax.swing.JComboBox cbxTeamCrit6;
+    private javax.swing.JComboBox<String> cbxCrit1;
+    private javax.swing.JComboBox<String> cbxCrit2;
+    private javax.swing.JComboBox<String> cbxCrit3;
+    private javax.swing.JComboBox<String> cbxCrit4;
+    private javax.swing.JComboBox<String> cbxTeamCrit1;
+    private javax.swing.JComboBox<String> cbxTeamCrit2;
+    private javax.swing.JComboBox<String> cbxTeamCrit3;
+    private javax.swing.JComboBox<String> cbxTeamCrit4;
+    private javax.swing.JComboBox<String> cbxTeamCrit5;
+    private javax.swing.JComboBox<String> cbxTeamCrit6;
     private javax.swing.JCheckBox chkClubsGroups;
     private javax.swing.JCheckBox chkGames;
     private javax.swing.JCheckBox chkPlayers;

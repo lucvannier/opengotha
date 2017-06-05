@@ -56,7 +56,6 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
         taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-//                System.out.println("actionPerformed");
                 if (!running){
                     timer.stop();
                 }
@@ -845,13 +844,6 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
     }//GEN-LAST:event_formWindowClosing
 
     private void customInitComponents()throws RemoteException{       
-        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
-        int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
-        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
-        setBounds((dim.width - w)/2, (dim.height -h)/2, w, h);
-        
-        setIconImage(Gotha.getIconImage());
-        
         initPnlRegisteredPlayers();
         updateComponents();
     }

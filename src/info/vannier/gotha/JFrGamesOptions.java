@@ -474,7 +474,8 @@ public class JFrGamesOptions extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowClosing
 
     private void customInitComponents() throws RemoteException {
-        this.updatePnlGam();
+        updateAllViews();
+        // this.updatePnlGam();
     }
 
     private void tournamentChanged() {

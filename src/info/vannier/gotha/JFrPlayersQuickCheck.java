@@ -845,7 +845,8 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
 
     private void customInitComponents()throws RemoteException{       
         initPnlRegisteredPlayers();
-        updateComponents();
+        this.updateAllViews();
+//        updateComponents();
     }
     
     private void initPnlRegisteredPlayers()throws RemoteException{

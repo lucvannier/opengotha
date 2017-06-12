@@ -513,7 +513,8 @@ public class JFrExperimentalTools extends javax.swing.JFrame {
      * Unlike initComponents, customInitComponents is editable
      */
     private void customInitComponents() throws RemoteException {
-        updateComponents();  
+        this.updateAllViews();
+        // updateComponents();  
     }
 
 

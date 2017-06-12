@@ -39,7 +39,7 @@ public class JFrTeamsPairing extends javax.swing.JFrame {
 
     /** Creates new form JFrTeamsPair */
     public JFrTeamsPairing(TournamentInterface tournament) throws RemoteException {
-        LogElements.incrementElement("games.teamspairing", "");
+//        LogElements.incrementElement("games.teamspairing", "");
         this.tournament = tournament;
         processedRoundNumber = tournament.presumablyCurrentRoundNumber();
 

@@ -22,6 +22,7 @@
         <br>
         The NBW and MMS scores for absent and bye player for a given round will be computed according to what you define in this frame.
         <br>
+        <h3>Round down NBW and MMS scores</h3>
         When, as a result of bye or absence, the score is not integer, a rounding down is made if the "Round down NBW and MMS scores" checkbox is selected. 
         Otherwise, no rounding is made.
         <br>
@@ -29,6 +30,13 @@
         <br>
         NB : For pairing, players with a non-integer score are grouped with players with an integer score just below, whatever 
         the "Round down NBW and MMS scores" choice might be.
+        <h3>For SOS, count not played games as half point</h3>
+        When a player plays with an opponent who did not play in previous game, his SOS will be affected, according to the "Special Results" choices. 
+        If the "For SOS ..." checkbox is selected, the SOS will be computed as if the opponent had got 1/2 point from his not played game, whatever the choices for "Special Results" may be.
+        <br>A "not played game" may refer to an absent player, a bye player, a not paired player, or a game whose result is unknown or is a "by default" result. 
+        
+        
+        
         
         <h2>McMahon</h2>
         The McMahon Bar defines the SMMS (Starting McMahon Score) for players above the bar.
@@ -37,7 +45,9 @@
         <br>The Bar can be set between 10K and 9D
         <br>The Floor can be set between 20K and 1D
         <br>The Bar must be higher or equal to Floor
-        <br><br>McMahon Zero defines the rank corresponding to zero in MMS computings. By default, McMahon Zero is set to 30K. It may be more convenient to set it to a higher value, for instance McMahon floor.       
+        <br><br>McMahon Zero defines the rank corresponding to zero in MMS computings.  
+        <!-- It may be more convenient to set it to a higher value, for instance McMahon floor.--> 
+        <br> By default, McMahon Zero is set to 30K (and not modifiable, actually)
         
         <h2>Change or Reset Tournament system</h2>
         This button gives acess to a dialog box where you can choose one of the three <a href ="Create a new tournament.html#System">tournament systems</a> or reset tournament parameters to their default values

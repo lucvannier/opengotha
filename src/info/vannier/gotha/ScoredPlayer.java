@@ -1,4 +1,3 @@
-
 package info.vannier.gotha;
 
 import java.util.ArrayList;

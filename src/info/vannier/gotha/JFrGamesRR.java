@@ -368,8 +368,8 @@ private void btnHelpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
  
     private void customInitComponents()throws RemoteException{
         initGamesComponents();
-        
-        updateComponents();
+        updateAllViews();
+//        updateComponents();
     }
     
     private void initGamesComponents(){

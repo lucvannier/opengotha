@@ -112,6 +112,8 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         initRatingListControls();
         resetPlayerControls();
         initPnlRegisteredPlayers();
+        
+        this.updateAllViews();
     }
 
     private void initCountriesList(){

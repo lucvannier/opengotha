@@ -81,11 +81,11 @@ public class LogElements {
                     strReceived += c;
                 }
                 bis.close();
-               LogElements.removeElement(name, value);
+                LogElements.removeElement(name, value);
             } catch (IOException ex) {
                 System.out.println("sendLogElements : IOException");
                 return;
-             }
+            }
         }
 
     }

@@ -1,4 +1,4 @@
-#Echelle au 5/06/2017 07:01:57
+#Echelle au 11/06/2017 07:02:59
 AAIJ René                               243 e ------- xxxx NL
 AAKERBLOM Charlie                       431 e ------- xxxx SE
 ABADIA Mickaël                        -1400 - 9728205 94MJ FR
@@ -2925,7 +2925,7 @@ DE_PIEDOUE Gwendoline                 -9999 - 9228002 75SC FR
 DE_PIEDOUE Thibaut                     -900 - 9228001 75SC FR
 DE_RAVEL Benoît                        -100 - 1400197 51Re FR
 DE_ROUBIN Ariane                       -700 - 0277009 75Al FR
-DE_ROUBIN Florent                     -1356 L 1200198 26Va FR
+DE_ROUBIN Florent                     -1400 X 1200198 26Va FR
 DE_ROUVROY Dominique                  -9999 - 1100127 31To FR
 DE_SAINT_HERMINE Etienne               -700 - 0437001 44Na FR
 DE_SAINTE_HERMINE Guillaume            -700 - 0137000 44Na FR
@@ -6393,6 +6393,7 @@ LE_BAS Carine                         -1500 - 0800458 06Pe FR
 LE_BAYON Thomas                       -1500 - 1000013 56Lo FR
 LE_BEL Loic                            -586 L 1700219 92An FR
 LE_BEOM Anthony                        -750 L 1700316 56Lo FR
+LE_BERRE Brice                        -9999 L 1700338 56Lo FR
 LE_BERRE Bruno                         -156 L 9034000 27Ev FR
 LE_BERRE Pascal                       -9999 - 9443502 27Ev FR
 LE_BIHAN Lisa                         -1500 - 1100126 56Lo FR
@@ -8612,8 +8613,8 @@ PEIGNIER Violette                     -9999 L 1400173 83To FR
 PEILLARD Etienne                       -927 L 1100209 21Di FR
 PEIRANO Pierre                        -1600 - 0700414 37To FR
 PEIRERA_DA_SILVA Bruno_Philipe        -1068 L 1700028 33Bo FR
-PEIZERAT Léa                          -1700 - ------- 26Va FR
 PEIZERAT Léa                          -9999 L 1700051 26Va FR
+PEIZERAT Léa                          -1700 - ------- 26Va FR
 PELASSA Sébastien                     -1500 - 0800187 59Li FR
 PELC Virgile                          -1300 - 1000124 75Pa FR
 PELISSET Edouard                      -1500 - 0800246 94EP FR
@@ -9646,6 +9647,7 @@ RONZIERE Bastien                      -1800 - 0427809 78Mg FR
 RONZIERE Xavier                       -1300 - 0327807 78Mg FR
 ROOS Claude                           -1400 - 9986007 67St FR
 ROPARS Frédéric                       -9999 - 9133013 29Br FR
+ROPERS Anaïs                          -9999 L 1700337 56Lo FR
 ROQUEFORT Christiane                  -9999 - 9752044 31To FR
 ROQUES Catharina                      -1100 - 9820002 75OB FR
 ROQUES Elie                            -700 - 0660505 31To FR

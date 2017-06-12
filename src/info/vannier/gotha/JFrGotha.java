@@ -3082,7 +3082,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }
 
     private void openTournament(File f) throws Exception {
-//        LogElements.incrementElement("tournament.open", f.getName());
+        LogElements.incrementElement("tournament.open", f.getName());
         if (!saveCurrentTournamentIfNecessary()) {
             return;
         }

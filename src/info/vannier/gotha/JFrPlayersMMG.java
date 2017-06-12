@@ -559,8 +559,8 @@ public class JFrPlayersMMG extends javax.swing.JFrame{
         initColumnHeaders(this.tblMMG1);
         initColumnHeaders(this.tblMMG2);
         initColumnHeaders(this.tblBarM1);
-
-        updateComponents();
+        updateAllViews();
+        // updateComponents();
     }
 
     private void initColumnHeaders(JTable table){

@@ -3058,6 +3058,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         initPnlPla();
         initPnlPai();
         initPnlTPl();
+        this.updateAllViews();
     }
     
     private void initPnlGen()throws RemoteException{

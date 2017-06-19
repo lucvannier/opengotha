@@ -5,7 +5,9 @@
 package info.vannier.gotha;
 
 import java.awt.Dimension;
+import java.awt.Rectangle;
 import java.awt.Toolkit;
+import java.awt.Window;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
@@ -1832,8 +1834,18 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         if (tournamentType == TournamentParameterSet.TYPE_SWISSCAT) rdbSwissCat.setSelected(true);
          
         dlgChangeSystem.setVisible(true);
+        dlgChangeSystem.setTitle("Change tournament system");
+        this.displayFrame(dlgChangeSystem, JFrGotha.SMALL_FRAME_WIDTH, JFrGotha.SMALL_FRAME_HEIGHT);
 
     }//GEN-LAST:event_btnChangeSystemActionPerformed
+    
+    private void displayFrame(Window win, int w, int h){
+        Rectangle newRect = this.getBounds();
+        win.setLocation(newRect.x + 10, newRect.y + 60);
+        win.setSize(w, h);
+        win.setVisible(true);
+        win.setIconImage(Gotha.getIconImage());
+    }
 
     private void btnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrintActionPerformed
         TournamentPrinting.printTournamentParameters(tournament);

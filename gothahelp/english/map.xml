@@ -3,7 +3,7 @@
                      "http://java.sun.com/products/javahelp/map_2_0.dtd">
 
 <map version="1.0">
-	<mapID target="gotha.icon" url="../resources/gothalogo16.jpg"/>
+	<mapID target="gotha.icon" url="../../resources/gothalogo16.jpg"/>
 	<mapID target="Starting OpenGotha" url="Starting OpenGotha.html"/>
 	<mapID target="Tournament menu" url="Tournament menu.html"/>
 	<mapID target="Create a new tournament" url="Create a new tournament.html"/>

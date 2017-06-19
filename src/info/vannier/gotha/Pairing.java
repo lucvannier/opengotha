@@ -159,7 +159,7 @@ public class Pairing {
         return strReport;
     }
 
-    public static String unbalancedMMSDUDDPlayersReport(TournamentInterface tournament, int roundNumber) {
+    public static String mmsDUDDReport(TournamentInterface tournament, int roundNumber) {
         ArrayList<Player> alP = null;
         try {
             alP = tournament.playersList();
@@ -205,7 +205,7 @@ public class Pairing {
                 if (bP.hasSameKeyString(p)){
                     if (mmsB > mmsW) nbDD[i]++;
                     if (mmsB < mmsW) nbDU[i]++;
-                }
+                }                     
             }
         }
 
@@ -248,6 +248,101 @@ public class Pairing {
         return strReport;
     }
 
+
+    public static String mmsWeightedDUDDReport(TournamentInterface tournament, int roundNumber) {
+        ArrayList<Player> alP = null;
+        try {
+            alP = tournament.playersList();
+        } catch (RemoteException ex) {
+            Logger.getLogger(Pairing.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        int playersSortType = PlayerComparator.RANK_ORDER;
+        PlayerComparator playerComparator = new PlayerComparator(playersSortType);
+        Collections.sort(alP, playerComparator);
+
+        ArrayList<Game> alG = null;
+        try {
+            alG = tournament.gamesListBefore(roundNumber + 1);
+        } catch (RemoteException ex) {
+            Logger.getLogger(Pairing.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        int nbPlayers = alP.size();
+        int[] nbWeightedDU = new int[nbPlayers];
+        int[] nbWeightedDD = new int[nbPlayers];
+        
+        for (int i = 0; i < nbPlayers; i++){
+            nbWeightedDU[i] = nbWeightedDD[i] = 0;
+        }
+
+        for (Game g: alG){
+            Player wP = g.getWhitePlayer();
+            Player bP = g.getBlackPlayer();
+            int mmsW = 0;
+            int mmsB = 0;
+            try {
+                mmsW = tournament.mms2(wP, g.getRoundNumber()) / 2;
+                mmsB = tournament.mms2(bP, g.getRoundNumber()) / 2;
+            } catch (RemoteException ex) {
+                Logger.getLogger(Pairing.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            if (mmsW == mmsB) continue;
+            for (int i = 0; i < nbPlayers; i++){
+                Player p = alP.get(i);
+                if (wP.hasSameKeyString(p)){
+                    if (mmsW > mmsB){
+                        nbWeightedDD[i] += mmsW - mmsB;
+                    }                   
+                    if (mmsW < mmsB){
+                        nbWeightedDU[i] += mmsB - mmsW;
+                    }
+                }
+                if (bP.hasSameKeyString(p)){
+                    if (mmsB > mmsW){
+                        nbWeightedDD[i]+= mmsB - mmsW;
+                    } 
+                    if (mmsB < mmsW){
+                        nbWeightedDU[i]+= mmsW - mmsB;
+                        
+                    }
+                }
+            }
+        }
+
+        int nbUnbalancedWeightedDUDDPlayers = 0;
+        int sumBal = 0; // sum of absolute values of balances
+        String strReport = "";
+        for (int i = 0; i < nbPlayers; i++){
+            Player p = alP.get(i);
+            if (nbWeightedDU[i] == 0 && nbWeightedDD[i] == 0) continue;
+
+            int bal = nbWeightedDU[i] - nbWeightedDD[i];
+            if (bal == 0){
+                String strBal = "" + bal;
+                strReport +="\nBAL " + p.fullName() + " " + Player.convertIntToKD(p.getRank()) + " balance = " + strBal +
+                        " " + nbWeightedDU[i] + "WeightedDU " + nbWeightedDD[i] + "WeightedDD";
+            }
+            if (bal != 0){
+                nbUnbalancedWeightedDUDDPlayers++;
+                sumBal += Math.abs(bal);
+                String strBal = "" + bal;
+                if (bal > 0) strBal = "+" + bal;
+                strReport +="\nUNB " + p.fullName() + " " + Player.convertIntToKD(p.getRank()) + " balance = " + strBal +
+                        " " + nbWeightedDU[i] + "WeightedDU " + nbWeightedDD[i] + "WeightedDD";
+            }
+        }
+
+        strReport = "MMS weighted draw up/down from round 1  to round " +
+                (roundNumber + 1) +
+                "\nNumber of players with an unbalanced MMS weighted draw up/down :" + 
+                nbUnbalancedWeightedDUDDPlayers +
+                strReport;
+        
+        strReport += "\nSum of absolute values of balances " +
+                sumBal;
+
+        return strReport;
+    }    
     public static String unbalancedWBPlayersReport(TournamentInterface tournament, int roundNumber, int unbalancedWBThreshold){
         ArrayList<Player> alP = null;
         try {

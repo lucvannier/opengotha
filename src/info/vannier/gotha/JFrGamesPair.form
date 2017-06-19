@@ -151,7 +151,7 @@
           </Events>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="10" y="290" width="300" height="-1"/>
+              <AbsoluteConstraints x="10" y="340" width="300" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -168,10 +168,10 @@
             </Constraint>
           </Constraints>
         </Component>
-        <Component class="javax.swing.JCheckBox" name="ckbUnbalancedMMSDUDDPlayers">
+        <Component class="javax.swing.JCheckBox" name="ckbMMSDUDD">
           <Properties>
             <Property name="selected" type="boolean" value="true"/>
-            <Property name="text" type="java.lang.String" value="Unbalanced MMS draw up/down players  "/>
+            <Property name="text" type="java.lang.String" value="MMS draw up/down"/>
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
@@ -215,7 +215,7 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="10" y="240" width="260" height="-1"/>
+              <AbsoluteConstraints x="10" y="290" width="260" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>
@@ -226,7 +226,17 @@
           </Properties>
           <Constraints>
             <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-              <AbsoluteConstraints x="282" y="240" width="20" height="-1"/>
+              <AbsoluteConstraints x="280" y="290" width="20" height="-1"/>
+            </Constraint>
+          </Constraints>
+        </Component>
+        <Component class="javax.swing.JCheckBox" name="ckbMMSWeightedDUDD">
+          <Properties>
+            <Property name="text" type="java.lang.String" value="MMS weighted draw up/down"/>
+          </Properties>
+          <Constraints>
+            <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
+              <AbsoluteConstraints x="10" y="240" width="260" height="-1"/>
             </Constraint>
           </Constraints>
         </Component>

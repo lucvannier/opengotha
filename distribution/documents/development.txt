@@ -1,9 +1,10 @@
-OpenGothaV3.44.07
+OpenGothaV3.45
 *****************
-12/06/2017
+19/06/2017
 New         Preferences frame also displays log preferences
 New         "Virtual SOS"
 Improvement New "Draw-up Draw-down" algorithm in Pairing evaluation function 
+Improvement Pairing report enhanced
 Improvement Frames and dialog boxes are now opened close to the ancestor frame
 Int issue   New more robust process to close frames.
 Int issue   Source/Binary Format upgraded to JDK7
@@ -215,7 +216,7 @@ Improvement Default threshold to apply secondary criteria is set to 1D (previous
 Improvement SODOS tie-break included.
 Improvement More secure exception management in client/server mode and in data compatibility issues.
 Bug Fix     Special Results values (absent, bye) were not correctly imported from xml files. Fixed.
-Bug Fix     In Standings, bye players results where shown as "O=" even if "0+" was the correct value. Fixed
+Bug Fix     In Standings, bye players results were shown as "O=" even if "0+" was the correct value. Fixed
 Bug Fix     In Results for EGF, a problem occured with long player names (>21 car). Fixed
 Int. issue  Replace obsolete Hashtable by HashMap classes
 Int. issue  Data version 106

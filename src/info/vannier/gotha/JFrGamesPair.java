@@ -546,12 +546,13 @@ public class JFrGamesPair extends javax.swing.JFrame {
         ckbIntraClub = new javax.swing.JCheckBox();
         btnGenerateReport = new javax.swing.JButton();
         btnDlgPairingReportClose = new javax.swing.JButton();
-        ckbUnbalancedMMSDUDDPlayers = new javax.swing.JCheckBox();
+        ckbMMSDUDD = new javax.swing.JCheckBox();
         scpReport = new javax.swing.JScrollPane();
         txaReport = new javax.swing.JTextArea();
         jLabel4 = new javax.swing.JLabel();
         ckbUnbalancedWB = new javax.swing.JCheckBox();
         txfUnbalancedWB = new javax.swing.JTextField();
+        ckbMMSWeightedDUDD = new javax.swing.JCheckBox();
         pupPairablePlayers = new javax.swing.JPopupMenu();
         mniSortByName = new javax.swing.JMenuItem();
         mniSortByRank = new javax.swing.JMenuItem();
@@ -688,7 +689,7 @@ public class JFrGamesPair extends javax.swing.JFrame {
             }
         });
         dlgPairingReport.getContentPane().add(btnGenerateReport);
-        btnGenerateReport.setBounds(10, 290, 300, 23);
+        btnGenerateReport.setBounds(10, 340, 300, 23);
 
         btnDlgPairingReportClose.setText("Close");
         btnDlgPairingReportClose.addActionListener(new java.awt.event.ActionListener() {
@@ -699,10 +700,10 @@ public class JFrGamesPair extends javax.swing.JFrame {
         dlgPairingReport.getContentPane().add(btnDlgPairingReportClose);
         btnDlgPairingReportClose.setBounds(10, 480, 770, 23);
 
-        ckbUnbalancedMMSDUDDPlayers.setSelected(true);
-        ckbUnbalancedMMSDUDDPlayers.setText("Unbalanced MMS draw up/down players  ");
-        dlgPairingReport.getContentPane().add(ckbUnbalancedMMSDUDDPlayers);
-        ckbUnbalancedMMSDUDDPlayers.setBounds(10, 210, 260, 23);
+        ckbMMSDUDD.setSelected(true);
+        ckbMMSDUDD.setText("MMS draw up/down");
+        dlgPairingReport.getContentPane().add(ckbMMSDUDD);
+        ckbMMSDUDD.setBounds(10, 210, 260, 23);
 
         txaReport.setColumns(20);
         txaReport.setLineWrap(true);
@@ -720,12 +721,16 @@ public class JFrGamesPair extends javax.swing.JFrame {
         ckbUnbalancedWB.setText("White/Black unbalance greater than");
         ckbUnbalancedWB.setToolTipText("in no-handicap games only");
         dlgPairingReport.getContentPane().add(ckbUnbalancedWB);
-        ckbUnbalancedWB.setBounds(10, 240, 260, 23);
+        ckbUnbalancedWB.setBounds(10, 290, 260, 23);
 
         txfUnbalancedWB.setText("1");
         txfUnbalancedWB.setEnabled(false);
         dlgPairingReport.getContentPane().add(txfUnbalancedWB);
-        txfUnbalancedWB.setBounds(282, 240, 20, 20);
+        txfUnbalancedWB.setBounds(280, 290, 20, 20);
+
+        ckbMMSWeightedDUDD.setText("MMS weighted draw up/down");
+        dlgPairingReport.getContentPane().add(ckbMMSWeightedDUDD);
+        ckbMMSWeightedDUDD.setBounds(10, 240, 260, 23);
 
         pupPairablePlayers.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
 
@@ -1422,6 +1427,7 @@ public class JFrGamesPair extends javax.swing.JFrame {
 //        dlgPairingReport.setIconImage(Gotha.getIconImage());
 //        dlgPairingReport.setVisible(true);
         displayFrame(dlgPairingReport, JFrGotha.MEDIUM_FRAME_WIDTH, JFrGotha.MEDIUM_FRAME_HEIGHT);
+        dlgPairingReport.setTitle("Pairing report");
         generateReport();
     }//GEN-LAST:event_btnReportActionPerformed
 
@@ -1457,8 +1463,11 @@ public class JFrGamesPair extends javax.swing.JFrame {
         if (this.ckbIntraCountry.isSelected()) {
             strReport += Pairing.intraCountryPairingReport(tournament, processedRoundNumber) + "\n\n";
         }
-        if (this.ckbUnbalancedMMSDUDDPlayers.isSelected()) {
-            strReport += Pairing.unbalancedMMSDUDDPlayersReport(tournament, processedRoundNumber) + "\n\n";
+        if (this.ckbMMSDUDD.isSelected()) {
+            strReport += Pairing.mmsDUDDReport(tournament, processedRoundNumber) + "\n\n";
+        }
+        if (this.ckbMMSWeightedDUDD.isSelected()) {
+            strReport += Pairing.mmsWeightedDUDDReport(tournament, processedRoundNumber) + "\n\n";
         }
         if (this.ckbUnbalancedWB.isSelected()) {
             int unbalancedWBThreshold = Integer.parseInt(this.txfUnbalancedWB.getText());
@@ -1715,9 +1724,10 @@ public class JFrGamesPair extends javax.swing.JFrame {
     private javax.swing.JCheckBox ckbHandicapGreaterThan;
     private javax.swing.JCheckBox ckbIntraClub;
     private javax.swing.JCheckBox ckbIntraCountry;
+    private javax.swing.JCheckBox ckbMMSDUDD;
     private javax.swing.JCheckBox ckbMMSGreaterThan;
+    private javax.swing.JCheckBox ckbMMSWeightedDUDD;
     private javax.swing.JCheckBox ckbNotShownUp;
-    private javax.swing.JCheckBox ckbUnbalancedMMSDUDDPlayers;
     private javax.swing.JCheckBox ckbUnbalancedWB;
     private javax.swing.JDialog dlgPairingReport;
     private javax.swing.JButton jButton1;

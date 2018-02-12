@@ -19,7 +19,6 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
     private volatile boolean running = true;
     /** Creates new form JFrBuildTestTournament */
     public JFrBuildTestTournament(TournamentInterface tournament) throws RemoteException{
-//        LogElements.incrementElement("export.build", "");
         this.tournament = tournament;
                 
         initComponents();

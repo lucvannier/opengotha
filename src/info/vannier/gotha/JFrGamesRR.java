@@ -40,7 +40,6 @@ public class JFrGamesRR extends javax.swing.JFrame{
 
     /** Creates new form JFrGamesRR */
     public JFrGamesRR(TournamentInterface tournament) throws RemoteException{
-//        LogElements.incrementElement("games.roundrobin", "");
         this.tournament = tournament;
         
         initComponents();

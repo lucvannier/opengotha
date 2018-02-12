@@ -52,7 +52,6 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
 
     /** Creates new form JFrUpdateRatings */
     public JFrUpdateRatings(TournamentInterface tournament) throws RemoteException{
-//        LogElements.incrementElement("players.ur", "");
         this.tournament = tournament;
         initComponents();
         customInitComponents();
@@ -603,8 +602,6 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         if (this.rdbFFG.isSelected()) rlType = RatingList.TYPE_FFG;
         if (this.rdbAGA.isSelected()) rlType = RatingList.TYPE_AGA;
 
-//        LogElements.incrementElement("players.manager.updateratinglist", "" + rlType);
-        
         String strDefaultURL;
         File fDefaultFile;
         String strPrompt;

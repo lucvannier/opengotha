@@ -44,7 +44,6 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
      * Creates new form JFrPlayersQuickCheck
      */
     public JFrPlayersQuickCheck() {
-//        LogElements.incrementElement("players.qc", "");
         initComponents();
         setupRefreshTimer();
     }

@@ -2637,8 +2637,6 @@ private void mniRMIActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:
 }//GEN-LAST:event_mniRMIActionPerformed
 
 private void mniOpenGothaHelpActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniOpenGothaHelpActionPerformed
-//    LogElements.incrementElement("help.og", "");
-
     Gotha.displayGothaHelp("Starting OpenGotha");
 }//GEN-LAST:event_mniOpenGothaHelpActionPerformed
 

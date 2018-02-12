@@ -53,7 +53,6 @@ public class JFrGamesPair extends javax.swing.JFrame {
      * Creates new form JFrGamesPair
      */
     public JFrGamesPair(TournamentInterface tournament) throws RemoteException {
-//        LogElements.incrementElement("games.pair", "");
         this.tournament = tournament;
         processedRoundNumber = tournament.presumablyCurrentRoundNumber();
         initComponents();
@@ -1418,7 +1417,6 @@ public class JFrGamesPair extends javax.swing.JFrame {
 }//GEN-LAST:event_btnHelpActionPerformed
 
     private void btnReportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnReportActionPerformed
-//        LogElements.incrementElement("games.pairingreport", "");
 //        int w = JFrGotha.MEDIUM_FRAME_WIDTH;
 //        int h = JFrGotha.MEDIUM_FRAME_HEIGHT;
 //        Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();

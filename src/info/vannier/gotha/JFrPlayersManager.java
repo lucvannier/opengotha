@@ -56,7 +56,6 @@ public class JFrPlayersManager extends javax.swing.JFrame {
      * Creates new form JFrPlayersManager
      */
     public JFrPlayersManager(TournamentInterface tournament) throws RemoteException {
-//        LogElements.incrementElement("players.manager", "");
         this.tournament = tournament;
 
         initComponents();
@@ -1174,7 +1173,6 @@ public class JFrPlayersManager extends javax.swing.JFrame {
     }//GEN-LAST:event_txfPlayerNameChoiceTextValueChanged
 
     private void rdbLevenshteinActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbLevenshteinActionPerformed
-//        LogElements.incrementElement("players.manager.levenshtein", "");
         this.resetControlsForLevenshteinSearching();
 
     }//GEN-LAST:event_rdbLevenshteinActionPerformed
@@ -1359,7 +1357,6 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         }
         // Print Welcome sheet
         if (this.ckbWelcomeSheet.isSelected()) {
-//            LogElements.incrementElement("players.manager.welcomesheet", "");
             instanciateWelcomeSheet(new File(Gotha.runningDirectory, "welcomesheet/welcomesheet.html"), 
                     new File(Gotha.runningDirectory, "welcomesheet/actualwelcomesheet.html"), p);
             try {
@@ -1465,8 +1462,6 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         if (this.rdbFFG.isSelected()) rlType = RatingList.TYPE_FFG;
         if (this.rdbAGA.isSelected()) rlType = RatingList.TYPE_AGA;
 
-//        LogElements.incrementElement("players.manager.updateratinglist", "" + rlType);
-        
         String strDefaultURL;
         File fDefaultFile;
         String strPrompt;

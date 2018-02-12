@@ -2,6 +2,8 @@
 
 <!ELEMENT Tournament (Players?, Games?, ByePlayers?, Teams?, TournamentParameterSet?, TeamTournamentParameterSet?, ClubsGroups?)>
 <!ATTLIST Tournament dataVersion CDATA "200">
+<!ATTLIST Tournament gothaVersion CDATA "300">
+<!ATTLIST Tournament gothaMinorVersion CDATA "00">
 <!ELEMENT Players (Player*)>
 <!ELEMENT Games (Game*)>
 <!ELEMENT ByePlayers (ByePlayer*)>

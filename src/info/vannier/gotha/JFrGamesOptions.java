@@ -43,7 +43,6 @@ public class JFrGamesOptions extends javax.swing.JFrame {
     }
 
     public JFrGamesOptions(TournamentInterface tournament) throws RemoteException {
-//        LogElements.incrementElement("options.games", "");
         this.tournament = tournament;
 
         initComponents();
@@ -83,6 +82,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         txfCanNbMoves = new javax.swing.JTextField();
         jLabel7 = new javax.swing.JLabel();
         lblEGFClass = new javax.swing.JLabel();
+        lblAT = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Games settings");
@@ -250,12 +250,19 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         pnlTime.add(jLabel7);
         jLabel7.setBounds(80, 170, 40, 20);
 
-        lblEGFClass.setFont(new java.awt.Font("Tahoma", 0, 14)); // NOI18N
-        lblEGFClass.setForeground(new java.awt.Color(255, 0, 51));
+        lblEGFClass.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
+        lblEGFClass.setForeground(new java.awt.Color(255, 0, 0));
         lblEGFClass.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblEGFClass.setText("EGF class X");
         pnlTime.add(lblEGFClass);
         lblEGFClass.setBounds(10, 280, 290, 30);
+
+        lblAT.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
+        lblAT.setForeground(new java.awt.Color(255, 0, 0));
+        lblAT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblAT.setText("Adjusted time = 0");
+        pnlTime.add(lblAT);
+        lblAT.setBounds(10, 260, 290, 20);
 
         pnlGam.add(pnlTime);
         pnlTime.setBounds(10, 110, 320, 330);
@@ -538,6 +545,12 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         this.txfCanTime.setText("" + gps.getCanByoYomiTime());
         this.txfFischerTime.setText("" + gps.getFischerTime());
 
+        // What EGF Adjusted time ?
+        int at = tournament.egfAdjustedTime();
+        String strAT = "Adjusted time = " + (at / 60) + " min";
+        
+        this.lblAT.setText(strAT);
+        
         // What EGF class ?
         String strClass = tournament.egfClass();
         String strMes = "";
@@ -556,6 +569,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel7;
+    private javax.swing.JLabel lblAT;
     private javax.swing.JLabel lblCanTime;
     private javax.swing.JLabel lblEGFClass;
     private javax.swing.JLabel lblFischerTime;

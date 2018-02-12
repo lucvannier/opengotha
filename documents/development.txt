@@ -1,5 +1,10 @@
-OpenGothaV3.45
+OpenGothaV3.45.01
 *****************
+12/02/2018
+New         Adjusted time is exported in .tou files
+
+OpenGothaV3.45
+**************
 19/06/2017
 New         Preferences frame also displays log preferences
 New         "Virtual SOS"

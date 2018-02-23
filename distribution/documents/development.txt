@@ -1,3 +1,9 @@
+OpenGothaV3.45.02
+*****************
+23/02/2018
+New         Participation is now displayed and modifiable from Players Quickcheck frame
+New         FFG Licence Status is now displayed in Update Ratings frame
+
 OpenGothaV3.45.01
 *****************
 12/02/2018

@@ -36,8 +36,10 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
     public static  final int RATINGORIGIN_COL   = RANK_COL + 1;
     public static  final int RATING_COL         = RATINGORIGIN_COL + 1;
     public static  final int NEWRATING_COL      = RATING_COL + 1;
-    public static  final int PLAYERID_COL         = NEWRATING_COL + 1;
-    public static  final int RATINGLIST_COL     = PLAYERID_COL + 1;
+    public static  final int PLAYERID_COL       = NEWRATING_COL + 1;
+    public static  final int STATUS_COL         = PLAYERID_COL + 1;
+    public static  final int RATINGLIST_COL     = STATUS_COL + 1;
+    
     
     private int playersSortType = PlayerComparator.NAME_ORDER;
     private ArrayList<Player> alSelectedPlayersToKeepSelected = new ArrayList<Player>();     
@@ -89,8 +91,9 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         this.pgbRatingList.setVisible(false);
         
         initRatingListRDBControls();
+        this.resetRatingListControls();
         
-        updateRatingList(RatingList.TYPE_EGF);
+//        updateRatingList(RatingList.TYPE_EGF);
         initPnlPlayers();
 
         updateAllViews();
@@ -115,12 +118,13 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
                 this.rdbFFG.setSelected(true); break;
             case RatingList.TYPE_AGA :
                 this.rdbAGA.setSelected(true); 
-        }     
+        }
+                
+        updateRatingList(rlType);
+
     }
 
     private void initPnlPlayers()throws RemoteException{
- 
-    //    TableColumnModel tcm = this.tblPlayers.getColumnModel();
         JFrGotha.formatColumn(this.tblPlayers, NAME_COL, "Last name", 110, JLabel.LEFT, JLabel.LEFT); 
         JFrGotha.formatColumn(this.tblPlayers, FIRSTNAME_COL, "First name", 70, JLabel.LEFT, JLabel.LEFT); 
         JFrGotha.formatColumn(this.tblPlayers, COUNTRY_COL, "Co", 30, JLabel.LEFT, JLabel.LEFT); 
@@ -145,27 +149,42 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
             case RatingList.TYPE_EGF:
                 JFrGotha.formatColumn(this.tblPlayers, NEWRATING_COL, "EGF Rt", 40, JLabel.RIGHT, JLabel.RIGHT); 
                 JFrGotha.formatColumn(this.tblPlayers, PLAYERID_COL, "EGF Pin",70, JLabel.LEFT, JLabel.LEFT);                
+//                JFrGotha.formatColumn(this.tblPlayers, STATUS_COL, "",0, JLabel.LEFT, JLabel.LEFT);                
                 JFrGotha.formatColumn(this.tblPlayers, RATINGLIST_COL, "EGF Rating List", 220, JLabel.CENTER, JLabel.CENTER); 
                 break;
             case RatingList.TYPE_FFG:
                 JFrGotha.formatColumn(this.tblPlayers, NEWRATING_COL, "FFG Niv", 40, JLabel.RIGHT, JLabel.RIGHT); 
                 JFrGotha.formatColumn(this.tblPlayers, PLAYERID_COL, "FFG Lic",70, JLabel.LEFT, JLabel.LEFT);                
+//                JFrGotha.formatColumn(this.tblPlayers, STATUS_COL, "L",16, JLabel.LEFT, JLabel.LEFT);                
                 JFrGotha.formatColumn(this.tblPlayers, RATINGLIST_COL, "FFG Rating List", 220, JLabel.CENTER, JLabel.CENTER); 
                 break;
             case RatingList.TYPE_AGA:
                 JFrGotha.formatColumn(this.tblPlayers, NEWRATING_COL, "AGA Rt", 40, JLabel.RIGHT, JLabel.RIGHT); 
                 JFrGotha.formatColumn(this.tblPlayers, PLAYERID_COL, "AGA Id",70, JLabel.LEFT, JLabel.LEFT);                
+//                JFrGotha.formatColumn(this.tblPlayers, STATUS_COL, "",0, JLabel.LEFT, JLabel.LEFT);                
                 JFrGotha.formatColumn(this.tblPlayers, RATINGLIST_COL, "AGA Rating List", 220, JLabel.CENTER, JLabel.CENTER); 
                 break;
             default:
                 System.out.println("btnUpdateRatingListActionPerformed : Internal error");
                 return;
         }
+        
+        TableColumnModel tcm = this.tblPlayers.getColumnModel();
+        if (rlType == RatingList.TYPE_FFG){
+            tcm.getColumn(STATUS_COL).setMaxWidth(16);
+            tcm.getColumn(STATUS_COL).setMinWidth(16);
+        }
+        else{
+            tcm.getColumn(STATUS_COL).setMinWidth(0);
+            tcm.getColumn(STATUS_COL).setMaxWidth(0);
+        }
+        
 
     }
     
     private void updateRatingList(int typeRatingList) {
         ratingList = new RatingList(RatingList.TYPE_EGF, new File(Gotha.runningDirectory, "ratinglists/egf_db.txt"));
+//        ratingList = new RatingList(typeRatingList, new File(Gotha.runningDirectory, "ratinglists/egf_db.txt"));
         cbxRatingList.removeAllItems();
         cbxRatingList.addItem("");
         ArrayList<RatedPlayer> alRP = ratingList.getALRatedPlayers(); 
@@ -269,20 +288,20 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
 
         tblPlayers.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Last name", "First name", "Co", "Club", "Rk", "Rating", "Rating origin", "New Rating", "EGFPin", "RatingList"
+                "Last name", "First name", "Co", "Club", "Rk", "Rating", "Rating origin", "New Rating", "EGFPin", "Status", "RatingList"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, false, false, false, false
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -462,12 +481,14 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         if (this.rdbFFG.isSelected()) rlType = RatingList.TYPE_FFG;
         if (this.rdbAGA.isSelected()) rlType = RatingList.TYPE_AGA;
        String strPlayerId = "";
+       String strStatus = "";
         switch(rlType){
             case RatingList.TYPE_EGF:
                 if (rp!=null) strPlayerId = rp.getEgfPin();
                 break;
             case RatingList.TYPE_FFG:
                 if (rp!=null) strPlayerId = rp.getFfgLicence();
+                if (rp!=null) strStatus = rp.getFfgLicenceStatus();
                 break;
             case RatingList.TYPE_AGA:
                 if (rp!=null) strPlayerId = rp.getAgaId();
@@ -482,6 +503,7 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         
         model.setValueAt(strRating, row, JFrUpdateRatings.NEWRATING_COL);
         model.setValueAt(strPlayerId, row, JFrUpdateRatings.PLAYERID_COL);
+        model.setValueAt(strStatus, row, JFrUpdateRatings.STATUS_COL);
         model.setValueAt(strRatedPlayerString, row, JFrUpdateRatings.RATINGLIST_COL);
     }
     
@@ -694,6 +716,7 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         this.updateSCPPlayersColTitles();
     }
     
+// See also JFrPlayersManager.useRatingList, which should stay a clone
     private void useRatingList(int typeRatingList) {
         switch (typeRatingList) {
             case RatingList.TYPE_EGF:
@@ -800,9 +823,10 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         this.updateSCPPlayersColTitles();
         this.pnlPlayersList.setVisible(true);
 
+        
         DefaultTableModel model = (DefaultTableModel)tblPlayers.getModel();
      
-        ArrayList<Player> displayedPlayersList = new ArrayList<Player>(playersList);
+        ArrayList<Player> displayedPlayersList = new ArrayList<>(playersList);
         
         PlayerComparator playerComparator = new PlayerComparator(playersSortType);
         Collections.sort(displayedPlayersList, playerComparator);
@@ -905,6 +929,15 @@ class PlayersURTableCellRenderer extends JLabel implements TableCellRenderer {
             colIndex == JFrUpdateRatings.PLAYERID_COL ||
             colIndex == JFrUpdateRatings.RATINGLIST_COL)
                 comp.setBackground(Color.LIGHT_GRAY);
+        
+        if (colIndex == JFrUpdateRatings.STATUS_COL){
+            String strStatus = (String)model.getValueAt(rowIndex, JFrUpdateRatings.STATUS_COL);   
+            if(strStatus.equals("e")) comp.setBackground(Color.GREEN);
+            else if(strStatus.equals("L")) comp.setBackground(Color.GREEN);
+            else if(strStatus.equals("C")) comp.setBackground(Color.CYAN);
+            else comp.setBackground(Color.RED);
+            
+        }
         
         return comp;
     }

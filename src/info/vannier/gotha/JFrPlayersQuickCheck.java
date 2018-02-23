@@ -35,11 +35,15 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
     private static final int CLUB_COL = 4;
     public static final int RANK_COL = 5;
     public static final int RATING_COL = 6;
+    public static final int PARTICIPATING_COL0 = 7;
+    public static final int MAX_NUMBER_OF_ROUNDS_DISPLAYED = 7;
     
     private int playersSortType = PlayerComparator.NAME_ORDER;
     private ArrayList<Player> alSelectedPlayersToKeepSelected = new ArrayList<Player>(); 
 
     private TournamentInterface tournament;
+    
+     private int displayedStartingRoundNumber = 0;
     /**
      * Creates new form JFrPlayersQuickCheck
      */
@@ -101,6 +105,11 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
         scpRegisteredPlayers = new javax.swing.JScrollPane();
         tblRegisteredPlayers = new javax.swing.JTable();
         btnPrint = new javax.swing.JButton();
+        jCheckBox1 = new javax.swing.JCheckBox();
+        jLabel2 = new javax.swing.JLabel();
+        lblLastRound = new javax.swing.JLabel();
+        spnDisplayedStartingRoundNumber = new javax.swing.JSpinner();
+        jLabel4 = new javax.swing.JLabel();
         jLabel1 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
         jLabel10 = new javax.swing.JLabel();
@@ -166,7 +175,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             }
         });
         pnlInternal.add(btnClose);
-        btnClose.setBounds(150, 470, 590, 30);
+        btnClose.setBounds(130, 470, 650, 30);
 
         pnlPlayersList.setBorder(javax.swing.BorderFactory.createTitledBorder("Players"));
         pnlPlayersList.setLayout(null);
@@ -195,17 +204,23 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
 
         tblRegisteredPlayers.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, "", "", "", null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "R", "Last name", "First name", "Co", "Club", "Rk", "Rating"
+                "R", "Last name", "First name", "Co", "Club", "Rk", "Rating", "1", "2", "3", "4", "5", "6", "7"
             }
         ) {
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, true, true, true, true, true, true, true
             };
 
             public boolean isCellEditable(int rowIndex, int columnIndex) {
@@ -229,7 +244,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
         scpRegisteredPlayers.setViewportView(tblRegisteredPlayers);
 
         pnlPlayersList.add(scpRegisteredPlayers);
-        scpRegisteredPlayers.setBounds(10, 80, 340, 330);
+        scpRegisteredPlayers.setBounds(10, 80, 480, 330);
 
         btnPrint.setText("Print ...");
         btnPrint.addActionListener(new java.awt.event.ActionListener() {
@@ -238,43 +253,68 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             }
         });
         pnlPlayersList.add(btnPrint);
-        btnPrint.setBounds(10, 420, 340, 30);
+        btnPrint.setBounds(10, 420, 480, 30);
+
+        jCheckBox1.setText("jCheckBox1");
+        pnlPlayersList.add(jCheckBox1);
+        jCheckBox1.setBounds(250, 100, 15, 15);
+        jCheckBox1.getAccessibleContext().setAccessibleName("chk1");
+
+        jLabel2.setText("Rounds :");
+        pnlPlayersList.add(jLabel2);
+        jLabel2.setBounds(340, 50, 60, 14);
+
+        lblLastRound.setText("... 7");
+        pnlPlayersList.add(lblLastRound);
+        lblLastRound.setBounds(450, 50, 30, 14);
+
+        spnDisplayedStartingRoundNumber.addChangeListener(new javax.swing.event.ChangeListener() {
+            public void stateChanged(javax.swing.event.ChangeEvent evt) {
+                spnDisplayedStartingRoundNumberStateChanged(evt);
+            }
+        });
+        pnlPlayersList.add(spnDisplayedStartingRoundNumber);
+        spnDisplayedStartingRoundNumber.setBounds(409, 40, 40, 30);
+
+        jLabel4.setText("Participation");
+        pnlPlayersList.add(jLabel4);
+        jLabel4.setBounds(340, 20, 110, 14);
 
         pnlInternal.add(pnlPlayersList);
-        pnlPlayersList.setBounds(30, 10, 360, 460);
+        pnlPlayersList.setBounds(10, 10, 500, 460);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 11)); // NOI18N
         jLabel1.setText("Action on selected players");
         pnlInternal.add(jLabel1);
-        jLabel1.setBounds(430, 180, 220, 14);
+        jLabel1.setBounds(520, 180, 220, 14);
 
         jLabel6.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel6.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel6.setText("+");
         jLabel6.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         pnlInternal.add(jLabel6);
-        jLabel6.setBounds(430, 280, 20, 20);
+        jLabel6.setBounds(520, 280, 20, 20);
 
         jLabel10.setFont(new java.awt.Font("Arial", 0, 24)); // NOI18N
         jLabel10.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel10.setText("-");
         jLabel10.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         pnlInternal.add(jLabel10);
-        jLabel10.setBounds(430, 310, 20, 20);
+        jLabel10.setBounds(520, 310, 20, 20);
 
         jLabel13.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel13.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel13.setText("F");
         jLabel13.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         pnlInternal.add(jLabel13);
-        jLabel13.setBounds(430, 200, 20, 20);
+        jLabel13.setBounds(520, 200, 20, 20);
 
         jLabel16.setFont(new java.awt.Font("Arial", 0, 18)); // NOI18N
         jLabel16.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         jLabel16.setText("P");
         jLabel16.setHorizontalTextPosition(javax.swing.SwingConstants.CENTER);
         pnlInternal.add(jLabel16);
-        jLabel16.setBounds(430, 230, 20, 20);
+        jLabel16.setBounds(520, 230, 20, 20);
 
         btnRemovePrePlayers.setText("Remove all \"P\" players");
         btnRemovePrePlayers.addActionListener(new java.awt.event.ActionListener() {
@@ -283,7 +323,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             }
         });
         pnlInternal.add(btnRemovePrePlayers);
-        btnRemovePrePlayers.setBounds(430, 20, 310, 30);
+        btnRemovePrePlayers.setBounds(520, 20, 260, 30);
 
         btnIncreaseRank.setText("Increase rank of selected players");
         btnIncreaseRank.addActionListener(new java.awt.event.ActionListener() {
@@ -292,7 +332,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             }
         });
         pnlInternal.add(btnIncreaseRank);
-        btnIncreaseRank.setBounds(460, 280, 280, 20);
+        btnIncreaseRank.setBounds(550, 280, 230, 20);
 
         btnDecreaseRank.setText("Decrease rank of selected players");
         btnDecreaseRank.addActionListener(new java.awt.event.ActionListener() {
@@ -301,7 +341,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             }
         });
         pnlInternal.add(btnDecreaseRank);
-        btnDecreaseRank.setBounds(460, 310, 280, 20);
+        btnDecreaseRank.setBounds(550, 310, 230, 20);
 
         btnSetRegToFin.setText("Set Registration status to Final");
         btnSetRegToFin.addActionListener(new java.awt.event.ActionListener() {
@@ -310,7 +350,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             }
         });
         pnlInternal.add(btnSetRegToFin);
-        btnSetRegToFin.setBounds(460, 200, 280, 20);
+        btnSetRegToFin.setBounds(550, 200, 230, 20);
 
         btnSetRegToPre.setText("Set Registration status to Preliminary");
         btnSetRegToPre.addActionListener(new java.awt.event.ActionListener() {
@@ -319,7 +359,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             }
         });
         pnlInternal.add(btnSetRegToPre);
-        btnSetRegToPre.setBounds(460, 230, 280, 20);
+        btnSetRegToPre.setBounds(550, 230, 230, 20);
 
         btnHelp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info/vannier/gotha/gothalogo16.jpg"))); // NOI18N
         btnHelp.setText("help");
@@ -329,7 +369,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             }
         });
         pnlInternal.add(btnHelp);
-        btnHelp.setBounds(30, 470, 110, 30);
+        btnHelp.setBounds(10, 470, 110, 30);
 
         btnSetRanksFromRatings.setText("Set ranks according to ratings");
         btnSetRanksFromRatings.addActionListener(new java.awt.event.ActionListener() {
@@ -338,7 +378,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             }
         });
         pnlInternal.add(btnSetRanksFromRatings);
-        btnSetRanksFromRatings.setBounds(460, 340, 280, 20);
+        btnSetRanksFromRatings.setBounds(550, 340, 230, 20);
 
         btnSetRatingsFromRanks.setText("Set  ratings according to ranks");
         btnSetRatingsFromRanks.addActionListener(new java.awt.event.ActionListener() {
@@ -347,7 +387,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             }
         });
         pnlInternal.add(btnSetRatingsFromRanks);
-        btnSetRatingsFromRanks.setBounds(460, 390, 280, 20);
+        btnSetRatingsFromRanks.setBounds(550, 390, 230, 20);
 
         btnUpdateRatings.setText("Update ratings");
         btnUpdateRatings.addActionListener(new java.awt.event.ActionListener() {
@@ -356,7 +396,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             }
         });
         pnlInternal.add(btnUpdateRatings);
-        btnUpdateRatings.setBounds(430, 70, 310, 30);
+        btnUpdateRatings.setBounds(520, 70, 260, 30);
 
         btnModifyRatings.setText("Modify ratings...");
         btnModifyRatings.addActionListener(new java.awt.event.ActionListener() {
@@ -365,7 +405,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             }
         });
         pnlInternal.add(btnModifyRatings);
-        btnModifyRatings.setBounds(460, 420, 280, 20);
+        btnModifyRatings.setBounds(550, 420, 230, 20);
 
         getContentPane().add(pnlInternal);
         pnlInternal.setBounds(0, 0, 790, 510);
@@ -714,8 +754,6 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             this.tournamentChanged();
         }
     }
-
-    
     
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
         cleanClose();
@@ -762,12 +800,38 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
     }//GEN-LAST:event_tblRegisteredPlayersKeyPressed
 
     private void tblRegisteredPlayersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblRegisteredPlayersMouseClicked
-        // Double or multiple click
+        // Left click on participation
+        if (evt.getModifiers() == InputEvent.BUTTON1_MASK){
+            int iRow = tblRegisteredPlayers.rowAtPoint(evt.getPoint());
+            int iCol = tblRegisteredPlayers.columnAtPoint(evt.getPoint());
+            System.out.println("iRow = " + iRow + " iCol = " + iCol);
+            if (iCol < PARTICIPATING_COL0) return;
+            int round = iCol - PARTICIPATING_COL0 + displayedStartingRoundNumber;
+            String name = (String)tblRegisteredPlayers.getModel().getValueAt(iRow, NAME_COL);
+            String firstName = (String)tblRegisteredPlayers.getModel().getValueAt(iRow, FIRSTNAME_COL);
+            Player p = null;
+            try {
+                p = tournament.getPlayerByKeyString(name + firstName);
+            } catch (RemoteException ex) {
+                Logger.getLogger(JFrPlayersQuickCheck.class.getName()).log(Level.SEVERE, null, ex);
+            }
+            System.out.println("p = " + p.getName() + " " + p.getFirstName());
+            boolean part[] = p.getParticipating();
+            boolean bP = part[round];
+            p.setParticipating(round, !bP);
+            String strPart = "";
+            if (bP) strPart = "V";
+            DefaultTableModel model = (DefaultTableModel)tblRegisteredPlayers.getModel();
+            model.setValueAt(strPart, iRow, iCol);
+            this.tournamentChanged();
+            
+        }
         // Right click
         if (evt.getModifiers() != InputEvent.BUTTON3_MASK) return;
         Point p = evt.getLocationOnScreen();
         pupRegisteredPlayers.setLocation(p);
-        pupRegisteredPlayers.setVisible(true);        
+        pupRegisteredPlayers.setVisible(true);     
+        
     }//GEN-LAST:event_tblRegisteredPlayersMouseClicked
 
     private void btnPrintActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrintActionPerformed
@@ -842,10 +906,39 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
         cleanClose();
     }//GEN-LAST:event_formWindowClosing
 
+    private void spnDisplayedStartingRoundNumberStateChanged(javax.swing.event.ChangeEvent evt) {//GEN-FIRST:event_spnDisplayedStartingRoundNumberStateChanged
+        int demandedRN = (Integer) (spnDisplayedStartingRoundNumber.getValue()) - 1;
+        this.demandedDisplayedRoundNumberHasChanged(demandedRN);        // TODO add your handling code here:
+    }//GEN-LAST:event_spnDisplayedStartingRoundNumberStateChanged
+
+    private void demandedDisplayedRoundNumberHasChanged(int demandedRN) {
+        int numberOfRounds = 0;
+        try {
+            numberOfRounds = tournament.getTournamentParameterSet().getGeneralParameterSet().getNumberOfRounds();
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        if (demandedRN == displayedStartingRoundNumber) {
+            return;
+        }
+
+        if (demandedRN < 0) {
+            spnDisplayedStartingRoundNumber.setValue(displayedStartingRoundNumber + 1);
+            return;
+        }
+        
+        if (demandedRN >= numberOfRounds - MAX_NUMBER_OF_ROUNDS_DISPLAYED) {
+            demandedRN = numberOfRounds -  MAX_NUMBER_OF_ROUNDS_DISPLAYED;
+        }
+
+        displayedStartingRoundNumber = demandedRN;
+        updateAllViews();
+    }
+    
     private void customInitComponents()throws RemoteException{       
         initPnlRegisteredPlayers();
         this.updateAllViews();
-//        updateComponents();
     }
     
     private void initPnlRegisteredPlayers()throws RemoteException{
@@ -859,6 +952,10 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
         JFrGotha.formatColumn(this.tblRegisteredPlayers, CLUB_COL, "Club", 40, JLabel.LEFT, JLabel.LEFT); 
         JFrGotha.formatColumn(this.tblRegisteredPlayers, RANK_COL, "Rk", 30, JLabel.RIGHT, JLabel.RIGHT); 
         JFrGotha.formatColumn(this.tblRegisteredPlayers, RATING_COL, "Rating", 40, JLabel.RIGHT, JLabel.RIGHT); 
+        for (int r=0; r < MAX_NUMBER_OF_ROUNDS_DISPLAYED; r++){
+            JFrGotha.formatColumn(this.tblRegisteredPlayers, PARTICIPATING_COL0 + r, "" + (r + 1), 15, JLabel.CENTER, JLabel.CENTER); 
+            }
+
     }
     
     private void tournamentChanged(){
@@ -914,18 +1011,72 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
         Collections.sort(displayedPlayersList, playerComparator);
 
         model.setRowCount(displayedPlayersList.size());
+        
+        int numberOfRounds = 0;
+        try {
+            numberOfRounds = tournament.getTournamentParameterSet().getGeneralParameterSet().getNumberOfRounds();
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        int lastRoundDisplayed = displayedStartingRoundNumber + MAX_NUMBER_OF_ROUNDS_DISPLAYED - 1;    
+        if (lastRoundDisplayed >= numberOfRounds){
+            lastRoundDisplayed = numberOfRounds - 1;
+        }
+        if (displayedStartingRoundNumber != lastRoundDisplayed - MAX_NUMBER_OF_ROUNDS_DISPLAYED + 1) 
+            displayedStartingRoundNumber = lastRoundDisplayed - MAX_NUMBER_OF_ROUNDS_DISPLAYED + 1; 
+        
+        if (displayedStartingRoundNumber < 0) displayedStartingRoundNumber = 0; 
+            
+        this.spnDisplayedStartingRoundNumber.setValue(displayedStartingRoundNumber + 1);
+   
+        if (displayedStartingRoundNumber < lastRoundDisplayed)
+            this.lblLastRound.setText("..." + (lastRoundDisplayed + 1));
+        
+        if (numberOfRounds > MAX_NUMBER_OF_ROUNDS_DISPLAYED) this.spnDisplayedStartingRoundNumber.setEnabled(true);
+        else this.spnDisplayedStartingRoundNumber.setEnabled(false);
+                
+        TableColumnModel tcm = this.tblRegisteredPlayers.getColumnModel();        
+        
+        // New V3.45.02 : Trim nr of columns for participation
+        int nbPartCol = MAX_NUMBER_OF_ROUNDS_DISPLAYED;
+        if (nbPartCol > numberOfRounds) nbPartCol = numberOfRounds;
+        for (int col = PARTICIPATING_COL0 + nbPartCol; col < PARTICIPATING_COL0 + MAX_NUMBER_OF_ROUNDS_DISPLAYED; col++){
+            TableColumn tc = tcm.getColumn(col);
+            tc.setMinWidth(0);
+            tc.setMaxWidth(0);
+//            tcm.removeColumn(tc);
+        }
+        for (int col = PARTICIPATING_COL0; col < PARTICIPATING_COL0 + MAX_NUMBER_OF_ROUNDS_DISPLAYED; col++){
+            TableColumn tc = tcm.getColumn(col);
+            tc.setMinWidth(0);
+            tc.setMaxWidth(16);
+//            tcm.addColumn(tc);
+        }
+        
+        for (int virtualR = 0; virtualR < nbPartCol; virtualR++){
+            JFrGotha.formatColumn(this.tblRegisteredPlayers, PARTICIPATING_COL0 + virtualR, "" + (virtualR + displayedStartingRoundNumber + 1), 16, JLabel.LEFT, JLabel.LEFT); 
+        }
+        
+        // model = (DefaultTableModel)tblRegisteredPlayers.getModel();
+        
         for (Player p:displayedPlayersList){
-            int iP = -1;
             int line = displayedPlayersList.indexOf(p); 
-//            model.setValueAt("" + iP, line, JFrPlayersQuickCheck.PLAYER_NUMBER_COL);
             model.setValueAt((p.getRegisteringStatus().compareTo("PRE")==0)?"P":"F", line, JFrPlayersQuickCheck.REG_COL);
             model.setValueAt(p.getName(), line, JFrPlayersQuickCheck.NAME_COL);
             model.setValueAt(p.getFirstName(), line, JFrPlayersQuickCheck.FIRSTNAME_COL);
             model.setValueAt(p.getCountry(), line, JFrPlayersQuickCheck.COUNTRY_COL);
             model.setValueAt(p.getClub(), line, JFrPlayersQuickCheck.CLUB_COL);           
             model.setValueAt(Player.convertIntToKD(p.getRank()), line, JFrPlayersQuickCheck.RANK_COL);
-            model.setValueAt(p.getRating(), line, JFrPlayersQuickCheck.RATING_COL);           
+            model.setValueAt(p.getRating(), line, JFrPlayersQuickCheck.RATING_COL); 
+            boolean[] bPart = p.getParticipating();
+            for (int virtualR = 0; virtualR < nbPartCol; virtualR++){
+                String strPart = "";
+                if (bPart[virtualR + displayedStartingRoundNumber]) strPart = "V";
+                model.setValueAt(strPart, line, JFrPlayersQuickCheck.PARTICIPATING_COL0 + virtualR); 
+            }
         }
+        
         
         for (int nCol = 0; nCol < this.tblRegisteredPlayers.getColumnCount(); nCol++){
             TableColumn col = tblRegisteredPlayers.getColumnModel().getColumn(nCol);
@@ -998,14 +1149,18 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
     private javax.swing.JButton btnSetRegToFin;
     private javax.swing.JButton btnSetRegToPre;
     private javax.swing.JButton btnUpdateRatings;
+    private javax.swing.JCheckBox jCheckBox1;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel10;
     private javax.swing.JLabel jLabel13;
     private javax.swing.JLabel jLabel16;
+    private javax.swing.JLabel jLabel2;
+    private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel6;
     private javax.swing.JLabel jLabel8;
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPopupMenu.Separator jSeparator5;
+    private javax.swing.JLabel lblLastRound;
     private javax.swing.JMenuItem mniCancel;
     private javax.swing.JMenuItem mniSortByName;
     private javax.swing.JMenuItem mniSortByRank;
@@ -1013,6 +1168,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
     private javax.swing.JPanel pnlPlayersList;
     private javax.swing.JPopupMenu pupRegisteredPlayers;
     private javax.swing.JScrollPane scpRegisteredPlayers;
+    private javax.swing.JSpinner spnDisplayedStartingRoundNumber;
     private javax.swing.JTable tblRegisteredPlayers;
     private javax.swing.JTextField txfNbPlFin;
     private javax.swing.JTextField txfNbPlPre;

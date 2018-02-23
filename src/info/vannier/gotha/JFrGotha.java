@@ -3363,7 +3363,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         TableColumnModel tcm = tbl.getColumnModel();
 
         tcm.getColumn(col).setPreferredWidth(width);
-
+        
         // Alignment
         DefaultTableCellRenderer dtcr = new DefaultTableCellRenderer();
         dtcr.setHorizontalAlignment(align);

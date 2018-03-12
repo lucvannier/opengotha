@@ -39,6 +39,8 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
     public static  final int PLAYERID_COL       = NEWRATING_COL + 1;
     public static  final int STATUS_COL         = PLAYERID_COL + 1;
     public static  final int RATINGLIST_COL     = STATUS_COL + 1;
+    public static  final int RAWRATING_COL      = RATINGLIST_COL + 1;
+    public static  final int RLRATINGORIGIN_COL = RAWRATING_COL + 1;
     
     
     private int playersSortType = PlayerComparator.NAME_ORDER;
@@ -155,7 +157,7 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
             case RatingList.TYPE_FFG:
                 JFrGotha.formatColumn(this.tblPlayers, NEWRATING_COL, "FFG Niv", 40, JLabel.RIGHT, JLabel.RIGHT); 
                 JFrGotha.formatColumn(this.tblPlayers, PLAYERID_COL, "FFG Lic",70, JLabel.LEFT, JLabel.LEFT);                
-//                JFrGotha.formatColumn(this.tblPlayers, STATUS_COL, "L",16, JLabel.LEFT, JLabel.LEFT);                
+                JFrGotha.formatColumn(this.tblPlayers, STATUS_COL, "L",16, JLabel.CENTER, JLabel.CENTER);                
                 JFrGotha.formatColumn(this.tblPlayers, RATINGLIST_COL, "FFG Rating List", 220, JLabel.CENTER, JLabel.CENTER); 
                 break;
             case RatingList.TYPE_AGA:
@@ -168,8 +170,14 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
                 System.out.println("btnUpdateRatingListActionPerformed : Internal error");
                 return;
         }
-        
-        TableColumnModel tcm = this.tblPlayers.getColumnModel();
+        DefaultTableColumnModel tcm = (DefaultTableColumnModel)this.tblPlayers.getColumnModel();
+        tcm.getColumn(RAWRATING_COL).setMinWidth(0);
+        tcm.getColumn(RAWRATING_COL).setMaxWidth(0);
+        tcm.getColumn(RLRATINGORIGIN_COL).setMinWidth(0);
+        tcm.getColumn(RLRATINGORIGIN_COL).setMaxWidth(0);
+        JFrGotha.formatColumn(this.tblPlayers, RAWRATING_COL, "RawRt", 0, JLabel.RIGHT, JLabel.RIGHT); 
+        JFrGotha.formatColumn(this.tblPlayers, RLRATINGORIGIN_COL, "Ori", 0, JLabel.RIGHT, JLabel.RIGHT); 
+
         if (rlType == RatingList.TYPE_FFG){
             tcm.getColumn(STATUS_COL).setMaxWidth(16);
             tcm.getColumn(STATUS_COL).setMinWidth(16);
@@ -288,20 +296,20 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
 
         tblPlayers.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Last name", "First name", "Co", "Club", "Rk", "Rating", "Rating origin", "New Rating", "EGFPin", "Status", "RatingList"
+                "Last name", "First name", "Co", "Club", "Rk", "Rating", "Rating origin", "New Rating", "EGFPin", "Status", "RatingList", "Raw rating", "Rating origin"
             }
         ) {
             Class[] types = new Class [] {
-                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
+                java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class, java.lang.String.class
             };
             boolean[] canEdit = new boolean [] {
-                false, false, false, false, false, false, false, false, false, false, false
+                false, false, false, false, false, false, false, false, false, false, false, true, true
             };
 
             public Class getColumnClass(int columnIndex) {
@@ -499,12 +507,22 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         }
         
         String strRatedPlayerString = "";
-        if (rp != null) strRatedPlayerString = ratingList.getRatedPlayerString(rp);
+        String strRawRating = "";
+        String strRatingOrigin = "";
+        
+        if (rp != null){
+            strRatedPlayerString = ratingList.getRatedPlayerString(rp);
+            strRawRating = rp.getStrRawRating();
+            strRatingOrigin = rp.getRatingOrigin();
+        }
         
         model.setValueAt(strRating, row, JFrUpdateRatings.NEWRATING_COL);
         model.setValueAt(strPlayerId, row, JFrUpdateRatings.PLAYERID_COL);
         model.setValueAt(strStatus, row, JFrUpdateRatings.STATUS_COL);
         model.setValueAt(strRatedPlayerString, row, JFrUpdateRatings.RATINGLIST_COL);
+        model.setValueAt(strRawRating, row, JFrUpdateRatings.RAWRATING_COL);
+        model.setValueAt(strRatingOrigin, row, JFrUpdateRatings.RLRATINGORIGIN_COL);
+        
     }
     
     private ArrayList<Player> selectedPlayersList(JTable tbl){
@@ -562,21 +580,24 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
                 row = r;
                 break;
             }
-            String egfPin = (String)model.getValueAt(row, JFrUpdateRatings.PLAYERID_COL);
-            if (egfPin.equals("")){
-                continue;
-            }
+//            String egfPin = (String)model.getValueAt(row, JFrUpdateRatings.PLAYERID_COL);
+//            if (egfPin.equals("")){
+//                continue;
+//            }
             try{
                 String strNewRating = (String)model.getValueAt(row, JFrUpdateRatings.NEWRATING_COL);
+                String strNewRatingOrigin = (String)model.getValueAt(row, JFrUpdateRatings.RLRATINGORIGIN_COL) 
+                        + " : " + (String)model.getValueAt(row, JFrUpdateRatings.RAWRATING_COL);
                 int newRating = Integer.parseInt(strNewRating);
                 if (newRating == p.getRating()){
-                    p.setEgfPin(egfPin);               
-                    p.setRatingOrigin("EGF");
+//                    p.setEgfPin(egfPin);               
+//                    p.setStrRatingOrigin("EGF");
                 }
                 else{                
-                    p.setEgfPin(egfPin);               
-                    p.setRatingOrigin("EGF");
+//                    p.setEgfPin(egfPin);               
+//                    p.setStrRatingOrigin("EGF");
                     p.setRating(newRating);
+                    p.setStrRatingOrigin(strNewRatingOrigin);
                 }
                 tournament.modifyPlayer(p, p);
             }catch(Exception e){
@@ -841,7 +862,7 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
             model.setValueAt(p.getClub(), line, JFrUpdateRatings.CLUB_COL);           
             model.setValueAt(Player.convertIntToKD(p.getRank()), line, JFrUpdateRatings.RANK_COL);
             model.setValueAt(p.getRating(), line, JFrUpdateRatings.RATING_COL); 
-            model.setValueAt(p.getRatingOrigin(), line, JFrUpdateRatings.RATINGORIGIN_COL); 
+            model.setValueAt(p.getStrRatingOrigin(), line, JFrUpdateRatings.RATINGORIGIN_COL); 
             
             //Find the player in rating list
             RatedPlayer rp = ratingList.getRatedPlayer(p);
@@ -878,7 +899,7 @@ class PlayersURTableCellRenderer extends JLabel implements TableCellRenderer {
         if (colIndex == JFrUpdateRatings.RATING_COL){           
             Integer nRating = (Integer)model.getValueAt(rowIndex, JFrUpdateRatings.RATING_COL);
             int rating = nRating.intValue();
-            String ratingOrigin = (String)model.getValueAt(rowIndex, JFrUpdateRatings.RATINGORIGIN_COL);
+//            String ratingOrigin = (String)model.getValueAt(rowIndex, JFrUpdateRatings.RATINGORIGIN_COL);
             
             int newRating = -9999;
             try{
@@ -890,7 +911,7 @@ class PlayersURTableCellRenderer extends JLabel implements TableCellRenderer {
             if (newRating != -9999){            
                 boolean bSame = true;
                 if (newRating != rating) bSame = false;
-                if (!ratingOrigin.equals("EGF")) bSame = false;
+//                if (!ratingOrigin.equals("EGF")) bSame = false;
                 if (bSame) 
                     comp.setForeground(Color.BLACK);
                 else 
@@ -901,7 +922,7 @@ class PlayersURTableCellRenderer extends JLabel implements TableCellRenderer {
        if (colIndex == JFrUpdateRatings.NEWRATING_COL){           
             Integer nRating = (Integer)model.getValueAt(rowIndex, JFrUpdateRatings.RATING_COL);
             int rating = nRating.intValue();
-            String ratingOrigin = (String)model.getValueAt(rowIndex, JFrUpdateRatings.RATINGORIGIN_COL);
+//            String ratingOrigin = (String)model.getValueAt(rowIndex, JFrUpdateRatings.RATINGORIGIN_COL);
             
             int newRating = -9999;
             try{
@@ -913,7 +934,7 @@ class PlayersURTableCellRenderer extends JLabel implements TableCellRenderer {
             if (newRating != -9999){            
                 boolean bSame = true;
                 if (newRating != rating) bSame = false;
-                if (!ratingOrigin.equals("EGF")) bSame = false;
+//                if (!ratingOrigin.equals("EGF")) bSame = false;
                 if (bSame) 
                     comp.setForeground(Color.BLACK);
                 else 
@@ -935,7 +956,7 @@ class PlayersURTableCellRenderer extends JLabel implements TableCellRenderer {
             if(strStatus.equals("e")) comp.setBackground(Color.GREEN);
             else if(strStatus.equals("L")) comp.setBackground(Color.GREEN);
             else if(strStatus.equals("C")) comp.setBackground(Color.CYAN);
-            else comp.setBackground(Color.RED);
+            else comp.setBackground(Color.PINK);
             
         }
         

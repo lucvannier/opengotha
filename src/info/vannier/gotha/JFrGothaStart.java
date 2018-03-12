@@ -20,11 +20,9 @@ import javax.swing.JOptionPane;
 public class JFrGothaStart extends javax.swing.JFrame {
 
     /** Creates new form JFrGothaStart */
-    public JFrGothaStart() {
-        // Log Platform and JDK elements
-        
-        String strOS = System.getProperty("os.name") + " " + System.getProperty("os.arch") + " " + System.getProperty("os.version");
-        LogElements.incrementElement("gotha.os", strOS);
+    public JFrGothaStart() {        
+        String strOS = System.getProperty("os.name") + " " + System.getProperty("os.arch") + " " + System.getProperty("os.version");       
+        LogElements.incrementElement("gotha.os", strOS);      
         String strJRE = System.getProperty("java.version") + " " + System.getProperty("java.vm.name");
         LogElements.incrementElement("gotha.jre", strJRE);
         String strVersion = Gotha.getGothaFullVersionNumber();

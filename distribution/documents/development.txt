@@ -1,13 +1,10 @@
-OpenGothaV3.45.02
+OpenGothaV3.46
 *****************
-23/02/2018
+12/03/2018
+New         Adjusted time is exported in .tou files
 New         Participation is now displayed and modifiable from Players Quickcheck frame
 New         FFG Licence Status is now displayed in Update Ratings frame
-
-OpenGothaV3.45.01
-*****************
-12/02/2018
-New         Adjusted time is exported in .tou files
+New         In the games lists, Rank is shown instead of Grade
 
 OpenGothaV3.45
 **************

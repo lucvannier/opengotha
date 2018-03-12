@@ -32,13 +32,14 @@ public class Player implements java.io.Serializable{
     private int rating = MIN_RATING;
     
     /**
-     * Either "EGF" or "FFG" or "MAN" or "INI"
+     * Either "EGF xxx" or "FFG xxx" or "AGA xxx" or "MAN" or "INI"
      * "EGF" for rating coming from European Go DataBase
      * "FFG" for rating coming from FFG Rating list
+     * "AGA" for rating coming from AGA TD List
      * "MAN" for rating specified by the organiser or imported from vBar-separated file
      * "INI" for rating computed from rank
      */
-    private String ratingOrigin = "";
+    private String strRatingOrigin = "";
         
     /**
      * strGrade is relevant when player is registered from EGF rating list
@@ -70,7 +71,7 @@ public class Player implements java.io.Serializable{
      
     public Player(String name, String firstName, String country, String club, String egfPin, String ffgLicence, String ffgLicenceStatus,
             String agaId, String agaExpirationDate,
-            int rank,  int rating, String ratingOrigin, String strGrade, int smmsCorrection, 
+            int rank,  int rating, String strRatingOrigin, String strGrade, int smmsCorrection, 
             String registeringStatus) throws PlayerException{
         if (name.length() < 1) throw new PlayerException("Player's name should have at least 1 character");
         this.name = name;
@@ -92,7 +93,7 @@ public class Player implements java.io.Serializable{
         this.rank = rank;
  
         this.rating = rating;
-        this.ratingOrigin = ratingOrigin;
+        this.strRatingOrigin = strRatingOrigin;
         
         if (strGrade.equals("")) strGrade = Player.convertIntToKD(rank);
         strGrade = strGrade.toUpperCase();
@@ -124,7 +125,7 @@ public class Player implements java.io.Serializable{
         this.agaExpirationDate = p.getAgaExpirationDate();
         this.rank = p.getRank();
         this.rating = p.getRating();
-        this.ratingOrigin = p.getRatingOrigin();
+        this.strRatingOrigin = p.getStrRatingOrigin();
         this.strGrade = p.getStrGrade();
         this.smmsCorrection = p.getSmmsCorrection();
         boolean[] bPart = new boolean[p.getParticipating().length];
@@ -167,12 +168,13 @@ public class Player implements java.io.Serializable{
         String strNF = shortenedFullName();
             
 //        String strRk = Player.convertIntToKD(this.getRank());
-        String strGr = this.getStrGrade();
+//        String strGr = this.getStrGrade();
+        String strRk = Player.convertIntToKD(this.getRank());
         String strCo = Gotha.leftString(this.getCountry(), 2);
         String strCl = Gotha.leftString(this.getClub(), 4);
 
 //        boolean bRk = dpps.isShowPlayerRank();
-        boolean bGr = dpps.isShowPlayerGrade();
+        boolean bGr = dpps.isShowPlayerRank();
         boolean bCo = dpps.isShowPlayerCountry();
         boolean bCl = dpps.isShowPlayerClub();
         
@@ -180,7 +182,8 @@ public class Player implements java.io.Serializable{
         String strPl = strNF + "(";
         boolean bFirst = true;
         if (bGr){
-            strPl += strGr;
+//            strPl += strGr;
+            strPl += strRk;
             bFirst = false;
         }
         if (bCo){
@@ -244,20 +247,20 @@ public class Player implements java.io.Serializable{
         this.rating = val;
     }
     
-    public String getRatingOrigin() {
-        return ratingOrigin;
+    public String getStrRatingOrigin() {
+        return strRatingOrigin;
     }
     
-    public void setRatingOrigin(String val) {
-        this.ratingOrigin = val;
+    public void setStrRatingOrigin(String val) {
+        this.strRatingOrigin = val;
     }
     public String getStrRawRating() {
         int r = getRating();
         String strRR = "" + r;
-        if (getRatingOrigin().equals("FFG")){
+        if (getStrRatingOrigin().equals("FFG")){
             strRR = "" + (r - 2050);
         }
-        if (getRatingOrigin().equals("AGA")){
+        if (getStrRatingOrigin().equals("AGA")){
             r = r -2050;
             if (r >= 0) r = r + 100;
             if (r < 0) r = r - 100;

@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" gothaMinorVersion="4" gothaVersion="345">
+<Players>
+<Player agaExpirationDate="" agaId="" club="33Bo" country="FR" egfPin="" ffgLicence="0125003" ffgLicenceStatus="L" firstName="Hui" grade="8D" name="Fan" participating="11111111111111111111" rank="8D" rating="2775" ratingOrigin="FFG : 725" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="16Kz" country="RU" egfPin="10301236" ffgLicence="" ffgLicenceStatus="" firstName="Svetlana" grade=" 3P" name="Shikshina" participating="11111111111111111111" rank="6D" rating="2598" ratingOrigin="EGF : 2598" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Upp" country="SE" egfPin="13633719" ffgLicence="" ffgLicenceStatus="" firstName="Thomas" grade=" 6K" name="Aagren" participating="11111111111111111111" rank="6K" rating="1484" ratingOrigin="EGF : 1484" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="31Ba" country="FR" egfPin="" ffgLicence="7902000" ffgLicenceStatus="L" firstName="Luc" grade="2K" name="Vannier" participating="11111111111111111111" rank="2K" rating="1898" ratingOrigin="FFG : -152" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Vlky" country="SK" egfPin="12686597" ffgLicence="" ffgLicenceStatus="" firstName="Pavol" grade=" 1P" name="Lisy" participating="11111111111111111111" rank="8D" rating="2759" ratingOrigin="EGF : 2759" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="LISYPAVOL" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="1" whitePlayer="FANHUI"/>
+<Game blackPlayer="VANNIERLUC" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="2" whitePlayer="SHIKSHINASVETLANA"/>
+</Games>
+<Teams>
+<Team teamName="Eu" teamNumber="2">
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="1"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="1"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="2"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="2"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="3"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="3"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="4"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="4"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="5"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="5"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="6"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="6"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="7"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="7"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="8"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="8"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="9"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="9"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="10"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="10"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="11"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="11"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="12"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="12"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="13"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="13"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="14"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="14"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="15"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="15"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="16"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="16"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="17"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="17"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="18"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="18"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="19"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="19"/>
+<Board boardNumber="1" player="LISYPAVOL" roundNumber="20"/>
+<Board boardNumber="2" player="SHIKSHINASVETLANA" roundNumber="20"/>
+</Team>
+<Team teamName="Fr" teamNumber="1">
+<Board boardNumber="1" player="FANHUI" roundNumber="1"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="1"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="2"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="2"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="3"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="3"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="4"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="4"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="5"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="5"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="6"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="6"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="7"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="7"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="8"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="8"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="9"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="9"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="10"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="10"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="11"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="11"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="12"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="12"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="13"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="13"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="14"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="14"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="15"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="15"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="16"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="16"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="17"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="17"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="18"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="18"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="19"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="19"/>
+<Board boardNumber="1" player="FANHUI" roundNumber="20"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="20"/>
+</Team>
+</Teams>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2018-03-10" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="LV" endDate="2018-03-10" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="LO" name="TestGrRk" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="testGrRk" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="true" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="rank" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="2"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

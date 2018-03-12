@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Tournament dataVersion="201">
+<Tournament dataVersion="201" gothaMinorVersion="2" gothaVersion="345">
 <Players>
 <Player agaExpirationDate="" agaId="" club="77Mo" country="RU" egfPin="15713247" ffgLicence="" ffgLicenceStatus="" firstName="Marina" grade="3K" name="Popova" participating="11111111111111111111" rank="3K" rating="1752" ratingOrigin="EGF" registeringStatus="FIN" smmsCorrection="0"/>
 <Player agaExpirationDate="" agaId="" club="HB" country="DE" egfPin="16401627" ffgLicence="" ffgLicenceStatus="" firstName="Joschka" grade="6K" name="Zimdars" participating="11111111111111111111" rank="5K" rating="1592" ratingOrigin="EGF" registeringStatus="FIN" smmsCorrection="0"/>
@@ -75,7 +75,7 @@
 <Player agaExpirationDate="" agaId="" club="44Na" country="FR" egfPin="14962706" ffgLicence="" ffgLicenceStatus="" firstName="Tanguy" grade="5D" name="le_Calve" participating="11111111111111111111" rank="5D" rating="2472" ratingOrigin="EGF" registeringStatus="FIN" smmsCorrection="0"/>
 <Player agaExpirationDate="" agaId="" club="Viln" country="LT" egfPin="12886896" ffgLicence="" ffgLicenceStatus="" firstName="Gabrielius" grade="8K" name="Petrauskas" participating="11111111111111111111" rank="8K" rating="1070" ratingOrigin="EGF" registeringStatus="FIN" smmsCorrection="0"/>
 <Player agaExpirationDate="" agaId="" club="" country="CN" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Zhijie" grade="3D" name="Liang" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
-<Player agaExpirationDate="" agaId="" club="77Mo" country="RU" egfPin="15662537" ffgLicence="" ffgLicenceStatus="" firstName="Kirill" grade="1K" name="Akinfeev" participating="11111111111111111111" rank="1K" rating="1950" ratingOrigin="EGF" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="77Mo" country="RU" egfPin="15662537" ffgLicence="" ffgLicenceStatus="" firstName="Kirill" grade="1K" name="Akinfeev" participating="10001111111111111111" rank="1K" rating="2287" ratingOrigin="EGF" registeringStatus="FIN" smmsCorrection="0"/>
 <Player agaExpirationDate="" agaId="" club="Stoc" country="SE" egfPin="13625051" ffgLicence="" ffgLicenceStatus="" firstName="Marc" grade="1K" name="Stoehr" participating="11111111111111111111" rank="1K" rating="1921" ratingOrigin="EGF" registeringStatus="FIN" smmsCorrection="0"/>
 <Player agaExpirationDate="" agaId="" club="APWS" country="CZ" egfPin="16462072" ffgLicence="" ffgLicenceStatus="" firstName="Michal" grade="3K" name="Timko" participating="11111111111111111111" rank="2K" rating="1867" ratingOrigin="EGF" registeringStatus="FIN" smmsCorrection="0"/>
 <Player agaExpirationDate="" agaId="" club="Zur" country="CH" egfPin="10513492" ffgLicence="" ffgLicenceStatus="" firstName="Lorenz" grade="1D" name="Trippel" participating="11111111111111111111" rank="1D" rating="2051" ratingOrigin="EGF" registeringStatus="FIN" smmsCorrection="0"/>

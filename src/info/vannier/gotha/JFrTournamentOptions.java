@@ -230,12 +230,12 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         pnlSeeding = new javax.swing.JPanel();
         txfLastRoundForSeedSystem1 = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
-        pnlFormer = new javax.swing.JPanel();
+        pnlEarlier = new javax.swing.JPanel();
         ckbAddSortOnRating = new javax.swing.JCheckBox();
         rdbFormerSplitAndRandom = new javax.swing.JRadioButton();
         rdbFormerSplitAndFold = new javax.swing.JRadioButton();
         rdbFormerSplitAndSlip = new javax.swing.JRadioButton();
-        pnlLatter = new javax.swing.JPanel();
+        pnlLater = new javax.swing.JPanel();
         rdbLatterSplitAndRandom = new javax.swing.JRadioButton();
         rdbLatterSplitAndFold = new javax.swing.JRadioButton();
         rdbLatterSplitAndSlip = new javax.swing.JRadioButton();
@@ -463,7 +463,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         getContentPane().add(btnClose);
-        btnClose.setBounds(410, 490, 375, 30);
+        btnClose.setBounds(470, 490, 300, 30);
 
         pnlGen.setLayout(null);
 
@@ -1028,11 +1028,11 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlPla.add(cbxCrit1);
-        cbxCrit1.setBounds(20, 40, 80, 20);
+        cbxCrit1.setBounds(20, 40, 100, 20);
 
         jLabel12.setText("Criterion 2");
         pnlPla.add(jLabel12);
-        jLabel12.setBounds(120, 20, 80, 20);
+        jLabel12.setBounds(130, 20, 80, 20);
 
         cbxCrit2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxCrit2.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -1041,11 +1041,11 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlPla.add(cbxCrit2);
-        cbxCrit2.setBounds(120, 40, 80, 20);
+        cbxCrit2.setBounds(130, 40, 100, 20);
 
         jLabel13.setText("Criterion 3");
         pnlPla.add(jLabel13);
-        jLabel13.setBounds(220, 20, 80, 20);
+        jLabel13.setBounds(240, 20, 80, 20);
 
         cbxCrit3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxCrit3.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -1054,11 +1054,11 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlPla.add(cbxCrit3);
-        cbxCrit3.setBounds(220, 40, 80, 20);
+        cbxCrit3.setBounds(240, 40, 100, 20);
 
         jLabel14.setText("Criterion 4");
         pnlPla.add(jLabel14);
-        jLabel14.setBounds(320, 20, 80, 20);
+        jLabel14.setBounds(350, 20, 80, 20);
 
         cbxCrit4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxCrit4.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -1067,7 +1067,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlPla.add(cbxCrit4);
-        cbxCrit4.setBounds(320, 40, 80, 20);
+        cbxCrit4.setBounds(350, 40, 100, 20);
 
         pnlGlossary.setBorder(javax.swing.BorderFactory.createTitledBorder("Criteria glossary"));
         pnlGlossary.setLayout(null);
@@ -1087,10 +1087,10 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         scpGlossary.setViewportView(tblGlossary);
 
         pnlGlossary.add(scpGlossary);
-        scpGlossary.setBounds(10, 20, 380, 310);
+        scpGlossary.setBounds(10, 20, 420, 310);
 
         pnlPla.add(pnlGlossary);
-        pnlGlossary.setBounds(10, 90, 400, 340);
+        pnlGlossary.setBounds(10, 90, 440, 340);
 
         jScrollPane1.setBorder(null);
 
@@ -1112,7 +1112,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlPla.add(btnHelpPlacement);
-        btnHelpPlacement.setBounds(420, 400, 110, 30);
+        btnHelpPlacement.setBounds(470, 390, 110, 30);
 
         tpnParameters.addTab("Placement", pnlPla);
 
@@ -1350,12 +1350,12 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         txfLastRoundForSeedSystem1.setBounds(190, 20, 30, 20);
 
         jLabel20.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel20.setText("Former rounds up to round :");
+        jLabel20.setText("Earlier rounds up to round :");
         pnlSeeding.add(jLabel20);
         jLabel20.setBounds(10, 20, 180, 13);
 
-        pnlFormer.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Former rounds", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 10))); // NOI18N
-        pnlFormer.setLayout(null);
+        pnlEarlier.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Earlier rounds", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 10))); // NOI18N
+        pnlEarlier.setLayout(null);
 
         ckbAddSortOnRating.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         ckbAddSortOnRating.setSelected(true);
@@ -1367,7 +1367,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
                 ckbAddSortOnRatingFocusLost(evt);
             }
         });
-        pnlFormer.add(ckbAddSortOnRating);
+        pnlEarlier.add(ckbAddSortOnRating);
         ckbAddSortOnRating.setBounds(10, 20, 200, 13);
 
         grpSeedingFormer.add(rdbFormerSplitAndRandom);
@@ -1381,7 +1381,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
                 rdbSeedSystemFocusLost(evt);
             }
         });
-        pnlFormer.add(rdbFormerSplitAndRandom);
+        pnlEarlier.add(rdbFormerSplitAndRandom);
         rdbFormerSplitAndRandom.setBounds(10, 40, 150, 13);
 
         grpSeedingFormer.add(rdbFormerSplitAndFold);
@@ -1394,7 +1394,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
                 rdbSeedSystemFocusLost(evt);
             }
         });
-        pnlFormer.add(rdbFormerSplitAndFold);
+        pnlEarlier.add(rdbFormerSplitAndFold);
         rdbFormerSplitAndFold.setBounds(10, 60, 150, 13);
 
         grpSeedingFormer.add(rdbFormerSplitAndSlip);
@@ -1407,14 +1407,14 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
                 rdbSeedSystemFocusLost(evt);
             }
         });
-        pnlFormer.add(rdbFormerSplitAndSlip);
+        pnlEarlier.add(rdbFormerSplitAndSlip);
         rdbFormerSplitAndSlip.setBounds(10, 80, 150, 13);
 
-        pnlSeeding.add(pnlFormer);
-        pnlFormer.setBounds(10, 40, 220, 110);
+        pnlSeeding.add(pnlEarlier);
+        pnlEarlier.setBounds(10, 40, 220, 110);
 
-        pnlLatter.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Latter rounds", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 10))); // NOI18N
-        pnlLatter.setLayout(null);
+        pnlLater.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Later rounds", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 10))); // NOI18N
+        pnlLater.setLayout(null);
 
         grpSeedingLatter.add(rdbLatterSplitAndRandom);
         rdbLatterSplitAndRandom.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
@@ -1426,7 +1426,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
                 rdbSeedSystemFocusLost(evt);
             }
         });
-        pnlLatter.add(rdbLatterSplitAndRandom);
+        pnlLater.add(rdbLatterSplitAndRandom);
         rdbLatterSplitAndRandom.setBounds(10, 40, 140, 13);
 
         grpSeedingLatter.add(rdbLatterSplitAndFold);
@@ -1440,7 +1440,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
                 rdbSeedSystemFocusLost(evt);
             }
         });
-        pnlLatter.add(rdbLatterSplitAndFold);
+        pnlLater.add(rdbLatterSplitAndFold);
         rdbLatterSplitAndFold.setBounds(10, 60, 140, 13);
 
         grpSeedingLatter.add(rdbLatterSplitAndSlip);
@@ -1453,11 +1453,11 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
                 rdbSeedSystemFocusLost(evt);
             }
         });
-        pnlLatter.add(rdbLatterSplitAndSlip);
+        pnlLater.add(rdbLatterSplitAndSlip);
         rdbLatterSplitAndSlip.setBounds(10, 80, 140, 13);
 
-        pnlSeeding.add(pnlLatter);
-        pnlLatter.setBounds(230, 40, 160, 110);
+        pnlSeeding.add(pnlLater);
+        pnlLater.setBounds(230, 40, 160, 110);
 
         pnlMain.add(pnlSeeding);
         pnlSeeding.setBounds(10, 60, 400, 160);
@@ -1611,7 +1611,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
 
         jLabel31.setText("Criterion 1");
         pnlTPL.add(jLabel31);
-        jLabel31.setBounds(20, 20, 80, 20);
+        jLabel31.setBounds(20, 20, 100, 20);
 
         cbxTeamCrit1.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxTeamCrit1.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -1620,11 +1620,11 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlTPL.add(cbxTeamCrit1);
-        cbxTeamCrit1.setBounds(20, 40, 80, 20);
+        cbxTeamCrit1.setBounds(20, 40, 100, 20);
 
         jLabel32.setText("Criterion 2");
         pnlTPL.add(jLabel32);
-        jLabel32.setBounds(120, 20, 80, 20);
+        jLabel32.setBounds(130, 20, 100, 20);
 
         cbxTeamCrit2.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxTeamCrit2.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -1633,11 +1633,11 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlTPL.add(cbxTeamCrit2);
-        cbxTeamCrit2.setBounds(120, 40, 80, 20);
+        cbxTeamCrit2.setBounds(130, 40, 100, 20);
 
         jLabel33.setText("Criterion 3");
         pnlTPL.add(jLabel33);
-        jLabel33.setBounds(220, 20, 80, 20);
+        jLabel33.setBounds(240, 20, 100, 20);
 
         cbxTeamCrit3.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxTeamCrit3.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -1646,11 +1646,11 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlTPL.add(cbxTeamCrit3);
-        cbxTeamCrit3.setBounds(220, 40, 80, 20);
+        cbxTeamCrit3.setBounds(240, 40, 100, 20);
 
         jLabel34.setText("Criterion 4");
         pnlTPL.add(jLabel34);
-        jLabel34.setBounds(320, 20, 80, 20);
+        jLabel34.setBounds(350, 20, 100, 20);
 
         cbxTeamCrit4.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxTeamCrit4.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -1659,11 +1659,11 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlTPL.add(cbxTeamCrit4);
-        cbxTeamCrit4.setBounds(320, 40, 80, 20);
+        cbxTeamCrit4.setBounds(350, 40, 100, 20);
 
         jLabel35.setText("Criterion 5");
         pnlTPL.add(jLabel35);
-        jLabel35.setBounds(430, 20, 80, 20);
+        jLabel35.setBounds(460, 20, 100, 20);
 
         cbxTeamCrit5.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxTeamCrit5.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -1677,11 +1677,11 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlTPL.add(cbxTeamCrit5);
-        cbxTeamCrit5.setBounds(430, 40, 80, 20);
+        cbxTeamCrit5.setBounds(460, 40, 100, 20);
 
         jLabel36.setText("Criterion 6");
         pnlTPL.add(jLabel36);
-        jLabel36.setBounds(530, 20, 80, 20);
+        jLabel36.setBounds(570, 20, 100, 20);
 
         cbxTeamCrit6.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "Item 1", "Item 2", "Item 3", "Item 4" }));
         cbxTeamCrit6.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -1690,7 +1690,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlTPL.add(cbxTeamCrit6);
-        cbxTeamCrit6.setBounds(530, 40, 80, 20);
+        cbxTeamCrit6.setBounds(570, 40, 100, 20);
 
         pnlTeamGlossary.setBorder(javax.swing.BorderFactory.createTitledBorder("Criteria glossary"));
         pnlTeamGlossary.setLayout(null);
@@ -1710,10 +1710,10 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         scpTeamGlossary.setViewportView(tblTeamGlossary);
 
         pnlTeamGlossary.add(scpTeamGlossary);
-        scpTeamGlossary.setBounds(10, 20, 380, 310);
+        scpTeamGlossary.setBounds(10, 20, 420, 310);
 
         pnlTPL.add(pnlTeamGlossary);
-        pnlTeamGlossary.setBounds(10, 90, 400, 340);
+        pnlTeamGlossary.setBounds(10, 90, 440, 340);
 
         scpTeamWarning.setBorder(null);
 
@@ -1749,7 +1749,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         getContentPane().add(btnPrint);
-        btnPrint.setBounds(20, 490, 375, 30);
+        btnPrint.setBounds(20, 490, 430, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -3671,12 +3671,12 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
     private javax.swing.JPanel pnlDUDD;
     private javax.swing.JPanel pnlDUDDLG;
     private javax.swing.JPanel pnlDUDDUG;
-    private javax.swing.JPanel pnlFormer;
+    private javax.swing.JPanel pnlEarlier;
     private javax.swing.JPanel pnlGen;
     private javax.swing.JPanel pnlGlossary;
     private javax.swing.JPanel pnlHan;
     private javax.swing.JPanel pnlHandicap;
-    private javax.swing.JPanel pnlLatter;
+    private javax.swing.JPanel pnlLater;
     private javax.swing.JPanel pnlMain;
     private javax.swing.JPanel pnlMcMahon;
     private javax.swing.JPanel pnlPai;

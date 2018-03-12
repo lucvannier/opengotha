@@ -76,10 +76,9 @@ public class JFrPublish extends javax.swing.JFrame {
         jLabel1 = new javax.swing.JLabel();
         rdbSortByName = new javax.swing.JRadioButton();
         rdbSortByRank = new javax.swing.JRadioButton();
-        rdbSortByGrade = new javax.swing.JRadioButton();
         pnlGL = new javax.swing.JPanel();
         jLabel3 = new javax.swing.JLabel();
-        ckbShowPlayerGrade = new javax.swing.JCheckBox();
+        ckbShowPlayerRank = new javax.swing.JCheckBox();
         ckbShowPlayerCountry = new javax.swing.JCheckBox();
         ckbShowPlayerClub = new javax.swing.JCheckBox();
         pnlNPP = new javax.swing.JPanel();
@@ -166,25 +165,15 @@ public class JFrPublish extends javax.swing.JFrame {
         pnlPL.add(rdbSortByName);
         rdbSortByName.setBounds(130, 10, 70, 23);
 
+        grpSortType.add(rdbSortByRank);
         rdbSortByRank.setText("Rank");
-        rdbSortByRank.setEnabled(false);
         rdbSortByRank.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 allSortRDBActionPerformed(evt);
             }
         });
         pnlPL.add(rdbSortByRank);
-        rdbSortByRank.setBounds(210, 30, 70, 23);
-
-        grpSortType.add(rdbSortByGrade);
-        rdbSortByGrade.setText("Grade");
-        rdbSortByGrade.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                allSortRDBActionPerformed(evt);
-            }
-        });
-        pnlPL.add(rdbSortByGrade);
-        rdbSortByGrade.setBounds(130, 30, 70, 23);
+        rdbSortByRank.setBounds(130, 30, 70, 23);
 
         pnlContents.add(pnlPL);
         pnlPL.setBounds(10, 20, 300, 70);
@@ -196,15 +185,15 @@ public class JFrPublish extends javax.swing.JFrame {
         pnlGL.add(jLabel3);
         jLabel3.setBounds(10, 20, 150, 14);
 
-        ckbShowPlayerGrade.setSelected(true);
-        ckbShowPlayerGrade.setText("Grade");
-        ckbShowPlayerGrade.addActionListener(new java.awt.event.ActionListener() {
+        ckbShowPlayerRank.setSelected(true);
+        ckbShowPlayerRank.setText("Rank");
+        ckbShowPlayerRank.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 allContentsCKBActionPerformed(evt);
             }
         });
-        pnlGL.add(ckbShowPlayerGrade);
-        ckbShowPlayerGrade.setBounds(40, 40, 180, 20);
+        pnlGL.add(ckbShowPlayerRank);
+        ckbShowPlayerRank.setBounds(40, 40, 180, 20);
 
         ckbShowPlayerCountry.setText("Country");
         ckbShowPlayerCountry.addActionListener(new java.awt.event.ActionListener() {
@@ -589,7 +578,7 @@ public class JFrPublish extends javax.swing.JFrame {
         
         this.tpnPublish.setSelectedComponent(pnlPub);
 
-        this.rdbSortByRank.setVisible(false);
+//        this.rdbSortByRank.setVisible(false);
         updateAllViews();
     }
 
@@ -739,9 +728,6 @@ public class JFrPublish extends javax.swing.JFrame {
         if (this.rdbSortByRank.isSelected()) {
             newPlayerSortType = PlayerComparator.RANK_ORDER;
         }
-        if (this.rdbSortByGrade.isSelected()) {
-            newPlayerSortType = PlayerComparator.GRADE_ORDER;
-        }
         if (newPlayerSortType != dpps.getPlayerSortType()) {
             dpps.setPlayerSortType(newPlayerSortType);
             somethingHasChanged = true;
@@ -803,10 +789,10 @@ public class JFrPublish extends javax.swing.JFrame {
 
         boolean somethingHasChanged = false;
 
-        oldValue = dpps.isShowPlayerGrade();
-        newValue = this.ckbShowPlayerGrade.isSelected();
+        oldValue = dpps.isShowPlayerRank();
+        newValue = this.ckbShowPlayerRank.isSelected();
         if (newValue != oldValue) {
-            dpps.setShowPlayerGrade(newValue);
+            dpps.setShowPlayerRank(newValue);
             somethingHasChanged = true;
         }
         oldValue = dpps.isShowPlayerCountry();
@@ -1080,7 +1066,7 @@ public class JFrPublish extends javax.swing.JFrame {
         if (dpps.getPlayerSortType() == PlayerComparator.NAME_ORDER) {
             this.rdbSortByName.setSelected(true);
         } else {
-            this.rdbSortByGrade.setSelected(true);
+            this.rdbSortByRank.setSelected(true);
         }
         if (dpps.getGameFormat() == DPParameterSet.DP_GAME_FORMAT_FULL) {
             this.rdbGameFormatFull.setSelected(true);
@@ -1088,7 +1074,7 @@ public class JFrPublish extends javax.swing.JFrame {
             this.rdbGameFormatShort.setSelected(true);
         }
 
-        this.ckbShowPlayerGrade.setSelected(dpps.isShowPlayerGrade());
+        this.ckbShowPlayerRank.setSelected(dpps.isShowPlayerRank());
         this.ckbShowPlayerCountry.setSelected(dpps.isShowPlayerCountry());
         this.ckbShowPlayerClub.setSelected(dpps.isShowPlayerClub());
 
@@ -1149,7 +1135,7 @@ public class JFrPublish extends javax.swing.JFrame {
     private javax.swing.JCheckBox ckbShowNotParticipatingPlayers;
     private javax.swing.JCheckBox ckbShowPlayerClub;
     private javax.swing.JCheckBox ckbShowPlayerCountry;
-    private javax.swing.JCheckBox ckbShowPlayerGrade;
+    private javax.swing.JCheckBox ckbShowPlayerRank;
     private javax.swing.ButtonGroup grpGameFormat;
     private javax.swing.ButtonGroup grpRemote;
     private javax.swing.ButtonGroup grpSortType;
@@ -1173,7 +1159,6 @@ public class JFrPublish extends javax.swing.JFrame {
     private javax.swing.JPanel pnlTeams;
     private javax.swing.JRadioButton rdbGameFormatFull;
     private javax.swing.JRadioButton rdbGameFormatShort;
-    private javax.swing.JRadioButton rdbSortByGrade;
     private javax.swing.JRadioButton rdbSortByName;
     private javax.swing.JRadioButton rdbSortByRank;
     private javax.swing.JSpinner spnRoundNumber;

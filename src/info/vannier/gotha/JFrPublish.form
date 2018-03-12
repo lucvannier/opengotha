@@ -133,24 +133,10 @@
                 </Component>
                 <Component class="javax.swing.JRadioButton" name="rdbSortByRank">
                   <Properties>
-                    <Property name="text" type="java.lang.String" value="Rank"/>
-                    <Property name="enabled" type="boolean" value="false"/>
-                  </Properties>
-                  <Events>
-                    <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="allSortRDBActionPerformed"/>
-                  </Events>
-                  <Constraints>
-                    <Constraint layoutClass="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout" value="org.netbeans.modules.form.compat2.layouts.DesignAbsoluteLayout$AbsoluteConstraintsDescription">
-                      <AbsoluteConstraints x="210" y="30" width="70" height="-1"/>
-                    </Constraint>
-                  </Constraints>
-                </Component>
-                <Component class="javax.swing.JRadioButton" name="rdbSortByGrade">
-                  <Properties>
                     <Property name="buttonGroup" type="javax.swing.ButtonGroup" editor="org.netbeans.modules.form.RADComponent$ButtonGroupPropertyEditor">
                       <ComponentRef name="grpSortType"/>
                     </Property>
-                    <Property name="text" type="java.lang.String" value="Grade"/>
+                    <Property name="text" type="java.lang.String" value="Rank"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="allSortRDBActionPerformed"/>
@@ -191,10 +177,10 @@
                     </Constraint>
                   </Constraints>
                 </Component>
-                <Component class="javax.swing.JCheckBox" name="ckbShowPlayerGrade">
+                <Component class="javax.swing.JCheckBox" name="ckbShowPlayerRank">
                   <Properties>
                     <Property name="selected" type="boolean" value="true"/>
-                    <Property name="text" type="java.lang.String" value="Grade"/>
+                    <Property name="text" type="java.lang.String" value="Rank"/>
                   </Properties>
                   <Events>
                     <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="allContentsCKBActionPerformed"/>

@@ -137,8 +137,8 @@ public class TournamentPrinting implements Printable {
     static final int ST_NF_LEN = 22;
     private int stRkBeg;
     static final int ST_RK_LEN = 3;
-    private int stGrBeg;
-    static final int ST_GR_LEN = ST_RK_LEN;
+//    private int stGrBeg;
+//    static final int ST_GR_LEN = ST_RK_LEN;
     private int stCoBeg;
     static final int ST_CO_LEN = 2;
     private int stClBeg;
@@ -612,8 +612,10 @@ public class TournamentPrinting implements Printable {
                     } else {
                         stNFBeg = stPlBeg;
                     }
-                    stGrBeg = stNFBeg + TournamentPrinting.ST_NF_LEN + ST_PADDING;
-                    stCoBeg = stGrBeg + TournamentPrinting.ST_GR_LEN + ST_PADDING;
+//                    stGrBeg = stNFBeg + TournamentPrinting.ST_NF_LEN + ST_PADDING;
+                    stRkBeg = stNFBeg + TournamentPrinting.ST_NF_LEN + ST_PADDING;
+//                    stCoBeg = stGrBeg + TournamentPrinting.ST_GR_LEN + ST_PADDING;
+                    stCoBeg = stRkBeg + TournamentPrinting.ST_RK_LEN + ST_PADDING;
                     if (dpps.isDisplayCoCol()){
                         stClBeg = stCoBeg + TournamentPrinting.ST_CO_LEN + ST_PADDING;
                     }
@@ -787,9 +789,13 @@ public class TournamentPrinting implements Printable {
             x = usableX + usableWidth * PL_NF_BEG / PL_NBCAR;
             g.drawString(strNF, x, y);
 
-            String strGr = player.getStrGrade();
-            x = usableX + usableWidth * (PL_GRADE_BEG + PL_GRADE_LEN) / PL_NBCAR;
-            drawRightAlignedString(g, strGr, x, y);
+//            String strGr = player.getStrGrade();
+//            x = usableX + usableWidth * (PL_GRADE_BEG + PL_GRADE_LEN) / PL_NBCAR;
+//            drawRightAlignedString(g, strGr, x, y);
+            
+            String strRk = Player.convertIntToKD(player.getRank());
+            x = usableX + usableWidth * (PL_RANK_BEG + PL_RANK_LEN) / PL_NBCAR;
+            drawRightAlignedString(g, strRk, x, y);
             
             String strRt = "" + player.getRating();
             x = usableX + usableWidth * (PL_RT_BEG + PL_RT_LEN) / PL_NBCAR;
@@ -1340,9 +1346,13 @@ public class TournamentPrinting implements Printable {
             x = usableX + usableWidth * this.stNFBeg / numberOfCharactersInALine;
             g.drawString(strNF, x, y);
 
-            String strGr = sp.getStrGrade();
-            x = usableX + usableWidth * (this.stGrBeg + ST_GR_LEN) / numberOfCharactersInALine;
-            drawRightAlignedString(g, strGr, x, y);
+//            String strGr = sp.getStrGrade();
+//            x = usableX + usableWidth * (this.stGrBeg + ST_GR_LEN) / numberOfCharactersInALine;
+//            drawRightAlignedString(g, strGr, x, y);
+
+            String strRk = Player.convertIntToKD(sp.getRank());
+            x = usableX + usableWidth * (this.stRkBeg + ST_RK_LEN) / numberOfCharactersInALine;
+            drawRightAlignedString(g, strRk, x, y);
 
             String strCo = sp.getCountry();
             if (dpps.isDisplayCoCol()) {
@@ -2051,7 +2061,7 @@ public class TournamentPrinting implements Printable {
         x = usableX + usableWidth * PL_NF_BEG / PL_NBCAR;
         g.drawString("Name", x, y);
         x = usableX + usableWidth * (PL_RANK_BEG + PL_RANK_LEN) / PL_NBCAR;
-        drawRightAlignedString(g, "Gr", x, y);
+        drawRightAlignedString(g, "Rk", x, y);
         x = usableX + usableWidth * (TournamentPrinting.PL_RT_BEG + PL_RT_LEN) / PL_NBCAR;
         drawRightAlignedString(g, "Rt", x, y);
         x = usableX + usableWidth * (PL_MM_BEG + PL_MM_LEN) / PL_NBCAR;
@@ -2148,8 +2158,8 @@ public class TournamentPrinting implements Printable {
         }
         x = usableX + usableWidth * (this.stNFBeg) / numberOfCharactersInALine;
         g.drawString("Name", x, y);
-        x = usableX + usableWidth * (this.stGrBeg + TournamentPrinting.ST_GR_LEN) / numberOfCharactersInALine;
-        TournamentPrinting.drawRightAlignedString(g, "Gr", x, y);
+        x = usableX + usableWidth * (this.stRkBeg + TournamentPrinting.ST_RK_LEN) / numberOfCharactersInALine;
+        TournamentPrinting.drawRightAlignedString(g, "Rk", x, y);
         if (dpps.isDisplayCoCol()){
             x = usableX + usableWidth * (this.stCoBeg) / numberOfCharactersInALine;
             g.drawString("Co", x, y);

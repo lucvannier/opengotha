@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Tournament dataVersion="201">
+<Tournament dataVersion="201" gothaMinorVersion="1" gothaVersion="345">
 <Players>
 <Player agaExpirationDate="" agaId="" club="H" country="DE" egfPin="10401138" ffgLicence="" ffgLicenceStatus="" firstName="Wulf" grade="1K" name="Kunisch" participating="11111000001111111111" rank="1K" rating="1748" ratingOrigin="EGF" registeringStatus="FIN" smmsCorrection="0"/>
 <Player agaExpirationDate="" agaId="" club="Obih" country="JP" egfPin="12025376" ffgLicence="" ffgLicenceStatus="" firstName="Masanao" grade="3D" name="Sugime" participating="00001111001111111111" rank="3D" rating="2274" ratingOrigin="EGF" registeringStatus="FIN" smmsCorrection="0"/>
@@ -2862,7 +2862,7 @@
 <ByePlayer player="GROOTAYA_DE" roundNumber="4"/>
 </ByePlayers>
 <TournamentParameterSet>
-<GeneralParameterSet basicTime="150" beginDate="2013-07-28" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Krzysztof Grabowski" endDate="2013-08-10" fischerTime="10" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="false" komi="6.5" location="Olsztyn" name="EGC2013main" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="10" shortName="egc2013" size="19" stdByoYomiTime="60"/>
+<GeneralParameterSet basicTime="150" beginDate="2013-07-28" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Krzysztof Grabowski" endDate="2013-08-10" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="false" komi="6.5" location="Olsztyn" name="EGC2013main" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="20" shortName="egc2013" size="19" stdByoYomiTime="60"/>
 <HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="3" hdNoHdRankThreshold="30K"/>
 <PlacementParameterSet>
 <PlacementCriteria>

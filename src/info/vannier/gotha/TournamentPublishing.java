@@ -4,6 +4,7 @@ import java.io.File;
 import java.rmi.RemoteException;
 import java.util.logging.Level;
 import java.util.logging.Logger;
+import javax.swing.JOptionPane;
 
 /**
  *
@@ -108,6 +109,7 @@ public class TournamentPublishing {
                 break;
             case TournamentPublishing.TYPE_STANDINGS:
                 f = ExternalDocument.generateStandingsHTMLFile(tournament, roundNumber);
+                System.out.println("f = " + f);                
                 break;
             case TournamentPublishing.TYPE_MATCHESLIST:
                 f = ExternalDocument.generateMatchesListHTMLFile(tournament, roundNumber);
@@ -116,7 +118,10 @@ public class TournamentPublishing {
                 f = ExternalDocument.generateTeamsStandingsHTMLFile(tournament, roundNumber);
                 break;
         }
-                
+        if (f != null){
+            String strMessage = f + " has been generated";
+            JOptionPane.showMessageDialog(null, strMessage, "Message", JOptionPane.INFORMATION_MESSAGE);
+        }        
         return f;
     }
     

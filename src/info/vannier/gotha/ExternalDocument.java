@@ -936,7 +936,7 @@ public class ExternalDocument {
             dpps.setGameFormat(gameFormat);
 
             String strShowPlayerGrade = extractNodeValue(nnmDPPS, "showPlayerGrade", "true");
-            dpps.setShowPlayerGrade(Boolean.valueOf(strShowPlayerGrade).booleanValue());
+            dpps.setShowPlayerRank(Boolean.valueOf(strShowPlayerGrade).booleanValue());
             String strShowPlayerCountry = extractNodeValue(nnmDPPS, "showPlayerCountry", "false");
             dpps.setShowPlayerCountry(Boolean.valueOf(strShowPlayerCountry).booleanValue());
             String strShowPlayerClub = extractNodeValue(nnmDPPS, "showPlayerClub", "true");
@@ -1629,7 +1629,7 @@ public class ExternalDocument {
             output.write(strHA);
             //
             output.write("\n; KM[" + gps.getStrKomi() + "]");
-            output.write("\n; TA[" + (tournament.egfAdjustedTime() / 60) + "]");
+            output.write("\n; TM[" + (tournament.egfAdjustedTime() / 60) + "]");
             String strCM = "";
             switch (gps.getComplementaryTimeSystem()) {
                 case GeneralParameterSet.GEN_GP_CTS_SUDDENDEATH:
@@ -2235,10 +2235,10 @@ public class ExternalDocument {
                 String strGr = p.getStrGrade();
 //                output.write("<td class=" + strPar + " align=\"center\">" + strRk + "</td>");
                 output.write("<td class=" + strPar + " align=\"center\">" + strGr + "</td>");
-                String strMM = "" + p.smms(tournament.getTournamentParameterSet().getGeneralParameterSet());
-                output.write("<td class=" + strPar + " align=\"center\">" + strMM + "</td>");
                 String strRt = "" + p.getRating();
                 output.write("<td class=" + strPar + " align=\"center\">" + strRt + "</td>");
+                String strMM = "" + p.smms(tournament.getTournamentParameterSet().getGeneralParameterSet());
+                output.write("<td class=" + strPar + " align=\"center\">" + strMM + "</td>");
                 String strPart = Player.convertParticipationToString(p, tournament.getTournamentParameterSet().getGeneralParameterSet().getNumberOfRounds());
                 output.write("<td class=\"" + strPar + " participation\"" + "align=\"center\">" + strPart + "&nbsp;</td>");
                 output.write("</tr>");
@@ -2530,8 +2530,8 @@ public class ExternalDocument {
             if (tps.getDPParameterSet().isDisplayPlCol())
                 output.write("\n<th class=\"left\">&nbsp;Pl&nbsp;</th>");
             output.write("\n<th class=\"left\">&nbsp;Name&nbsp;</th>");
-//            output.write("<th class=\"middle\">&nbsp;Rank&nbsp;</th>");
-            output.write("<th class=\"middle\">&nbsp;Grade&nbsp;</th>");
+            output.write("<th class=\"middle\">&nbsp;Rank&nbsp;</th>");
+//            output.write("<th class=\"middle\">&nbsp;Grade&nbsp;</th>");
             if (tps.getDPParameterSet().isDisplayCoCol())
                 output.write("<th class=\"middle\">&nbsp;Co&nbsp;</th>");
             if (tps.getDPParameterSet().isDisplayClCol())
@@ -2593,9 +2593,10 @@ public class ExternalDocument {
                     output.write("<td class=" + strPar + " align=\"right\">" + strPlace[iSP] + "&nbsp;</td>");
                 String strNF = sP.fullName();
                 output.write("<td class=" + strPar + ">" + strNF + "</td>");
-//                String strRank = Player.convertIntToKD(sP.getRank());
-                String strGrade = sP.getStrGrade();
-                output.write("<td class=" + strPar + strAlCenter + ">" + strGrade + "</td>");
+                String strRank = Player.convertIntToKD(sP.getRank());
+//                String strGrade = sP.getStrGrade();
+                output.write("<td class=" + strPar + strAlCenter + ">" + strRank + "</td>");
+//                output.write("<td class=" + strPar + strAlCenter + ">" + strGrade + "</td>");
                 
                 if (tps.getDPParameterSet().isDisplayCoCol()){
                     String strCountry = sP.getCountry();
@@ -3084,7 +3085,7 @@ public class ExternalDocument {
             String strAgaExpirationDate = p.getAgaExpirationDate();
             String strRank = Player.convertIntToKD(p.getRank());
             String strRating = Integer.valueOf(p.getRating()).toString();
-            String strRatingOrigin = p.getRatingOrigin();
+            String strRatingOrigin = p.getStrRatingOrigin();
             String strGrade = p.getStrGrade();
             String strSMMSCorrection = Integer.valueOf(p.getSmmsCorrection()).toString();
             boolean[] part = p.getParticipating();
@@ -3502,7 +3503,7 @@ public class ExternalDocument {
         }
         emDPParameterSet.setAttribute("gameFormat", strGameFormat);
         
-        emDPParameterSet.setAttribute("showPlayerGrade", Boolean.valueOf(dpps.isShowPlayerGrade()).toString());
+        emDPParameterSet.setAttribute("showPlayerGrade", Boolean.valueOf(dpps.isShowPlayerRank()).toString());
         emDPParameterSet.setAttribute("showPlayerCountry", Boolean.valueOf(dpps.isShowPlayerCountry()).toString());
         emDPParameterSet.setAttribute("showPlayerClub", Boolean.valueOf(dpps.isShowPlayerClub()).toString());
         

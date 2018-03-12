@@ -207,7 +207,6 @@ public class JFrPlayersManager extends javax.swing.JFrame {
             model.setValueAt(p.getCountry(), line, JFrPlayersManager.COUNTRY_COL);
             model.setValueAt(p.getClub(), line, JFrPlayersManager.CLUB_COL);
             model.setValueAt(p.getRating(), line, JFrPlayersManager.RATING_COL);
-//            model.setValueAt(Player.convertIntToKD(p.getGrade()), line, JFrPlayersManager.GRADE_COL);
             model.setValueAt(p.getStrGrade(), line, JFrPlayersManager.GRADE_COL);
         }
     }
@@ -514,7 +513,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         jLabel3.setText("Origin");
         jLabel3.setToolTipText("from 30K to 9D");
         pnlPlayer.add(jLabel3);
-        jLabel3.setBounds(120, 370, 40, 14);
+        jLabel3.setBounds(120, 370, 55, 14);
 
         jLabel4.setText("Country");
         jLabel4.setToolTipText("Country where the player lives (2 letters)");
@@ -557,7 +556,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
             }
         });
         pnlPlayer.add(txfRank);
-        txfRank.setBounds(170, 405, 40, 20);
+        txfRank.setBounds(180, 405, 40, 20);
         pnlPlayer.add(txfClub);
         txfClub.setBounds(70, 330, 50, 20);
         pnlPlayer.add(txfFfgLicence);
@@ -568,7 +567,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         txfRatingOrigin.setEditable(false);
         txfRatingOrigin.setFocusable(false);
         pnlPlayer.add(txfRatingOrigin);
-        txfRatingOrigin.setBounds(170, 370, 70, 20);
+        txfRatingOrigin.setBounds(180, 370, 70, 20);
 
         txfRating.setEditable(false);
         txfRating.setFocusable(false);
@@ -706,7 +705,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         txfSMMSCorrection.setToolTipText("smms correction (relevant for McMahon super-groups)");
         txfSMMSCorrection.setFocusable(false);
         pnlPlayer.add(txfSMMSCorrection);
-        txfSMMSCorrection.setBounds(220, 405, 20, 21);
+        txfSMMSCorrection.setBounds(230, 405, 20, 21);
 
         ckbWelcomeSheet.setText("Print Welcome sheet");
         ckbWelcomeSheet.setToolTipText("Welcome sheet can be edited in welcomesheet/welcomesheet.html");
@@ -731,7 +730,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         jLabel10.setText("Rank");
         jLabel10.setToolTipText("from 30K to 9D");
         pnlPlayer.add(jLabel10);
-        jLabel10.setBounds(120, 410, 50, 14);
+        jLabel10.setBounds(120, 410, 55, 14);
 
         jLabel11.setText("Rating");
         jLabel11.setToolTipText("from 30K to 9D");
@@ -1262,7 +1261,8 @@ public class JFrPlayersManager extends javax.swing.JFrame {
 
         String strOrigin;
         try{
-            strOrigin = txfRatingOrigin.getText().substring(0, 3);
+//            strOrigin = txfRatingOrigin.getText().substring(0, 3);
+            strOrigin = txfRatingOrigin.getText();
             rating = new Integer(txfRating.getText()).intValue();
         }catch(Exception e){
             strOrigin = "INI";
@@ -1410,8 +1410,10 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         int newRating = oldRating;
         try{
             newRating = Integer.parseInt(strResponse);
-            if (newRating < Player.MIN_RATING) newRating = Player.MIN_RATING;
-            if (newRating > Player.MAX_RATING) newRating = Player.MAX_RATING;
+            if (newRating < Player.MIN_RATING) 
+                newRating = Player.MIN_RATING;
+            if (newRating > Player.MAX_RATING) 
+                newRating = Player.MAX_RATING;
         }catch(Exception e){
             newRating = oldRating;    
         }
@@ -1558,6 +1560,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
             this.txfRating.setText("" + rating);
             this.txfRatingOrigin.setText("INI");
         }
+        
     }
     
     
@@ -1675,8 +1678,12 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         int stdRating = rP.getStdRating();
         txfRating.setText("" + stdRating);
         String strRatingOrigin = rP.getRatingOrigin();
-        if (strRatingOrigin.equals("FFG")) strRatingOrigin += " : " + rP.getStrRawRating();
-        if (strRatingOrigin.equals("AGA")) strRatingOrigin += " : " + rP.getStrRawRating();
+        if (strRatingOrigin.equals("EGF")) 
+            strRatingOrigin += " : " + rP.getStrRawRating();
+        if (strRatingOrigin.equals("FFG")) 
+            strRatingOrigin += " : " + rP.getStrRawRating();
+        if (strRatingOrigin.equals("AGA")) 
+            strRatingOrigin += " : " + rP.getStrRawRating();
         txfRatingOrigin.setText(strRatingOrigin);
         this.txfSMMSCorrection.setText("" + 0);
         int rank = Player.rankFromRating(stdRating);
@@ -1688,11 +1695,6 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         txfClub.setText(rP.getClub());
         txfFfgLicence.setText(rP.getFfgLicence());
         txfFfgLicenceStatus.setText(rP.getFfgLicenceStatus());
-//        if (rP.getFfgLicenceStatus().compareTo("-") == 0) {
-//            lblFfgLicenceStatus.setText("Non licencié");
-//        } else {
-//            lblFfgLicenceStatus.setText("");
-//        }
         if (rP.getFfgLicenceStatus().compareTo("-") == 0) {
             lblFfgLicenceStatus.setText("Non licencié");
             lblFfgLicenceStatus.setForeground(Color.RED);
@@ -1729,7 +1731,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
 
         int rating = playerInModification.getRating();
         txfRating.setText("" + rating);
-        String strRatingOrigin = playerInModification.getRatingOrigin();
+        String strRatingOrigin = playerInModification.getStrRatingOrigin();
         if (strRatingOrigin.equals("FFG")) strRatingOrigin += " : " + playerInModification.getStrRawRating();
         if (strRatingOrigin.equals("AGA")) strRatingOrigin += " : " + playerInModification.getStrRawRating();
         txfRatingOrigin.setText(strRatingOrigin);
@@ -1829,7 +1831,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
             strLine = strLine.replaceAll("<club>", p.getClub());
             strLine = strLine.replaceAll("<rank>", Player.convertIntToKD(p.getRank()));
             int rawRating = p.getRating();
-            String ratingOrigin = p.getRatingOrigin();
+            String ratingOrigin = p.getStrRatingOrigin();
             if (ratingOrigin.compareTo("FFG") == 0) {
                 rawRating -= 2050;
             }

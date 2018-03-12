@@ -286,7 +286,7 @@ public class JFrExperimentalTools extends javax.swing.JFrame {
             Logger.getLogger(JFrExperimentalTools.class.getName()).log(Level.SEVERE, null, ex);
         }
         for(Player p : alPlayers){
-            if (p.getRatingOrigin().equals("EGF")) continue;
+            if (p.getStrRatingOrigin().equals("EGF")) continue;
             p.setRating(p.getRating() + 2050);
             try {
                 tournament.modifyPlayer(p, p);

@@ -98,11 +98,11 @@ public class JFrGamesOptions extends javax.swing.JFrame {
 
         jLabel2.setText("Goban size");
         pnlGam.add(jLabel2);
-        jLabel2.setBounds(10, 30, 160, 14);
+        jLabel2.setBounds(100, 30, 80, 14);
 
         jLabel3.setText("Komi");
         pnlGam.add(jLabel3);
-        jLabel3.setBounds(10, 80, 160, 14);
+        jLabel3.setBounds(100, 80, 80, 14);
 
         txfSize.setText("19");
         txfSize.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -111,7 +111,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlGam.add(txfSize);
-        txfSize.setBounds(170, 30, 50, 20);
+        txfSize.setBounds(220, 30, 50, 20);
 
         txfKomi.setText("7.5");
         txfKomi.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -120,7 +120,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlGam.add(txfKomi);
-        txfKomi.setBounds(170, 80, 50, 20);
+        txfKomi.setBounds(220, 80, 50, 20);
 
         btnClose.setText("Close");
         btnClose.addActionListener(new java.awt.event.ActionListener() {
@@ -129,7 +129,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlGam.add(btnClose);
-        btnClose.setBounds(140, 460, 200, 30);
+        btnClose.setBounds(140, 460, 210, 30);
 
         btnHelp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info/vannier/gotha/gothalogo16.jpg"))); // NOI18N
         btnHelp.setText("help");
@@ -155,7 +155,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfBasicTime);
-        txfBasicTime.setBounds(230, 30, 40, 20);
+        txfBasicTime.setBounds(280, 30, 40, 20);
 
         grpComplTimeSystem.add(rdbSuddenDeath);
         rdbSuddenDeath.setSelected(true);
@@ -200,7 +200,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
 
         lblFischerTime.setText("Bonus time(seconds)");
         pnlTime.add(lblFischerTime);
-        lblFischerTime.setBounds(100, 220, 130, 20);
+        lblFischerTime.setBounds(110, 220, 160, 20);
 
         txfFischerTime.setText("5");
         txfFischerTime.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -209,11 +209,11 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfFischerTime);
-        txfFischerTime.setBounds(230, 220, 40, 20);
+        txfFischerTime.setBounds(280, 220, 40, 20);
 
         lblStdTime.setText("Time(seconds)");
         pnlTime.add(lblStdTime);
-        lblStdTime.setBounds(130, 120, 100, 20);
+        lblStdTime.setBounds(140, 120, 130, 20);
 
         txfStdTime.setText("30");
         txfStdTime.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -222,11 +222,11 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfStdTime);
-        txfStdTime.setBounds(230, 120, 40, 20);
+        txfStdTime.setBounds(280, 120, 40, 20);
 
         lblCanTime.setText("Time(seconds)");
         pnlTime.add(lblCanTime);
-        lblCanTime.setBounds(130, 170, 100, 20);
+        lblCanTime.setBounds(140, 170, 130, 20);
 
         txfCanTime.setText("300");
         txfCanTime.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -235,7 +235,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfCanTime);
-        txfCanTime.setBounds(230, 170, 40, 20);
+        txfCanTime.setBounds(280, 170, 40, 20);
 
         txfCanNbMoves.setText("15");
         txfCanNbMoves.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -248,7 +248,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
 
         jLabel7.setText("moves");
         pnlTime.add(jLabel7);
-        jLabel7.setBounds(80, 170, 40, 20);
+        jLabel7.setBounds(80, 170, 50, 20);
 
         lblEGFClass.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblEGFClass.setForeground(new java.awt.Color(255, 0, 0));
@@ -265,7 +265,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         lblAT.setBounds(10, 260, 290, 20);
 
         pnlGam.add(pnlTime);
-        pnlTime.setBounds(10, 110, 320, 330);
+        pnlTime.setBounds(10, 110, 340, 330);
 
         getContentPane().add(pnlGam);
         pnlGam.setBounds(20, 0, 500, 500);

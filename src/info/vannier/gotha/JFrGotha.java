@@ -38,8 +38,8 @@ public class JFrGotha extends javax.swing.JFrame {
     private static final int NUM_COL = 0;
     private static final int PL_COL = 1;
     private static final int NAME_COL = 2;
-    private static final int GRADE_COL = 3;
-    private static final int COUNTRY_COL = GRADE_COL + 1;
+    private static final int RANK_COL = 3;
+    private static final int COUNTRY_COL = RANK_COL + 1;
     private static final int CLUB_COL = COUNTRY_COL + 1;
     private static final int NBW_COL = CLUB_COL + 1;
     private static final int ROUND0_RESULT_COL = NBW_COL + 1;
@@ -682,7 +682,7 @@ public class JFrGotha extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Num", "Pl", "Name", "Gr", "Co", "Cl", "NBW", "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10", "R11", "R12", "R13", "R14", "R15", "R16", "R17", "R18", "R19", "R20", "crit1", "crit2", "crit3", "crit4", "crit5", "crit6"
+                "Num", "Pl", "Name", "Rk", "Co", "Cl", "NBW", "R1", "R2", "R3", "R4", "R5", "R6", "R7", "R8", "R9", "R10", "R11", "R12", "R13", "R14", "R15", "R16", "R17", "R18", "R19", "R20", "crit1", "crit2", "crit3", "crit4", "crit5", "crit6"
             }
         ));
         tblStandings.setEnabled(false);
@@ -1989,7 +1989,7 @@ public class JFrGotha extends javax.swing.JFrame {
         columnModel.getColumn(PL_COL).setHeaderValue(strPlHeader);
         
         columnModel.getColumn(NAME_COL).setHeaderValue("Name");
-        columnModel.getColumn(GRADE_COL).setHeaderValue("Gr");
+        columnModel.getColumn(RANK_COL).setHeaderValue("Rk");
         String strCoHeader = "Co";
         if (!tps.getDPParameterSet().isDisplayCoCol()) {
             strCoHeader = "";
@@ -2032,7 +2032,7 @@ public class JFrGotha extends javax.swing.JFrame {
         columnModel.getColumn(CLUB_COL).setPreferredWidth(clWidth);
 
         columnModel.getColumn(NAME_COL).setPreferredWidth(110);
-        columnModel.getColumn(GRADE_COL).setPreferredWidth(30);
+        columnModel.getColumn(RANK_COL).setPreferredWidth(30);
         columnModel.getColumn(NBW_COL).setPreferredWidth(20);
         for (int r = 0; r <= displayedRoundNumber - numberOfDisplayedRounds; r++) {
             columnModel.getColumn(ROUND0_RESULT_COL + r).setMinWidth(2);
@@ -2078,8 +2078,7 @@ public class JFrGotha extends javax.swing.JFrame {
             model.setValueAt("" + strPl, iSP, iCol++);
   
             model.setValueAt(sp.fullName(), iSP, iCol++);                       
-            model.setValueAt(sp.getStrGrade(), iSP, iCol++);
-
+            model.setValueAt(Player.convertIntToKD(sp.getRank()), iSP, iCol++);
             String strCo = sp.getCountry();
             if (!tps.getDPParameterSet().isDisplayCoCol()) {
                 strCo = "";

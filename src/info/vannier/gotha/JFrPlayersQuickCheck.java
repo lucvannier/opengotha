@@ -804,7 +804,6 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
         if (evt.getModifiers() == InputEvent.BUTTON1_MASK){
             int iRow = tblRegisteredPlayers.rowAtPoint(evt.getPoint());
             int iCol = tblRegisteredPlayers.columnAtPoint(evt.getPoint());
-            System.out.println("iRow = " + iRow + " iCol = " + iCol);
             if (iCol < PARTICIPATING_COL0) return;
             int round = iCol - PARTICIPATING_COL0 + displayedStartingRoundNumber;
             String name = (String)tblRegisteredPlayers.getModel().getValueAt(iRow, NAME_COL);
@@ -815,14 +814,23 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             } catch (RemoteException ex) {
                 Logger.getLogger(JFrPlayersQuickCheck.class.getName()).log(Level.SEVERE, null, ex);
             }
-            System.out.println("p = " + p.getName() + " " + p.getFirstName());
             boolean part[] = p.getParticipating();
             boolean bP = part[round];
-            p.setParticipating(round, !bP);
-            String strPart = "";
-            if (bP) strPart = "V";
-            DefaultTableModel model = (DefaultTableModel)tblRegisteredPlayers.getModel();
-            model.setValueAt(strPart, iRow, iCol);
+            boolean bImplied = false;
+            try {
+                bImplied = tournament.isPlayerImpliedInRound(p, round);
+            } catch (RemoteException ex) {
+                Logger.getLogger(JFrPlayersQuickCheck.class.getName()).log(Level.SEVERE, null, ex);
+            }
+
+            
+            if (!bImplied){
+                p.setParticipating(round, !bP);
+                String strPart = "";
+                if (bP) strPart = "V";
+                DefaultTableModel model = (DefaultTableModel)tblRegisteredPlayers.getModel();
+                model.setValueAt(strPart, iRow, iCol);
+            }
             this.tournamentChanged();
             
         }
@@ -1045,20 +1053,16 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
             TableColumn tc = tcm.getColumn(col);
             tc.setMinWidth(0);
             tc.setMaxWidth(0);
-//            tcm.removeColumn(tc);
         }
         for (int col = PARTICIPATING_COL0; col < PARTICIPATING_COL0 + MAX_NUMBER_OF_ROUNDS_DISPLAYED; col++){
             TableColumn tc = tcm.getColumn(col);
             tc.setMinWidth(0);
             tc.setMaxWidth(16);
-//            tcm.addColumn(tc);
         }
         
         for (int virtualR = 0; virtualR < nbPartCol; virtualR++){
             JFrGotha.formatColumn(this.tblRegisteredPlayers, PARTICIPATING_COL0 + virtualR, "" + (virtualR + displayedStartingRoundNumber + 1), 16, JLabel.LEFT, JLabel.LEFT); 
         }
-        
-        // model = (DefaultTableModel)tblRegisteredPlayers.getModel();
         
         for (Player p:displayedPlayersList){
             int line = displayedPlayersList.indexOf(p); 

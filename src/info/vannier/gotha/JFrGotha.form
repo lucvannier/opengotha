@@ -1417,7 +1417,7 @@
                             <Column editable="true" title="Num" type="java.lang.Object"/>
                             <Column editable="true" title="Pl" type="java.lang.Object"/>
                             <Column editable="true" title="Name" type="java.lang.Object"/>
-                            <Column editable="true" title="Gr" type="java.lang.Object"/>
+                            <Column editable="true" title="Rk" type="java.lang.Object"/>
                             <Column editable="true" title="Co" type="java.lang.Object"/>
                             <Column editable="true" title="Cl" type="java.lang.Object"/>
                             <Column editable="true" title="NBW" type="java.lang.Object"/>

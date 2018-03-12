@@ -101,7 +101,8 @@ public class RatingList {
                     
                     String strCountry = strLine.substring(49, 52).trim();
                     String strClub = strLine.substring(53, 57).trim();
-                    int rating = new Integer(strLine.substring(71, 75).trim()).intValue();
+                    String strRating = strLine.substring(71, 75).trim();
+                    int rating = new Integer(strRating).intValue();
                     String strGrade = strLine.substring(60,63);
                     RatedPlayer rP = new RatedPlayer(
                             strPin, "", "", "", "", strName, strFirstName, strCountry, strClub, rating, strGrade, "EGF");
@@ -124,20 +125,10 @@ public class RatingList {
                     int rating = new Integer(strLine.substring(38, 43).trim()).intValue();
                     String strFfgLicenceStatus = strLine.substring(44, 45); 
                     String strFfgLicence = strLine.substring(46, 53);
-//                    String strCC = strLine.substring(54, 58).trim();
                     String strClub = strLine.substring(54, 58).trim();
                     String strCountry = strLine.substring(59, 61).trim();
                     
-//                    if (strCC.length() <= 2){
-//                        strCountry = strCC;
-//                        strClub = "";
-//                    }
-//                    else{
-//                        strCountry = "";
-//                        strClub = strCC;
-//                    }
-
-                     RatedPlayer rP = new RatedPlayer(
+                    RatedPlayer rP = new RatedPlayer(
                             "", strFfgLicence, strFfgLicenceStatus, "", "", strName, strFirstName, strCountry, strClub, rating, "", "FFG");
                     this.alRatedPlayers.add(rP);
                 }

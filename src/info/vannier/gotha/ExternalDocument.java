@@ -44,25 +44,24 @@ public class ExternalDocument {
         int posNaFi = 4;    // name, firstname
         int nbcNaFi = 23;
 
-        ArrayList<String> alLines = new ArrayList<String>();
+        ArrayList<String> alLines = new ArrayList<>();
         try {
             FileInputStream fis = new FileInputStream(f);
-            BufferedReader d = new BufferedReader(new InputStreamReader(fis, java.nio.charset.Charset.forName("ISO-8859-15")));
-
-            String s;
-            do {
-                s = d.readLine();
-                if (s != null) {
-                    alLines.add(s);
-                }
-            } while (s != null);
-            d.close();
-        } catch (Exception ex) {
+            try (BufferedReader d = new BufferedReader(new InputStreamReader(fis, java.nio.charset.Charset.forName("ISO-8859-15")))) {
+                String s;
+                do {
+                    s = d.readLine();
+                    if (s != null) {
+                        alLines.add(s);
+                    }
+                } while (s != null);
+            }
+        } catch (IOException ex) {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         // Parse player lines
-        ArrayList<PotentialHalfGame> alPotentialHalfGames = new ArrayList<PotentialHalfGame>();
+        ArrayList<PotentialHalfGame> alPotentialHalfGames = new ArrayList<>();
         for (String strLine : alLines) {
             if (strLine.length() < 10) {
                 continue;
@@ -95,7 +94,7 @@ public class ExternalDocument {
                 strNa = strNaFi.substring(0, strNaFi.length() - strFi.length() - 1);
             }
 
-            String strRank = "";
+            String strRank;
             if (importType.equals("wallist")) {
                 String[] tabStrSplit = strRemaining.split("\t", 2);
                 strRank = tabStrSplit[0];
@@ -109,16 +108,22 @@ public class ExternalDocument {
             }
 
             String strCountry = "";
-            if (importType.equals("wallist")) {
-                String[] tabStrSplit = strRemaining.split("\t", 2);
-                strCountry = tabStrSplit[0];
-                strRemaining = tabStrSplit[1];
-            } else if (importType.equals("h9")) {
-                strRemaining = strRemaining.trim();
-                strCountry = strRemaining.substring(0, 3);
-                strRemaining = strRemaining.substring(3);
-            } else if (importType.equals("tou")) {
-                strRemaining = strRemaining.substring(Math.min(strRemaining.length(), 8));
+            switch (importType) {
+                case "wallist":
+                    String[] tabStrSplit = strRemaining.split("\t", 2);
+                    strCountry = tabStrSplit[0];
+                    strRemaining = tabStrSplit[1];
+                    break;
+                case "h9":
+                    strRemaining = strRemaining.trim();
+                    strCountry = strRemaining.substring(0, 3);
+                    strRemaining = strRemaining.substring(3);
+                    break;
+                case "tou":
+                    strRemaining = strRemaining.substring(Math.min(strRemaining.length(), 8));
+                    break;
+                default:
+                    break;
             }
             strCountry = strCountry.trim();
             if (strCountry.length() > 2) {
@@ -205,19 +210,18 @@ public class ExternalDocument {
     }
 
     public static void importPlayersFromVBSFile(File f, ArrayList<Player> alPlayers) {
-        ArrayList<String> alLines = new ArrayList<String>();
+        ArrayList<String> alLines = new ArrayList<>();
         try {
             FileInputStream fis = new FileInputStream(f);
-            BufferedReader d = new BufferedReader(new InputStreamReader(fis, java.nio.charset.Charset.forName("ISO-8859-15")));
-
-            String s;
-            do {
-                s = d.readLine();
-                if (s != null) {
-                    alLines.add(s);
-                }
-            } while (s != null);
-            d.close();
+            try (BufferedReader d = new BufferedReader(new InputStreamReader(fis, java.nio.charset.Charset.forName("ISO-8859-15")))) {
+                String s;
+                do {
+                    s = d.readLine();
+                    if (s != null) {
+                        alLines.add(s);
+                    }
+                } while (s != null);
+            }
         } catch (Exception ex) {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -250,11 +254,11 @@ public class ExternalDocument {
 
             int rk = Player.convertKDPToInt(strRk);
 
-            int rt = 0;
+            int rt;
             String strRatingOrigin = "MAN";
             try {
                 rt = Integer.parseInt(strRt);
-            } catch (Exception e) {
+            } catch (NumberFormatException e) {
                 rt = rk * 100;
                 strRatingOrigin = "INI";
             }
@@ -266,7 +270,7 @@ public class ExternalDocument {
                 strRg = "FIN";
             }
 
-            Player p = null;
+            Player p;
             try {
                 p = new Player(
                         strNa,
@@ -322,23 +326,21 @@ public class ExternalDocument {
     public static String importTournamentFromXMLFile(File sourceFile, TournamentInterface tournament, 
             boolean bPlayers, boolean bGames, boolean bTPS, boolean bTeams, boolean bClubsGroups) {
         // What dataVersion ?
-        long dataVersion = ExternalDocument.importDataVersionFromXMLFile(sourceFile);
+        // long dataVersion = ExternalDocument.importDataVersionFromXMLFile(sourceFile);
 
         int nbImportedPlayers = 0;
         int nbNotImportedPlayers = 0;
         if (bPlayers) {
             ArrayList<Player> alPlayers = ExternalDocument.importPlayersFromXMLFile(sourceFile);
-            if (alPlayers == null || alPlayers.isEmpty()) {
-                System.out.println("No player has been imported");
-            }
+//            if (alPlayers == null || alPlayers.isEmpty()) {
+//                System.out.println("No player has been imported");
+//            }
             if (alPlayers != null) {
                 for (Player p : alPlayers) {
                     try {
                         tournament.addPlayer(p);
                         nbImportedPlayers++;
-                    } catch (TournamentException ex) {
-                        Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
-                    } catch (RemoteException ex) {
+                    } catch (TournamentException | RemoteException ex) {
                         Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
@@ -370,9 +372,7 @@ public class ExternalDocument {
                     try {
                         tournament.addGame(g);
                         nbImportedGames++;
-                    } catch (TournamentException ex) {
-                        Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
-                    } catch (RemoteException ex) {
+                    } catch (TournamentException | RemoteException ex) {
                         Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
                     }
                 }
@@ -577,7 +577,7 @@ public class ExternalDocument {
         if (doc == null) {
             return null;
         }
-        ArrayList<Player> alPlayers = new ArrayList<Player>();
+        ArrayList<Player> alPlayers = new ArrayList<>();
 
         NodeList nl = doc.getElementsByTagName("Player");
         for (int i = 0; i < nl.getLength(); i++) {
@@ -596,7 +596,7 @@ public class ExternalDocument {
             String strRank = extractNodeValue(nnm, "rank", "30K");
             int rank = Player.convertKDPToInt(strRank);
             String strRating = extractNodeValue(nnm, "rating", "-900");
-            int rating = new Integer(strRating).intValue();
+            int rating = Integer.parseInt(strRating);
             if (importedDataVersion < 201L) {
                 rating += 2050;
             }
@@ -610,7 +610,7 @@ public class ExternalDocument {
             String ratingOrigin = extractNodeValue(nnm, "ratingOrigin", "");
             String strGrade = extractNodeValue(nnm, "grade", "");
             String strSmmsCorrection = extractNodeValue(nnm, "smmsCorrection", "0");
-            int smmsCorrection = new Integer(strSmmsCorrection).intValue();
+            int smmsCorrection = Integer.parseInt(strSmmsCorrection);
             String strDefaultParticipating = "";
             for (int r = 0; r < Gotha.MAX_NUMBER_OF_ROUNDS; r++) {
                 strDefaultParticipating += "1";
@@ -689,7 +689,7 @@ public class ExternalDocument {
 
         // Complementary time for old dataVersion
         String strByoYomi = extractNodeValue(nnmGPS, "byoYomi", "true");
-        boolean bByoYomi = Boolean.valueOf(strByoYomi).booleanValue();
+        boolean bByoYomi = Boolean.parseBoolean(strByoYomi);
         if (bByoYomi) {
             gps.setComplementaryTimeSystem(GeneralParameterSet.GEN_GP_CTS_CANBYOYOMI);
             gps.setNbMovesCanTime(GeneralParameterSet.GEN_GP_CTS_NBMOVESCANTIME_DEF);
@@ -724,9 +724,9 @@ public class ExternalDocument {
         String strKomi = extractNodeValue(nnmGPS, "komi", "7.5");
         gps.setStrKomi(strKomi);
         String strNumberOfRounds = extractNodeValue(nnmGPS, "numberOfRounds", "5");
-        gps.setNumberOfRounds(new Integer(strNumberOfRounds).intValue());
+        gps.setNumberOfRounds(Integer.parseInt(strNumberOfRounds));
         String strNumberOfCategories = extractNodeValue(nnmGPS, "numberOfCategories", "1");
-        int nbCategories = new Integer(strNumberOfCategories).intValue();
+        int nbCategories = Integer.parseInt(strNumberOfCategories);
         gps.setNumberOfCategories(nbCategories);
 
         NodeList nl = doc.getElementsByTagName("Category");
@@ -736,7 +736,7 @@ public class ExternalDocument {
             NamedNodeMap nnm = n.getAttributes();
             String strNumber = extractNodeValue(nnm, "number", "1");
             String strLowerLimit = extractNodeValue(nnm, "lowerLimit", "30K");
-            int numCat = new Integer(strNumber).intValue() - 1;
+            int numCat = Integer.parseInt(strNumber) - 1;
             lowerLimits[numCat] = Player.convertKDPToInt(strLowerLimit);
         }
         gps.setLowerCategoryLimits(lowerLimits);
@@ -749,22 +749,22 @@ public class ExternalDocument {
         gps.setGenMMZero(Player.convertKDPToInt(strGenMMZero));
 
         String strGenNBW2ValueAbsent = extractNodeValue(nnmGPS, "genNBW2ValueAbsent", "0");
-        gps.setGenNBW2ValueAbsent(new Integer(strGenNBW2ValueAbsent).intValue());
+        gps.setGenNBW2ValueAbsent(Integer.parseInt(strGenNBW2ValueAbsent));
 
         String strGenNBW2ValueBye = extractNodeValue(nnmGPS, "genNBW2ValueBye", "0");
-        gps.setGenNBW2ValueBye(new Integer(strGenNBW2ValueBye).intValue());
+        gps.setGenNBW2ValueBye(Integer.parseInt(strGenNBW2ValueBye));
 
         String strGenMMS2ValueAbsent = extractNodeValue(nnmGPS, "genMMS2ValueAbsent", "0");
-        gps.setGenMMS2ValueAbsent(new Integer(strGenMMS2ValueAbsent).intValue());
+        gps.setGenMMS2ValueAbsent(Integer.parseInt(strGenMMS2ValueAbsent));
 
         String strGenMMS2ValueBye = extractNodeValue(nnmGPS, "genMMS2ValueBye", "0");
-        gps.setGenMMS2ValueBye(new Integer(strGenMMS2ValueBye).intValue());
+        gps.setGenMMS2ValueBye(Integer.parseInt(strGenMMS2ValueBye));
         
         String strGenRoundDownNBWMMS = extractNodeValue(nnmGPS, "genRoundDownNBWMMS", "true");
-        gps.setGenRoundDownNBWMMS(Boolean.valueOf(strGenRoundDownNBWMMS).booleanValue());
+        gps.setGenRoundDownNBWMMS(Boolean.parseBoolean(strGenRoundDownNBWMMS));
         
         String strGenCountNotPlayedGamesAsHalfPoint = extractNodeValue(nnmGPS, "genCountNotPlayedGamesAsHalfPoint", "false");
-        gps.setGenCountNotPlayedGamesAsHalfPoint(Boolean.valueOf(strGenCountNotPlayedGamesAsHalfPoint).booleanValue());
+        gps.setGenCountNotPlayedGamesAsHalfPoint(Boolean.parseBoolean(strGenCountNotPlayedGamesAsHalfPoint));
 
 
         tps.setGeneralParameterSet(gps);
@@ -776,13 +776,13 @@ public class ExternalDocument {
         NamedNodeMap nnmHPS = nHPS.getAttributes();
 
         String strHdBasedOnMMS = extractNodeValue(nnmHPS, "hdBasedOnMMS", "true");
-        hps.setHdBasedOnMMS(Boolean.valueOf(strHdBasedOnMMS).booleanValue());
+        hps.setHdBasedOnMMS(Boolean.parseBoolean(strHdBasedOnMMS));
         String strHdNoHdRankThreshold = extractNodeValue(nnmHPS, "hdNoHdRankThreshold", "1D");
         hps.setHdNoHdRankThreshold(Player.convertKDPToInt(strHdNoHdRankThreshold));
         String strHdCorrection = extractNodeValue(nnmHPS, "hdCorrection", "1");
-        hps.setHdCorrection(new Integer(strHdCorrection).intValue());
+        hps.setHdCorrection(Integer.parseInt(strHdCorrection));
         String strHdCeiling = extractNodeValue(nnmHPS, "hdCeiling", "9");
-        hps.setHdCeiling(new Integer(strHdCeiling).intValue());
+        hps.setHdCeiling(Integer.parseInt(strHdCeiling));
         tps.setHandicapParameterSet(hps);
 
         // PPS
@@ -797,10 +797,9 @@ public class ExternalDocument {
         for (Node n : alCritNodes) {
             NamedNodeMap nnm = n.getAttributes();
             String strNumber = extractNodeValue(nnm, "number", "1");
-            int number = new Integer(strNumber).intValue();
+            int number = Integer.parseInt(strNumber);
             String strName = extractNodeValue(nnm, "name", "NULL");
-            for (int nPC = 0; nPC < PlacementParameterSet.allPlacementCriteria.length; nPC++) {
-                PlacementCriterion pC = PlacementParameterSet.allPlacementCriteria[nPC];
+            for (PlacementCriterion pC : PlacementParameterSet.allPlacementCriteria) {
                 if (strName.equals(pC.longName)) {
                     plaC[number - 1] = pC.uid;
                     break;
@@ -819,15 +818,15 @@ public class ExternalDocument {
         Node nPaiPS = nlPaiPS.item(0);
         NamedNodeMap nnmPaiPS = nPaiPS.getAttributes();
 
-        paiPS.setPaiStandardNX1Factor(new Double(extractNodeValue(nnmPaiPS, "paiStandardNX1Factor", "0.5")).doubleValue());
-        paiPS.setPaiBaAvoidDuplGame(new Long(extractNodeValue(nnmPaiPS, "paiBaAvoidDuplGame", "500000000000000")).longValue());
-        paiPS.setPaiBaRandom(new Long(extractNodeValue(nnmPaiPS, "paiBaRandom", "0")).longValue());
-        paiPS.setPaiBaDeterministic(Boolean.valueOf(extractNodeValue(nnmPaiPS, "paiBaDeterministic", "true")).booleanValue());
-        paiPS.setPaiBaBalanceWB(new Long(extractNodeValue(nnmPaiPS, "paiBaBalanceWB", "1000")).longValue());
-        paiPS.setPaiMaAvoidMixingCategories(new Long(extractNodeValue(nnmPaiPS, "paiMaAvoidMixingCategories", "20000000000000")).longValue());
-        paiPS.setPaiMaMinimizeScoreDifference(new Long(extractNodeValue(nnmPaiPS, "paiMaMinimizeScoreDifference", "100000000000")).longValue());
-        paiPS.setPaiMaDUDDWeight(new Long(extractNodeValue(nnmPaiPS, "paiMaDUDDWeight", "100000000")).longValue());
-        paiPS.setPaiMaCompensateDUDD(Boolean.valueOf(extractNodeValue(nnmPaiPS, "paiMaCompensateDUDD", "true")).booleanValue());
+        paiPS.setPaiStandardNX1Factor(Double.parseDouble(extractNodeValue(nnmPaiPS, "paiStandardNX1Factor", "0.5")));
+        paiPS.setPaiBaAvoidDuplGame(Long.parseLong(extractNodeValue(nnmPaiPS, "paiBaAvoidDuplGame", "500000000000000")));
+        paiPS.setPaiBaRandom(Long.parseLong(extractNodeValue(nnmPaiPS, "paiBaRandom", "0")));
+        paiPS.setPaiBaDeterministic(Boolean.parseBoolean(extractNodeValue(nnmPaiPS, "paiBaDeterministic", "true")));
+        paiPS.setPaiBaBalanceWB(Long.parseLong(extractNodeValue(nnmPaiPS, "paiBaBalanceWB", "1000")));
+        paiPS.setPaiMaAvoidMixingCategories(Long.parseLong(extractNodeValue(nnmPaiPS, "paiMaAvoidMixingCategories", "20000000000000")));
+        paiPS.setPaiMaMinimizeScoreDifference(Long.parseLong(extractNodeValue(nnmPaiPS, "paiMaMinimizeScoreDifference", "100000000000")));
+        paiPS.setPaiMaDUDDWeight(Long.parseLong(extractNodeValue(nnmPaiPS, "paiMaDUDDWeight", "100000000")));
+        paiPS.setPaiMaCompensateDUDD(Boolean.parseBoolean(extractNodeValue(nnmPaiPS, "paiMaCompensateDUDD", "true")));
         
         String strDUDDU = extractNodeValue(nnmPaiPS, "paiMaDUDDUpperMode", "MID");
         int duddu = PairingParameterSet.PAIMA_DUDD_MID;
@@ -854,8 +853,8 @@ public class ExternalDocument {
             duddl = PairingParameterSet.PAIMA_DUDD_BOT;
         }
         paiPS.setPaiMaDUDDLowerMode(duddl);
-        paiPS.setPaiMaMaximizeSeeding(new Long(extractNodeValue(nnmPaiPS, "paiMaMaximizeSeeding", "5000000")).longValue());
-        paiPS.setPaiMaLastRoundForSeedSystem1(new Integer(extractNodeValue(nnmPaiPS, "paiMaLastRoundForSeedSystem1", "2")).intValue() - 1);
+        paiPS.setPaiMaMaximizeSeeding(Long.parseLong(extractNodeValue(nnmPaiPS, "paiMaMaximizeSeeding", "5000000")));
+        paiPS.setPaiMaLastRoundForSeedSystem1(Integer.parseInt(extractNodeValue(nnmPaiPS, "paiMaLastRoundForSeedSystem1", "2")) - 1);
 
         String strS1 = extractNodeValue(nnmPaiPS, "paiMaSeedSystem1", "SPLITANDRANDOM");
         int s1 = PairingParameterSet.PAIMA_SEED_SPLITANDRANDOM;
@@ -885,8 +884,7 @@ public class ExternalDocument {
 
         String strAddCrit1 = extractNodeValue(nnmPaiPS, "paiMaAdditionalPlacementCritSystem1", "RATING");
         int aCrit1 = PlacementParameterSet.PLA_CRIT_RATING;
-        for (int nPC = 0; nPC < PlacementParameterSet.allPlacementCriteria.length; nPC++) {
-            PlacementCriterion pC = PlacementParameterSet.allPlacementCriteria[nPC];
+        for (PlacementCriterion pC : PlacementParameterSet.allPlacementCriteria) {
             if (strAddCrit1.equals(pC.longName)) {
                 aCrit1 = pC.uid;
                 break;
@@ -896,8 +894,7 @@ public class ExternalDocument {
 
         String strAddCrit2 = extractNodeValue(nnmPaiPS, "paiMaAdditionalPlacementCritSystem2", "NULL");
         int aCrit2 = PlacementParameterSet.PLA_CRIT_NUL;
-        for (int nPC = 0; nPC < PlacementParameterSet.allPlacementCriteria.length; nPC++) {
-            PlacementCriterion pC = PlacementParameterSet.allPlacementCriteria[nPC];
+        for (PlacementCriterion pC : PlacementParameterSet.allPlacementCriteria) {
             if (strAddCrit2.equals(pC.longName)) {
                 aCrit2 = pC.uid;
                 break;
@@ -906,14 +903,14 @@ public class ExternalDocument {
         paiPS.setPaiMaAdditionalPlacementCritSystem2(aCrit2);
 
         paiPS.setPaiSeRankThreshold(Player.convertKDPToInt(extractNodeValue(nnmPaiPS, "paiSeRankThreshold", "4D")));
-        paiPS.setPaiSeNbWinsThresholdActive(Boolean.valueOf(extractNodeValue(nnmPaiPS, "paiSeNbWinsThresholdActive", "true")).booleanValue());
-        paiPS.setPaiSeBarThresholdActive(Boolean.valueOf(extractNodeValue(nnmPaiPS, "paiSeBarThresholdActive", "true")).booleanValue());
-        paiPS.setPaiSeDefSecCrit(new Long(extractNodeValue(nnmPaiPS, "paiSeDefSecCrit", "100000000000")).longValue());
-        paiPS.setPaiSeMinimizeHandicap(new Long(extractNodeValue(nnmPaiPS, "paiSeMinimizeHandicap", "0")).longValue());
-        paiPS.setPaiSeAvoidSameGeo(new Long(extractNodeValue(nnmPaiPS, "paiSeAvoidSameGeo", "100000000000")).longValue());
-        paiPS.setPaiSePreferMMSDiffRatherThanSameCountry(new Integer(extractNodeValue(nnmPaiPS, "paiSePreferMMSDiffRatherThanSameCountry", "1")).intValue());
-        paiPS.setPaiSePreferMMSDiffRatherThanSameClubsGroup(new Integer(extractNodeValue(nnmPaiPS, "paiSePreferMMSDiffRatherThanSameClubsGroup", "2")).intValue());
-        paiPS.setPaiSePreferMMSDiffRatherThanSameClub(new Integer(extractNodeValue(nnmPaiPS, "paiSePreferMMSDiffRatherThanSameClub", "3")).intValue());
+        paiPS.setPaiSeNbWinsThresholdActive(Boolean.parseBoolean(extractNodeValue(nnmPaiPS, "paiSeNbWinsThresholdActive", "true")));
+        paiPS.setPaiSeBarThresholdActive(Boolean.parseBoolean(extractNodeValue(nnmPaiPS, "paiSeBarThresholdActive", "true")));
+        paiPS.setPaiSeDefSecCrit(Long.parseLong(extractNodeValue(nnmPaiPS, "paiSeDefSecCrit", "100000000000")));
+        paiPS.setPaiSeMinimizeHandicap(Long.parseLong(extractNodeValue(nnmPaiPS, "paiSeMinimizeHandicap", "0")));
+        paiPS.setPaiSeAvoidSameGeo(Long.parseLong(extractNodeValue(nnmPaiPS, "paiSeAvoidSameGeo", "100000000000")));
+        paiPS.setPaiSePreferMMSDiffRatherThanSameCountry(Integer.parseInt(extractNodeValue(nnmPaiPS, "paiSePreferMMSDiffRatherThanSameCountry", "1")));
+        paiPS.setPaiSePreferMMSDiffRatherThanSameClubsGroup(Integer.parseInt(extractNodeValue(nnmPaiPS, "paiSePreferMMSDiffRatherThanSameClubsGroup", "2")));
+        paiPS.setPaiSePreferMMSDiffRatherThanSameClub(Integer.parseInt(extractNodeValue(nnmPaiPS, "paiSePreferMMSDiffRatherThanSameClub", "3")));
 
         tps.setPairingParameterSet(paiPS);
 
@@ -936,35 +933,35 @@ public class ExternalDocument {
             dpps.setGameFormat(gameFormat);
 
             String strShowPlayerGrade = extractNodeValue(nnmDPPS, "showPlayerGrade", "true");
-            dpps.setShowPlayerRank(Boolean.valueOf(strShowPlayerGrade).booleanValue());
+            dpps.setShowPlayerRank(Boolean.parseBoolean(strShowPlayerGrade));
             String strShowPlayerCountry = extractNodeValue(nnmDPPS, "showPlayerCountry", "false");
-            dpps.setShowPlayerCountry(Boolean.valueOf(strShowPlayerCountry).booleanValue());
+            dpps.setShowPlayerCountry(Boolean.parseBoolean(strShowPlayerCountry));
             String strShowPlayerClub = extractNodeValue(nnmDPPS, "showPlayerClub", "true");
-            dpps.setShowPlayerClub(Boolean.valueOf(strShowPlayerClub).booleanValue());
+            dpps.setShowPlayerClub(Boolean.parseBoolean(strShowPlayerClub));
 
             String strShowByePlayer = extractNodeValue(nnmDPPS, "showByePlayer", "true");
-            dpps.setShowByePlayer(Boolean.valueOf(strShowByePlayer).booleanValue());
+            dpps.setShowByePlayer(Boolean.parseBoolean(strShowByePlayer));
             String strShowNotPairedPlayers = extractNodeValue(nnmDPPS, "showNotPairedPlayers", "true");
-            dpps.setShowNotPairedPlayers(Boolean.valueOf(strShowNotPairedPlayers).booleanValue());
+            dpps.setShowNotPairedPlayers(Boolean.parseBoolean(strShowNotPairedPlayers));
             String strShowNotParticipatingPlayers = extractNodeValue(nnmDPPS, "showNotParticipatingPlayers", "true");
-            dpps.setShowNotParticipatingPlayers(Boolean.valueOf(strShowNotParticipatingPlayers).booleanValue());
+            dpps.setShowNotParticipatingPlayers(Boolean.parseBoolean(strShowNotParticipatingPlayers));
             String strShowNotFinallyRegisteredPlayers = extractNodeValue(nnmDPPS, "showNotFinallyRegisteredPlayers", "true");
-            dpps.setShowNotFinallyRegisteredPlayers(Boolean.valueOf(strShowNotFinallyRegisteredPlayers).booleanValue());
+            dpps.setShowNotFinallyRegisteredPlayers(Boolean.parseBoolean(strShowNotFinallyRegisteredPlayers));
 
             String strDisplayNPPlayers = extractNodeValue(nnmDPPS, "displayNPPlayers", "false");
-            dpps.setDisplayNPPlayers(Boolean.valueOf(strDisplayNPPlayers).booleanValue());
+            dpps.setDisplayNPPlayers(Boolean.parseBoolean(strDisplayNPPlayers));
             
             String strDisplayNumCol = extractNodeValue(nnmDPPS, "displayNumCol", "true");
-            dpps.setDisplayNumCol(Boolean.valueOf(strDisplayNumCol).booleanValue());
+            dpps.setDisplayNumCol(Boolean.parseBoolean(strDisplayNumCol));
             String strDisplayPlCol = extractNodeValue(nnmDPPS, "displayPlCol", "true");
-            dpps.setDisplayPlCol(Boolean.valueOf(strDisplayPlCol).booleanValue());
+            dpps.setDisplayPlCol(Boolean.parseBoolean(strDisplayPlCol));
             String strDisplayCoCol = extractNodeValue(nnmDPPS, "displayCoCol", "true");
-            dpps.setDisplayCoCol(Boolean.valueOf(strDisplayCoCol).booleanValue());
+            dpps.setDisplayCoCol(Boolean.parseBoolean(strDisplayCoCol));
             String strDisplayClCol = extractNodeValue(nnmDPPS, "displayClCol", "false");
-            dpps.setDisplayClCol(Boolean.valueOf(strDisplayClCol).booleanValue());
+            dpps.setDisplayClCol(Boolean.parseBoolean(strDisplayClCol));
             
             String strDisplayIndGamesInMatches = extractNodeValue(nnmDPPS, "displayIndGamesInMatches", "true");
-            dpps.setDisplayIndGamesInMatches(Boolean.valueOf(strDisplayIndGamesInMatches).booleanValue());          
+            dpps.setDisplayIndGamesInMatches(Boolean.parseBoolean(strDisplayIndGamesInMatches));          
         }
         tps.setDPParameterSet(dpps);
 
@@ -976,11 +973,11 @@ public class ExternalDocument {
             NamedNodeMap nnmPubPS = nPubPS.getAttributes();
             
             String strPrint = extractNodeValue(nnmPubPS, "print", "true");
-            pubPS.setPrint(Boolean.valueOf(strPrint).booleanValue());
+            pubPS.setPrint(Boolean.parseBoolean(strPrint));
             String strExportToLocalFile = extractNodeValue(nnmPubPS, "exportToLocalFile", "true");
-            pubPS.setExportToLocalFile(Boolean.valueOf(strExportToLocalFile).booleanValue());
+            pubPS.setExportToLocalFile(Boolean.parseBoolean(strExportToLocalFile));
             String strHtmlAutoScroll = extractNodeValue(nnmPubPS, "htmlAutoScroll", "false");
-            pubPS.setHtmlAutoScroll(Boolean.valueOf(strHtmlAutoScroll).booleanValue());  
+            pubPS.setHtmlAutoScroll(Boolean.parseBoolean(strHtmlAutoScroll));  
         }
         tps.setPublishParameterSet(pubPS);
 
@@ -1000,14 +997,14 @@ public class ExternalDocument {
             return null;
         }
 
-        ArrayList<Team> alTeams = new ArrayList<Team>();
+        ArrayList<Team> alTeams = new ArrayList<>();
         for (int i = 0; i < nlTeamList.getLength(); i++) {
             Node nTeam = nlTeamList.item(i);
             NamedNodeMap nnmTeam = nTeam.getAttributes();
 
             String strTeamNumber = extractNodeValue(nnmTeam, "teamNumber", "1");
             String strTeamName = extractNodeValue(nnmTeam, "teamName", "Unnamed team");
-            int teamNumber = new Integer(strTeamNumber).intValue() - 1;
+            int teamNumber = Integer.parseInt(strTeamNumber) - 1;
             String teamName = strTeamName;
             Team t = new Team(teamNumber, teamName);
 
@@ -1022,9 +1019,9 @@ public class ExternalDocument {
                 }
                 NamedNodeMap nnmBoard = nBoard.getAttributes();
                 String strRoundNumber = extractNodeValue(nnmBoard, "roundNumber", "0");
-                int roundNumber = new Integer(strRoundNumber).intValue() - 1;
+                int roundNumber = Integer.parseInt(strRoundNumber) - 1;
                 String strBoardNumber = extractNodeValue(nnmBoard, "boardNumber", "1");
-                int boardNumber = new Integer(strBoardNumber).intValue() - 1;
+                int boardNumber = Integer.parseInt(strBoardNumber) - 1;
                 String strPlayer = extractNodeValue(nnmBoard, "player", "unnamed player");
                 Player p;
                 try {
@@ -1092,10 +1089,9 @@ public class ExternalDocument {
         for (Node n : alCritNodes) {
             NamedNodeMap nnm = n.getAttributes();
             String strNumber = extractNodeValue(nnm, "number", "1");
-            int number = new Integer(strNumber).intValue();
+            int number = Integer.parseInt(strNumber);
             String strName = extractNodeValue(nnm, "name", "NULL");
-            for (int nPC = 0; nPC < TeamPlacementParameterSet.allPlacementCriteria.length; nPC++) {
-                PlacementCriterion pC = TeamPlacementParameterSet.allPlacementCriteria[nPC];
+            for (PlacementCriterion pC : TeamPlacementParameterSet.allPlacementCriteria) {
                 if (strName.equals(pC.longName)) {
                     plaC[number - 1] = pC.uid;
                     break;
@@ -1120,7 +1116,7 @@ public class ExternalDocument {
             return null;
         }
         
-        ArrayList<ClubsGroup> alClubsGroups = new ArrayList<ClubsGroup>();
+        ArrayList<ClubsGroup> alClubsGroups = new ArrayList<>();
         for(int i = 0; i < nlClubsGroupList.getLength(); i++){
             Node nClubsGroup = nlClubsGroupList.item(i);
             NamedNodeMap nnmClubsGroup = nClubsGroup.getAttributes();
@@ -1156,7 +1152,7 @@ public class ExternalDocument {
         int value = defaultValue;
         try {
             value = Integer.parseInt(strValue);
-        } catch (Exception e) {
+        } catch (NumberFormatException e) {
         }
         return value;
     }
@@ -1168,7 +1164,7 @@ public class ExternalDocument {
      * @return an ArrayList of all found Nodes
      */
     public static ArrayList<Node> extractNodes(Node nodeBase, String nodeName) {
-        ArrayList<Node> alNodes = new ArrayList<Node>();
+        ArrayList<Node> alNodes = new ArrayList<>();
         NodeList nlElements = nodeBase.getChildNodes();
         for (int iel = 0; iel < nlElements.getLength(); iel++) {
             Node n = nlElements.item(iel);
@@ -1188,16 +1184,16 @@ public class ExternalDocument {
             return null;
         }
 
-        ArrayList<Game> alGames = new ArrayList<Game>();
+        ArrayList<Game> alGames = new ArrayList<>();
         NodeList nl = doc.getElementsByTagName("Game");
         for (int i = 0; i < nl.getLength(); i++) {
             Node n = nl.item(i);
             NamedNodeMap nnm = n.getAttributes();
 
             String strRoundNumber = extractNodeValue(nnm, "roundNumber", "1");
-            int roundNumber = new Integer(strRoundNumber).intValue() - 1;
+            int roundNumber = Integer.parseInt(strRoundNumber) - 1;
             String strTableNumber = extractNodeValue(nnm, "tableNumber", "1");
-            int tableNumber = new Integer(strTableNumber).intValue() - 1;
+            int tableNumber = Integer.parseInt(strTableNumber) - 1;
             String strWhitePlayer = extractNodeValue(nnm, "whitePlayer", "");
             String strBlackPlayer = extractNodeValue(nnm, "blackPlayer", "");
             Player wP;
@@ -1230,7 +1226,7 @@ public class ExternalDocument {
                 knownColor = false;
             }
             String strHandicap = extractNodeValue(nnm, "handicap", "0");
-            int handicap = new Integer(strHandicap).intValue();
+            int handicap = Integer.parseInt(strHandicap);
             String strResult = extractNodeValue(nnm, "result", "RESULT_UNKNOWN");
             int result = Game.RESULT_UNKNOWN;
             if (strResult.equals("RESULT_WHITEWINS")) {
@@ -1285,7 +1281,7 @@ public class ExternalDocument {
             Node n = nl.item(i);
             NamedNodeMap nnm = n.getAttributes();
             String strRoundNumber = extractNodeValue(nnm, "roundNumber", "1");
-            int roundNumber = new Integer(strRoundNumber).intValue() - 1;
+            int roundNumber = Integer.parseInt(strRoundNumber) - 1;
             String strPlayer = extractNodeValue(nnm, "player", "");
             Player p;
             try {
@@ -1322,7 +1318,7 @@ public class ExternalDocument {
 
         // vBProcessedHalfGames is mapped like alPotentialHalfGames. 
         // An element of vBProcessedPHG is set to true when processed
-        ArrayList<Boolean> alBProcessedPHG = new ArrayList<Boolean>();
+        ArrayList<Boolean> alBProcessedPHG = new ArrayList<>();
         for (PotentialHalfGame phg : alPotentialHalfGames) {
             alBProcessedPHG.add(false);
         }
@@ -1367,33 +1363,34 @@ public class ExternalDocument {
             Player opponent = alPlayers.get(phg.opponentNumber);
 
             int res = Game.RESULT_UNKNOWN;
-            if (phg.color == 'w') {
-                g.setWhitePlayer(player);
-                g.setBlackPlayer(opponent);
-                if (phg.result == 1) {
-                    res = Game.RESULT_WHITEWINS;
-                } else if (phg.result == -1) {
-                    res = Game.RESULT_BLACKWINS;
-                }
-                g.setKnownColor(true);
-            } else if (phg.color == 'b') {
-                g.setWhitePlayer(opponent);
-                g.setBlackPlayer(player);
-                if (phg.result == 1) {
-                    res = Game.RESULT_BLACKWINS;
-                } else if (phg.result == -1) {
-                    res = Game.RESULT_WHITEWINS;
-                }
-                g.setKnownColor(true);
-            } else {
-                g.setWhitePlayer(player);
-                g.setBlackPlayer(opponent);
-                if (phg.result == 1) {
-                    res = Game.RESULT_WHITEWINS;
-                } else if (phg.result == -1) {
-                    res = Game.RESULT_BLACKWINS;
-                }
-                g.setKnownColor(false);
+            switch (phg.color) {
+                case 'w':
+                    g.setWhitePlayer(player);
+                    g.setBlackPlayer(opponent);
+                    if (phg.result == 1) {
+                        res = Game.RESULT_WHITEWINS;
+                    } else if (phg.result == -1) {
+                        res = Game.RESULT_BLACKWINS;
+                    }   g.setKnownColor(true);
+                    break;
+                case 'b':
+                    g.setWhitePlayer(opponent);
+                    g.setBlackPlayer(player);
+                    if (phg.result == 1) {
+                        res = Game.RESULT_BLACKWINS;
+                    } else if (phg.result == -1) {
+                        res = Game.RESULT_WHITEWINS;
+                    }   g.setKnownColor(true);
+                    break;
+                default:
+                    g.setWhitePlayer(player);
+                    g.setBlackPlayer(opponent);
+                    if (phg.result == 1) {
+                        res = Game.RESULT_WHITEWINS;
+                    } else if (phg.result == -1) {
+                        res = Game.RESULT_BLACKWINS;
+                    }   g.setKnownColor(false);
+                    break;
             }
             if (phg.bydef) {
                 res += Game.RESULT_BYDEF;
@@ -1405,8 +1402,7 @@ public class ExternalDocument {
 
             // Choose a table number
             int tN = 0;
-            for (int gN = 0; gN < tabGames[g.getRoundNumber()].length; gN++) {
-                Game game = tabGames[g.getRoundNumber()][gN];
+            for (Game game : tabGames[g.getRoundNumber()]) {
                 if (tN <= game.getTableNumber()) {
                     tN = game.getTableNumber() + 1;
                 }
@@ -1445,8 +1441,7 @@ public class ExternalDocument {
      * <br>If not, returns true;
      */
     private static boolean isASuitableRound(int candidateRoundNumber, Player p1, Player p2, Game[][] tabGames) {
-        for (int ng = 0; ng < tabGames[candidateRoundNumber].length; ng++) {
-            Game g = tabGames[candidateRoundNumber][ng];
+        for (Game g : tabGames[candidateRoundNumber]) {
             if (p1.hasSameKeyString(g.getWhitePlayer())) {
                 return false;
             }
@@ -1607,7 +1602,7 @@ public class ExternalDocument {
         int[] tC = pps.getPlaCriteria();
         int[] tabCrit = PlacementParameterSet.purgeUselessCriteria(tC);
 
-        Writer output = null;
+        Writer output;
         try {
             output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(f), "ISO-8859-15"));
         } catch (IOException ex) {
@@ -1745,7 +1740,7 @@ public class ExternalDocument {
                 strHG = "        " + strHG;
                 strHG = strHG.substring(strHG.length() - 8);
                 // Drop the game if by def and !bKeepByDefResults
-                if (strHG.indexOf("!") >= 0 && !bKeepByDefResults) {
+                if (strHG.contains("!") && !bKeepByDefResults) {
                     strHG = "      0=";
                 }
                 strLine += " " + strHG;
@@ -1774,7 +1769,7 @@ public class ExternalDocument {
 
     // This method added by Bart and adapted by Luc (Jan 2012)
     public static void generateAGAResultsFile(TournamentInterface tournament, File f) {
-        TournamentParameterSet tps = null;
+        TournamentParameterSet tps;
         try {
             tps = tournament.getTournamentParameterSet();
         } catch (RemoteException ex) {
@@ -1822,8 +1817,7 @@ public class ExternalDocument {
         int newId = 99999;
 
         boolean somethingHasChanged = false;
-        for (Iterator<ScoredPlayer> it = alOrderedScoredPlayers.iterator(); it.hasNext();) {
-            ScoredPlayer sP = it.next();
+        for (ScoredPlayer sP : alOrderedScoredPlayers) {
             if (getIntAgaId(sP) > 0) {
                 continue;
             }
@@ -1894,13 +1888,17 @@ public class ExternalDocument {
             for (Iterator<Game> it = roundGames.iterator(); it.hasNext();) {
                 try {
                     Game g = it.next();
-                    String result = "*";
-                    if (g.getResult() == Game.RESULT_WHITEWINS) {
-                        result = "W";
-                    } else if (g.getResult() == Game.RESULT_BLACKWINS) {
-                        result = "B";
-                    } else {
-                        result = "?";
+                    String result;
+                    switch (g.getResult()) {
+                        case Game.RESULT_WHITEWINS:
+                            result = "W";
+                            break;
+                        case Game.RESULT_BLACKWINS:
+                            result = "B";
+                            break;
+                        default:
+                            result = "?";
+                            break;
                     }
                     int hc = g.getHandicap();
                     int komi = 7;
@@ -1933,9 +1931,9 @@ public class ExternalDocument {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
         }
 
-        for (Iterator<Player> it = playerList.iterator(); it.hasNext();) {
-            Player p = it.next();
-        }
+//        for (Iterator<Player> it = playerList.iterator(); it.hasNext();) {
+//            Player p = it.next();
+//        }
 
         try {
             output.close();
@@ -1948,7 +1946,7 @@ public class ExternalDocument {
         int id;
         try {
             id = Integer.parseInt(sP.getAgaId());
-        } catch (Exception e) {
+        } catch (NumberFormatException e) {
             id = 0;
         }
         return id;
@@ -1962,7 +1960,7 @@ public class ExternalDocument {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
             return;
         }
-        ArrayList<Player> alPlayers = null;
+        ArrayList<Player> alPlayers;
         try {
             alPlayers = tournament.playersList();
         } catch (RemoteException ex) {
@@ -2128,11 +2126,11 @@ public class ExternalDocument {
         File currentCSSFile = new File(f.getParentFile(), "current.css");
         if (!currentCSSFile.exists()) {
             try {
-                FileChannel srcChannel = new FileInputStream(new File(Gotha.runningDirectory, "exportfiles/html/default.css")).getChannel();
-                FileChannel dstChannel = new FileOutputStream(new File(f.getParentFile(), "current.css")).getChannel();
-
-                dstChannel.transferFrom(srcChannel, 0, srcChannel.size());
-                srcChannel.close();
+                FileChannel dstChannel;
+                try (FileChannel srcChannel = new FileInputStream(new File(Gotha.runningDirectory, "exportfiles/html/default.css")).getChannel()) {
+                    dstChannel = new FileOutputStream(new File(f.getParentFile(), "current.css")).getChannel();
+                    dstChannel.transferFrom(srcChannel, 0, srcChannel.size());
+                }
                 dstChannel.close();
             } catch (IOException e) {
                 System.out.println("Exception in css file copying");
@@ -2432,7 +2430,7 @@ public class ExternalDocument {
         // Contents
          ArrayList<Game> alG = null;
         try {
-            alG = new ArrayList<Game>(tournament.gamesList(roundNumber));
+            alG = new ArrayList<>(tournament.gamesList(roundNumber));
         } catch (RemoteException ex) {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2712,7 +2710,7 @@ public class ExternalDocument {
         // Contents
         ArrayList<Match> alM = null;
         try {
-            alM = new ArrayList<Match>(tournament.matchesList(roundNumber));
+            alM = new ArrayList<>(tournament.matchesList(roundNumber));
         } catch (RemoteException ex) {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -3017,7 +3015,7 @@ public class ExternalDocument {
 
         
         // Include Clubs groups
-        ArrayList<ClubsGroup> alClubsGroup = new ArrayList<ClubsGroup>();
+        ArrayList<ClubsGroup> alClubsGroup = new ArrayList<>();
         try {
             alClubsGroup = tournament.clubsGroupsList();
         } catch (RemoteException ex) {
@@ -3031,7 +3029,7 @@ public class ExternalDocument {
        
         // Transform document into a DOM source
         TransformerFactory transformerFactory = TransformerFactory.newInstance();
-        Transformer transformer = null;
+        Transformer transformer;
         try {
             transformer = transformerFactory.newTransformer();
             transformer.setOutputProperty(OutputKeys.INDENT, "yes");
@@ -3043,7 +3041,7 @@ public class ExternalDocument {
         DOMSource source = new DOMSource(document);
        
         // generate file
-        Writer output = null;
+        Writer output;
         try {
             output = new BufferedWriter(new OutputStreamWriter(new FileOutputStream(xmlFile), DEFAULT_CHARSET));
         } catch (IOException ex) {
@@ -3084,10 +3082,10 @@ public class ExternalDocument {
             String strAgaId = p.getAgaId();
             String strAgaExpirationDate = p.getAgaExpirationDate();
             String strRank = Player.convertIntToKD(p.getRank());
-            String strRating = Integer.valueOf(p.getRating()).toString();
+            String strRating = Integer.toString(p.getRating());
             String strRatingOrigin = p.getStrRatingOrigin();
             String strGrade = p.getStrGrade();
-            String strSMMSCorrection = Integer.valueOf(p.getSmmsCorrection()).toString();
+            String strSMMSCorrection = Integer.toString(p.getSmmsCorrection());
             boolean[] part = p.getParticipating();
             String strParticipating = "";
             for (int r = 0; r < Gotha.MAX_NUMBER_OF_ROUNDS; r++) {
@@ -3130,12 +3128,12 @@ public class ExternalDocument {
     private static Element generateXMLGamesElement(Document document, ArrayList<Game> alGames) {
         Element emGames = document.createElement("Games");
         for (Game g : alGames) {
-            String strRoundNumber = Integer.valueOf(g.getRoundNumber() + 1).toString();
-            String strTableNumber = Integer.valueOf(g.getTableNumber() + 1).toString();
+            String strRoundNumber = Integer.toString(g.getRoundNumber() + 1);
+            String strTableNumber = Integer.toString(g.getTableNumber() + 1);
             String strWhitePlayer = g.getWhitePlayer().getKeyString();
             String strBlackPlayer = g.getBlackPlayer().getKeyString();
             String strKnownColor = g.isKnownColor() ? "true" : "false";
-            String strHandicap = Integer.valueOf(g.getHandicap()).toString();
+            String strHandicap = Integer.toString(g.getHandicap());
             String strResult;
             switch (g.getResult()) {
                 case Game.RESULT_WHITEWINS:
@@ -3193,19 +3191,19 @@ public class ExternalDocument {
     private static Element generateXMLTeamsElement(Document document, ArrayList<Team> alTeams) {
         Element emTeams = document.createElement("Teams");
         for (Team t : alTeams) {
-            String strTeamNumber = Integer.valueOf(t.getTeamNumber() + 1).toString();
+            String strTeamNumber = Integer.toString(t.getTeamNumber() + 1);
             String strTeamName = t.getTeamName();
             Element emTeam = document.createElement("Team");
             emTeam.setAttribute("teamNumber", strTeamNumber);
             emTeam.setAttribute("teamName", strTeamName);
             for ( int ir = 0; ir < Gotha.MAX_NUMBER_OF_ROUNDS; ir++){
-                String strRoundNumber = Integer.valueOf(ir + 1).toString();
+                String strRoundNumber = Integer.toString(ir + 1);
                 for (int ibn = 0; ibn < Gotha.MAX_NUMBER_OF_MEMBERS_BY_TEAM; ibn++) {
                     Player p = t.getTeamMember(ir, ibn);
                     if (p == null) {
                         continue;
                     }
-                    String strBoardNumber = Integer.valueOf(ibn + 1).toString();
+                    String strBoardNumber = Integer.toString(ibn + 1);
                     String strPlayer = p.getKeyString();
                     Element emBoard = document.createElement("Board");
                     emBoard.setAttribute("roundNumber", strRoundNumber);
@@ -3260,7 +3258,7 @@ public class ExternalDocument {
     private static Element generateXMLByePlayersElement(Document document, Player[] byePlayers) {
         Element emByePlayers = document.createElement("ByePlayers");
         for (int r = 0; r < byePlayers.length; r++) {
-            String strRoundNumber = Integer.valueOf(r + 1).toString();
+            String strRoundNumber = Integer.toString(r + 1);
             Player p = byePlayers[r];
             if (byePlayers[r] == null) {
                 continue;
@@ -3356,7 +3354,7 @@ public class ExternalDocument {
         // HandicapParameterSet
         HandicapParameterSet hps = tps.getHandicapParameterSet();
         Element emHandicapParameterSet = document.createElement("HandicapParameterSet");
-        emHandicapParameterSet.setAttribute("hdBasedOnMMS", Boolean.valueOf(hps.isHdBasedOnMMS()).toString());
+        emHandicapParameterSet.setAttribute("hdBasedOnMMS", Boolean.toString(hps.isHdBasedOnMMS()));
         emHandicapParameterSet.setAttribute("hdNoHdRankThreshold", Player.convertIntToKD(hps.getHdNoHdRankThreshold()));
         emHandicapParameterSet.setAttribute("hdCorrection", "" + hps.getHdCorrection());
         emHandicapParameterSet.setAttribute("hdCeiling", "" + hps.getHdCeiling());
@@ -3503,22 +3501,22 @@ public class ExternalDocument {
         }
         emDPParameterSet.setAttribute("gameFormat", strGameFormat);
         
-        emDPParameterSet.setAttribute("showPlayerGrade", Boolean.valueOf(dpps.isShowPlayerRank()).toString());
-        emDPParameterSet.setAttribute("showPlayerCountry", Boolean.valueOf(dpps.isShowPlayerCountry()).toString());
-        emDPParameterSet.setAttribute("showPlayerClub", Boolean.valueOf(dpps.isShowPlayerClub()).toString());
+        emDPParameterSet.setAttribute("showPlayerGrade", Boolean.toString(dpps.isShowPlayerRank()));
+        emDPParameterSet.setAttribute("showPlayerCountry", Boolean.toString(dpps.isShowPlayerCountry()));
+        emDPParameterSet.setAttribute("showPlayerClub", Boolean.toString(dpps.isShowPlayerClub()));
         
-        emDPParameterSet.setAttribute("showByePlayer", Boolean.valueOf(dpps.isShowByePlayer()).toString());
-        emDPParameterSet.setAttribute("showNotPairedPlayers", Boolean.valueOf(dpps.isShowNotPairedPlayers()).toString());
-        emDPParameterSet.setAttribute("showNotParticipatingPlayers", Boolean.valueOf(dpps.isShowNotParticipatingPlayers()).toString());
-        emDPParameterSet.setAttribute("showNotFinallyRegisteredPlayers", Boolean.valueOf(dpps.isShowNotFinallyRegisteredPlayers()).toString());
+        emDPParameterSet.setAttribute("showByePlayer", Boolean.toString(dpps.isShowByePlayer()));
+        emDPParameterSet.setAttribute("showNotPairedPlayers", Boolean.toString(dpps.isShowNotPairedPlayers()));
+        emDPParameterSet.setAttribute("showNotParticipatingPlayers", Boolean.toString(dpps.isShowNotParticipatingPlayers()));
+        emDPParameterSet.setAttribute("showNotFinallyRegisteredPlayers", Boolean.toString(dpps.isShowNotFinallyRegisteredPlayers()));
 
-        emDPParameterSet.setAttribute("displayNPPlayers", Boolean.valueOf(dpps.isDisplayNPPlayers()).toString());
+        emDPParameterSet.setAttribute("displayNPPlayers", Boolean.toString(dpps.isDisplayNPPlayers()));
         
-        emDPParameterSet.setAttribute("displayNumCol", Boolean.valueOf(dpps.isDisplayNumCol()).toString());
-        emDPParameterSet.setAttribute("displayPlCol", Boolean.valueOf(dpps.isDisplayPlCol()).toString());
-        emDPParameterSet.setAttribute("displayCoCol", Boolean.valueOf(dpps.isDisplayCoCol()).toString());
-        emDPParameterSet.setAttribute("displayClCol", Boolean.valueOf(dpps.isDisplayClCol()).toString());
-        emDPParameterSet.setAttribute("displayIndGamesInMatches", Boolean.valueOf(dpps.isDisplayIndGamesInMatches()).toString());
+        emDPParameterSet.setAttribute("displayNumCol", Boolean.toString(dpps.isDisplayNumCol()));
+        emDPParameterSet.setAttribute("displayPlCol", Boolean.toString(dpps.isDisplayPlCol()));
+        emDPParameterSet.setAttribute("displayCoCol", Boolean.toString(dpps.isDisplayCoCol()));
+        emDPParameterSet.setAttribute("displayClCol", Boolean.toString(dpps.isDisplayClCol()));
+        emDPParameterSet.setAttribute("displayIndGamesInMatches", Boolean.toString(dpps.isDisplayIndGamesInMatches()));
         
         emTournamentParameterSet.appendChild(emDPParameterSet);
 
@@ -3526,9 +3524,9 @@ public class ExternalDocument {
         PublishParameterSet pubPS = tps.getPublishParameterSet();
         Element emPublishParameterSet = document.createElement("PublishParameterSet");
         
-        emPublishParameterSet.setAttribute("print", Boolean.valueOf(pubPS.isPrint()).toString());
-        emPublishParameterSet.setAttribute("exportToLocalFile", Boolean.valueOf(pubPS.isExportToLocalFile()).toString());
-        emPublishParameterSet.setAttribute("htmlAutoScroll", Boolean.valueOf(pubPS.isHtmlAutoScroll()).toString());
+        emPublishParameterSet.setAttribute("print", Boolean.toString(pubPS.isPrint()));
+        emPublishParameterSet.setAttribute("exportToLocalFile", Boolean.toString(pubPS.isExportToLocalFile()));
+        emPublishParameterSet.setAttribute("htmlAutoScroll", Boolean.toString(pubPS.isHtmlAutoScroll()));
         
         emTournamentParameterSet.appendChild(emPublishParameterSet);
        
@@ -3622,7 +3620,7 @@ public class ExternalDocument {
         int posResult = -1;
         int indResult;
         boolean bByDef = false;
-        if (strHalfGame.indexOf("!") >= 0) {
+        if (strHalfGame.contains("!")) {
             bByDef = true;
         }
         strHalfGame = strHalfGame.replaceAll("!", "");
@@ -3683,23 +3681,27 @@ public class ExternalDocument {
         // Let's build phg               
         PotentialHalfGame phg = new PotentialHalfGame();
         try {
-            phg.opponentNumber = (new Integer(strOpponentNumber).intValue() - 1);
+            phg.opponentNumber = Integer.parseInt(strOpponentNumber) - 1;
         } catch (NumberFormatException ex) {
             phg.opponentNumber = -1;
             // Logger.getLogger(ExternalTournamentDocument.class.getName()).log(Level.SEVERE, null, ex)
         }
-        if (strResult.equals("+")) {
-            phg.result = 1;
-        } else if (strResult.equals("-")) {
-            phg.result = -1;
-        } else {
-            phg.result = 0;
+        switch (strResult) {
+            case "+":
+                phg.result = 1;
+                break;
+            case "-":
+                phg.result = -1;
+                break;
+            default:
+                phg.result = 0;
+                break;
         }
         // Consider by def particularity
         phg.bydef = bByDef;
 
         phg.color = strColor.charAt(0);
-        phg.handicap = new Integer(strHandicap).intValue();
+        phg.handicap = Integer.parseInt(strHandicap);
         return phg;
     }
 }

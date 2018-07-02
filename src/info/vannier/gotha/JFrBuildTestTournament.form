@@ -67,7 +67,7 @@
     <Component class="javax.swing.JComboBox" name="cbxPlayers">
       <Properties>
         <Property name="model" type="javax.swing.ComboBoxModel" editor="org.netbeans.modules.form.editors2.ComboBoxModelEditor">
-          <StringArray count="12">
+          <StringArray count="13">
             <StringItem index="0" value="4 players, 4D to 1D"/>
             <StringItem index="1" value="4 players, 2D to 1D"/>
             <StringItem index="2" value="8 players, 10K"/>
@@ -80,6 +80,7 @@
             <StringItem index="9" value="64 players, 1K to 8K, imparity, diff ratings"/>
             <StringItem index="10" value="500 players"/>
             <StringItem index="11" value="1200 players"/>
+            <StringItem index="12" value="2000 players"/>
           </StringArray>
         </Property>
       </Properties>

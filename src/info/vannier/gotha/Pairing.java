@@ -10,7 +10,7 @@ import java.util.logging.Logger;
  * Contains a set of static methods related to pairing and pairing reports
  */
 public class Pairing {
-    public static final int PAIRING_GROUP_MIN_SIZE = 100;
+    public static final int PAIRING_GROUP_MIN_SIZE = 200; // Set to 200 in V3.46.01 (instead of 100)
     public static final int PAIRING_GROUP_MAX_SIZE = 3 * PAIRING_GROUP_MIN_SIZE; // must be >= 2 * PAIRING_GROUP_MIN_SIZE
 
     /**

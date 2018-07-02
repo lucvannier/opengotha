@@ -1,3 +1,9 @@
+OpenGothaV3.46.02
+*****************
+02/07/2018
+New         Max number of players set to 2000 (instead of 1200)
+New         Tournament files are uploaded to OpenGotha site.
+
 OpenGothaV3.46
 *****************
 12/03/2018

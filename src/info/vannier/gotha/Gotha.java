@@ -34,16 +34,16 @@ public class Gotha {
 
     static Locale locale = Locale.getDefault();
     static final long GOTHA_VERSION = 346L;
-    static final long GOTHA_MINOR_VERSION = 0L;
-    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2018, Calendar.MARCH, 11)).getTime();
-    // Data version for serialization
+    static final long GOTHA_MINOR_VERSION = 2L;
+    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2018, Calendar.JULY, 2)).getTime();
+    // Data version for serialization. Since 3.23 version, not used because xml and compatibility is always granted in both senses
     static final long GOTHA_DATA_VERSION = 201L;
     
     // Should definitely stay below or equal to 32, due to internal limits in costValue() method
     static final int MAX_NUMBER_OF_ROUNDS = 20;
     // Should definitely stay below 16000, due to internal limits in PairingParameterSet parameter values
     // Should definitely stay below 9999, due to printing issues
-    static final int MAX_NUMBER_OF_PLAYERS = 1200;
+    static final int MAX_NUMBER_OF_PLAYERS = 2000;
     // Should definitely stay below 10, due to complexity issues in costValue function    
     static final int MAX_NUMBER_OF_CATEGORIES = 9;
     static final int MAX_RANK = 8;      // =  9D
@@ -77,8 +77,9 @@ public class Gotha {
     }
 
     /**
-     * Returns X.yy if minor version = 0
-     * Returns X.yy.zz if minor version != 0
+    * @return 
+    * Returns X.yy if minor version = 0
+    * Returns X.yy.zz if minor version != 0
      */
     public static String getGothaFullVersionNumber() {
         int minorVersion = (int) GOTHA_MINOR_VERSION;
@@ -392,7 +393,7 @@ public class Gotha {
      * @return
      */
     public static ArrayList<InetAddress> getAvailableIPAddresses() {
-        ArrayList<InetAddress> al = new ArrayList<InetAddress>();
+        ArrayList<InetAddress> al = new ArrayList<>();
         try {
             for (Enumeration<NetworkInterface> en = NetworkInterface.getNetworkInterfaces(); en.hasMoreElements();) {
                 NetworkInterface intf = en.nextElement();

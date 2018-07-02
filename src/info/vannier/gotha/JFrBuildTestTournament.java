@@ -62,7 +62,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
         getContentPane().add(cbxSystem);
         cbxSystem.setBounds(20, 70, 120, 20);
 
-        cbxPlayers.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "4 players, 4D to 1D", "4 players, 2D to 1D", "8 players, 10K", "16 players, 1K to 4K", "16 players, 1K to 4K, club issues", "64 players, 6D to 2K, MMG issues", "64 players, 1K to 16K", "64 players, 1K to 17K, parity issue", "64 players, 1K to 8K, diff ratings", "64 players, 1K to 8K, imparity, diff ratings", "500 players", "1200 players" }));
+        cbxPlayers.setModel(new javax.swing.DefaultComboBoxModel<>(new String[] { "4 players, 4D to 1D", "4 players, 2D to 1D", "8 players, 10K", "16 players, 1K to 4K", "16 players, 1K to 4K, club issues", "64 players, 6D to 2K, MMG issues", "64 players, 1K to 16K", "64 players, 1K to 17K, parity issue", "64 players, 1K to 8K, diff ratings", "64 players, 1K to 8K, imparity, diff ratings", "500 players", "1200 players", "2000 players" }));
         getContentPane().add(cbxPlayers);
         cbxPlayers.setBounds(150, 70, 260, 20);
 
@@ -489,6 +489,31 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
             }
         }
         
+        if (strInfoPlayers.compareTo("2000 players") == 0){
+            for (int i = 0; i < 2000; i++){
+                int rank = 8 - i/100;
+                Player p = null;
+                try {
+                    p = new Player(
+                            generateName(i),
+                            "p_" + (rank+30),
+                            "FR", "76Ro",
+                            "123456789", "87654321", "", "99999", "",
+                            rank,  rank * 100 -50, "INI", "", 0, "FIN");
+                } catch (PlayerException ex) {
+                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
+                }
+                try {
+                    System.out.println("fastAddPlayer i = " + i);
+                    tournament.fastAddPlayer(p);
+                } catch (RemoteException ex) {
+                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
+                } catch (TournamentException ex) {
+                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
+                }
+            }
+        }
+
         this.tournamentChanged();    
     }//GEN-LAST:event_btnBuildActionPerformed
 

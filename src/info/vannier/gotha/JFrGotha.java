@@ -1409,20 +1409,20 @@ public class JFrGotha extends javax.swing.JFrame {
 
         TournamentParameterSet tps = new TournamentParameterSet();
 
-        Date beginDate = new Date();
+        Date beginDate;
         try {
             beginDate = new SimpleDateFormat("yyyy-MM-dd").parse(this.txfBeginDate.getText());
         } catch (ParseException ex) {
             beginDate = new java.util.Date();
         }
-        Date endDate = new Date();
+        Date endDate;
         try {
             endDate = new SimpleDateFormat("yyyy-MM-dd").parse(this.txfEndDate.getText());
         } catch (ParseException ex) {
             endDate = new java.util.Date();
         }
 
-        int nbRounds = 5;
+        int nbRounds;
         try {
             nbRounds = Integer.parseInt(this.txfNumberOfRounds.getText());
         } catch (NumberFormatException ex) {
@@ -2967,6 +2967,10 @@ private void mniUpdateRatingsActionPerformed(java.awt.event.ActionEvent evt) {//
 }//GEN-LAST:event_mniUpdateRatingsActionPerformed
 
 private void mniExperimentalToolsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniExperimentalToolsActionPerformed
+        if (tournament == null) {
+            JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
     JFrame jfr = null;
     try {
         jfr = new JFrExperimentalTools(tournament);
@@ -3326,6 +3330,8 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         }
         if (Gotha.isJournalingReportEnabled()) {
             LogElements.sendLogElements();
+            File f =  new File (this.getDefaultSaveAsFileName());
+            FTPTransfer.uploadByFTPToOGSite(tournament, f);
         }
         System.exit(0);
     }

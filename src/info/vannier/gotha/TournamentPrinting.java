@@ -1949,7 +1949,7 @@ public class TournamentPrinting implements Printable {
                     strSS2 += "Split and Slip";
                 }
                 if (paiPS.getPaiMaAdditionalPlacementCritSystem2() != PlacementParameterSet.PLA_CRIT_NUL) {
-                    strSS2 += "with_additional_criterion_on"
+                    strSS2 += " " + "with additional criterion on" + " "
                             + PlacementParameterSet.criterionLongName(paiPS.getPaiMaAdditionalPlacementCritSystem2());
                 }
                 g.drawString(strSS2, x, y);

@@ -231,11 +231,12 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         txfLastRoundForSeedSystem1 = new javax.swing.JTextField();
         jLabel20 = new javax.swing.JLabel();
         pnlEarlier = new javax.swing.JPanel();
-        ckbAddSortOnRating = new javax.swing.JCheckBox();
+        ckbFormerAddSortOnRating = new javax.swing.JCheckBox();
         rdbFormerSplitAndRandom = new javax.swing.JRadioButton();
         rdbFormerSplitAndFold = new javax.swing.JRadioButton();
         rdbFormerSplitAndSlip = new javax.swing.JRadioButton();
         pnlLater = new javax.swing.JPanel();
+        ckbLaterAddSortOnRating = new javax.swing.JCheckBox();
         rdbLatterSplitAndRandom = new javax.swing.JRadioButton();
         rdbLatterSplitAndFold = new javax.swing.JRadioButton();
         rdbLatterSplitAndSlip = new javax.swing.JRadioButton();
@@ -463,7 +464,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         getContentPane().add(btnClose);
-        btnClose.setBounds(470, 490, 300, 30);
+        btnClose.setBounds(470, 480, 300, 30);
 
         pnlGen.setLayout(null);
 
@@ -1357,18 +1358,18 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         pnlEarlier.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Earlier rounds", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 10))); // NOI18N
         pnlEarlier.setLayout(null);
 
-        ckbAddSortOnRating.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        ckbAddSortOnRating.setSelected(true);
-        ckbAddSortOnRating.setText("Add a sorting on rating ");
-        ckbAddSortOnRating.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
-        ckbAddSortOnRating.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        ckbAddSortOnRating.addFocusListener(new java.awt.event.FocusAdapter() {
+        ckbFormerAddSortOnRating.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        ckbFormerAddSortOnRating.setSelected(true);
+        ckbFormerAddSortOnRating.setText("Add a sorting on rating ");
+        ckbFormerAddSortOnRating.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        ckbFormerAddSortOnRating.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        ckbFormerAddSortOnRating.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
-                ckbAddSortOnRatingFocusLost(evt);
+                ckbFormerAddSortOnRatingFocusLost(evt);
             }
         });
-        pnlEarlier.add(ckbAddSortOnRating);
-        ckbAddSortOnRating.setBounds(10, 20, 200, 13);
+        pnlEarlier.add(ckbFormerAddSortOnRating);
+        ckbFormerAddSortOnRating.setBounds(10, 20, 200, 13);
 
         grpSeedingFormer.add(rdbFormerSplitAndRandom);
         rdbFormerSplitAndRandom.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
@@ -1415,6 +1416,19 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
 
         pnlLater.setBorder(javax.swing.BorderFactory.createTitledBorder(null, "Later rounds", javax.swing.border.TitledBorder.DEFAULT_JUSTIFICATION, javax.swing.border.TitledBorder.DEFAULT_POSITION, new java.awt.Font("Tahoma", 0, 10))); // NOI18N
         pnlLater.setLayout(null);
+
+        ckbLaterAddSortOnRating.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        ckbLaterAddSortOnRating.setSelected(true);
+        ckbLaterAddSortOnRating.setText("Add a sorting on rating ");
+        ckbLaterAddSortOnRating.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        ckbLaterAddSortOnRating.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        ckbLaterAddSortOnRating.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                ckbLaterAddSortOnRatingFocusLost(evt);
+            }
+        });
+        pnlLater.add(ckbLaterAddSortOnRating);
+        ckbLaterAddSortOnRating.setBounds(10, 20, 140, 13);
 
         grpSeedingLatter.add(rdbLatterSplitAndRandom);
         rdbLatterSplitAndRandom.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
@@ -1740,7 +1754,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         tpnParameters.addTab("Team placement", pnlTPL);
 
         getContentPane().add(tpnParameters);
-        tpnParameters.setBounds(3, 0, 790, 480);
+        tpnParameters.setBounds(3, 0, 790, 470);
 
         btnPrint.setText("Print ...");
         btnPrint.addActionListener(new java.awt.event.ActionListener() {
@@ -1749,7 +1763,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         getContentPane().add(btnPrint);
-        btnPrint.setBounds(20, 490, 430, 30);
+        btnPrint.setBounds(20, 480, 430, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -2111,7 +2125,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         }
     }//GEN-LAST:event_rdbSeedSystemFocusLost
 
-    private void ckbAddSortOnRatingFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_ckbAddSortOnRatingFocusLost
+    private void ckbFormerAddSortOnRatingFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_ckbFormerAddSortOnRatingFocusLost
         TournamentParameterSet tps;
         GeneralParameterSet gps = null;
         PairingParameterSet paiPS;
@@ -2123,7 +2137,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             return;
         }
         int oldPaiMaAdditionalPlacementCritSystem1 = paiPS.getPaiMaAdditionalPlacementCritSystem1();
-        int newPaiMaAdditionalPlacementCritSystem1 = this.ckbAddSortOnRating.isSelected() ? 
+        int newPaiMaAdditionalPlacementCritSystem1 = this.ckbFormerAddSortOnRating.isSelected() ? 
             PlacementParameterSet.PLA_CRIT_RATING : 0;
         
         if (newPaiMaAdditionalPlacementCritSystem1 != oldPaiMaAdditionalPlacementCritSystem1){
@@ -2135,7 +2149,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
                 Logger.getLogger(JFrTournamentOptions.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-    }//GEN-LAST:event_ckbAddSortOnRatingFocusLost
+    }//GEN-LAST:event_ckbFormerAddSortOnRatingFocusLost
 
     private void txfLastRoundForSeedSystem1FocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txfLastRoundForSeedSystem1FocusLost
         TournamentParameterSet tps;
@@ -3033,6 +3047,32 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         // TODO add your handling code here:
     }//GEN-LAST:event_cbxTeamCrit5ActionPerformed
 
+    private void ckbLaterAddSortOnRatingFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_ckbLaterAddSortOnRatingFocusLost
+        TournamentParameterSet tps;
+        GeneralParameterSet gps = null;
+        PairingParameterSet paiPS;
+        try {
+            tps = tournament.getTournamentParameterSet();
+            paiPS = tps.getPairingParameterSet();
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrTournamentOptions.class.getName()).log(Level.SEVERE, null, ex);
+            return;
+        }
+        int oldPaiMaAdditionalPlacementCritSystem2 = paiPS.getPaiMaAdditionalPlacementCritSystem2();
+        int newPaiMaAdditionalPlacementCritSystem2 = this.ckbLaterAddSortOnRating.isSelected() ? 
+            PlacementParameterSet.PLA_CRIT_RATING : 0;
+        
+        if (newPaiMaAdditionalPlacementCritSystem2 != oldPaiMaAdditionalPlacementCritSystem2){
+            paiPS.setPaiMaAdditionalPlacementCritSystem2(newPaiMaAdditionalPlacementCritSystem2);
+            try {
+                tournament.setTournamentParameterSet(tps);
+                this.tournamentChanged();
+            } catch (RemoteException ex) {
+                Logger.getLogger(JFrTournamentOptions.class.getName()).log(Level.SEVERE, null, ex);
+            }
+        }
+    }//GEN-LAST:event_ckbLaterAddSortOnRatingFocusLost
+
     private void updHdBase(){
         TournamentParameterSet tps;
         try {
@@ -3385,9 +3425,10 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         this.ckbAvoidMixingCategories.setSelected(paiPS.getPaiMaAvoidMixingCategories() != 0);
         this.ckbMinimizeScoreDifference.setSelected(paiPS.getPaiMaMinimizeScoreDifference() != 0);
         this.txfLastRoundForSeedSystem1.setText("" + (paiPS.getPaiMaLastRoundForSeedSystem1() + 1));
-        this.ckbAddSortOnRating.setSelected(
+        this.ckbFormerAddSortOnRating.setSelected(
                 paiPS.getPaiMaAdditionalPlacementCritSystem1() == PlacementParameterSet.PLA_CRIT_RATING);
-        
+        this.ckbLaterAddSortOnRating.setSelected(
+                paiPS.getPaiMaAdditionalPlacementCritSystem2() == PlacementParameterSet.PLA_CRIT_RATING);    
         if (paiPS.getPaiMaSeedSystem1() == PairingParameterSet.PAIMA_SEED_SPLITANDRANDOM)
             this.rdbFormerSplitAndRandom.setSelected(true);
         if (paiPS.getPaiMaSeedSystem1() == PairingParameterSet.PAIMA_SEED_SPLITANDFOLD)
@@ -3585,7 +3626,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
     private javax.swing.JComboBox<String> cbxTeamCrit4;
     private javax.swing.JComboBox<String> cbxTeamCrit5;
     private javax.swing.JComboBox<String> cbxTeamCrit6;
-    private javax.swing.JCheckBox ckbAddSortOnRating;
     private javax.swing.JCheckBox ckbAvoid2DUDD;
     private javax.swing.JCheckBox ckbAvoidMixingCategories;
     private javax.swing.JCheckBox ckbAvoidPairingSamePair;
@@ -3593,6 +3633,8 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
     private javax.swing.JCheckBox ckbCompensate;
     private javax.swing.JCheckBox ckbCountNPG;
     private javax.swing.JCheckBox ckbDeterministic;
+    private javax.swing.JCheckBox ckbFormerAddSortOnRating;
+    private javax.swing.JCheckBox ckbLaterAddSortOnRating;
     private javax.swing.JCheckBox ckbMinimizeScoreDifference;
     private javax.swing.JCheckBox ckbResetParameters;
     private javax.swing.JCheckBox ckbRoundDown;

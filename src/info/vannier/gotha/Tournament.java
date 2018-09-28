@@ -1452,22 +1452,18 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
         byePlayers[roundNumber] = null;
         this.setChangeSinceLastSave(true);
     }
-
-    /**
-     * renumber tables according to best MMS as found in hmScoredPlayers
-     */
+    
     @Override
-    public void renumberTablesByBestMMS(int roundNumber, ArrayList<Game> alGamesToRenumber) throws RemoteException {
+    public void renumberTablesByBestScore(int roundNumber, ArrayList<Game> alGamesToRenumber) throws RemoteException{
         fillBaseScoringInfoIfNecessary();
-        Collections.sort(alGamesToRenumber, new GameComparator(GameComparator.BEST_MMS_ORDER, hmScoredPlayers));
+        PlacementParameterSet pps = this.getTournamentParameterSet().getPlacementParameterSet();
+        Collections.sort(alGamesToRenumber, new GameComparator(GameComparator.BEST_SCO_ORDER, hmScoredPlayers, pps));
 
         // Remove games from hmGames
         for (Game g : alGamesToRenumber) {
             try {
                 removeGame(g);
-            } catch (RemoteException ex) {
-                Logger.getLogger(Tournament.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (TournamentException ex) {
+            } catch (RemoteException | TournamentException ex) {
                 Logger.getLogger(Tournament.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
@@ -1498,7 +1494,7 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
                 }
             }
         }
-        this.setChangeSinceLastSave(true);
+        this.setChangeSinceLastSave(true);        
     }
 
     @Override

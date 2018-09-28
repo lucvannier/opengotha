@@ -34,8 +34,8 @@ public class Gotha {
 
     static Locale locale = Locale.getDefault();
     static final long GOTHA_VERSION = 346L;
-    static final long GOTHA_MINOR_VERSION = 2L;
-    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2018, Calendar.JULY, 2)).getTime();
+    static final long GOTHA_MINOR_VERSION = 4L;
+    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2018, Calendar.SEPTEMBER, 10)).getTime();
     // Data version for serialization. Since 3.23 version, not used because xml and compatibility is always granted in both senses
     static final long GOTHA_DATA_VERSION = 201L;
     
@@ -132,9 +132,9 @@ public class Gotha {
         str += "\nOther contributors are Alan Abramson, Paul Baratou, Jonathan M Bresler, Claude Brisson,";
         str += "\nClaude Burvenich, Barkın Çelebican, Laurent Coquelet, Loïc Cuvillon, Ian Davis";
         str += "\nTilo Dickopp, Olivier Dulac, André Engels, Krzysztof Grabowski, Bart Jacob, Marc Krauth,";
-        str += "\nRoland Lezuo, Fabien Lips, Damien Martin-Guillerez, Guillaume Largounez, Richard Mullens,";
-        str += "\nFrançois Mizessyn, Konstantin Pelepelin, Sylvain Ravera, Wandrille Sacquépée,";
-        str += "\nGrzegorz Sobański, Tuomo Salo, Rémi Vannier, Rory Wales and many others.";
+        str += "\nRoland Lezuo, Fabien Lips, Guillaume Largounez, Richard Mullens, François Mizessyn,";
+        str += "\nKonstantin Pelepelin, Sylvain Ravera, Wandrille Sacquépée, Grzegorz Sobański,";
+        str += "\nTuomo Salo, Rémi Vannier, Rory Wales and many others.";
         str += "\n\nThanks to all of them !";
 
         return str;

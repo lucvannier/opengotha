@@ -1,3 +1,12 @@
+OpenGothaV3.46.04
+*****************
+28/09/2018
+            Add a sorting possibility for later rounds
+Bug Fix     The seeding system in later rounds was not correctly saved into xml file. Fixed
+New         In Players .. Update ratings frame, a new popup menu to sort players
+New         Tables numbers are now given, by default, according to best score
+            Update remote tournaments naming system
+
 OpenGothaV3.46.02
 *****************
 02/07/2018

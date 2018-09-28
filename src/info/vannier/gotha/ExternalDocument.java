@@ -3437,8 +3437,9 @@ public class ExternalDocument {
                 strPaiMaSeedSystem1 = "SPLITANDFOLD";
         }
         emPairingParameterSet.setAttribute("paiMaSeedSystem1", strPaiMaSeedSystem1);
+
         String strPaiMaSeedSystem2;
-        switch (paiPS.getPaiMaSeedSystem1()) {
+        switch (paiPS.getPaiMaSeedSystem2()) {
             case PairingParameterSet.PAIMA_SEED_SPLITANDRANDOM:
                 strPaiMaSeedSystem2 = "SPLITANDRANDOM";
                 break;
@@ -3451,7 +3452,8 @@ public class ExternalDocument {
             default:
                 strPaiMaSeedSystem2 = "SPLITANDFOLD";
         }
-        emPairingParameterSet.setAttribute("paiMaSeedSystem1", strPaiMaSeedSystem2);
+        emPairingParameterSet.setAttribute("paiMaSeedSystem2", strPaiMaSeedSystem2);
+
         emPairingParameterSet.setAttribute("paiMaAdditionalPlacementCritSystem1",
                 PlacementParameterSet.criterionLongName(paiPS.getPaiMaAdditionalPlacementCritSystem1()));
         emPairingParameterSet.setAttribute("paiMaAdditionalPlacementCritSystem2",

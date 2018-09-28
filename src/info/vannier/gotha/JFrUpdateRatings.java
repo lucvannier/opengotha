@@ -6,6 +6,7 @@ package info.vannier.gotha;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.awt.event.InputEvent;
 import java.io.File;
 import java.io.IOException;
 import java.net.MalformedURLException;
@@ -223,6 +224,12 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
     private void initComponents() {
 
         grpRatingList = new javax.swing.ButtonGroup();
+        pupRegisteredPlayers = new javax.swing.JPopupMenu();
+        mniSortByName = new javax.swing.JMenuItem();
+        mniSortByRank = new javax.swing.JMenuItem();
+        mniSortByRating = new javax.swing.JMenuItem();
+        jSeparator5 = new javax.swing.JPopupMenu.Separator();
+        mniCancel = new javax.swing.JMenuItem();
         btnHelp = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
         pnlPlayersList = new javax.swing.JPanel();
@@ -239,6 +246,42 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         rdbEGF = new javax.swing.JRadioButton();
         rdbFFG = new javax.swing.JRadioButton();
         rdbAGA = new javax.swing.JRadioButton();
+
+        pupRegisteredPlayers.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+
+        mniSortByName.setText("Sort by name");
+        mniSortByName.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mniSortByNameActionPerformed(evt);
+            }
+        });
+        pupRegisteredPlayers.add(mniSortByName);
+
+        mniSortByRank.setText("Sort by rank");
+        mniSortByRank.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mniSortByRankActionPerformed(evt);
+            }
+        });
+        pupRegisteredPlayers.add(mniSortByRank);
+
+        mniSortByRating.setText("Sort by rating");
+        mniSortByRating.setActionCommand("Sort by rating");
+        mniSortByRating.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mniSortByRatingActionPerformed(evt);
+            }
+        });
+        pupRegisteredPlayers.add(mniSortByRating);
+        pupRegisteredPlayers.add(jSeparator5);
+
+        mniCancel.setText("Cancel");
+        mniCancel.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mniCancelActionPerformed(evt);
+            }
+        });
+        pupRegisteredPlayers.add(mniCancel);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Update ratings");
@@ -437,45 +480,53 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
     }//GEN-LAST:event_tblPlayersComponentMoved
 
     private void tblPlayersMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_tblPlayersMouseClicked
-        int r = tblPlayers.rowAtPoint(evt.getPoint());
-        int c = tblPlayers.columnAtPoint(evt.getPoint());
-        
-        activeRow = r;
-        if (c != JFrUpdateRatings.RATINGLIST_COL ||
-                r < 0){
-            cbxRatingList.setVisible(false);
-            return;
+        if (evt.getModifiers() == InputEvent.BUTTON1_MASK){
+            int r = tblPlayers.rowAtPoint(evt.getPoint());
+            int c = tblPlayers.columnAtPoint(evt.getPoint());
+
+            activeRow = r;
+            if (c != JFrUpdateRatings.RATINGLIST_COL ||
+                    r < 0){
+                cbxRatingList.setVisible(false);
+                return;
+            }
+
+            Rectangle rect = this.tblPlayers.getCellRect(r, c, true);
+            int headerHeight = tblPlayers.getTableHeader().getHeight();
+            Point pCel_TBL = new Point(rect.x, rect.y + headerHeight);
+
+            Point pTBL_SCP = tblPlayers.getLocation();
+            Point pCel_SCP = new Point(pCel_TBL.x + pTBL_SCP.x, pCel_TBL.y + pTBL_SCP.y);
+
+            Point pSCP_PNL = scpPlayers.getLocation();
+            Point pCel_PNL = new Point(pCel_SCP.x + pSCP_PNL.x, pCel_SCP.y + pSCP_PNL.y);
+
+            cbxRatingList.setLocation(pCel_PNL);
+            cbxRatingList.setVisible(true);
+
+            // Search for a rated player
+            DefaultTableModel model = (DefaultTableModel)tblPlayers.getModel();
+            String egfPin = (String)model.getValueAt(r, JFrUpdateRatings.PLAYERID_COL);
+            RatedPlayer rp = ratingList.getRatedPlayer(egfPin);
+            if (rp == null){
+                String name = (String)model.getValueAt(r, JFrUpdateRatings.NAME_COL);
+                String firstName = (String)model.getValueAt(r, JFrUpdateRatings.FIRSTNAME_COL);
+                rp = ratingList.getRatedPlayer(name, firstName);
+                updateRLCellsWithRP(r, rp);
+            }        
+            int index = 0;
+            if (rp!= null)index = ratingList.indexOf(rp) + 1;
+            cbxRatingList.setSelectedIndex(index);
+
+            cbxRatingList.setEnabled(true);
+            cbxRatingList.requestFocusInWindow();
         }
         
-        Rectangle rect = this.tblPlayers.getCellRect(r, c, true);
-        int headerHeight = tblPlayers.getTableHeader().getHeight();
-        Point pCel_TBL = new Point(rect.x, rect.y + headerHeight);
-        
-        Point pTBL_SCP = tblPlayers.getLocation();
-        Point pCel_SCP = new Point(pCel_TBL.x + pTBL_SCP.x, pCel_TBL.y + pTBL_SCP.y);
-        
-        Point pSCP_PNL = scpPlayers.getLocation();
-        Point pCel_PNL = new Point(pCel_SCP.x + pSCP_PNL.x, pCel_SCP.y + pSCP_PNL.y);
-        
-        cbxRatingList.setLocation(pCel_PNL);
-        cbxRatingList.setVisible(true);
-        
-        // Search for a rated player
-        DefaultTableModel model = (DefaultTableModel)tblPlayers.getModel();
-        String egfPin = (String)model.getValueAt(r, JFrUpdateRatings.PLAYERID_COL);
-        RatedPlayer rp = ratingList.getRatedPlayer(egfPin);
-        if (rp == null){
-            String name = (String)model.getValueAt(r, JFrUpdateRatings.NAME_COL);
-            String firstName = (String)model.getValueAt(r, JFrUpdateRatings.FIRSTNAME_COL);
-            rp = ratingList.getRatedPlayer(name, firstName);
-            updateRLCellsWithRP(r, rp);
-        }        
-        int index = 0;
-        if (rp!= null)index = ratingList.indexOf(rp) + 1;
-        cbxRatingList.setSelectedIndex(index);
-        
-        cbxRatingList.setEnabled(true);
-        cbxRatingList.requestFocusInWindow();
+        // Right click
+        if (evt.getModifiers() != InputEvent.BUTTON3_MASK) return;
+        Point p = evt.getLocationOnScreen();
+        pupRegisteredPlayers.setLocation(p);
+        pupRegisteredPlayers.setVisible(true);     
     }//GEN-LAST:event_tblPlayersMouseClicked
 
     private void updateRLCellsWithRP(int row, RatedPlayer rp){
@@ -706,6 +757,41 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
         cleanClose();
     }//GEN-LAST:event_formWindowClosing
 
+    private void mniSortByNameActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniSortByNameActionPerformed
+        playersSortType = PlayerComparator.NAME_ORDER;
+        pupRegisteredPlayers.setVisible(false);
+        try{
+            updatePnlPlayers(tournament.playersList());
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrPlayersQuickCheck.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_mniSortByNameActionPerformed
+
+    private void mniSortByRankActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniSortByRankActionPerformed
+        playersSortType = PlayerComparator.RANK_ORDER;
+        pupRegisteredPlayers.setVisible(false);
+        try{
+            updatePnlPlayers(tournament.playersList());
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrPlayersQuickCheck.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_mniSortByRankActionPerformed
+
+    private void mniCancelActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniCancelActionPerformed
+        this.pupRegisteredPlayers.setVisible(false);
+        this.tblPlayers.removeRowSelectionInterval(0, tblPlayers.getRowCount() - 1);
+    }//GEN-LAST:event_mniCancelActionPerformed
+
+    private void mniSortByRatingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniSortByRatingActionPerformed
+        playersSortType = PlayerComparator.RATING_ORDER;
+        pupRegisteredPlayers.setVisible(false);
+        try{
+            updatePnlPlayers(tournament.playersList());
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrPlayersQuickCheck.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_mniSortByRatingActionPerformed
+
     private void resetRatingListControls() {                
         int rlType = RatingList.TYPE_UNDEFINED;
         
@@ -796,9 +882,15 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
     private javax.swing.JComboBox<String> cbxRatingList;
     private javax.swing.ButtonGroup grpRatingList;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JPopupMenu.Separator jSeparator5;
     private javax.swing.JLabel lblRatingList;
+    private javax.swing.JMenuItem mniCancel;
+    private javax.swing.JMenuItem mniSortByName;
+    private javax.swing.JMenuItem mniSortByRank;
+    private javax.swing.JMenuItem mniSortByRating;
     private javax.swing.JProgressBar pgbRatingList;
     private javax.swing.JPanel pnlPlayersList;
+    private javax.swing.JPopupMenu pupRegisteredPlayers;
     private javax.swing.JRadioButton rdbAGA;
     private javax.swing.JRadioButton rdbEGF;
     private javax.swing.JRadioButton rdbFFG;

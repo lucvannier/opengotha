@@ -8,12 +8,12 @@
         <Property name="useNullLayout" type="boolean" value="true"/>
       </Layout>
       <SubComponents>
-        <MenuItem class="javax.swing.JMenuItem" name="mniRenumberTables">
+        <MenuItem class="javax.swing.JMenuItem" name="mniRenumberTablesByBestScore">
           <Properties>
-            <Property name="text" type="java.lang.String" value="Renumber all tables by MMS"/>
+            <Property name="text" type="java.lang.String" value="Renumber all tables by best score"/>
           </Properties>
           <Events>
-            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mniRenumberTablesActionPerformed"/>
+            <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mniRenumberTablesByBestScoreActionPerformed"/>
           </Events>
         </MenuItem>
         <MenuItem class="javax.swing.JMenuItem" name="mniChangeTableNumber">

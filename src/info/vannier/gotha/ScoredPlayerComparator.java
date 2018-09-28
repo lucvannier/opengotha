@@ -20,6 +20,13 @@ class ScoredPlayerComparator implements Comparator<ScoredPlayer>, Serializable{
         this.bKeepExAequo = bKeepExAequo;
     }
 
+    public ScoredPlayerComparator(PlacementParameterSet pps, int roundNumber, boolean bKeepExAequo){
+        criterion = pps.getPlaCriteria();
+        this.roundNumber = roundNumber;
+        this.bKeepExAequo = bKeepExAequo;
+    }
+    
+    
     @Override
     public int compare(ScoredPlayer sP1, ScoredPlayer sP2){
         int result = betterByScore(sP1, sP2);

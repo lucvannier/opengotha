@@ -388,8 +388,6 @@ public class JFrGamesPair extends javax.swing.JFrame {
 
             model.addRow(row);
         }
-
-
     }
 
     private void fillGamesTable(ArrayList<Game> alG, JTable tblG) {
@@ -527,7 +525,7 @@ public class JFrGamesPair extends javax.swing.JFrame {
     private void initComponents() {
 
         pupGames = new javax.swing.JPopupMenu();
-        mniRenumberTables = new javax.swing.JMenuItem();
+        mniRenumberTablesByBestScore = new javax.swing.JMenuItem();
         mniChangeTableNumber = new javax.swing.JMenuItem();
         mniShiftTables = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JSeparator();
@@ -597,13 +595,13 @@ public class JFrGamesPair extends javax.swing.JFrame {
         txfSearchPlayer = new javax.swing.JTextField();
         btnSearch = new javax.swing.JButton();
 
-        mniRenumberTables.setText("Renumber all tables by MMS");
-        mniRenumberTables.addActionListener(new java.awt.event.ActionListener() {
+        mniRenumberTablesByBestScore.setText("Renumber all tables by best score");
+        mniRenumberTablesByBestScore.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mniRenumberTablesActionPerformed(evt);
+                mniRenumberTablesByBestScoreActionPerformed(evt);
             }
         });
-        pupGames.add(mniRenumberTables);
+        pupGames.add(mniRenumberTablesByBestScore);
 
         mniChangeTableNumber.setText("Change table number");
         mniChangeTableNumber.addActionListener(new java.awt.event.ActionListener() {
@@ -1143,20 +1141,6 @@ public class JFrGamesPair extends javax.swing.JFrame {
         }
     }//GEN-LAST:event_btnByePlayerActionPerformed
 
-    /**
-     * For Debug
-     */
-    private void mniRenumberTablesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniRenumberTablesActionPerformed
-        pupGames.setVisible(false);
-        try {
-            tournament.renumberTablesByBestMMS(processedRoundNumber, this.selectedGamesList());
-//            tournament.renumberTables(processedRoundNumber);
-            this.tournamentChanged();
-        } catch (RemoteException ex) {
-            Logger.getLogger(JFrGamesPair.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_mniRenumberTablesActionPerformed
-
     private void mniExchangeColorsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniExchangeColorsActionPerformed
         pupGames.setVisible(false);
         ArrayList<Game> alSelectedGames = selectedGamesList();
@@ -1379,7 +1363,7 @@ public class JFrGamesPair extends javax.swing.JFrame {
 
         // Renumber tables inside alNewGames
         try {
-            tournament.renumberTablesByBestMMS(processedRoundNumber, alNewGames);
+            tournament.renumberTablesByBestScore(processedRoundNumber, alNewGames);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGamesPair.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1707,6 +1691,16 @@ public class JFrGamesPair extends javax.swing.JFrame {
         cleanClose();
     }//GEN-LAST:event_formWindowClosing
 
+    private void mniRenumberTablesByBestScoreActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniRenumberTablesByBestScoreActionPerformed
+        pupGames.setVisible(false);
+        try {
+            tournament.renumberTablesByBestScore(processedRoundNumber, this.selectedGamesList());
+            this.tournamentChanged();
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrGamesPair.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_mniRenumberTablesByBestScoreActionPerformed
+
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnByePlayer;
@@ -1748,7 +1742,7 @@ public class JFrGamesPair extends javax.swing.JFrame {
     private javax.swing.JMenuItem mniChangeTableNumber;
     private javax.swing.JMenuItem mniExchangeColors;
     private javax.swing.JMenuItem mniModifyHandicap;
-    private javax.swing.JMenuItem mniRenumberTables;
+    private javax.swing.JMenuItem mniRenumberTablesByBestScore;
     private javax.swing.JMenuItem mniShiftTables;
     private javax.swing.JMenuItem mniSortByName;
     private javax.swing.JMenuItem mniSortByRank;

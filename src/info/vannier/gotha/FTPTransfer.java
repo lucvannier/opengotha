@@ -38,14 +38,20 @@ public class FTPTransfer {
     // upload f to OG site
     public static String uploadByFTPToOGSite(TournamentInterface tournament, File f) {
         GeneralParameterSet gps = null;
+        // What directory ?
         String shortName = "defaultTournament";
+        
          try {
              gps = tournament.getTournamentParameterSet().getGeneralParameterSet();
              shortName = gps.getShortName();
          } catch (RemoteException ex) {
              Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
          }
-        
+        String strBeginDate = new SimpleDateFormat("yyyyMMdd").format(gps.getBeginDate());
+        String dirName = strBeginDate + "_" + shortName;
+        String strCurDate = new SimpleDateFormat("yyyyMMddhhmmss").format(new Date());
+        String filName = strCurDate + "_" + shortName;
+    
         FTPClient client = null;
         try {
             client = connectToFTPOGSite();
@@ -53,20 +59,51 @@ public class FTPTransfer {
             Logger.getLogger(TournamentPublishing.class.getName()).log(Level.SEVERE, null, ex);
              return "Error - FTP connection has failed";
         }
-        String dirName;
-        dirName = new SimpleDateFormat("yyyyMMdd").format(gps.getBeginDate()) + shortName + new SimpleDateFormat("yyyyMMdd_HHmmss").format(new Date());
             
         try {
             client.createDirectory(dirName);
-            client.changeDirectory(dirName);
-            client.upload(f);
-        } catch (FileNotFoundException ex) {
+        } catch (IllegalStateException ex) {
             Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPDataTransferException | FTPAbortedException | IllegalStateException | FTPIllegalReplyException | FTPException ex) {
+        } catch (FTPIllegalReplyException ex) {
             Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FTPException ex) {
+            System.out.println("Directory already exists");
+//            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
             Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
         }
+
+        try {
+            client.changeDirectory(dirName);
+        } catch (IllegalStateException ex) {
+            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FTPIllegalReplyException ex) {
+            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FTPException ex) {
+            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);            
+        }
+       
+        File fil = new File(filName);
+        try {
+            client.upload(f);
+            client.rename(f.getName(), fil.getName());
+        } catch (IllegalStateException ex) {
+            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (IOException ex) {
+            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FTPIllegalReplyException ex) {
+            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FTPException ex) {
+            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FTPDataTransferException ex) {
+            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (FTPAbortedException ex) {
+            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
+        }
+            
+
         
        try {
             client.disconnect(true);

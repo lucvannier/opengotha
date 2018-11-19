@@ -13,7 +13,9 @@ import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.rmi.RemoteException;
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Vector;
 import java.util.logging.Level;
@@ -1181,12 +1183,19 @@ public class JFrPlayersManager extends javax.swing.JFrame {
     }//GEN-LAST:event_rdbFirstCharactersActionPerformed
 
     private void cbxRatingListItemStateChanged(java.awt.event.ItemEvent evt) {//GEN-FIRST:event_cbxRatingListItemStateChanged
+//        SimpleDateFormat dateFormat = new SimpleDateFormat("hh:mm:ss:SSS");
+//        Calendar calendar = Calendar.getInstance();
+//        System.out.println("Debut : " + dateFormat.format(calendar.getTime()));
+
         int index = cbxRatingList.getSelectedIndex();
         if (index <= 0) {
             resetPlayerControls();
         } else {
             updatePlayerControlsFromRatingList(index - 1);
         }
+//        dateFormat = new SimpleDateFormat("hh:mm:ss:SSS");
+//        calendar = Calendar.getInstance();
+//        System.out.println("Fin : " + dateFormat.format(calendar.getTime()));
     }//GEN-LAST:event_cbxRatingListItemStateChanged
 
     // See also JFrRatings.useRatingList, which should stay a clone

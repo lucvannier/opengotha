@@ -143,7 +143,6 @@ public class JFrGothaStart extends javax.swing.JFrame {
         }
 
         if (grpRunningMode.getSelection() == this.rdbServer.getModel()) {
-
             String strIPAd = Gotha.getBestIPAd().toString();
             strIPAd = strIPAd.replace("/", "");
             strIPAd = JOptionPane.showInputDialog("Please, enter IP address of this server in Dot-decimal notation (xxx.xxx.xxx.xxx)", strIPAd);
@@ -197,7 +196,7 @@ public class JFrGothaStart extends javax.swing.JFrame {
         LogElements.incrementElement("gotha.runningmode", strRM);
 
         try {
-            new JFrGotha(tournament).setVisible(true);
+            new JFrGotha(tournament).setVisible(true);            
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGothaStart.class.getName()).log(Level.SEVERE, null, ex);
         }

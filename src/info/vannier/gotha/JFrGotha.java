@@ -95,6 +95,15 @@ public class JFrGotha extends javax.swing.JFrame {
                 if (f.canRead()) {
                     try {
                         openTournament(f);
+                        String strFN = f.getAbsolutePath();
+//                        System.out.println("strFN = " + strFN);
+                        long ldh = f.lastModified();
+                        Date dh = new Date(ldh);
+                        String strDH = dh.toString();
+//                        System.out.println("strDH = " + strDH);
+                        String strMes = "Tournament has been opened from file : " + strFN + "\nLast modified : " + strDH; 
+                        JOptionPane.showMessageDialog(this, strMes, "Message", JOptionPane.INFORMATION_MESSAGE);
+
                     } catch (Exception ex) {
                         System.out.println("Problem opening file : " + f.getName());
                     }
@@ -253,17 +262,15 @@ public class JFrGotha extends javax.swing.JFrame {
         mniSaveACopy = new javax.swing.JMenuItem();
         mniClose = new javax.swing.JMenuItem();
         jSeparator1 = new javax.swing.JSeparator();
+        mniBuildTestTournament = new javax.swing.JMenuItem();
+        jSeparator4 = new javax.swing.JSeparator();
         mnuImport = new javax.swing.JMenu();
         mniImportH9 = new javax.swing.JMenuItem();
         mniImportTou = new javax.swing.JMenuItem();
-        mniImportWallist = new javax.swing.JMenuItem();
-        mniImportVBS = new javax.swing.JMenuItem();
         mniImportXML = new javax.swing.JMenuItem();
         mniExport = new javax.swing.JMenuItem();
         jSeparator2 = new javax.swing.JSeparator();
         mniExit = new javax.swing.JMenuItem();
-        jSeparator4 = new javax.swing.JSeparator();
-        mniBuildTestTournament = new javax.swing.JMenuItem();
         mnuPlayers = new javax.swing.JMenu();
         mniPlayersManager = new javax.swing.JMenuItem();
         mniPlayersQuickCheck = new javax.swing.JMenuItem();
@@ -1018,6 +1025,16 @@ public class JFrGotha extends javax.swing.JFrame {
         mnuTournament.add(mniClose);
         mnuTournament.add(jSeparator1);
 
+        mniBuildTestTournament.setFont(new java.awt.Font("Arial", 2, 11)); // NOI18N
+        mniBuildTestTournament.setText("Build test tournament");
+        mniBuildTestTournament.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mniBuildTestTournamentActionPerformed(evt);
+            }
+        });
+        mnuTournament.add(mniBuildTestTournament);
+        mnuTournament.add(jSeparator4);
+
         mnuImport.setText("Import ...");
         mnuImport.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
 
@@ -1038,24 +1055,6 @@ public class JFrGotha extends javax.swing.JFrame {
             }
         });
         mnuImport.add(mniImportTou);
-
-        mniImportWallist.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        mniImportWallist.setText("Import Players and Games from Wallist file");
-        mniImportWallist.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mniImportWallistActionPerformed(evt);
-            }
-        });
-        mnuImport.add(mniImportWallist);
-
-        mniImportVBS.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        mniImportVBS.setText("Import Players From vBar-separated File");
-        mniImportVBS.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mniImportVBSActionPerformed(evt);
-            }
-        });
-        mnuImport.add(mniImportVBS);
 
         mniImportXML.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
         mniImportXML.setText("Import Tournament from XML File");
@@ -1086,16 +1085,6 @@ public class JFrGotha extends javax.swing.JFrame {
             }
         });
         mnuTournament.add(mniExit);
-        mnuTournament.add(jSeparator4);
-
-        mniBuildTestTournament.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        mniBuildTestTournament.setText("Build test tournament");
-        mniBuildTestTournament.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mniBuildTestTournamentActionPerformed(evt);
-            }
-        });
-        mnuTournament.add(mniBuildTestTournament);
 
         mnuMain.add(mnuTournament);
 
@@ -2407,6 +2396,8 @@ public class JFrGotha extends javax.swing.JFrame {
      *
      * @return false if operation has been cancelled
      */
+    
+    
     private boolean saveCurrentTournamentIfNecessary() {
         try {
             if (Gotha.runningMode == Gotha.RUNNING_MODE_CLI) {
@@ -2733,7 +2724,7 @@ private void mniImportH9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
     /**
      * imports players and games from a plain file
      *
-     * @param importType either "h9", "tou", or "wallist"
+     * @param importType either "h9", or "tou"
      */
     private void importPlainFile(String importType) {
         if (tournament == null) {
@@ -2798,60 +2789,10 @@ private void mniImportH9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
         this.tournamentChanged();
     }
 
-    /**
-     * imports players from a vBar separated file
-     */
-    private void importVBSFile() {
-        if (tournament == null) {
-            JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-
-        String strExt = "txt";
-        File f = chooseAFile(Gotha.runningDirectory, strExt);
-        if (f == null) {
-            return;
-        }
-        ArrayList<Player> alPlayers = new ArrayList<Player>();
-        ArrayList<Game> alGames = new ArrayList<Game>();
-        try {
-            ExternalDocument.importPlayersFromVBSFile(f, alPlayers);
-        } catch (Exception e) {
-            JOptionPane.showMessageDialog(this, "Errors occured in reading " + f.getName()
-                    + "\nImport process has been aborted", "Message", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        int nbErrors = 0;
-        for (Player p : alPlayers) {
-            try {
-                tournament.addPlayer(p);
-            } catch (RemoteException ex) {
-                Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
-            } catch (TournamentException te) {
-                nbErrors++;
-                if (nbErrors <= 3) {
-                    JOptionPane.showMessageDialog(this, te.getMessage(), "Message", JOptionPane.ERROR_MESSAGE);
-                }
-                if (nbErrors == 4) {
-                    JOptionPane.showMessageDialog(this, "More than 3 errors have been detected", "Message", JOptionPane.ERROR_MESSAGE);
-                }
-            }
-        }
-        if (nbErrors > 0) {
-            JOptionPane.showMessageDialog(this, "Due to errors on players, games have not been imported", "Message", JOptionPane.ERROR_MESSAGE);
-        }
-
-        this.tournamentChanged();
-    }
-
 private void mniPreferencesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniPreferencesActionPerformed
     JFrame jfr = new JFrPreferencesOptions();
     this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
 }//GEN-LAST:event_mniPreferencesActionPerformed
-
-private void mniImportWallistActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniImportWallistActionPerformed
-    this.importPlainFile("wallist");
-}//GEN-LAST:event_mniImportWallistActionPerformed
 
 private void mniTeamsManagerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniTeamsManagerActionPerformed
     if (tournament == null) {
@@ -2943,10 +2884,6 @@ private void mniOpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
     }
 
 }//GEN-LAST:event_mniOpenActionPerformed
-
-private void mniImportVBSActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniImportVBSActionPerformed
-    this.importVBSFile();
-}//GEN-LAST:event_mniImportVBSActionPerformed
 
 private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
     exitOpenGotha();
@@ -3040,7 +2977,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }//GEN-LAST:event_mniPublishActionPerformed
 
     private void mniExportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniExportActionPerformed
-        String strMessage = "Html exports are available from the Publish menu";
+        String strMessage = "Html exports are now available from the Publish menu";
         JOptionPane.showMessageDialog(this, strMessage, "Message", JOptionPane.INFORMATION_MESSAGE);
     }//GEN-LAST:event_mniExportActionPerformed
 
@@ -3325,13 +3262,15 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }
 
     private void exitOpenGotha() {
+        if (tournament == null) System.exit(0);
+        if (Gotha.runningMode == Gotha.RUNNING_MODE_CLI) System.exit(0);
         if (!saveCurrentTournamentIfNecessary()) {
             return;
         }
         if (Gotha.isJournalingReportEnabled()) {
             LogElements.sendLogElements();
             File f =  new File (this.getDefaultSaveAsFileName());
-            FTPTransfer.uploadByFTPToOGSite(tournament, f);
+            if (f.exists()) FTPTransfer.uploadByFTPToOGSite(tournament, f);
         }
         System.exit(0);
     }
@@ -3458,8 +3397,6 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private javax.swing.JMenuItem mniHelpAbout;
     private javax.swing.JMenuItem mniImportH9;
     private javax.swing.JMenuItem mniImportTou;
-    private javax.swing.JMenuItem mniImportVBS;
-    private javax.swing.JMenuItem mniImportWallist;
     private javax.swing.JMenuItem mniImportXML;
     private javax.swing.JMenuItem mniMMGroups;
     private javax.swing.JMenuItem mniMemory;

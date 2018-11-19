@@ -284,7 +284,8 @@ public class PairingParameterSet implements java.io.Serializable{
         paiMaMaximizeSeeding                    =   PAIMA_MAX_MAXIMIZE_SEEDING;      // 10^5
             paiMaLastRoundForSeedSystem1        =   1;
             paiMaSeedSystem1                    =   PAIMA_SEED_SPLITANDRANDOM;                              
-            paiMaSeedSystem2                    =   PAIMA_SEED_SPLITANDFOLD; 
+//            paiMaSeedSystem2                    =   PAIMA_SEED_SPLITANDFOLD; 
+            paiMaSeedSystem2                    =   PAIMA_SEED_SPLITANDSLIP; 
             paiMaAdditionalPlacementCritSystem1 =   PlacementParameterSet.PLA_CRIT_RATING;
             paiMaAdditionalPlacementCritSystem2 =   PlacementParameterSet.PLA_CRIT_NUL;
         

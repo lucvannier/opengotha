@@ -83,17 +83,20 @@ public class TournamentPrinting implements Printable {
     static final int GL_PADDING = 2;
     static final int GL_NBCAR = GL_RES_BEG + GL_RES_LEN + GL_PADDING;
     // RS = Result sheets
-    static final int RS_RSBYPAGE = 2; // Actual number of result sheets by page   
+    static final int RS_RSBYPAGE = 4; // Actual number of result sheets by page   
 //    static final int RS_RS_HEIGHT = 200; // Result sheet height. virtual units. Calibrated for a page of 800 virtual units
-    static final int RS_LINE_HEIGHT = 20; // Line height    
+    static final int RS_LINE_HEIGHT = 24; // Line height    
     static final int RS_TITLE1 = 10;
-    static final int RS_TITLE2 = RS_TITLE1 + RS_LINE_HEIGHT / 2;
-    static final int RS_TABLE = RS_TITLE2 + RS_LINE_HEIGHT * 3 / 2;
-    static final int RS_COLOR = RS_TABLE + RS_LINE_HEIGHT * 3 / 2;
+//    static final int RS_TITLE2 = RS_TITLE1 + RS_LINE_HEIGHT / 2;
+    static final int RS_TITLE2 = RS_TITLE1 + RS_LINE_HEIGHT;
+    static final int RS_TABLE = RS_TITLE2 + RS_LINE_HEIGHT;
+//    static final int RS_COLOR = RS_TABLE + RS_LINE_HEIGHT * 3 / 2;
+    static final int RS_SURROUND = RS_TABLE + RS_LINE_HEIGHT * 3 / 2;
+    static final int RS_COLOR = RS_TABLE + RS_LINE_HEIGHT * 2;
     static final int RS_PLAYERNAME = RS_COLOR + RS_LINE_HEIGHT;
     static final int RS_ID = RS_PLAYERNAME + RS_LINE_HEIGHT;
     static final int RS_SIGN = RS_ID + RS_LINE_HEIGHT;
-    static final int RS_RS_HEIGHT = RS_SIGN + RS_LINE_HEIGHT * 3;
+    static final int RS_RS_HEIGHT = RS_SIGN + RS_LINE_HEIGHT * 3 / 2;
     static final int RS_PAGE_VIRTUAL_HEIGHT = RS_RSBYPAGE * RS_RS_HEIGHT;
     
     static final int RS_PAGE_VIRTUAL_WIDTH = 600;
@@ -1076,10 +1079,20 @@ public class TournamentPrinting implements Printable {
             xT = x3 + TournamentPrinting.RS_LEFTMARGIN * actRatioX1000 /1000;
             g.drawString("Round : " + (game.getRoundNumber() +1), xT, yT);
             
+            yT = y2 + TournamentPrinting.RS_LINE_HEIGHT * actRatioY1000 / 1000 * 2 / 3;
+            
+            String fontName = font.getName();
+            int fontSize = font.getSize();
+            int fontStyle = Font.ITALIC;
+            Font italFont = new Font(fontName, Font.ITALIC, fontSize);
+            g.setFont(italFont);
+            TournamentPrinting.drawCenterAlignedString(g, "Surround winner's name or ½ - ½", x1, x4, yT);
+            g.setFont(font);
+
             // Body
             y1 = yBase + TournamentPrinting.RS_COLOR * actRatioY1000 / 1000;
             y2 = yBase + (TournamentPrinting.RS_SIGN + TournamentPrinting.RS_LINE_HEIGHT) * actRatioY1000 / 1000;
-            g.drawLine(x1, y1, x1, y2); //
+            g.drawLine(x1, y1, x1, y2); 
             g.drawLine(x2, y1, x2, y2);
             g.drawLine(x3, y1, x3, y2);
             g.drawLine(x4, y1, x4, y2);
@@ -1088,12 +1101,13 @@ public class TournamentPrinting implements Printable {
             yT = y1 + TournamentPrinting.RS_LINE_HEIGHT * actRatioY1000 / 1000 * 2 / 3;           
             TournamentPrinting.drawCenterAlignedString(g, "White", x1, x2, yT);
             TournamentPrinting.drawCenterAlignedString(g, "Black", x3, x4, yT);
-            TournamentPrinting.drawCenterAlignedString(g, "Result", x2, x3, yT);
             
             g.setFont(font);
 
             y1 = yBase + TournamentPrinting.RS_PLAYERNAME * actRatioY1000 / 1000;
-            g.drawLine(x1, y1, x4, y1);
+            g.drawLine(x1, y1, x2, y1); 
+            g.drawLine(x3, y1, x4, y1); 
+
             yT = y1 + TournamentPrinting.RS_LINE_HEIGHT * actRatioY1000 / 1000 * 2 / 3; 
       
             Player wP = game.getWhitePlayer();;
@@ -1103,25 +1117,25 @@ public class TournamentPrinting implements Printable {
             FontMetrics fm = g.getFontMetrics(font);
             int wdt = fm.stringWidth(strWP);
             if (wdt > x2 - x1) {
-                String fontName = font.getName();
-                int fontSize = font.getSize();
+                fontName = font.getName();
+                fontSize = font.getSize();
                 fontSize = fontSize * (x2 - x1) / wdt;
-                int fontStyle = font.getStyle();
+                fontStyle = font.getStyle();
                 Font tempFont = new Font(fontName, fontStyle, fontSize);
                 g.setFont(tempFont);
             }           
             TournamentPrinting.drawCenterAlignedString(g, strWP, x1, x2, yT);
             g.setFont(font);
             
-            Player bP = game.getBlackPlayer();;
+            Player bP = game.getBlackPlayer();
             String strBP = bP.augmentedPlayerName(dpps);
             // Adjust font
             wdt = fm.stringWidth(strBP);
             if (wdt > x4 - x3) {
-                String fontName = font.getName();
-                int fontSize = font.getSize();
+                fontName = font.getName();
+                fontSize = font.getSize();
                 fontSize = fontSize * (x2 - x1) / wdt;
-                int fontStyle = font.getStyle();
+                fontStyle = font.getStyle();
                 Font tempFont = new Font(fontName, fontStyle, fontSize);
                 g.setFont(tempFont);
             }           
@@ -1129,7 +1143,7 @@ public class TournamentPrinting implements Printable {
             g.setFont(font);
 
             g.setFont(bigFont);
-            TournamentPrinting.drawCenterAlignedString(g, "O  1 - 0", x2, x3, yT);
+            TournamentPrinting.drawCenterAlignedString(g, "½ - ½", x2, x3, yT);
             g.setFont(font);
             
             y1 = yBase + TournamentPrinting.RS_ID * actRatioY1000 / 1000;
@@ -1140,11 +1154,7 @@ public class TournamentPrinting implements Printable {
             TournamentPrinting.drawCenterAlignedString(g, strId, x1, x2, yT);
             strId = bP.getAnIdString();
             TournamentPrinting.drawCenterAlignedString(g, strId, x3, x4, yT);
-            
-            g.setFont(bigFont);
-            TournamentPrinting.drawCenterAlignedString(g, "O  0 - 1", x2, x3, yT);
-            g.setFont(font);
-            
+                        
             y1 = yBase + TournamentPrinting.RS_SIGN * actRatioY1000 / 1000;
             g.drawLine(x1, y1, x2, y1);
             g.drawLine(x3, y1, x4, y1);
@@ -1153,10 +1163,6 @@ public class TournamentPrinting implements Printable {
             g.drawString("Signature :", xT, yT);
             xT = x3 + TournamentPrinting.RS_LEFTMARGIN * actRatioY1000 / 1000;
             g.drawString("Signature :", xT, yT);
-
-            g.setFont(bigFont);
-            TournamentPrinting.drawCenterAlignedString(g, "O ½ - ½", x2, x3, yT);
-            g.setFont(font);
             
             y2 = y1 + TournamentPrinting.RS_LINE_HEIGHT * actRatioY1000 /1000; 
             g.drawLine(x1, y2, x4, y2); 
@@ -1164,7 +1170,6 @@ public class TournamentPrinting implements Printable {
             // Cut up Line
             int yBottom = yBase + TournamentPrinting.RS_RS_HEIGHT * actRatioY1000 /1000;
             g.drawLine(0, yBottom , usableWidth, yBottom);
-
         }
                 
 

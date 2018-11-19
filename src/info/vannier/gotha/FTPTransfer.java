@@ -103,8 +103,6 @@ public class FTPTransfer {
             Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
         }
             
-
-        
        try {
             client.disconnect(true);
         } catch (Exception ex) {

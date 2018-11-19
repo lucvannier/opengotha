@@ -1,17 +1,21 @@
-OpenGothaV3.46.04
+OpenGothaV3.47.06
 *****************
+10/11/2018
+New         Results sheets are now printed with 4 sheets by page
+            Default seeding system in McMahon system is Split and Slip for later rounds
+            When starting and automatically opening a file, a message box is opened, 
+                showing what file has been loaded  
+
+OpenGothaV3.47
+**************
 28/09/2018
+New         Max number of players set to 2000 (instead of 1200)
+New         Tournament files are uploaded to OpenGotha site.
             Add a sorting possibility for later rounds
 Bug Fix     The seeding system in later rounds was not correctly saved into xml file. Fixed
 New         In Players .. Update ratings frame, a new popup menu to sort players
 New         Tables numbers are now given, by default, according to best score
-            Update remote tournaments naming system
-
-OpenGothaV3.46.02
-*****************
-02/07/2018
-New         Max number of players set to 2000 (instead of 1200)
-New         Tournament files are uploaded to OpenGotha site.
+            Remove "Import from Wallist" and "Import from vBar separated file"
 
 OpenGothaV3.46
 *****************

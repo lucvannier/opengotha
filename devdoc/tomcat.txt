@@ -1,21 +1,21 @@
 Utilisation remote de OpenGotha
 
-Accès http :
+Acces http :
 ************
 - Serveur Tomcat sur xiong; Config NAT port 8080 ouvert
     tournamentfiles contient les fichiers .gth (dont egc2009.gth)
-- client n'importe où sur le Net
-    Si nécessaire, 
+- client n'importe oï¿½ sur le Net
+    Si nï¿½cessaire, 
 	http://82.226.203.232:8080/OG/addtournament.jsp?tournamentname=egc2009
 	http://82.226.203.232:8080/OG/listtournaments.jsp
     Puis :
     	http://82.226.203.232:8080/OG/nbplayers.jsp?tournamentname=egc2009
  
 
-Accès RMI :
+Acces RMI :
 ***********
 - Serveur OpenGotha tournant sur xiong avec egc2009; Config NAT port 1099 ouvert
-- client n'importe où sur le Net 
+- client n'importe oï¿½ sur le Net 
     lancement OpenGotha en mode client (server sur sur 82.226.203.232:8080)
   foncttionnement normal 
 
@@ -47,6 +47,6 @@ apache-tomcat-7.0.11.zip
         monTomcat.getServer().await();
     }
 
-Une fois éxécuté et index.jsp placé dans le répertoire de base (ds MonTomcat e.g. si projet MonTomcat)
+Une fois ï¿½xï¿½cutï¿½ et index.jsp placï¿½ dans le rï¿½pertoire de base (ds MonTomcat e.g. si projet MonTomcat)
 http://localhost:8888/index.jsp
 ou si contextPath = "/OG" , http://localhost:8888/OG/index.jsp

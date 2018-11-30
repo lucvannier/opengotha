@@ -33,9 +33,9 @@ import javax.swing.JProgressBar;
 public class Gotha {
 
     static Locale locale = Locale.getDefault();
-    static final long GOTHA_VERSION = 347L;
-    static final long GOTHA_MINOR_VERSION = 6L;
-    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2018, Calendar.NOVEMBER, 19)).getTime();
+    static final long GOTHA_VERSION = 348L;
+    static final long GOTHA_MINOR_VERSION = 0L;
+    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2018, Calendar.NOVEMBER, 30)).getTime();
     // Data version for serialization. Since 3.23 version, not used because xml and compatibility is always granted in both senses
     static final long GOTHA_DATA_VERSION = 201L;
     

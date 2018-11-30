@@ -165,8 +165,8 @@ public class JFrGothaStart extends javax.swing.JFrame {
             String[] lstTou = GothaRMIClient.tournamentNamesList(Gotha.serverName);
             String strTN = "";
             if (lstTou == null || lstTou.length == 0){
-                String strMessage = "No tournament found on " + strSN;
-                strMessage += "\nBe sure that at least one tournament is open on " + strSN;
+                String strMessage = "No tournament found on " + Gotha.serverName;
+                strMessage += "\nBe sure that at least one tournament is open on " + Gotha.serverName;
                 strMessage += "\nThen try again";
                 JOptionPane.showMessageDialog(this, strMessage);
                 return;

@@ -1,6 +1,6 @@
-OpenGothaV3.47.06
-*****************
-10/11/2018
+OpenGothaV3.48
+**************
+30/11/2018
 New         Results sheets are now printed with 4 sheets by page
             Default seeding system in McMahon system is Split and Slip for later rounds
             When starting and automatically opening a file, a message box is opened, 

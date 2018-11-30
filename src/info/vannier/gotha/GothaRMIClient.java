@@ -56,7 +56,7 @@ public class GothaRMIClient {
         try {
             tnList = reg.list();
         } catch (RemoteException ex) {
-            Logger.getLogger(GothaRMIServer.class.getName()).log(Level.SEVERE, null, ex);
+            // Logger.getLogger(GothaRMIServer.class.getName()).log(Level.SEVERE, null, ex);
         }
         return tnList;
     }

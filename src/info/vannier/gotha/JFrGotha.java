@@ -8,6 +8,8 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.*;
+import java.net.URI;
+import java.net.URISyntaxException;
 import java.nio.file.Files;
 import static java.nio.file.StandardCopyOption.REPLACE_EXISTING;
 import java.rmi.RemoteException;
@@ -522,8 +524,14 @@ public class JFrGotha extends javax.swing.JFrame {
 
         lblTournamentPicture.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblTournamentPicture.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info/vannier/gotha/claira242X311.png"))); // NOI18N
+        lblTournamentPicture.setCursor(new java.awt.Cursor(java.awt.Cursor.HAND_CURSOR));
+        lblTournamentPicture.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lblTournamentPictureMouseClicked(evt);
+            }
+        });
         pnlWelcome.add(lblTournamentPicture);
-        lblTournamentPicture.setBounds(274, 5, 221, 312);
+        lblTournamentPicture.setBounds(265, 5, 270, 312);
 
         lblFlowChart.setBackground(new java.awt.Color(255, 255, 255));
         lblFlowChart.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -3006,6 +3014,16 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
 
     }//GEN-LAST:event_mniSaveActionPerformed
 
+    private void lblTournamentPictureMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lblTournamentPictureMouseClicked
+        try {                    
+            Desktop.getDesktop().browse(new URI("http://lamaisondeverotte.com"));
+        } catch (IOException ex) {
+            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (URISyntaxException ex) {
+            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_lblTournamentPictureMouseClicked
+
     private File chooseAFile(File path, String extension) {
         JFileChooser fileChoice = new JFileChooser(path);
         fileChoice.setFileSelectionMode(JFileChooser.FILES_ONLY);
@@ -3212,7 +3230,6 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
                 Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
-        
     }
 
     private void demandedDisplayedRoundNumberHasChanged(int demandedRN) {

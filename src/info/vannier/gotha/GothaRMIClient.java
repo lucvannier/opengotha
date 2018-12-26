@@ -12,8 +12,8 @@ import java.util.logging.Logger;
  * @author Luc Vannier
  */
 public class GothaRMIClient {
-    private String clientUniqueId;
-    private String tournamentName; // name of the tournament to which this client is connected
+    private final String clientUniqueId;
+    private final String tournamentName; // name of the tournament to which this client is connected
     private long lastSignOfLife = System.currentTimeMillis();
 
     /**
@@ -66,9 +66,7 @@ public class GothaRMIClient {
         TournamentInterface t = null;
         try {
             t = (TournamentInterface) reg.lookup(tKN);
-        } catch (RemoteException ex) {
-            Logger.getLogger(GothaRMIClient.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (NotBoundException ex) {
+        } catch (RemoteException | NotBoundException ex) {
             Logger.getLogger(GothaRMIClient.class.getName()).log(Level.SEVERE, null, ex);
         }
         return t;

@@ -13,9 +13,7 @@ import java.io.*;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.rmi.RemoteException;
-import java.text.SimpleDateFormat;
 import java.util.ArrayList;
-import java.util.Calendar;
 import java.util.Collections;
 import java.util.Vector;
 import java.util.logging.Level;
@@ -1496,7 +1494,11 @@ public class JFrPlayersManager extends javax.swing.JFrame {
             if (str == null ) return;
             this.lblRatingList.setText("Download in progress");
             lblRatingList.paintImmediately(0, 0, lblRatingList.getWidth(), lblRatingList.getHeight());
+//            Gotha.printTopChrono("AV Gotha.download");
+            System.out.println("Gotha.download");
             Gotha.download(this.pgbRatingList, str, fDefaultFile);
+//            Gotha.printTopChrono("AP Gotha.download");
+
         } catch (MalformedURLException ex) {
             JOptionPane.showMessageDialog(this, "Malformed URL\nRating list could not be loaded", "Message", JOptionPane.ERROR_MESSAGE);
         } catch (IOException ex) {

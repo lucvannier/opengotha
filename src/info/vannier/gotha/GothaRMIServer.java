@@ -18,7 +18,7 @@ public class GothaRMIServer {
 
     private static final int MAX_NUMBER_OF_CLIENTS = 10;
     private static final int MAX_NUMBER_OF_TOURNAMENTS = 10;
-    private static HashMap<String, GothaRMIClient> hmClients = new HashMap<String, GothaRMIClient>();
+    private static final HashMap<String, GothaRMIClient> hmClients = new HashMap<String, GothaRMIClient>();
 
     /**
      * creates a Registry if it does not yet exist
@@ -75,7 +75,7 @@ public class GothaRMIServer {
             System.out.println("Too many tournaments");
             return false;
         }
-        String tKN = "";
+        String tKN;
         try {
             tKN = tournament.getShortName();
             if (getTournament(tKN) != null) {

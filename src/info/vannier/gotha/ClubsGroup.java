@@ -10,11 +10,11 @@ import java.util.HashMap;
 public class ClubsGroup implements java.io.Serializable{
     private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     private String name;
-    private HashMap<String, Club> hmClubs;
+    private final HashMap<String, Club> hmClubs;
 
     public ClubsGroup(String name){
         this.name = name;
-        hmClubs = new HashMap<String, Club>();
+        hmClubs = new HashMap<>();
     }
     /**
      * @return the name

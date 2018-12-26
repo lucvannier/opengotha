@@ -14,7 +14,6 @@ import org.w3c.dom.NodeList;
 
 /**
  * contains a static method designed to import country list from a xml file
- * See : http://www.iso.org/iso/country_codes/iso_3166_code_lists.htm
  * @author Luc Vannier
  */
 public class CountriesList {

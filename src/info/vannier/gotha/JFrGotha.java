@@ -300,6 +300,8 @@ public class JFrGotha extends javax.swing.JFrame {
         mniMemory = new javax.swing.JMenuItem();
         jSeparator8 = new javax.swing.JPopupMenu.Separator();
         mniExperimentalTools = new javax.swing.JMenuItem();
+        mnuRemote = new javax.swing.JMenu();
+        mniRemoteTournaments = new javax.swing.JMenuItem();
         mnuHelp = new javax.swing.JMenu();
         mniOpenGothaHelp = new javax.swing.JMenuItem();
         mniHelpAbout = new javax.swing.JMenuItem();
@@ -1283,6 +1285,20 @@ public class JFrGotha extends javax.swing.JFrame {
 
         mnuMain.add(mnuTools);
 
+        mnuRemote.setText("Remote");
+        mnuRemote.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+
+        mniRemoteTournaments.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
+        mniRemoteTournaments.setText("Tournaments");
+        mniRemoteTournaments.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                mniRemoteTournamentsActionPerformed(evt);
+            }
+        });
+        mnuRemote.add(mniRemoteTournaments);
+
+        mnuMain.add(mnuRemote);
+
         mnuHelp.setText("Help");
         mnuHelp.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
 
@@ -1592,9 +1608,13 @@ public class JFrGotha extends javax.swing.JFrame {
     }//GEN-LAST:event_mniPlayersQuickCheckActionPerformed
 
     private void customInitComponents() {
+        this.mnuRemote.setVisible(false);
+        if (Gotha.gothaVariant == Gotha.GOTHA_PREMIUM) this.mnuRemote.setVisible(true);
+
         int w = JFrGotha.BIG_FRAME_WIDTH;
         int h = JFrGotha.BIG_FRAME_HEIGHT;
         int y = 100;
+        this.mnuTools.setVisible(true);
 
         Dimension dim = Toolkit.getDefaultToolkit().getScreenSize();
         setBounds((dim.width - w) / 2, y, w, h);
@@ -1643,6 +1663,7 @@ public class JFrGotha extends javax.swing.JFrame {
                 this.mniBuildTestTournament.setVisible(false);
                 this.mnuTools.setVisible(false);
                 this.mniRMI.setVisible(false);
+                this.mnuRemote.setVisible(false);
                 break;
         }
 
@@ -3024,6 +3045,11 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         }
     }//GEN-LAST:event_lblTournamentPictureMouseClicked
 
+    private void mniRemoteTournamentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniRemoteTournamentsActionPerformed
+        JFrame jfr = new JFrRemoteTournaments();
+        this.displayFrame(jfr, BIG_FRAME_WIDTH, BIG_FRAME_HEIGHT);
+    }//GEN-LAST:event_mniRemoteTournamentsActionPerformed
+
     private File chooseAFile(File path, String extension) {
         JFileChooser fileChoice = new JFileChooser(path);
         fileChoice.setFileSelectionMode(JFileChooser.FILES_ONLY);
@@ -3427,6 +3453,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private javax.swing.JMenuItem mniPublish;
     private javax.swing.JMenuItem mniRMI;
     private javax.swing.JMenuItem mniRR;
+    private javax.swing.JMenuItem mniRemoteTournaments;
     private javax.swing.JMenuItem mniResults;
     private javax.swing.JMenuItem mniSave;
     private javax.swing.JMenuItem mniSaveACopy;
@@ -3443,6 +3470,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private javax.swing.JMenu mnuOptions;
     private javax.swing.JMenu mnuPlayers;
     private javax.swing.JMenu mnuPublish;
+    private javax.swing.JMenu mnuRemote;
     private javax.swing.JMenu mnuTools;
     private javax.swing.JMenu mnuTournament;
     private javax.swing.JPanel pnlControlPanel;

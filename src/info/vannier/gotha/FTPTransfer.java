@@ -9,7 +9,6 @@ import it.sauronsoftware.ftp4j.FTPDataTransferException;
 import it.sauronsoftware.ftp4j.FTPException;
 import it.sauronsoftware.ftp4j.FTPIllegalReplyException;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.rmi.RemoteException;
 import java.text.SimpleDateFormat;
@@ -62,44 +61,24 @@ public class FTPTransfer {
             
         try {
             client.createDirectory(dirName);
-        } catch (IllegalStateException ex) {
-            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPIllegalReplyException ex) {
+        } catch (IllegalStateException | FTPIllegalReplyException | IOException ex) {
             Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
         } catch (FTPException ex) {
             System.out.println("Directory already exists");
 //            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
         }
 
         try {
             client.changeDirectory(dirName);
-        } catch (IllegalStateException ex) {
+        } catch (IllegalStateException | IOException | FTPIllegalReplyException | FTPException ex) {
             Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPIllegalReplyException ex) {
-            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPException ex) {
-            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);            
         }
        
         File fil = new File(filName);
         try {
             client.upload(f);
             client.rename(f.getName(), fil.getName());
-        } catch (IllegalStateException ex) {
-            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPIllegalReplyException ex) {
-            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPException ex) {
-            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPDataTransferException ex) {
-            Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (FTPAbortedException ex) {
+        } catch (IllegalStateException | IOException | FTPIllegalReplyException | FTPException | FTPDataTransferException | FTPAbortedException ex) {
             Logger.getLogger(FTPTransfer.class.getName()).log(Level.SEVERE, null, ex);
         }
             

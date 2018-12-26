@@ -222,7 +222,7 @@ public class ExternalDocument {
                     }
                 } while (s != null);
             }
-        } catch (Exception ex) {
+        } catch (IOException ex) {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
         }
 
@@ -301,9 +301,8 @@ public class ExternalDocument {
         }
     }
 
-    public static Document getDocumentFromXMLFile(File sourceFile) {
+    public static DocumentBuilder createDocumentBuilder(){
         DocumentBuilder docBuilder;
-        Document doc = null;
         DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
         docBuilderFactory.setIgnoringElementContentWhitespace(true);
         try {
@@ -312,6 +311,21 @@ public class ExternalDocument {
             System.out.println("Wrong parser configuration: " + e.getMessage());
             return null;
         }
+        return docBuilder;
+    
+    }
+    public static Document getDocumentFromXMLFile(File sourceFile) {
+        DocumentBuilder docBuilder = createDocumentBuilder();
+//        Document doc = null;
+//        DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
+//        docBuilderFactory.setIgnoringElementContentWhitespace(true);
+//        try {
+//            docBuilder = docBuilderFactory.newDocumentBuilder();
+//        } catch (ParserConfigurationException e) {
+//            System.out.println("Wrong parser configuration: " + e.getMessage());
+//            return null;
+//        }
+        Document doc = null;
         try {
             doc = docBuilder.parse(sourceFile);
         } catch (SAXException e) {

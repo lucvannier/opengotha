@@ -287,7 +287,6 @@ public class GeneralParameterSet implements java.io.Serializable{
                 lcl[c] = Gotha.MIN_RANK;
             }
             setLowerCategoryLimits(lcl);
-            return;
         }
     }
 

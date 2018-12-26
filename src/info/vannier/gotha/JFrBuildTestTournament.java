@@ -147,9 +147,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
                g.setKnownColor(true);
                 try {              
                     tournament.addGame(g);
-                } catch (RemoteException ex) {
-                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (TournamentException ex) {
+                } catch (RemoteException | TournamentException ex) {
                                 Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
                 }
            }          
@@ -218,9 +216,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
                 }
                 try {
                     tournament.fastAddPlayer(p);
-                } catch (RemoteException ex) {
-                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (TournamentException ex) {
+                } catch (RemoteException | TournamentException ex) {
                                 Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
@@ -265,9 +261,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
                 }
                 try {
                     tournament.fastAddPlayer(p);
-                } catch (RemoteException ex) {
-                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (TournamentException ex) {
+                } catch (RemoteException | TournamentException ex) {
                                 Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
@@ -289,9 +283,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
                 }
                 try {
                     tournament.fastAddPlayer(p);
-                } catch (RemoteException ex) {
-                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (TournamentException ex) {
+                } catch (RemoteException | TournamentException ex) {
                                 Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
@@ -313,9 +305,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
                 }
                 try {
                     tournament.fastAddPlayer(p);
-                } catch (RemoteException ex) {
-                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (TournamentException ex) {
+                } catch (RemoteException | TournamentException ex) {
                                 Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
@@ -361,9 +351,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
                 }
                 try {
                     tournament.fastAddPlayer(p);
-                } catch (RemoteException ex) {
-                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (TournamentException ex) {
+                } catch (RemoteException | TournamentException ex) {
                                 Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
@@ -386,9 +374,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
                 }
                 try {
                     tournament.fastAddPlayer(p);
-                } catch (RemoteException ex) {
-                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (TournamentException ex) {
+                } catch (RemoteException | TournamentException ex) {
                                 Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
@@ -409,9 +395,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
                 }
                 try {
                     tournament.fastAddPlayer(p);
-                } catch (RemoteException ex) {
-                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (TournamentException ex) {
+                } catch (RemoteException | TournamentException ex) {
                                 Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
@@ -433,9 +417,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
                 }
                 try {
                     tournament.fastAddPlayer(p);
-                } catch (RemoteException ex) {
-                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (TournamentException ex) {
+                } catch (RemoteException | TournamentException ex) {
                                 Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
@@ -481,9 +463,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
                 }
                 try {
                     tournament.fastAddPlayer(p);
-                } catch (RemoteException ex) {
-                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (TournamentException ex) {
+                } catch (RemoteException | TournamentException ex) {
                                 Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }
@@ -506,9 +486,7 @@ public class JFrBuildTestTournament extends javax.swing.JFrame{
                 try {
                     System.out.println("fastAddPlayer i = " + i);
                     tournament.fastAddPlayer(p);
-                } catch (RemoteException ex) {
-                                Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
-                } catch (TournamentException ex) {
+                } catch (RemoteException | TournamentException ex) {
                                 Logger.getLogger(JFrBuildTestTournament.class.getName()).log(Level.SEVERE, null, ex);
                 }
             }

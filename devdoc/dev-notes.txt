@@ -75,6 +75,8 @@ layout = null
 JFrxxx properties :
     defaultCloseOperation : DO_NOTHING
     not resizable 
+JFrxxx Events .. Window .. WindowClosing
+    cleanClose();
 
 Required fields:
 ===============
@@ -122,7 +124,8 @@ Views are refreshed by a Timer. This timer is set up by setupRefreshTimer() invo
     }
 
 updateAllViews should  contain :
-this.lastComponentsUpdateTime = tournament.getCurrentTournamentTime();
+    this.lastComponentsUpdateTime = tournament.getCurrentTournamentTime();
+    setTitle(...)
 
 customInitComponents() should begin by :
 ========================================
@@ -136,7 +139,6 @@ customInitComponents() should begin by :
 
         updateAllViews();
     }
-
 
 tournamentChanged method should look like :
 ===========================================

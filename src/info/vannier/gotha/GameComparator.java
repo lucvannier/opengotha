@@ -19,12 +19,12 @@ public class GameComparator implements Comparator<Game>, Serializable{
 
     public GameComparator(int gameOrderType, HashMap<String, ScoredPlayer> hmScoredPlayers){
         this.gameOrderType = gameOrderType;
-        this.hmScoredPlayers = new HashMap<String, ScoredPlayer>(hmScoredPlayers);
+        this.hmScoredPlayers = new HashMap<>(hmScoredPlayers);
     }
     
     public GameComparator(int gameOrderType, HashMap<String, ScoredPlayer> hmScoredPlayers, PlacementParameterSet pps){
         this.gameOrderType = gameOrderType;
-        this.hmScoredPlayers = new HashMap<String, ScoredPlayer>(hmScoredPlayers);
+        this.hmScoredPlayers = new HashMap<>(hmScoredPlayers);
         this.pps = pps;
     }
 

@@ -11,10 +11,10 @@ import java.util.HashMap;
  * @author Luc Vannier
  */
 public class ClubsList {
-    private HashMap<String, Club> hmClubs; 
+    private final HashMap<String, Club> hmClubs; 
     
     public ClubsList(){
-    hmClubs = new HashMap<String, Club>();
+    hmClubs = new HashMap<>();
     }
     
     public void importClubsFromRatingList(RatingList rl){
@@ -24,9 +24,8 @@ public class ClubsList {
             Club c = new Club(rp.getClub());
             String clubName = c.getName();
             Club previousClub = hmClubs.get(clubName);
-            String previousClubName = "";
-            if (previousClub == null) previousClubName ="null";
-            else previousClubName = previousClub.getName();
+            String previousClubName = null;
+            if (previousClub != null) previousClubName = previousClub.getName();
             i++;
 
             hmClubs.put(c.getName(), c);

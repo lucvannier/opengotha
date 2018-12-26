@@ -31,11 +31,14 @@ import javax.swing.JProgressBar;
  * @author Luc Vannier
  */
 public class Gotha {
-
+    static final int GOTHA_BASE = 0;
+    static final int GOTHA_PREMIUM = 1;   
+    static int gothaVariant = GOTHA_PREMIUM;
+    
     static Locale locale = Locale.getDefault();
     static final long GOTHA_VERSION = 348L;
-    static final long GOTHA_MINOR_VERSION = 0L;
-    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2018, Calendar.NOVEMBER, 30)).getTime();
+    static final long GOTHA_MINOR_VERSION = 1L;
+    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2018, Calendar.DECEMBER, 26)).getTime();
     // Data version for serialization. Since 3.23 version, not used because xml and compatibility is always granted in both senses
     static final long GOTHA_DATA_VERSION = 201L;
     
@@ -143,6 +146,8 @@ public class Gotha {
     /**
     * Eliminates forbidden characters : \ / : * ? " < > |
     * These 9 characters are forbidden in Windows file names
+     * @param str
+     * @return 
     */
     public static String eliminateForbiddenCharacters(String str){
         String newStr = str;
@@ -297,6 +302,8 @@ public class Gotha {
         strMS = strMS.substring(strMS.length() - 3);
         String strMicroS = "000" + nMicroS;
         strMicroS = strMicroS.substring(strMicroS.length() - 3);
+        
+        System.out.println("topCn = " + strSEC + "." + strMS + " " + strMicroS + " " + str);
     }
 
     public static boolean isDateExpired(String strDate){

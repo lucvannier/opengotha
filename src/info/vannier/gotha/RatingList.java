@@ -52,6 +52,8 @@ public class RatingList {
         }
     }
 
+    
+    
     private void parseFile(File f){
         // Transfer file content to a ArrayList<String>
         ArrayList<String> vLines = new ArrayList<String>();

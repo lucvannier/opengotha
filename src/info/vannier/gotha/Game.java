@@ -153,7 +153,7 @@ package info.vannier.gotha;
      * @return 
      */
     public String resultAsString(boolean wb){
-        String strResult = " - ";
+        String strResult;
         switch(getResult()){
                 case Game.RESULT_UNKNOWN        : strResult = " - "; break;
                 case Game.RESULT_WHITEWINS      : strResult = "1-0"; break;

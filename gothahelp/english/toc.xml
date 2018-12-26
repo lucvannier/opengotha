@@ -3,53 +3,50 @@
                      "http://java.sun.com/products/javahelp/toc_2_0.dtd">
 
 <toc version="2.0">
-    <tocitem text="Starting OpenGotha" target="Starting OpenGotha" />
-    <tocitem text="Tournament menu" target="Tournament menu">
-        <tocitem text="Create a new tournament" target="Create a new tournament" />
-        <tocitem text="Save facilities" target="Save facilities" />
-        <tocitem text="Import facilities" target="Import facilities" />
-    </tocitem>
-    <tocitem text="Players menu" target="Players menu">
-        <tocitem text="Players Manager frame" target="Players Manager frame" />
-        <tocitem text="Players Quick check frame" target="Players Quick check frame" />
-        <tocitem text="Update ratings frame" target="Update ratings frame" />
-        <tocitem text="McMahon groups frame" target="McMahon groups frame" />
-        <tocitem text="Teams Manager frame" target="Teams Manager frame" />
-    </tocitem>
-    <tocitem text="Games menu" target="Games menu">
-        <tocitem text="Games Pair frame" target="Games Pair frame" />
-        <tocitem text="Games Results frame" target="Games Results frame" />
-        <tocitem text="Games Round-robin frame" target="Games Round-robin frame" />
-        <tocitem text="Teams Pairing frame" target="Teams Pairing frame" />
-    </tocitem>
-    
-    <tocitem text="Publish menu" target="Publish menu">    
-            <tocitem text="Contents" target="Contents tab" />
-            <tocitem text="Parameters" target="Parameters tab" />
-            <tocitem text="Publish" target="Publish tab" />
-    </tocitem>
-
-    <tocitem text="Options menu" target="Options menu">
-        <tocitem text="Tournament Options" target="Tournament Options">
-            <tocitem text="General settings" target="General settings" />
-            <tocitem text="Handicap settings" target="Handicap settings" />
-            <tocitem text="Placement settings" target="Placement settings" />
-            <tocitem text="Pairing settings" target="Pairing settings">
-                <tocitem text="Edit clubs groups" target="Edit clubs groups" />
-            </tocitem>
-            <tocitem text="Team Placement settings" target="Team Placement settings" />
-        </tocitem>
-        <tocitem text="Games Options" target="Games Options" />
-        <tocitem text="Preferences frame" target="Preferences frame" />
-    </tocitem>
-    <tocitem text="Tools menu" target="Tools menu">
-        <tocitem text="Discard rounds frame" target="Discard rounds frame" />
-    </tocitem>    
-    <tocitem text="Appendices" target ="Appendices">
-        <tocitem text="Games encoding" target="Games encoding" />
-        <tocitem text="Pairing algorithm" target="Pairing algorithm" />
-        <tocitem text="Pairing evaluation function" target="Pairing evaluation function" />
-        <tocitem text="Compatibility issues" target="Compatibility issues" />
-        <tocitem text="Vbar-separated format" target="Vbar-separated format" />
-    </tocitem>
+	<tocitem text="Starting OpenGotha" target="Starting OpenGotha" />
+	<tocitem text="Tournament menu" target="Tournament menu">
+		<tocitem text="Create a new tournament" target="Create a new tournament" />
+		<tocitem text="Save facilities" target="Save facilities" />
+		<tocitem text="Import facilities" target="Import facilities" />
+	</tocitem>
+	<tocitem text="Players menu" target="Players menu">
+		<tocitem text="Players Manager frame" target="Players Manager frame" />
+		<tocitem text="Players Quick check frame" target="Players Quick check frame" />
+		<tocitem text="Update ratings frame" target="Update ratings frame" />
+		<tocitem text="McMahon groups frame" target="McMahon groups frame" />
+		<tocitem text="Teams Manager frame" target="Teams Manager frame" />
+	</tocitem>
+	<tocitem text="Games menu" target="Games menu">
+		<tocitem text="Games Pair frame" target="Games Pair frame" />
+		<tocitem text="Games Results frame" target="Games Results frame" />
+		<tocitem text="Games Round-robin frame" target="Games Round-robin frame" />
+		<tocitem text="Teams Pairing frame" target="Teams Pairing frame" />
+	</tocitem>
+	<tocitem text="Publish menu" target="Publish menu">
+		<tocitem text="Contents" target="Contents tab" />
+		<tocitem text="Parameters" target="Parameters tab" />
+		<tocitem text="Publish" target="Publish tab" />
+	</tocitem>
+	<tocitem text="Options menu" target="Options menu">
+		<tocitem text="Tournament Options" target="Tournament Options">
+			<tocitem text="General settings" target="General settings" />
+			<tocitem text="Handicap settings" target="Handicap settings" />
+			<tocitem text="Placement settings" target="Placement settings" />
+			<tocitem text="Pairing settings" target="Pairing settings">
+				<tocitem text="Edit clubs groups" target="Edit clubs groups" />
+			</tocitem>
+			<tocitem text="Team Placement settings" target="Team Placement settings" />
+		</tocitem>
+		<tocitem text="Games Options" target="Games Options" />
+		<tocitem text="Preferences frame" target="Preferences frame" />
+	</tocitem>
+	<tocitem text="Tools menu" target="Tools menu">
+		<tocitem text="Discard rounds frame" target="Discard rounds frame" />
+	</tocitem>
+	<tocitem text="Appendices" target="Appendices">
+		<tocitem text="Games encoding" target="Games encoding" />
+		<tocitem text="Pairing algorithm" target="Pairing algorithm" />
+		<tocitem text="Pairing evaluation function" target="Pairing evaluation function" />
+		<tocitem text="Compatibility issues" target="Compatibility issues" />
+	</tocitem>
 </toc>

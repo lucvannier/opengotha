@@ -1,6 +1,6 @@
-OpenGothaV3.48.01
+OpenGothaV3.48.02
 *****************
-16/12/2018
+27/12/2018
 New         A Remote menu for accessing online tournaments (Premium only)
 
 OpenGothaV3.48

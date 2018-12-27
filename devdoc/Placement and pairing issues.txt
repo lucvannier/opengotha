@@ -2,7 +2,7 @@ Placement and pairing issues
 ****************************
 updated 02/01/2009
 
-Placement and pairing informations are store in ScoredPlayer object
+Placement and pairing informations are stored in ScoredPlayer object
 ScoredPlayer inhérits Player and contains 3 additional groups of information :
 - Base scoring info with all placement values for all rounds, but without dc and sdc (Direct confrontation)
 - Direct confrontation placement values. These values are relevant for the current round.

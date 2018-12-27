@@ -6,6 +6,8 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 public interface TournamentInterface extends Remote{
+    public long getLastSuccessfulSaveDate() throws RemoteException;
+    public void setLastSuccessfulSaveDate(long saveDate) throws RemoteException;
     
     public TournamentParameterSet getTournamentParameterSet()  throws RemoteException;
     public void setTournamentParameterSet(TournamentParameterSet tournamentParameterSet) throws RemoteException;

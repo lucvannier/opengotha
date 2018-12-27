@@ -60,7 +60,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         rdbAllCopies = new javax.swing.JRadioButton();
         rdbOnlyLastCopy = new javax.swing.JRadioButton();
         btnUpdate = new javax.swing.JButton();
-        pnlTournaments = new javax.swing.JScrollPane();
+        scpTournaments = new javax.swing.JScrollPane();
         tblTournaments = new javax.swing.JTable();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
@@ -113,14 +113,16 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         getContentPane().add(pnlTournamentSelection);
         pnlTournamentSelection.setBounds(80, 20, 260, 140);
 
-        btnUpdate.setText("Update");
+        btnUpdate.setText("Update remote tournaments list");
         btnUpdate.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 btnUpdateActionPerformed(evt);
             }
         });
         getContentPane().add(btnUpdate);
-        btnUpdate.setBounds(350, 30, 190, 120);
+        btnUpdate.setBounds(350, 30, 220, 120);
+
+        scpTournaments.setBorder(javax.swing.BorderFactory.createTitledBorder("Remote tournaments list"));
 
         tblTournaments.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -133,10 +135,10 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
                 "", "Short name", "Full name", "Begin date", "Save date/time", "Location", "Director"
             }
         ));
-        pnlTournaments.setViewportView(tblTournaments);
+        scpTournaments.setViewportView(tblTournaments);
 
-        getContentPane().add(pnlTournaments);
-        pnlTournaments.setBounds(80, 170, 870, 350);
+        getContentPane().add(scpTournaments);
+        scpTournaments.setBounds(80, 170, 870, 350);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -146,9 +148,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
     }//GEN-LAST:event_formWindowClosing
 
     private void btnUpdateActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnUpdateActionPerformed
-        Gotha.printTopChrono("btndownloadActionPerformed. Deb");
         ArrayList<TournamentInterface> alT = RemoteTournament.downloadTournaments(this.rdbAllTournaments.isSelected(), this.rdbAllCopies.isSelected());
-        Gotha.printTopChrono("btndownloadActionPerformed. Fin");
         
         DefaultTableModel model = (DefaultTableModel) this.tblTournaments.getModel();
         while (model.getRowCount() > 0) {
@@ -186,11 +186,11 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
     private javax.swing.JPanel pnlTournamentSelection;
-    private javax.swing.JScrollPane pnlTournaments;
     private javax.swing.JRadioButton rdbAllCopies;
     private javax.swing.JRadioButton rdbAllTournaments;
     private javax.swing.JRadioButton rdbOnlyLastCopy;
     private javax.swing.JRadioButton rdbOnlySomeTournaments;
+    private javax.swing.JScrollPane scpTournaments;
     private javax.swing.JTable tblTournaments;
     // End of variables declaration//GEN-END:variables
 }

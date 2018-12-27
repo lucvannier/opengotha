@@ -2696,6 +2696,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         try {
             tournament.setTournamentParameterSet(tps);
             tournament.setHasBeenSavedOnce(false);
+            tournament.setLastSuccessfulSaveDate(0);
             this.tournamentChanged();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrTournamentOptions.class.getName()).log(Level.SEVERE, null, ex);

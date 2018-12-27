@@ -113,7 +113,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         scpBasicPreferences.setViewportView(tblBasicPreferences);
 
         pnlBasicPreferences.add(scpBasicPreferences);
-        scpBasicPreferences.setBounds(10, 20, 360, 210);
+        scpBasicPreferences.setBounds(10, 20, 564, 210);
 
         btnClearBasicPreferences.setText("Clear basic OpenGotha Preferences");
         btnClearBasicPreferences.addActionListener(new java.awt.event.ActionListener() {
@@ -122,10 +122,10 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
             }
         });
         pnlBasicPreferences.add(btnClearBasicPreferences);
-        btnClearBasicPreferences.setBounds(10, 240, 360, 23);
+        btnClearBasicPreferences.setBounds(10, 240, 564, 23);
 
         getContentPane().add(pnlBasicPreferences);
-        pnlBasicPreferences.setBounds(10, 20, 380, 280);
+        pnlBasicPreferences.setBounds(10, 20, 584, 280);
 
         pnlInternetAccess.setBorder(javax.swing.BorderFactory.createTitledBorder("Internet access"));
         pnlInternetAccess.setLayout(null);
@@ -165,7 +165,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         ckbPhotos.setBounds(30, 70, 170, 23);
 
         getContentPane().add(pnlInternetAccess);
-        pnlInternetAccess.setBounds(10, 320, 770, 140);
+        pnlInternetAccess.setBounds(10, 320, 974, 140);
 
         btnHelp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info/vannier/gotha/gothalogo16.jpg"))); // NOI18N
         btnHelp.setText("help");
@@ -184,7 +184,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnClose);
-        btnClose.setBounds(150, 470, 630, 30);
+        btnClose.setBounds(150, 470, 834, 30);
 
         pnlLogPreferences.setBorder(javax.swing.BorderFactory.createTitledBorder("OpenGotha/Log Preferences"));
         pnlLogPreferences.setLayout(null);
@@ -215,8 +215,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         btnClearLogPreferences.setBounds(10, 240, 360, 23);
 
         getContentPane().add(pnlLogPreferences);
-        pnlLogPreferences.setBounds(390, 20, 380, 280);
-        pnlLogPreferences.getAccessibleContext().setAccessibleName("OpenGotha/Log Preferences");
+        pnlLogPreferences.setBounds(594, 20, 380, 280);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

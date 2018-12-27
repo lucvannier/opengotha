@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Tournament dataVersion="201" gothaMinorVersion="4" gothaVersion="346">
+<Tournament dataVersion="201" gothaMinorVersion="2" gothaVersion="348">
 <Players>
 <Player agaExpirationDate="" agaId="" club="84Av" country="FR" egfPin="" ffgLicence="0120001" ffgLicenceStatus="L" firstName="Bernard" grade="3K" name="Mignucci" participating="11111111111111111111" rank="3K" rating="1778" ratingOrigin="FFG : -272" registeringStatus="FIN" smmsCorrection="0"/>
 <Player agaExpirationDate="" agaId="" club="76Ro" country="FR" egfPin="" ffgLicence="0700255" ffgLicenceStatus="L" firstName="Maleek" grade="2K" name="Lakssil" participating="11111111111111111111" rank="2K" rating="1917" ratingOrigin="FFG : -133" registeringStatus="FIN" smmsCorrection="0"/>

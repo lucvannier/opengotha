@@ -2427,9 +2427,15 @@ public class JFrGotha extends javax.swing.JFrame {
      */
     
     
+    /**
+     * A revoir
+     * @return save date if save has been made
+     * 0 if save has not been 
+     */
     private boolean saveCurrentTournamentIfNecessary() {
         try {
             if (Gotha.runningMode == Gotha.RUNNING_MODE_CLI) {
+                System.out.println("Internal Error. saveCurrentTournamentIfNecessary should not be called in client mode");
                 return true;
             }
             if (tournament == null) {
@@ -2470,7 +2476,7 @@ public class JFrGotha extends javax.swing.JFrame {
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
-        File snFile = new File(Gotha.runningDirectory + "/tournamentfiles", shortName + "_work.xml"); 
+        File snFile = new File(Gotha.runningDirectory + "/tournamentfiles/work", shortName + ".xml"); 
         saveTournament(snFile);
         
     }
@@ -2536,6 +2542,7 @@ public class JFrGotha extends javax.swing.JFrame {
         if (f == null) return;
         
         updateShortNameFromFile(f);
+        updateDefaultDirectoryFromFile(f);
         
         // Make actual save
         this.saveTournament(f);
@@ -2599,6 +2606,13 @@ public class JFrGotha extends javax.swing.JFrame {
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
+    }
+
+    void updateDefaultDirectoryFromFile(File f){
+        Preferences prefsRoot = Preferences.userRoot();
+        Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
+        String strDefDirectory = "" + f.getParent();
+        gothaPrefs.put("defaultDirectory", "" + strDefDirectory);
     }
 
         
@@ -2820,7 +2834,7 @@ private void mniImportH9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
 
 private void mniPreferencesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniPreferencesActionPerformed
     JFrame jfr = new JFrPreferencesOptions();
-    this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
+    this.displayFrame(jfr, JFrGotha.BIG_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
 }//GEN-LAST:event_mniPreferencesActionPerformed
 
 private void mniTeamsManagerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniTeamsManagerActionPerformed

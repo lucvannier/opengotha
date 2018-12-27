@@ -3,28 +3,31 @@
     <title>Save facilities</title>
   </head>
   <body>
-    <h1 align="center">
-       Save facilities
-    </h1>
+    <h1 align="center">Save facilities</h1>
     <h2>Save</h2>
     The tournament is saved into the default tournament directory/file.
-    <br>The default file name is always homonym of the tournament short name. 
-    <br>The default directory for saving the tournament is the last directory where this file has been saved to. Before the first save, the directory used is the "runningdirectory"/tournamentfiles.
+    <br><h4>Default tournament directory</h4>
+    The default tournament directory is the last directory where the tournament has been saved.
+    <br>Before the first sace, the default tournament directory is the running directory
+    <br><h4>Default file name</h4>
+    The default file name is the tournament short name.
+   
+    <br><br>
     <h2>Save as ...</h2>
     You choose the directory and file name.
-    The tournament is saved and the chosen file name is kept as the new tournament short name
+    <br>The tournament is saved. The chosen directory becomes the default directory. 
+    
+    <br><br>
     <h2>Save a copy ...</h2>
-    Use this to save copies of the current tournament.
-    <br>This dialog differs from the "Save as ..." dialog in the sense that actual tournament short name is not affected
+    You choose the directory and file name.
+    <br>The chosen directory/file modifies neither the default directory nor the short name.
+    <br>Use this to save copies of the current tournament.
+
     <br><br>
     <h2>Work files</h2>
-    After each modification, OpenGotha saves the current tournament to a work file : "runningdirectory"/tournamentfiles/shortname_work.xml .
-    This file may be useful for instance in a case of accidental exit.
-    If, for any reason, you have not saved your tournament after the last modification, then, when you reload that tournament, you will be prompted :
-    <p align="left">
-        <img src="images/savefacilities.jpg">
-    </p>
-    
-    
+    After each modification, OpenGotha saves the current tournament to a work file : "runningdirectory"/tournamentfiles/work/"shortname".xml .
+    <br>This file may be useful for instance in a case of accidental exit.
+    <br>
+
   </body>
 </html>

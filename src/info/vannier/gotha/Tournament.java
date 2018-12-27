@@ -12,6 +12,7 @@ import java.util.logging.Logger;
 public class Tournament extends UnicastRemoteObject implements TournamentInterface, java.io.Serializable {
 
     private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+    private long lastSuccessfulSaveDate = 0;
     /**
      * Tournament parameter set
      */
@@ -73,15 +74,25 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
 
 
     public Tournament() throws RemoteException {
+        lastSuccessfulSaveDate = 0;
         tournamentParameterSet = new TournamentParameterSet();
         teamTournamentParameterSet = new TeamTournamentParameterSet();
 
-        hmPlayers = new HashMap<String, Player>();
-        hmGames = new HashMap<Integer, Game>();
+        hmPlayers = new HashMap<>();
+        hmGames = new HashMap<>();
         byePlayers = new Player[Gotha.MAX_NUMBER_OF_ROUNDS];
 
-        hmTeams = new HashMap<String, Team>();
-        hmClubsGroups = new HashMap<String, ClubsGroup>();
+        hmTeams = new HashMap<>();
+        hmClubsGroups = new HashMap<>();
+    }
+
+    @Override
+    public long getLastSuccessfulSaveDate() throws RemoteException{
+        return lastSuccessfulSaveDate;
+    }
+    @Override
+    public void setLastSuccessfulSaveDate(long saveDate) throws RemoteException{
+        lastSuccessfulSaveDate = saveDate;
     }
 
     @Override

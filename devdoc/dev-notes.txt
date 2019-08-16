@@ -230,3 +230,4 @@ Two menu items for tournament saving
 "Save as" saves the tournament into a file whose name is based on tournament short name. 
 If a different file name is chosen by the user, this file name is used to update short name
 "Save a copy" saves a copy according to users choice. Tournament short name is never modified by this menu item.
+

@@ -1,0 +1,31 @@
+Upload issues
+*************
+
+Journal informations
+====================
+A copy of .xml tournament file is uploaded to opengotha site
+What
+....
+
+WhereTo
+.......
+tournaments are uploaded to opengotha.info/tournaments/[dirname]/[filename]
+[dirname] is : yyymmdd_tournamentShrinkedShortName where yyyymmdd is the begin date of the tournament
+[filename] is : yyymmddhhmmss_tournamentShrinkedShortName.xml where yyymmddhhmmss is the date/time of upload
+tournamentShrinkedShortName is the shortName of the tournament after keeping only alphanumeric characters, "-" and "."
+
+When
+....
+
+Control
+.......
+made by php scripts located in opengotha.info/ :
+upload.php : invoked from OpenGotha by "http://opengotha.info/upload.php?shrinkedshortname=ssn&begindate=bd&currentdate=cd&filecontent=fc"
+upload.php creates a directory if necessary, then stores the file content.
+
+
+
+
+
+Log informations
+================

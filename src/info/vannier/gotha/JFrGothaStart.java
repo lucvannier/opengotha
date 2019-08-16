@@ -42,6 +42,7 @@ public class JFrGothaStart extends javax.swing.JFrame {
         }
 
         Gotha.runningDirectory = dir;
+        Gotha.tournamentDirectory = new File(Gotha.runningDirectory, "tournamentfiles");
         Gotha.exportDirectory = new File(Gotha.runningDirectory, "exportfiles");
         Gotha.exportHTMLDirectory = new File(Gotha.runningDirectory, "exportfiles/html");
         initComponents();

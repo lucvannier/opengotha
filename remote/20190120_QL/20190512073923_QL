@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" gothaMinorVersion="5" gothaVersion="347">
+<Players>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jun Han" grade="99K" name="Chin" participating="11110111111111111111" rank="30K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ikuta" grade="99K" name="Shingo" participating="11100110111111111111" rank="30K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Tai" grade="99K" name="Guo" participating="11111111111111111111" rank="99K" rating="-7800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Min Hao" grade="99K" name="Cheng" participating="11111101111111111111" rank="30K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Leong" grade="99K" name="Calvin" participating="11110000111111111111" rank="30K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Yun Hao" grade="99K" name="Louis Soong" participating="11111011111111111111" rank="30K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Hooi Yan" grade="99K" name="Joics Tan" participating="11111011111111111111" rank="30K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Geng Hao" grade="99K" name="Cheng" participating="11100001111111111111" rank="30K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jun Shen" grade="99K" name="Chin" participating="11111111111111111111" rank="30K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Kuang Ming" grade="99K" name="Eng" participating="00000010111111111111" rank="30K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="CHENGMINHAO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="CHINJUNHAN"/>
+<Game blackPlayer="CHINJUNSHEN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="9" tableNumber="1" whitePlayer="CHENGMINHAO"/>
+<Game blackPlayer="CHENGGENGHAO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="CHINJUNSHEN"/>
+<Game blackPlayer="LOUISSOONGYUNHAO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="9" tableNumber="2" whitePlayer="CALVINLEONG"/>
+<Game blackPlayer="CALVINLEONG" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="LOUISSOONGYUNHAO"/>
+<Game blackPlayer="CHINJUNHAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="9" tableNumber="3" whitePlayer="JOICSTANHOOIYAN"/>
+<Game blackPlayer="JOICSTANHOOIYAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="SHINGOIKUTA"/>
+<Game blackPlayer="SHINGOIKUTA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="1" whitePlayer="CHINJUNHAN"/>
+<Game blackPlayer="CHENGMINHAO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="2" whitePlayer="CHINJUNSHEN"/>
+<Game blackPlayer="CHINJUNHAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="1" whitePlayer="CHINJUNSHEN"/>
+<Game blackPlayer="CHENGMINHAO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="2" whitePlayer="CALVINLEONG"/>
+<Game blackPlayer="LOUISSOONGYUNHAO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="3" whitePlayer="CHENGGENGHAO"/>
+<Game blackPlayer="CHENGMINHAO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="8" tableNumber="1" whitePlayer="LOUISSOONGYUNHAO"/>
+<Game blackPlayer="JOICSTANHOOIYAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="8" tableNumber="2" whitePlayer="CHINJUNSHEN"/>
+<Game blackPlayer="CHENGGENGHAO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="8" tableNumber="3" whitePlayer="CHINJUNHAN"/>
+<Game blackPlayer="CHINJUNSHEN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="1" whitePlayer="CHENGMINHAO"/>
+<Game blackPlayer="LOUISSOONGYUNHAO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="2" whitePlayer="JOICSTANHOOIYAN"/>
+<Game blackPlayer="CHINJUNSHEN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="CALVINLEONG"/>
+<Game blackPlayer="CHINJUNHAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="10" tableNumber="1" whitePlayer="LOUISSOONGYUNHAO"/>
+<Game blackPlayer="SHINGOIKUTA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="CHENGMINHAO"/>
+<Game blackPlayer="CALVINLEONG" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="10" tableNumber="2" whitePlayer="JOICSTANHOOIYAN"/>
+<Game blackPlayer="CHINJUNHAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="LOUISSOONGYUNHAO"/>
+<Game blackPlayer="GUOTAI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="10" tableNumber="3" whitePlayer="CHINJUNSHEN"/>
+<Game blackPlayer="CHINJUNSHEN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="7" tableNumber="1" whitePlayer="SHINGOIKUTA"/>
+<Game blackPlayer="CHINJUNHAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="7" tableNumber="2" whitePlayer="JOICSTANHOOIYAN"/>
+<Game blackPlayer="LOUISSOONGYUNHAO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="7" tableNumber="3" whitePlayer="ENGKUANGMING"/>
+<Game blackPlayer="CALVINLEONG" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="1" whitePlayer="CHINJUNHAN"/>
+<Game blackPlayer="CHINJUNSHEN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="2" whitePlayer="LOUISSOONGYUNHAO"/>
+<Game blackPlayer="JOICSTANHOOIYAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="3" whitePlayer="CHENGMINHAO"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2019-01-20" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Jimmy" endDate="2019-01-20" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Qiyuan" name="Qiyuan League" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="20" shortName="QL" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="SOSW" number="2"/>
+<PlacementCriterion name="SOSOSW" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

@@ -1,0 +1,15 @@
+
+
+Specifications of the tournaments folder and files
+**************************************************
+
+xml tournament files uploaded to opengotha/tournaments
+
+The folders are named : yyyymmdd_shrinkedshortname where yyyymmdd is the begin date
+The files are named yyyymmddhhmmss_shrinkedshortname.xml where yyyymmddhhmmss is the save date and time
+
+The shortname is shrinked, keeping  "a" through "z", "A" through "Z" and "0" through "9",  ".", "-"
+Other characters, including space are deleted.
+
+  
+

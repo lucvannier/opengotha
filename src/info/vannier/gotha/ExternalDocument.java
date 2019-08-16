@@ -1286,6 +1286,7 @@ public class ExternalDocument {
         Document doc = getDocumentFromXMLFile(sourceFile);
 
         Player[] byePlayers = new Player[Gotha.MAX_NUMBER_OF_ROUNDS];
+
         for (int r = 0; r < byePlayers.length; r++) {
             byePlayers[r] = null;
         }

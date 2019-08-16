@@ -712,7 +712,7 @@ public class JFrUpdateRatings extends javax.swing.JFrame {
                 strPrompt = "Download FFG Rating List from :";
                 break;
             case RatingList.TYPE_AGA:
-                strDefaultURL = "https://usgo.org/mm/tdlista.txt";
+                strDefaultURL = "https://www.usgo.org/mm/tdlista.txt";
                 fDefaultFile = new File(Gotha.runningDirectory, "ratinglists/tdlista.txt");
                 strPrompt = "Download AGA Rating List from :";
                 break;

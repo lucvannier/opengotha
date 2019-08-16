@@ -37,8 +37,8 @@ public class Gotha {
     
     static Locale locale = Locale.getDefault();
     static final long GOTHA_VERSION = 348L;
-    static final long GOTHA_MINOR_VERSION = 2L;
-    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2018, Calendar.DECEMBER, 27)).getTime();
+    static final long GOTHA_MINOR_VERSION = 3L;
+    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2019, Calendar.AUGUST, 16)).getTime();
     // Data version for serialization. Since 3.23 version, not used because xml and compatibility is always granted in both senses
     static final long GOTHA_DATA_VERSION = 201L;
     
@@ -65,6 +65,7 @@ public class Gotha {
     static String strPreferences = "info/vannier/opengotha";
     static File runningDirectory;
 
+    static File tournamentDirectory;
     static File exportDirectory;
     static File exportHTMLDirectory;
 
@@ -133,7 +134,7 @@ public class Gotha {
         str += "\nDirect Confrontation algorithm has been designed and written by";
         str += "\nMatthieu Walraet";
         str += "\nOther contributors are Alan Abramson, Paul Baratou, Jonathan M Bresler, Claude Brisson,";
-        str += "\nClaude Burvenich, Barkın Çelebican, Laurent Coquelet, Loïc Cuvillon, Ian Davis";
+        str += "\nClaude Burvenich, Barkın Çelebican, Laurent Coquelet, Loïc Cuvillon, Ian Davis,";
         str += "\nTilo Dickopp, Olivier Dulac, André Engels, Krzysztof Grabowski, Bart Jacob, Marc Krauth,";
         str += "\nRoland Lezuo, Fabien Lips, Guillaume Largounez, Richard Mullens, François Mizessyn,";
         str += "\nKonstantin Pelepelin, Sylvain Ravera, Wandrille Sacquépée, Grzegorz Sobański,";
@@ -534,6 +535,17 @@ public class Gotha {
         Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
         String strK = "journalingReport";
         gothaPrefs.put(strK, "" + enabled);
+    }
+    public static String getPreference(String strK){
+        Preferences prefsRoot = Preferences.userRoot();
+        Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
+        String strPref = gothaPrefs.get(strK, "");
+        return strPref;
+    }
+    public static void setPreference(String strK, String strValue){
+        Preferences prefsRoot = Preferences.userRoot();
+        Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
+        gothaPrefs.put(strK, strValue);
     }
 }
 

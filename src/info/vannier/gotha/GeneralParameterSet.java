@@ -201,9 +201,9 @@ public class GeneralParameterSet implements java.io.Serializable{
 
     public void setShortName(String shortName) {
         // Eliminate all characters after "."
-        int pos = shortName.indexOf(".");
-        if (pos >= 0) shortName = shortName.substring(0, pos);
-        if(shortName.length() < 1) shortName = "TournamentShortName";
+//        int pos = shortName.indexOf(".");
+//        if (pos >= 0) shortName = shortName.substring(0, pos);
+//        if(shortName.length() < 1) shortName = "TournamentShortName";
         this.shortName = shortName;
     }
 

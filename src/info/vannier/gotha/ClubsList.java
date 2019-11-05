@@ -32,14 +32,6 @@ public class ClubsList {
         }
     }
     
-    public void println(){
-        int i = 0;
-    
-        for (Club c : hmClubs.values()){
-            i++;
-            System.out.println("" + i + " c.name = " + c.getName());
-        }
-    }
 
     /**
      * @return the hmClubs

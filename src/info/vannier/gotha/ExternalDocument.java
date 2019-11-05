@@ -3,12 +3,13 @@
  */
 package info.vannier.gotha;
 
+import info.vannier.util.GothaDate;
 import java.io.*;
 import java.nio.channels.FileChannel;
 import java.rmi.RemoteException;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
 import java.util.Iterator;
@@ -209,97 +210,97 @@ public class ExternalDocument {
         buildALGames(alPotentialHalfGames, alPlayers, alGames);
     }
 
-    public static void importPlayersFromVBSFile(File f, ArrayList<Player> alPlayers) {
-        ArrayList<String> alLines = new ArrayList<>();
-        try {
-            FileInputStream fis = new FileInputStream(f);
-            try (BufferedReader d = new BufferedReader(new InputStreamReader(fis, java.nio.charset.Charset.forName("ISO-8859-15")))) {
-                String s;
-                do {
-                    s = d.readLine();
-                    if (s != null) {
-                        alLines.add(s);
-                    }
-                } while (s != null);
-            }
-        } catch (IOException ex) {
-            Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
-        }
-
-        // Parse player lines
-        for (String strLine : alLines) {
-            int pos = strLine.indexOf(";");
-            if (pos >= 0) {
-                strLine = strLine.substring(0, pos - 1);
-            }
-            if (strLine.length() < 8) {
-                continue;
-            }
-            String[] tabStr = strLine.split("\\|");
-
-            String strNa = tabStr[0].trim();
-            String strFi = tabStr[1].trim();
-            String strRk = tabStr[2].trim();
-            String strCl = tabStr[3].trim();
-            String strCo = tabStr[4].trim();
-            String strRt = tabStr[5].trim();
-            String strRg = tabStr[6].trim();
-
-            if (strCl.length() > 4) {
-                strCl = strCl.substring(0, 4);
-            }
-            if (strCo.length() < 2) {
-                strCo = "";
-            }
-
-            int rk = Player.convertKDPToInt(strRk);
-
-            int rt;
-            String strRatingOrigin = "MAN";
-            try {
-                rt = Integer.parseInt(strRt);
-            } catch (NumberFormatException e) {
-                rt = rk * 100;
-                strRatingOrigin = "INI";
-            }
-
-            strRg = strRg.toLowerCase();
-            if (strRg.charAt(0) == 'p') {
-                strRg = "PRE";
-            } else {
-                strRg = "FIN";
-            }
-
-            Player p;
-            try {
-                p = new Player(
-                        strNa,
-                        strFi,
-                        strCo,
-                        strCl,
-                        "", // EGF Pin
-                        "", // FFG Licence
-                        "", // FFG Licence Status
-                        "", // AGA Id
-                        "", // AGA Expiration Date
-                        rk,
-                        rt,
-                        strRatingOrigin,
-                        "",
-                        0,
-                        strRg);
-                boolean[] bPart = new boolean[Gotha.MAX_NUMBER_OF_ROUNDS];
-                for (int i = 0; i < Gotha.MAX_NUMBER_OF_ROUNDS; i++) {
-                    bPart[i] = true;
-                }
-                p.setParticipating(bPart);
-            } catch (PlayerException pe) {
-                JOptionPane.showMessageDialog(null, pe.getMessage(), "Message", JOptionPane.ERROR_MESSAGE);
-                return;
-            }
-            alPlayers.add(p);
-        }
-    }
+//    public static void importPlayersFromVBSFile(File f, ArrayList<Player> alPlayers) {
+//        ArrayList<String> alLines = new ArrayList<>();
+//        try {
+//            FileInputStream fis = new FileInputStream(f);
+//            try (BufferedReader d = new BufferedReader(new InputStreamReader(fis, java.nio.charset.Charset.forName("ISO-8859-15")))) {
+//                String s;
+//                do {
+//                    s = d.readLine();
+//                    if (s != null) {
+//                        alLines.add(s);
+//                    }
+//                } while (s != null);
+//            }
+//        } catch (IOException ex) {
+//            Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//
+//        // Parse player lines
+//        for (String strLine : alLines) {
+//            int pos = strLine.indexOf(";");
+//            if (pos >= 0) {
+//                strLine = strLine.substring(0, pos - 1);
+//            }
+//            if (strLine.length() < 8) {
+//                continue;
+//            }
+//            String[] tabStr = strLine.split("\\|");
+//
+//            String strNa = tabStr[0].trim();
+//            String strFi = tabStr[1].trim();
+//            String strRk = tabStr[2].trim();
+//            String strCl = tabStr[3].trim();
+//            String strCo = tabStr[4].trim();
+//            String strRt = tabStr[5].trim();
+//            String strRg = tabStr[6].trim();
+//
+//            if (strCl.length() > 4) {
+//                strCl = strCl.substring(0, 4);
+//            }
+//            if (strCo.length() < 2) {
+//                strCo = "";
+//            }
+//
+//            int rk = Player.convertKDPToInt(strRk);
+//
+//            int rt;
+//            String strRatingOrigin = "MAN";
+//            try {
+//                rt = Integer.parseInt(strRt);
+//            } catch (NumberFormatException e) {
+//                rt = rk * 100;
+//                strRatingOrigin = "INI";
+//            }
+//
+//            strRg = strRg.toLowerCase();
+//            if (strRg.charAt(0) == 'p') {
+//                strRg = "PRE";
+//            } else {
+//                strRg = "FIN";
+//            }
+//
+//            Player p;
+//            try {
+//                p = new Player(
+//                        strNa,
+//                        strFi,
+//                        strCo,
+//                        strCl,
+//                        "", // EGF Pin
+//                        "", // FFG Licence
+//                        "", // FFG Licence Status
+//                        "", // AGA Id
+//                        "", // AGA Expiration Date
+//                        rk,
+//                        rt,
+//                        strRatingOrigin,
+//                        "",
+//                        0,
+//                        strRg);
+//                boolean[] bPart = new boolean[Gotha.MAX_NUMBER_OF_ROUNDS];
+//                for (int i = 0; i < Gotha.MAX_NUMBER_OF_ROUNDS; i++) {
+//                    bPart[i] = true;
+//                }
+//                p.setParticipating(bPart);
+//            } catch (PlayerException pe) {
+//                JOptionPane.showMessageDialog(null, pe.getMessage(), "Message", JOptionPane.ERROR_MESSAGE);
+//                return;
+//            }
+//            alPlayers.add(p);
+//        }
+//    }
 
     public static DocumentBuilder createDocumentBuilder(){
         DocumentBuilder docBuilder;
@@ -316,15 +317,6 @@ public class ExternalDocument {
     }
     public static Document getDocumentFromXMLFile(File sourceFile) {
         DocumentBuilder docBuilder = createDocumentBuilder();
-//        Document doc = null;
-//        DocumentBuilderFactory docBuilderFactory = DocumentBuilderFactory.newInstance();
-//        docBuilderFactory.setIgnoringElementContentWhitespace(true);
-//        try {
-//            docBuilder = docBuilderFactory.newDocumentBuilder();
-//        } catch (ParserConfigurationException e) {
-//            System.out.println("Wrong parser configuration: " + e.getMessage());
-//            return null;
-//        }
         Document doc = null;
         try {
             doc = docBuilder.parse(sourceFile);
@@ -339,16 +331,21 @@ public class ExternalDocument {
 
     public static String importTournamentFromXMLFile(File sourceFile, TournamentInterface tournament, 
             boolean bPlayers, boolean bGames, boolean bTPS, boolean bTeams, boolean bClubsGroups) {
-        // What dataVersion ?
-        // long dataVersion = ExternalDocument.importDataVersionFromXMLFile(sourceFile);
+        
+        Date saveDT = ExternalDocument.importSaveDTFromXMLFile(sourceFile);
+        String externalIPAddress = ExternalDocument.importExternalIPAddressFromXMLFile(sourceFile);
+        try {
+            tournament.setSaveDT(saveDT);
+            tournament.setExternalIPAddress(externalIPAddress);
 
+        } catch (RemoteException ex) {
+            Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         int nbImportedPlayers = 0;
         int nbNotImportedPlayers = 0;
         if (bPlayers) {
             ArrayList<Player> alPlayers = ExternalDocument.importPlayersFromXMLFile(sourceFile);
-//            if (alPlayers == null || alPlayers.isEmpty()) {
-//                System.out.println("No player has been imported");
-//            }
             if (alPlayers != null) {
                 for (Player p : alPlayers) {
                     try {
@@ -580,8 +577,35 @@ public class ExternalDocument {
         dataVersion = Long.parseLong(strDataVersion);
 
         return dataVersion;
-
     }
+    
+    private static Date importSaveDTFromXMLFile(File sourceFile) {
+        Document doc = getDocumentFromXMLFile(sourceFile);
+        if (doc == null) {
+            return new Date();
+        }
+        NodeList nl = doc.getElementsByTagName("Tournament");
+        Node n = nl.item(0);
+        NamedNodeMap nnm = n.getAttributes();
+        String strSaveDT = extractNodeValue(nnm, "saveDT", "20190101000000");
+        Date saveDT = GothaDate.parse(strSaveDT, "yyyyMMddHHmmss"); 
+        
+        return saveDT;
+    }
+    
+    private static String importExternalIPAddressFromXMLFile(File sourceFile){
+        Document doc = getDocumentFromXMLFile(sourceFile);
+        if (doc == null) {
+            return "";
+        }
+        NodeList nl = doc.getElementsByTagName("Tournament");
+        Node n = nl.item(0);
+        NamedNodeMap nnm = n.getAttributes();
+        String externalIPAddress = extractNodeValue(nnm, "externalIPAddress", "127.1.1.1");
+  
+        return externalIPAddress;
+    }
+
 
     private static ArrayList<Player> importPlayersFromXMLFile(File sourceFile) {
         long currentDataVersion = Gotha.GOTHA_DATA_VERSION;
@@ -686,18 +710,17 @@ public class ExternalDocument {
         gps.setLocation(location);
         String director = extractNodeValue(nnmGPS, "director", "");
         gps.setDirector(director);
-        String strBeginDate = extractNodeValue(nnmGPS, "beginDate", "2000-01-01");
-        try {
-            gps.setBeginDate(new SimpleDateFormat("yyyy-MM-dd").parse(strBeginDate));
-        } catch (ParseException ex) {
-            Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        String strEndDate = extractNodeValue(nnmGPS, "endDate", "2000-01-01");
-        try {
-            gps.setEndDate(new SimpleDateFormat("yyyy-MM-dd").parse(strEndDate));
-        } catch (ParseException ex) {
-            Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
-        }
+        Date curDate = new Date();
+        String strCurDate = new SimpleDateFormat("yyyy-MM-dd").format(curDate);
+        String strBeginDate = extractNodeValue(nnmGPS, "beginDate", strCurDate);
+        Date beginDate = GothaDate.parse(strBeginDate, "yyyy-MM-dd");
+        if (beginDate.getYear() <= 0) beginDate = curDate;
+        gps.setBeginDate(beginDate);
+        String strEndDate = extractNodeValue(nnmGPS, "endDate", strCurDate);
+        Date endDate = GothaDate.parse(strEndDate, "yyyy-MM-dd");
+        if (endDate.getYear() <= 0) endDate = curDate;
+        gps.setEndDate(endDate);
+        
         int time = extractNodeIntValue(nnmGPS, "time", GeneralParameterSet.GEN_GP_BASICTIME_DEF);    // For old dataVersion
         gps.setBasicTime(extractNodeIntValue(nnmGPS, "basicTime", time));
 
@@ -2962,6 +2985,15 @@ public class ExternalDocument {
         rootElement.setAttribute("dataVersion", "" + Gotha.GOTHA_DATA_VERSION);
         rootElement.setAttribute("gothaVersion", "" + Gotha.GOTHA_VERSION);
         rootElement.setAttribute("gothaMinorVersion", "" + Gotha.GOTHA_MINOR_VERSION);
+        
+        Date currentDate = Calendar.getInstance().getTime();
+        SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");
+        String saveDT = sdf.format(currentDate);
+        rootElement.setAttribute("saveDT", saveDT);
+        
+        String externalIPAddress = Gotha.getExternalIPAddress();
+        rootElement.setAttribute("externalIPAddress", externalIPAddress);
+        
         document.appendChild(rootElement);
 
         // Include players

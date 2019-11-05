@@ -111,6 +111,7 @@ Views are refreshed by a Timer. This timer is set up by setupRefreshTimer() invo
                     timer.stop();
                 }
                 try {
+                    if (!tournament.isOpen()) cleanClose();
                     if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
                         updateAllViews();
                     }

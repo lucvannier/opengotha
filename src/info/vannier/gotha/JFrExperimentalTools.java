@@ -47,6 +47,7 @@ public class JFrExperimentalTools extends javax.swing.JFrame {
                     timer.stop();
                 }
                 try {
+                    if (!tournament.isOpen()) cleanClose();
                     if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
                         updateAllViews();
                     }
@@ -94,8 +95,6 @@ public class JFrExperimentalTools extends javax.swing.JFrame {
         btnForceCaseClub = new javax.swing.JButton();
         jLabel5 = new javax.swing.JLabel();
         jLabel6 = new javax.swing.JLabel();
-        pnlStrangeGames = new javax.swing.JPanel();
-        btnStrangeColor = new javax.swing.JButton();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
@@ -239,21 +238,6 @@ public class JFrExperimentalTools extends javax.swing.JFrame {
 
         getContentPane().add(pnlForceCase);
         pnlForceCase.setBounds(20, 280, 660, 100);
-
-        pnlStrangeGames.setBorder(javax.swing.BorderFactory.createTitledBorder("Detect strange games"));
-        pnlStrangeGames.setLayout(null);
-
-        btnStrangeColor.setText("Strange color in handicap games");
-        btnStrangeColor.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnStrangeColorActionPerformed(evt);
-            }
-        });
-        pnlStrangeGames.add(btnStrangeColor);
-        btnStrangeColor.setBounds(20, 30, 250, 23);
-
-        getContentPane().add(pnlStrangeGames);
-        pnlStrangeGames.setBounds(20, 800, 660, 180);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -480,29 +464,6 @@ public class JFrExperimentalTools extends javax.swing.JFrame {
         tournamentChanged();      
     }//GEN-LAST:event_btnForceCaseClubActionPerformed
 
-    private void btnStrangeColorActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnStrangeColorActionPerformed
-        ArrayList<Game> alG = null;
-        try {
-            alG = tournament.gamesList();
-        } catch (RemoteException ex) {
-            Logger.getLogger(JFrExperimentalTools.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        for(Game g : alG){
-            Player wP = g.getWhitePlayer();
-            Player bP = g.getBlackPlayer();
-            int hd = g.getHandicap();
-            int wR = wP.getRank();
-            int bR = bP.getRank();
-            if (hd > 0 && wR < bR){
-                String str = "Round " + (g.getRoundNumber() + 1) + " Table=" + (g.getTableNumber() + 1) + " " + wP.getName() + " " + wR + " - " + bP.getName() + " " + bR + "   hd = " + hd;
-                System.out.println(str);
-            }
-            
-            
-            
-        }
-    }//GEN-LAST:event_btnStrangeColorActionPerformed
-
     private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
         cleanClose();
     }//GEN-LAST:event_formWindowClosing
@@ -526,7 +487,6 @@ public class JFrExperimentalTools extends javax.swing.JFrame {
     private javax.swing.JButton btnImportGrades;
     private javax.swing.JButton btnShiftNONEGFRatings;
     private javax.swing.JButton btnShiftRatings;
-    private javax.swing.JButton btnStrangeColor;
     private javax.swing.JButton btnTestconversıon;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
@@ -538,7 +498,6 @@ public class JFrExperimentalTools extends javax.swing.JFrame {
     private javax.swing.JPanel pnlForceCase;
     private javax.swing.JPanel pnlForceParticipation;
     private javax.swing.JPanel pnlImportGrades;
-    private javax.swing.JPanel pnlStrangeGames;
     private javax.swing.JTextField txfConverted;
     private javax.swing.JTextField txfOrıgınal;
     // End of variables declaration//GEN-END:variables

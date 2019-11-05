@@ -34,7 +34,6 @@
         <MenuItem class="javax.swing.JMenuItem" name="mniSortByRating">
           <Properties>
             <Property name="text" type="java.lang.String" value="Sort by rating"/>
-            <Property name="actionCommand" type="java.lang.String" value="Sort by rating"/>
           </Properties>
           <Events>
             <EventHandler event="actionPerformed" listener="java.awt.event.ActionListener" parameters="java.awt.event.ActionEvent" handler="mniSortByRatingActionPerformed"/>

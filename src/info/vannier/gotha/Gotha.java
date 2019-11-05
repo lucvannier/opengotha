@@ -6,9 +6,11 @@ package info.vannier.gotha;
 
 import java.awt.Image;
 import java.io.BufferedInputStream;
+import java.io.BufferedReader;
 import java.io.File;
 import java.io.FileOutputStream;
 import java.io.IOException;
+import java.io.InputStreamReader;
 import java.net.*;
 import java.rmi.RemoteException;
 import java.text.ParseException;
@@ -37,8 +39,8 @@ public class Gotha {
     
     static Locale locale = Locale.getDefault();
     static final long GOTHA_VERSION = 348L;
-    static final long GOTHA_MINOR_VERSION = 3L;
-    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2019, Calendar.AUGUST, 16)).getTime();
+    static final long GOTHA_MINOR_VERSION = 4L;
+    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2019, Calendar.NOVEMBER, 5)).getTime();
     // Data version for serialization. Since 3.23 version, not used because xml and compatibility is always granted in both senses
     static final long GOTHA_DATA_VERSION = 201L;
     
@@ -68,6 +70,10 @@ public class Gotha {
     static File tournamentDirectory;
     static File exportDirectory;
     static File exportHTMLDirectory;
+    
+    static final int TU_NONE = 0;
+    static final int TU_EVERYSAVE = 1;
+    static final int TU_EVERYCHANGE = 2;
 
     public static String getGothaVersionNumber() {
         int mainVersion = (int) (GOTHA_VERSION / 100L);
@@ -142,6 +148,25 @@ public class Gotha {
         str += "\n\nThanks to all of them !";
 
         return str;
+    }
+    
+    public static String getExternalIPAddress(){        
+        URL whatismyip = null;
+        try {
+            whatismyip = new URL("http://checkip.amazonaws.com");
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(Gotha.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        BufferedReader in;
+        String ip = null;
+        try {
+            in = new BufferedReader(new InputStreamReader(whatismyip.openStream()));
+            ip = in.readLine(); //you get the IP as a String
+        } catch (IOException ex) {
+//            Logger.getLogger(Gotha.class.getName()).log(Level.SEVERE, null, ex);
+            System.out.println("Internet not available");
+        }        
+        return ip;
     }
     
     /**
@@ -326,7 +351,6 @@ public class Gotha {
         }
         
         return bExpired;
-        
     }
     
     public static TournamentInterface getTournamentFromFile(File f) throws IOException, ClassNotFoundException {
@@ -516,6 +540,16 @@ public class Gotha {
         return strIA.equals("true");
     }
     
+    public static int getTournamentUploadStatus(){
+        Preferences prefsRoot = Preferences.userRoot();
+        Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
+
+        String strK = "tournamentUploadStatus";
+        String strPD = gothaPrefs.get(strK, "" + Gotha.TU_EVERYSAVE);
+        
+        return Integer.parseInt(strPD);
+    }
+    
     public static void setRatingListsDownloadEnabled(boolean enabled){
         Preferences prefsRoot = Preferences.userRoot();
         Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
@@ -530,12 +564,20 @@ public class Gotha {
         gothaPrefs.put(strK, "" + enabled);
     }
     
+    public static void setTournamentUploadStatus(int tus){
+        Preferences prefsRoot = Preferences.userRoot();
+        Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
+        String strK = "tournamentUploadStatus";
+        gothaPrefs.put(strK, "" + tus);
+    }
+    
     public static void setJournalingReportEnabled(boolean enabled){
         Preferences prefsRoot = Preferences.userRoot();
         Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
         String strK = "journalingReport";
         gothaPrefs.put(strK, "" + enabled);
     }
+    
     public static String getPreference(String strK){
         Preferences prefsRoot = Preferences.userRoot();
         Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
@@ -548,6 +590,7 @@ public class Gotha {
         gothaPrefs.put(strK, strValue);
     }
 }
+
 
 class GothaImageLoader extends Thread{
     String strURL;

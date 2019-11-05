@@ -48,12 +48,14 @@ public class JFrPlayersManager extends javax.swing.JFrame {
     private static final int RATING_COL = 6;
     private static final int GRADE_COL = 7;
     /**  current Tournament */
-    private TournamentInterface tournament;
+    private final TournamentInterface tournament;
     /** Rating List */
     private RatingList ratingList = new RatingList();
     
     /**
      * Creates new form JFrPlayersManager
+     * @param tournament
+     * @throws java.rmi.RemoteException
      */
     public JFrPlayersManager(TournamentInterface tournament) throws RemoteException {
         this.tournament = tournament;
@@ -74,6 +76,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
                     timer.stop();
                 }
                 try {
+                    if (!tournament.isOpen()) cleanClose();
                     if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
                         updateAllViews();
                     }
@@ -1659,6 +1662,8 @@ public class JFrPlayersManager extends javax.swing.JFrame {
     }
 
     public void resetControlsForLevenshteinSearching() {
+        this.scpPlayerNameChoice.setVisible(false);
+
         this.cbxRatingList.setVisible(false);
         this.txfPlayerNameChoice.setVisible(true);
         this.txfPlayerNameChoice.setEnabled(true);

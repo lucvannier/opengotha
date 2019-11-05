@@ -4,6 +4,7 @@
 
 package info.vannier.gotha;
 
+import info.vannier.util.GothaDate;
 import java.awt.Dimension;
 import java.awt.Rectangle;
 import java.awt.Toolkit;
@@ -12,7 +13,6 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 import java.io.File;
 import java.rmi.RemoteException;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.Collections;
@@ -54,6 +54,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
                     timer.stop();
                 }
                 try {
+                    if (!tournament.isOpen()) cleanClose();
                     if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
                         updateAllViews();
                     }
@@ -551,6 +552,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         jLabel4.setBounds(10, 120, 100, 13);
 
         txfBeginDate.setText("yyyy-mm-dd");
+        txfBeginDate.setToolTipText("yyyy-mm-dd");
         txfBeginDate.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 txfBeginDateFocusLost(evt);
@@ -579,6 +581,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         jLabel8.setBounds(10, 140, 100, 13);
 
         txfEndDate.setText("yyyy-mm-dd");
+        txfEndDate.setToolTipText("yyyy-mm-dd");
         txfEndDate.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 txfEndDateFocusLost(evt);
@@ -2456,24 +2459,26 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         }
         GeneralParameterSet gps = tps.getGeneralParameterSet();
         Date oldBeginDate = gps.getBeginDate();
-        Date newBeginDate;
-        try {
-            newBeginDate = new SimpleDateFormat("yyyy-MM-dd").parse(this.txfBeginDate.getText());  
-        } catch (ParseException ex) {
-            Logger.getLogger(JFrTournamentOptions.class.getName()).log(Level.SEVERE, null, ex);
+        Date newBeginDate = null;
+        
+        newBeginDate = GothaDate.parse(this.txfBeginDate.getText(), "yyyy-MM-dd");
+        if (newBeginDate.getYear() <= 0){
+            String strMessage = "Invalid date";            
+            JOptionPane.showMessageDialog(this, strMessage, "Message", JOptionPane.ERROR_MESSAGE);
+            this.txfBeginDate.setText(new SimpleDateFormat("yyyy-MM-dd").format(oldBeginDate));
             return;
         }
+        
         if (newBeginDate.equals(oldBeginDate)) return;
+        
         gps.setBeginDate(newBeginDate);        
-
         tps.setGeneralParameterSet(gps);
         try {
             tournament.setTournamentParameterSet(tps);
             this.tournamentChanged();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrTournamentOptions.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
+        }        
     }//GEN-LAST:event_txfBeginDateFocusLost
 
     private void txfLocationFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txfLocationFocusLost
@@ -2696,7 +2701,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         try {
             tournament.setTournamentParameterSet(tps);
             tournament.setHasBeenSavedOnce(false);
-            tournament.setLastSuccessfulSaveDate(0);
             this.tournamentChanged();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrTournamentOptions.class.getName()).log(Level.SEVERE, null, ex);
@@ -2773,13 +2777,16 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         }
         GeneralParameterSet gps = tps.getGeneralParameterSet();
         Date oldEndDate = gps.getEndDate();
-        Date newEndDate;
-        try {
-            newEndDate = new SimpleDateFormat("yyyy-MM-dd").parse(this.txfEndDate.getText());  
-        } catch (ParseException ex) {
-            Logger.getLogger(JFrTournamentOptions.class.getName()).log(Level.SEVERE, null, ex);
+        Date newEndDate = null;
+
+        newEndDate = GothaDate.parse(this.txfEndDate.getText(), "yyyy-MM-dd");
+        if (newEndDate.getYear() <= 0){
+            String strMessage = "Invalid date";            
+            JOptionPane.showMessageDialog(this, strMessage, "Message", JOptionPane.ERROR_MESSAGE);
+            this.txfEndDate.setText(new SimpleDateFormat("yyyy-MM-dd").format(oldEndDate));
             return;
         }
+
         if (newEndDate.equals(oldEndDate)) return;
         gps.setEndDate(newEndDate);        
 

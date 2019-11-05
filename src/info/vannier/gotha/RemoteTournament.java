@@ -4,18 +4,23 @@ package info.vannier.gotha;
 import java.io.BufferedInputStream;
 import java.io.BufferedReader;
 import java.io.File;
-import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.io.InputStream;
 import java.io.InputStreamReader;
+import java.io.OutputStream;
+import java.io.OutputStreamWriter;
 import java.io.PrintWriter;
 import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
-import java.net.URLEncoder;
+import java.nio.file.Files;
+import java.nio.file.Path;
 import java.rmi.RemoteException;
-import java.util.ArrayList;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
+import java.util.Calendar;
+import java.util.Date;
+import java.util.List;
 import java.util.logging.Level;
 import java.util.logging.Logger;
 
@@ -24,53 +29,98 @@ import java.util.logging.Logger;
  * @author Luc
  */
 public class RemoteTournament {
-    public static ArrayList<String> filesList(String strURL){
-        ArrayList<String> alF = null;
+    
+    public static void upload(TournamentInterface tournament){
+	final String charset = "UTF-8";
+        final String CRLF = "\r\n"; // Line separator required by multipart/form-data.
+
+        String tournamentShortName = null;        
+        String tournamentFileName = null;        
+ 
         try {
-            alF = new ArrayList<>();
-            URL url = null;
-            try {
-                url = new URL(strURL);
-            } catch (MalformedURLException ex) {
-                Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);
+            tournamentShortName = tournament.getShortName();
+        } catch (RemoteException ex) {
+            Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);
+        }
+            tournamentFileName = tournamentShortName;
+        
+        File tournamentFile = new File(Gotha.runningDirectory, "tournamentfiles/work/" + tournamentFileName + ".xml"); // original tournament file
+        if (!tournamentFile.exists()) return;
+
+        String shrinkedShortName = shrinkedString(tournamentShortName);
+        String targetURL = "http://opengotha.info/upload.php";
+        
+        Date beginDate = null;
+        try {
+            beginDate = tournament.getTournamentParameterSet().getGeneralParameterSet().getBeginDate();
+        } catch (RemoteException ex) {
+            Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
+        DateFormat dateFormat = new SimpleDateFormat("yyyyMMdd");
+        String strBeginDate = dateFormat.format(beginDate);
+        Date currentDate = Calendar.getInstance().getTime();
+        dateFormat = new SimpleDateFormat("yyyyMMddHHmmss");
+        String strCurrentDate = dateFormat.format(currentDate);
+
+	URL url;
+        URLConnection connection = null;
+        OutputStream output;
+        PrintWriter writer;
+
+        try {
+            url = new URL(targetURL);
+            connection = url.openConnection(); 
+            connection.setDoOutput(true);
+            output = connection.getOutputStream(); 
+            writer = new PrintWriter(new OutputStreamWriter(output, charset), true);
+            writer.append("postcontent=").append(CRLF);
+            writer.append("shrinkedshortname:" + shrinkedShortName + ";").append(CRLF);
+            writer.append("begindate:" + strBeginDate + ";").append(CRLF);
+            writer.append("currentdate:" + strCurrentDate + ";").append(CRLF);
+            writer.append("filecontent:");
+
+            List<String> lst = null;
+            Path path = tournamentFile.toPath();
+            lst = Files.readAllLines(path);
+
+            for (String s : lst){
+                writer.append(s).append(CRLF);
             }
-            URLConnection urlc = url.openConnection();
             
-            BufferedInputStream bis = new BufferedInputStream(urlc.getInputStream());
-            int i;                        
-            StringBuffer sbFN = new StringBuffer();
-            while ((i = bis.read()) != -1) {
-                char c = (char)i;
-                if (c != '\n') sbFN.append(c);
-                else{
-                    if (sbFN.length() > 0) alF.add(new String(sbFN));
-                    sbFN = new StringBuffer();
-                }
-            }
-            bis.close();
+            output.flush(); // Important before continuing with writer!
+            writer.append(CRLF).flush(); // CRLF is important! It indicates end of boundary.
+           
+        } catch (MalformedURLException ex) {
+            Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);
+        } catch (UnsupportedEncodingException ex) {
+            Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);
         } catch (IOException ex) {
             Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);
         }
-        return alF;
+        // Get Response
+        StringBuffer response = null;
+        try {
+            BufferedReader in = new BufferedReader(
+                new InputStreamReader(connection.getInputStream()));
+            String inputLine;
+            response = new StringBuffer();
+
+            while ((inputLine = in.readLine()) != null) {
+                response.append(inputLine);
+                response.append("\n");
+            }
+
+            in.close();
+        } catch (IOException ex) {
+            Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);
+        }
     }
     
-    public static ArrayList<String> tournamentFilesList(){
-        String strURL = "http://opengotha.info/fileslist.php?dirName=./tournaments";
-        ArrayList<String> alTN = new ArrayList<>();
-        ArrayList<String> alD = filesList(strURL);
-        for(String s : alD){
-            ArrayList<String>alSF = null; 
-            try {
-                alSF = filesList(strURL + "/" + URLEncoder.encode(s, "UTF-8"));
-            } catch (UnsupportedEncodingException ex) {
-                Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);
-            }
-            for (String tn:alSF){
-                alTN.add(s + "/" + tn);
-            }
-        }
-        return alTN;
-       
+    // Eliminate undesirable characters
+    private static String shrinkedString(String str) {
+       String shrinkedStr = str.replaceAll("[^A-Za-z0-9.-]", "");
+       return shrinkedStr;     
     }
    
     private static String downloadFileIntoString(String strURL){
@@ -99,110 +149,5 @@ public class RemoteTournament {
             
         return str;
     }
-
-    public static void downloadFileIntoFile(String strURL, String strFN){
-        String str = downloadFileIntoString(strURL);
-//        System.out.println("str = " + str);
-        PrintWriter out = null;
-        try {
-            out = new PrintWriter(strFN);
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        out.print(str);
-        out.close();
-    }
- 
-    public static TournamentInterface downloadTournament(String strURL){
-        new File(Gotha.runningDirectory + "/remote").mkdirs();
-        File f = new File(Gotha.runningDirectory, "remote/essai3h43.xml");
-        String strFN = f.toString();
-        downloadFileIntoFile(strURL, strFN);
-        TournamentInterface t = null;
-        try {
-            t = new Tournament();
-        } catch (RemoteException ex) {
-            Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        ExternalDocument.importTournamentFromXMLFile(f, t, true, true, true, true, true);
-        return t;
-    }
-        
-    public static ArrayList<TournamentInterface> downloadTournaments(boolean bAllTournaments, boolean bAllCopies){
-        ArrayList<TournamentInterface> alT = new ArrayList<>();
-        // What Directories ?
-        String strURL = "http://opengotha.info/tournaments/";
-        ArrayList<String> alTN = RemoteTournament.tournamentFilesList();
-        for(String strT:alTN){
-            String strDir = strT.substring(0, strT.indexOf('/'));
-            String strFil = strT.substring(strT.indexOf('/')+1);
-            String strEncT = null;
-           try {
-                
-               String strEncDir = URLEncoder.encode(strDir, "UTF-8");
-//
-
-        String strEncFil = URLEncoder.encode(strFil, "UTF-8");
-//               String strEncFil = strFil;
- 
-               strEncT = strURL + strEncDir + "/" + strEncFil;
-            } catch (UnsupportedEncodingException ex) {
-                Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);
-            }
-           File dirDestination = new File(Gotha.runningDirectory + "/remote/" + strDir);
-           dirDestination.mkdir();
-           File fDestination = new File(Gotha.runningDirectory + "/remote/" + strT);
-//            File fDestination = new File(Gotha.runningDirectory + "/remote/" + "essaibidon.xml");
-            TournamentInterface t = downloadTournament(strEncT, fDestination);
-            alT.add(t);     
-        }
-
-        return alT;
-    }
-
-    public static void downloadByHTTP(String strURL, File fDestination){
-        PrintWriter out = null;
-        try {
-            out = new PrintWriter(fDestination);
-        } catch (FileNotFoundException ex) {
-            Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);
-        }           
-        try {
-            URL urlTournament = new URL(strURL);
-//            BufferedReader in = new BufferedReader(
-//                    new InputStreamReader(urlTournament.openStream()));
-            InputStream is = urlTournament.openStream();
-            InputStreamReader isr = new InputStreamReader(is);
-            BufferedReader in = new BufferedReader(isr);
-            String inputLine;
-            while ((inputLine = in.readLine()) != null){
-                out.println(inputLine);                    
-            }
-        } catch (MalformedURLException ex) {
-            Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);
-        } catch (IOException ex) {
-            Logger.getLogger(RemoteTournament.class.getName()).log(Level.SEVERE, null, ex);        
-        }
-         
-        out.close();
-    }
-        
-    private static TournamentInterface downloadTournament(String strURL, File fDestination){
-        TournamentInterface t = null;
-        try {                                            
-            RemoteTournament.downloadByHTTP(strURL, fDestination);
-            
-            t = new Tournament();
-            ExternalDocument.importTournamentFromXMLFile(fDestination, t, true, true, true, true, true);
-            try {
-                t.getShortName();
-            } catch (RemoteException ex) {                
-                Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
-            }            
-        } catch (RemoteException ex) {
-            Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        
-        return t;
-    }
+                 
 }

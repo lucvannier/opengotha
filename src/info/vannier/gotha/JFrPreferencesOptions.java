@@ -57,15 +57,20 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         grpHelpLanguage = new javax.swing.ButtonGroup();
         jScrollPane2 = new javax.swing.JScrollPane();
         jTable1 = new javax.swing.JTable();
+        grpTournaments = new javax.swing.ButtonGroup();
         pnlBasicPreferences = new javax.swing.JPanel();
         scpBasicPreferences = new javax.swing.JScrollPane();
         tblBasicPreferences = new javax.swing.JTable();
         btnClearBasicPreferences = new javax.swing.JButton();
         pnlInternetAccess = new javax.swing.JPanel();
         jLabel1 = new javax.swing.JLabel();
-        ckbJournaling = new javax.swing.JCheckBox();
         ckbRatingLists = new javax.swing.JCheckBox();
         ckbPhotos = new javax.swing.JCheckBox();
+        jLabel2 = new javax.swing.JLabel();
+        ckbTournaments = new javax.swing.JCheckBox();
+        ckbJournaling = new javax.swing.JCheckBox();
+        rdbAfterEverySave = new javax.swing.JRadioButton();
+        rdbAfterEveryChange = new javax.swing.JRadioButton();
         btnHelp = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
         pnlLogPreferences = new javax.swing.JPanel();
@@ -130,9 +135,43 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         pnlInternetAccess.setBorder(javax.swing.BorderFactory.createTitledBorder("Internet access"));
         pnlInternetAccess.setLayout(null);
 
-        jLabel1.setText("Enable Internet access for :");
+        jLabel1.setText("Enable Download for :");
         pnlInternetAccess.add(jLabel1);
-        jLabel1.setBounds(10, 20, 220, 14);
+        jLabel1.setBounds(10, 20, 180, 14);
+
+        ckbRatingLists.setSelected(true);
+        ckbRatingLists.setText("Rating lists");
+        ckbRatingLists.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ckbRatingListsActionPerformed(evt);
+            }
+        });
+        pnlInternetAccess.add(ckbRatingLists);
+        ckbRatingLists.setBounds(30, 40, 160, 23);
+
+        ckbPhotos.setSelected(true);
+        ckbPhotos.setText("Photos");
+        ckbPhotos.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ckbPhotosActionPerformed(evt);
+            }
+        });
+        pnlInternetAccess.add(ckbPhotos);
+        ckbPhotos.setBounds(30, 70, 160, 23);
+
+        jLabel2.setText("Enable Upload for :");
+        pnlInternetAccess.add(jLabel2);
+        jLabel2.setBounds(600, 20, 180, 14);
+
+        ckbTournaments.setSelected(true);
+        ckbTournaments.setText("Tournaments files");
+        ckbTournaments.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                ckbTournamentsActionPerformed(evt);
+            }
+        });
+        pnlInternetAccess.add(ckbTournaments);
+        ckbTournaments.setBounds(620, 80, 130, 23);
 
         ckbJournaling.setSelected(true);
         ckbJournaling.setText("Journaling report");
@@ -142,30 +181,30 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
             }
         });
         pnlInternetAccess.add(ckbJournaling);
-        ckbJournaling.setBounds(30, 100, 170, 23);
+        ckbJournaling.setBounds(620, 40, 130, 23);
 
-        ckbRatingLists.setSelected(true);
-        ckbRatingLists.setText("Rating lists download");
-        ckbRatingLists.addActionListener(new java.awt.event.ActionListener() {
+        grpTournaments.add(rdbAfterEverySave);
+        rdbAfterEverySave.setText("After every save");
+        rdbAfterEverySave.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ckbRatingListsActionPerformed(evt);
+                rdbAfterEverySaveActionPerformed(evt);
             }
         });
-        pnlInternetAccess.add(ckbRatingLists);
-        ckbRatingLists.setBounds(30, 40, 170, 23);
+        pnlInternetAccess.add(rdbAfterEverySave);
+        rdbAfterEverySave.setBounds(760, 70, 150, 23);
 
-        ckbPhotos.setSelected(true);
-        ckbPhotos.setText("Photos download");
-        ckbPhotos.addActionListener(new java.awt.event.ActionListener() {
+        grpTournaments.add(rdbAfterEveryChange);
+        rdbAfterEveryChange.setText("After every change");
+        rdbAfterEveryChange.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ckbPhotosActionPerformed(evt);
+                rdbAfterEveryChangeActionPerformed(evt);
             }
         });
-        pnlInternetAccess.add(ckbPhotos);
-        ckbPhotos.setBounds(30, 70, 170, 23);
+        pnlInternetAccess.add(rdbAfterEveryChange);
+        rdbAfterEveryChange.setBounds(760, 100, 150, 23);
 
         getContentPane().add(pnlInternetAccess);
-        pnlInternetAccess.setBounds(10, 320, 974, 140);
+        pnlInternetAccess.setBounds(10, 320, 960, 140);
 
         btnHelp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info/vannier/gotha/gothalogo16.jpg"))); // NOI18N
         btnHelp.setText("help");
@@ -248,10 +287,6 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         Gotha.displayGothaHelp("Preferences frame");
 }//GEN-LAST:event_btnHelpActionPerformed
 
-    private void ckbJournalingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckbJournalingActionPerformed
-        Gotha.setJournalingReportEnabled(this.ckbJournaling.isSelected());
-    }//GEN-LAST:event_ckbJournalingActionPerformed
-
     private void ckbPhotosActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckbPhotosActionPerformed
          Gotha.setPhotosDownloadEnabled(this.ckbPhotos.isSelected());
     }//GEN-LAST:event_ckbPhotosActionPerformed
@@ -275,6 +310,36 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
     
         updateAllViews();
     }//GEN-LAST:event_btnClearLogPreferencesActionPerformed
+
+    private void ckbTournamentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckbTournamentsActionPerformed
+        updateTournamentUploadStatusFromControls();
+    }//GEN-LAST:event_ckbTournamentsActionPerformed
+    
+    private void updateTournamentUploadStatusFromControls(){
+            boolean btf = this.ckbTournaments.isSelected();
+        boolean baes = this.rdbAfterEverySave.isSelected();
+        if (btf && baes){
+            Gotha.setTournamentUploadStatus(Gotha.TU_EVERYSAVE);
+        }
+        if (btf && !baes){
+            Gotha.setTournamentUploadStatus(Gotha.TU_EVERYCHANGE);
+        }
+        if(!btf){
+            Gotha.setTournamentUploadStatus(Gotha.TU_NONE);
+        }
+    
+    }
+    private void ckbJournalingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckbJournalingActionPerformed
+        Gotha.setJournalingReportEnabled(this.ckbJournaling.isSelected());
+    }//GEN-LAST:event_ckbJournalingActionPerformed
+
+    private void rdbAfterEverySaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbAfterEverySaveActionPerformed
+        updateTournamentUploadStatusFromControls();
+    }//GEN-LAST:event_rdbAfterEverySaveActionPerformed
+
+    private void rdbAfterEveryChangeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbAfterEveryChangeActionPerformed
+        updateTournamentUploadStatusFromControls();
+    }//GEN-LAST:event_rdbAfterEveryChangeActionPerformed
         
     private void customInitComponents(){
         this.updateAllViews();
@@ -332,6 +397,23 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         this.ckbRatingLists.setSelected(Gotha.isRatingListsDownloadEnabled());
         this.ckbPhotos.setSelected(Gotha.isPhotosDownloadEnabled());
         this.ckbJournaling.setSelected(Gotha.isJournalingReportEnabled());
+        
+        if (Gotha.getTournamentUploadStatus() == Gotha.TU_NONE){
+            this.ckbTournaments.setSelected(false);
+            this.rdbAfterEverySave.setVisible(false);
+            this.rdbAfterEveryChange.setVisible(false);
+        }
+        else{
+            this.ckbTournaments.setSelected(true);
+            this.rdbAfterEverySave.setVisible(true);
+            this.rdbAfterEveryChange.setVisible(true);
+            if (Gotha.getTournamentUploadStatus() == Gotha.TU_EVERYSAVE){
+                this.rdbAfterEverySave.setSelected(true);
+            }
+            if (Gotha.getTournamentUploadStatus() == Gotha.TU_EVERYCHANGE){
+                this.rdbAfterEveryChange.setSelected(true);
+            }
+        }
     }
 
     
@@ -343,13 +425,18 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
     private javax.swing.JCheckBox ckbJournaling;
     private javax.swing.JCheckBox ckbPhotos;
     private javax.swing.JCheckBox ckbRatingLists;
+    private javax.swing.JCheckBox ckbTournaments;
     private javax.swing.ButtonGroup grpHelpLanguage;
+    private javax.swing.ButtonGroup grpTournaments;
     private javax.swing.JLabel jLabel1;
+    private javax.swing.JLabel jLabel2;
     private javax.swing.JScrollPane jScrollPane2;
     private javax.swing.JTable jTable1;
     private javax.swing.JPanel pnlBasicPreferences;
     private javax.swing.JPanel pnlInternetAccess;
     private javax.swing.JPanel pnlLogPreferences;
+    private javax.swing.JRadioButton rdbAfterEveryChange;
+    private javax.swing.JRadioButton rdbAfterEverySave;
     private javax.swing.JScrollPane scpBasicPreferences;
     private javax.swing.JScrollPane scpLogPreferences;
     private javax.swing.JTable tblBasicPreferences;

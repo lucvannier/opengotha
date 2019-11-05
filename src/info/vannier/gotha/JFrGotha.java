@@ -4,6 +4,7 @@
  */
 package info.vannier.gotha;
 
+import info.vannier.util.GothaDate;
 import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
@@ -26,6 +27,20 @@ import javax.swing.table.*;
  * @author Luc Vannier
  */
 public class JFrGotha extends javax.swing.JFrame {
+
+    /**
+     * @return the tournament
+     */
+    public TournamentInterface getTournament() {
+        return tournament;
+    }
+
+    /**
+     * @param tournament the tournament to set
+     */
+    public void setTournament(TournamentInterface tournament) {
+        this.tournament = tournament;
+    }
 
     private static final long REFRESH_DELAY = 2000;
     private static final long UNCONDITIONAL_REFRESH_DELAY = 60000;
@@ -74,6 +89,7 @@ public class JFrGotha extends javax.swing.JFrame {
      * current Tournament
      */
     private TournamentInterface tournament = null;
+    
     private long lastDisplayedStandingsUpdateTime = 0;
     private long lastDisplayedTeamsStandingsUpdateTime = 0;
     private ControlPanelTableCellRenderer cpTableCellRenderer = new ControlPanelTableCellRenderer();
@@ -88,6 +104,8 @@ public class JFrGotha extends javax.swing.JFrame {
         this.tournament = tournament;
 
         initComponents();
+        mnuRemote.setVisible(false);
+        if (Gotha.gothaVariant == Gotha.GOTHA_PREMIUM) mnuRemote.setVisible(true);
 
         if (Gotha.runningMode == Gotha.RUNNING_MODE_SAL || Gotha.runningMode == Gotha.RUNNING_MODE_SRV) {
             ArrayList<String> alRT = getRecentTournamentsList();
@@ -96,15 +114,6 @@ public class JFrGotha extends javax.swing.JFrame {
                 if (f.canRead()) {
                     try {
                         openTournament(f);
-//                        String strFN = f.getAbsolutePath();
-////                        System.out.println("strFN = " + strFN);
-//                        long ldh = f.lastModified();
-//                        Date dh = new Date(ldh);
-//                        String strDH = dh.toString();
-////                        System.out.println("strDH = " + strDH);
-//                        String strMes = "Tournament has been opened from file : " + strFN + "\nLast modified : " + strDH; 
-//                        JOptionPane.showMessageDialog(this, strMes, "Message", JOptionPane.INFORMATION_MESSAGE);
-
                     } catch (Exception ex) {
                         System.out.println("Problem opening file : " + f.getName());
                     }
@@ -123,24 +132,25 @@ public class JFrGotha extends javax.swing.JFrame {
         ActionListener taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-                if (tournament == null) {
+                if (getTournament() == null) {
                     return;
                 }
                 try {
-                    boolean b = tournament.clockIn(Gotha.clientName);
+                    boolean b = getTournament().clockIn(Gotha.clientName);
                     if (!b && Gotha.runningMode == Gotha.RUNNING_MODE_CLI) {
                         JOptionPane.showMessageDialog(null, "Connection to Server has been reset for current tournament\nOpenGotha will stop",
                                 "Message", JOptionPane.ERROR_MESSAGE);
                         exitOpenGotha();
 
                     }
-                    if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
+                    if (getTournament().getLastTournamentModificationTime() > lastComponentsUpdateTime) {
                         updateAllViews();
                         // save tournament to work file
-                       saveTournamentToAWorkFile();
+                        saveTournamentToWorkFile();
+                        if(Gotha.getTournamentUploadStatus() == Gotha.TU_EVERYCHANGE) RemoteTournament.upload(getTournament());
                     }
                     // Specific update for JFrGotha
-                    long curTime = tournament.getCurrentTournamentTime();
+                    long curTime = getTournament().getCurrentTournamentTime();
                     if ((curTime - lastComponentsUpdateTime) > JFrGotha.UNCONDITIONAL_REFRESH_DELAY){
                         updateAllViews();                       
                     }
@@ -309,7 +319,6 @@ public class JFrGotha extends javax.swing.JFrame {
         mniExperimentalTools = new javax.swing.JMenuItem();
         mnuRemote = new javax.swing.JMenu();
         mniRemoteTournaments = new javax.swing.JMenuItem();
-        mniUpload = new javax.swing.JMenuItem();
         mnuHelp = new javax.swing.JMenu();
         mniOpenGothaHelp = new javax.swing.JMenuItem();
         mniHelpAbout = new javax.swing.JMenuItem();
@@ -1316,21 +1325,13 @@ public class JFrGotha extends javax.swing.JFrame {
         mnuRemote.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
 
         mniRemoteTournaments.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        mniRemoteTournaments.setText("Tournaments");
+        mniRemoteTournaments.setText("Remote Tournaments");
         mniRemoteTournaments.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mniRemoteTournamentsActionPerformed(evt);
             }
         });
         mnuRemote.add(mniRemoteTournaments);
-
-        mniUpload.setText("Upload");
-        mniUpload.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                mniUploadActionPerformed(evt);
-            }
-        });
-        mnuRemote.add(mniUpload);
 
         mnuMain.add(mnuRemote);
 
@@ -1364,13 +1365,13 @@ public class JFrGotha extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void mniGamesOptionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniGamesOptionsActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
 
         try {
-            JFrame jfr = new JFrGamesOptions(tournament);
+            JFrame jfr = new JFrGamesOptions(getTournament());
             this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -1380,23 +1381,23 @@ public class JFrGotha extends javax.swing.JFrame {
     private void btnPrintStandingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrintStandingsActionPerformed
         TournamentParameterSet tps = null;
         try {
-            tps = tournament.getTournamentParameterSet();
+            tps = getTournament().getTournamentParameterSet();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
         TournamentParameterSet printTPS = new TournamentParameterSet(tps);
         PlacementParameterSet printPPS = printTPS.getPlacementParameterSet();
         printPPS.setPlaCriteria(displayedCriteria);
-        TournamentPrinting.printStandings(tournament, printTPS, this.displayedRoundNumber);
+        TournamentPrinting.printStandings(getTournament(), printTPS, this.displayedRoundNumber);
         }//GEN-LAST:event_btnPrintStandingsActionPerformed
 
     private void mniMMGroupsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniMMGroupsActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
         try {
-            if (tournament.tournamentType() != TournamentParameterSet.TYPE_MCMAHON) {
+            if (getTournament().tournamentType() != TournamentParameterSet.TYPE_MCMAHON) {
                 JOptionPane.showMessageDialog(this, "McMahon Groups are relevant only in McMahon tournaments", "Message", JOptionPane.ERROR_MESSAGE);
                 return;
 
@@ -1406,7 +1407,7 @@ public class JFrGotha extends javax.swing.JFrame {
         }
 
         try {
-            JFrame jfr = new JFrPlayersMMG(tournament);
+            JFrame jfr = new JFrPlayersMMG(getTournament());
             this.displayFrame(jfr, BIG_FRAME_WIDTH, BIG_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -1414,12 +1415,12 @@ public class JFrGotha extends javax.swing.JFrame {
     }//GEN-LAST:event_mniMMGroupsActionPerformed
 
     private void mniBuildTestTournamentActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniBuildTestTournamentActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
         try {
-            JFrame jfr = new JFrBuildTestTournament(tournament);
+            JFrame jfr = new JFrBuildTestTournament(getTournament());
             this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -1427,7 +1428,7 @@ public class JFrGotha extends javax.swing.JFrame {
     }//GEN-LAST:event_mniBuildTestTournamentActionPerformed
 
     private void mniCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniCloseActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -1457,18 +1458,8 @@ public class JFrGotha extends javax.swing.JFrame {
 
         TournamentParameterSet tps = new TournamentParameterSet();
 
-        Date beginDate;
-        try {
-            beginDate = new SimpleDateFormat("yyyy-MM-dd").parse(this.txfBeginDate.getText());
-        } catch (ParseException ex) {
-            beginDate = new java.util.Date();
-        }
-        Date endDate;
-        try {
-            endDate = new SimpleDateFormat("yyyy-MM-dd").parse(this.txfEndDate.getText());
-        } catch (ParseException ex) {
-            endDate = new java.util.Date();
-        }
+        Date beginDate = GothaDate.parse(this.txfBeginDate.getText(), "yyyy-MM-dd");
+        Date endDate = GothaDate.parse(this.txfEndDate.getText(), "yyyy-MM-dd");
 
         int nbRounds;
         try {
@@ -1510,9 +1501,9 @@ public class JFrGotha extends javax.swing.JFrame {
         closeTournament();
 
         try {
-            tournament = new Tournament();
-            tournament.setTournamentParameterSet(tps);
-            tournament.setTeamTournamentParameterSet(ttps);
+            setTournament(new Tournament());
+            getTournament().setTournamentParameterSet(tps);
+            getTournament().setTeamTournamentParameterSet(ttps);
             this.lastDisplayedStandingsUpdateTime = 0;
             this.lastDisplayedTeamsStandingsUpdateTime = 0;
             
@@ -1526,7 +1517,7 @@ public class JFrGotha extends javax.swing.JFrame {
         
         // If we are in Server mode, then rebind tournament
         if (Gotha.runningMode == Gotha.RUNNING_MODE_SRV) {
-            GothaRMIServer.addTournament(tournament);
+            GothaRMIServer.addTournament(getTournament());
         }
 
         dlgNew.dispose();
@@ -1537,12 +1528,12 @@ public class JFrGotha extends javax.swing.JFrame {
     }//GEN-LAST:event_btnDlgNewCancelActionPerformed
 
     private void mniTournamentOptionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniTournamentOptionsActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
         try {
-            JFrame jfr = new JFrTournamentOptions(tournament);
+            JFrame jfr = new JFrTournamentOptions(getTournament());
             this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -1607,12 +1598,12 @@ public class JFrGotha extends javax.swing.JFrame {
     }//GEN-LAST:event_mniExitActionPerformed
 
     private void mniResultsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniResultsActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
         try {
-            JFrame jfr = new JFrGamesResults(tournament);   
+            JFrame jfr = new JFrGamesResults(getTournament());   
             displayFrame(jfr, JFrGotha.MEDIUM_FRAME_WIDTH, JFrGotha.MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -1620,12 +1611,12 @@ public class JFrGotha extends javax.swing.JFrame {
     }//GEN-LAST:event_mniResultsActionPerformed
 
     private void mniPairActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniPairActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
         try {
-            JFrame jfr = new JFrGamesPair(tournament);
+            JFrame jfr = new JFrGamesPair(getTournament());
             displayFrame(jfr, JFrGotha.MEDIUM_FRAME_WIDTH, JFrGotha.MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -1634,12 +1625,12 @@ public class JFrGotha extends javax.swing.JFrame {
     }//GEN-LAST:event_mniPairActionPerformed
 
     private void mniPlayersQuickCheckActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniPlayersQuickCheckActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
         try {
-            JFrame jfr = new JFrPlayersQuickCheck(tournament);
+            JFrame jfr = new JFrPlayersQuickCheck(getTournament());
             displayFrame(jfr, JFrGotha.MEDIUM_FRAME_WIDTH, JFrGotha.MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -1647,8 +1638,6 @@ public class JFrGotha extends javax.swing.JFrame {
     }//GEN-LAST:event_mniPlayersQuickCheckActionPerformed
 
     private void customInitComponents() {
-        this.mnuRemote.setVisible(false);
-        if (Gotha.gothaVariant == Gotha.GOTHA_PREMIUM) this.mnuRemote.setVisible(true);
 
         int w = JFrGotha.BIG_FRAME_WIDTH;
         int h = JFrGotha.BIG_FRAME_HEIGHT;
@@ -1709,7 +1698,7 @@ public class JFrGotha extends javax.swing.JFrame {
                 this.mnuTools.setVisible(false);
                 this.mniRMI.setVisible(false);
                 this.mnuRemote.setVisible(false);
-                break;
+               break;
         }
 
         try {
@@ -1721,7 +1710,7 @@ public class JFrGotha extends javax.swing.JFrame {
         }
         getRootPane().setDefaultButton(btnSearch);
         
-        if (tournament == null){
+        if (getTournament() == null){
             this.tpnGotha.setSelectedComponent(this.pnlWelcome);
         }
         else{
@@ -1831,12 +1820,12 @@ public class JFrGotha extends javax.swing.JFrame {
         cbxTeamCrit5.setModel(new DefaultComboBoxModel<String>(TeamPlacementParameterSet.criteriaLongNames()));
         cbxTeamCrit6.setModel(new DefaultComboBoxModel<String>(TeamPlacementParameterSet.criteriaLongNames()));
 
-        if (tournament == null) {
+        if (getTournament() == null) {
             return;
         }
         try {
-            displayedRoundNumber = tournament.presumablyCurrentRoundNumber();
-            displayedTeamRoundNumber = tournament.presumablyCurrentRoundNumber();
+            displayedRoundNumber = getTournament().presumablyCurrentRoundNumber();
+            displayedTeamRoundNumber = getTournament().presumablyCurrentRoundNumber();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -1867,9 +1856,9 @@ public class JFrGotha extends javax.swing.JFrame {
                 strTitle += "Client. " + " ";
         }
 
-        if (tournament != null) {
+        if (getTournament() != null) {
             try {
-                strTitle += tournament.getTournamentParameterSet().getGeneralParameterSet().getName();
+                strTitle += getTournament().getTournamentParameterSet().getGeneralParameterSet().getName();
             } catch (RemoteException ex) {
                 Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -1936,8 +1925,8 @@ public class JFrGotha extends javax.swing.JFrame {
             displayedCriteria[2] = PlacementParameterSet.criterionUID((String) cbxCrit3.getModel().getSelectedItem());
             displayedCriteria[3] = PlacementParameterSet.criterionUID((String) cbxCrit4.getModel().getSelectedItem());
         } else {
-            if (tournament != null) {
-                PlacementParameterSet displayedPPS = tournament.getTournamentParameterSet().getPlacementParameterSet();
+            if (getTournament() != null) {
+                PlacementParameterSet displayedPPS = getTournament().getTournamentParameterSet().getPlacementParameterSet();
                 displayedCriteria[0] = displayedPPS.getPlaCriteria()[0];
                 displayedCriteria[1] = displayedPPS.getPlaCriteria()[1];
                 displayedCriteria[2] = displayedPPS.getPlaCriteria()[2];
@@ -1958,8 +1947,8 @@ public class JFrGotha extends javax.swing.JFrame {
             displayedTeamCriteria[4] = TeamPlacementParameterSet.criterionUID((String) cbxTeamCrit5.getModel().getSelectedItem());
             displayedTeamCriteria[5] = TeamPlacementParameterSet.criterionUID((String) cbxTeamCrit6.getModel().getSelectedItem());
         } else {
-            if (tournament != null) {
-                TeamPlacementParameterSet displayedTeamPPS = tournament.getTeamTournamentParameterSet().getTeamPlacementParameterSet();
+            if (getTournament() != null) {
+                TeamPlacementParameterSet displayedTeamPPS = getTournament().getTeamTournamentParameterSet().getTeamPlacementParameterSet();
                 displayedTeamCriteria[0] = displayedTeamPPS.getPlaCriteria()[0];
                 displayedTeamCriteria[1] = displayedTeamPPS.getPlaCriteria()[1];
                 displayedTeamCriteria[2] = displayedTeamPPS.getPlaCriteria()[2];
@@ -1971,7 +1960,7 @@ public class JFrGotha extends javax.swing.JFrame {
     }
 
     private void updateStandingsComponents() throws RemoteException {
-        if (tournament == null) {
+        if (getTournament() == null) {
             this.pnlIntStandings.setVisible(false);
             return;
         }
@@ -1980,7 +1969,7 @@ public class JFrGotha extends javax.swing.JFrame {
             return;
         }
         this.pnlIntStandings.setVisible(true);
-        int nbRounds = tournament.getTournamentParameterSet().getGeneralParameterSet().getNumberOfRounds();
+        int nbRounds = getTournament().getTournamentParameterSet().getGeneralParameterSet().getNumberOfRounds();
         if (displayedRoundNumber > nbRounds - 1) {
             displayedRoundNumber = nbRounds - 1;
         }
@@ -1998,7 +1987,7 @@ public class JFrGotha extends javax.swing.JFrame {
         this.cbxCrit4.getModel().setSelectedItem(PlacementParameterSet.criterionLongName(displayedCriteria[3]));
 
         // Define displayedTPS
-        TournamentParameterSet tps = tournament.getTournamentParameterSet();
+        TournamentParameterSet tps = getTournament().getTournamentParameterSet();
         TournamentParameterSet displayedTPS = new TournamentParameterSet(tps);
         PlacementParameterSet displayedPPS = displayedTPS.getPlacementParameterSet();
         displayedPPS.setPlaCriteria(displayedCriteria);
@@ -2009,10 +1998,10 @@ public class JFrGotha extends javax.swing.JFrame {
             numberOfDisplayedRounds = 10;
         }
 
-        lastDisplayedStandingsUpdateTime = tournament.getCurrentTournamentTime();
+        lastDisplayedStandingsUpdateTime = getTournament().getCurrentTournamentTime();
         ArrayList<ScoredPlayer> alOrderedScoredPlayers = new ArrayList<ScoredPlayer>();
         try {
-            alOrderedScoredPlayers = tournament.orderedScoredPlayersList(displayedRoundNumber, displayedTPS.getPlacementParameterSet());
+            alOrderedScoredPlayers = getTournament().orderedScoredPlayersList(displayedRoundNumber, displayedTPS.getPlacementParameterSet());
 
             DPParameterSet dpps = tps.getDPParameterSet();
             if (!dpps.isDisplayNPPlayers()){
@@ -2176,11 +2165,11 @@ public class JFrGotha extends javax.swing.JFrame {
 
     private void updateTeamsStandingsComponents() throws RemoteException {
         int numberOfDisplayedRounds = 9;
-        if (tournament == null) {
+        if (getTournament() == null) {
             this.pnlIntTeamsStandings.setVisible(false);
             return;
         }
-        if (tournament.teamsList().isEmpty()) {
+        if (getTournament().teamsList().isEmpty()) {
             this.pnlIntTeamsStandings.setVisible(false);
             return;
         }
@@ -2189,7 +2178,7 @@ public class JFrGotha extends javax.swing.JFrame {
             return;
         }
         this.pnlIntTeamsStandings.setVisible(true);
-        int nbRounds = tournament.getTournamentParameterSet().getGeneralParameterSet().getNumberOfRounds();
+        int nbRounds = getTournament().getTournamentParameterSet().getGeneralParameterSet().getNumberOfRounds();
         if (this.displayedTeamRoundNumber > nbRounds - 1) {
             displayedTeamRoundNumber = nbRounds - 1;
         }
@@ -2211,14 +2200,14 @@ public class JFrGotha extends javax.swing.JFrame {
         this.cbxTeamCrit6.getModel().setSelectedItem(TeamPlacementParameterSet.criterionLongName(displayedTeamCriteria[5]));
 
         // Define displayedTeamTPS
-        TeamTournamentParameterSet ttps = tournament.getTeamTournamentParameterSet();
+        TeamTournamentParameterSet ttps = getTournament().getTeamTournamentParameterSet();
         TeamTournamentParameterSet displayedTeamTPS = new TeamTournamentParameterSet(ttps);
         TeamPlacementParameterSet displayedTeamPPS = displayedTeamTPS.getTeamPlacementParameterSet();
         displayedTeamPPS.setPlaCriteria(displayedTeamCriteria);
 
 
-        lastDisplayedTeamsStandingsUpdateTime = tournament.getCurrentTournamentTime();
-        ScoredTeamsSet sts = tournament.getAnUpToDateScoredTeamsSet(displayedTeamPPS, displayedTeamRoundNumber);
+        lastDisplayedTeamsStandingsUpdateTime = getTournament().getCurrentTournamentTime();
+        ScoredTeamsSet sts = getTournament().getAnUpToDateScoredTeamsSet(displayedTeamPPS, displayedTeamRoundNumber);
         ArrayList<ScoredTeam> alOrderedScoredTeams = sts.getOrderedScoredTeamsList();
 
         this.tblTeamsStandings.clearSelection();
@@ -2300,19 +2289,19 @@ public class JFrGotha extends javax.swing.JFrame {
     }
  
     private void updateControlPanel() throws RemoteException {
-        if (tournament == null) {
+        if (getTournament() == null) {
             this.pnlIntControlPanel.setVisible(false);
             return;
         }
 
         this.pnlIntControlPanel.setVisible(true);
 
-        TournamentParameterSet tps = tournament.getTournamentParameterSet();
+        TournamentParameterSet tps = getTournament().getTournamentParameterSet();
         DefaultTableModel model = (DefaultTableModel) tblControlPanel.getModel();
         while (model.getRowCount() > 0) {
             model.removeRow(0);
         }
-        ArrayList<Player> alPlayers = tournament.playersList();
+        ArrayList<Player> alPlayers = getTournament().playersList();
 
         for (int r = 0; r < tps.getGeneralParameterSet().getNumberOfRounds(); r++) {
             // Number of participants
@@ -2323,10 +2312,10 @@ public class JFrGotha extends javax.swing.JFrame {
                     // Assigned players, games, etc.
                 }
             }
-            ArrayList<Game> alGames = tournament.gamesList(r);
+            ArrayList<Game> alGames = getTournament().gamesList(r);
             int nbGames = alGames.size();
             int nbAssignedPlayers = 2 * nbGames;
-            if (tournament.getByePlayer(r) != null) {
+            if (getTournament().getByePlayer(r) != null) {
                 nbAssignedPlayers++;
             }
             int nbEntResults = 0;
@@ -2382,7 +2371,7 @@ public class JFrGotha extends javax.swing.JFrame {
         
         // pnlTournamentFile
         File parent = new File(Gotha.getPreference("defaultDirectory"));
-        String strFil = tournament.getShortName() + ".xml";
+        String strFil = getTournament().getShortName() + ".xml";
 //        String strDirFil = strDir + "/" + strFil;
         File f = new File(parent, strFil);
         String strMes;
@@ -2417,15 +2406,15 @@ public class JFrGotha extends javax.swing.JFrame {
         while (model.getRowCount() > 0) {
             model.removeRow(0);
         }
-        if (tournament == null) {
+        if (getTournament() == null) {
             return;
         }
 
-        ArrayList<Team> alDisplayedTeams = tournament.teamsList();
+        ArrayList<Team> alDisplayedTeams = getTournament().teamsList();
 
         int teamSize = 0;
         try {
-            teamSize = tournament.getTeamSize();
+            teamSize = getTournament().getTeamSize();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrTeamsManager.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2449,7 +2438,7 @@ public class JFrGotha extends javax.swing.JFrame {
             model.addRow(row);
 
             for (int ib = 0; ib < teamSize; ib++) {
-                ArrayList<Player> alP = tournament.playersList(t, ib);
+                ArrayList<Player> alP = getTournament().playersList(t, ib);
                 if (alP.isEmpty()) {
                     alP.add(null);
                 }
@@ -2475,11 +2464,11 @@ public class JFrGotha extends javax.swing.JFrame {
                     } else {
                         int numberOfRounds = 0;
                         try {
-                            numberOfRounds = tournament.getTournamentParameterSet().getGeneralParameterSet().getNumberOfRounds();
+                            numberOfRounds = getTournament().getTournamentParameterSet().getGeneralParameterSet().getNumberOfRounds();
                         } catch (RemoteException ex) {
                             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
                         }
-                        boolean[] bM = tournament.membership(p, t, ib);
+                        boolean[] bM = getTournament().membership(p, t, ib);
                         String str = "";
                         for (int r = 0; r < numberOfRounds; r++) {
                             str += bM[r] ? "+" : "-";
@@ -2513,7 +2502,7 @@ public class JFrGotha extends javax.swing.JFrame {
                 System.out.println("Internal Error. saveCurrentTournamentIfNecessary should not be called in client mode");
                 return true;
             }
-            if (tournament == null) {
+            if (getTournament() == null) {
                 return true;
             }           
             if (!tournament.isChangeSinceLastSave()) {
@@ -2530,10 +2519,15 @@ public class JFrGotha extends javax.swing.JFrame {
                 updateShortNameFromFile(f);
                 this.saveTournament(f);
 
-                tournament.setChangeSinceLastSaveAsFalse();
-                tournament.setHasBeenSavedOnce(true);
+                getTournament().setChangeSinceLastSaveAsFalse();
+                getTournament().setHasBeenSavedOnce(true);
                 this.addRecentTournament("" + f);
                 this.tournamentChanged();
+
+                if(Gotha.getTournamentUploadStatus() == Gotha.TU_EVERYSAVE){
+                    this.saveTournamentToWorkFile();
+                    RemoteTournament.upload(getTournament());
+                }
 
                 return true;
             }
@@ -2544,10 +2538,10 @@ public class JFrGotha extends javax.swing.JFrame {
         return true;
     }
 
-    private void saveTournamentToAWorkFile(){
+    private void saveTournamentToWorkFile(){
         String shortName = "shortName";
         try {
-            shortName = tournament.getShortName();
+            shortName = getTournament().getShortName();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2556,12 +2550,12 @@ public class JFrGotha extends javax.swing.JFrame {
     }
         
     private File saveTournament(File f) {
-        TournamentInterface t = tournament;
+        TournamentInterface t = getTournament();
         return saveTournament(t, f);
     }
 
     private File saveTournament(TournamentInterface t, File f) {
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return null;
         }
@@ -2579,11 +2573,23 @@ public class JFrGotha extends javax.swing.JFrame {
         } catch (IOException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
-
+        Date currentDate = Calendar.getInstance().getTime();
+        try {
+            getTournament().setSaveDT(currentDate);
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
+        String externalIPAddress = Gotha.getExternalIPAddress();
+        try {
+            getTournament().setExternalIPAddress(externalIPAddress);
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         ExternalDocument.generateXMLFile(t, f);
         
         return f;
-        
     }
 
     private void mniHelpAboutActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniHelpAboutActionPerformed
@@ -2594,12 +2600,12 @@ public class JFrGotha extends javax.swing.JFrame {
     }//GEN-LAST:event_mniHelpAboutActionPerformed
 
     private void mniPlayersManagerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniPlayersManagerActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
         try {
-            JFrame jfr = new JFrPlayersManager(tournament);
+            JFrame jfr = new JFrPlayersManager(getTournament());
             this.displayFrame(jfr, BIG_FRAME_WIDTH, BIG_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -2607,7 +2613,7 @@ public class JFrGotha extends javax.swing.JFrame {
     }//GEN-LAST:event_mniPlayersManagerActionPerformed
 
     private void mniSaveAsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniSaveAsActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -2621,13 +2627,18 @@ public class JFrGotha extends javax.swing.JFrame {
         // Make actual save
         this.saveTournament(f);
         try {
-            tournament.setChangeSinceLastSaveAsFalse();
-            tournament.setHasBeenSavedOnce(true);
+            getTournament().setChangeSinceLastSaveAsFalse();
+            getTournament().setHasBeenSavedOnce(true);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }               
         this.addRecentTournament("" + f);
         
+        if(Gotha.getTournamentUploadStatus() == Gotha.TU_EVERYSAVE)
+        {
+            this.saveTournamentToWorkFile();
+            RemoteTournament.upload(getTournament());
+        }
         this.tournamentChanged();
     }//GEN-LAST:event_mniSaveAsActionPerformed
     
@@ -2681,7 +2692,7 @@ public class JFrGotha extends javax.swing.JFrame {
 
         String sn = snFil.substring(0, indLastPoint);
         try {
-            tournament.setShortName(sn);
+            getTournament().setShortName(sn);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2705,7 +2716,7 @@ public class JFrGotha extends javax.swing.JFrame {
     String getDefaultSaveAsFileName(){
         boolean bHBSO = false;
         try {
-            bHBSO = tournament.isHasBeenSavedOnce();
+            bHBSO = getTournament().isHasBeenSavedOnce();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2715,7 +2726,7 @@ public class JFrGotha extends javax.swing.JFrame {
         
         String shortName = "shortName";
         try {
-            shortName = tournament.getShortName();
+            shortName = getTournament().getShortName();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2726,12 +2737,12 @@ public class JFrGotha extends javax.swing.JFrame {
     }
  
 private void mniRRActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniRRActionPerformed
-    if (tournament == null) {
+    if (getTournament() == null) {
         JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
         return;
     }
     try {
-        JFrame jfr = new JFrGamesRR(tournament);
+        JFrame jfr = new JFrGamesRR(getTournament());
         this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
     } catch (RemoteException ex) {
         Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -2749,7 +2760,7 @@ private void mniOpenGothaHelpActionPerformed(java.awt.event.ActionEvent evt) {//
 }//GEN-LAST:event_mniOpenGothaHelpActionPerformed
 
 private void mniImportXMLActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniImportXMLActionPerformed
-    if (tournament == null) {
+    if (getTournament() == null) {
         JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
         return;
     }
@@ -2775,7 +2786,7 @@ private void btnDlgImportXMLOKActionPerformed(java.awt.event.ActionEvent evt) {/
         return;
     }
 
-    String strReport = ExternalDocument.importTournamentFromXMLFile(f, tournament,
+    String strReport = ExternalDocument.importTournamentFromXMLFile(f, getTournament(),
             this.chkPlayers.isSelected(), this.chkGames.isSelected(), this.chkTournamentParameters.isSelected(), this.chkTeams.isSelected(), this.chkClubsGroups.isSelected());
 
     this.tournamentChanged();
@@ -2845,7 +2856,7 @@ private void mniImportH9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
      * @param importType either "h9", or "tou"
      */
     private void importPlainFile(String importType) {
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -2872,7 +2883,7 @@ private void mniImportH9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
         int nbErrors = 0;
         for (Player p : alPlayers) {
             try {
-                tournament.addPlayer(p);
+                getTournament().addPlayer(p);
             } catch (RemoteException ex) {
                 Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
             } catch (TournamentException te) {
@@ -2890,7 +2901,7 @@ private void mniImportH9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
         } else {
             for (Game g : alGames) {
                 try {
-                    tournament.addGame(g);
+                    getTournament().addGame(g);
                 } catch (RemoteException ex) {
                     Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
                 } catch (TournamentException ex) {
@@ -2899,7 +2910,7 @@ private void mniImportH9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
             }
         }
         try {
-            tournament.updateNumberOfRoundsIfNecesary();
+            getTournament().updateNumberOfRoundsIfNecesary();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -2913,12 +2924,12 @@ private void mniPreferencesActionPerformed(java.awt.event.ActionEvent evt) {//GE
 }//GEN-LAST:event_mniPreferencesActionPerformed
 
 private void mniTeamsManagerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniTeamsManagerActionPerformed
-    if (tournament == null) {
+    if (getTournament() == null) {
         JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
         return;
     }
     try {
-        JFrame jfr = new JFrTeamsManager(tournament);
+        JFrame jfr = new JFrTeamsManager(getTournament());
         this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
     } catch (RemoteException ex) {
         Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -2954,12 +2965,12 @@ private void cbxTeamCritActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
 }//GEN-LAST:event_cbxTeamCritActionPerformed
 
 private void mniTeamsPairingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniTeamsPairingActionPerformed
-    if (tournament == null) {
+    if (getTournament() == null) {
         JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
         return;
     }
     try {
-        JFrame jfr = new JFrTeamsPairing(tournament);
+        JFrame jfr = new JFrTeamsPairing(getTournament());
         this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
     } catch (RemoteException ex) {
         Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -2969,12 +2980,12 @@ private void mniTeamsPairingActionPerformed(java.awt.event.ActionEvent evt) {//G
 
 private void btnPrintTeamsStandingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnPrintTeamsStandingsActionPerformed
     try {
-        TournamentParameterSet printedTPS = tournament.getTournamentParameterSet();
-        TeamTournamentParameterSet ttps = tournament.getTeamTournamentParameterSet();
+        TournamentParameterSet printedTPS = getTournament().getTournamentParameterSet();
+        TeamTournamentParameterSet ttps = getTournament().getTeamTournamentParameterSet();
         TeamTournamentParameterSet printedTeamTPS = new TeamTournamentParameterSet(ttps);
         TeamPlacementParameterSet printedTeamPPS = printedTeamTPS.getTeamPlacementParameterSet();
         printedTeamPPS.setPlaCriteria(displayedTeamCriteria);
-        TournamentPrinting.printTeamsStandings(tournament, printedTPS, printedTeamTPS, this.displayedTeamRoundNumber);
+        TournamentPrinting.printTeamsStandings(getTournament(), printedTPS, printedTeamTPS, this.displayedTeamRoundNumber);
     } catch (RemoteException ex) {
         Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
     }
@@ -3008,13 +3019,13 @@ private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:even
 }//GEN-LAST:event_formWindowClosing
 
 private void mniUpdateRatingsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniUpdateRatingsActionPerformed
-    if (tournament == null) {
+    if (getTournament() == null) {
         JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
         return;
     }
 
     try {
-        JFrame jfr = new JFrUpdateRatings(tournament);
+        JFrame jfr = new JFrUpdateRatings(getTournament());
         displayFrame(jfr, JFrGotha.MEDIUM_FRAME_WIDTH, JFrGotha.MEDIUM_FRAME_HEIGHT);
     } catch (RemoteException ex) {
         Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -3022,13 +3033,13 @@ private void mniUpdateRatingsActionPerformed(java.awt.event.ActionEvent evt) {//
 }//GEN-LAST:event_mniUpdateRatingsActionPerformed
 
 private void mniExperimentalToolsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniExperimentalToolsActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
     JFrame jfr = null;
     try {
-        jfr = new JFrExperimentalTools(tournament);
+        jfr = new JFrExperimentalTools(getTournament());
         this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
     } catch (RemoteException ex) {
         Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -3041,12 +3052,12 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
 }//GEN-LAST:event_mniMemoryActionPerformed
 
     private void mniDiscardRoundsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniDiscardRoundsActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
         try {
-            JFrame jfr = new JFrDiscardRounds(tournament);
+            JFrame jfr = new JFrDiscardRounds(getTournament());
             this.displayFrame(jfr, SMALL_FRAME_WIDTH, SMALL_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -3055,7 +3066,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }//GEN-LAST:event_mniDiscardRoundsActionPerformed
 
     private void mniSaveACopyActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniSaveACopyActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -3065,7 +3076,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         if (strTC.length() < 1){
             String shortName = "shortName";
             try {
-                shortName = tournament.getShortName();
+                shortName = getTournament().getShortName();
             } catch (RemoteException ex) {
                 Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
             }
@@ -3082,12 +3093,12 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }//GEN-LAST:event_mniSaveACopyActionPerformed
 
     private void mniPublishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniPublishActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
         try {
-            JFrame jfr = new JFrPublish(tournament);
+            JFrame jfr = new JFrPublish(getTournament());
         this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -3097,12 +3108,12 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private void mniExportActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniExportActionPerformed
     //    String strMessage = "Exports are now available from the Publish menu";
     //    JOptionPane.showMessageDialog(this, strMessage, "Message", JOptionPane.INFORMATION_MESSAGE);
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
         try {
-            JFrame jfr = new JFrPublish(tournament);
+            JFrame jfr = new JFrPublish(getTournament());
         this.displayFrame(jfr, MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -3111,7 +3122,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }//GEN-LAST:event_mniExportActionPerformed
 
     private void mniSaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniSaveActionPerformed
-        if (tournament == null) {
+        if (getTournament() == null) {
             JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
             return;
         }
@@ -3124,13 +3135,17 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         this.saveTournament(f);
                 
        try {
-            tournament.setChangeSinceLastSaveAsFalse();
-            tournament.setHasBeenSavedOnce(true);
+            getTournament().setChangeSinceLastSaveAsFalse();
+            getTournament().setHasBeenSavedOnce(true);
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
         this.addRecentTournament("" + f);
-        
+
+        if(Gotha.getTournamentUploadStatus() == Gotha.TU_EVERYSAVE){
+            this.saveTournamentToWorkFile();
+            RemoteTournament.upload(getTournament());
+        }        
         this.tournamentChanged();
 
     }//GEN-LAST:event_mniSaveActionPerformed
@@ -3145,27 +3160,14 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         }
     }//GEN-LAST:event_lblTournamentPictureMouseClicked
 
-    private void mniRemoteTournamentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniRemoteTournamentsActionPerformed
-        JFrame jfr = new JFrRemoteTournaments();
-        this.displayFrame(jfr, BIG_FRAME_WIDTH, BIG_FRAME_HEIGHT);
-    }//GEN-LAST:event_mniRemoteTournamentsActionPerformed
-
-    private void mniUploadActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniUploadActionPerformed
-        if (tournament == null) {
-            JOptionPane.showMessageDialog(this, "No currently open tournament", "Message", JOptionPane.ERROR_MESSAGE);
-            return;
-        }
-        try {
-            JFrame jfr = new JFrUpload(tournament);
-            this.displayFrame(jfr, BIG_FRAME_WIDTH, BIG_FRAME_HEIGHT);
-        } catch (RemoteException ex) {
-            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    }//GEN-LAST:event_mniUploadActionPerformed
-
     private void mnuPublishActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mnuPublishActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_mnuPublishActionPerformed
+
+    private void mniRemoteTournamentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniRemoteTournamentsActionPerformed
+        JFrame jfr = new JFrRemoteTournaments(this);
+        this.displayFrame(jfr, JFrGotha.BIG_FRAME_WIDTH, BIG_FRAME_HEIGHT);    
+    }//GEN-LAST:event_mniRemoteTournamentsActionPerformed
 
     private File chooseAFile(File path, String extension) {
         JFileChooser fileChoice = new JFileChooser(path);
@@ -3185,28 +3187,6 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         if (!saveCurrentTournamentIfNecessary()) {
             return;
         }
-
-        // check whether a more recent work file has been saved for this tournament
-        // Is there a work tournament ?
-
-//        String strDir = Gotha.runningDirectory + "/tournamentfiles";
-//        String strNE = f.getName();
-//        String strFN = strNE.substring(0, strNE.indexOf("."));
-//        String strWorkNE= strFN + "_work.xml";
-//        String strDNE = strDir + "/" + strWorkNE;
-//        File fW = new File(strDNE);
-//        
-//        long timeF = f.lastModified();
-//        long timeFW = fW.lastModified();
-//        if (timeFW - timeF > 2 * JFrGotha.REFRESH_DELAY){
-//            String strMes = "A work file has been found which is more recent than the regularly saved tournament file.\n";
-//            strMes += "\n Do you want to restore tournament from the work file ? (click OK)";
-//            strMes += "\n Or do you want to keep the regularly saved tournament file ? (click Cancel)";
-//            int rep = JOptionPane.showConfirmDialog(this, strMes, "Recover " + strNE + " ?", JOptionPane.OK_CANCEL_OPTION);
-//            if (rep == JOptionPane.OK_OPTION) Files.copy(fW.toPath(), f.toPath(), REPLACE_EXISTING);  
-//            else Files.delete(fW.toPath());
-//        }
-        
         
         TournamentInterface t = Gotha.getTournamentFromFile(f);
         if (t == null) {
@@ -3233,12 +3213,12 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
             }
         }
 
-        if (tournament != null) {
+        if (getTournament() != null) {
             closeTournament();
         }
-        tournament = t;
-        tournament.setChangeSinceLastSaveAsFalse();
-        tournament.setHasBeenSavedOnce(true);
+        setTournament(t);
+        getTournament().setChangeSinceLastSaveAsFalse();
+        getTournament().setHasBeenSavedOnce(true);
         //Update defaultDirectory with the directory of f
         String fileName = "" + f;
         int indLastSep = 0;
@@ -3252,11 +3232,11 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
        
         // If we are in Server mode, then worry about adding it to registry
         if (Gotha.runningMode == Gotha.RUNNING_MODE_SRV) {
-            GothaRMIServer.addTournament(tournament);
+            GothaRMIServer.addTournament(getTournament());
         }
 
         try {
-            this.displayedRoundNumber = tournament.presumablyCurrentRoundNumber();
+            this.displayedRoundNumber = getTournament().presumablyCurrentRoundNumber();
             this.tournamentChanged();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
@@ -3265,16 +3245,16 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }
 
     private void closeTournament() {
-        if (tournament == null) {
+        if (getTournament() == null) {
             return;
         }
         try {
-            tournament.close();
+            getTournament().close();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
         this.tournamentChanged();
-        tournament = null;
+        setTournament(null);
         this.tournamentChanged();
         
         Preferences prefsRoot = Preferences.userRoot();
@@ -3284,7 +3264,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
 
     private void tournamentChanged() {
         updateTitle();
-        if (tournament == null) {
+        if (getTournament() == null) {
             try {
                 this.updateDisplayCriteria();
                 this.updateStandingsComponents();
@@ -3295,7 +3275,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
             return;
         }
         try {
-            tournament.setLastTournamentModificationTime(tournament.getCurrentTournamentTime());
+            getTournament().setLastTournamentModificationTime(getTournament().getCurrentTournamentTime());
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -3304,14 +3284,14 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }
 
     private void updateAllViews() {
-        if (tournament != null) {
+        if (getTournament() != null) {
             try {
                 if (Gotha.runningMode == Gotha.RUNNING_MODE_CLI && !tournament.isOpen()) {
                     dispose();
                 }
 
-                this.lastComponentsUpdateTime = tournament.getCurrentTournamentTime();
-                if (tournament.tournamentType() == TournamentParameterSet.TYPE_MCMAHON) {
+                this.lastComponentsUpdateTime = getTournament().getCurrentTournamentTime();
+                if (getTournament().tournamentType() == TournamentParameterSet.TYPE_MCMAHON) {
                     this.mniMMGroups.setEnabled(true);
                 } else {
                     this.mniMMGroups.setEnabled(false);
@@ -3333,7 +3313,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         }
 
         try {
-            if (tournament != null && !tournament.teamsList().isEmpty()) {
+            if (getTournament() != null && !tournament.teamsList().isEmpty()) {
                 if (idxTP > 0) {
                     this.tpnGotha.setEnabledAt(idxTP, true);
                 }
@@ -3389,7 +3369,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private void demandedDisplayedRoundNumberHasChanged(int demandedRN) {
         int numberOfRounds = 0;
         try {
-            numberOfRounds = tournament.getTournamentParameterSet().getGeneralParameterSet().getNumberOfRounds();
+            numberOfRounds = getTournament().getTournamentParameterSet().getGeneralParameterSet().getNumberOfRounds();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -3412,7 +3392,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private void demandedDisplayedTeamRoundNumberHasChanged(int demandedRN) {
         int numberOfRounds = 0;
         try {
-            numberOfRounds = tournament.getTournamentParameterSet().getGeneralParameterSet().getNumberOfRounds();
+            numberOfRounds = getTournament().getTournamentParameterSet().getGeneralParameterSet().getNumberOfRounds();
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -3433,7 +3413,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }
 
     private void exitOpenGotha() {
-        if (tournament == null) System.exit(0);
+        if (getTournament() == null) System.exit(0);
         if (Gotha.runningMode == Gotha.RUNNING_MODE_CLI) System.exit(0);
         if (!saveCurrentTournamentIfNecessary()) {
             return;
@@ -3441,7 +3421,6 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         if (Gotha.isJournalingReportEnabled()) {
             LogElements.sendLogElements();
             File f =  new File (this.getDefaultSaveAsFileName());
-//            if (f.exists()) FTPTransfer.uploadByFTPToOGSite(tournament, f);
         }
         System.exit(0);
     }
@@ -3592,7 +3571,6 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private javax.swing.JMenuItem mniTeamsPairing;
     private javax.swing.JMenuItem mniTournamentOptions;
     private javax.swing.JMenuItem mniUpdateRatings;
-    private javax.swing.JMenuItem mniUpload;
     private javax.swing.JMenu mnuGames;
     private javax.swing.JMenu mnuHelp;
     private javax.swing.JMenu mnuImport;

@@ -4,6 +4,7 @@ import java.rmi.RemoteException;
 import java.rmi.server.UnicastRemoteObject;
 import java.util.ArrayList;
 import java.util.Collections;
+import java.util.Date;
 import java.util.HashMap;
 import java.util.Iterator;
 import java.util.logging.Level;
@@ -12,7 +13,29 @@ import java.util.logging.Logger;
 public class Tournament extends UnicastRemoteObject implements TournamentInterface, java.io.Serializable {
 
     private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
-    private long lastSuccessfulSaveDate = 0;
+    private Date saveDT;
+    private String externalIPAddress;
+    
+    @Override
+    public Date getSaveDT()throws RemoteException{
+        return saveDT;
+    }
+    
+    @Override
+    public void setSaveDT(Date saveDT) throws RemoteException{
+        this.saveDT = saveDT;
+    }
+    
+    @Override
+    public String getExternalIPAddress()throws RemoteException{
+        return externalIPAddress;
+    }
+    
+    @Override
+    public void setExternalIPAddress(String externalIPAddress) throws RemoteException{
+        this.externalIPAddress = externalIPAddress;
+    }
+
     /**
      * Tournament parameter set
      */
@@ -74,7 +97,6 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
 
 
     public Tournament() throws RemoteException {
-        lastSuccessfulSaveDate = 0;
         tournamentParameterSet = new TournamentParameterSet();
         teamTournamentParameterSet = new TeamTournamentParameterSet();
 
@@ -84,15 +106,6 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
 
         hmTeams = new HashMap<>();
         hmClubsGroups = new HashMap<>();
-    }
-
-    @Override
-    public long getLastSuccessfulSaveDate() throws RemoteException{
-        return lastSuccessfulSaveDate;
-    }
-    @Override
-    public void setLastSuccessfulSaveDate(long saveDate) throws RemoteException{
-        lastSuccessfulSaveDate = saveDate;
     }
 
     @Override

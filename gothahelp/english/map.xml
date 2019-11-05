@@ -36,6 +36,8 @@
 	<mapID target="Preferences frame" url="Preferences frame.html"/>
 	<mapID target="Tools menu" url="Tools menu.html"/>
 	<mapID target="Discard rounds frame" url="Discard rounds frame.html"/>
+        <mapID target="Remote menu" url="Remote menu.html"/>
+	<mapID target="Remote tournaments frame" url="Remote tournaments frame.html"/>
 	<mapID target="Players Manager frame" url="Players Manager frame.html"/>
 	<mapID target="Players Quick check frame" url="Players Quick check frame.html"/>
 	<mapID target="McMahon groups frame" url="McMahon groups frame.html"/>

@@ -4,14 +4,11 @@
 // Only file names beginning by '2' are returned
 // LV 14/01/2019
 $dirName = $_GET['dirName'];
-$dir = opendir($dirName);
+// $dir = opendir($dirName);
+opendir($dirName);
 
-while($file = readdir($dir)) {
-    $firstChar = substr($file, 0, 1);
-    if($firstChar == '2')
-    {
-        echo "\n".$file;
-    }
+while($file = readdir()) {
+    echo $file . "\r\n";
 }
 closedir($dir);
 ?>

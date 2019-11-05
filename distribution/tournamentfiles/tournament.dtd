@@ -4,6 +4,9 @@
 <!ATTLIST Tournament dataVersion CDATA "200">
 <!ATTLIST Tournament gothaVersion CDATA "300">
 <!ATTLIST Tournament gothaMinorVersion CDATA "00">
+<!ATTLIST Tournament saveDT CDATA "20019101000000">
+<!ATTLIST Tournament saveDT CDATA "127.0.0.1">
+
 <!ELEMENT Players (Player*)>
 <!ELEMENT Games (Game*)>
 <!ELEMENT ByePlayers (ByePlayer*)>

@@ -7,15 +7,20 @@ A copy of .xml tournament file is uploaded to opengotha site
 What
 ....
 
-WhereTo
-.......
-tournaments are uploaded to opengotha.info/tournaments/[dirname]/[filename]
+Where From & To
+...............
+A work copy of the tournament is saved to tournaments/work after every modification.
+This work file is uploaded to opengotha.info/tournaments/[dirname]/[filename]
 [dirname] is : yyymmdd_tournamentShrinkedShortName where yyyymmdd is the begin date of the tournament
 [filename] is : yyymmddhhmmss_tournamentShrinkedShortName.xml where yyymmddhhmmss is the date/time of upload
 tournamentShrinkedShortName is the shortName of the tournament after keeping only alphanumeric characters, "-" and "."
 
 When
 ....
+Depending on preferences, 
+- Never
+- After every save/save as. Run from JFrGotha.mniSaveActionPerformed, mniSaveAsActionPerformed and saveCurrentTournamentIfNecessary.
+- After every change. Run from JFrGotha, actionPerformed of setupRefreshTimer
 
 Control
 .......
@@ -25,7 +30,18 @@ upload.php creates a directory if necessary, then stores the file content.
 
 
 
-
-
 Log informations
-================
+===============
+
+
+Processing uploaded tournament files
+====================================
+Site vannier.info 
+  - upload.php
+  - ... . php
+  - tournaments ( = root of opengotha site)
+    - yyymmdd_shortname
+      - yyymmddhhmmss_shortname
+Site open gotha.info
+    - yyymmdd_shortname
+      - yyymmddhhmmss_shortname

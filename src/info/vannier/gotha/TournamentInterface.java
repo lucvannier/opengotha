@@ -3,12 +3,15 @@ package info.vannier.gotha;
 import java.rmi.Remote;
 import java.rmi.RemoteException;
 import java.util.ArrayList;
+import java.util.Date;
 import java.util.HashMap;
 
 public interface TournamentInterface extends Remote{
-    public long getLastSuccessfulSaveDate() throws RemoteException;
-    public void setLastSuccessfulSaveDate(long saveDate) throws RemoteException;
-    
+    public Date getSaveDT() throws RemoteException;
+    public void setSaveDT(Date saveDT) throws RemoteException;
+    public String getExternalIPAddress()throws RemoteException;
+    public void setExternalIPAddress(String externalIPAddress) throws RemoteException;
+
     public TournamentParameterSet getTournamentParameterSet()  throws RemoteException;
     public void setTournamentParameterSet(TournamentParameterSet tournamentParameterSet) throws RemoteException;
     public TeamTournamentParameterSet getTeamTournamentParameterSet()  throws RemoteException;

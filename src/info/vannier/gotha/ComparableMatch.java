@@ -32,7 +32,6 @@ public class ComparableMatch{
      * @return
      */
     public static ArrayList<ComparableMatch> buildComparableMatchesArray(ArrayList<Match> alMatches, TournamentInterface tournament, int roundNumber){
-        final int DEFAULT_ROUND_NUMBER = 0;
         ArrayList<ComparableMatch> alCM = new ArrayList<>();
 
         TeamPlacementParameterSet tpps;
@@ -48,7 +47,7 @@ public class ComparableMatch{
         for(Match m : alMatches){
             Team wt = m.getWhiteTeam();
             Team bt = m.getBlackTeam();
-            Player player0 = wt.getTeamMember(DEFAULT_ROUND_NUMBER, 0);
+            Player player0 = wt.getTeamMember(roundNumber, 0);
             Game g = null;
             try {
                 g = tournament.getGame(roundNumber, player0);

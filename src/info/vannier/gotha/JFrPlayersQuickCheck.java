@@ -63,6 +63,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
                     timer.stop();
                 }
                 try {
+                    if (!tournament.isOpen()) cleanClose();
                     if (tournament.getLastTournamentModificationTime() > lastComponentsUpdateTime) {
                         updateAllViews();
                     }

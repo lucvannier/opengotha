@@ -43,6 +43,10 @@
 	<tocitem text="Tools menu" target="Tools menu">
 		<tocitem text="Discard rounds frame" target="Discard rounds frame" />
 	</tocitem>
+        <tocitem text="Remote menu" target="Remote menu">
+            <tocitem text="Remote tournaments frame" target="Remote tournaments frame" />
+	</tocitem>
+
 	<tocitem text="Appendices" target="Appendices">
 		<tocitem text="Games encoding" target="Games encoding" />
 		<tocitem text="Pairing algorithm" target="Pairing algorithm" />

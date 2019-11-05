@@ -638,6 +638,7 @@
                 <Component class="javax.swing.JTextField" name="txfBeginDate">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="yyyy-mm-dd"/>
+                    <Property name="toolTipText" type="java.lang.String" value="yyyy-mm-dd"/>
                   </Properties>
                   <Events>
                     <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txfBeginDateFocusLost"/>
@@ -690,6 +691,7 @@
                 <Component class="javax.swing.JTextField" name="txfEndDate">
                   <Properties>
                     <Property name="text" type="java.lang.String" value="yyyy-mm-dd"/>
+                    <Property name="toolTipText" type="java.lang.String" value="yyyy-mm-dd"/>
                   </Properties>
                   <Events>
                     <EventHandler event="focusLost" listener="java.awt.event.FocusListener" parameters="java.awt.event.FocusEvent" handler="txfEndDateFocusLost"/>

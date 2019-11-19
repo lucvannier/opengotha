@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Tournament dataVersion="201" externalIPAddress="77.128.107.78" gothaMinorVersion="4" gothaVersion="348" saveDT="20191105092019">
+<Tournament dataVersion="201" externalIPAddress="77.128.107.78" gothaMinorVersion="5" gothaVersion="348" saveDT="20191119110542">
 <Players>
 <Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1500104" ffgLicenceStatus="L" firstName="Manuela" grade="18K" name="Rebelo" participating="11111111111111111111" rank="18K" rating="276" ratingOrigin="FFG : -1774" registeringStatus="FIN" smmsCorrection="0"/>
 <Player agaExpirationDate="" agaId="" club="95Va" country="FR" egfPin="" ffgLicence="1100070" ffgLicenceStatus="L" firstName="Olga" grade="5K" name="Vargas" participating="01111111111111111111" rank="5K" rating="1603" ratingOrigin="FFG : -447" registeringStatus="FIN" smmsCorrection="0"/>
@@ -434,7 +434,7 @@
 </Team>
 </Teams>
 <TournamentParameterSet>
-<GeneralParameterSet basicTime="60" beginDate="2019-10-26" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Brice CHARTIER" endDate="2019-10-27" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Juvisy" name="Tournoi de Juvisy" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="4" shortName="Tournoi de Juvisy" size="19" stdByoYomiTime="30"/>
+<GeneralParameterSet basicTime="60" beginDate="2019-10-26" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Brice CHARTIER" endDate="2019-10-28" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Juvisy" name="Tournoi de Juvisy" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="4" shortName="Tournoi de Juvisy" size="19" stdByoYomiTime="30"/>
 <HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
 <PlacementParameterSet>
 <PlacementCriteria>

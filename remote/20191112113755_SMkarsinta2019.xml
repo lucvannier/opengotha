@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="213.138.141.26" gothaMinorVersion="4" gothaVersion="348" saveDT="20191112113755">
+<Players>
+<Player agaExpirationDate="" agaId="" club="Kanp" country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Olli" grade="2D" name="Ervelae" participating="11111111111111111111" rank="2D" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="HGK " country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Lauri" grade="4D" name="Paatero" participating="11111111111111111111" rank="4D" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Tam " country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Teemu" grade="3D" name="Rovio" participating="11111111111111111111" rank="3D" rating="200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="YliG" country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Mikko" grade="4D" name="Siukola" participating="11111111111111111111" rank="4D" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="YliG" country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Olli" grade="4D" name="Hella" participating="11111111111111111111" rank="4D" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="HGK " country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Matti" grade="5D" name="Siivola" participating="11111111111111111111" rank="5D" rating="400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="YliG" country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Henry" grade="3D" name="Hemming" participating="11111111111111111111" rank="3D" rating="200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="YliG" country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Tuomas" grade="4D" name="Hella" participating="11110111111111111111" rank="4D" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="YliG" country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Toni" grade="3D" name="Kyottila" participating="11111111111111111111" rank="3D" rating="200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="HGK " country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Samuel" grade="2D" name="Laire" participating="11111111111111111111" rank="2D" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Kanp" country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Oiva" grade="3D" name="Moisio" participating="11111111111111111111" rank="3D" rating="200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="HGK " country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Pekka" grade="3D" name="Lajunen" participating="11110111111111111111" rank="3D" rating="200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="OGP " country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Mikko" grade="4D" name="Nevala" participating="11111111111111111111" rank="4D" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="PoGo" country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Johannes" grade="2D" name="Laire" participating="11111111111111111111" rank="2D" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="eGo " country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Antti" grade="4D" name="Holappa" participating="11111111111111111111" rank="4D" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="HGK " country="FI" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Pekka" grade="4D" name="Lukkari" participating="11111111111111111111" rank="4D" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="HELLATUOMAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="LAIREJOHANNES"/>
+<Game blackPlayer="SIIVOLAMATTI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="ROVIOTEEMU"/>
+<Game blackPlayer="KYOTTILATONI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="HELLAOLLI"/>
+<Game blackPlayer="MOISIOOIVA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="4" whitePlayer="NEVALAMIKKO"/>
+<Game blackPlayer="LUKKARIPEKKA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="5" whitePlayer="LAIRESAMUEL"/>
+<Game blackPlayer="HOLAPPAANTTI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="6" whitePlayer="SIUKOLAMIKKO"/>
+<Game blackPlayer="LAJUNENPEKKA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="7" whitePlayer="HEMMINGHENRY"/>
+<Game blackPlayer="PAATEROLAURI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="8" whitePlayer="ERVELAEOLLI"/>
+<Game blackPlayer="HELLAOLLI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="HELLATUOMAS"/>
+<Game blackPlayer="MOISIOOIVA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="2" whitePlayer="SIIVOLAMATTI"/>
+<Game blackPlayer="PAATEROLAURI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="LUKKARIPEKKA"/>
+<Game blackPlayer="NEVALAMIKKO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="4" whitePlayer="SIUKOLAMIKKO"/>
+<Game blackPlayer="LAIREJOHANNES" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="5" whitePlayer="HEMMINGHENRY"/>
+<Game blackPlayer="ERVELAEOLLI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="6" whitePlayer="HOLAPPAANTTI"/>
+<Game blackPlayer="LAJUNENPEKKA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="7" whitePlayer="ROVIOTEEMU"/>
+<Game blackPlayer="KYOTTILATONI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="8" whitePlayer="LAIRESAMUEL"/>
+<Game blackPlayer="SIIVOLAMATTI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="1" whitePlayer="NEVALAMIKKO"/>
+<Game blackPlayer="HELLAOLLI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="2" whitePlayer="MOISIOOIVA"/>
+<Game blackPlayer="HEMMINGHENRY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="3" whitePlayer="SIUKOLAMIKKO"/>
+<Game blackPlayer="LUKKARIPEKKA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="4" whitePlayer="ROVIOTEEMU"/>
+<Game blackPlayer="PAATEROLAURI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="5" whitePlayer="HOLAPPAANTTI"/>
+<Game blackPlayer="LAIRESAMUEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="6" whitePlayer="ERVELAEOLLI"/>
+<Game blackPlayer="KYOTTILATONI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="7" whitePlayer="LAIREJOHANNES"/>
+<Game blackPlayer="LUKKARIPEKKA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="HELLATUOMAS"/>
+<Game blackPlayer="SIUKOLAMIKKO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="SIIVOLAMATTI"/>
+<Game blackPlayer="ERVELAEOLLI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="3" whitePlayer="HELLAOLLI"/>
+<Game blackPlayer="HEMMINGHENRY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="4" whitePlayer="MOISIOOIVA"/>
+<Game blackPlayer="NEVALAMIKKO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="5" whitePlayer="LAJUNENPEKKA"/>
+<Game blackPlayer="PAATEROLAURI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="6" whitePlayer="KYOTTILATONI"/>
+<Game blackPlayer="HOLAPPAANTTI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="7" whitePlayer="ROVIOTEEMU"/>
+<Game blackPlayer="LAIRESAMUEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="8" whitePlayer="LAIREJOHANNES"/>
+<Game blackPlayer="SIIVOLAMATTI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="1" whitePlayer="HELLATUOMAS"/>
+<Game blackPlayer="HOLAPPAANTTI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="2" whitePlayer="HELLAOLLI"/>
+<Game blackPlayer="MOISIOOIVA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="3" whitePlayer="LUKKARIPEKKA"/>
+<Game blackPlayer="NEVALAMIKKO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="4" whitePlayer="HEMMINGHENRY"/>
+<Game blackPlayer="SIUKOLAMIKKO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="5" whitePlayer="KYOTTILATONI"/>
+<Game blackPlayer="LAIREJOHANNES" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="6" whitePlayer="PAATEROLAURI"/>
+<Game blackPlayer="ERVELAEOLLI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="7" whitePlayer="ROVIOTEEMU"/>
+<Game blackPlayer="LAIRESAMUEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="8" whitePlayer="LAJUNENPEKKA"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="75" beginDate="2019-11-02" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Mika Lemström" endDate="2019-11-03" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="FI, Helsinki" name="Finnish Championship Qualification 2019" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="SM karsinta 2019" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="CUSSW" number="2"/>
+<PlacementCriterion name="NULL" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

@@ -12,6 +12,7 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
+import java.util.GregorianCalendar;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -209,98 +210,6 @@ public class ExternalDocument {
         // Build alGames
         buildALGames(alPotentialHalfGames, alPlayers, alGames);
     }
-
-//    public static void importPlayersFromVBSFile(File f, ArrayList<Player> alPlayers) {
-//        ArrayList<String> alLines = new ArrayList<>();
-//        try {
-//            FileInputStream fis = new FileInputStream(f);
-//            try (BufferedReader d = new BufferedReader(new InputStreamReader(fis, java.nio.charset.Charset.forName("ISO-8859-15")))) {
-//                String s;
-//                do {
-//                    s = d.readLine();
-//                    if (s != null) {
-//                        alLines.add(s);
-//                    }
-//                } while (s != null);
-//            }
-//        } catch (IOException ex) {
-//            Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//
-//        // Parse player lines
-//        for (String strLine : alLines) {
-//            int pos = strLine.indexOf(";");
-//            if (pos >= 0) {
-//                strLine = strLine.substring(0, pos - 1);
-//            }
-//            if (strLine.length() < 8) {
-//                continue;
-//            }
-//            String[] tabStr = strLine.split("\\|");
-//
-//            String strNa = tabStr[0].trim();
-//            String strFi = tabStr[1].trim();
-//            String strRk = tabStr[2].trim();
-//            String strCl = tabStr[3].trim();
-//            String strCo = tabStr[4].trim();
-//            String strRt = tabStr[5].trim();
-//            String strRg = tabStr[6].trim();
-//
-//            if (strCl.length() > 4) {
-//                strCl = strCl.substring(0, 4);
-//            }
-//            if (strCo.length() < 2) {
-//                strCo = "";
-//            }
-//
-//            int rk = Player.convertKDPToInt(strRk);
-//
-//            int rt;
-//            String strRatingOrigin = "MAN";
-//            try {
-//                rt = Integer.parseInt(strRt);
-//            } catch (NumberFormatException e) {
-//                rt = rk * 100;
-//                strRatingOrigin = "INI";
-//            }
-//
-//            strRg = strRg.toLowerCase();
-//            if (strRg.charAt(0) == 'p') {
-//                strRg = "PRE";
-//            } else {
-//                strRg = "FIN";
-//            }
-//
-//            Player p;
-//            try {
-//                p = new Player(
-//                        strNa,
-//                        strFi,
-//                        strCo,
-//                        strCl,
-//                        "", // EGF Pin
-//                        "", // FFG Licence
-//                        "", // FFG Licence Status
-//                        "", // AGA Id
-//                        "", // AGA Expiration Date
-//                        rk,
-//                        rt,
-//                        strRatingOrigin,
-//                        "",
-//                        0,
-//                        strRg);
-//                boolean[] bPart = new boolean[Gotha.MAX_NUMBER_OF_ROUNDS];
-//                for (int i = 0; i < Gotha.MAX_NUMBER_OF_ROUNDS; i++) {
-//                    bPart[i] = true;
-//                }
-//                p.setParticipating(bPart);
-//            } catch (PlayerException pe) {
-//                JOptionPane.showMessageDialog(null, pe.getMessage(), "Message", JOptionPane.ERROR_MESSAGE);
-//                return;
-//            }
-//            alPlayers.add(p);
-//        }
-//    }
 
     public static DocumentBuilder createDocumentBuilder(){
         DocumentBuilder docBuilder;
@@ -714,11 +623,11 @@ public class ExternalDocument {
         String strCurDate = new SimpleDateFormat("yyyy-MM-dd").format(curDate);
         String strBeginDate = extractNodeValue(nnmGPS, "beginDate", strCurDate);
         Date beginDate = GothaDate.parse(strBeginDate, "yyyy-MM-dd");
-        if (beginDate.getYear() <= 0) beginDate = curDate;
+        if (GothaDate.getYear(beginDate)<= 1900) beginDate = curDate;
         gps.setBeginDate(beginDate);
         String strEndDate = extractNodeValue(nnmGPS, "endDate", strCurDate);
         Date endDate = GothaDate.parse(strEndDate, "yyyy-MM-dd");
-        if (endDate.getYear() <= 0) endDate = curDate;
+        if (GothaDate.getYear(endDate)<= 1900) endDate = curDate;
         gps.setEndDate(endDate);
         
         int time = extractNodeIntValue(nnmGPS, "time", GeneralParameterSet.GEN_GP_BASICTIME_DEF);    // For old dataVersion

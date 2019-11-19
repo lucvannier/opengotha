@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="91.160.163.206" gothaMinorVersion="4" gothaVersion="348" saveDT="20191117091452">
+<Players>
+<Player agaExpirationDate="" agaId="" club="38Gr" country="FR" egfPin="" ffgLicence="1100032" ffgLicenceStatus="L" firstName="Elodie" grade="11K" name="Ronayette" participating="11111111111111111111" rank="11K" rating="992" ratingOrigin="FFG : -1058" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="38Gr" country="FR" egfPin="" ffgLicence="1900011" ffgLicenceStatus="L" firstName="Alban" grade="13K" name="Rodary" participating="11111111111111111111" rank="13K" rating="829" ratingOrigin="FFG : -1221" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="38Gr" country="FR" egfPin="" ffgLicence="0013005" ffgLicenceStatus="L" firstName="Luc" grade="8K" name="Ronayette" participating="11111111111111111111" rank="8K" rating="1324" ratingOrigin="FFG : -726" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="38Gr" country="FR" egfPin="" ffgLicence="0513000" ffgLicenceStatus="L" firstName="Olivier" grade="6K" name="Dulac" participating="11111111111111111111" rank="6K" rating="1519" ratingOrigin="FFG : -531" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="38Gr" country="FR" egfPin="" ffgLicence="1800224" ffgLicenceStatus="L" firstName="Léo" grade="6K" name="Chicoineau" participating="11111111111111111111" rank="6K" rating="1474" ratingOrigin="FFG : -576" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="38Gr" country="FR" egfPin="" ffgLicence="0113003" ffgLicenceStatus="L" firstName="Alain" grade="9K" name="de_Sandi" participating="11111111111111111111" rank="9K" rating="1175" ratingOrigin="FFG : -875" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="38Gr" country="FR" egfPin="" ffgLicence="1900263" ffgLicenceStatus="L" firstName="Thibaut" grade="15K" name="Perrin" participating="11111111111111111111" rank="15K" rating="635" ratingOrigin="FFG : -1415" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="38Gr" country="FR" egfPin="" ffgLicence="1900010" ffgLicenceStatus="L" firstName="Romaric" grade="9K" name="Jodin" participating="11111111111111111111" rank="9K" rating="1197" ratingOrigin="FFG : -853" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="38Gr" country="FR" egfPin="" ffgLicence="1800160" ffgLicenceStatus="L" firstName="Aubin" grade="10K" name="Josi" participating="11111111111111111111" rank="10K" rating="1133" ratingOrigin="FFG : -917" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="JODINROMARIC" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="DULACOLIVIER"/>
+<Game blackPlayer="DE_SANDIALAIN" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="DULACOLIVIER"/>
+<Game blackPlayer="DE_SANDIALAIN" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="RONAYETTELUC"/>
+<Game blackPlayer="RODARYALBAN" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="RONAYETTEELODIE"/>
+<Game blackPlayer="JOSIAUBIN" handicap="4" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="DULACOLIVIER"/>
+<Game blackPlayer="DULACOLIVIER" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="1" whitePlayer="CHICOINEAULÉO"/>
+<Game blackPlayer="PERRINTHIBAUT" handicap="6" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="DE_SANDIALAIN"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2019-10-02" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Olivier Dulac" endDate="2019-11-08" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="8D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Grenoble" name="Trophée des Clubs - Grenoble 38gr #1" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="10" shortName="TropheeGrenoble38gr1" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="0" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

@@ -1106,7 +1106,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         jScrollPane1.setViewportView(txaWarning);
 
         pnlPla.add(jScrollPane1);
-        jScrollPane1.setBounds(410, 100, 350, 110);
+        jScrollPane1.setBounds(460, 100, 300, 110);
 
         btnHelpPlacement.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info/vannier/gotha/gothalogo16.jpg"))); // NOI18N
         btnHelpPlacement.setText("help");
@@ -2462,7 +2462,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         Date newBeginDate = null;
         
         newBeginDate = GothaDate.parse(this.txfBeginDate.getText(), "yyyy-MM-dd");
-        if (newBeginDate.getYear() <= 0){
+            if (GothaDate.getYear(newBeginDate) <= 1900){
             String strMessage = "Invalid date";            
             JOptionPane.showMessageDialog(this, strMessage, "Message", JOptionPane.ERROR_MESSAGE);
             this.txfBeginDate.setText(new SimpleDateFormat("yyyy-MM-dd").format(oldBeginDate));
@@ -2696,6 +2696,16 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         newShortName = Gotha.eliminateForbiddenCharacters(newShortName);
         txfShortName.setText(newShortName);
         if (newShortName.compareTo(oldShortName) == 0) return;
+        
+        if (Gotha.runningMode == Gotha.RUNNING_MODE_SRV) {
+            String strMessage = "You may not change short name in Server mode";
+            System.out.println(strMessage);
+            JOptionPane.showMessageDialog(null, strMessage, "Message", JOptionPane.INFORMATION_MESSAGE);
+            txfShortName.setText(oldShortName);
+            return;
+            
+        }
+       
         gps.setShortName(newShortName);
         tps.setGeneralParameterSet(gps);
         try {
@@ -2780,7 +2790,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         Date newEndDate = null;
 
         newEndDate = GothaDate.parse(this.txfEndDate.getText(), "yyyy-MM-dd");
-        if (newEndDate.getYear() <= 0){
+        if (GothaDate.getYear(newEndDate) <= 1900){
             String strMessage = "Invalid date";            
             JOptionPane.showMessageDialog(this, strMessage, "Message", JOptionPane.ERROR_MESSAGE);
             this.txfEndDate.setText(new SimpleDateFormat("yyyy-MM-dd").format(oldEndDate));

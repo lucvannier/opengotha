@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="82.77.114.167" gothaMinorVersion="4" gothaVersion="348" saveDT="20191110114559">
+<Players>
+<Player agaExpirationDate="" agaId="" club="MEIJ" country="RO" egfPin="10998163" ffgLicence="" ffgLicenceStatus="" firstName="Ion" grade=" 6D" name="Florescu" participating="11111111111111111111" rank="6D" rating="2561" ratingOrigin="EGF : 2561" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="MEIJ" country="RO" egfPin="10786248" ffgLicence="" ffgLicenceStatus="" firstName="Daniel" grade=" 1K" name="Dogeanu" participating="11111111111111111111" rank="1K" rating="1968" ratingOrigin="EGF : 1968" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="MEIJ" country="RO" egfPin="10513140" ffgLicence="" ffgLicenceStatus="" firstName="Daniel" grade=" 3D" name="Tir" participating="10000000000000000000" rank="3D" rating="2293" ratingOrigin="EGF : 2293" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="27Kh" country="RU" egfPin="12486639" ffgLicence="" ffgLicenceStatus="" firstName="Anton" grade=" 6D" name="Zatonskikh" participating="11111111111111111111" rank="6D" rating="2520" ratingOrigin="EGF : 2520" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="StAl" country="RO" egfPin="10350395" ffgLicence="" ffgLicenceStatus="" firstName="Lucretiu" grade=" 4D" name="Calota" participating="11111111111111111111" rank="4D" rating="2376" ratingOrigin="EGF : 2376" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="MEIJ" country="RO" egfPin="10325392" ffgLicence="" ffgLicenceStatus="" firstName="Daniel" grade=" 5D" name="Cioata" participating="11111111111111111111" rank="5D" rating="2445" ratingOrigin="EGF : 2445" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="FLORESCUION" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="CALOTALUCRETIU"/>
+<Game blackPlayer="CIOATADANIEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="1" whitePlayer="FLORESCUION"/>
+<Game blackPlayer="CIOATADANIEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="1" whitePlayer="CALOTALUCRETIU"/>
+<Game blackPlayer="DOGEANUDANIEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="CIOATADANIEL"/>
+<Game blackPlayer="CALOTALUCRETIU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="2" whitePlayer="ZATONSKIKHANTON"/>
+<Game blackPlayer="DOGEANUDANIEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="2" whitePlayer="ZATONSKIKHANTON"/>
+<Game blackPlayer="TIRDANIEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="ZATONSKIKHANTON"/>
+<Game blackPlayer="ZATONSKIKHANTON" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="FLORESCUION"/>
+<Game blackPlayer="ZATONSKIKHANTON" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="1" whitePlayer="CIOATADANIEL"/>
+<Game blackPlayer="CALOTALUCRETIU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="DOGEANUDANIEL"/>
+<Game blackPlayer="FLORESCUION" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="2" whitePlayer="DOGEANUDANIEL"/>
+</Games>
+<ByePlayers>
+<ByePlayer player="CIOATADANIEL" roundNumber="2"/>
+<ByePlayer player="DOGEANUDANIEL" roundNumber="3"/>
+<ByePlayer player="CALOTALUCRETIU" roundNumber="4"/>
+<ByePlayer player="FLORESCUION" roundNumber="5"/>
+</ByePlayers>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2019-11-09" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Ilie Sebastian" endDate="2019-11-10" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Pitesti" name="CupaPrieteniei" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="CupaPrieten" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="SOSW" number="2"/>
+<PlacementCriterion name="SOSOSW" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

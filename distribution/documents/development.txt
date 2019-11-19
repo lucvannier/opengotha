@@ -1,7 +1,8 @@
-OpenGothaV3.48.04
+OpenGothaV3.48.05
 *****************
-05/11/2019
+19/11/2019
 New         An Upload facility for .xml file
+New         A Download facility in Remote .. Remote tournaments
 Bug Fix     In Game results frame, a (rare) bug occured when choosing "Team presentation". Fixed
 Update      Change the default URL of AGA rating list
 
@@ -167,7 +168,7 @@ New         If a team pairing is attempted with a player not "FIN" or not partic
 Int issue   When a team pairing is made, previously existing games for the players of the teams for current round are first removed if any
 New         Swisscat system is back
 Bug Fix     SOSW-2 calculation was wrong. Fixed.
-New         A new pairing parameter : Applying secondary criteria for players above MacMahon bar
+New         A new pairing parameter : Applying secondary criteria for players above McMahon bar
 New         Number of categories limit is set to 9 instead of 5
 
 OpenGothaV3.29
@@ -243,7 +244,7 @@ OpenGothaV3.21
 **************
 08/03/2011
 New         Team tournament management
-New         Import facility for tournaments from Christoph Gerlach MacMahon program.
+New         Import facility for tournaments from Christoph Gerlach McMahon program.
 New         Import facility for tournaments from Geoff Kaniuk GoDraw program.
 New         remote logging utility
 Improvement Default threshold to apply secondary criteria is set to 1D (previous was 4D)

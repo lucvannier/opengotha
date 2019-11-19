@@ -298,6 +298,7 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
 
     @Override
     public void close() throws RemoteException {
+        if (Gotha.runningMode == Gotha.RUNNING_MODE_SRV) GothaRMIServer.removeTournament(this.getShortName());
         bOpen = false;
     }
     

@@ -186,8 +186,9 @@ public class PlacementParameterSet implements java.io.Serializable{
             if (crit[i] == PlacementParameterSet.PLA_CRIT_SOSTS) bSTS= true;
         }
         if (bSTS){
-            strMes += "\nSTS and SOSTS scores only make sense in a McMahon tournament"
-                    + " with a single elimination bracket for players of the top group (see Help).";
+            strMes += "\nSTS and SOSTS scores only make sense in "
+                    + "\na McMahon tournament with a single elimination"
+                    + "\nbracket for players of the top group (see Help).";
             bOK = false;
         }
 

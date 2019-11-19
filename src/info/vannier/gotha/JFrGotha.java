@@ -12,7 +12,6 @@ import java.io.*;
 import java.net.URI;
 import java.net.URISyntaxException;
 import java.rmi.RemoteException;
-import java.text.ParseException;
 import java.text.SimpleDateFormat;
 import java.util.*;
 import java.util.logging.Level;
@@ -1684,6 +1683,7 @@ public class JFrGotha extends javax.swing.JFrame {
                 updateOpenRecentMenu();
                 break;
             case Gotha.RUNNING_MODE_SRV:
+                this.mniSaveAs.setVisible(false);
                 updateOpenRecentMenu();
                 break;
             case Gotha.RUNNING_MODE_CLI:
@@ -2545,6 +2545,11 @@ public class JFrGotha extends javax.swing.JFrame {
         } catch (RemoteException ex) {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
+        boolean success = (new File(Gotha.runningDirectory + "/tournamentfiles/work/")).mkdirs();
+        if (!success) {
+//            System.out.println("JFrGotha. dir could not be created");
+        //    JOptionPane.showMessageDialog(this, "JFrGotha. dir could not be created", "Message", JOptionPane.ERROR_MESSAGE);
+        }
         File snFile = new File(Gotha.runningDirectory + "/tournamentfiles/work/", shortName + ".xml"); 
         saveTournament(snFile);
     }
@@ -2836,11 +2841,22 @@ private void btnSearchActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
                 "Message", JOptionPane.ERROR_MESSAGE);
     } else {
         tblStandings.setRowSelectionAllowed(true);
-        tblStandings.clearSelection();
+//        tblStandings.clearSelection();
         tblStandings.addRowSelectionInterval(rowNumber, rowNumber);
-
+        
+        // The next 2 Rectangle scrolls are a dramatic improvement due to Olivier Dulac.
+        // Thanks, Olivier
         Rectangle rect = tblStandings.getCellRect(rowNumber, 0, true);
         tblStandings.scrollRectToVisible(rect);
+        if (rowNumber > 0){
+            Rectangle rectAbove = tblStandings.getCellRect(rowNumber - 1, 0, true);
+            tblStandings.scrollRectToVisible(rectAbove);
+        }
+        if (rowNumber < nbRows - 1){
+            Rectangle rectBelow = tblStandings.getCellRect(rowNumber + 1, 0, true);
+            tblStandings.scrollRectToVisible(rectBelow);
+        }
+
     }
 
     tblStandings.repaint();
@@ -3257,6 +3273,8 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         setTournament(null);
         this.tournamentChanged();
         
+//        GothaRMIServer.removeClient(strClient)
+        
         Preferences prefsRoot = Preferences.userRoot();
         Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
         gothaPrefs.put("tournamentCopy", "");
@@ -3413,8 +3431,14 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }
 
     private void exitOpenGotha() {
-        if (getTournament() == null) System.exit(0);
+        TournamentInterface t = getTournament();
+        if (t == null) System.exit(0);
         if (Gotha.runningMode == Gotha.RUNNING_MODE_CLI) System.exit(0);
+        try {
+            t.close();
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
+        }
         if (!saveCurrentTournamentIfNecessary()) {
             return;
         }

@@ -72,7 +72,7 @@ New JFrame form ...
 public class JFrPlayerManager extends javax.swing.JFrame{
 
 layout = null
-JFrxxx properties :
+[JFrame] properties :
     defaultCloseOperation : DO_NOTHING
     not resizable 
 JFrxxx Events .. Window .. WindowClosing

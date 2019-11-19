@@ -118,9 +118,10 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
                 model.setValueAt(t.numberOfPlayers(), line, JFrRemoteTournaments.NBPLAYERS_COL);
                 model.setValueAt(externalIPAddress, line, JFrRemoteTournaments.IP_COL);
                 
-                String strDoc = readStringFromURL(externalIPAddress);
-                String strCity = IPLoc.getCityFromDoc(strDoc);        
-                String strCountry = IPLoc.getCountryFromDoc(strDoc);        
+                // Constituer un ArrayList 
+                String strLoc = readStringFromURL(externalIPAddress);
+                String strCity = IPLoc.getCityFromLoc(strLoc);        
+                String strCountry = IPLoc.getCountryFromLoc(strLoc);        
                 String strCityCountry = strCity + "," + strCountry;
                 
                 model.setValueAt(strCityCountry, line, JFrRemoteTournaments.IPLOC_COL);
@@ -175,8 +176,9 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
     
 /**
      * scans http://vannier.info/opengotha/tournaments and gets directory names
-     * scans The directories and gets tournament files
-     * downloads tournament files and gathers them into alTournaments
+     * scans The directories and gets tournament files 
+     * downloads tournament files and gathers them into alTournaments.
+     * However, the tournaments is already present in /remote, no actual download
      */
     
     private void downloadTournaments(){
@@ -191,14 +193,12 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
             try(BufferedReader in = new BufferedReader(new InputStreamReader(urlTournament.openStream()))){
                 String inputLine = "";
                 while ((inputLine = in.readLine()) != null){
-//                    System.out.println("inputLine = " + inputLine);
                     if(inputLine.indexOf(' ', 0) != -1) continue;
                     if(inputLine.length() <= 9) continue; // because yyyymmdd_ = 9
                     if (!inputLine.substring(0, 1).equals("2")) continue;
                     // also eliminate tournaments with an old begin date
                     if (this.rdbRecentTournaments.isSelected()){
                         String strBG = inputLine.substring(0, 8);
-//                        System.out.println("strBG = " + strBG);
                         Date bgDate = GothaDate.parse(strBG, "yyyyMMdd");
                         Date curDate = new Date();
                         long diff = curDate.getTime() - bgDate.getTime();
@@ -208,6 +208,9 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
                     
                     alDir.add(inputLine);
                 }
+            } catch(java.net.UnknownHostException ex){
+                JOptionPane.showMessageDialog(this, "Host not found.\nCheck your Internet connection", "Message", JOptionPane.ERROR_MESSAGE);
+
             } catch (IOException ex) {
                 Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
             } 
@@ -217,9 +220,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         // sort alDir
         Collections.sort(alDir);
         
- 
         for(String strSubDir : alDir){
-            System.out.println("\n");
             strURL = "http://vannier.info/opengotha/fileslist.php?dirName=tournaments/" + strSubDir;
             ArrayList<String> alTournamentsNames = new ArrayList<String>();
             try{
@@ -260,10 +261,24 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
             }
 
             for (String strTournament: alTournamentsNames) {
+                boolean success = (new File(Gotha.runningDirectory + "/remote")).mkdirs();
                 String strTournamentURL = "http://opengotha.info/tournaments/" + strSubDir + "/" + strTournament;
+                
                 File fDestination = new File(Gotha.runningDirectory + "/remote/" + strTournament);
-                TournamentInterface t = downloadTournament(strTournamentURL, fDestination);
-                alTournaments.add(t);
+                
+                if (fDestination.exists()){    
+                    TournamentInterface t = null;
+                    try {
+                        t = Gotha.getTournamentFromFile(fDestination);
+                    } catch (IOException | ClassNotFoundException ex) {
+                        Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
+                    }
+                    alTournaments.add(t);
+                }
+                else{
+                    TournamentInterface t = downloadTournament(strTournamentURL, fDestination);
+                    alTournaments.add(t);
+                }
             }
         }
         return;
@@ -293,7 +308,13 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         btnClose = new javax.swing.JButton();
         jLabel1 = new javax.swing.JLabel();
 
-        setDefaultCloseOperation(javax.swing.WindowConstants.EXIT_ON_CLOSE);
+        setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
+        setResizable(false);
+        addWindowListener(new java.awt.event.WindowAdapter() {
+            public void windowClosing(java.awt.event.WindowEvent evt) {
+                formWindowClosing(evt);
+            }
+        });
         getContentPane().setLayout(null);
 
         tblTournaments.setModel(new javax.swing.table.DefaultTableModel(
@@ -392,8 +413,10 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
-        downloadTournaments();     
-        this.updateAllViews();          
+        Gotha.printTopChrono("btnRefreshActionPerformed. Avant downloadTournaments");
+        downloadTournaments();
+        Gotha.printTopChrono("btnRefreshActionPerformed. Apres downloadTournaments");
+        this.updateAllViews(); 
     }//GEN-LAST:event_btnRefreshActionPerformed
 
     private void rdbLastVersionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbLastVersionsActionPerformed
@@ -408,24 +431,24 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         }
        
         TournamentInterface curTournament = this.jfrG.getTournament();
-        try {
-            System.out.println("curTournament.getShortName() = " + curTournament.getShortName());
-        } catch (RemoteException ex) {
-            Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
-        }
+//        try {
+//            System.out.println("curTournament.getShortName() = " + curTournament.getShortName());
+//        } catch (RemoteException ex) {
+//            Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
+//        }
 
         TournamentInterface t = alTournaments.get(row);
-        String strSN = null;
-        Date saveDT = null;
-        try {
-            strSN = t.getShortName();
-            saveDT = t.getSaveDT();
-        } catch (RemoteException ex) {
-            Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
-        }
-        System.out.println("row = " + row);
-        System.out.println("strSN = " + strSN);
-        System.out.println("saveDT = " + saveDT);
+//        String strSN = null;
+//        Date saveDT = null;
+//        try {
+//            strSN = t.getShortName();
+//            saveDT = t.getSaveDT();
+//        } catch (RemoteException ex) {
+//            Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
+//        }
+//        System.out.println("row = " + row);
+//        System.out.println("strSN = " + strSN);
+//        System.out.println("saveDT = " + saveDT);
         
         if (curTournament != null){
             String strFN = null;
@@ -451,7 +474,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         jfrG.setTournament(t);
         try {
             t.setLastTournamentModificationTime(t.getCurrentTournamentTime());
-            System.out.println("t.getShortName() = " + t.getShortName());
+//            System.out.println("t.getShortName() = " + t.getShortName());
         } catch (RemoteException ex) {
             Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
         }
@@ -464,6 +487,10 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
     private void btnCloseActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnCloseActionPerformed
         cleanClose();
     }//GEN-LAST:event_btnCloseActionPerformed
+
+    private void formWindowClosing(java.awt.event.WindowEvent evt) {//GEN-FIRST:event_formWindowClosing
+        cleanClose();
+    }//GEN-LAST:event_formWindowClosing
     
     private void cleanClose(){
         dispose();

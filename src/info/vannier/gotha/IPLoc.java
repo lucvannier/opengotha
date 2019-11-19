@@ -8,6 +8,7 @@ package info.vannier.gotha;
 import java.io.IOException;
 import java.net.URL;
 import java.nio.charset.StandardCharsets;
+import java.util.HashMap;
 import java.util.Scanner;
 
 /**
@@ -15,35 +16,44 @@ import java.util.Scanner;
  * @author Luc
  */
 public class IPLoc {
-    
+    private static HashMap<String, String> hmIPLocs = new HashMap<String, String>();
+    private static int requestNumber = 0;
     public static String readStringFromURL(String externalIPAddress) throws IOException{
-        String requestURL = "http://ip-api.com/xml/" + externalIPAddress;
-        String str = "";
-        try (Scanner scanner = new Scanner(new URL(requestURL).openStream(),
-                StandardCharsets.UTF_8.toString()))
-        {
-            scanner.useDelimiter("\\A");
-            str = scanner.hasNext() ? scanner.next() : "";
-            str = str.replace("<![CDATA[", "");
-            str = str.replace("]]>", "");
+        String strLoc = hmIPLocs.get(externalIPAddress);
+        if (strLoc == null){
+            String requestURL = "http://ip-api.com/xml/" + externalIPAddress;
+            try (Scanner scanner = new Scanner(new URL(requestURL).openStream(),
+                    StandardCharsets.UTF_8.toString()))
+            {
+//                System.out.println("Actual request. Request Number = " + requestNumber++ );
+                scanner.useDelimiter("\\A");
+                strLoc = scanner.hasNext() ? scanner.next() : "";
+                strLoc = strLoc.replace("<![CDATA[", "");
+                strLoc = strLoc.replace("]]>", "");
+                
+            }
+            hmIPLocs.put(externalIPAddress, strLoc);
         }
-        return str;
+//        System.out.println("externalIPAddress = " + externalIPAddress + " strLoc = " + strLoc);
+//        System.out.println("hmIPLocs.size() = " + hmIPLocs.size());
+        
+        return strLoc;
     }
     
-    public static String getCityFromDoc(String strDoc){
-        int pos = strDoc.indexOf("<city>");
+    public static String getCityFromLoc(String strLoc){
+        int pos = strLoc.indexOf("<city>");
         if (pos <=0) return "???";
-        String strCity = strDoc;
+        String strCity = strLoc;
         strCity = strCity.substring(pos+ "<city>".length());
         pos = strCity.indexOf("</city>");
         strCity = strCity.substring(0, pos );
         return strCity;
     }
   
-    public static String getCountryFromDoc(String strDoc){
-        int pos = strDoc.indexOf("<country>");
+    public static String getCountryFromLoc(String strLoc){
+        int pos = strLoc.indexOf("<country>");
         if (pos <=0) return "???";
-        String strCountry = strDoc;
+        String strCountry = strLoc;
         strCountry = strCountry.substring(pos+ "<country>".length());
         pos = strCountry.indexOf("</country>");
         strCountry = strCountry.substring(0, pos );

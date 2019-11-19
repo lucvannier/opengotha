@@ -5,22 +5,24 @@
  */
 package info.vannier.util;
 
-import java.awt.Component;
 import java.text.ParseException;
 import java.text.SimpleDateFormat;
+import java.util.Calendar;
 import java.util.Date;
-import java.util.logging.Level;
-import java.util.logging.Logger;
-import javax.swing.JOptionPane;
+import java.util.GregorianCalendar;
 
 /**
  *
  * @author Luc
- * if unparsable, returns current date
+ * if unparsable, returns 1900-01-01
  */
 public class GothaDate {
     public static Date parse(String strDate, String pattern){
-        Date date = new Date(0, 0, 1);
+        Date date;
+        GregorianCalendar cal = new GregorianCalendar();            
+        cal.set(1900, 0, 1);
+        date =  cal.getTime();
+
         SimpleDateFormat sdfDate = new SimpleDateFormat(pattern);
         boolean valid = true;
         try {
@@ -29,16 +31,27 @@ public class GothaDate {
             valid = false;
             System.out.println("GothaDate.unparsable String : " + strDate);
         }
-        if (date.getYear() <= 0) valid = false;
+
+        cal.setTime(date);
+        int year = cal.get(Calendar.YEAR);     
+        if (year <= 1900) valid = false;
         
         // check errors like yyyy-13-dd or yyy-MM-32
         String strNewDate = new SimpleDateFormat(pattern).format(date);
         if(!strNewDate.equals(strDate)) valid= false;
         
         if (!valid){
-            date = new Date(0, 0, 1);
-            System.out.println("GothaDate.unvalid String : " + strDate);
+            System.out.println("GothaDate.unvalid date");
+            cal.set(1900, 0, 1);
+            date =  cal.getTime();
         }
         return date;
     }
+    
+    public static int getYear(Date d){
+        GregorianCalendar cal = new GregorianCalendar();
+        cal.setTime(d);
+        return cal.get(Calendar.YEAR);     
+    }
+
 }

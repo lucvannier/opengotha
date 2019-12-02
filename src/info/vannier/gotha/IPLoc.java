@@ -25,7 +25,6 @@ public class IPLoc {
             try (Scanner scanner = new Scanner(new URL(requestURL).openStream(),
                     StandardCharsets.UTF_8.toString()))
             {
-//                System.out.println("Actual request. Request Number = " + requestNumber++ );
                 scanner.useDelimiter("\\A");
                 strLoc = scanner.hasNext() ? scanner.next() : "";
                 strLoc = strLoc.replace("<![CDATA[", "");
@@ -34,8 +33,6 @@ public class IPLoc {
             }
             hmIPLocs.put(externalIPAddress, strLoc);
         }
-//        System.out.println("externalIPAddress = " + externalIPAddress + " strLoc = " + strLoc);
-//        System.out.println("hmIPLocs.size() = " + hmIPLocs.size());
         
         return strLoc;
     }

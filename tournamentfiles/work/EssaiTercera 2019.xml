@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Tournament dataVersion="201" externalIPAddress="77.128.107.78" gothaMinorVersion="5" gothaVersion="348" saveDT="20191118151142">
+<Tournament dataVersion="201" externalIPAddress="77.128.107.78" gothaMinorVersion="5" gothaVersion="348" saveDT="20191124094959">
 <Players>
 <Player agaExpirationDate="" agaId="" club="" country="VZ" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jesús" grade="9K" name="Sánchez" participating="11111111111111111111" rank="9K" rating="1200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
 <Player agaExpirationDate="" agaId="" club="xxxx" country="CO" egfPin="16513794" ffgLicence="" ffgLicenceStatus="" firstName="Juan_Felipe" grade=" 3D" name="Samper_Munoz" participating="11111111111111111111" rank="2D" rating="2218" ratingOrigin="EGF : 2218" registeringStatus="FIN" smmsCorrection="0"/>
@@ -33,20 +33,20 @@
 <Game blackPlayer="SÁNCHEZJESÚS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="4" whitePlayer="HENAO_ROABRANDAL_JOSUE"/>
 </Games>
 <TournamentParameterSet>
-<GeneralParameterSet basicTime="60" beginDate="2019-11-16" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Sampi" endDate="2019-11-16" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Bogotá" name="Tercera parada 2019" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="EssaiTercera 2019" size="19" stdByoYomiTime="30"/>
-<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<GeneralParameterSet basicTime="60" beginDate="2019-11-16" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Sampi" endDate="2019-11-16" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Bogotá" name="Tercera parada 2019" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="EssaiTercera 2019" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
 <PlacementParameterSet>
 <PlacementCriteria>
-<PlacementCriterion name="NBW" number="1"/>
-<PlacementCriterion name="SOSW" number="2"/>
-<PlacementCriterion name="SOSOSW" number="3"/>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
 <PlacementCriterion name="NULL" number="4"/>
 <PlacementCriterion name="NULL" number="5"/>
 <PlacementCriterion name="NULL" number="6"/>
 </PlacementCriteria>
 </PlacementParameterSet>
-<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
-<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
 <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
 </TournamentParameterSet>
 <TeamTournamentParameterSet>

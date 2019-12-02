@@ -36,7 +36,10 @@ public class RemoteTournament {
 
         String tournamentShortName = null;        
         String tournamentFileName = null;        
- 
+
+        // No upload in Client mode
+        if (Gotha.runningMode == Gotha.RUNNING_MODE_CLI) return;
+
         try {
             tournamentShortName = tournament.getShortName();
         } catch (RemoteException ex) {

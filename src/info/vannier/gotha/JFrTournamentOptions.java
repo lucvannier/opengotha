@@ -2699,7 +2699,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         
         if (Gotha.runningMode == Gotha.RUNNING_MODE_SRV) {
             String strMessage = "You may not change short name in Server mode";
-            System.out.println(strMessage);
             JOptionPane.showMessageDialog(null, strMessage, "Message", JOptionPane.INFORMATION_MESSAGE);
             txfShortName.setText(oldShortName);
             return;

@@ -331,7 +331,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         pnlTournaments.setViewportView(tblTournaments);
 
         getContentPane().add(pnlTournaments);
-        pnlTournaments.setBounds(40, 170, 870, 300);
+        pnlTournaments.setBounds(20, 170, 950, 320);
 
         btnRefresh.setText("Refresh tournaments list");
         btnRefresh.addActionListener(new java.awt.event.ActionListener() {
@@ -340,7 +340,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnRefresh);
-        btnRefresh.setBounds(330, 30, 240, 120);
+        btnRefresh.setBounds(370, 30, 240, 120);
 
         pnlWhatTournaments.setBorder(javax.swing.BorderFactory.createTitledBorder("What tournaments ?"));
         pnlWhatTournaments.setLayout(null);
@@ -348,7 +348,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         grpVersions.add(rdbAllVersions);
         rdbAllVersions.setText("All versions");
         pnlWhatTournaments.add(rdbAllVersions);
-        rdbAllVersions.setBounds(20, 80, 250, 23);
+        rdbAllVersions.setBounds(20, 80, 300, 23);
 
         grpVersions.add(rdbLastVersions);
         rdbLastVersions.setSelected(true);
@@ -359,21 +359,21 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
             }
         });
         pnlWhatTournaments.add(rdbLastVersions);
-        rdbLastVersions.setBounds(20, 100, 250, 23);
+        rdbLastVersions.setBounds(20, 100, 300, 23);
 
         grpTournaments.add(rdbAllTournaments);
         rdbAllTournaments.setText("All tournaments");
         pnlWhatTournaments.add(rdbAllTournaments);
-        rdbAllTournaments.setBounds(20, 20, 250, 23);
+        rdbAllTournaments.setBounds(20, 20, 300, 23);
 
         grpTournaments.add(rdbRecentTournaments);
         rdbRecentTournaments.setSelected(true);
         rdbRecentTournaments.setText(" Recent tournaments (<= 7 days)");
         pnlWhatTournaments.add(rdbRecentTournaments);
-        rdbRecentTournaments.setBounds(20, 40, 250, 20);
+        rdbRecentTournaments.setBounds(20, 40, 300, 20);
 
         getContentPane().add(pnlWhatTournaments);
-        pnlWhatTournaments.setBounds(40, 20, 280, 130);
+        pnlWhatTournaments.setBounds(20, 20, 340, 130);
 
         btnOpenTournament.setText("Open the selected tournament");
         btnOpenTournament.addActionListener(new java.awt.event.ActionListener() {
@@ -382,7 +382,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnOpenTournament);
-        btnOpenTournament.setBounds(580, 130, 330, 23);
+        btnOpenTournament.setBounds(620, 130, 350, 23);
 
         btnHelp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info/vannier/gotha/gothalogo16.jpg"))); // NOI18N
         btnHelp.setText("help");
@@ -392,7 +392,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnHelp);
-        btnHelp.setBounds(40, 480, 360, 30);
+        btnHelp.setBounds(20, 500, 360, 30);
 
         btnClose.setText("Close");
         btnClose.addActionListener(new java.awt.event.ActionListener() {
@@ -401,22 +401,20 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnClose);
-        btnClose.setBounds(410, 480, 500, 30);
+        btnClose.setBounds(390, 500, 580, 30);
 
         jLabel1.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
         jLabel1.setForeground(new java.awt.Color(255, 0, 51));
         jLabel1.setText("New !");
         getContentPane().add(jLabel1);
-        jLabel1.setBounds(720, 60, 80, 50);
+        jLabel1.setBounds(760, 60, 80, 50);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
     private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
-        Gotha.printTopChrono("btnRefreshActionPerformed. Avant downloadTournaments");
         downloadTournaments();
-        Gotha.printTopChrono("btnRefreshActionPerformed. Apres downloadTournaments");
-        this.updateAllViews(); 
+         this.updateAllViews(); 
     }//GEN-LAST:event_btnRefreshActionPerformed
 
     private void rdbLastVersionsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbLastVersionsActionPerformed
@@ -431,24 +429,8 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         }
        
         TournamentInterface curTournament = this.jfrG.getTournament();
-//        try {
-//            System.out.println("curTournament.getShortName() = " + curTournament.getShortName());
-//        } catch (RemoteException ex) {
-//            Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
-//        }
 
         TournamentInterface t = alTournaments.get(row);
-//        String strSN = null;
-//        Date saveDT = null;
-//        try {
-//            strSN = t.getShortName();
-//            saveDT = t.getSaveDT();
-//        } catch (RemoteException ex) {
-//            Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
-//        }
-//        System.out.println("row = " + row);
-//        System.out.println("strSN = " + strSN);
-//        System.out.println("saveDT = " + saveDT);
         
         if (curTournament != null){
             String strFN = null;

@@ -1,11 +1,11 @@
-OpenGothaV3.48.05
-*****************
-19/11/2019
+OpenGothaV3.49
+**************
+02/12/2019
 New         An Upload facility for .xml file
-New         A Download facility in Remote .. Remote tournaments
+            And a Download facility in Remote .. Remote tournaments
 Bug Fix     In Game results frame, a (rare) bug occured when choosing "Team presentation". Fixed
 Update      Change the default URL of AGA rating list
-
+            
 OpenGothaV3.48
 **************
 30/11/2018

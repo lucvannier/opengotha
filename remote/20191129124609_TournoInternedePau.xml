@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="92.138.140.25" gothaMinorVersion="4" gothaVersion="348" saveDT="20191129124609">
+<Players>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="9652014" ffgLicenceStatus="L" firstName="Nicolas" grade="4K" name="Herubel" participating="11111111111111111111" rank="4K" rating="1732" ratingOrigin="FFG : -318" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="1300094" ffgLicenceStatus="L" firstName="Franck" grade="10K" name="Mastrippolito" participating="11111111111111111111" rank="10K" rating="1100" ratingOrigin="FFG : -950" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="9326801" ffgLicenceStatus="L" firstName="Sylvain" grade="8K" name="Thibeau" participating="11111111111111111111" rank="8K" rating="1292" ratingOrigin="FFG : -758" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="1000168" ffgLicenceStatus="-" firstName="Vincent" grade="14K" name="Cabanel" participating="11111111111111111111" rank="14K" rating="650" ratingOrigin="FFG : -1400" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="1900074" ffgLicenceStatus="L" firstName="Quentin" grade="16K" name="Cazaudebat" participating="11111111111111111111" rank="16K" rating="462" ratingOrigin="FFG : -1588" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="1100109" ffgLicenceStatus="L" firstName="Siméon" grade="2D" name="Girousse" participating="11111111111111111111" rank="2D" rating="2248" ratingOrigin="FFG : 198" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="1900073" ffgLicenceStatus="L" firstName="Tanguy" grade="10K" name="Mauhourat" participating="11111111111111111111" rank="10K" rating="1111" ratingOrigin="FFG : -939" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="0690501" ffgLicenceStatus="L" firstName="Julien" grade="6K" name="Corcessin" participating="11111111111111111111" rank="6K" rating="1483" ratingOrigin="FFG : -567" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="1600156" ffgLicenceStatus="C" firstName="Myriam" grade="15K" name="Laplace" participating="11111111111111111111" rank="15K" rating="571" ratingOrigin="FFG : -1479" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="1400153" ffgLicenceStatus="L" firstName="Jean-Romain" grade="9K" name="Grangé" participating="11111111111111111111" rank="9K" rating="1165" ratingOrigin="FFG : -885" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="1700199" ffgLicenceStatus="C" firstName="Sylvie" grade="20K" name="Goossens" participating="11111111111111111111" rank="20K" rating="124" ratingOrigin="FFG : -1926" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="1300027" ffgLicenceStatus="L" firstName="Kim" grade="12K" name="Schott_Dedieu" participating="11111111111111111111" rank="12K" rating="928" ratingOrigin="FFG : -1122" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="9251703" ffgLicenceStatus="L" firstName="Jean-Luc" grade="12K" name="Boutaud" participating="11111111111111111111" rank="12K" rating="865" ratingOrigin="FFG : -1185" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="64Pa" country="FR" egfPin="" ffgLicence="1300343" ffgLicenceStatus="L" firstName="Nathan" grade="9K" name="Herubel" participating="11111111111111111111" rank="9K" rating="1215" ratingOrigin="FFG : -835" registeringStatus="PRE" smmsCorrection="0"/>
+</Players>
+<Games/>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2019-11-30" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Julien CORCESSIN" endDate="2019-11-30" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Pau" name="Tournoi Interne de Pau" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="3" shortName="Tourno Interne de Pau" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="6" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

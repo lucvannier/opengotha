@@ -36,7 +36,7 @@ public class Player implements java.io.Serializable{
      * "EGF" for rating coming from European Go DataBase
      * "FFG" for rating coming from FFG Rating list
      * "AGA" for rating coming from AGA TD List
-     * "MAN" for rating specified by the organiser or imported from vBar-separated file
+     * "MAN" for rating specified by the organiser
      * "INI" for rating computed from rank
      */
     private String strRatingOrigin = "";

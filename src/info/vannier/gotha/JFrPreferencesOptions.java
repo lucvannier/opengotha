@@ -171,7 +171,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
             }
         });
         pnlInternetAccess.add(ckbTournaments);
-        ckbTournaments.setBounds(620, 80, 130, 23);
+        ckbTournaments.setBounds(610, 80, 150, 23);
 
         ckbJournaling.setSelected(true);
         ckbJournaling.setText("Journaling report");
@@ -181,7 +181,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
             }
         });
         pnlInternetAccess.add(ckbJournaling);
-        ckbJournaling.setBounds(620, 40, 130, 23);
+        ckbJournaling.setBounds(610, 40, 150, 23);
 
         grpTournaments.add(rdbAfterEverySave);
         rdbAfterEverySave.setText("After every save");
@@ -191,7 +191,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
             }
         });
         pnlInternetAccess.add(rdbAfterEverySave);
-        rdbAfterEverySave.setBounds(760, 70, 150, 23);
+        rdbAfterEverySave.setBounds(770, 70, 180, 23);
 
         grpTournaments.add(rdbAfterEveryChange);
         rdbAfterEveryChange.setText("After every change");
@@ -201,7 +201,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
             }
         });
         pnlInternetAccess.add(rdbAfterEveryChange);
-        rdbAfterEveryChange.setBounds(760, 100, 150, 23);
+        rdbAfterEveryChange.setBounds(770, 100, 180, 23);
 
         getContentPane().add(pnlInternetAccess);
         pnlInternetAccess.setBounds(10, 320, 960, 140);
@@ -398,6 +398,13 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         this.ckbPhotos.setSelected(Gotha.isPhotosDownloadEnabled());
         this.ckbJournaling.setSelected(Gotha.isJournalingReportEnabled());
         
+        if (Gotha.runningMode == Gotha.RUNNING_MODE_CLI){
+            this.ckbTournaments.setVisible(false);
+            this.rdbAfterEverySave.setVisible(false);
+            this.rdbAfterEveryChange.setVisible(false);
+            return;
+        }
+
         if (Gotha.getTournamentUploadStatus() == Gotha.TU_NONE){
             this.ckbTournaments.setSelected(false);
             this.rdbAfterEverySave.setVisible(false);

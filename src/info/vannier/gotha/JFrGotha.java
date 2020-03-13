@@ -1324,7 +1324,7 @@ public class JFrGotha extends javax.swing.JFrame {
         mnuRemote.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
 
         mniRemoteTournaments.setFont(new java.awt.Font("Arial", 0, 11)); // NOI18N
-        mniRemoteTournaments.setText("Remote Tournaments");
+        mniRemoteTournaments.setText("Remote tournaments");
         mniRemoteTournaments.addActionListener(new java.awt.event.ActionListener() {
             public void actionPerformed(java.awt.event.ActionEvent evt) {
                 mniRemoteTournamentsActionPerformed(evt);
@@ -2936,7 +2936,7 @@ private void mniImportH9ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-F
 
 private void mniPreferencesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniPreferencesActionPerformed
     JFrame jfr = new JFrPreferencesOptions();
-    this.displayFrame(jfr, JFrGotha.BIG_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
+    this.displayFrame(jfr, JFrGotha.MEDIUM_FRAME_WIDTH, MEDIUM_FRAME_HEIGHT);
 }//GEN-LAST:event_mniPreferencesActionPerformed
 
 private void mniTeamsManagerActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_mniTeamsManagerActionPerformed
@@ -3199,7 +3199,6 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     }
 
     private void openTournament(File f) throws Exception {
-        LogElements.incrementElement("tournament.open", f.getName());
         if (!saveCurrentTournamentIfNecessary()) {
             return;
         }
@@ -3441,10 +3440,6 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
         }
         if (!saveCurrentTournamentIfNecessary()) {
             return;
-        }
-        if (Gotha.isJournalingReportEnabled()) {
-            LogElements.sendLogElements();
-            File f =  new File (this.getDefaultSaveAsFileName());
         }
         System.exit(0);
     }

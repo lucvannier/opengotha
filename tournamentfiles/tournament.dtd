@@ -2,10 +2,10 @@
 
 <!ELEMENT Tournament (Players?, Games?, ByePlayers?, Teams?, TournamentParameterSet?, TeamTournamentParameterSet?, ClubsGroups?)>
 <!ATTLIST Tournament dataVersion CDATA "200">
+<!ATTLIST Tournament externalIPAddress CDATA "127.1.1.1">
 <!ATTLIST Tournament gothaVersion CDATA "300">
 <!ATTLIST Tournament gothaMinorVersion CDATA "00">
 <!ATTLIST Tournament saveDT CDATA "20019101000000">
-<!ATTLIST Tournament saveDT CDATA "127.0.0.1">
 
 <!ELEMENT Players (Player*)>
 <!ELEMENT Games (Game*)>
@@ -153,7 +153,6 @@
 <!ATTLIST PairingParameterSet paiSeMinimizeHandicap                     CDATA "0">
 <!ATTLIST PairingParameterSet paiSeAvoidSameGeo                         CDATA "100000000000">
 <!ATTLIST PairingParameterSet paiSePreferMMSDiffRatherThanSameCountry   CDATA "1">
-<!ATTLIST PairingParameterSet paiSePreferMMSDiffRatherThanSameClubsGroup CDATA "2">
 <!ATTLIST PairingParameterSet paiSePreferMMSDiffRatherThanSameClub      CDATA "3">
 
 <!ELEMENT TeamTournamentParameterSet (TeamGeneralParameterSet?, TeamPlacementParameterSet?)>

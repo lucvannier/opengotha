@@ -39,8 +39,8 @@ public class Gotha {
     
     static Locale locale = Locale.getDefault();
     static final long GOTHA_VERSION = 349L;
-    static final long GOTHA_MINOR_VERSION = 0L;
-    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2019, Calendar.DECEMBER, 2)).getTime();
+    static final long GOTHA_MINOR_VERSION = 1L;
+    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2020, Calendar.MARCH, 13)).getTime();
     // Data version for serialization. Since 3.23 version, not used because xml and compatibility is always granted in both senses
     static final long GOTHA_DATA_VERSION = 201L;
     
@@ -531,14 +531,14 @@ public class Gotha {
         return strPD.equals("true");
     }
     
-    public static boolean isJournalingReportEnabled(){
-        Preferences prefsRoot = Preferences.userRoot();
-        Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
-
-        String strK = "journalingReport";
-        String strIA = gothaPrefs.get(strK, "true");
-        return strIA.equals("true");
-    }
+//    public static boolean isJournalingReportEnabled(){
+//        Preferences prefsRoot = Preferences.userRoot();
+//        Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
+//
+//        String strK = "journalingReport";
+//        String strIA = gothaPrefs.get(strK, "true");
+//        return strIA.equals("true");
+//    }
     
     public static int getTournamentUploadStatus(){
         Preferences prefsRoot = Preferences.userRoot();
@@ -571,12 +571,12 @@ public class Gotha {
         gothaPrefs.put(strK, "" + tus);
     }
     
-    public static void setJournalingReportEnabled(boolean enabled){
-        Preferences prefsRoot = Preferences.userRoot();
-        Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
-        String strK = "journalingReport";
-        gothaPrefs.put(strK, "" + enabled);
-    }
+//    public static void setJournalingReportEnabled(boolean enabled){
+//        Preferences prefsRoot = Preferences.userRoot();
+//        Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
+//        String strK = "journalingReport";
+//        gothaPrefs.put(strK, "" + enabled);
+//    }
     
     public static String getPreference(String strK){
         Preferences prefsRoot = Preferences.userRoot();

@@ -10,7 +10,6 @@
 		<directory title="E:/OpenGotha/opengotha_cur/gothahelp/english">
 			<directory title="images"/>
 			<file title="Appendices.html"/>
-			<file title="Compatibility issues.html"/>
 			<file title="Contents tab.html"/>
 			<file title="Create a new tournament.html"/>
 			<file title="Discard rounds frame.html"/>
@@ -40,6 +39,8 @@
 			<file title="Preferences frame.html"/>
 			<file title="Publish menu.html"/>
 			<file title="Publish tab.html"/>
+                        <file title="Remote menu.html"/>
+                        <file title="Remote tournaments frame.html"/>
 			<file title="Save facilities.html"/>
 			<file title="Starting OpenGotha.html"/>
 			<file title="Team Placement settings.html"/>

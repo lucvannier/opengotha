@@ -1294,61 +1294,63 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
         cost += hdCost;
 
         // Secondary criteria 2,3 and 4 : Geographical Criteria
-        int countryFactor = paiPS.getPaiSePreferMMSDiffRatherThanSameCountry();
-        double xCountry = (double) Math.abs(countryFactor + 0.99) / (double) secRange;
-        if (xCountry > 1.0) {
-            xCountry = 1.0;
-        }
-        double malusCountry = (1.0 - k) * xCountry + k * xCountry * xCountry;
-
-        int clubsGroupFactor = paiPS.getPaiSePreferMMSDiffRatherThanSameClubsGroup();
-        double xClubsGroup = (double) Math.abs(clubsGroupFactor + 0.99) / (double) secRange;
-        if (xClubsGroup > 1.0) {
-            xClubsGroup = 1.0;
-        }
-        double malusClubsGroup = (1.0 - k) * xClubsGroup + k * xClubsGroup * xClubsGroup;
-
-        int clubFactor = paiPS.getPaiSePreferMMSDiffRatherThanSameClub();
-        double xClub = (double) Math.abs(clubFactor + 0.99) / (double) secRange;
-        if (xClub > 1.0) {
-            xClub = 1.0;
-        }
-        double malusClub = (1.0 - k) * xClub + k * xClub * xClub;
-
         long geoMaxCost = paiPS.getPaiSeAvoidSameGeo();
-        long geoMinCost = (long) (geoMaxCost * (1.0 - Math.max(malusCountry, malusClub)));
 
-        double malusGeo = 0.0;
-
-        if (sP1.getCountry().compareTo(sP2.getCountry()) == 0) {
-            malusGeo = malusCountry;
-        }
+        int countryFactor = paiPS.getPaiSePreferMMSDiffRatherThanSameCountry();
+        int clubFactor = paiPS.getPaiSePreferMMSDiffRatherThanSameClub();
+//        int groupFactor = paiPS.getPaiSePreferMMSDiffRatherThanSameClubsGroup();
         
-        boolean bCommonGroup = false;
+        double countryRatio = 0.0;
+        
+        boolean bCommonCountry = false;
         try {
-            bCommonGroup = playersAreInCommonGroup(sP1, sP2);
+            bCommonCountry = this.playersAreInCommonCountry(sP1, sP2);
         } catch (RemoteException ex) {
             Logger.getLogger(Tournament.class.getName()).log(Level.SEVERE, null, ex);
         }
-        if (bCommonGroup) {
-            malusGeo = Math.max(malusGeo, malusClubsGroup);
+        if(!bCommonCountry){
+            if (countryFactor == 0) countryRatio = 0.0;
+            else{
+                countryRatio = ((double) countryFactor) / (double) scoRange;
+                if (countryRatio > 1.0) countryRatio = 1.0;
+            }
+        }                      
+
+        double clubRatio = 0.0;
+
+        boolean bCommonGroup = false;
+        boolean bCommonClub = false;
+        try {
+            bCommonGroup = playersAreInCommonGroup(sP1, sP2);
+            bCommonClub = playersAreInCommonClub(sP1, sP2);
+        } catch (RemoteException ex) {
+            Logger.getLogger(Tournament.class.getName()).log(Level.SEVERE, null, ex);
         }
+        if(bCommonGroup && !bCommonClub){
+            if (clubFactor == 0) clubRatio = 0.0;
+            else{
+                clubRatio = (double) clubFactor /2.0 / (double) scoRange;    
+            }  
+        }
+        if(!bCommonGroup && !bCommonClub){
+            if (clubFactor == 0) clubRatio = 0.0;
+            else{   
+              clubRatio = (double) clubFactor * 1.2 / (double) scoRange;
+            }
+        }
+        if ( clubRatio > 1.0) clubRatio = 1.0;
         
-        if (sP1.getClub().compareTo(sP2.getClub()) == 0) {
-            malusGeo = Math.max(malusGeo, malusClub);
-        }
-        
-        long geoNominalCost = (long) (geoMaxCost * (1.0 - malusGeo));
-        long geoCost = geoNominalCost;
-        if (secCase == 0) {
-            geoCost = geoNominalCost;
-        }
-        if (secCase == 2) {
-            geoCost = geoMaxCost;
-        }
-        if (secCase == 1) {
-            geoCost = (geoMaxCost + geoNominalCost) /2;
-        }
+        // compute geoRatio
+         double mainPart = Math.max(countryRatio, clubRatio);
+         double secPart = Math.min(countryRatio, clubRatio);
+         double geoRatio = mainPart + secPart / 2.0; 
+                 if (geoRatio > 0.0) geoRatio += 0.5 / (double) scoRange;
+         
+         // The concavity function is applied to geoRatio to get geoCost
+         double dbGeoCost =  (double) geoMaxCost * (1.0 - geoRatio) * (1.0 + k * geoRatio);
+         long geoCost = paiPS.getPaiMaMinimizeScoreDifference() - (long) dbGeoCost;
+         if (geoCost > geoMaxCost) geoCost = geoMaxCost;
+
         cost += geoCost;
 
         return cost;
@@ -2801,6 +2803,7 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
                     alSPGroup.add(sp);
                 }
                 if (alSPGroup.isEmpty()) {
+                    groupNumber++; // Added in V3.49.01
                     continue;
                 }
 
@@ -3215,18 +3218,39 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
      public boolean playersAreInCommonGroup(Player p1, Player p2)throws RemoteException{
         String strClub1 = p1.getClub();
         String strClub2 = p2.getClub();
-        
+        strClub1 = strClub1.toLowerCase();
+        strClub2 = strClub2.toLowerCase();
         for (ClubsGroup cg : clubsGroupsList()){
             boolean bP1 = false;
             boolean bP2 = false;
             for(Club club : cg.getHmClubs().values()){
                 String strClub = club.getName();
+                strClub = strClub.toLowerCase();
                 if (strClub1.equals(strClub)) bP1 = true;
                 if (strClub2.equals(strClub)) bP2 = true;
             }
             if (bP1 && bP2) return true;            
         }
-        return false;
-    
+        return false;    
+    }
+          
+     @Override
+     public boolean playersAreInCommonClub(Player p1, Player p2)throws RemoteException{
+        String strClub1 = p1.getClub();
+        String strClub2 = p2.getClub();
+        strClub1 = strClub1.toLowerCase();
+        strClub2 = strClub2.toLowerCase();
+        if(strClub1.equals(strClub2)) return true;
+        else return false;
+    }
+
+     @Override
+     public boolean playersAreInCommonCountry(Player p1, Player p2)throws RemoteException{
+        String strCountry1 = p1.getCountry();
+        String strCountry2 = p2.getCountry();
+        strCountry1 = strCountry1.toLowerCase();
+        strCountry2 = strCountry2.toLowerCase();
+        if(strCountry1.equals(strCountry2)) return true;
+        else return false;
     }
 }

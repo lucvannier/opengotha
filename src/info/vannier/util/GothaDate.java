@@ -41,7 +41,7 @@ public class GothaDate {
         if(!strNewDate.equals(strDate)) valid= false;
         
         if (!valid){
-            System.out.println("GothaDate.unvalid date");
+            System.out.println("GothaDate. Invalid date");
             cal.set(1900, 0, 1);
             date =  cal.getTime();
         }

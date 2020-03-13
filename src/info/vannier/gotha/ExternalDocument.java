@@ -855,7 +855,7 @@ public class ExternalDocument {
         paiPS.setPaiSeMinimizeHandicap(Long.parseLong(extractNodeValue(nnmPaiPS, "paiSeMinimizeHandicap", "0")));
         paiPS.setPaiSeAvoidSameGeo(Long.parseLong(extractNodeValue(nnmPaiPS, "paiSeAvoidSameGeo", "100000000000")));
         paiPS.setPaiSePreferMMSDiffRatherThanSameCountry(Integer.parseInt(extractNodeValue(nnmPaiPS, "paiSePreferMMSDiffRatherThanSameCountry", "1")));
-        paiPS.setPaiSePreferMMSDiffRatherThanSameClubsGroup(Integer.parseInt(extractNodeValue(nnmPaiPS, "paiSePreferMMSDiffRatherThanSameClubsGroup", "2")));
+//        paiPS.setPaiSePreferMMSDiffRatherThanSameClubsGroup(Integer.parseInt(extractNodeValue(nnmPaiPS, "paiSePreferMMSDiffRatherThanSameClubsGroup", "2")));
         paiPS.setPaiSePreferMMSDiffRatherThanSameClub(Integer.parseInt(extractNodeValue(nnmPaiPS, "paiSePreferMMSDiffRatherThanSameClub", "3")));
 
         tps.setPairingParameterSet(paiPS);
@@ -3422,7 +3422,7 @@ public class ExternalDocument {
         emPairingParameterSet.setAttribute("paiSeMinimizeHandicap", "" + paiPS.getPaiSeMinimizeHandicap());
         emPairingParameterSet.setAttribute("paiSeAvoidSameGeo", "" + paiPS.getPaiSeAvoidSameGeo());
         emPairingParameterSet.setAttribute("paiSePreferMMSDiffRatherThanSameCountry", "" + paiPS.getPaiSePreferMMSDiffRatherThanSameCountry());
-        emPairingParameterSet.setAttribute("paiSePreferMMSDiffRatherThanSameClubsGroup", "" + paiPS.getPaiSePreferMMSDiffRatherThanSameClubsGroup());
+//        emPairingParameterSet.setAttribute("paiSePreferMMSDiffRatherThanSameClubsGroup", "" + paiPS.getPaiSePreferMMSDiffRatherThanSameClubsGroup());
         emPairingParameterSet.setAttribute("paiSePreferMMSDiffRatherThanSameClub", "" + paiPS.getPaiSePreferMMSDiffRatherThanSameClub());
 
         emTournamentParameterSet.appendChild(emPairingParameterSet);

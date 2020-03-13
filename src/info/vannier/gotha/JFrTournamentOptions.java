@@ -248,16 +248,13 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         ckbSeNbWinsThresholdActive = new javax.swing.JCheckBox();
         jLabel23 = new javax.swing.JLabel();
         txfSeCountry = new javax.swing.JTextField();
-        jLabel24 = new javax.swing.JLabel();
         txfSeClub = new javax.swing.JTextField();
         ckbSeMinimizeHandicap = new javax.swing.JCheckBox();
         jLabel26 = new javax.swing.JLabel();
         ckbSeBarThresholdActive = new javax.swing.JCheckBox();
         jLabel28 = new javax.swing.JLabel();
         jLabel38 = new javax.swing.JLabel();
-        txfSeClubsGroup = new javax.swing.JTextField();
         btnEditClubsGroups = new javax.swing.JButton();
-        jLabel39 = new javax.swing.JLabel();
         btnHelpPairing = new javax.swing.JButton();
         pnlTPL = new javax.swing.JPanel();
         jLabel31 = new javax.swing.JLabel();
@@ -374,14 +371,19 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             public int getSize() { return strings.length; }
             public String getElementAt(int i) { return strings[i]; }
         });
+        lstClubs.addMouseListener(new java.awt.event.MouseAdapter() {
+            public void mouseClicked(java.awt.event.MouseEvent evt) {
+                lstClubsMouseClicked(evt);
+            }
+        });
         scpClubs.setViewportView(lstClubs);
 
         dlgEditClubsGroups.getContentPane().add(scpClubs);
-        scpClubs.setBounds(640, 60, 110, 340);
+        scpClubs.setBounds(550, 60, 90, 340);
 
-        jLabel41.setText("Known clubs");
+        jLabel41.setText("Known clubs in the Rating lists");
         dlgEditClubsGroups.getContentPane().add(jLabel41);
-        jLabel41.setBounds(640, 40, 110, 14);
+        jLabel41.setBounds(550, 14, 200, 40);
 
         lstClubsGroups.setModel(new javax.swing.AbstractListModel<String>() {
             String[] strings = { "Item 1", "Item 2", "Item 3", "Item 4", "Item 5" };
@@ -406,11 +408,11 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         scpClubsInSelectedGroup.setViewportView(lstClubsInSelectedGroup);
 
         dlgEditClubsGroups.getContentPane().add(scpClubsInSelectedGroup);
-        scpClubsInSelectedGroup.setBounds(310, 60, 220, 260);
+        scpClubsInSelectedGroup.setBounds(280, 60, 220, 260);
 
         jLabel42.setText("Clubs in selected group");
         dlgEditClubsGroups.getContentPane().add(jLabel42);
-        jLabel42.setBounds(310, 40, 220, 14);
+        jLabel42.setBounds(280, 40, 220, 14);
 
         btnAddGroup.setText("Add new group");
         btnAddGroup.addActionListener(new java.awt.event.ActionListener() {
@@ -437,7 +439,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         dlgEditClubsGroups.getContentPane().add(btnAddClub);
-        btnAddClub.setBounds(310, 340, 220, 23);
+        btnAddClub.setBounds(280, 340, 220, 23);
 
         btnRemoveClub.setText("Remove selected club");
         btnRemoveClub.addActionListener(new java.awt.event.ActionListener() {
@@ -446,7 +448,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         dlgEditClubsGroups.getContentPane().add(btnRemoveClub);
-        btnRemoveClub.setBounds(310, 380, 220, 23);
+        btnRemoveClub.setBounds(280, 380, 220, 23);
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Tournament settings");
@@ -1171,14 +1173,14 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         rdbAcceptRandom.setText("Accept random");
         rdbAcceptRandom.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         rdbAcceptRandom.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        rdbAcceptRandom.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdbAcceptRandomActionPerformed(evt);
-            }
-        });
         rdbAcceptRandom.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 rdbRandomFocusLost(evt);
+            }
+        });
+        rdbAcceptRandom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdbAcceptRandomActionPerformed(evt);
             }
         });
         pnlBase.add(rdbAcceptRandom);
@@ -1516,7 +1518,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         ckbSeNbWinsThresholdActive.setBounds(10, 70, 270, 20);
 
         jLabel23.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel23.setText("Avoid intra-clubs-group pairing.");
+        jLabel23.setText("Avoid intra-clubs/groups pairing.");
         pnlSecondary.add(jLabel23);
         jLabel23.setBounds(10, 160, 170, 15);
 
@@ -1529,11 +1531,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         pnlSecondary.add(txfSeCountry);
         txfSeCountry.setBounds(320, 130, 20, 20);
 
-        jLabel24.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel24.setText("Avoid intra-club pairing.");
-        pnlSecondary.add(jLabel24);
-        jLabel24.setBounds(10, 200, 170, 10);
-
         txfSeClub.setText("3");
         txfSeClub.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
@@ -1541,7 +1538,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlSecondary.add(txfSeClub);
-        txfSeClub.setBounds(320, 200, 20, 20);
+        txfSeClub.setBounds(320, 170, 20, 20);
 
         ckbSeMinimizeHandicap.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         ckbSeMinimizeHandicap.setText("Minimize handicaps");
@@ -1557,9 +1554,9 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
 
         jLabel26.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel26.setText("Prefer a group gap of :");
+        jLabel26.setText("Prefer a score gap of :");
         pnlSecondary.add(jLabel26);
-        jLabel26.setBounds(190, 200, 130, 15);
+        jLabel26.setBounds(190, 170, 130, 15);
 
         ckbSeBarThresholdActive.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         ckbSeBarThresholdActive.setSelected(true);
@@ -1580,18 +1577,9 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
 
         jLabel38.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel38.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel38.setText("Prefer a group gap of :");
+        jLabel38.setText("Prefer a score gap of :");
         pnlSecondary.add(jLabel38);
         jLabel38.setBounds(190, 130, 130, 15);
-
-        txfSeClubsGroup.setText("2");
-        txfSeClubsGroup.addFocusListener(new java.awt.event.FocusAdapter() {
-            public void focusLost(java.awt.event.FocusEvent evt) {
-                txfSecCritFocusLost(evt);
-            }
-        });
-        pnlSecondary.add(txfSeClubsGroup);
-        txfSeClubsGroup.setBounds(320, 160, 20, 20);
 
         btnEditClubsGroups.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         btnEditClubsGroups.setText("Edit clubs groups");
@@ -1602,12 +1590,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         });
         pnlSecondary.add(btnEditClubsGroups);
         btnEditClubsGroups.setBounds(10, 172, 150, 15);
-
-        jLabel39.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel39.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
-        jLabel39.setText("Prefer a group gap of :");
-        pnlSecondary.add(jLabel39);
-        jLabel39.setBounds(190, 160, 130, 15);
 
         pnlPai.add(pnlSecondary);
         pnlSecondary.setBounds(420, 150, 350, 260);
@@ -1896,7 +1878,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         
         boolean bSomethingHasChanged = false;
 
-        
         int oldRankThreshold = paiPS.getPaiSeRankThreshold();
         int newRankThreshold = Player.convertKDPToInt(this.txfSeRankThreshold.getText());
         if (newRankThreshold != oldRankThreshold){
@@ -1921,6 +1902,9 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         int newPreferMMSDiffRatherThanSameCountry;
         try {
             newPreferMMSDiffRatherThanSameCountry = Integer.parseInt(this.txfSeCountry.getText());
+            if (newPreferMMSDiffRatherThanSameCountry < 0) newPreferMMSDiffRatherThanSameCountry = 0;
+            if (newPreferMMSDiffRatherThanSameCountry > 9) newPreferMMSDiffRatherThanSameCountry = 9;
+
         }
         catch(NumberFormatException e){
             newPreferMMSDiffRatherThanSameCountry = oldPreferMMSDiffRatherThanSameCountry;
@@ -1931,23 +1915,9 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             bSomethingHasChanged = true;            
         }
         
-        int oldPreferMMSDiffRatherThanSameClubsGroup = paiPS.getPaiSePreferMMSDiffRatherThanSameClubsGroup();
-        int newPreferMMSDiffRatherThanSameClubsGroup;
-        try{
-            newPreferMMSDiffRatherThanSameClubsGroup = Integer.parseInt(this.txfSeClubsGroup.getText());
-        }
-        catch(NumberFormatException e){
-            newPreferMMSDiffRatherThanSameClubsGroup = oldPreferMMSDiffRatherThanSameClubsGroup;
-            this.txfSeClubsGroup.setText("" + oldPreferMMSDiffRatherThanSameClubsGroup);
-        }
-        if (newPreferMMSDiffRatherThanSameClubsGroup != oldPreferMMSDiffRatherThanSameClubsGroup){
-            paiPS.setPaiSePreferMMSDiffRatherThanSameClubsGroup(newPreferMMSDiffRatherThanSameClubsGroup);
-            bSomethingHasChanged = true; 
-        }
-        
+       
         int oldPreferMMSDiffRatherThanSameClub = paiPS.getPaiSePreferMMSDiffRatherThanSameClub();
         int newPreferMMSDiffRatherThanSameClub;
-        // newPreferMMSDiffRatherThanSameClub = Integer.parseInt(this.txfSeClub.getText());
         try{
             newPreferMMSDiffRatherThanSameClub = Integer.parseInt(this.txfSeClub.getText());
         }
@@ -1960,6 +1930,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             paiPS.setPaiSePreferMMSDiffRatherThanSameClub(newPreferMMSDiffRatherThanSameClub);
             bSomethingHasChanged = true; 
         }
+        
         long oldMinimizeHandicap = paiPS.getPaiSeMinimizeHandicap();
         long newMinimizeHandicap = this.ckbSeMinimizeHandicap.isSelected() ? paiPS.getPaiSeDefSecCrit() : 0;
         if (newMinimizeHandicap != oldMinimizeHandicap){
@@ -2939,7 +2910,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         dlgEditClubsGroups.setTitle("Edit Clubs Groups");
         dlgEditClubsGroups.setIconImage(Gotha.getIconImage());
         dlgEditClubsGroups.setVisible(true);
-        
     }//GEN-LAST:event_btnEditClubsGroupsActionPerformed
 
     private void lstClubsGroupsValueChanged(javax.swing.event.ListSelectionEvent evt) {//GEN-FIRST:event_lstClubsGroupsValueChanged
@@ -3089,6 +3059,32 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         }
     }//GEN-LAST:event_ckbLaterAddSortOnRatingFocusLost
+
+    private void lstClubsMouseClicked(java.awt.event.MouseEvent evt) {//GEN-FIRST:event_lstClubsMouseClicked
+        // Double or multiple click
+        if (evt.getClickCount() < 2) return;
+        System.out.println("double click");
+        
+        // Add club to Clubs in selected group
+        String groupName = "";
+        String clubName = "";
+        Object sel = this.lstClubsGroups.getSelectedValue();
+        if (sel == null){
+            JOptionPane.showMessageDialog(this.dlgEditClubsGroups, "Please select a Clubs group", "Error", JOptionPane.ERROR_MESSAGE);
+            return;
+        }
+        groupName = (String)sel;
+        sel = this.lstClubs.getSelectedValue();
+        if (sel == null) return;
+        clubName = (String) sel;
+        System.out.println("groupName = " + groupName + " clubName = " + clubName);
+        try {
+            tournament.addClubToClubsGroup(groupName, clubName);
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrTournamentOptions.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        this.tournamentChanged();
+    }//GEN-LAST:event_lstClubsMouseClicked
 
     private void updHdBase(){
         TournamentParameterSet tps;
@@ -3492,7 +3488,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         this.ckbSeBarThresholdActive.setSelected(paiPS.isPaiSeBarThresholdActive());
         this.ckbSeNbWinsThresholdActive.setSelected(paiPS.isPaiSeNbWinsThresholdActive());
         this.txfSeCountry.setText("" + paiPS.getPaiSePreferMMSDiffRatherThanSameCountry());
-        this.txfSeClubsGroup.setText("" + paiPS.getPaiSePreferMMSDiffRatherThanSameClubsGroup());
         this.txfSeClub.setText("" + paiPS.getPaiSePreferMMSDiffRatherThanSameClub());
         this.ckbSeMinimizeHandicap.setSelected(paiPS.getPaiSeMinimizeHandicap() != 0);
         
@@ -3688,7 +3683,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
     private javax.swing.JLabel jLabel21;
     private javax.swing.JLabel jLabel22;
     private javax.swing.JLabel jLabel23;
-    private javax.swing.JLabel jLabel24;
     private javax.swing.JLabel jLabel25;
     private javax.swing.JLabel jLabel26;
     private javax.swing.JLabel jLabel27;
@@ -3704,7 +3698,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
     private javax.swing.JLabel jLabel36;
     private javax.swing.JLabel jLabel37;
     private javax.swing.JLabel jLabel38;
-    private javax.swing.JLabel jLabel39;
     private javax.swing.JLabel jLabel4;
     private javax.swing.JLabel jLabel40;
     private javax.swing.JLabel jLabel41;
@@ -3807,7 +3800,6 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
     private javax.swing.JTextField txfNumberOfCategories;
     private javax.swing.JTextField txfNumberOfRounds;
     private javax.swing.JTextField txfSeClub;
-    private javax.swing.JTextField txfSeClubsGroup;
     private javax.swing.JTextField txfSeCountry;
     private javax.swing.JTextField txfSeRankThreshold;
     private javax.swing.JTextField txfShortName;

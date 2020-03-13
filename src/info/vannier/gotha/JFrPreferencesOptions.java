@@ -68,15 +68,10 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         ckbPhotos = new javax.swing.JCheckBox();
         jLabel2 = new javax.swing.JLabel();
         ckbTournaments = new javax.swing.JCheckBox();
-        ckbJournaling = new javax.swing.JCheckBox();
         rdbAfterEverySave = new javax.swing.JRadioButton();
         rdbAfterEveryChange = new javax.swing.JRadioButton();
         btnHelp = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
-        pnlLogPreferences = new javax.swing.JPanel();
-        scpLogPreferences = new javax.swing.JScrollPane();
-        tblLogPreferences = new javax.swing.JTable();
-        btnClearLogPreferences = new javax.swing.JButton();
 
         jTable1.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -130,7 +125,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         btnClearBasicPreferences.setBounds(10, 240, 564, 23);
 
         getContentPane().add(pnlBasicPreferences);
-        pnlBasicPreferences.setBounds(10, 20, 584, 280);
+        pnlBasicPreferences.setBounds(106, 20, 584, 280);
 
         pnlInternetAccess.setBorder(javax.swing.BorderFactory.createTitledBorder("Internet access"));
         pnlInternetAccess.setLayout(null);
@@ -161,7 +156,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
 
         jLabel2.setText("Enable Upload for :");
         pnlInternetAccess.add(jLabel2);
-        jLabel2.setBounds(600, 20, 180, 14);
+        jLabel2.setBounds(200, 20, 180, 14);
 
         ckbTournaments.setSelected(true);
         ckbTournaments.setText("Tournaments files");
@@ -171,17 +166,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
             }
         });
         pnlInternetAccess.add(ckbTournaments);
-        ckbTournaments.setBounds(610, 80, 150, 23);
-
-        ckbJournaling.setSelected(true);
-        ckbJournaling.setText("Journaling report");
-        ckbJournaling.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                ckbJournalingActionPerformed(evt);
-            }
-        });
-        pnlInternetAccess.add(ckbJournaling);
-        ckbJournaling.setBounds(610, 40, 150, 23);
+        ckbTournaments.setBounds(210, 40, 150, 23);
 
         grpTournaments.add(rdbAfterEverySave);
         rdbAfterEverySave.setText("After every save");
@@ -191,7 +176,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
             }
         });
         pnlInternetAccess.add(rdbAfterEverySave);
-        rdbAfterEverySave.setBounds(770, 70, 180, 23);
+        rdbAfterEverySave.setBounds(370, 30, 180, 23);
 
         grpTournaments.add(rdbAfterEveryChange);
         rdbAfterEveryChange.setText("After every change");
@@ -201,10 +186,10 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
             }
         });
         pnlInternetAccess.add(rdbAfterEveryChange);
-        rdbAfterEveryChange.setBounds(770, 100, 180, 23);
+        rdbAfterEveryChange.setBounds(370, 60, 180, 23);
 
         getContentPane().add(pnlInternetAccess);
-        pnlInternetAccess.setBounds(10, 320, 960, 140);
+        pnlInternetAccess.setBounds(110, 320, 580, 140);
 
         btnHelp.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info/vannier/gotha/gothalogo16.jpg"))); // NOI18N
         btnHelp.setText("help");
@@ -214,7 +199,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnHelp);
-        btnHelp.setBounds(10, 470, 120, 30);
+        btnHelp.setBounds(110, 470, 120, 30);
 
         btnClose.setText("Close");
         btnClose.addActionListener(new java.awt.event.ActionListener() {
@@ -223,38 +208,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
             }
         });
         getContentPane().add(btnClose);
-        btnClose.setBounds(150, 470, 834, 30);
-
-        pnlLogPreferences.setBorder(javax.swing.BorderFactory.createTitledBorder("OpenGotha/Log Preferences"));
-        pnlLogPreferences.setLayout(null);
-
-        tblLogPreferences.setModel(new javax.swing.table.DefaultTableModel(
-            new Object [][] {
-                {null, null},
-                {null, null},
-                {null, null},
-                {null, null}
-            },
-            new String [] {
-                "key", "value"
-            }
-        ));
-        scpLogPreferences.setViewportView(tblLogPreferences);
-
-        pnlLogPreferences.add(scpLogPreferences);
-        scpLogPreferences.setBounds(10, 20, 360, 210);
-
-        btnClearLogPreferences.setText("Clear OpenGotha/Log Preferences");
-        btnClearLogPreferences.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                btnClearLogPreferencesActionPerformed(evt);
-            }
-        });
-        pnlLogPreferences.add(btnClearLogPreferences);
-        btnClearLogPreferences.setBounds(10, 240, 360, 23);
-
-        getContentPane().add(pnlLogPreferences);
-        pnlLogPreferences.setBounds(594, 20, 380, 280);
+        btnClose.setBounds(250, 470, 440, 30);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents
@@ -278,7 +232,7 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         }
         Gotha.setRatingListsDownloadEnabled(true);
         Gotha.setPhotosDownloadEnabled(true);
-        Gotha.setJournalingReportEnabled(true);
+//        Gotha.setJournalingReportEnabled(true);
 
         updateAllViews();
     }//GEN-LAST:event_btnClearBasicPreferencesActionPerformed
@@ -299,18 +253,6 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         cleanClose();
     }//GEN-LAST:event_formWindowClosing
 
-    private void btnClearLogPreferencesActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnClearLogPreferencesActionPerformed
-        Preferences prefsRoot = Preferences.userRoot();
-        Preferences gothaLogPrefs = prefsRoot.node(Gotha.strPreferences + "/log");
-        try {
-            gothaLogPrefs.clear();
-        } catch (BackingStoreException ex) {
-            Logger.getLogger(JFrPreferencesOptions.class.getName()).log(Level.SEVERE, null, ex);
-        }
-    
-        updateAllViews();
-    }//GEN-LAST:event_btnClearLogPreferencesActionPerformed
-
     private void ckbTournamentsActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckbTournamentsActionPerformed
         updateTournamentUploadStatusFromControls();
     }//GEN-LAST:event_ckbTournamentsActionPerformed
@@ -329,10 +271,6 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
         }
     
     }
-    private void ckbJournalingActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_ckbJournalingActionPerformed
-        Gotha.setJournalingReportEnabled(this.ckbJournaling.isSelected());
-    }//GEN-LAST:event_ckbJournalingActionPerformed
-
     private void rdbAfterEverySaveActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbAfterEverySaveActionPerformed
         updateTournamentUploadStatusFromControls();
     }//GEN-LAST:event_rdbAfterEverySaveActionPerformed
@@ -380,23 +318,23 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
             Logger.getLogger(JFrPreferencesOptions.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-        if (strPrefs == null) len = 0;
-        else len = strLogPrefs.length;
-        DefaultTableModel logModel = (DefaultTableModel) tblLogPreferences.getModel();
-        logModel.setRowCount(len);
-        for (int i = 0; i < len; i++){
-            String key = strLogPrefs[i];
-            String value = gothaLogPrefs.get(key, "def");
-            
-            logModel.setValueAt(key, i, 0);
-            logModel.setValueAt(value, i, 1);
-        }
+//        if (strPrefs == null) len = 0;
+//        else len = strLogPrefs.length;
+//        DefaultTableModel logModel = (DefaultTableModel) tblLogPreferences.getModel();
+//        logModel.setRowCount(len);
+//        for (int i = 0; i < len; i++){
+//            String key = strLogPrefs[i];
+//            String value = gothaLogPrefs.get(key, "def");
+//            
+//            logModel.setValueAt(key, i, 0);
+//            logModel.setValueAt(value, i, 1);
+//        }
     }
 
     private void updatePnlInternetAccess(){
         this.ckbRatingLists.setSelected(Gotha.isRatingListsDownloadEnabled());
         this.ckbPhotos.setSelected(Gotha.isPhotosDownloadEnabled());
-        this.ckbJournaling.setSelected(Gotha.isJournalingReportEnabled());
+//        this.ckbJournaling.setSelected(Gotha.isJournalingReportEnabled());
         
         if (Gotha.runningMode == Gotha.RUNNING_MODE_CLI){
             this.ckbTournaments.setVisible(false);
@@ -426,10 +364,8 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
     
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnClearBasicPreferences;
-    private javax.swing.JButton btnClearLogPreferences;
     private javax.swing.JButton btnClose;
     private javax.swing.JButton btnHelp;
-    private javax.swing.JCheckBox ckbJournaling;
     private javax.swing.JCheckBox ckbPhotos;
     private javax.swing.JCheckBox ckbRatingLists;
     private javax.swing.JCheckBox ckbTournaments;
@@ -441,13 +377,10 @@ public class JFrPreferencesOptions extends javax.swing.JFrame {
     private javax.swing.JTable jTable1;
     private javax.swing.JPanel pnlBasicPreferences;
     private javax.swing.JPanel pnlInternetAccess;
-    private javax.swing.JPanel pnlLogPreferences;
     private javax.swing.JRadioButton rdbAfterEveryChange;
     private javax.swing.JRadioButton rdbAfterEverySave;
     private javax.swing.JScrollPane scpBasicPreferences;
-    private javax.swing.JScrollPane scpLogPreferences;
     private javax.swing.JTable tblBasicPreferences;
-    private javax.swing.JTable tblLogPreferences;
     // End of variables declaration//GEN-END:variables
 
 }

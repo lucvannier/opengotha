@@ -21,15 +21,10 @@ public class JFrGothaStart extends javax.swing.JFrame {
 
     /** Creates new form JFrGothaStart */
     public JFrGothaStart() {        
-        String strOS = System.getProperty("os.name") + " " + System.getProperty("os.arch") + " " + System.getProperty("os.version");       
-        LogElements.incrementElement("gotha.os", strOS);      
-        String strJRE = System.getProperty("java.version") + " " + System.getProperty("java.vm.name");
-        LogElements.incrementElement("gotha.jre", strJRE);
-        String strVersion = Gotha.getGothaFullVersionNumber();
-        LogElements.incrementElement("gotha.version", strVersion);
-
-        File rootDir = new File(System.getProperty("user.dir"));
-        File dir = findADirectoryContaining(rootDir, "tournamentfiles");
+        File rootDir;
+        rootDir = new File(System.getProperty("user.dir"));
+        File dir;
+        dir = findADirectoryContaining(rootDir, "tournamentfiles");
 
         if (dir == null) {
             String str = JOptionPane.showInputDialog(this, "Please enter the OpenGotha directory path" +
@@ -194,7 +189,7 @@ public class JFrGothaStart extends javax.swing.JFrame {
             case Gotha.RUNNING_MODE_CLI : strRM = "CLI"; break;
             default : strRM = "???"; 
         }       
-        LogElements.incrementElement("gotha.runningmode", strRM);
+//        LogElements.incrementElement("gotha.runningmode", strRM);
 
         try {
             new JFrGotha(tournament).setVisible(true);            

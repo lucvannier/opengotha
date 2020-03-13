@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="78.180.255.59" gothaMinorVersion="4" gothaVersion="348" saveDT="20191215195533">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="18586293" ffgLicence="" ffgLicenceStatus="" firstName="Banu" grade="10K" name="Kibar" participating="11111111111111111111" rank="10K" rating="1106" ratingOrigin="EGF : 1106" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Izm" country="TR" egfPin="17001798" ffgLicence="" ffgLicenceStatus="" firstName="Erdi" grade="1D" name="Coban" participating="10011111111111111111" rank="1D" rating="2062" ratingOrigin="EGF : 2062" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="18050560" ffgLicence="" ffgLicenceStatus="" firstName="Engin" grade="5K" name="Yazilan" participating="11111111111111111111" rank="5K" rating="1558" ratingOrigin="EGF : 1558" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="13701534" ffgLicence="" ffgLicenceStatus="" firstName="Barkin" grade="1D" name="Celebican" participating="01111111111111111111" rank="1D" rating="2101" ratingOrigin="EGF : 2101" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="16813423" ffgLicence="" ffgLicenceStatus="" firstName="Emre" grade="5K" name="Koksal" participating="11111111111111111111" rank="5K" rating="1582" ratingOrigin="EGF : 1582" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="14098854" ffgLicence="" ffgLicenceStatus="" firstName="Volkan" grade="4K" name="Burc" participating="11111111111111111111" rank="4K" rating="1534" ratingOrigin="EGF : 1534" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="19062043" ffgLicence="" ffgLicenceStatus="" firstName="Sema" grade="18K" name="Seymen" participating="11111111111111111111" rank="18K" rating="314" ratingOrigin="EGF : 314" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="BURCVOLKAN" handicap="4" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="COBANERDI"/>
+        <Game blackPlayer="SEYMENSEMA" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="BURCVOLKAN"/>
+        <Game blackPlayer="SEYMENSEMA" handicap="8" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="KIBARBANU"/>
+        <Game blackPlayer="KOKSALEMRE" handicap="5" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="2" whitePlayer="CELEBICANBARKIN"/>
+        <Game blackPlayer="YAZILANENGIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="KOKSALEMRE"/>
+        <Game blackPlayer="KIBARBANU" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="YAZILANENGIN"/>
+        <Game blackPlayer="KIBARBANU" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="KOKSALEMRE"/>
+        <Game blackPlayer="BURCVOLKAN" handicap="4" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="CELEBICANBARKIN"/>
+        <Game blackPlayer="SEYMENSEMA" handicap="9" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="YAZILANENGIN"/>
+    </Games>
+    <TournamentParameterSet>
+        <GeneralParameterSet basicTime="30" beginDate="2019-12-15" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Barkin Celebican" endDate="2019-12-15" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="TR,Istanbul" name="Istanbul City Tournament 2019/12b" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="3" shortName="ict_12b" size="19" stdByoYomiTime="20"/>
+        <HandicapParameterSet hdBasedOnMMS="false" hdCeiling="9" hdCorrection="0" hdNoHdRankThreshold="9D"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="CAT" number="1"/>
+                <PlacementCriterion name="NBW" number="2"/>
+                <PlacementCriterion name="NULL" number="3"/>
+                <PlacementCriterion name="NULL" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="20000000000000" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="TOP" paiMaDUDDUpperMode="BOT" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="20000000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="20000000000000" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="4"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

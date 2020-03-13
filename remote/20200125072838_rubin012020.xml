@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="83.25.184.135" gothaMinorVersion="0" gothaVersion="349" saveDT="20200125072838">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="Toru" country="PL" egfPin="16733706" ffgLicence="" ffgLicenceStatus="" firstName="Julia" grade=" 9K" name="Bednarska" participating="11111111111111111111" rank="9K" rating="1174" ratingOrigin="EGF : 1174" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Gdan" country="PL" egfPin="19462564" ffgLicence="" ffgLicenceStatus="" firstName="Piotr" grade="18K" name="Chmielinski" participating="11111111111111111111" rank="18K" rating="294" ratingOrigin="EGF : 294" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Toru" country="PL" egfPin="17237407" ffgLicence="" ffgLicenceStatus="" firstName="Cezary" grade=" 8K" name="Malkiewicz" participating="11111111111111111111" rank="8K" rating="1165" ratingOrigin="EGF : 1165" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Toru" country="PL" egfPin="17650248" ffgLicence="" ffgLicenceStatus="" firstName="Oskar" grade="20K" name="Meszek" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="EGF : 100" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Gdan" country="PL" egfPin="19450563" ffgLicence="" ffgLicenceStatus="" firstName="Tomasz" grade="15K" name="Dec" participating="11111111111111111111" rank="15K" rating="585" ratingOrigin="EGF : 585" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Gdan" country="PL" egfPin="19498567" ffgLicence="" ffgLicenceStatus="" firstName="Dominik" grade=" 9K" name="Olszewski" participating="11111111111111111111" rank="9K" rating="1154" ratingOrigin="EGF : 1154" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Toru" country="PL" egfPin="18213547" ffgLicence="" ffgLicenceStatus="" firstName="Jakub" grade="19K" name="Lubinski" participating="11111111111111111111" rank="19K" rating="146" ratingOrigin="EGF : 146" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Pozn" country="PL" egfPin="14637227" ffgLicence="" ffgLicenceStatus="" firstName="Artur" grade=" 5K" name="Barcicki" participating="11111111111111111111" rank="5K" rating="1583" ratingOrigin="EGF : 1583" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Toru" country="PL" egfPin="13686453" ffgLicence="" ffgLicenceStatus="" firstName="Dominik" grade=" 4K" name="Blek" participating="11111111111111111111" rank="4K" rating="1611" ratingOrigin="EGF : 1611" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Toru" country="PL" egfPin="16562128" ffgLicence="" ffgLicenceStatus="" firstName="Wojciech" grade=" 9K" name="Malkiewicz" participating="11111111111111111111" rank="9K" rating="1181" ratingOrigin="EGF : 1181" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Toru" country="PL" egfPin="19537210" ffgLicence="" ffgLicenceStatus="" firstName="Kamil" grade="12K" name="Lewan" participating="11111111111111111111" rank="12K" rating="850" ratingOrigin="EGF : 850" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Pozn" country="PL" egfPin="18737928" ffgLicence="" ffgLicenceStatus="" firstName="Tymoteusz" grade="12K" name="Barcicki" participating="11111111111111111111" rank="12K" rating="845" ratingOrigin="EGF : 845" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Toru" country="PL" egfPin="19098189" ffgLicence="" ffgLicenceStatus="" firstName="Radoslaw" grade="19K" name="Doroch" participating="11111111111111111111" rank="19K" rating="162" ratingOrigin="EGF : 162" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games/>
+    <TournamentParameterSet>
+        <GeneralParameterSet basicTime="60" beginDate="2020-01-25" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Dominik Blek" endDate="2020-01-25" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="0" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Mediateka" name="Turniej o Rubinowy Kamień" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="4" shortName="rubin012020" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="false" hdCeiling="9" hdCorrection="0" hdNoHdRankThreshold="9D"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="CAT" number="1"/>
+                <PlacementCriterion name="NBW" number="2"/>
+                <PlacementCriterion name="SOSW" number="3"/>
+                <PlacementCriterion name="SODOSW" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="20000000000000" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDFOLD" paiSeAvoidSameGeo="20000000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="20000000000000" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="4"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

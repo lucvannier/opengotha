@@ -1473,7 +1473,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
         
         switch(rlType){
             case RatingList.TYPE_EGF:
-                strDefaultURL = "http://www.europeangodatabase.eu/EGD/EGD_2_0/downloads/allworld_lp.html";
+                strDefaultURL = "https://www.europeangodatabase.eu/EGD/EGD_2_0/downloads/allworld_lp.html";
                 fDefaultFile = new File(Gotha.runningDirectory, "ratinglists/egf_db.txt");
                 strPrompt = "Download EGF Rating List from :";
                 break;

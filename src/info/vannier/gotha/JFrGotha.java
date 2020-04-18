@@ -135,12 +135,16 @@ public class JFrGotha extends javax.swing.JFrame {
                     return;
                 }
                 try {
-                    boolean b = getTournament().clockIn(Gotha.clientName);
-                    if (!b && Gotha.runningMode == Gotha.RUNNING_MODE_CLI) {
+                    boolean b = true;
+                    if (Gotha.runningMode == Gotha.RUNNING_MODE_CLI){
+                        b = getTournament().clockIn(Gotha.clientName);
+                    }
+//                    boolean b = getTournament().clockIn(Gotha.clientName);
+//                    if (!b && Gotha.runningMode == Gotha.RUNNING_MODE_CLI) {
+                      if (!b) {
                         JOptionPane.showMessageDialog(null, "Connection to Server has been reset for current tournament\nOpenGotha will stop",
                                 "Message", JOptionPane.ERROR_MESSAGE);
                         exitOpenGotha();
-
                     }
                     if (getTournament().getLastTournamentModificationTime() > lastComponentsUpdateTime) {
                         updateAllViews();
@@ -2511,12 +2515,17 @@ public class JFrGotha extends javax.swing.JFrame {
 
             int response = JOptionPane.showConfirmDialog(this, "Do you want to save current tournament ?",
                     "Message", JOptionPane.YES_NO_CANCEL_OPTION);
+            System.out.println("response = " + response);
             if (response == JOptionPane.CANCEL_OPTION) {
                 return false;
             }
             if (response == JOptionPane.YES_OPTION) {
                 File f =  this.chooseASaveFile(this.getDefaultSaveAsFileName());
+                if (f == null){
+                    return false;
+                }
                 updateShortNameFromFile(f);
+                System.out.println("f = " + f);
                 this.saveTournament(f);
 
                 getTournament().setChangeSinceLastSaveAsFalse();
@@ -2546,10 +2555,6 @@ public class JFrGotha extends javax.swing.JFrame {
             Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
         }
         boolean success = (new File(Gotha.runningDirectory + "/tournamentfiles/work/")).mkdirs();
-        if (!success) {
-//            System.out.println("JFrGotha. dir could not be created");
-        //    JOptionPane.showMessageDialog(this, "JFrGotha. dir could not be created", "Message", JOptionPane.ERROR_MESSAGE);
-        }
         File snFile = new File(Gotha.runningDirectory + "/tournamentfiles/work/", shortName + ".xml"); 
         saveTournament(snFile);
     }

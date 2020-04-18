@@ -21,6 +21,8 @@ public class JFrGothaStart extends javax.swing.JFrame {
 
     /** Creates new form JFrGothaStart */
     public JFrGothaStart() {        
+        String jreVersion = System.getProperty("java.version");
+        System.out.println("jreVersion = " + jreVersion);
         File rootDir;
         rootDir = new File(System.getProperty("user.dir"));
         File dir;

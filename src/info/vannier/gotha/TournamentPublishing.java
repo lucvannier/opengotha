@@ -109,7 +109,6 @@ public class TournamentPublishing {
                 break;
             case TournamentPublishing.TYPE_STANDINGS:
                 f = ExternalDocument.generateStandingsHTMLFile(tournament, roundNumber);
-//                System.out.println("f = " + f);                
                 break;
             case TournamentPublishing.TYPE_MATCHESLIST:
                 f = ExternalDocument.generateMatchesListHTMLFile(tournament, roundNumber);

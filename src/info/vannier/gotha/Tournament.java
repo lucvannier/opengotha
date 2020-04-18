@@ -274,7 +274,8 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
      */
     @Override
     public String getShortName() throws RemoteException {
-        return this.getTournamentParameterSet().getGeneralParameterSet().getShortName();
+        String sn = this.getTournamentParameterSet().getGeneralParameterSet().getShortName();
+        return sn;
     }
     @Override
     public void setShortName(String shortName) throws RemoteException {
@@ -3100,7 +3101,7 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
     }
 
     @Override
-    public boolean clockIn(String strClient) throws RemoteException {
+    public boolean clockIn(String strClient) throws RemoteException {        
         if (GothaRMIServer.getTournament(this.getShortName()) == null) {
             return false;
         }

@@ -1478,7 +1478,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
                 strPrompt = "Download EGF Rating List from :";
                 break;
             case RatingList.TYPE_FFG:
-                strDefaultURL = "http://ffg.jeudego.org/echelle/echtxt/ech_ffg_V3.txt";
+                strDefaultURL = "https://ffg.jeudego.org/echelle/echtxt/ech_ffg_V3.txt";
                 fDefaultFile = new File(Gotha.runningDirectory, "ratinglists/ech_ffg_V3.txt");
                 strPrompt = "Download FFG Rating List from :";
                 break;

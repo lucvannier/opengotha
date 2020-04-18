@@ -456,7 +456,6 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         jfrG.setTournament(t);
         try {
             t.setLastTournamentModificationTime(t.getCurrentTournamentTime());
-//            System.out.println("t.getShortName() = " + t.getShortName());
         } catch (RemoteException ex) {
             Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
         }

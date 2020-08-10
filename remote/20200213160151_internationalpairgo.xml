@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="85.186.22.115" gothaMinorVersion="0" gothaVersion="349" saveDT="20200213160151">
+<Players>
+<Player agaExpirationDate="" agaId="" club="EU" country="EU" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Grigoriu" grade="4D" name="Medak" participating="11111111111111111111" rank="4D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="RO" country="RO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sincari" grade="19K" name="Macovei" participating="11111111111111111111" rank="19K" rating="200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="EU" country="EU" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Kachanovskyi" grade="3D" name="Malko" participating="11111111111111111111" rank="3D" rating="2000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="RO" country="RO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Aranghelovici" grade="15K" name="Irhasiu" participating="11111111111111111111" rank="15K" rating="600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="RO" country="RO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Fofirca" grade="2K" name="Taranu" participating="11111111111111111111" rank="2K" rating="1900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="RO" country="RO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Dobridoreanu" grade="7K" name="Oprisan" participating="11111111111111111111" rank="7K" rating="1400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="RO" country="RO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sincari" grade="18" name="Ianovici" participating="11111111111111111111" rank="18K" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="IANOVICISINCARI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="TARANUFOFIRCA"/>
+<Game blackPlayer="IANOVICISINCARI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="1" whitePlayer="MALKOKACHANOVSKYI"/>
+<Game blackPlayer="IRHASIUARANGHELOVICI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="MALKOKACHANOVSKYI"/>
+<Game blackPlayer="MEDAKGRIGORIU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="2" whitePlayer="IRHASIUARANGHELOVICI"/>
+<Game blackPlayer="MEDAKGRIGORIU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="OPRISANDOBRIDOREANU"/>
+<Game blackPlayer="MACOVEISINCARI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="3" whitePlayer="OPRISANDOBRIDOREANU"/>
+<Game blackPlayer="TARANUFOFIRCA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="MEDAKGRIGORIU"/>
+<Game blackPlayer="MALKOKACHANOVSKYI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="MACOVEISINCARI"/>
+<Game blackPlayer="OPRISANDOBRIDOREANU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="IRHASIUARANGHELOVICI"/>
+<Game blackPlayer="MALKOKACHANOVSKYI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="MEDAKGRIGORIU"/>
+<Game blackPlayer="OPRISANDOBRIDOREANU" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="2" whitePlayer="TARANUFOFIRCA"/>
+<Game blackPlayer="MACOVEISINCARI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="IANOVICISINCARI"/>
+<Game blackPlayer="TARANUFOFIRCA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="1" whitePlayer="MALKOKACHANOVSKYI"/>
+<Game blackPlayer="MEDAKGRIGORIU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="2" whitePlayer="IANOVICISINCARI"/>
+<Game blackPlayer="IRHASIUARANGHELOVICI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="3" whitePlayer="MACOVEISINCARI"/>
+</Games>
+<ByePlayers>
+<ByePlayer player="MACOVEISINCARI" roundNumber="1"/>
+<ByePlayer player="IANOVICISINCARI" roundNumber="2"/>
+<ByePlayer player="IRHASIUARANGHELOVICI" roundNumber="3"/>
+<ByePlayer player="OPRISANDOBRIDOREANU" roundNumber="4"/>
+<ByePlayer player="TARANUFOFIRCA" roundNumber="5"/>
+</ByePlayers>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-02-12" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Florin Pop" endDate="2020-02-13" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="0" genMMS2ValueBye="0" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="1" genRoundDownNBWMMS="true" komi="6.5" location="Vatra Dornei" name="International Pair GO" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="international_pair_go" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="DC" number="2"/>
+<PlacementCriterion name="SOSW" number="3"/>
+<PlacementCriterion name="SOSOSW" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

@@ -956,7 +956,7 @@ public class JFrPlayersQuickCheck extends javax.swing.JFrame{
                 
         JFrGotha.formatColumn(this.tblRegisteredPlayers, REG_COL, "R", 10, JLabel.LEFT, JLabel.LEFT); 
         JFrGotha.formatColumn(this.tblRegisteredPlayers, NAME_COL, "Last name",110, JLabel.LEFT, JLabel.LEFT); 
-        JFrGotha.formatColumn(this.tblRegisteredPlayers, FIRSTNAME_COL, "First_name", 80, JLabel.LEFT, JLabel.LEFT); 
+        JFrGotha.formatColumn(this.tblRegisteredPlayers, FIRSTNAME_COL, "First name", 80, JLabel.LEFT, JLabel.LEFT); 
         JFrGotha.formatColumn(this.tblRegisteredPlayers, COUNTRY_COL, "Co", 30, JLabel.LEFT, JLabel.LEFT); 
         JFrGotha.formatColumn(this.tblRegisteredPlayers, CLUB_COL, "Club", 40, JLabel.LEFT, JLabel.LEFT); 
         JFrGotha.formatColumn(this.tblRegisteredPlayers, RANK_COL, "Rk", 30, JLabel.RIGHT, JLabel.RIGHT); 

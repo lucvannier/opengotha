@@ -31,9 +31,13 @@ public class IPLoc {
                 strLoc = strLoc.replace("]]>", "");
                 
             }
+            catch(Exception e){
+                System.out.println("Exception ip-api.com");
+            }
+
             hmIPLocs.put(externalIPAddress, strLoc);
         }
-        
+                
         return strLoc;
     }
     

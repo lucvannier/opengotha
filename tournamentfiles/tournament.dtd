@@ -3,6 +3,7 @@
 <!ELEMENT Tournament (Players?, Games?, ByePlayers?, Teams?, TournamentParameterSet?, TeamTournamentParameterSet?, ClubsGroups?)>
 <!ATTLIST Tournament dataVersion CDATA "200">
 <!ATTLIST Tournament externalIPAddress CDATA "127.1.1.1">
+<!ATTLIST Tournament runningMode CDATA "---">
 <!ATTLIST Tournament gothaVersion CDATA "300">
 <!ATTLIST Tournament gothaMinorVersion CDATA "00">
 <!ATTLIST Tournament saveDT CDATA "20019101000000">
@@ -60,6 +61,7 @@
 <!ATTLIST GeneralParameterSet director CDATA "director">
 <!ATTLIST GeneralParameterSet beginDate CDATA "2009-01-01">
 <!ATTLIST GeneralParameterSet endDate CDATA "2009-01-01">
+<!ATTLIST GeneralParameterSet bInternet CDATA "false">
 <!ATTLIST GeneralParameterSet basicTime CDATA "60">
 <!ATTLIST GeneralParameterSet complementaryTimeSystem CDATA "CANBYOYOMI">
 <!ATTLIST GeneralParameterSet stdByoYomiTime CDATA "30">

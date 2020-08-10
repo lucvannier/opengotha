@@ -225,6 +225,7 @@ public class JFrGotha extends javax.swing.JFrame {
         pnlTournamentFile = new javax.swing.JPanel();
         lblTF = new javax.swing.JLabel();
         lblTF1 = new javax.swing.JLabel();
+        lblJavaVersion = new javax.swing.JLabel();
         pnlStandings = new javax.swing.JPanel();
         pnlIntStandings = new javax.swing.JPanel();
         lblStandingsAfter = new javax.swing.JLabel();
@@ -599,12 +600,12 @@ public class JFrGotha extends javax.swing.JFrame {
         scpControlPanel.setViewportView(tblControlPanel);
 
         pnlIntControlPanel.add(scpControlPanel);
-        scpControlPanel.setBounds(180, 50, 370, 180);
+        scpControlPanel.setBounds(180, 30, 370, 180);
 
         lblWarningPRE.setForeground(new java.awt.Color(255, 0, 0));
         lblWarningPRE.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         pnlIntControlPanel.add(lblWarningPRE);
-        lblWarningPRE.setBounds(150, 260, 510, 20);
+        lblWarningPRE.setBounds(150, 240, 510, 20);
 
         pnlTournamentFile.setBorder(javax.swing.BorderFactory.createTitledBorder("Tournament File"));
         pnlTournamentFile.setLayout(null);
@@ -618,7 +619,12 @@ public class JFrGotha extends javax.swing.JFrame {
         lblTF1.setBounds(30, 40, 510, 20);
 
         pnlIntControlPanel.add(pnlTournamentFile);
-        pnlTournamentFile.setBounds(100, 310, 630, 70);
+        pnlTournamentFile.setBounds(100, 290, 630, 70);
+
+        lblJavaVersion.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        lblJavaVersion.setText("Jre");
+        pnlIntControlPanel.add(lblJavaVersion);
+        lblJavaVersion.setBounds(240, 380, 250, 20);
 
         pnlControlPanel.add(pnlIntControlPanel);
         pnlIntControlPanel.setBounds(0, 0, 790, 470);
@@ -1670,7 +1676,9 @@ public class JFrGotha extends javax.swing.JFrame {
         this.lblTF.setSize(this.pnlTournamentFile.getWidth() - 20, 15);
         this.lblTF1.setLocation(10, 40);
         this.lblTF1.setSize(this.pnlTournamentFile.getWidth() - 20, 15);
-               
+        int wJavaVersion = this.lblJavaVersion.getWidth();
+        this.lblJavaVersion.setLocation((w - 10 - wJavaVersion) / 2, this.pnlTournamentFile.getY() + this.pnlTournamentFile.getHeight() + 20);
+       
         this.pnlIntTeamsPanel.setBounds(0, 0, w - 10, h - 30);
         int wTeamsP = scpTeamsPanel.getWidth();
         this.scpTeamsPanel.setLocation((w - 10 - wTeamsP) / 2, 10);
@@ -2402,6 +2410,10 @@ public class JFrGotha extends javax.swing.JFrame {
         
         lblTF.setText(strMes);
         lblTF1.setText(strMes1);
+       
+        String jreVersion = System.getProperty("java.version");
+        this.lblJavaVersion.setText("Java Version : " + jreVersion);
+
     }
 
     // TODO : UpdateTeamsPanel should use TeamMemberStrings (See TournamentPrinting or ExternalDocument.generateTeamsListHTMLFile 
@@ -3554,6 +3566,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private javax.swing.JPopupMenu.Separator jSeparator7;
     private javax.swing.JPopupMenu.Separator jSeparator8;
     private javax.swing.JLabel lblFlowChart;
+    private javax.swing.JLabel lblJavaVersion;
     private javax.swing.JLabel lblRecommended;
     private javax.swing.JLabel lblStandingsAfter;
     private javax.swing.JLabel lblTF;

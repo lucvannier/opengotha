@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="90.91.109.7" gothaMinorVersion="0" gothaVersion="349" saveDT="20200508215756">
+<Players>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1500104" ffgLicenceStatus="L" firstName="Manuela" grade="18K" name="Rebelo" participating="11111111111111111111" rank="18K" rating="273" ratingOrigin="FFG : -1777" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1800083" ffgLicenceStatus="L" firstName="Nouh" grade="30K" name="Ait_Braham" participating="11111111111111111111" rank="30K" rating="-900" ratingOrigin="FFG : -2950" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1500115" ffgLicenceStatus="L" firstName="Tanguy" grade="11K" name="le_Bris" participating="11111111111111111111" rank="11K" rating="979" ratingOrigin="FFG : -1071" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1700113" ffgLicenceStatus="L" firstName="Camille" grade="19K" name="Fermin-Binot" participating="11111111111111111111" rank="19K" rating="221" ratingOrigin="FFG : -1829" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1700110" ffgLicenceStatus="L" firstName="Sophie" grade="16K" name="Olive" participating="11111111111111111111" rank="16K" rating="494" ratingOrigin="FFG : -1556" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1600113" ffgLicenceStatus="L" firstName="Adrien" grade="15K" name="Fermin-Binot" participating="11111111111111111111" rank="15K" rating="556" ratingOrigin="FFG : -1494" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="2000106" ffgLicenceStatus="L" firstName="Arezki" grade="30K" name="Ait_Braham" participating="11111111111111111111" rank="30K" rating="-900" ratingOrigin="FFG : -2950" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1700109" ffgLicenceStatus="L" firstName="Alexandre" grade="7K" name="Pinchard" participating="11111111111111111111" rank="7K" rating="1424" ratingOrigin="FFG : -626" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1800082" ffgLicenceStatus="L" firstName="Tony" grade="20K" name="Schmitt" participating="11111111111111111111" rank="20K" rating="51" ratingOrigin="FFG : -1999" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1500114" ffgLicenceStatus="L" firstName="Thomas" grade="14K" name="Vang" participating="11111111111111111111" rank="14K" rating="721" ratingOrigin="FFG : -1329" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1600111" ffgLicenceStatus="L" firstName="Steven" grade="13K" name="Nasr" participating="11111111111111111111" rank="13K" rating="837" ratingOrigin="FFG : -1213" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1800084" ffgLicenceStatus="L" firstName="Antoine" grade="27K" name="Rodas" participating="11111111111111111111" rank="27K" rating="-638" ratingOrigin="FFG : -2688" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="LE_BRISTANGUY" handicap="3" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="1" whitePlayer="PINCHARDALEXANDRE"/>
+<Game blackPlayer="VANGTHOMAS" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="2" whitePlayer="NASRSTEVEN"/>
+<Game blackPlayer="FERMIN-BINOTADRIEN" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="3" whitePlayer="OLIVESOPHIE"/>
+<Game blackPlayer="REBELOMANUELA" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="4" whitePlayer="FERMIN-BINOTCAMILLE"/>
+<Game blackPlayer="SCHMITTTONY" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="5" whitePlayer="AIT_BRAHAMAREZKI"/>
+<Game blackPlayer="RODASANTOINE" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="6" whitePlayer="AIT_BRAHAMNOUH"/>
+<Game blackPlayer="FERMIN-BINOTADRIEN" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="1" whitePlayer="NASRSTEVEN"/>
+<Game blackPlayer="OLIVESOPHIE" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="2" whitePlayer="VANGTHOMAS"/>
+<Game blackPlayer="AIT_BRAHAMAREZKI" handicap="8" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="3" whitePlayer="LE_BRISTANGUY"/>
+<Game blackPlayer="AIT_BRAHAMNOUH" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="4" whitePlayer="REBELOMANUELA"/>
+<Game blackPlayer="FERMIN-BINOTCAMILLE" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="5" whitePlayer="SCHMITTTONY"/>
+<Game blackPlayer="RODASANTOINE" handicap="9" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="6" whitePlayer="PINCHARDALEXANDRE"/>
+<Game blackPlayer="REBELOMANUELA" handicap="4" knownColor="true" result="RESULT_UNKNOWN" roundNumber="11" tableNumber="1" whitePlayer="NASRSTEVEN"/>
+<Game blackPlayer="FERMIN-BINOTCAMILLE" handicap="4" knownColor="true" result="RESULT_UNKNOWN" roundNumber="11" tableNumber="2" whitePlayer="VANGTHOMAS"/>
+<Game blackPlayer="AIT_BRAHAMAREZKI" handicap="3" knownColor="true" result="RESULT_UNKNOWN" roundNumber="11" tableNumber="3" whitePlayer="OLIVESOPHIE"/>
+<Game blackPlayer="RODASANTOINE" handicap="4" knownColor="true" result="RESULT_UNKNOWN" roundNumber="11" tableNumber="4" whitePlayer="FERMIN-BINOTADRIEN"/>
+<Game blackPlayer="AIT_BRAHAMNOUH" handicap="8" knownColor="true" result="RESULT_UNKNOWN" roundNumber="11" tableNumber="5" whitePlayer="LE_BRISTANGUY"/>
+<Game blackPlayer="SCHMITTTONY" handicap="9" knownColor="true" result="RESULT_UNKNOWN" roundNumber="11" tableNumber="6" whitePlayer="PINCHARDALEXANDRE"/>
+<Game blackPlayer="FERMIN-BINOTADRIEN" handicap="3" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="1" whitePlayer="LE_BRISTANGUY"/>
+<Game blackPlayer="OLIVESOPHIE" handicap="8" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="2" whitePlayer="PINCHARDALEXANDRE"/>
+<Game blackPlayer="AIT_BRAHAMAREZKI" handicap="5" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="3" whitePlayer="VANGTHOMAS"/>
+<Game blackPlayer="SCHMITTTONY" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="4" whitePlayer="REBELOMANUELA"/>
+<Game blackPlayer="RODASANTOINE" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="5" whitePlayer="FERMIN-BINOTCAMILLE"/>
+<Game blackPlayer="AIT_BRAHAMNOUH" handicap="6" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="6" whitePlayer="NASRSTEVEN"/>
+<Game blackPlayer="REBELOMANUELA" handicap="3" knownColor="true" result="RESULT_UNKNOWN" roundNumber="10" tableNumber="1" whitePlayer="VANGTHOMAS"/>
+<Game blackPlayer="FERMIN-BINOTCAMILLE" handicap="7" knownColor="true" result="RESULT_UNKNOWN" roundNumber="10" tableNumber="2" whitePlayer="LE_BRISTANGUY"/>
+<Game blackPlayer="AIT_BRAHAMAREZKI" handicap="4" knownColor="true" result="RESULT_UNKNOWN" roundNumber="10" tableNumber="3" whitePlayer="FERMIN-BINOTADRIEN"/>
+<Game blackPlayer="RODASANTOINE" handicap="3" knownColor="true" result="RESULT_UNKNOWN" roundNumber="10" tableNumber="4" whitePlayer="OLIVESOPHIE"/>
+<Game blackPlayer="SCHMITTTONY" handicap="6" knownColor="true" result="RESULT_UNKNOWN" roundNumber="10" tableNumber="5" whitePlayer="NASRSTEVEN"/>
+<Game blackPlayer="AIT_BRAHAMNOUH" handicap="9" knownColor="true" result="RESULT_UNKNOWN" roundNumber="10" tableNumber="6" whitePlayer="PINCHARDALEXANDRE"/>
+<Game blackPlayer="FERMIN-BINOTADRIEN" handicap="7" knownColor="true" result="RESULT_UNKNOWN" roundNumber="4" tableNumber="1" whitePlayer="PINCHARDALEXANDRE"/>
+<Game blackPlayer="OLIVESOPHIE" handicap="4" knownColor="true" result="RESULT_UNKNOWN" roundNumber="4" tableNumber="2" whitePlayer="LE_BRISTANGUY"/>
+<Game blackPlayer="AIT_BRAHAMAREZKI" handicap="6" knownColor="true" result="RESULT_UNKNOWN" roundNumber="4" tableNumber="3" whitePlayer="NASRSTEVEN"/>
+<Game blackPlayer="SCHMITTTONY" handicap="5" knownColor="true" result="RESULT_UNKNOWN" roundNumber="4" tableNumber="4" whitePlayer="VANGTHOMAS"/>
+<Game blackPlayer="RODASANTOINE" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="4" tableNumber="5" whitePlayer="REBELOMANUELA"/>
+<Game blackPlayer="FERMIN-BINOTCAMILLE" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="4" tableNumber="6" whitePlayer="AIT_BRAHAMNOUH"/>
+<Game blackPlayer="REBELOMANUELA" handicap="6" knownColor="true" result="RESULT_UNKNOWN" roundNumber="9" tableNumber="1" whitePlayer="LE_BRISTANGUY"/>
+<Game blackPlayer="FERMIN-BINOTCAMILLE" handicap="5" knownColor="true" result="RESULT_UNKNOWN" roundNumber="9" tableNumber="2" whitePlayer="NASRSTEVEN"/>
+<Game blackPlayer="RODASANTOINE" handicap="5" knownColor="true" result="RESULT_UNKNOWN" roundNumber="9" tableNumber="3" whitePlayer="VANGTHOMAS"/>
+<Game blackPlayer="AIT_BRAHAMAREZKI" handicap="9" knownColor="true" result="RESULT_UNKNOWN" roundNumber="9" tableNumber="4" whitePlayer="PINCHARDALEXANDRE"/>
+<Game blackPlayer="SCHMITTTONY" handicap="3" knownColor="true" result="RESULT_UNKNOWN" roundNumber="9" tableNumber="5" whitePlayer="OLIVESOPHIE"/>
+<Game blackPlayer="AIT_BRAHAMNOUH" handicap="4" knownColor="true" result="RESULT_UNKNOWN" roundNumber="9" tableNumber="6" whitePlayer="FERMIN-BINOTADRIEN"/>
+<Game blackPlayer="NASRSTEVEN" handicap="1" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="1" whitePlayer="LE_BRISTANGUY"/>
+<Game blackPlayer="VANGTHOMAS" handicap="6" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="2" whitePlayer="PINCHARDALEXANDRE"/>
+<Game blackPlayer="REBELOMANUELA" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="3" whitePlayer="OLIVESOPHIE"/>
+<Game blackPlayer="FERMIN-BINOTCAMILLE" handicap="3" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="4" whitePlayer="FERMIN-BINOTADRIEN"/>
+<Game blackPlayer="AIT_BRAHAMNOUH" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="5" whitePlayer="AIT_BRAHAMAREZKI"/>
+<Game blackPlayer="SCHMITTTONY" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="6" whitePlayer="RODASANTOINE"/>
+<Game blackPlayer="OLIVESOPHIE" handicap="2" knownColor="true" result="RESULT_UNKNOWN" roundNumber="8" tableNumber="1" whitePlayer="NASRSTEVEN"/>
+<Game blackPlayer="FERMIN-BINOTCAMILLE" handicap="9" knownColor="true" result="RESULT_UNKNOWN" roundNumber="8" tableNumber="2" whitePlayer="PINCHARDALEXANDRE"/>
+<Game blackPlayer="RODASANTOINE" handicap="8" knownColor="true" result="RESULT_UNKNOWN" roundNumber="8" tableNumber="3" whitePlayer="LE_BRISTANGUY"/>
+<Game blackPlayer="AIT_BRAHAMAREZKI" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="8" tableNumber="4" whitePlayer="REBELOMANUELA"/>
+<Game blackPlayer="SCHMITTTONY" handicap="4" knownColor="true" result="RESULT_UNKNOWN" roundNumber="8" tableNumber="5" whitePlayer="FERMIN-BINOTADRIEN"/>
+<Game blackPlayer="AIT_BRAHAMNOUH" handicap="5" knownColor="true" result="RESULT_UNKNOWN" roundNumber="8" tableNumber="6" whitePlayer="VANGTHOMAS"/>
+<Game blackPlayer="NASRSTEVEN" handicap="5" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="1" whitePlayer="PINCHARDALEXANDRE"/>
+<Game blackPlayer="VANGTHOMAS" handicap="2" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="LE_BRISTANGUY"/>
+<Game blackPlayer="REBELOMANUELA" handicap="2" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="3" whitePlayer="FERMIN-BINOTADRIEN"/>
+<Game blackPlayer="FERMIN-BINOTCAMILLE" handicap="2" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="4" whitePlayer="OLIVESOPHIE"/>
+<Game blackPlayer="AIT_BRAHAMAREZKI" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="5" whitePlayer="RODASANTOINE"/>
+<Game blackPlayer="AIT_BRAHAMNOUH" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="6" whitePlayer="SCHMITTTONY"/>
+<Game blackPlayer="FERMIN-BINOTADRIEN" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="7" tableNumber="1" whitePlayer="VANGTHOMAS"/>
+<Game blackPlayer="REBELOMANUELA" handicap="9" knownColor="true" result="RESULT_UNKNOWN" roundNumber="7" tableNumber="2" whitePlayer="PINCHARDALEXANDRE"/>
+<Game blackPlayer="RODASANTOINE" handicap="6" knownColor="true" result="RESULT_UNKNOWN" roundNumber="7" tableNumber="3" whitePlayer="NASRSTEVEN"/>
+<Game blackPlayer="AIT_BRAHAMAREZKI" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="7" tableNumber="4" whitePlayer="FERMIN-BINOTCAMILLE"/>
+<Game blackPlayer="AIT_BRAHAMNOUH" handicap="3" knownColor="true" result="RESULT_UNKNOWN" roundNumber="7" tableNumber="5" whitePlayer="OLIVESOPHIE"/>
+<Game blackPlayer="SCHMITTTONY" handicap="8" knownColor="true" result="RESULT_UNKNOWN" roundNumber="7" tableNumber="6" whitePlayer="LE_BRISTANGUY"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-05-06" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Tanguy Le Bris" endDate="2020-05-06" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Gennevilliers" name="Tournoi des licenciés" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="12" shortName="Tournoi des licenciés" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

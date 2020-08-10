@@ -627,7 +627,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlMcMahon.add(txfMMBar);
-        txfMMBar.setBounds(150, 20, 30, 20);
+        txfMMBar.setBounds(150, 20, 40, 20);
 
         lblMMFloor.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         lblMMFloor.setText("McMahon Floor");
@@ -640,7 +640,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlMcMahon.add(txfMMFloor);
-        txfMMFloor.setBounds(150, 50, 30, 20);
+        txfMMFloor.setBounds(150, 50, 40, 20);
 
         lblMMZero.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         lblMMZero.setText("McMahon Zero");
@@ -654,7 +654,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlMcMahon.add(txfMMZero);
-        txfMMZero.setBounds(150, 110, 30, 20);
+        txfMMZero.setBounds(150, 110, 40, 20);
 
         pnlGen.add(pnlMcMahon);
         pnlMcMahon.setBounds(300, 90, 250, 150);

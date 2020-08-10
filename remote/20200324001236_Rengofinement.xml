@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="90.73.227.60" gothaMinorVersion="0" gothaVersion="349" saveDT="20200324001236">
+    <Players>
+        <Player agaExpirationDate="" agaId="99999" club="Ham" country="DE" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_20" grade="10K" name="AAE" participating="11111111111111111111" rank="10K" rating="-1050" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="99999" club="Ham" country="DE" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_20" grade="10K" name="AAF" participating="11111111111111111111" rank="10K" rating="-1050" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="99999" club="Ham" country="DE" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_20" grade="10K" name="AAC" participating="11111111111111111111" rank="10K" rating="-1050" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="99999" club="Ham" country="DE" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_20" grade="10K" name="AAD" participating="11111111111111111111" rank="10K" rating="-1050" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="99999" club="Ham" country="DE" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_20" grade="10K" name="AAA" participating="11111111111111111111" rank="10K" rating="-1050" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="99999" club="Ham" country="DE" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_20" grade="10K" name="AAB" participating="11111111111111111111" rank="10K" rating="-1050" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="99999" club="Ham" country="DE" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_20" grade="10K" name="AAH" participating="11111111111111111111" rank="10K" rating="-1050" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="99999" club="Ham" country="DE" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_20" grade="10K" name="AAG" participating="11111111111111111111" rank="10K" rating="-1050" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="AAAP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="AAEP_20"/>
+        <Game blackPlayer="AABP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="AAFP_20"/>
+        <Game blackPlayer="AAHP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="AACP_20"/>
+        <Game blackPlayer="AAGP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="AADP_20"/>
+        <Game blackPlayer="AAHP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="AAEP_20"/>
+        <Game blackPlayer="AAGP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="2" whitePlayer="AAFP_20"/>
+        <Game blackPlayer="AAAP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="AACP_20"/>
+        <Game blackPlayer="AABP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="4" whitePlayer="AADP_20"/>
+        <Game blackPlayer="AAAP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="1" whitePlayer="AAEP_20"/>
+        <Game blackPlayer="AABP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="2" whitePlayer="AAFP_20"/>
+        <Game blackPlayer="AAHP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="3" whitePlayer="AACP_20"/>
+        <Game blackPlayer="AAGP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="4" whitePlayer="AADP_20"/>
+        <Game blackPlayer="AABP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="AAEP_20"/>
+        <Game blackPlayer="AAHP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="AAFP_20"/>
+        <Game blackPlayer="AAGP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="3" whitePlayer="AACP_20"/>
+        <Game blackPlayer="AAAP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="4" whitePlayer="AADP_20"/>
+        <Game blackPlayer="AAGP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="1" whitePlayer="AAEP_20"/>
+        <Game blackPlayer="AAAP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="2" whitePlayer="AAFP_20"/>
+        <Game blackPlayer="AABP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="3" whitePlayer="AACP_20"/>
+        <Game blackPlayer="AAHP_20" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="4" whitePlayer="AADP_20"/>
+    </Games>
+    <Teams>
+        <Team teamName="Equipe6" teamNumber="6">
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="1"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="1"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="2"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="2"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="3"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="3"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="4"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="4"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="5"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="5"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="6"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="6"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="7"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="7"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="8"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="8"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="9"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="9"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="10"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="10"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="11"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="11"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="12"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="12"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="13"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="13"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="14"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="14"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="15"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="15"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="16"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="16"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="17"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="17"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="18"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="18"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="19"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="19"/>
+            <Board boardNumber="1" player="THEOBDRAZELIO" roundNumber="20"/>
+            <Board boardNumber="2" player="SENDOHHILM" roundNumber="20"/>
+        </Team>
+        <Team teamName="Equipe5" teamNumber="5">
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="1"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="1"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="2"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="2"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="3"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="3"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="4"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="4"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="5"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="5"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="6"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="6"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="7"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="7"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="8"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="8"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="9"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="9"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="10"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="10"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="11"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="11"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="12"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="12"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="13"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="13"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="14"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="14"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="15"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="15"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="16"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="16"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="17"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="17"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="18"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="18"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="19"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="19"/>
+            <Board boardNumber="1" player="LABDALAWLIET" roundNumber="20"/>
+            <Board boardNumber="2" player="AZZURIKRALEUR" roundNumber="20"/>
+        </Team>
+        <Team teamName="Equipe4" teamNumber="4">
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="1"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="1"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="2"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="2"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="3"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="3"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="4"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="4"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="5"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="5"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="6"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="6"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="7"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="7"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="8"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="8"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="9"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="9"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="10"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="10"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="11"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="11"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="12"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="12"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="13"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="13"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="14"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="14"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="15"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="15"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="16"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="16"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="17"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="17"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="18"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="18"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="19"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="19"/>
+            <Board boardNumber="1" player="VAURIENMARINELISAA" roundNumber="20"/>
+            <Board boardNumber="2" player="JIRIAKELWHITHAK" roundNumber="20"/>
+        </Team>
+        <Team teamName="Equipe3" teamNumber="3">
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="1"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="1"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="2"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="2"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="3"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="3"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="4"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="4"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="5"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="5"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="6"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="6"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="7"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="7"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="8"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="8"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="9"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="9"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="10"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="10"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="11"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="11"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="12"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="12"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="13"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="13"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="14"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="14"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="15"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="15"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="16"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="16"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="17"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="17"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="18"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="18"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="19"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="19"/>
+            <Board boardNumber="1" player="SIRYUSBLACKMATSUYAMA" roundNumber="20"/>
+            <Board boardNumber="2" player="LOUPIOFLO" roundNumber="20"/>
+        </Team>
+        <Team teamName="Equipe2" teamNumber="2">
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="1"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="1"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="2"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="2"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="3"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="3"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="4"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="4"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="5"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="5"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="6"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="6"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="7"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="7"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="8"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="8"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="9"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="9"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="10"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="10"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="11"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="11"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="12"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="12"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="13"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="13"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="14"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="14"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="15"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="15"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="16"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="16"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="17"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="17"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="18"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="18"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="19"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="19"/>
+            <Board boardNumber="1" player="CORAILMOONDOVAH" roundNumber="20"/>
+            <Board boardNumber="2" player="GUNTHERIMAXIME" roundNumber="20"/>
+        </Team>
+        <Team teamName="Equipe1" teamNumber="1">
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="1"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="1"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="2"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="2"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="3"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="3"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="4"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="4"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="5"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="5"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="6"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="6"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="7"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="7"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="8"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="8"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="9"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="9"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="10"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="10"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="11"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="11"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="12"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="12"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="13"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="13"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="14"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="14"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="15"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="15"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="16"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="16"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="17"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="17"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="18"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="18"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="19"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="19"/>
+            <Board boardNumber="1" player="HEBUSZO" roundNumber="20"/>
+            <Board boardNumber="2" player="TYUNNEMACHYU" roundNumber="20"/>
+        </Team>
+    </Teams>
+    <TournamentParameterSet>
+        <GeneralParameterSet basicTime="60" beginDate="2020-03-24" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="" endDate="2020-03-24" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="" name="Undefined" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="Rengofinement" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="MMS" number="1"/>
+                <PlacementCriterion name="SOSM" number="2"/>
+                <PlacementCriterion name="SOSOSM" number="3"/>
+                <PlacementCriterion name="NULL" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="2"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

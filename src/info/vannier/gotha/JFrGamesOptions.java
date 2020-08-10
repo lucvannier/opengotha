@@ -81,9 +81,10 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         lblCanTime = new javax.swing.JLabel();
         txfCanTime = new javax.swing.JTextField();
         txfCanNbMoves = new javax.swing.JTextField();
-        jLabel7 = new javax.swing.JLabel();
         lblEGFClass = new javax.swing.JLabel();
+        jLabel7 = new javax.swing.JLabel();
         lblAT = new javax.swing.JLabel();
+        cbInternet = new javax.swing.JCheckBox();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setTitle("Games settings");
@@ -103,7 +104,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
 
         jLabel3.setText("Komi");
         pnlGam.add(jLabel3);
-        jLabel3.setBounds(100, 80, 80, 14);
+        jLabel3.setBounds(100, 60, 80, 14);
 
         txfSize.setText("19");
         txfSize.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -121,7 +122,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlGam.add(txfKomi);
-        txfKomi.setBounds(220, 80, 50, 20);
+        txfKomi.setBounds(220, 60, 50, 20);
 
         btnClose.setText("Close");
         btnClose.addActionListener(new java.awt.event.ActionListener() {
@@ -147,7 +148,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
 
         jLabel1.setText("Basic time (min)");
         pnlTime.add(jLabel1);
-        jLabel1.setBounds(10, 30, 120, 14);
+        jLabel1.setBounds(10, 60, 120, 14);
 
         txfBasicTime.setText("0");
         txfBasicTime.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -156,7 +157,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfBasicTime);
-        txfBasicTime.setBounds(280, 30, 40, 20);
+        txfBasicTime.setBounds(280, 50, 40, 20);
 
         grpComplTimeSystem.add(rdbSuddenDeath);
         rdbSuddenDeath.setSelected(true);
@@ -167,7 +168,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(rdbSuddenDeath);
-        rdbSuddenDeath.setBounds(10, 60, 200, 20);
+        rdbSuddenDeath.setBounds(10, 90, 200, 20);
 
         grpComplTimeSystem.add(rdbStdByoYomi);
         rdbStdByoYomi.setText("Standard Byo-yomi system");
@@ -177,7 +178,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(rdbStdByoYomi);
-        rdbStdByoYomi.setBounds(10, 100, 280, 20);
+        rdbStdByoYomi.setBounds(10, 120, 280, 20);
 
         grpComplTimeSystem.add(rdbCanByoYomi);
         rdbCanByoYomi.setText("Canadian Byo-yomi system");
@@ -187,7 +188,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(rdbCanByoYomi);
-        rdbCanByoYomi.setBounds(10, 150, 210, 20);
+        rdbCanByoYomi.setBounds(10, 170, 210, 20);
 
         grpComplTimeSystem.add(rdbFischer);
         rdbFischer.setText("Fischer system");
@@ -197,11 +198,11 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(rdbFischer);
-        rdbFischer.setBounds(10, 200, 200, 20);
+        rdbFischer.setBounds(10, 220, 200, 20);
 
         lblFischerTime.setText("Bonus time(seconds)");
         pnlTime.add(lblFischerTime);
-        lblFischerTime.setBounds(110, 220, 160, 20);
+        lblFischerTime.setBounds(110, 240, 160, 20);
 
         txfFischerTime.setText("5");
         txfFischerTime.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -210,11 +211,11 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfFischerTime);
-        txfFischerTime.setBounds(280, 220, 40, 20);
+        txfFischerTime.setBounds(280, 240, 40, 20);
 
         lblStdTime.setText("Time(seconds)");
         pnlTime.add(lblStdTime);
-        lblStdTime.setBounds(140, 120, 130, 20);
+        lblStdTime.setBounds(140, 140, 130, 20);
 
         txfStdTime.setText("30");
         txfStdTime.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -223,11 +224,11 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfStdTime);
-        txfStdTime.setBounds(280, 120, 40, 20);
+        txfStdTime.setBounds(280, 140, 40, 20);
 
         lblCanTime.setText("Time(seconds)");
         pnlTime.add(lblCanTime);
-        lblCanTime.setBounds(140, 170, 130, 20);
+        lblCanTime.setBounds(140, 190, 130, 20);
 
         txfCanTime.setText("300");
         txfCanTime.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -236,7 +237,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfCanTime);
-        txfCanTime.setBounds(280, 170, 40, 20);
+        txfCanTime.setBounds(280, 190, 40, 20);
 
         txfCanNbMoves.setText("15");
         txfCanNbMoves.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -245,28 +246,37 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfCanNbMoves);
-        txfCanNbMoves.setBounds(30, 170, 40, 20);
-
-        jLabel7.setText("moves");
-        pnlTime.add(jLabel7);
-        jLabel7.setBounds(80, 170, 50, 20);
+        txfCanNbMoves.setBounds(30, 190, 40, 20);
 
         lblEGFClass.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblEGFClass.setForeground(new java.awt.Color(255, 0, 0));
         lblEGFClass.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblEGFClass.setText("EGF class X");
         pnlTime.add(lblEGFClass);
-        lblEGFClass.setBounds(10, 280, 290, 30);
+        lblEGFClass.setBounds(10, 310, 290, 30);
+
+        jLabel7.setText("moves");
+        pnlTime.add(jLabel7);
+        jLabel7.setBounds(80, 190, 50, 20);
 
         lblAT.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblAT.setForeground(new java.awt.Color(255, 0, 0));
         lblAT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblAT.setText("Adjusted time = 0");
         pnlTime.add(lblAT);
-        lblAT.setBounds(10, 260, 290, 20);
+        lblAT.setBounds(10, 290, 290, 20);
+
+        cbInternet.setText("Internet game");
+        cbInternet.addFocusListener(new java.awt.event.FocusAdapter() {
+            public void focusLost(java.awt.event.FocusEvent evt) {
+                cbInternetFocusLost(evt);
+            }
+        });
+        pnlTime.add(cbInternet);
+        cbInternet.setBounds(10, 30, 120, 23);
 
         pnlGam.add(pnlTime);
-        pnlTime.setBounds(10, 110, 340, 330);
+        pnlTime.setBounds(10, 90, 340, 350);
 
         getContentPane().add(pnlGam);
         pnlGam.setBounds(20, 0, 500, 500);
@@ -481,6 +491,23 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         cleanClose();
     }//GEN-LAST:event_formWindowClosing
 
+    private void cbInternetFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_cbInternetFocusLost
+        try {
+            TournamentParameterSet tps = tournament.getTournamentParameterSet();
+            GeneralParameterSet gps = tps.getGeneralParameterSet();
+            boolean oldVal = gps.isBInternet();
+            boolean newVal = this.cbInternet.isSelected();
+            if (newVal == oldVal) {
+                return;
+            }
+            gps.setBInternet(newVal);
+            tournament.setTournamentParameterSet(tps);
+            this.tournamentChanged();
+        } catch (RemoteException ex) {
+            Logger.getLogger(JFrGamesOptions.class.getName()).log(Level.SEVERE, null, ex);
+        }
+    }//GEN-LAST:event_cbInternetFocusLost
+
     private void customInitComponents() throws RemoteException {
         updateAllViews();
         // this.updatePnlGam();
@@ -513,7 +540,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         gps = tournament.getTournamentParameterSet().getGeneralParameterSet();
         this.txfSize.setText(gps.getStrSize());
         this.txfKomi.setText(gps.getStrKomi());
-
+        this.cbInternet.setSelected(gps.isBInternet());
         this.txfBasicTime.setText("" + gps.getBasicTime());
 
         int complTimeSystem = gps.getComplementaryTimeSystem();
@@ -558,6 +585,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         if (strClass.equals("C")) strMes = "EGF class C";
         if (strClass.equals("B")) strMes = "EGF class B";
         if (strClass.equals("A")) strMes = "EGF class A";
+        if (strClass.equals("D")) strMes = "EGF class D";
         
         this.lblEGFClass.setText(strMes);
         
@@ -565,6 +593,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
     // Variables declaration - do not modify//GEN-BEGIN:variables
     private javax.swing.JButton btnClose;
     private javax.swing.JButton btnHelp;
+    private javax.swing.JCheckBox cbInternet;
     private javax.swing.ButtonGroup grpComplTimeSystem;
     private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;

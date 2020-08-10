@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="37.164.182.48" gothaMinorVersion="0" gothaVersion="349" saveDT="20200307184525">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="13Ma" country="FR" egfPin="" ffgLicence="9525034" ffgLicenceStatus="L" firstName="Myrtille" grade="2K" name="Cristiani" participating="10100000000000000000" rank="2K" rating="1931" ratingOrigin="FFG : -119" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="13Ma" country="FR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Nicolas" grade="20K" name="Chapuis" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="13Ma" country="FR" egfPin="" ffgLicence="1900232" ffgLicenceStatus="L" firstName="Alexandre" grade="16K" name="Bongiovanni" participating="11111111111111111111" rank="16K" rating="503" ratingOrigin="FFG : -1547" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="13Ma" country="FR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Stéphane" grade="8K" name="Hoang" participating="11111111111111111111" rank="8K" rating="1300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="13Ma" country="FR" egfPin="" ffgLicence="1700001" ffgLicenceStatus="L" firstName="Antoine" grade="14K" name="Willenbucher" participating="11111111111111111111" rank="14K" rating="666" ratingOrigin="FFG : -1384" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="13Ma" country="FR" egfPin="" ffgLicence="2000225" ffgLicenceStatus="-" firstName="Amélia" grade="12K" name="Durbec" participating="11111111111111111111" rank="12K" rating="-900" ratingOrigin="FFG : -9999" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="13Ma" country="FR" egfPin="" ffgLicence="0013006" ffgLicenceStatus="L" firstName="Philippe" grade="1K" name="Guerre-Genton" participating="01000000000000000000" rank="1K" rating="2034" ratingOrigin="FFG : -16" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="13Ma" country="FR" egfPin="" ffgLicence="1000392" ffgLicenceStatus="L" firstName="Alexandra" grade="9K" name="Goloubkov" participating="11111111111111111111" rank="9K" rating="1193" ratingOrigin="FFG : -857" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="13Ma" country="FR" egfPin="" ffgLicence="0800007" ffgLicenceStatus="-" firstName="Zad" grade="9K" name="Zaknoun" participating="11111111111111111111" rank="9K" rating="1150" ratingOrigin="FFG : -900" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="13Ma" country="FR" egfPin="" ffgLicence="1700003" ffgLicenceStatus="L" firstName="Morgane" grade="10K" name="Marechal" participating="11111111111111111111" rank="10K" rating="1107" ratingOrigin="FFG : -943" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="13Ma" country="FR" egfPin="" ffgLicence="1800116" ffgLicenceStatus="L" firstName="Jean-François" grade="16K" name="Vaca" participating="11111111111111111111" rank="16K" rating="524" ratingOrigin="FFG : -1526" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="13Ma" country="FR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Charles" grade="4K" name="Duhamel" participating="11111111111111111111" rank="4K" rating="1700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="13Ma" country="FR" egfPin="" ffgLicence="0322103" ffgLicenceStatus="L" firstName="Claude" grade="7K" name="Brisson" participating="11111111111111111111" rank="7K" rating="1366" ratingOrigin="FFG : -684" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="MARECHALMORGANE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="WILLENBUCHERANTOINE"/>
+        <Game blackPlayer="BONGIOVANNIALEXANDRE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="HOANGSTÉPHANE"/>
+        <Game blackPlayer="GOLOUBKOVALEXANDRA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="ZAKNOUNZAD"/>
+        <Game blackPlayer="CHAPUISNICOLAS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="DUHAMELCHARLES"/>
+        <Game blackPlayer="VACAJEAN-FRANÇOIS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="DURBECAMÉLIA"/>
+        <Game blackPlayer="CRISTIANIMYRTILLE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="6" whitePlayer="BRISSONCLAUDE"/>
+        <Game blackPlayer="VACAJEAN-FRANÇOIS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="DUHAMELCHARLES"/>
+        <Game blackPlayer="ZAKNOUNZAD" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="GUERRE-GENTONPHILIPPE"/>
+        <Game blackPlayer="HOANGSTÉPHANE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="3" whitePlayer="MARECHALMORGANE"/>
+        <Game blackPlayer="DURBECAMÉLIA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="4" whitePlayer="BRISSONCLAUDE"/>
+        <Game blackPlayer="GOLOUBKOVALEXANDRA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="5" whitePlayer="BONGIOVANNIALEXANDRE"/>
+        <Game blackPlayer="WILLENBUCHERANTOINE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="6" whitePlayer="CHAPUISNICOLAS"/>
+        <Game blackPlayer="WILLENBUCHERANTOINE" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="1" whitePlayer="CRISTIANIMYRTILLE"/>
+        <Game blackPlayer="GOLOUBKOVALEXANDRA" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="2" whitePlayer="CHAPUISNICOLAS"/>
+        <Game blackPlayer="ZAKNOUNZAD" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="3" whitePlayer="VACAJEAN-FRANÇOIS"/>
+        <Game blackPlayer="BRISSONCLAUDE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="4" whitePlayer="BONGIOVANNIALEXANDRE"/>
+        <Game blackPlayer="MARECHALMORGANE" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="5" whitePlayer="DUHAMELCHARLES"/>
+        <Game blackPlayer="HOANGSTÉPHANE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="6" whitePlayer="DURBECAMÉLIA"/>
+    </Games>
+    <TournamentParameterSet>
+        <GeneralParameterSet basicTime="60" beginDate="2020-03-07" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Philippe Guerre-Genton" endDate="2020-03-07" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Marseille" name="1er tour championnat de France de Marseille 2020" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="4" shortName="CDF Marseille 2020" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="NBW" number="1"/>
+                <PlacementCriterion name="SOSW" number="2"/>
+                <PlacementCriterion name="SOSOSW" number="3"/>
+                <PlacementCriterion name="NULL" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="4"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

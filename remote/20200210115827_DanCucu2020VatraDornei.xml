@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="85.186.22.115" gothaMinorVersion="0" gothaVersion="349" saveDT="20200210115827">
+<Players>
+<Player agaExpirationDate="" agaId="" club="TMWS" country="RO" egfPin="14649173" ffgLicence="" ffgLicenceStatus="" firstName="Zamfir" grade="7K" name="Moldovan" participating="11111111111111111111" rank="7K" rating="1179" ratingOrigin="EGF : 1179" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92BB" country="FR" egfPin="14686914" ffgLicence="" ffgLicenceStatus="" firstName="Pierre" grade=" 7K" name="Boudailliez" participating="11111111111111111111" rank="6K" rating="1455" ratingOrigin="EGF : 1455" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BGbg" country="RS" egfPin="10350109" ffgLicence="" ffgLicenceStatus="" firstName="Aleksandar" grade=" 1K" name="Milosevic" participating="01111111111111111111" rank="1D" rating="2061" ratingOrigin="EGF : 2061" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="10562145" ffgLicence="" ffgLicenceStatus="" firstName="Dragos" grade=" 1D" name="Fofirca" participating="11111111111111111111" rank="1D" rating="2012" ratingOrigin="EGF : 2012" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TMWS" country="RO" egfPin="12737153" ffgLicence="" ffgLicenceStatus="" firstName="Cristian" grade=" 7K" name="Bratu" participating="11111111111111111111" rank="8K" rating="1346" ratingOrigin="EGF : 1346" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="17013205" ffgLicence="" ffgLicenceStatus="" firstName="Marius-Nicu" grade="2K" name="Ion" participating="10000000000000000000" rank="2K" rating="1584" ratingOrigin="EGF : 1584" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="10398410" ffgLicence="" ffgLicenceStatus="" firstName="Iulian" grade=" 3D" name="Toma" participating="11111111111111111111" rank="3D" rating="2095" ratingOrigin="EGF : 2095" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="TOMAIULIAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="IONMARIUS-NICU"/>
+<Game blackPlayer="FOFIRCADRAGOS" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="1" whitePlayer="MOLDOVANZAMFIR"/>
+<Game blackPlayer="BOUDAILLIEZPIERRE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="MOLDOVANZAMFIR"/>
+<Game blackPlayer="TOMAIULIAN" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="2" whitePlayer="MILOSEVICALEKSANDAR"/>
+<Game blackPlayer="BRATUCRISTIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="FOFIRCADRAGOS"/>
+<Game blackPlayer="BOUDAILLIEZPIERRE" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="3" whitePlayer="BRATUCRISTIAN"/>
+<Game blackPlayer="FOFIRCADRAGOS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="TOMAIULIAN"/>
+<Game blackPlayer="MOLDOVANZAMFIR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="BRATUCRISTIAN"/>
+<Game blackPlayer="MILOSEVICALEKSANDAR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="BOUDAILLIEZPIERRE"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-02-09" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Florin Pop" endDate="2020-02-11" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="true" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="0" genMMS2ValueBye="0" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="1" genRoundDownNBWMMS="true" komi="6.5" location="Vatra Dornei, Romania" name="4th Dan Cucu Memorial " nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="Dan_Cucu_2020_VatraDornei" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="DC" number="2"/>
+<PlacementCriterion name="SOSW" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="TOP" paiMaDUDDUpperMode="BOT" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

@@ -41,6 +41,9 @@ public class GeneralParameterSet implements java.io.Serializable{
     static final int GEN_GP_BASICTIME_DEF = 60;
     private int basicTime = 60;
     
+    // Internet
+    private boolean bInternet = false;
+    
     // Complementary Time system
     static final int  GEN_GP_CTS_SUDDENDEATH   = 1;
     static final int  GEN_GP_CTS_STDBYOYOMI    = 2;
@@ -473,6 +476,21 @@ public class GeneralParameterSet implements java.io.Serializable{
         this.basicTime = val;
     }
 
+    /**
+     * @return the bInternet
+     */
+    public boolean isBInternet() {
+        return bInternet;
+    }
+
+    /**
+     * @param val the bInternet to set
+     */
+    public void setBInternet(boolean val) {
+        this.bInternet = val;
+    }
+
+    
     /**
      * @return the roundDownNBWMMS
      */

@@ -27,7 +27,8 @@ import javax.swing.table.DefaultTableModel;
  * @author Luc
  */
 public class JFrRemoteTournaments extends javax.swing.JFrame {
-    private static final int SHORTNAME_COL = 0;
+    private static final int RRM_COL = 0;
+    private static final int SHORTNAME_COL = RRM_COL + 1;
     private static final int BEGINDATE_COL = SHORTNAME_COL + 1;
     private static final int SAVEDT_COL = BEGINDATE_COL + 1;
     private static final int LOCATION_COL = SAVEDT_COL + 1;
@@ -68,6 +69,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         }
     }
         private void initPnlTournaments() throws RemoteException {    
+            JFrGotha.formatColumn(tblTournaments, RRM_COL,        "RRM",             20, JLabel.LEFT, JLabel.LEFT);
             JFrGotha.formatColumn(tblTournaments, SHORTNAME_COL, "Short name",      100, JLabel.LEFT, JLabel.LEFT);
             JFrGotha.formatColumn(tblTournaments, BEGINDATE_COL, "Begin date",      60,  JLabel.LEFT, JLabel.LEFT);
             JFrGotha.formatColumn(tblTournaments, SAVEDT_COL,    "Save date/time",  100,  JLabel.LEFT, JLabel.LEFT);
@@ -96,6 +98,10 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         for (TournamentInterface t : alTournaments) {
             int line = alTournaments.indexOf(t);
             try {
+                String strRRM = "---";
+                strRRM = t.getRemoteRunningMode();
+                model.setValueAt(strRRM, line, JFrRemoteTournaments.RRM_COL);    
+
                 GeneralParameterSet gps = t.getTournamentParameterSet().getGeneralParameterSet();
                 String shortName = t.getShortName();
                 String strBeginDate = (new SimpleDateFormat("yyyy-MM-dd")).format(gps.getBeginDate());  
@@ -120,8 +126,17 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
                 
                 // Constituer un ArrayList 
                 String strLoc = readStringFromURL(externalIPAddress);
-                String strCity = IPLoc.getCityFromLoc(strLoc);        
-                String strCountry = IPLoc.getCountryFromLoc(strLoc);        
+                String strCity;        
+                String strCountry;        
+
+                if (strLoc == null){
+                    strCity = "???";
+                    strCountry = "???";
+                }
+                else{
+                    strCity = IPLoc.getCityFromLoc(strLoc);
+                    strCountry = IPLoc.getCountryFromLoc(strLoc); 
+                }
                 String strCityCountry = strCity + "," + strCountry;
                 
                 model.setValueAt(strCityCountry, line, JFrRemoteTournaments.IPLOC_COL);
@@ -306,7 +321,6 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         btnOpenTournament = new javax.swing.JButton();
         btnHelp = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
-        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
@@ -319,13 +333,13 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
 
         tblTournaments.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
-                {null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null},
-                {null, null, null, null, null, null, null, null, null}
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null},
+                {null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "Short name", "Begin date", "Save date/time", "Location", "Director", "Nb rounds", "Nb players", "IP", "IP Location"
+                "RM", "Short name", "Begin date", "Save date/time", "Location", "Director", "Nb rounds", "Nb players", "IP", "IP Location"
             }
         ));
         pnlTournaments.setViewportView(tblTournaments);
@@ -403,12 +417,6 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         getContentPane().add(btnClose);
         btnClose.setBounds(390, 500, 580, 30);
 
-        jLabel1.setFont(new java.awt.Font("Tahoma", 3, 18)); // NOI18N
-        jLabel1.setForeground(new java.awt.Color(255, 0, 51));
-        jLabel1.setText("New !");
-        getContentPane().add(jLabel1);
-        jLabel1.setBounds(760, 60, 80, 50);
-
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -454,6 +462,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         }
         
         jfrG.setTournament(t);
+        
         try {
             t.setLastTournamentModificationTime(t.getCurrentTournamentTime());
         } catch (RemoteException ex) {
@@ -488,7 +497,6 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
     private javax.swing.JButton btnRefresh;
     private javax.swing.ButtonGroup grpTournaments;
     private javax.swing.ButtonGroup grpVersions;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane pnlTournaments;
     private javax.swing.JPanel pnlWhatTournaments;
     private javax.swing.JRadioButton rdbAllTournaments;

@@ -21,8 +21,6 @@ public class JFrGothaStart extends javax.swing.JFrame {
 
     /** Creates new form JFrGothaStart */
     public JFrGothaStart() {        
-        String jreVersion = System.getProperty("java.version");
-        System.out.println("jreVersion = " + jreVersion);
         File rootDir;
         rootDir = new File(System.getProperty("user.dir"));
         File dir;
@@ -141,6 +139,15 @@ public class JFrGothaStart extends javax.swing.JFrame {
         }
 
         if (grpRunningMode.getSelection() == this.rdbServer.getModel()) {
+            //Request information
+//            String strInfo = "You use OpenGotha in Sever/Client mode";
+//            strInfo += "\nPlease send an eMail to luc.vannier@gmail.com";
+//            strInfo += "\nTell me details about the way you manage your tournament : Number of players, Number of Workstations , ...";
+//            strInfo += "\nThis will help me giving good directions to OpenGootha's developments";
+//            strInfo += "\nThank you";
+//            strInfo += "\nLuc";
+//            JOptionPane.showMessageDialog(this, strInfo);
+//            
             String strIPAd = Gotha.getBestIPAd().toString();
             strIPAd = strIPAd.replace("/", "");
             strIPAd = JOptionPane.showInputDialog("Please, enter IP address of this server in Dot-decimal notation (xxx.xxx.xxx.xxx)", strIPAd);
@@ -189,7 +196,7 @@ public class JFrGothaStart extends javax.swing.JFrame {
             case Gotha.RUNNING_MODE_SAL : strRM = "SAL"; break;
             case Gotha.RUNNING_MODE_SRV : strRM = "SRV"; break;
             case Gotha.RUNNING_MODE_CLI : strRM = "CLI"; break;
-            default : strRM = "???"; 
+            default : strRM = "UNDEFINED"; 
         }       
 //        LogElements.incrementElement("gotha.runningmode", strRM);
 

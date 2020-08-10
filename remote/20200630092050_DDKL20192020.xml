@@ -1,0 +1,256 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="79.16.4.127" gothaMinorVersion="0" gothaVersion="349" saveDT="20200630092049">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Emiliano" grade="10K" name="Hiraokasan" participating="11111111111111111111" rank="10K" rating="2000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Pietro" grade="15K" name="Thesholveler" participating="11111111111111100110" rank="15K" rating="600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Antonino" grade="18K" name="Ninosan" participating="11111111111111100110" rank="18K" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Antonio" grade="11K" name="Toki1985" participating="11111111111111111000" rank="11K" rating="1000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="William" grade="11K" name="Kawabata" participating="11111111111111100100" rank="11K" rating="1000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Samuele" grade="26K" name="Oasamaoup" participating="11111111111111100000" rank="26K" rating="-500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Davide" grade="14K" name="Seeker04" participating="11111111111111111000" rank="14K" rating="700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jonas" grade="17K" name="Mjpaz80" participating="11111111111111100100" rank="17K" rating="400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Simone" grade="20K" name="S.Tolomei" participating="11111111111111110000" rank="20K" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gerardo" grade="25K" name="All Hells" participating="11111111111111100000" rank="25K" rating="-400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Izaber" grade="22K" name="Izabera" participating="11000000000000000000" rank="22K" rating="-100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alessandro" grade="15K" name="Aixel" participating="11111111111111100000" rank="15K" rating="600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Marcello" grade="10K" name="D4rkkstarr" participating="11111111111111100100" rank="10K" rating="1100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Luciano" grade="13K" name="S.Robeson" participating="11111111111111100000" rank="13K" rating="800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Guido" grade="18K" name="Wind68" participating="11111111111111100000" rank="18K" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Silvia" grade="22K" name="Silvia" participating="11111111111111100000" rank="22K" rating="-100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sandro" grade="11K" name="Slans" participating="00111111111111110000" rank="11K" rating="1000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Valerio" grade="20K" name="10gen" participating="11111111111111110000" rank="20K" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Corr" grade="12K" name="Yaw" participating="00111111111111100000" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Marty" grade="22K" name="Marty.Maccione" participating="11111111111111100000" rank="22K" rating="-100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Salvatore" grade="15K" name="Bobore" participating="11111111111111100100" rank="15K" rating="600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Mauro" grade="22K" name="Mauro#4" participating="11111111111111110000" rank="22K" rating="-100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Marco" grade="16K" name="Hasakel" participating="11111111111111111111" rank="16K" rating="500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Asaka" grade="17K" name="Asaka" participating="11111111111111100000" rank="17K" rating="400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Stefano" grade="11K" name="Ludostek" participating="11111111111111100000" rank="11K" rating="1000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="IT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Mauro" grade="15K" name="Maurificius" participating="11000000000000000000" rank="15K" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="D4RKKSTARRMARCELLO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="LUDOSTEKSTEFANO"/>
+        <Game blackPlayer="HIRAOKASANEMILIANO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="TOKI1985ANTONIO"/>
+        <Game blackPlayer="KAWABATAWILLIAM" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="IZABERAIZABER"/>
+        <Game blackPlayer="S.ROBESONLUCIANO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="SEEKER04DAVIDE"/>
+        <Game blackPlayer="MAURIFICIUSMAURO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="THESHOLVELERPIETRO"/>
+        <Game blackPlayer="AIXELALESSANDRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="6" whitePlayer="BOBORESALVATORE"/>
+        <Game blackPlayer="MJPAZ80JONAS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="7" whitePlayer="HASAKELMARCO"/>
+        <Game blackPlayer="NINOSANANTONINO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="8" whitePlayer="WIND68GUIDO"/>
+        <Game blackPlayer="ASAKAASAKA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="9" whitePlayer="SILVIASILVIA"/>
+        <Game blackPlayer="S.TOLOMEISIMONE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="10" whitePlayer="MARTY.MACCIONEMARTY"/>
+        <Game blackPlayer="ALLHELLSGERARDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="11" whitePlayer="OASAMAOUPSAMUELE"/>
+        <Game blackPlayer="MAURO#4MAURO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="12" whitePlayer="10GENVALERIO"/>
+        <Game blackPlayer="HASAKELMARCO" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="20" tableNumber="1" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="NINOSANANTONINO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="19" tableNumber="1" whitePlayer="HASAKELMARCO"/>
+        <Game blackPlayer="THESHOLVELERPIETRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="19" tableNumber="2" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="HASAKELMARCO" handicap="4" knownColor="true" result="RESULT_BLACKWINS" roundNumber="18" tableNumber="1" whitePlayer="D4RKKSTARRMARCELLO"/>
+        <Game blackPlayer="NINOSANANTONINO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="18" tableNumber="2" whitePlayer="BOBORESALVATORE"/>
+        <Game blackPlayer="THESHOLVELERPIETRO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="18" tableNumber="3" whitePlayer="KAWABATAWILLIAM"/>
+        <Game blackPlayer="MJPAZ80JONAS" handicap="4" knownColor="true" result="RESULT_WHITEWINS" roundNumber="18" tableNumber="4" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="HASAKELMARCO" handicap="4" knownColor="true" result="RESULT_BLACKWINS" roundNumber="17" tableNumber="1" whitePlayer="TOKI1985ANTONIO"/>
+        <Game blackPlayer="SEEKER04DAVIDE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="17" tableNumber="2" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="SLANSSANDRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="16" tableNumber="1" whitePlayer="TOKI1985ANTONIO"/>
+        <Game blackPlayer="S.TOLOMEISIMONE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="16" tableNumber="2" whitePlayer="HASAKELMARCO"/>
+        <Game blackPlayer="10GENVALERIO" handicap="4" knownColor="true" result="RESULT_WHITEWINS" roundNumber="16" tableNumber="3" whitePlayer="SEEKER04DAVIDE"/>
+        <Game blackPlayer="MAURO#4MAURO" handicap="6" knownColor="true" result="RESULT_WHITEWINS" roundNumber="16" tableNumber="4" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="HIRAOKASANEMILIANO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="15" tableNumber="1" whitePlayer="SLANSSANDRO"/>
+        <Game blackPlayer="D4RKKSTARRMARCELLO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="15" tableNumber="2" whitePlayer="TOKI1985ANTONIO"/>
+        <Game blackPlayer="LUDOSTEKSTEFANO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="15" tableNumber="3" whitePlayer="KAWABATAWILLIAM"/>
+        <Game blackPlayer="AIXELALESSANDRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="15" tableNumber="4" whitePlayer="SEEKER04DAVIDE"/>
+        <Game blackPlayer="YAWCORR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="15" tableNumber="5" whitePlayer="BOBORESALVATORE"/>
+        <Game blackPlayer="THESHOLVELERPIETRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="15" tableNumber="6" whitePlayer="S.ROBESONLUCIANO"/>
+        <Game blackPlayer="ASAKAASAKA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="15" tableNumber="7" whitePlayer="NINOSANANTONINO"/>
+        <Game blackPlayer="HASAKELMARCO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="15" tableNumber="8" whitePlayer="WIND68GUIDO"/>
+        <Game blackPlayer="MJPAZ80JONAS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="15" tableNumber="9" whitePlayer="SILVIASILVIA"/>
+        <Game blackPlayer="MARTY.MACCIONEMARTY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="15" tableNumber="10" whitePlayer="10GENVALERIO"/>
+        <Game blackPlayer="ALLHELLSGERARDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="15" tableNumber="11" whitePlayer="MAURO#4MAURO"/>
+        <Game blackPlayer="S.TOLOMEISIMONE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="15" tableNumber="12" whitePlayer="OASAMAOUPSAMUELE"/>
+        <Game blackPlayer="D4RKKSTARRMARCELLO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="14" tableNumber="1" whitePlayer="SLANSSANDRO"/>
+        <Game blackPlayer="KAWABATAWILLIAM" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="14" tableNumber="2" whitePlayer="TOKI1985ANTONIO"/>
+        <Game blackPlayer="LUDOSTEKSTEFANO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="14" tableNumber="3" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="AIXELALESSANDRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="14" tableNumber="4" whitePlayer="THESHOLVELERPIETRO"/>
+        <Game blackPlayer="S.ROBESONLUCIANO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="14" tableNumber="5" whitePlayer="BOBORESALVATORE"/>
+        <Game blackPlayer="SEEKER04DAVIDE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="14" tableNumber="6" whitePlayer="YAWCORR"/>
+        <Game blackPlayer="HASAKELMARCO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="14" tableNumber="7" whitePlayer="ASAKAASAKA"/>
+        <Game blackPlayer="SILVIASILVIA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="14" tableNumber="8" whitePlayer="WIND68GUIDO"/>
+        <Game blackPlayer="NINOSANANTONINO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="14" tableNumber="9" whitePlayer="MJPAZ80JONAS"/>
+        <Game blackPlayer="10GENVALERIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="14" tableNumber="10" whitePlayer="OASAMAOUPSAMUELE"/>
+        <Game blackPlayer="S.TOLOMEISIMONE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="14" tableNumber="11" whitePlayer="MAURO#4MAURO"/>
+        <Game blackPlayer="MARTY.MACCIONEMARTY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="14" tableNumber="12" whitePlayer="ALLHELLSGERARDO"/>
+        <Game blackPlayer="TOKI1985ANTONIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="13" tableNumber="1" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="KAWABATAWILLIAM" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="13" tableNumber="2" whitePlayer="D4RKKSTARRMARCELLO"/>
+        <Game blackPlayer="SLANSSANDRO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="13" tableNumber="3" whitePlayer="LUDOSTEKSTEFANO"/>
+        <Game blackPlayer="THESHOLVELERPIETRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="13" tableNumber="4" whitePlayer="YAWCORR"/>
+        <Game blackPlayer="BOBORESALVATORE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="13" tableNumber="5" whitePlayer="SEEKER04DAVIDE"/>
+        <Game blackPlayer="S.ROBESONLUCIANO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="13" tableNumber="6" whitePlayer="AIXELALESSANDRO"/>
+        <Game blackPlayer="ASAKAASAKA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="13" tableNumber="7" whitePlayer="MJPAZ80JONAS"/>
+        <Game blackPlayer="WIND68GUIDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="13" tableNumber="8" whitePlayer="NINOSANANTONINO"/>
+        <Game blackPlayer="SILVIASILVIA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="13" tableNumber="9" whitePlayer="HASAKELMARCO"/>
+        <Game blackPlayer="MAURO#4MAURO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="13" tableNumber="10" whitePlayer="MARTY.MACCIONEMARTY"/>
+        <Game blackPlayer="OASAMAOUPSAMUELE" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="13" tableNumber="11" whitePlayer="ALLHELLSGERARDO"/>
+        <Game blackPlayer="S.TOLOMEISIMONE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="13" tableNumber="12" whitePlayer="10GENVALERIO"/>
+        <Game blackPlayer="ALLHELLSGERARDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="12" tableNumber="1" whitePlayer="D4RKKSTARRMARCELLO"/>
+        <Game blackPlayer="OASAMAOUPSAMUELE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="12" tableNumber="2" whitePlayer="LUDOSTEKSTEFANO"/>
+        <Game blackPlayer="10GENVALERIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="12" tableNumber="3" whitePlayer="SLANSSANDRO"/>
+        <Game blackPlayer="S.TOLOMEISIMONE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="12" tableNumber="4" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="MARTY.MACCIONEMARTY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="12" tableNumber="5" whitePlayer="TOKI1985ANTONIO"/>
+        <Game blackPlayer="MAURO#4MAURO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="12" tableNumber="6" whitePlayer="KAWABATAWILLIAM"/>
+        <Game blackPlayer="ASAKAASAKA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="12" tableNumber="7" whitePlayer="S.ROBESONLUCIANO"/>
+        <Game blackPlayer="NINOSANANTONINO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="12" tableNumber="8" whitePlayer="SEEKER04DAVIDE"/>
+        <Game blackPlayer="HASAKELMARCO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="12" tableNumber="9" whitePlayer="BOBORESALVATORE"/>
+        <Game blackPlayer="WIND68GUIDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="12" tableNumber="10" whitePlayer="YAWCORR"/>
+        <Game blackPlayer="MJPAZ80JONAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="12" tableNumber="11" whitePlayer="THESHOLVELERPIETRO"/>
+        <Game blackPlayer="SILVIASILVIA" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="12" tableNumber="12" whitePlayer="AIXELALESSANDRO"/>
+        <Game blackPlayer="AIXELALESSANDRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="11" tableNumber="1" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="THESHOLVELERPIETRO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="11" tableNumber="2" whitePlayer="SLANSSANDRO"/>
+        <Game blackPlayer="YAWCORR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="11" tableNumber="3" whitePlayer="TOKI1985ANTONIO"/>
+        <Game blackPlayer="SEEKER04DAVIDE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="11" tableNumber="4" whitePlayer="D4RKKSTARRMARCELLO"/>
+        <Game blackPlayer="S.ROBESONLUCIANO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="11" tableNumber="5" whitePlayer="LUDOSTEKSTEFANO"/>
+        <Game blackPlayer="BOBORESALVATORE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="11" tableNumber="6" whitePlayer="KAWABATAWILLIAM"/>
+        <Game blackPlayer="OASAMAOUPSAMUELE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="11" tableNumber="7" whitePlayer="HASAKELMARCO"/>
+        <Game blackPlayer="S.TOLOMEISIMONE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="11" tableNumber="8" whitePlayer="MJPAZ80JONAS"/>
+        <Game blackPlayer="ALLHELLSGERARDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="11" tableNumber="9" whitePlayer="ASAKAASAKA"/>
+        <Game blackPlayer="NINOSANANTONINO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="11" tableNumber="10" whitePlayer="MARTY.MACCIONEMARTY"/>
+        <Game blackPlayer="10GENVALERIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="11" tableNumber="11" whitePlayer="WIND68GUIDO"/>
+        <Game blackPlayer="MAURO#4MAURO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="11" tableNumber="12" whitePlayer="SILVIASILVIA"/>
+        <Game blackPlayer="HIRAOKASANEMILIANO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="10" tableNumber="1" whitePlayer="KAWABATAWILLIAM"/>
+        <Game blackPlayer="LUDOSTEKSTEFANO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="10" tableNumber="2" whitePlayer="D4RKKSTARRMARCELLO"/>
+        <Game blackPlayer="SLANSSANDRO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="10" tableNumber="3" whitePlayer="TOKI1985ANTONIO"/>
+        <Game blackPlayer="SEEKER04DAVIDE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="10" tableNumber="4" whitePlayer="S.ROBESONLUCIANO"/>
+        <Game blackPlayer="BOBORESALVATORE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="10" tableNumber="5" whitePlayer="THESHOLVELERPIETRO"/>
+        <Game blackPlayer="YAWCORR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="10" tableNumber="6" whitePlayer="AIXELALESSANDRO"/>
+        <Game blackPlayer="WIND68GUIDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="10" tableNumber="7" whitePlayer="ASAKAASAKA"/>
+        <Game blackPlayer="NINOSANANTONINO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="10" tableNumber="8" whitePlayer="SILVIASILVIA"/>
+        <Game blackPlayer="HASAKELMARCO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="10" tableNumber="9" whitePlayer="MJPAZ80JONAS"/>
+        <Game blackPlayer="MAURO#4MAURO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="10" tableNumber="10" whitePlayer="OASAMAOUPSAMUELE"/>
+        <Game blackPlayer="ALLHELLSGERARDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="10" tableNumber="11" whitePlayer="10GENVALERIO"/>
+        <Game blackPlayer="MARTY.MACCIONEMARTY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="10" tableNumber="12" whitePlayer="S.TOLOMEISIMONE"/>
+        <Game blackPlayer="SILVIASILVIA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="9" tableNumber="1" whitePlayer="D4RKKSTARRMARCELLO"/>
+        <Game blackPlayer="HASAKELMARCO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="9" tableNumber="2" whitePlayer="LUDOSTEKSTEFANO"/>
+        <Game blackPlayer="MJPAZ80JONAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="9" tableNumber="3" whitePlayer="SLANSSANDRO"/>
+        <Game blackPlayer="ASAKAASAKA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="9" tableNumber="4" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="NINOSANANTONINO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="9" tableNumber="5" whitePlayer="TOKI1985ANTONIO"/>
+        <Game blackPlayer="WIND68GUIDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="9" tableNumber="6" whitePlayer="KAWABATAWILLIAM"/>
+        <Game blackPlayer="S.TOLOMEISIMONE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="9" tableNumber="7" whitePlayer="S.ROBESONLUCIANO"/>
+        <Game blackPlayer="MARTY.MACCIONEMARTY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="9" tableNumber="8" whitePlayer="SEEKER04DAVIDE"/>
+        <Game blackPlayer="10GENVALERIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="9" tableNumber="9" whitePlayer="BOBORESALVATORE"/>
+        <Game blackPlayer="MAURO#4MAURO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="9" tableNumber="10" whitePlayer="YAWCORR"/>
+        <Game blackPlayer="ALLHELLSGERARDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="9" tableNumber="11" whitePlayer="THESHOLVELERPIETRO"/>
+        <Game blackPlayer="OASAMAOUPSAMUELE" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="9" tableNumber="12" whitePlayer="AIXELALESSANDRO"/>
+        <Game blackPlayer="D4RKKSTARRMARCELLO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="8" tableNumber="1" whitePlayer="BOBORESALVATORE"/>
+        <Game blackPlayer="LUDOSTEKSTEFANO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="8" tableNumber="2" whitePlayer="THESHOLVELERPIETRO"/>
+        <Game blackPlayer="SLANSSANDRO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="8" tableNumber="3" whitePlayer="AIXELALESSANDRO"/>
+        <Game blackPlayer="HIRAOKASANEMILIANO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="8" tableNumber="4" whitePlayer="YAWCORR"/>
+        <Game blackPlayer="TOKI1985ANTONIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="8" tableNumber="5" whitePlayer="SEEKER04DAVIDE"/>
+        <Game blackPlayer="KAWABATAWILLIAM" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="8" tableNumber="6" whitePlayer="S.ROBESONLUCIANO"/>
+        <Game blackPlayer="HASAKELMARCO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="8" tableNumber="7" whitePlayer="S.TOLOMEISIMONE"/>
+        <Game blackPlayer="MJPAZ80JONAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="8" tableNumber="8" whitePlayer="ALLHELLSGERARDO"/>
+        <Game blackPlayer="ASAKAASAKA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="8" tableNumber="9" whitePlayer="MARTY.MACCIONEMARTY"/>
+        <Game blackPlayer="NINOSANANTONINO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="8" tableNumber="10" whitePlayer="OASAMAOUPSAMUELE"/>
+        <Game blackPlayer="WIND68GUIDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="8" tableNumber="11" whitePlayer="MAURO#4MAURO"/>
+        <Game blackPlayer="SILVIASILVIA" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="8" tableNumber="12" whitePlayer="10GENVALERIO"/>
+        <Game blackPlayer="TOKI1985ANTONIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="7" tableNumber="1" whitePlayer="LUDOSTEKSTEFANO"/>
+        <Game blackPlayer="KAWABATAWILLIAM" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="7" tableNumber="2" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="10GENVALERIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="7" tableNumber="3" whitePlayer="ALLHELLSGERARDO"/>
+        <Game blackPlayer="SILVIASILVIA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="7" tableNumber="4" whitePlayer="NINOSANANTONINO"/>
+        <Game blackPlayer="ASAKAASAKA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="7" tableNumber="5" whitePlayer="HASAKELMARCO"/>
+        <Game blackPlayer="SEEKER04DAVIDE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="7" tableNumber="6" whitePlayer="THESHOLVELERPIETRO"/>
+        <Game blackPlayer="OASAMAOUPSAMUELE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="7" tableNumber="7" whitePlayer="MARTY.MACCIONEMARTY"/>
+        <Game blackPlayer="BOBORESALVATORE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="7" tableNumber="8" whitePlayer="S.ROBESONLUCIANO"/>
+        <Game blackPlayer="MAURO#4MAURO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="7" tableNumber="9" whitePlayer="S.TOLOMEISIMONE"/>
+        <Game blackPlayer="SLANSSANDRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="7" tableNumber="10" whitePlayer="D4RKKSTARRMARCELLO"/>
+        <Game blackPlayer="AIXELALESSANDRO" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="7" tableNumber="11" whitePlayer="YAWCORR"/>
+        <Game blackPlayer="MJPAZ80JONAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="7" tableNumber="12" whitePlayer="WIND68GUIDO"/>
+        <Game blackPlayer="S.TOLOMEISIMONE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="1" whitePlayer="D4RKKSTARRMARCELLO"/>
+        <Game blackPlayer="MARTY.MACCIONEMARTY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="2" whitePlayer="LUDOSTEKSTEFANO"/>
+        <Game blackPlayer="MAURO#4MAURO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="3" whitePlayer="SLANSSANDRO"/>
+        <Game blackPlayer="ALLHELLSGERARDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="4" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="OASAMAOUPSAMUELE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="5" whitePlayer="TOKI1985ANTONIO"/>
+        <Game blackPlayer="10GENVALERIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="6" whitePlayer="KAWABATAWILLIAM"/>
+        <Game blackPlayer="NINOSANANTONINO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="7" whitePlayer="S.ROBESONLUCIANO"/>
+        <Game blackPlayer="SILVIASILVIA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="8" whitePlayer="SEEKER04DAVIDE"/>
+        <Game blackPlayer="MJPAZ80JONAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="6" tableNumber="9" whitePlayer="BOBORESALVATORE"/>
+        <Game blackPlayer="HASAKELMARCO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="10" whitePlayer="YAWCORR"/>
+        <Game blackPlayer="ASAKAASAKA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="11" whitePlayer="THESHOLVELERPIETRO"/>
+        <Game blackPlayer="WIND68GUIDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="12" whitePlayer="AIXELALESSANDRO"/>
+        <Game blackPlayer="THESHOLVELERPIETRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="1" whitePlayer="D4RKKSTARRMARCELLO"/>
+        <Game blackPlayer="BOBORESALVATORE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="2" whitePlayer="LUDOSTEKSTEFANO"/>
+        <Game blackPlayer="SEEKER04DAVIDE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="3" whitePlayer="SLANSSANDRO"/>
+        <Game blackPlayer="S.ROBESONLUCIANO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="4" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="AIXELALESSANDRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="5" whitePlayer="TOKI1985ANTONIO"/>
+        <Game blackPlayer="YAWCORR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="6" whitePlayer="KAWABATAWILLIAM"/>
+        <Game blackPlayer="MARTY.MACCIONEMARTY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="7" whitePlayer="HASAKELMARCO"/>
+        <Game blackPlayer="10GENVALERIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="8" whitePlayer="MJPAZ80JONAS"/>
+        <Game blackPlayer="S.TOLOMEISIMONE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="9" whitePlayer="ASAKAASAKA"/>
+        <Game blackPlayer="MAURO#4MAURO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="10" whitePlayer="NINOSANANTONINO"/>
+        <Game blackPlayer="OASAMAOUPSAMUELE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="11" whitePlayer="WIND68GUIDO"/>
+        <Game blackPlayer="ALLHELLSGERARDO" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="12" whitePlayer="SILVIASILVIA"/>
+        <Game blackPlayer="LUDOSTEKSTEFANO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="1" whitePlayer="SLANSSANDRO"/>
+        <Game blackPlayer="TOKI1985ANTONIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="2" whitePlayer="KAWABATAWILLIAM"/>
+        <Game blackPlayer="SEEKER04DAVIDE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="3" whitePlayer="BOBORESALVATORE"/>
+        <Game blackPlayer="THESHOLVELERPIETRO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="4" whitePlayer="AIXELALESSANDRO"/>
+        <Game blackPlayer="MJPAZ80JONAS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="5" whitePlayer="ASAKAASAKA"/>
+        <Game blackPlayer="WIND68GUIDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="6" whitePlayer="SILVIASILVIA"/>
+        <Game blackPlayer="MARTY.MACCIONEMARTY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="7" whitePlayer="MAURO#4MAURO"/>
+        <Game blackPlayer="OASAMAOUPSAMUELE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="8" whitePlayer="10GENVALERIO"/>
+        <Game blackPlayer="HIRAOKASANEMILIANO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="9" whitePlayer="D4RKKSTARRMARCELLO"/>
+        <Game blackPlayer="YAWCORR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="10" whitePlayer="S.ROBESONLUCIANO"/>
+        <Game blackPlayer="HASAKELMARCO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="11" whitePlayer="NINOSANANTONINO"/>
+        <Game blackPlayer="ALLHELLSGERARDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="12" whitePlayer="S.TOLOMEISIMONE"/>
+        <Game blackPlayer="HASAKELMARCO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="D4RKKSTARRMARCELLO"/>
+        <Game blackPlayer="MJPAZ80JONAS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="2" whitePlayer="LUDOSTEKSTEFANO"/>
+        <Game blackPlayer="ASAKAASAKA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="SLANSSANDRO"/>
+        <Game blackPlayer="NINOSANANTONINO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="4" whitePlayer="HIRAOKASANEMILIANO"/>
+        <Game blackPlayer="WIND68GUIDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="5" whitePlayer="TOKI1985ANTONIO"/>
+        <Game blackPlayer="SILVIASILVIA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="6" whitePlayer="KAWABATAWILLIAM"/>
+        <Game blackPlayer="10GENVALERIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="7" whitePlayer="S.ROBESONLUCIANO"/>
+        <Game blackPlayer="OASAMAOUPSAMUELE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="8" whitePlayer="SEEKER04DAVIDE"/>
+        <Game blackPlayer="ALLHELLSGERARDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="9" whitePlayer="BOBORESALVATORE"/>
+        <Game blackPlayer="S.TOLOMEISIMONE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="10" whitePlayer="YAWCORR"/>
+        <Game blackPlayer="MARTY.MACCIONEMARTY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="11" whitePlayer="THESHOLVELERPIETRO"/>
+        <Game blackPlayer="MAURO#4MAURO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="12" whitePlayer="AIXELALESSANDRO"/>
+        <Game blackPlayer="D4RKKSTARRMARCELLO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="S.ROBESONLUCIANO"/>
+        <Game blackPlayer="LUDOSTEKSTEFANO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="SEEKER04DAVIDE"/>
+        <Game blackPlayer="IZABERAIZABER" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="3" whitePlayer="BOBORESALVATORE"/>
+        <Game blackPlayer="HIRAOKASANEMILIANO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="4" whitePlayer="MAURIFICIUSMAURO"/>
+        <Game blackPlayer="TOKI1985ANTONIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="5" whitePlayer="THESHOLVELERPIETRO"/>
+        <Game blackPlayer="KAWABATAWILLIAM" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="6" whitePlayer="AIXELALESSANDRO"/>
+        <Game blackPlayer="HASAKELMARCO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="7" whitePlayer="ALLHELLSGERARDO"/>
+        <Game blackPlayer="MJPAZ80JONAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="8" whitePlayer="OASAMAOUPSAMUELE"/>
+        <Game blackPlayer="ASAKAASAKA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="9" whitePlayer="10GENVALERIO"/>
+        <Game blackPlayer="NINOSANANTONINO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="10" whitePlayer="S.TOLOMEISIMONE"/>
+        <Game blackPlayer="MARTY.MACCIONEMARTY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="11" whitePlayer="WIND68GUIDO"/>
+        <Game blackPlayer="SILVIASILVIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="12" whitePlayer="MAURO#4MAURO"/>
+    </Games>
+    <TournamentParameterSet>
+        <GeneralParameterSet basicTime="60" beginDate="2020-10-01" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="toki85" endDate="2020-04-15" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="On Line GO server" name="DDK League 2019 2020" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="20" shortName="DDKL20192020" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="false" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="MMS" number="1"/>
+                <PlacementCriterion name="NBW" number="2"/>
+                <PlacementCriterion name="SOSW" number="3"/>
+                <PlacementCriterion name="SOSOSW" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="true" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="rank" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="true" showPlayerClub="true" showPlayerCountry="true" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="false"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="4"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

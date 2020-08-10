@@ -15,6 +15,17 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
     private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     private Date saveDT;
     private String externalIPAddress;
+    private String remoteRunningMode = "---";
+    
+    @Override
+    public String getRemoteRunningMode(){
+        return remoteRunningMode;
+    }
+    
+    @Override
+    public void setRemoteRunningMode(String remoteRunningMode){
+        this.remoteRunningMode = remoteRunningMode;
+    }
     
     @Override
     public Date getSaveDT()throws RemoteException{
@@ -3118,31 +3129,50 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
 
         String strClass = "X";
         int complementaryTimeSystem = gps.getComplementaryTimeSystem();
-        switch (complementaryTimeSystem) {
-            case GeneralParameterSet.GEN_GP_CTS_SUDDENDEATH:
-            case GeneralParameterSet.GEN_GP_CTS_STDBYOYOMI:
-            case GeneralParameterSet.GEN_GP_CTS_CANBYOYOMI:
-                if (bt >= 1500 && at >= 1800) {
-                    strClass = "C";
-                }
-                if (bt >= 2400 && at >= 3000) {
-                    strClass = "B";
-                }
-                if (bt >= 3600 && at >= 4500) {
-                    strClass = "A";
-                }
-                break;
-            case GeneralParameterSet.GEN_GP_CTS_FISCHER:
-                if (bt >= 1200 && at >= 1800) {
-                    strClass = "C";
-                }
-                if (bt >= 1800 && at >= 3000) {
-                    strClass = "B";
-                }
-                if (bt >= 2700 && at >= 4500) {
-                    strClass = "A";
-                }
-                break;
+        boolean bInternet = gps.isBInternet();
+        if(bInternet){
+            switch (complementaryTimeSystem) {
+                case GeneralParameterSet.GEN_GP_CTS_SUDDENDEATH:
+                case GeneralParameterSet.GEN_GP_CTS_STDBYOYOMI:
+                case GeneralParameterSet.GEN_GP_CTS_CANBYOYOMI:
+                    if (bt >= 2400 && at >= 3000) {
+                        strClass = "D";
+                    }
+                    break;
+                case GeneralParameterSet.GEN_GP_CTS_FISCHER:
+                    if (bt >= 1800 && at >= 3000) {
+                        strClass = "D";
+                    }
+                    break;
+            }
+        }
+        else{
+            switch (complementaryTimeSystem) {
+                case GeneralParameterSet.GEN_GP_CTS_SUDDENDEATH:
+                case GeneralParameterSet.GEN_GP_CTS_STDBYOYOMI:
+                case GeneralParameterSet.GEN_GP_CTS_CANBYOYOMI:
+                    if (bt >= 1500 && at >= 1800) {
+                        strClass = "C";
+                    }
+                    if (bt >= 2400 && at >= 3000) {
+                        strClass = "B";
+                    }
+                    if (bt >= 3600 && at >= 4500) {
+                        strClass = "A";
+                    }
+                    break;
+                case GeneralParameterSet.GEN_GP_CTS_FISCHER:
+                    if (bt >= 1200 && at >= 1800) {
+                        strClass = "C";
+                    }
+                    if (bt >= 1800 && at >= 3000) {
+                        strClass = "B";
+                    }
+                    if (bt >= 2700 && at >= 4500) {
+                        strClass = "A";
+                    }
+                    break;
+            }
         }
 
         return strClass;
@@ -3161,10 +3191,12 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
                 at = bt;
                 break;
             case GeneralParameterSet.GEN_GP_CTS_STDBYOYOMI:
-                at = bt + 45 * gps.getStdByoYomiTime();
+//                at = bt + 45 * gps.getStdByoYomiTime();
+                at = bt + 120 * gps.getStdByoYomiTime();
                 break;
             case GeneralParameterSet.GEN_GP_CTS_CANBYOYOMI:
-                at = bt + (60 * gps.getCanByoYomiTime()) / gps.getNbMovesCanTime();
+//                at = bt + (60 * gps.getCanByoYomiTime()) / gps.getNbMovesCanTime();
+                at = bt + (120 * gps.getCanByoYomiTime()) / gps.getNbMovesCanTime();
                 break;
             case GeneralParameterSet.GEN_GP_CTS_FISCHER:
                 at = bt + 120 * gps.getFischerTime();

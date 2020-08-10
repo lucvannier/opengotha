@@ -241,6 +241,13 @@ public class ExternalDocument {
     public static String importTournamentFromXMLFile(File sourceFile, TournamentInterface tournament, 
             boolean bPlayers, boolean bGames, boolean bTPS, boolean bTeams, boolean bClubsGroups) {
         
+        String remoteRunningMode = ExternalDocument.importRemoteRunningModeFromXMLFile(sourceFile);
+        try {
+            tournament.setRemoteRunningMode(remoteRunningMode);
+        } catch (RemoteException ex) {
+            Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
+        }
+        
         Date saveDT = ExternalDocument.importSaveDTFromXMLFile(sourceFile);
         String externalIPAddress = ExternalDocument.importExternalIPAddressFromXMLFile(sourceFile);
         try {
@@ -488,6 +495,18 @@ public class ExternalDocument {
         return dataVersion;
     }
     
+    private static String importRemoteRunningModeFromXMLFile(File sourceFile) {
+        Document doc = getDocumentFromXMLFile(sourceFile);
+        if (doc == null) {
+            return "---";
+        }
+        NodeList nl = doc.getElementsByTagName("Tournament");
+        Node n = nl.item(0);
+        NamedNodeMap nnm = n.getAttributes();
+        String strRRM = extractNodeValue(nnm, "runningMode", "---");
+        return strRRM;
+    }
+   
     private static Date importSaveDTFromXMLFile(File sourceFile) {
         Document doc = getDocumentFromXMLFile(sourceFile);
         if (doc == null) {
@@ -629,6 +648,9 @@ public class ExternalDocument {
         Date endDate = GothaDate.parse(strEndDate, "yyyy-MM-dd");
         if (GothaDate.getYear(endDate)<= 1900) endDate = curDate;
         gps.setEndDate(endDate);
+        
+        String strBInternet = extractNodeValue(nnmGPS, "bInternet", "false");
+        if (strBInternet.equals("true")) gps.setBInternet(true);
         
         int time = extractNodeIntValue(nnmGPS, "time", GeneralParameterSet.GEN_GP_BASICTIME_DEF);    // For old dataVersion
         gps.setBasicTime(extractNodeIntValue(nnmGPS, "basicTime", time));
@@ -1559,6 +1581,7 @@ public class ExternalDocument {
 
         // Headers       
         try {
+            boolean bInternet = false;
             output.write("; CL[" + tournament.egfClass() + "]");
             output.write("\n; EV[" + gps.getName() + "]");
             output.write("\n; PC[," + gps.getLocation() + "]");
@@ -2891,6 +2914,14 @@ public class ExternalDocument {
         Document document = documentBuilder.newDocument();
 
         Element rootElement = document.createElement("Tournament");
+        String strRM = "UNDEFINED";
+        switch(Gotha.runningMode){
+            case Gotha.RUNNING_MODE_SAL : strRM = "SAL"; break;
+            case Gotha.RUNNING_MODE_SRV : strRM = "SRV"; break;
+            case Gotha.RUNNING_MODE_CLI : strRM = "CLI"; break;
+        }
+        rootElement.setAttribute("runningMode", "" + strRM);
+        
         rootElement.setAttribute("dataVersion", "" + Gotha.GOTHA_DATA_VERSION);
         rootElement.setAttribute("gothaVersion", "" + Gotha.GOTHA_VERSION);
         rootElement.setAttribute("gothaMinorVersion", "" + Gotha.GOTHA_MINOR_VERSION);
@@ -3236,8 +3267,7 @@ public class ExternalDocument {
     }
 
     /**
-     * Generates an xml players Liste Element and includes all players from alPlayers
-     * returns the Element
+     * Generates an xml players Liste Element and includes all players from alPlayers"bInternet     * returns the Element
      */
     private static Element generateXMLTournamentParameterSetElement(Document document, TournamentParameterSet tps) {
         Element emTournamentParameterSet = document.createElement("TournamentParameterSet");
@@ -3252,6 +3282,12 @@ public class ExternalDocument {
         emGeneralParameterSet.setAttribute("endDate", new SimpleDateFormat("yyyy-MM-dd").format(gps.getEndDate()));
         emGeneralParameterSet.setAttribute("size", gps.getStrSize());
         emGeneralParameterSet.setAttribute("komi", gps.getStrKomi());
+
+        boolean bInternet = gps.isBInternet();
+        String strBInternet = "false";
+        if (bInternet) strBInternet = "true";
+        emGeneralParameterSet.setAttribute("bInternet", strBInternet);
+
         emGeneralParameterSet.setAttribute("basicTime", "" + gps.getBasicTime());
         String strComplementaryTimeSystem;
         switch (gps.getComplementaryTimeSystem()) {

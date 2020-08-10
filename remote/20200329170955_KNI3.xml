@@ -1,0 +1,121 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="109.28.21.210" gothaMinorVersion="0" gothaVersion="349" saveDT="20200329170955">
+<Players>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Machyu" grade="2D" name="Machyu" participating="11111111111111111111" rank="2D" rating="2200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Anaconda" grade="12K" name="Anaconda" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Scieatik" grade="7K" name="Scieatik" participating="11111111111111111111" rank="7K" rating="1400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sophonxe" grade="6K" name="Sophonxe" participating="11111111111111111111" rank="6K" rating="1500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Felino" grade="2K" name="Felino" participating="11111111111111111111" rank="2K" rating="1900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Drazelior" grade="5K" name="Drazelior" participating="11111111111111111111" rank="5K" rating="1600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Evilcat" grade="3D" name="Evilcat" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Laynha" grade="2K" name="Laynha" participating="11111111111111111111" rank="2K" rating="1900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Prisme" grade="4K" name="Prisme" participating="11111111111111111111" rank="4K" rating="1700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Joris104" grade="3K" name="Joris104" participating="11111111111111111111" rank="3K" rating="1800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Hebus" grade="7K" name="Hebus" participating="11111111111111111111" rank="7K" rating="1400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Zororo" grade="2D" name="Zororo" participating="11111111111111111111" rank="2D" rating="2200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Grablor" grade="2K" name="Grablor" participating="11111111111111111111" rank="2K" rating="1900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jaina" grade="1K" name="Jaina" participating="11110111111111111111" rank="1K" rating="2000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Vlmmoa" grade="1K" name="Vlmmoa" participating="11111111111111111111" rank="1K" rating="2000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Guntheri" grade="7K" name="Guntheri" participating="11111111111111111111" rank="7K" rating="1400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Kalyptane" grade="5K" name="Kalyptane" participating="11111111111111111111" rank="5K" rating="1600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gotwin" grade="8K" name="Gotwin" participating="11111111111111111111" rank="8K" rating="1300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Tcherni" grade="5K" name="Tcherni" participating="11111111111111111111" rank="5K" rating="1600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Lawliet" grade="4K" name="Lawliet" participating="11111111111111111111" rank="4K" rating="1700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gregth" grade="1D" name="Gregth" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Fenring" grade="1K" name="Fenring" participating="11111111111111111111" rank="1K" rating="2000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Labda" grade="4K" name="Labda" participating="11111111111111111111" rank="4K" rating="1700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Malia" grade="4K" name="Malia" participating="11111111111111111111" rank="4K" rating="1700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="ANACONDAANACONDA" handicap="7" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="MALIAMALIA"/>
+<Game blackPlayer="LABDALABDA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="DRAZELIORDRAZELIOR"/>
+<Game blackPlayer="TCHERNITCHERNI" handicap="6" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="EVILCATEVILCAT"/>
+<Game blackPlayer="FELINOFELINO" handicap="2" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="4" whitePlayer="MACHYUMACHYU"/>
+<Game blackPlayer="SCIEATIKSCIEATIK" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="FENRINGFENRING"/>
+<Game blackPlayer="GOTWINGOTWIN" handicap="8" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="6" whitePlayer="ZOROROZORORO"/>
+<Game blackPlayer="GRABLORGRABLOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="7" whitePlayer="VLMMOAVLMMOA"/>
+<Game blackPlayer="LAWLIETLAWLIET" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="8" whitePlayer="GREGTHGREGTH"/>
+<Game blackPlayer="HEBUSHEBUS" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="9" whitePlayer="PRISMEPRISME"/>
+<Game blackPlayer="GREGTHGREGTH" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="1" whitePlayer="VLMMOAVLMMOA"/>
+<Game blackPlayer="SOPHONXESOPHONXE" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="10" whitePlayer="JORIS104JORIS104"/>
+<Game blackPlayer="LAYNHALAYNHA" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="2" whitePlayer="FENRINGFENRING"/>
+<Game blackPlayer="KALYPTANEKALYPTANE" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="11" whitePlayer="LAYNHALAYNHA"/>
+<Game blackPlayer="EVILCATEVILCAT" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="3" whitePlayer="ZOROROZORORO"/>
+<Game blackPlayer="GUNTHERIGUNTHERI" handicap="5" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="12" whitePlayer="JAINAJAINA"/>
+<Game blackPlayer="LABDALABDA" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="4" whitePlayer="FELINOFELINO"/>
+<Game blackPlayer="ANACONDAANACONDA" handicap="7" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="5" whitePlayer="LAWLIETLAWLIET"/>
+<Game blackPlayer="PRISMEPRISME" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="6" whitePlayer="GRABLORGRABLOR"/>
+<Game blackPlayer="KALYPTANEKALYPTANE" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="7" whitePlayer="JORIS104JORIS104"/>
+<Game blackPlayer="SOPHONXESOPHONXE" handicap="6" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="8" whitePlayer="MACHYUMACHYU"/>
+<Game blackPlayer="GOTWINGOTWIN" handicap="2" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="9" whitePlayer="TCHERNITCHERNI"/>
+<Game blackPlayer="MALIAMALIA" handicap="2" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="10" whitePlayer="JAINAJAINA"/>
+<Game blackPlayer="GUNTHERIGUNTHERI" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="11" whitePlayer="DRAZELIORDRAZELIOR"/>
+<Game blackPlayer="SCIEATIKSCIEATIK" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="12" whitePlayer="HEBUSHEBUS"/>
+<Game blackPlayer="LAYNHALAYNHA" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="1" whitePlayer="GREGTHGREGTH"/>
+<Game blackPlayer="MALIAMALIA" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="2" whitePlayer="VLMMOAVLMMOA"/>
+<Game blackPlayer="ANACONDAANACONDA" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="3" whitePlayer="FENRINGFENRING"/>
+<Game blackPlayer="FELINOFELINO" handicap="0" knownColor="true" result="RESULT_EQUAL" roundNumber="4" tableNumber="4" whitePlayer="GRABLORGRABLOR"/>
+<Game blackPlayer="PRISMEPRISME" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="5" whitePlayer="EVILCATEVILCAT"/>
+<Game blackPlayer="JORIS104JORIS104" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="6" whitePlayer="ZOROROZORORO"/>
+<Game blackPlayer="GOTWINGOTWIN" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="7" whitePlayer="LABDALABDA"/>
+<Game blackPlayer="SOPHONXESOPHONXE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="8" whitePlayer="GUNTHERIGUNTHERI"/>
+<Game blackPlayer="TCHERNITCHERNI" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="9" whitePlayer="MACHYUMACHYU"/>
+<Game blackPlayer="LAWLIETLAWLIET" handicap="2" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="10" whitePlayer="JAINAJAINA"/>
+<Game blackPlayer="HEBUSHEBUS" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="11" whitePlayer="KALYPTANEKALYPTANE"/>
+<Game blackPlayer="SCIEATIKSCIEATIK" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="12" whitePlayer="DRAZELIORDRAZELIOR"/>
+<Game blackPlayer="FELINOFELINO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="LAYNHALAYNHA"/>
+<Game blackPlayer="VLMMOAVLMMOA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="2" whitePlayer="FENRINGFENRING"/>
+<Game blackPlayer="ANACONDAANACONDA" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="GREGTHGREGTH"/>
+<Game blackPlayer="GOTWINGOTWIN" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="4" whitePlayer="PRISMEPRISME"/>
+<Game blackPlayer="GUNTHERIGUNTHERI" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="5" whitePlayer="JORIS104JORIS104"/>
+<Game blackPlayer="LABDALABDA" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="6" whitePlayer="EVILCATEVILCAT"/>
+<Game blackPlayer="SOPHONXESOPHONXE" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="7" whitePlayer="GRABLORGRABLOR"/>
+<Game blackPlayer="ZOROROZORORO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="8" whitePlayer="MACHYUMACHYU"/>
+<Game blackPlayer="TCHERNITCHERNI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="9" whitePlayer="MALIAMALIA"/>
+<Game blackPlayer="KALYPTANEKALYPTANE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="10" whitePlayer="DRAZELIORDRAZELIOR"/>
+<Game blackPlayer="HEBUSHEBUS" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="11" whitePlayer="LAWLIETLAWLIET"/>
+<Game blackPlayer="SCIEATIKSCIEATIK" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="12" whitePlayer="JAINAJAINA"/>
+<Game blackPlayer="ANACONDAANACONDA" handicap="7" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="PRISMEPRISME"/>
+<Game blackPlayer="LAYNHALAYNHA" handicap="3" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="EVILCATEVILCAT"/>
+<Game blackPlayer="JORIS104JORIS104" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="3" whitePlayer="FELINOFELINO"/>
+<Game blackPlayer="LABDALABDA" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="4" whitePlayer="FENRINGFENRING"/>
+<Game blackPlayer="GOTWINGOTWIN" handicap="6" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="5" whitePlayer="VLMMOAVLMMOA"/>
+<Game blackPlayer="GUNTHERIGUNTHERI" handicap="6" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="6" whitePlayer="GREGTHGREGTH"/>
+<Game blackPlayer="DRAZELIORDRAZELIOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="7" whitePlayer="TCHERNITCHERNI"/>
+<Game blackPlayer="SCIEATIKSCIEATIK" handicap="4" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="8" whitePlayer="GRABLORGRABLOR"/>
+<Game blackPlayer="HEBUSHEBUS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="9" whitePlayer="SOPHONXESOPHONXE"/>
+<Game blackPlayer="JAINAJAINA" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="10" whitePlayer="ZOROROZORORO"/>
+<Game blackPlayer="KALYPTANEKALYPTANE" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="11" whitePlayer="MACHYUMACHYU"/>
+<Game blackPlayer="MALIAMALIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="12" whitePlayer="LAWLIETLAWLIET"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-03-02" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Lili76610" endDate="2020-04-05" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="10K" genMMFloor="10K" genMMS2ValueAbsent="0" genMMS2ValueBye="1" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="1" genRoundDownNBWMMS="false" komi="7.5" location="KGS" name="KNI 3éme édition" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="6" shortName="KNI_3" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="9D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSW" number="2"/>
+<PlacementCriterion name="SOSOSW" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="NULL" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

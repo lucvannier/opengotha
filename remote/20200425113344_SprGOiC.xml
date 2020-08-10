@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="31.5.142.215" gothaMinorVersion="0" gothaVersion="349" saveDT="20200425113344">
+<Players>
+<Player agaExpirationDate="" agaId="" club="TMWS" country="RO" egfPin="14662175" ffgLicence="" ffgLicenceStatus="" firstName="Adrian" grade="18K" name="Glavan" participating="11111111111111111111" rank="18K" rating="313" ratingOrigin="EGF : 313" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="18601792" ffgLicence="" ffgLicenceStatus="" firstName="Florin" grade="18K" name="Pop" participating="11111111111111111111" rank="18K" rating="293" ratingOrigin="EGF : 293" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="19349902" ffgLicence="" ffgLicenceStatus="" firstName="Mihail" grade="17K" name="Patrascuta" participating="11111111111111111111" rank="17K" rating="362" ratingOrigin="EGF : 362" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TMWS" country="RO" egfPin="12737153" ffgLicence="" ffgLicenceStatus="" firstName="Cristian" grade=" 8K" name="Bratu" participating="11111111111111111111" rank="8K" rating="1322" ratingOrigin="EGF : 1322" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="" club="TMWS" country="RO" egfPin="18625145" ffgLicence="" ffgLicenceStatus="" firstName="Rares-Mihai" grade="19K" name="Irhasiu" participating="11111111111111111111" rank="19K" rating="211" ratingOrigin="EGF : 211" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cara" country="RO" egfPin="18301701" ffgLicence="" ffgLicenceStatus="" firstName="Darius" grade="10K" name="Tolos" participating="11111111111111111111" rank="10K" rating="1099" ratingOrigin="EGF : 1099" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="18533504" ffgLicence="" ffgLicenceStatus="" firstName="Mihai-Florin" grade="16K" name="Pop" participating="11111111111111111111" rank="16K" rating="494" ratingOrigin="EGF : 494" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cara" country="RO" egfPin="18386709" ffgLicence="" ffgLicenceStatus="" firstName="Rares" grade="17K" name="Micuta" participating="11111111111111111111" rank="17K" rating="384" ratingOrigin="EGF : 384" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="18513517" ffgLicence="" ffgLicenceStatus="" firstName="Alexandru-Nicolas" grade="13K" name="Patrascu" participating="11111111111111111111" rank="13K" rating="775" ratingOrigin="EGF : 775" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="19533415" ffgLicence="" ffgLicenceStatus="" firstName="Ilinca-Stefania" grade="20K" name="Pop" participating="11111111111111111111" rank="20K" rating="121" ratingOrigin="EGF : 121" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TMWS" country="RO" egfPin="18437639" ffgLicence="" ffgLicenceStatus="" firstName="Maria" grade="15K" name="Irhasiu" participating="11111111111111111111" rank="15K" rating="553" ratingOrigin="EGF : 553" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cara" country="RO" egfPin="18374708" ffgLicence="" ffgLicenceStatus="" firstName="Madalin_Alexandru" grade=" 5K" name="Gheorghe" participating="11111111111111111111" rank="5K" rating="1641" ratingOrigin="EGF : 1641" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="19533602" ffgLicence="" ffgLicenceStatus="" firstName="Sara_Maria" grade="19K" name="Ghetu" participating="11111111111111111111" rank="19K" rating="211" ratingOrigin="EGF : 211" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="18625728" ffgLicence="" ffgLicenceStatus="" firstName="Edvin-Matei" grade="12K" name="Petre" participating="11111111111111111111" rank="12K" rating="896" ratingOrigin="EGF : 896" registeringStatus="FIN" smmsCorrection="1"/>
+</Players>
+<Games>
+<Game blackPlayer="PETREEDVIN-MATEI" handicap="4" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="BRATUCRISTIAN"/>
+<Game blackPlayer="TOLOSDARIUS" handicap="5" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="GHEORGHEMADALIN_ALEXANDRU"/>
+<Game blackPlayer="GHETUSARA_MARIA" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="POPMIHAI-FLORIN"/>
+<Game blackPlayer="GLAVANADRIAN" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="PATRASCUTAMIHAIL"/>
+<Game blackPlayer="POPILINCA-STEFANIA" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="IRHASIUMARIA"/>
+<Game blackPlayer="IRHASIURARES-MIHAI" handicap="2" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="6" whitePlayer="MICUTARARES"/>
+<Game blackPlayer="POPFLORIN" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="7" whitePlayer="PATRASCUALEXANDRU-NICOLAS"/>
+<Game blackPlayer="PETREEDVIN-MATEI" handicap="2" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="1" whitePlayer="TOLOSDARIUS"/>
+<Game blackPlayer="POPMIHAI-FLORIN" handicap="3" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="2" whitePlayer="PATRASCUALEXANDRU-NICOLAS"/>
+<Game blackPlayer="PATRASCUTAMIHAIL" handicap="9" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="3" whitePlayer="GHEORGHEMADALIN_ALEXANDRU"/>
+<Game blackPlayer="IRHASIURARES-MIHAI" handicap="9" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="4" whitePlayer="BRATUCRISTIAN"/>
+<Game blackPlayer="GHETUSARA_MARIA" handicap="4" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="5" whitePlayer="IRHASIUMARIA"/>
+<Game blackPlayer="POPFLORIN" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="6" whitePlayer="MICUTARARES"/>
+<Game blackPlayer="POPILINCA-STEFANIA" handicap="2" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="7" whitePlayer="GLAVANADRIAN"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="45" beginDate="2020-04-25" canByoYomiTime="300" complementaryTimeSystem="SUDDENDEATH" director="Dan Groza" endDate="2020-04-25" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="10K" genMMFloor="10K" genMMS2ValueAbsent="0" genMMS2ValueBye="0" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="0" genRoundDownNBWMMS="true" komi="6.5" location="KGS" name="SprigGO in Caracal" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="SprGOiC" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="9" hdCorrection="0" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

@@ -27,8 +27,8 @@ import javax.swing.table.DefaultTableModel;
  * @author Luc
  */
 public class JFrRemoteTournaments extends javax.swing.JFrame {
-    private static final int RRM_COL = 0;
-    private static final int SHORTNAME_COL = RRM_COL + 1;
+    private static final int RVM_COL = 0;
+    private static final int SHORTNAME_COL = RVM_COL + 1;
     private static final int BEGINDATE_COL = SHORTNAME_COL + 1;
     private static final int SAVEDT_COL = BEGINDATE_COL + 1;
     private static final int LOCATION_COL = SAVEDT_COL + 1;
@@ -69,13 +69,13 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         }
     }
         private void initPnlTournaments() throws RemoteException {    
-            JFrGotha.formatColumn(tblTournaments, RRM_COL,        "RRM",             20, JLabel.LEFT, JLabel.LEFT);
+            JFrGotha.formatColumn(tblTournaments, RVM_COL,       "RVM",             40,  JLabel.LEFT, JLabel.LEFT);
             JFrGotha.formatColumn(tblTournaments, SHORTNAME_COL, "Short name",      100, JLabel.LEFT, JLabel.LEFT);
             JFrGotha.formatColumn(tblTournaments, BEGINDATE_COL, "Begin date",      60,  JLabel.LEFT, JLabel.LEFT);
-            JFrGotha.formatColumn(tblTournaments, SAVEDT_COL,    "Save date/time",  100,  JLabel.LEFT, JLabel.LEFT);
+            JFrGotha.formatColumn(tblTournaments, SAVEDT_COL,    "Save date/time",  100, JLabel.LEFT, JLabel.LEFT);
             JFrGotha.formatColumn(tblTournaments, LOCATION_COL,  "Location",        80,  JLabel.LEFT, JLabel.LEFT);
             JFrGotha.formatColumn(tblTournaments, DIRECTOR_COL,  "Director",        80,  JLabel.LEFT, JLabel.LEFT);
-            JFrGotha.formatColumn(tblTournaments, NBROUNDS_COL,  "Nb rounds",       40,  JLabel.CENTER, JLabel.CENTER);
+            JFrGotha.formatColumn(tblTournaments, NBROUNDS_COL,  "Nb rounds",       30,  JLabel.CENTER, JLabel.CENTER);
             JFrGotha.formatColumn(tblTournaments, NBPLAYERS_COL, "Nb players",      40,  JLabel.CENTER, JLabel.CENTER);
             JFrGotha.formatColumn(tblTournaments, IP_COL,        "IP",              80,  JLabel.LEFT, JLabel.LEFT);
             JFrGotha.formatColumn(tblTournaments, IPLOC_COL,     "IP Location",     120, JLabel.LEFT, JLabel.LEFT);
@@ -100,7 +100,8 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
             try {
                 String strRRM = "---";
                 strRRM = t.getRemoteRunningMode();
-                model.setValueAt(strRRM, line, JFrRemoteTournaments.RRM_COL);    
+                String strRVM = Gotha.getGothaVersionNumber() + "_" + strRRM;
+                model.setValueAt(strRVM, line, JFrRemoteTournaments.RVM_COL);    
 
                 GeneralParameterSet gps = t.getTournamentParameterSet().getGeneralParameterSet();
                 String shortName = t.getShortName();
@@ -339,7 +340,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
                 {null, null, null, null, null, null, null, null, null, null}
             },
             new String [] {
-                "RM", "Short name", "Begin date", "Save date/time", "Location", "Director", "Nb rounds", "Nb players", "IP", "IP Location"
+                "RVM", "Short name", "Begin date", "Save date/time", "Location", "Director", "Nb rounds", "Nb players", "IP", "IP Location"
             }
         ));
         pnlTournaments.setViewportView(tblTournaments);

@@ -1735,8 +1735,10 @@ public class JFrGotha extends javax.swing.JFrame {
      * supposed to look like "recentTournamentx" where x = 0 to 9
      */
     private ArrayList<String> getRecentTournamentsList() {
+//        Gotha.printTopChrono("Deb. getRecentTournamentsList");
         Preferences prefsRoot = Preferences.userRoot();
         Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
+//        Gotha.printTopChrono(". getRecentTournamentsList");
 
         ArrayList<String> alS = new ArrayList<String>();
         for (int numRT = 0; numRT < MAX_NUMBER_OF_RECENT_TOURNAMENTS; numRT++) {

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="200.86.186.178" gothaMinorVersion="0" gothaVersion="349" saveDT="20200813234350">
+<Players>
+<Player agaExpirationDate="" agaId="" club="Rnin" country="JP" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sai" grade="25K" name="Fujiwara" participating="11111111111111111111" rank="25K" rating="-400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rnin" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Cristian" grade="1D" name="Yurisch" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rnin" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Claudia" grade="7K" name="Flores" participating="11111111111111111111" rank="7K" rating="1400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rnin" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Osvaldo" grade="4K" name="Moreno" participating="11111111111111111111" rank="4K" rating="1700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rnin" country="ES" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Eloy" grade="9K" name="Martín" participating="11111111111111111111" rank="9K" rating="1200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rnin" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Juan" grade="14K" name="Ureta" participating="11111111111111111111" rank="14K" rating="700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rnin" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alfredo" grade="7K" name="Jaramillo" participating="11111111111111111111" rank="7K" rating="1400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rnin" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Matías" grade="3K" name="Navarro" participating="11111111111111111111" rank="3K" rating="1800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rnin" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Juan Pablo" grade="13K" name="Cornejo" participating="11111111111111111111" rank="13K" rating="800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rnin" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Daniel" grade="8K" name="Pardo" participating="11111111111111111111" rank="8K" rating="1300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rnin" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Pablo" grade="8K" name="Núñez" participating="11111111111111111111" rank="8K" rating="1300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rnin" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gabriel" grade="17K" name="Vásquez" participating="11111111111111111111" rank="17K" rating="400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games/>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-08-13" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Ronin" endDate="2020-10-13" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Virtual" name="1º Torneo por el Título Musashi" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="4" shortName="1º Torneo Musashi" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="SOSW" number="2"/>
+<PlacementCriterion name="SOSOSW" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="184.88.64.135" gothaMinorVersion="0" gothaVersion="349" saveDT="20200715141045">
+<Players>
+<Player agaExpirationDate="7/13/2021" agaId="25187" club="TWIN" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gavin" grade="28K" name="Turner" participating="11111111111111111111" rank="28K" rating="-700" ratingOrigin="AGA : -28.50" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="1/19/2021" agaId="23082" club="SDGC" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Anna" grade="16K" name="Zhou" participating="11111111111111111111" rank="16K" rating="524" ratingOrigin="AGA : -16.26" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="5/21/2038" agaId="24609" club="FYGS" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Zhihan William" grade="27K" name="Huang" participating="11111111111111111111" rank="27K" rating="-626" ratingOrigin="AGA : -27.76" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="7/13/2021" agaId="20387" club="SCAC" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Yuliang" grade="15K" name="Huang" participating="11111111111111111111" rank="15K" rating="637" ratingOrigin="AGA : -15.13" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="7/5/2021" agaId="22710" club="SPRI" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Nathan" grade="10K" name="Toner" participating="11111111111111111111" rank="10K" rating="1094" ratingOrigin="AGA : -10.56" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="9/27/2022" agaId="24128" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Angel" grade="22K" name="Zhou" participating="11111111111111111111" rank="22K" rating="-89" ratingOrigin="AGA : -22.39" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="6/30/2021" agaId="5078" club="SMON" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Lawrence E" grade="13K" name="Gross" participating="11111111111111111111" rank="13K" rating="828" ratingOrigin="AGA : -13.22" registeringStatus="PRE" smmsCorrection="0"/>
+<Player agaExpirationDate="8/31/2021" agaId="22005" club="DALL" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Lee" grade="14K" name="Belyeu" participating="11111111111111111111" rank="14K" rating="741" ratingOrigin="AGA : -14.09" registeringStatus="PRE" smmsCorrection="0"/>
+</Players>
+<Games/>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-07-15" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Director name" endDate="2020-07-17" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Location name" name="DDK Trial.01 July.15" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="4" shortName="DDK Trial.01" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

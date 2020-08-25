@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="78.92.219.215" gothaMinorVersion="0" gothaVersion="349" saveDT="20200819185631">
+<Players>
+<Player agaExpirationDate="" agaId="" club="Orig" country="HU" egfPin="10686346" ffgLicence="" ffgLicenceStatus="" firstName="Rita" grade=" 5D" name="Pocsai" participating="11111111111111111111" rank="4D" rating="2375" ratingOrigin="EGF : 2375" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BPMG" country="HU" egfPin="14225926" ffgLicence="" ffgLicenceStatus="" firstName="Dominik" grade=" 6D" name="Boviz" participating="00011111111111111111" rank="6D" rating="2614" ratingOrigin="EGF : 2614" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="AKun" country="CZ" egfPin="10337481" ffgLicence="" ffgLicenceStatus="" firstName="Ondrej" grade=" 6D" name="Silt" participating="11111111111111111111" rank="6D" rating="2569" ratingOrigin="EGF : 2569" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="J" country="DE" egfPin="10225347" ffgLicence="" ffgLicenceStatus="" firstName="Michael" grade=" 2D" name="Marz" participating="11111111111111111111" rank="2D" rating="2180" ratingOrigin="EGF : 2180" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TTB" country="HU" egfPin="12813317" ffgLicence="" ffgLicenceStatus="" firstName="Zoltan" grade=" 3D" name="Fodi" participating="00011111111111111111" rank="3D" rating="2302" ratingOrigin="EGF : 2302" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BPPG" country="HU" egfPin="17486623" ffgLicence="" ffgLicenceStatus="" firstName="Zsofia" grade=" 8K" name="Simon" participating="11111111111111111111" rank="8K" rating="1260" ratingOrigin="EGF : 1260" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="JIGS" country="DE" egfPin="13062412" ffgLicence="" ffgLicenceStatus="" firstName="Manja" grade=" 3D" name="Marz" participating="11111111111111111111" rank="3D" rating="2281" ratingOrigin="EGF : 2281" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="CHuS" country="UK" egfPin="17374786" ffgLicence="" ffgLicenceStatus="" firstName="Tom" grade=" 2K" name="Bradbury" participating="11111111111111111111" rank="2K" rating="1907" ratingOrigin="EGF : 1907" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BPBS" country="HU" egfPin="16333614" ffgLicence="" ffgLicenceStatus="" firstName="Aron" grade=" 8K" name="Goschler" participating="11111111111111111111" rank="9K" rating="1162" ratingOrigin="EGF : 1162" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="PaGo" country="HU" egfPin="14598991" ffgLicence="" ffgLicenceStatus="" firstName="Julia" grade=" 2D" name="Seres" participating="11111111111111111111" rank="1D" rating="2137" ratingOrigin="EGF : 2137" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BuPe" country="HU" egfPin="14349170" ffgLicence="" ffgLicenceStatus="" firstName="Mitko" grade=" 1K" name="Prodanov" participating="11111111111111111111" rank="2K" rating="1931" ratingOrigin="EGF : 1931" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="83SA" country="FR" egfPin="14513532" ffgLicence="" ffgLicenceStatus="" firstName="Benjamin" grade=" 6D" name="Drean-Guenaizia" participating="11111111111111111111" rank="6D" rating="2615" ratingOrigin="EGF : 2615" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BPPG" country="HU" egfPin="14513895" ffgLicence="" ffgLicenceStatus="" firstName="Peter" grade=" 5D" name="Marko" participating="00011111111111111111" rank="5D" rating="2461" ratingOrigin="EGF : 2461" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BPMG" country="HU" egfPin="15486603" ffgLicence="" ffgLicenceStatus="" firstName="Tamas" grade=" 1D" name="Fogarasi" participating="11111111111111111111" rank="1D" rating="2056" ratingOrigin="EGF : 2056" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BPMG" country="HU" egfPin="10225875" ffgLicence="" ffgLicenceStatus="" firstName="Csaba" grade=" 6D" name="Mero" participating="11111111111111111111" rank="6D" rating="2581" ratingOrigin="EGF : 2581" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BuPe" country="HU" egfPin="12974863" ffgLicence="" ffgLicenceStatus="" firstName="Alexandra" grade=" 1D" name="Urban" participating="00011111111111111111" rank="2D" rating="2161" ratingOrigin="EGF : 2161" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BPMG" country="HU" egfPin="16237463" ffgLicence="" ffgLicenceStatus="" firstName="Miklos" grade=" 1K" name="Csizmadia" participating="11111111111111111111" rank="2K" rating="1880" ratingOrigin="EGF : 1880" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BGbg" country="RS" egfPin="10350109" ffgLicence="" ffgLicenceStatus="" firstName="Aleksandar" grade=" 1K" name="Milosevic" participating="11111111111111111111" rank="1D" rating="2061" ratingOrigin="EGF : 2061" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BPXI" country="HU" egfPin="19249098" ffgLicence="" ffgLicenceStatus="" firstName="Hunor" grade="14K" name="Regos" participating="11111111111111111111" rank="13K" rating="780" ratingOrigin="EGF : 780" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BuPe" country="HU" egfPin="17486392" ffgLicence="" ffgLicenceStatus="" firstName="Geza" grade="11K" name="Fulup" participating="11111111111111111111" rank="11K" rating="1022" ratingOrigin="EGF : 1022" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="J" country="DE" egfPin="16213659" ffgLicence="" ffgLicenceStatus="" firstName="Ferdinand" grade=" 6K" name="Marz" participating="11111111111111111111" rank="5K" rating="1599" ratingOrigin="EGF : 1599" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Kapo" country="HU" egfPin="12537602" ffgLicence="" ffgLicenceStatus="" firstName="Barna" grade=" 1D" name="Koncsek" participating="11111111111111111111" rank="1K" rating="1963" ratingOrigin="EGF : 1963" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BPMG" country="HU" egfPin="14925416" ffgLicence="" ffgLicenceStatus="" firstName="Robert" grade=" 3D" name="Csizmadia" participating="11111111111111111111" rank="2D" rating="2228" ratingOrigin="EGF : 2228" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BuPe" country="HU" egfPin="14362172" ffgLicence="" ffgLicenceStatus="" firstName="Balint" grade=" 6K" name="Kajtar" participating="11111111111111111111" rank="7K" rating="1442" ratingOrigin="EGF : 1442" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="SILTONDREJ" handicap="0" knownColor="true" result="RESULT_EQUAL" roundNumber="1" tableNumber="1" whitePlayer="DREAN-GUENAIZIABENJAMIN"/>
+<Game blackPlayer="MEROCSABA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="POCSAIRITA"/>
+<Game blackPlayer="MARZMICHAEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="MARZMANJA"/>
+<Game blackPlayer="MILOSEVICALEKSANDAR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="CSIZMADIAROBERT"/>
+<Game blackPlayer="FOGARASITAMAS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="SERESJULIA"/>
+<Game blackPlayer="BRADBURYTOM" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="6" whitePlayer="KONCSEKBARNA"/>
+<Game blackPlayer="PRODANOVMITKO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="7" whitePlayer="CSIZMADIAMIKLOS"/>
+<Game blackPlayer="KAJTARBALINT" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="8" whitePlayer="MARZFERDINAND"/>
+<Game blackPlayer="GOSCHLERARON" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="9" whitePlayer="SIMONZSOFIA"/>
+<Game blackPlayer="REGOSHUNOR" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="10" whitePlayer="FULUPGEZA"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-08-18" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Director name" endDate="2020-08-21" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Izmény" name="Izmény - League" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="6" shortName="izményleague" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

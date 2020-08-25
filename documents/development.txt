@@ -1,6 +1,6 @@
-OpenGothaV3.49.01
+OpenGothaV3.49.03
 *****************
-13/03/2020
+25/08/2020
 Improvement In pairing algorithm, the code related to geographical criteria is rewritten.
  
 OpenGothaV3.49

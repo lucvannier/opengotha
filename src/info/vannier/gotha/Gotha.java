@@ -531,14 +531,6 @@ public class Gotha {
         return strPD.equals("true");
     }
     
-//    public static boolean isJournalingReportEnabled(){
-//        Preferences prefsRoot = Preferences.userRoot();
-//        Preferences gothaPrefs = prefsRoot.node(Gotha.strPreferences);
-//
-//        String strK = "journalingReport";
-//        String strIA = gothaPrefs.get(strK, "true");
-//        return strIA.equals("true");
-//    }
     
     public static int getTournamentUploadStatus(){
         Preferences prefsRoot = Preferences.userRoot();

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="195.29.240.194" gothaMinorVersion="0" gothaVersion="349" saveDT="20200808115446">
+<Players>
+<Player agaExpirationDate="" agaId="" club="Vrba" country="HR" egfPin="18286741" ffgLicence="" ffgLicenceStatus="" firstName="Tonka" grade="14K" name="Zderic" participating="11111111111111111111" rank="15K" rating="626" ratingOrigin="EGF : 626" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Zagr" country="HR" egfPin="16525718" ffgLicence="" ffgLicenceStatus="" firstName="Mirta" grade=" 1D" name="Medak" participating="11111111111111111111" rank="1D" rating="2045" ratingOrigin="EGF : 2045" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VGor" country="HR" egfPin="19486709" ffgLicence="" ffgLicenceStatus="" firstName="Judita" grade="20K" name="Sicic" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="EGF : 100" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Kuti" country="HR" egfPin="18650027" ffgLicence="" ffgLicenceStatus="" firstName="Matej" grade="15K" name="Rosic" participating="11111111111111111111" rank="15K" rating="606" ratingOrigin="EGF : 606" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="15974420" ffgLicence="" ffgLicenceStatus="" firstName="Elian_Ioan" grade=" 5D" name="Grigoriu" participating="11111111111111111111" rank="5D" rating="2539" ratingOrigin="EGF : 2539" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Kuti" country="HR" egfPin="18674029" ffgLicence="" ffgLicenceStatus="" firstName="Bruno" grade="15K" name="Pavlicic" participating="11111111111111111111" rank="16K" rating="500" ratingOrigin="EGF : 500" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Zagr" country="HR" egfPin="16501716" ffgLicence="" ffgLicenceStatus="" firstName="Robert" grade=" 3K" name="Medak" participating="11111111111111111111" rank="4K" rating="1666" ratingOrigin="EGF : 1666" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Zagr" country="HR" egfPin="18725124" ffgLicence="" ffgLicenceStatus="" firstName="Marta" grade=" 9K" name="Miksa" participating="11111111111111111111" rank="9K" rating="1196" ratingOrigin="EGF : 1196" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Jast" country="HR" egfPin="18949854" ffgLicence="" ffgLicenceStatus="" firstName="Paula" grade="16K" name="Klanjcic" participating="11111111111111111111" rank="16K" rating="508" ratingOrigin="EGF : 508" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Zagr" country="HR" egfPin="18298742" ffgLicence="" ffgLicenceStatus="" firstName="Teo" grade="12K" name="Sladetic" participating="11111111111111111111" rank="13K" rating="778" ratingOrigin="EGF : 778" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Zagr" country="HR" egfPin="17437574" ffgLicence="" ffgLicenceStatus="" firstName="Stjepan" grade=" 5K" name="Medak" participating="11111111111111111111" rank="6K" rating="1534" ratingOrigin="EGF : 1534" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Vrba" country="HR" egfPin="18262739" ffgLicence="" ffgLicenceStatus="" firstName="Roko" grade=" 8K" name="Crvelin" participating="11111111111111111111" rank="7K" rating="1369" ratingOrigin="EGF : 1369" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VGor" country="HR" egfPin="18637256" ffgLicence="" ffgLicenceStatus="" firstName="Karlo" grade=" 8K" name="Vlahovic" participating="11111111111111111111" rank="7K" rating="1420" ratingOrigin="EGF : 1420" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VGor" country="HR" egfPin="19098651" ffgLicence="" ffgLicenceStatus="" firstName="Jakov" grade="18K" name="Sicic" participating="11111111111111111111" rank="18K" rating="335" ratingOrigin="EGF : 335" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="SLADETICTEO" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="GRIGORIUELIAN_IOAN"/>
+<Game blackPlayer="ZDERICTONKA" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="MEDAKMIRTA"/>
+<Game blackPlayer="ROSICMATEJ" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="MEDAKROBERT"/>
+<Game blackPlayer="PAVLICICBRUNO" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="MEDAKSTJEPAN"/>
+<Game blackPlayer="KLANJCICPAULA" handicap="8" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="CRVELINROKO"/>
+<Game blackPlayer="SICICJAKOV" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="6" whitePlayer="VLAHOVICKARLO"/>
+<Game blackPlayer="SICICJUDITA" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="7" whitePlayer="MIKSAMARTA"/>
+<Game blackPlayer="MEDAKMIRTA" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="GRIGORIUELIAN_IOAN"/>
+<Game blackPlayer="CRVELINROKO" handicap="2" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="2" whitePlayer="MEDAKROBERT"/>
+<Game blackPlayer="ROSICMATEJ" handicap="5" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="3" whitePlayer="MIKSAMARTA"/>
+<Game blackPlayer="MEDAKSTJEPAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="4" whitePlayer="VLAHOVICKARLO"/>
+<Game blackPlayer="ZDERICTONKA" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="5" whitePlayer="SLADETICTEO"/>
+<Game blackPlayer="PAVLICICBRUNO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="6" whitePlayer="KLANJCICPAULA"/>
+<Game blackPlayer="SICICJUDITA" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="7" whitePlayer="SICICJAKOV"/>
+<Game blackPlayer="MEDAKSTJEPAN" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="GRIGORIUELIAN_IOAN"/>
+<Game blackPlayer="CRVELINROKO" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="MEDAKMIRTA"/>
+<Game blackPlayer="VLAHOVICKARLO" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="3" whitePlayer="MEDAKROBERT"/>
+<Game blackPlayer="SLADETICTEO" handicap="4" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="4" whitePlayer="MIKSAMARTA"/>
+<Game blackPlayer="KLANJCICPAULA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="5" whitePlayer="ZDERICTONKA"/>
+<Game blackPlayer="SICICJAKOV" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="6" whitePlayer="ROSICMATEJ"/>
+<Game blackPlayer="SICICJUDITA" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="7" whitePlayer="PAVLICICBRUNO"/>
+<Game blackPlayer="MEDAKROBERT" handicap="7" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="1" whitePlayer="GRIGORIUELIAN_IOAN"/>
+<Game blackPlayer="VLAHOVICKARLO" handicap="6" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="2" whitePlayer="MEDAKMIRTA"/>
+<Game blackPlayer="ROSICMATEJ" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="4" tableNumber="3" whitePlayer="SLADETICTEO"/>
+<Game blackPlayer="CRVELINROKO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="4" whitePlayer="MEDAKSTJEPAN"/>
+<Game blackPlayer="ZDERICTONKA" handicap="5" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="5" whitePlayer="MIKSAMARTA"/>
+<Game blackPlayer="SICICJAKOV" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="6" whitePlayer="PAVLICICBRUNO"/>
+<Game blackPlayer="SICICJUDITA" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="7" whitePlayer="KLANJCICPAULA"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="10" beginDate="2020-08-08" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Damir Medak" endDate="2020-08-08" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="Zaostrog, Croatia" name="Summer Go Camp Blitz" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="Zaostrog_Camp_Blitz" size="19" stdByoYomiTime="10"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="9D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="CAT" number="1"/>
+<PlacementCriterion name="NBW" number="2"/>
+<PlacementCriterion name="SOSW" number="3"/>
+<PlacementCriterion name="SOSOSW" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="20000000000000" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDFOLD" paiSeAvoidSameGeo="20000000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="20000000000000" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="rank" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="false" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

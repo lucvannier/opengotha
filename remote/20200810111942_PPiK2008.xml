@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="178.182.240.48" gothaMinorVersion="0" gothaVersion="349" saveDT="20200810111942">
+<Players>
+<Player agaExpirationDate="" agaId="" club="Bydg" country="PL" egfPin="16725709" ffgLicence="" ffgLicenceStatus="" firstName="Marianna" grade=" 3K" name="Szychowiak" participating="11111111111111111111" rank="3K" rating="1812" ratingOrigin="EGF : 1812" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Gorz" country="PL" egfPin="19337846" ffgLicence="" ffgLicenceStatus="" firstName="Aleksander" grade="15K" name="Tytus" participating="11111111111111111111" rank="15K" rating="643" ratingOrigin="EGF : 643" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Gorz" country="PL" egfPin="19374850" ffgLicence="" ffgLicenceStatus="" firstName="Wojciech" grade="18K" name="Wajda" participating="11111111111111111111" rank="18K" rating="337" ratingOrigin="EGF : 337" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Toru" country="PL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Aleksander" grade="18K" name="Brzozowski" participating="11111111111111111111" rank="18K" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rado" country="PL" egfPin="19586831" ffgLicence="" ffgLicenceStatus="" firstName="Pawel" grade="13K" name="Barszcz" participating="11111111111111111111" rank="13K" rating="215" ratingOrigin="EGF : 215" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Toru" country="PL" egfPin="16733706" ffgLicence="" ffgLicenceStatus="" firstName="Julia" grade=" 8K" name="Bednarska" participating="11111111111111111111" rank="8K" rating="1175" ratingOrigin="EGF : 1175" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Soso" country="PL" egfPin="14962629" ffgLicence="" ffgLicenceStatus="" firstName="Marek" grade=" 6K" name="Kunek" participating="00111111111111111111" rank="6K" rating="1479" ratingOrigin="EGF : 1479" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Toru" country="PL" egfPin="17237407" ffgLicence="" ffgLicenceStatus="" firstName="Cezary" grade=" 8K" name="Malkiewicz" participating="11111111111111111111" rank="8K" rating="1257" ratingOrigin="EGF : 1257" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rzes" country="PL" egfPin="16850691" ffgLicence="" ffgLicenceStatus="" firstName="Pawel" grade="13K" name="Golba" participating="11111111111111111111" rank="13K" rating="797" ratingOrigin="EGF : 797" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Rzes" country="PL" egfPin="17449652" ffgLicence="" ffgLicenceStatus="" firstName="Szymon" grade="12K" name="Pietrucha" participating="11111111111111111111" rank="12K" rating="875" ratingOrigin="EGF : 875" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Bydg" country="PL" egfPin="10801835" ffgLicence="" ffgLicenceStatus="" firstName="Wojciech" grade=" 4K" name="Szychowiak" participating="11111111111111111111" rank="4K" rating="1712" ratingOrigin="EGF : 1712" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Miel" country="PL" egfPin="13649526" ffgLicence="" ffgLicenceStatus="" firstName="Krzysztof" grade=" 9K" name="Narog" participating="11111111111111111111" rank="9K" rating="1140" ratingOrigin="EGF : 1140" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Wars" country="PL" egfPin="10750410" ffgLicence="" ffgLicenceStatus="" firstName="Zygmunt" grade=" 6K" name="Dabrowski" participating="00111111111111111111" rank="6K" rating="1439" ratingOrigin="EGF : 1439" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Bydg" country="PL" egfPin="19525209" ffgLicence="" ffgLicenceStatus="" firstName="Piotr" grade="23K" name="Cyrklaff" participating="11111111111111111111" rank="23K" rating="100" ratingOrigin="EGF : 100" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Wars" country="PL" egfPin="17401967" ffgLicence="" ffgLicenceStatus="" firstName="Pawel" grade="10K" name="Matejek" participating="11111111111111111111" rank="10K" rating="972" ratingOrigin="EGF : 972" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Bydg" country="PL" egfPin="18301261" ffgLicence="" ffgLicenceStatus="" firstName="Przemyslaw" grade="11K" name="Halas" participating="11111111111111111111" rank="11K" rating="908" ratingOrigin="EGF : 908" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Pozn" country="PL" egfPin="18737928" ffgLicence="" ffgLicenceStatus="" firstName="Tymoteusz" grade="9K" name="Barcicki" participating="11111111111111111111" rank="9K" rating="1195" ratingOrigin="EGF : 1195" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Krak" country="PL" egfPin="18374048" ffgLicence="" ffgLicenceStatus="" firstName="Marcel" grade="10K" name="Mroczek" participating="11111111111111111111" rank="10K" rating="1059" ratingOrigin="EGF : 1059" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="SZYCHOWIAKWOJCIECH" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="SZYCHOWIAKMARIANNA"/>
+<Game blackPlayer="MALKIEWICZCEZARY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="BEDNARSKAJULIA"/>
+<Game blackPlayer="NAROGKRZYSZTOF" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="BARCICKITYMOTEUSZ"/>
+<Game blackPlayer="MATEJEKPAWEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="4" whitePlayer="MROCZEKMARCEL"/>
+<Game blackPlayer="PIETRUCHASZYMON" handicap="1" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="5" whitePlayer="HALASPRZEMYSLAW"/>
+<Game blackPlayer="GOLBAPAWEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="6" whitePlayer="BARSZCZPAWEL"/>
+<Game blackPlayer="BRZOZOWSKIALEKSANDER" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="7" whitePlayer="TYTUSALEKSANDER"/>
+<Game blackPlayer="CYRKLAFFPIOTR" handicap="5" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="8" whitePlayer="WAJDAWOJCIECH"/>
+<Game blackPlayer="BARCICKITYMOTEUSZ" handicap="6" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="1" whitePlayer="SZYCHOWIAKMARIANNA"/>
+<Game blackPlayer="TYTUSALEKSANDER" handicap="2" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="2" whitePlayer="BARSZCZPAWEL"/>
+<Game blackPlayer="CYRKLAFFPIOTR" handicap="9" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="3" whitePlayer="MATEJEKPAWEL"/>
+<Game blackPlayer="BEDNARSKAJULIA" handicap="4" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="4" whitePlayer="SZYCHOWIAKWOJCIECH"/>
+<Game blackPlayer="PIETRUCHASZYMON" handicap="2" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="5" whitePlayer="MROCZEKMARCEL"/>
+<Game blackPlayer="WAJDAWOJCIECH" handicap="5" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="6" whitePlayer="GOLBAPAWEL"/>
+<Game blackPlayer="NAROGKRZYSZTOF" handicap="1" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="7" whitePlayer="MALKIEWICZCEZARY"/>
+<Game blackPlayer="BRZOZOWSKIALEKSANDER" handicap="7" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="8" whitePlayer="HALASPRZEMYSLAW"/>
+<Game blackPlayer="DABROWSKIZYGMUNT" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="9" whitePlayer="KUNEKMAREK"/>
+<Game blackPlayer="BEDNARSKAJULIA" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="SZYCHOWIAKMARIANNA"/>
+<Game blackPlayer="MATEJEKPAWEL" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="BARCICKITYMOTEUSZ"/>
+<Game blackPlayer="BARSZCZPAWEL" handicap="1" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="PIETRUCHASZYMON"/>
+<Game blackPlayer="CYRKLAFFPIOTR" handicap="8" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="4" whitePlayer="TYTUSALEKSANDER"/>
+<Game blackPlayer="MALKIEWICZCEZARY" handicap="4" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="5" whitePlayer="SZYCHOWIAKWOJCIECH"/>
+<Game blackPlayer="MROCZEKMARCEL" handicap="1" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="6" whitePlayer="NAROGKRZYSZTOF"/>
+<Game blackPlayer="GOLBAPAWEL" handicap="2" knownColor="true" result="RESULT_BLACKWINS_BYDEF" roundNumber="2" tableNumber="7" whitePlayer="HALASPRZEMYSLAW"/>
+<Game blackPlayer="BRZOZOWSKIALEKSANDER" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="8" whitePlayer="WAJDAWOJCIECH"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="40" beginDate="2020-08-01" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Szychowiak" endDate="2020-08-31" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="KGS" name="Puchar Pomorza i Kujaw na KGS" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="7" shortName="PPiK_20_08" size="19" stdByoYomiTime="90"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="9" hdCorrection="0" hdNoHdRankThreshold="9D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="CAT" number="1"/>
+<PlacementCriterion name="NBW" number="2"/>
+<PlacementCriterion name="SOSW" number="3"/>
+<PlacementCriterion name="SODOSW" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="20000000000000" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDFOLD" paiSeAvoidSameGeo="20000000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="20000000000000" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

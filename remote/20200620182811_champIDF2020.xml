@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="90.92.123.244" gothaMinorVersion="0" gothaVersion="349" saveDT="20200620182811">
+<Players>
+<Player agaExpirationDate="" agaId="" club="75Al" country="FR" egfPin="" ffgLicence="1400127" ffgLicenceStatus="L" firstName="Clovis" grade="3K" name="Ruiz" participating="11111111111111111111" rank="3K" rating="1800" ratingOrigin="FFG : -250" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Op" country="FR" egfPin="" ffgLicence="9127003" ffgLicenceStatus="L" firstName="Eric" grade="3K" name="Martin" participating="11111111111111111111" rank="3K" rating="1821" ratingOrigin="FFG : -229" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="91Or" country="FR" egfPin="" ffgLicence="0800177" ffgLicenceStatus="L" firstName="Cédric" grade="1K" name="Neveu" participating="11111111111111111111" rank="1K" rating="2028" ratingOrigin="FFG : -22" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1700109" ffgLicenceStatus="L" firstName="Alexandre" grade="7K" name="Pinchard" participating="11111111111111111111" rank="7K" rating="1424" ratingOrigin="FFG : -626" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75OB" country="FR" egfPin="" ffgLicence="1400066" ffgLicenceStatus="L" firstName="Arthur" grade="2K" name="Touchard" participating="11111111111111111111" rank="2K" rating="1876" ratingOrigin="FFG : -174" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92An" country="FR" egfPin="" ffgLicence="1700074" ffgLicenceStatus="L" firstName="Gaultier" grade="4K" name="Bernard" participating="11111111111111111111" rank="4K" rating="1732" ratingOrigin="FFG : -318" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Al" country="FR" egfPin="" ffgLicence="2000180" ffgLicenceStatus="L" firstName="Valentin" grade="9K" name="Lecoq-Vallon" participating="10001111111111111111" rank="9K" rating="1160" ratingOrigin="FFG : -890" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Ju" country="FR" egfPin="" ffgLicence="0800178" ffgLicenceStatus="L" firstName="Benjamin" grade="3D" name="Blanchard" participating="11110000000000000000" rank="3D" rating="2330" ratingOrigin="FFG : 280" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="91Or" country="FR" egfPin="" ffgLicence="0426802" ffgLicenceStatus="L" firstName="Stéphan" grade="3D" name="Kunne" participating="11111111111111111111" rank="3D" rating="2311" ratingOrigin="FFG : 261" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Le" country="FR" egfPin="" ffgLicence="0700348" ffgLicenceStatus="L" firstName="Louise" grade="3K" name="Roullier" participating="11111111111111111111" rank="3K" rating="1806" ratingOrigin="FFG : -244" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="91Or" country="FR" egfPin="" ffgLicence="9826801" ffgLicenceStatus="L" firstName="Ralf" grade="2K" name="Wurzinger" participating="11111111111111111111" rank="2K" rating="1874" ratingOrigin="FFG : -176" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Op" country="FR" egfPin="" ffgLicence="1800022" ffgLicenceStatus="L" firstName="Boyuan" grade="1D" name="Li" participating="11111111111111111111" rank="1D" rating="2136" ratingOrigin="FFG : 86" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Ju" country="FR" egfPin="" ffgLicence="0800298" ffgLicenceStatus="L" firstName="Manuel" grade="3D" name="Frangi" participating="11111111111111111111" rank="3D" rating="2286" ratingOrigin="FFG : 236" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Op" country="FR" egfPin="" ffgLicence="1400002" ffgLicenceStatus="L" firstName="Cyan" grade="1K" name="Touzot" participating="11111111111111111111" rank="1K" rating="2013" ratingOrigin="FFG : -37" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Al" country="FR" egfPin="" ffgLicence="0635001" ffgLicenceStatus="L" firstName="François" grade="3D" name="Bourhis" participating="11001111111111111111" rank="3D" rating="2251" ratingOrigin="FFG : 201" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Al" country="FR" egfPin="" ffgLicence="1200291" ffgLicenceStatus="L" firstName="Julien" grade="2D" name="Maltere" participating="11111111111111111111" rank="2D" rating="2153" ratingOrigin="FFG : 103" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92An" country="FR" egfPin="" ffgLicence="1600067" ffgLicenceStatus="L" firstName="Linh_Vu" grade="4D" name="Tu" participating="11111111111111111111" rank="4D" rating="2367" ratingOrigin="FFG : 317" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="93Mo" country="FR" egfPin="" ffgLicence="1400105" ffgLicenceStatus="L" firstName="Augustin" grade="8K" name="Brahim" participating="11111111111111111111" rank="8K" rating="1265" ratingOrigin="FFG : -785" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Op" country="FR" egfPin="" ffgLicence="9425017" ffgLicenceStatus="L" firstName="Simon" grade="1K" name="Rosenblatt" participating="11111111111111111111" rank="1K" rating="1979" ratingOrigin="FFG : -71" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Op" country="FR" egfPin="" ffgLicence="1200140" ffgLicenceStatus="L" firstName="Philippe" grade="2K" name="Nicolas" participating="11111111111111111111" rank="2K" rating="1911" ratingOrigin="FFG : -139" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Ju" country="FR" egfPin="" ffgLicence="1100046" ffgLicenceStatus="L" firstName="Vincent" grade="2K" name="Rigitano" participating="11111111111111111111" rank="2K" rating="1878" ratingOrigin="FFG : -172" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Le" country="FR" egfPin="" ffgLicence="0900057" ffgLicenceStatus="L" firstName="Remy" grade="2K" name="Noel" participating="11111111111111111111" rank="2K" rating="1926" ratingOrigin="FFG : -124" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Al" country="FR" egfPin="" ffgLicence="1900090" ffgLicenceStatus="L" firstName="Jérôme" grade="6K" name="Ladan" participating="11111111111111111111" rank="6K" rating="1466" ratingOrigin="FFG : -584" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="BERNARDGAULTIER" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="NEVEUCÉDRIC"/>
+<Game blackPlayer="BLANCHARDBENJAMIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="RIGITANOVINCENT"/>
+<Game blackPlayer="MARTINERIC" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="BOURHISFRANÇOIS"/>
+<Game blackPlayer="BRAHIMAUGUSTIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="ROSENBLATTSIMON"/>
+<Game blackPlayer="WURZINGERRALF" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="FRANGIMANUEL"/>
+<Game blackPlayer="TOUCHARDARTHUR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="6" whitePlayer="KUNNESTÉPHAN"/>
+<Game blackPlayer="TOUZOTCYAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="7" whitePlayer="LADANJÉRÔME"/>
+<Game blackPlayer="NOELREMY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="8" whitePlayer="LECOQ-VALLONVALENTIN"/>
+<Game blackPlayer="RUIZCLOVIS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="9" whitePlayer="LIBOYUAN"/>
+<Game blackPlayer="NEVEUCÉDRIC" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="BLANCHARDBENJAMIN"/>
+<Game blackPlayer="ROULLIERLOUISE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="10" whitePlayer="MALTEREJULIEN"/>
+<Game blackPlayer="BOURHISFRANÇOIS" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="2" whitePlayer="NOELREMY"/>
+<Game blackPlayer="NICOLASPHILIPPE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="11" whitePlayer="TULINH_VU"/>
+<Game blackPlayer="FRANGIMANUEL" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="3" whitePlayer="ROSENBLATTSIMON"/>
+<Game blackPlayer="KUNNESTÉPHAN" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="4" whitePlayer="TOUZOTCYAN"/>
+<Game blackPlayer="TULINH_VU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="5" whitePlayer="LIBOYUAN"/>
+<Game blackPlayer="MALTEREJULIEN" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="6" whitePlayer="RUIZCLOVIS"/>
+<Game blackPlayer="RIGITANOVINCENT" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="7" whitePlayer="BERNARDGAULTIER"/>
+<Game blackPlayer="WURZINGERRALF" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="8" whitePlayer="BRAHIMAUGUSTIN"/>
+<Game blackPlayer="LADANJÉRÔME" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="9" whitePlayer="TOUCHARDARTHUR"/>
+<Game blackPlayer="ROULLIERLOUISE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="10" whitePlayer="NICOLASPHILIPPE"/>
+<Game blackPlayer="PINCHARDALEXANDRE" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="11" whitePlayer="MARTINERIC"/>
+</Games>
+<ByePlayers>
+<ByePlayer player="PINCHARDALEXANDRE" roundNumber="1"/>
+</ByePlayers>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-06-21" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Philippe NICOLAS" endDate="2020-06-22" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="true" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="0" genRoundDownNBWMMS="true" komi="7.5" location="OGS" name="Championnat IDF 2020" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="champIDF2020" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="SOSW" number="2"/>
+<PlacementCriterion name="SOSOSW" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDFOLD" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

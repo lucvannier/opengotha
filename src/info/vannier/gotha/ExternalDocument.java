@@ -12,7 +12,6 @@ import java.util.ArrayList;
 import java.util.Calendar;
 import java.util.Collections;
 import java.util.Date;
-import java.util.GregorianCalendar;
 import java.util.Iterator;
 import java.util.logging.Level;
 import java.util.logging.Logger;
@@ -248,6 +247,13 @@ public class ExternalDocument {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+        String remoteFullVersionNumber = ExternalDocument.importRemoteFullVersionNumberFromXMLFile(sourceFile);
+        try {
+            tournament.setRemoteFullVersionNumber(remoteFullVersionNumber);
+        } catch (RemoteException ex) {
+            Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
+        }
+
         Date saveDT = ExternalDocument.importSaveDTFromXMLFile(sourceFile);
         String externalIPAddress = ExternalDocument.importExternalIPAddressFromXMLFile(sourceFile);
         try {
@@ -295,6 +301,7 @@ public class ExternalDocument {
             }
 
             if (alGames != null) {
+//                System.out.println("alGames.size() = " + alGames.size());
                 for (Game g : alGames) {
                     try {
                         tournament.addGame(g);
@@ -315,6 +322,7 @@ public class ExternalDocument {
             nbReplacedGames = nbImportedGames - (nbGamesAfterImport - nbGamesBeforeImport);
 
             // import bye players
+//            System.out.println("sourceFile = " + sourceFile);
             Player[] importedByePlayers = ExternalDocument.importByePlayersFromXMLFile(sourceFile, tournament);
             Player[] byePlayers = null;
             try {
@@ -507,6 +515,18 @@ public class ExternalDocument {
         return strRRM;
     }
    
+    private static String importRemoteFullVersionNumberFromXMLFile(File sourceFile) {
+        Document doc = getDocumentFromXMLFile(sourceFile);
+        if (doc == null) {
+            return "---";
+        }
+        NodeList nl = doc.getElementsByTagName("Tournament");
+        Node n = nl.item(0);
+        NamedNodeMap nnm = n.getAttributes();
+        String strRFVN = extractNodeValue(nnm, "fullVersionNumber", "---");
+        return strRFVN;
+    }
+
     private static Date importSaveDTFromXMLFile(File sourceFile) {
         Document doc = getDocumentFromXMLFile(sourceFile);
         if (doc == null) {
@@ -536,7 +556,6 @@ public class ExternalDocument {
 
 
     private static ArrayList<Player> importPlayersFromXMLFile(File sourceFile) {
-        long currentDataVersion = Gotha.GOTHA_DATA_VERSION;
         long importedDataVersion = importDataVersionFromXMLFile(sourceFile);
 
         Document doc = getDocumentFromXMLFile(sourceFile);
@@ -1238,7 +1257,10 @@ public class ExternalDocument {
     public static Player[] importByePlayersFromXMLFile(File sourceFile, TournamentInterface tournament) {
         long importedDataVersion = importDataVersionFromXMLFile(sourceFile);
         Document doc = getDocumentFromXMLFile(sourceFile);
-
+        if (doc == null){
+            System.out.println("importByePlayersFromXMLFile. doc = null");
+            return null;
+        }
         Player[] byePlayers = new Player[Gotha.MAX_NUMBER_OF_ROUNDS];
 
         for (int r = 0; r < byePlayers.length; r++) {
@@ -2922,9 +2944,11 @@ public class ExternalDocument {
         }
         rootElement.setAttribute("runningMode", "" + strRM);
         
+        String strFVN = Gotha.getGothaFullVersionNumber();
+        rootElement.setAttribute("fullVersionNumber", "" + strFVN);
+        
+        rootElement.setAttribute("runningMode", "" + strRM);
         rootElement.setAttribute("dataVersion", "" + Gotha.GOTHA_DATA_VERSION);
-        rootElement.setAttribute("gothaVersion", "" + Gotha.GOTHA_VERSION);
-        rootElement.setAttribute("gothaMinorVersion", "" + Gotha.GOTHA_MINOR_VERSION);
         
         Date currentDate = Calendar.getInstance().getTime();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");

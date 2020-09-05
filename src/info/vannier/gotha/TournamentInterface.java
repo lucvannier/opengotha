@@ -9,6 +9,10 @@ import java.util.HashMap;
 public interface TournamentInterface extends Remote{
     public String getRemoteRunningMode() throws RemoteException;
     public void setRemoteRunningMode(String remoteRunningModeDate) throws RemoteException;
+
+    public String getRemoteFullVersionNumber() throws RemoteException;
+    public void setRemoteFullVersionNumber(String remoteRunningMode)throws RemoteException;
+    
     public Date getSaveDT() throws RemoteException;
     public void setSaveDT(Date saveDT) throws RemoteException;
     public String getExternalIPAddress()throws RemoteException;

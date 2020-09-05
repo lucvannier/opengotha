@@ -16,6 +16,7 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
     private Date saveDT;
     private String externalIPAddress;
     private String remoteRunningMode = "---";
+    private String remoteFullVersionNumber = "x.yy";
     
     @Override
     public String getRemoteRunningMode(){
@@ -25,6 +26,16 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
     @Override
     public void setRemoteRunningMode(String remoteRunningMode){
         this.remoteRunningMode = remoteRunningMode;
+    }
+    
+    @Override
+    public String getRemoteFullVersionNumber(){
+        return remoteFullVersionNumber;
+    }
+
+    @Override
+    public void setRemoteFullVersionNumber(String remoteFullVersionNumber){
+        this.remoteFullVersionNumber = remoteFullVersionNumber;
     }
     
     @Override

@@ -1,4 +1,4 @@
-#Echelle au 25/08/2020 05:03:17
+#Echelle au 5/09/2020 04:54:10
 AAIJ René                               243 e ------- xxxx NL
 AAKERBLOM Charlie                       433 e ------- xxxx SE
 ABAD Jahin                            -2944 L 2000205 38GJ FR
@@ -238,8 +238,8 @@ ANNABI Louis                          -1400 - 0700277 93Mo FR
 ANNACHACHIBI Christopher                  0 - 1800100 54Na FR
 ANNACHACHIBI Kevin                      -27 e ------- xxxx BE
 ANNE Benoît                           -9999 - 9248426 XXXX FR
-ANNUNZIATA Nicolas                    -1000 - 1700050 26Va FR
 ANNUNZIATA Nicolas                    -9999 - ------- XXXX FR
+ANNUNZIATA Nicolas                    -1000 - 1700050 26Va FR
 ANSALDI Christophe                    -1300 - 0027701 78Ve FR
 ANSART Frédéric                       -1100 - 0342000 76Ha FR
 ANSELM Olivier                        -9999 - 0900344 85Ol FR
@@ -1404,6 +1404,7 @@ BORGNE Thierry                        -9999 - 9513003 38Gr FR
 BORIE Anne-Elisabeth                  -1500 - 0488705 67SE FR
 BORIE Roger-Vianney                   -9999 - 0388744 67SE FR
 BORIE Tom                              -680 L 1700043 19Tu FR
+BORN Véronique                        -9999 L 2000244 34Mo FR
 BORNET Florence                       -1200 - 0552025 31To FR
 BORNET Jean_Baptiste                  -2100 - 1000252 75EG FR
 BORREGO Jean-philippe                  -900 - 0900165 31Co FR
@@ -6517,7 +6518,6 @@ LAFARGUE Claude                       -1300 - 9575003 06Ca FR
 LAFARGUE Manon                        -9999 - 9727507 95Va FR
 LAFFAY Marie                          -9999 - 9474711 84VJ FR
 LAFITTE Marie                         -2100 - 1900035 63Ce FR
-LAFOND Michel                          -864 C 9283003 21Di FR
 LAFOND Shirley                        -1500 - 9528219 94MJ FR
 LAFOND Vincent                        -9999 - 9729504 93VJ FR
 LAFONT Eric                           -1500 - 0525508 75Pa FR
@@ -9164,8 +9164,8 @@ PEIGNIER Violette                     -9999 - 1400173 83To FR
 PEILLARD Etienne                      -1000 - 1100209 21Di FR
 PEIRANO Pierre                        -1600 - 0700414 37To FR
 PEIRERA_DA_SILVA Bruno_Philipe        -1100 - 1700028 33Bo FR
-PEIZERAT Léa                          -9999 - 1700051 26Va FR
 PEIZERAT Léa                          -1700 - ------- 26Va FR
+PEIZERAT Léa                          -9999 - 1700051 26Va FR
 PELASSA Sébastien                     -1500 - 0800187 59Li FR
 PELC Virgile                          -1300 - 1000124 75Pa FR
 PELISSET Edouard                      -1500 - 0800246 94EP FR

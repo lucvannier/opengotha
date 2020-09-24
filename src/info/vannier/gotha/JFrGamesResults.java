@@ -15,6 +15,7 @@ import java.util.logging.Logger;
 import javax.swing.JLabel;
 import javax.swing.JOptionPane;
 import javax.swing.JTable;
+import javax.swing.SwingConstants;
 import javax.swing.table.DefaultTableModel;
 import javax.swing.table.TableCellRenderer;
 import javax.swing.table.TableColumn;
@@ -108,7 +109,7 @@ public class JFrGamesResults extends javax.swing.JFrame {
     private void updateComponents() {
         this.spnRoundNumber.setValue(this.processedRoundNumber + 1);
         
-        // If Team presentation, color may vary in each column
+        // If Team presentation, player columns may vary
         if (this.ckbTeamOrder.isSelected()){
             JFrGotha.formatColumn(tblGames, LEFT_PLAYER_COL, "", PLAYER_WIDTH, JLabel.LEFT, JLabel.CENTER);
             JFrGotha.formatColumn(tblGames, RIGHT_PLAYER_COL, "", PLAYER_WIDTH, JLabel.LEFT, JLabel.CENTER);
@@ -420,6 +421,7 @@ public class JFrGamesResults extends javax.swing.JFrame {
         int tn = -1;
         try {
             String strTableNumber = "" + tblGames.getModel().getValueAt(r, TABLE_NUMBER_COL);
+            if (strTableNumber.endsWith("-")) return;
             tn = Integer.parseInt(strTableNumber) - 1;
             g = tournament.getGame(processedRoundNumber, tn);
         } catch (NumberFormatException ex) {
@@ -698,8 +700,14 @@ class ResultsTableCellRenderer extends JLabel implements TableCellRenderer {
     @Override
     public Component getTableCellRendererComponent(JTable table, Object value,
             boolean isSelected, boolean hasFocus, int rowIndex, int colIndex) {
-        Font gameFont = new Font("Arial", Font.BOLD, 12);
-        Font teamFont = new Font("Arial", Font.PLAIN, 16);
+        Font gameFont = this.getFont();
+        gameFont = gameFont.deriveFont(12.0f);
+        gameFont = gameFont.deriveFont(Font.PLAIN);
+                
+        Font teamFont = this.getFont();
+        teamFont = teamFont.deriveFont(16.0f);
+        teamFont = teamFont.deriveFont(Font.PLAIN);
+
         TableModel model = table.getModel();
         setText("" + model.getValueAt(rowIndex, colIndex));
 
@@ -711,7 +719,7 @@ class ResultsTableCellRenderer extends JLabel implements TableCellRenderer {
             strBR = strResult.substring(2, 3);
         }
 
-        String strTN = "" + model.getValueAt(rowIndex, JFrGamesResults.TABLE_NUMBER_COL);
+        String strTN = "" + model.getValueAt(rowIndex, JFrGamesResults.TABLE_NUMBER_COL);        
         boolean teamLine = false;
         if ((strTN.length() > 0) && strTN.charAt(strTN.length() - 1) == '-'){
             teamLine = true;
@@ -721,12 +729,15 @@ class ResultsTableCellRenderer extends JLabel implements TableCellRenderer {
             // team Line   
             setFont(teamFont);
             setForeground(Color.BLACK);
+            this.setHorizontalAlignment(SwingConstants.LEFT);
         } else {
             // Game line
             setFont(gameFont);
-            if (colIndex == JFrGamesResults.LEFT_PLAYER_COL) {
+            if (colIndex == JFrGamesResults.TABLE_NUMBER_COL) {
+                this.setHorizontalAlignment(SwingConstants.RIGHT);
+            }
+            else if (colIndex == JFrGamesResults.LEFT_PLAYER_COL) {
                 setFont(this.getFont().deriveFont(Font.PLAIN));
-
                 if (strWR.compareTo("1") == 0) {
                     setForeground(Color.RED);
                 } else if (strWR.compareTo("0") == 0) {
@@ -748,15 +759,16 @@ class ResultsTableCellRenderer extends JLabel implements TableCellRenderer {
                 } else {
                     setForeground(Color.BLACK);
                 }
-            } else {
-                setFont(this.getFont().deriveFont(Font.PLAIN));
+            }
+                    
+            if (isSelected){
+            setFont(this.getFont().deriveFont(Font.BOLD));
             }
         }
-
-        if (isSelected) // setFont(new Font("Arial", Font.BOLD, 12));
-        {
-            setFont(this.getFont().deriveFont(Font.BOLD));
+        if (colIndex == JFrGamesResults.HANDICAP_COL || colIndex == JFrGamesResults.RESULT_COL) {
+                this.setHorizontalAlignment(SwingConstants.CENTER);
         }
+
 
         return this;
     }

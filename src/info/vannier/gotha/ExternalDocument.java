@@ -240,21 +240,29 @@ public class ExternalDocument {
     public static String importTournamentFromXMLFile(File sourceFile, TournamentInterface tournament, 
             boolean bPlayers, boolean bGames, boolean bTPS, boolean bTeams, boolean bClubsGroups) {
         
+//        System.out.println("importTournamentFromXMLFile. sourceFile = " + sourceFile);
+//        System.out.println("importTournamentFromXMLFile. Appel de ExternalDocument.importRemoteRunningModeFromXMLFile");
+          
         String remoteRunningMode = ExternalDocument.importRemoteRunningModeFromXMLFile(sourceFile);
+
         try {
             tournament.setRemoteRunningMode(remoteRunningMode);
         } catch (RemoteException ex) {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
         }
         
+//        System.out.println("importTournamentFromXMLFile. Appel de ExternalDocument.importRemoteFullVersionNumberFromXMLFile");
         String remoteFullVersionNumber = ExternalDocument.importRemoteFullVersionNumberFromXMLFile(sourceFile);
         try {
             tournament.setRemoteFullVersionNumber(remoteFullVersionNumber);
         } catch (RemoteException ex) {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
         }
+                
+//        System.out.println("importTournamentFromXMLFile. remoteRunningMode = " + remoteRunningMode + " remoteFullVersionNumber = " + remoteFullVersionNumber);
 
         Date saveDT = ExternalDocument.importSaveDTFromXMLFile(sourceFile);
+//        System.out.println("importTournamentFromXMLFile. Appel de ExternalDocument.importExternalIPAddressFromXMLFile");
         String externalIPAddress = ExternalDocument.importExternalIPAddressFromXMLFile(sourceFile);
         try {
             tournament.setSaveDT(saveDT);
@@ -301,7 +309,6 @@ public class ExternalDocument {
             }
 
             if (alGames != null) {
-//                System.out.println("alGames.size() = " + alGames.size());
                 for (Game g : alGames) {
                     try {
                         tournament.addGame(g);
@@ -322,7 +329,6 @@ public class ExternalDocument {
             nbReplacedGames = nbImportedGames - (nbGamesAfterImport - nbGamesBeforeImport);
 
             // import bye players
-//            System.out.println("sourceFile = " + sourceFile);
             Player[] importedByePlayers = ExternalDocument.importByePlayersFromXMLFile(sourceFile, tournament);
             Player[] byePlayers = null;
             try {
@@ -330,21 +336,22 @@ public class ExternalDocument {
             } catch (RemoteException ex) {
                 Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
             }
-            for (int r = 0; r < byePlayers.length; r++) {
-                if (importedByePlayers[r] == null) {
-                    continue;
-                }
-                nbImportedByePlayers++;
-                if (byePlayers[r] != null) {
-                    nbReplacedByePlayers++;
-                }
-                try {
-                    tournament.assignByePlayer(importedByePlayers[r], r);
-                } catch (RemoteException ex) {
-                    Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
+            if(importedByePlayers != null){
+                for (int r = 0; r < byePlayers.length; r++) {
+                    if (importedByePlayers[r] == null) {
+                        continue;
+                    }
+                    nbImportedByePlayers++;
+                    if (byePlayers[r] != null) {
+                        nbReplacedByePlayers++;
+                    }
+                    try {
+                        tournament.assignByePlayer(importedByePlayers[r], r);
+                    } catch (RemoteException ex) {
+                        Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
+                    }
                 }
             }
-
         }
 
         if (bTPS) {
@@ -506,12 +513,15 @@ public class ExternalDocument {
     private static String importRemoteRunningModeFromXMLFile(File sourceFile) {
         Document doc = getDocumentFromXMLFile(sourceFile);
         if (doc == null) {
+//            System.out.println("importRemoteRunningModeFromXMLFile. doc = null");
             return "---";
         }
         NodeList nl = doc.getElementsByTagName("Tournament");
         Node n = nl.item(0);
         NamedNodeMap nnm = n.getAttributes();
         String strRRM = extractNodeValue(nnm, "runningMode", "---");
+//        System.out.println("importRemoteRunningModeFromXMLFile. strRRM = " + strRRM);
+
         return strRRM;
     }
    

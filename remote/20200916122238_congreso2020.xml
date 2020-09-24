@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="190.19.115.94" gothaMinorVersion="3" gothaVersion="349" runningMode="SAL" saveDT="20200916122238">
+<Players>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alex" grade="5K" name="Mitrani" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Santiago" grade="1D" name="Laplagne" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="UY" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Líber Sebastián" grade="14K" name="Magallanes" participating="11111111111111111111" rank="14K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alan" grade="8K" name="Yeray Cortés Sarmiento" participating="11111111111111111111" rank="8K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Emma" grade="11K" name="Palma" participating="11111111111111111111" rank="11K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Francisco" grade="3K" name="González" participating="11111111111111111111" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Camilo" grade="9K" name="Betancur" participating="11111111111111111111" rank="9K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sebastián" grade="10K" name="Figueroa" participating="11111111111111111111" rank="10K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gonzalo" grade="5K" name="Pereira" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Renate" grade="1D" name="Reisenegger" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Andres" grade="8K" name="Kilstein" participating="11111111111111111111" rank="8K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="VE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Keinny" grade="1K" name="Cristobal" participating="11111111111111111111" rank="1K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Matias" grade="2K" name="Navarro" participating="11111111111111111111" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jorge" grade="13K" name="Boher" participating="11111111111111111111" rank="13K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Pablo" grade="2K" name="Vena" participating="11111111111111111111" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Hector" grade="4K" name="Rebagliatti" participating="11111111111111111111" rank="4K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Camilo" grade="5K" name="Vázquez" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="PA" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Omar" grade="8K" name="Juliao" participating="11111111111111111111" rank="8K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CU" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Asbel" grade="17K" name="Rosado" participating="11111111111111111111" rank="17K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Juani" grade="12K" name="Geoffroy" participating="11111111111111111111" rank="12K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Federico" grade="5K" name="Olivieri" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="John" grade="2D" name="Harriman" participating="11111111111111111111" rank="2D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Pablo" grade="7K" name="Longa" participating="11111111111111111111" rank="7K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Nicolás" grade="9K" name="Marengo" participating="11111111111111111111" rank="9K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ricardo" grade="3D" name="Quintero Zazueta" participating="11111111111111111111" rank="3D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Leandro" grade="16K" name="Cusnir" participating="11111111111111111111" rank="16K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Valeria" grade="5K" name="Millapán" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Pablo" grade="3K" name="A. Tapia Silva" participating="11111111111111111111" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Axel" grade="15K" name="Brzostowski" participating="11111111111111111111" rank="15K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Santiago" grade="3D" name="Tabares" participating="11111111111111111111" rank="3D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="VE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ayrton" grade="2D" name="Reyes" participating="11111111111111111111" rank="2D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Dulce Rocío" grade="9K" name="Pérez Cottín" participating="11111111111111111111" rank="9K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="BR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Paulo" grade="8K" name="Camargo" participating="11111111111111111111" rank="8K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Pablo" grade="2K" name="Schumovich" participating="11111111111111111111" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Miguel" grade="3K" name="Muñoz Piña" participating="11111111111111111111" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="GT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Hector" grade="2K" name="Paiz" participating="11111111111111111111" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Rosario" grade="4K" name="Papeschi" participating="11111111111111111111" rank="4K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="EC" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Bryan" grade="1K" name="Guillen" participating="11111111111111111111" rank="1K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Francisco" grade="9K" name="Rodriguez" participating="11111111111111111111" rank="9K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alen" grade="12K" name="Vásquez Quiroga" participating="11111111111111111111" rank="12K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Claudia" grade="6K" name="Flores Coronado" participating="11111111111111111111" rank="6K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ignacio" grade="2D" name="Iglesis" participating="11111111111111111111" rank="2D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Enrique" grade="6K" name="Lindenbaum" participating="11111111111111111111" rank="6K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="ES" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ian" grade="1D" name="X" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="HT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Bregenet" grade="17K" name="Lamour" participating="11111111111111111111" rank="17K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games/>
+<TournamentParameterSet>
+<GeneralParameterSet bInternet="true" basicTime="45" beginDate="2020-10-03" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Michel Martens" endDate="2020-10-10" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="3K" genMMFloor="10K" genMMS2ValueAbsent="0" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="Online" name="Campeonato Iberoamericano Virtual 2020" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="congreso 2020" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="0" hdCorrection="1" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="DC" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

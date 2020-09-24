@@ -4,8 +4,8 @@
 <!ATTLIST Tournament dataVersion CDATA "200">
 <!ATTLIST Tournament externalIPAddress CDATA "127.1.1.1">
 <!ATTLIST Tournament runningMode CDATA "---">
-<!ATTLIST Tournament gothaVersion CDATA "300">
-<!ATTLIST Tournament gothaMinorVersion CDATA "00">
+<!ATTLIST Tournament fullVersionNumber CDATA "---">
+
 <!ATTLIST Tournament saveDT CDATA "20019101000000">
 
 <!ELEMENT Players (Player*)>

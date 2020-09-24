@@ -173,6 +173,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
      * returns the tounament found in this file 
      */
     private TournamentInterface downloadTournament(String strURL, File fDestination){
+        System.out.println("downloadTournament. strURL = " + strURL);
         PrintWriter out = null;
         try {
             out = new PrintWriter(fDestination);
@@ -185,6 +186,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
 //            try(BufferedReader in = new BufferedReader(new InputStreamReader(urlTournament.openStream()))){
                 String inputLine;
                 while ((inputLine = in.readLine()) != null){
+                    System.out.println("inputLine = " + inputLine);
                     if (inputLine.length() < 3) continue;
                     out.println(inputLine);
                 }
@@ -299,7 +301,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
                 String strTournamentURL = "http://opengotha.info/tournaments/" + strSubDir + "/" + strTournament;
                 
                 File fDestination = new File(Gotha.runningDirectory + "/remote/" + strTournament);
-                
+                System.out.println("JFrRemoteTournaments.downloadTournaments fDestination = " + fDestination);
                 if (fDestination.exists()){    
                     TournamentInterface t = null;
                     try {
@@ -340,6 +342,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         btnOpenTournament = new javax.swing.JButton();
         btnHelp = new javax.swing.JButton();
         btnClose = new javax.swing.JButton();
+        jLabel1 = new javax.swing.JLabel();
 
         setDefaultCloseOperation(javax.swing.WindowConstants.DO_NOTHING_ON_CLOSE);
         setResizable(false);
@@ -436,6 +439,13 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         getContentPane().add(btnClose);
         btnClose.setBounds(390, 500, 580, 30);
 
+        jLabel1.setFont(new java.awt.Font("Tahoma", 2, 18)); // NOI18N
+        jLabel1.setForeground(new java.awt.Color(204, 0, 0));
+        jLabel1.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
+        jLabel1.setText("Experimental");
+        getContentPane().add(jLabel1);
+        jLabel1.setBounds(680, 40, 220, 50);
+
         pack();
     }// </editor-fold>//GEN-END:initComponents
 
@@ -525,6 +535,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
     private javax.swing.JButton btnRefresh;
     private javax.swing.ButtonGroup grpTournaments;
     private javax.swing.ButtonGroup grpVersions;
+    private javax.swing.JLabel jLabel1;
     private javax.swing.JScrollPane pnlTournaments;
     private javax.swing.JPanel pnlWhatTournaments;
     private javax.swing.JRadioButton rdbAllTournaments;

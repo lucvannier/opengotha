@@ -13,6 +13,7 @@ import java.io.UnsupportedEncodingException;
 import java.net.MalformedURLException;
 import java.net.URL;
 import java.net.URLConnection;
+import java.nio.charset.StandardCharsets;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.rmi.RemoteException;
@@ -76,7 +77,8 @@ public class RemoteTournament {
             connection = url.openConnection(); 
             connection.setDoOutput(true);
             output = connection.getOutputStream(); 
-            writer = new PrintWriter(new OutputStreamWriter(output, charset), true);
+            writer = new PrintWriter(new OutputStreamWriter(output, StandardCharsets.UTF_8), true);
+//            writer = new PrintWriter(new OutputStreamWriter(output, charset), true);
             writer.append("postcontent=").append(CRLF);
             writer.append("shrinkedshortname:" + shrinkedShortName + ";").append(CRLF);
             writer.append("begindate:" + strBeginDate + ";").append(CRLF);

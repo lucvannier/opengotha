@@ -1,7 +1,8 @@
-OpenGothaV3.49.03
-*****************
-25/08/2020
+OpenGothaV3.50
+**************
+24/09/2020
 Improvement In pairing algorithm, the code related to geographical criteria is rewritten.
+Bug fix     Fixes a bug related to Chinese names
  
 OpenGothaV3.49
 **************

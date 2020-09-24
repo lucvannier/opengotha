@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="98.128.200.58" gothaMinorVersion="3" gothaVersion="349" runningMode="SAL" saveDT="20200918175346">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="Link" country="SE" egfPin="18013479" ffgLicence="" ffgLicenceStatus="" firstName="Magnus" grade=" 3K" name="Thalen" participating="11111111111111111111" rank="3K" rating="1787" ratingOrigin="EGF : 1787" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Stoc" country="SE" egfPin="13937946" ffgLicence="" ffgLicenceStatus="" firstName="Fredrik" grade=" 6D" name="Blomback" participating="11111111111111111111" rank="6D" rating="2610" ratingOrigin="EGF : 2610" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Gote" country="SE" egfPin="12837748" ffgLicence="" ffgLicenceStatus="" firstName="Leif" grade=" 2D" name="Almrot" participating="11111111111111111111" rank="2D" rating="2221" ratingOrigin="EGF : 2221" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Oslo" country="SE" egfPin="17525310" ffgLicence="" ffgLicenceStatus="" firstName="Karolina" grade=" 3K" name="Nilsson" participating="11111111111111111111" rank="3K" rating="1751" ratingOrigin="EGF : 1751" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Stoc" country="SE" egfPin="17233502" ffgLicence="" ffgLicenceStatus="" firstName="Martin" grade=" 2K" name="Waernsaeter" participating="11111111111111111111" rank="2K" rating="1905" ratingOrigin="EGF : 1905" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Mal" country="SE" egfPin="10325062" ffgLicence="" ffgLicenceStatus="" firstName="Joergen" grade=" 2K" name="Abrahamsson" participating="11111111111111111111" rank="1K" rating="1982" ratingOrigin="EGF : 1982" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Link" country="SE" egfPin="16401759" ffgLicence="" ffgLicenceStatus="" firstName="Evgenij" grade=" 1K" name="Lokharu" participating="11111111111111111111" rank="1K" rating="1992" ratingOrigin="EGF : 1992" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Tenu" country="SE" egfPin="14725392" ffgLicence="" ffgLicenceStatus="" firstName="Filip" grade=" 3K" name="Pettersson" participating="11111111111111111111" rank="4K" rating="1731" ratingOrigin="EGF : 1731" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Link" country="SE" egfPin="12350184" ffgLicence="" ffgLicenceStatus="" firstName="Erik" grade=" 4D" name="Ouchterlony" participating="11111111111111111111" rank="3D" rating="2267" ratingOrigin="EGF : 2267" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Stoc" country="SE" egfPin="10337063" ffgLicence="" ffgLicenceStatus="" firstName="Staffan" grade=" 1D" name="Baecklund" participating="11111111111111111111" rank="1D" rating="2057" ratingOrigin="EGF : 2057" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Stoc" country="SE" egfPin="15098413" ffgLicence="" ffgLicenceStatus="" firstName="Jim" grade=" 5K" name="Wilenius" participating="11111111111111111111" rank="5K" rating="1589" ratingOrigin="EGF : 1589" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Stoc" country="SE" egfPin="13625051" ffgLicence="" ffgLicenceStatus="" firstName="Marc" grade=" 1D" name="Stoehr" participating="11111111111111111111" rank="1K" rating="2038" ratingOrigin="EGF : 2038" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Stoc" country="SE" egfPin="14650328" ffgLicence="" ffgLicenceStatus="" firstName="Kai" grade=" 3K" name="Kylmaenen" participating="11111111111111111111" rank="2K" rating="1868" ratingOrigin="EGF : 1868" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="upps" country="SE" egfPin="13413037" ffgLicence="" ffgLicenceStatus="" firstName="Victor" grade=" 2D" name="Damberg" participating="11111111111111111111" rank="2D" rating="2165" ratingOrigin="EGF : 2165" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Mal" country="SE" egfPin="18374851" ffgLicence="" ffgLicenceStatus="" firstName="Tiger" grade=" 1D" name="Hillarp" participating="11111111111111111111" rank="1D" rating="2121" ratingOrigin="EGF : 2121" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Gote" country="SE" egfPin="15601938" ffgLicence="" ffgLicenceStatus="" firstName="Robin" grade=" 2D" name="Nilsson" participating="11111111111111111111" rank="2D" rating="2204" ratingOrigin="EGF : 2204" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="lin" country="SE" egfPin="15933236" ffgLicence="" ffgLicenceStatus="" firstName="Anton" grade=" 2D" name="Silfver" participating="11111111111111111111" rank="2D" rating="2188" ratingOrigin="EGF : 2188" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="BAECKLUNDSTAFFAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="ALMROTLEIF"/>
+        <Game blackPlayer="BLOMBACKFREDRIK" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="DAMBERGVICTOR"/>
+        <Game blackPlayer="OUCHTERLONYERIK" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="HILLARPTIGER"/>
+        <Game blackPlayer="NILSSONROBIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="4" whitePlayer="SILFVERANTON"/>
+        <Game blackPlayer="STOEHRMARC" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="ABRAHAMSSONJOERGEN"/>
+        <Game blackPlayer="KYLMAENENKAI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="6" whitePlayer="LOKHARUEVGENIJ"/>
+        <Game blackPlayer="NILSSONKAROLINA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="7" whitePlayer="WAERNSAETERMARTIN"/>
+        <Game blackPlayer="PETTERSSONFILIP" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="8" whitePlayer="THALENMAGNUS"/>
+        <Game blackPlayer="DAMBERGVICTOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="ALMROTLEIF"/>
+        <Game blackPlayer="OUCHTERLONYERIK" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="NILSSONROBIN"/>
+        <Game blackPlayer="SILFVERANTON" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="BAECKLUNDSTAFFAN"/>
+        <Game blackPlayer="ABRAHAMSSONJOERGEN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="4" whitePlayer="BLOMBACKFREDRIK"/>
+        <Game blackPlayer="HILLARPTIGER" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="5" whitePlayer="STOEHRMARC"/>
+        <Game blackPlayer="LOKHARUEVGENIJ" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="6" whitePlayer="WAERNSAETERMARTIN"/>
+        <Game blackPlayer="NILSSONKAROLINA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="7" whitePlayer="KYLMAENENKAI"/>
+        <Game blackPlayer="THALENMAGNUS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="8" whitePlayer="WILENIUSJIM"/>
+    </Games>
+    <ByePlayers>
+        <ByePlayer player="WILENIUSJIM" roundNumber="1"/>
+        <ByePlayer player="PETTERSSONFILIP" roundNumber="2"/>
+    </ByePlayers>
+    <TournamentParameterSet>
+        <GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-09-19" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Anton Silfver" endDate="2020-09-20" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="1D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Linköping" name="Test - Svenska Mästerskapen" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="Test - SM 2020" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="MMS" number="1"/>
+                <PlacementCriterion name="SOSM" number="2"/>
+                <PlacementCriterion name="SOSOSM" number="3"/>
+                <PlacementCriterion name="NULL" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="4"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

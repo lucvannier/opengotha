@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="77.128.107.78" fullVersionNumber="3.49.05" runningMode="SAL" saveDT="20200918151326">
+<Players>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="传德" grade="1D" name="高" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="盼盼" grade="12K" name="屈" participating="11111111111111111111" rank="12K" rating="800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="雪艳" grade="12K" name="马" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="35Re" country="FR" egfPin="10598830" ffgLicence="" ffgLicenceStatus="" firstName="Remi" grade=" 2D" name="Vannier" participating="11111111111111111111" rank="2D" rating="2153" ratingOrigin="EGF : 2153" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="志梅" grade="12K" name="仇" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="柯湘" grade="12K" name="袁" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="曼玲" grade="12K" name="房" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="丽" grade="12K" name="方" participating="11111111111111111111" rank="12K" rating="600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="遥" grade="5K" name="卢" participating="11111111111111111111" rank="5K" rating="1600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="超" grade="1D" name="马" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="云" grade="6K" name="徐" participating="11111111111111111111" rank="6K" rating="1500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="敏" grade="4K" name="赵" participating="11111111111111111111" rank="4K" rating="1700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="立" grade="12K" name="李" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="广兰" grade="12K" name="周" participating="11111111111111111111" rank="12K" rating="800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="晨耀" grade="12K" name="杨" participating="11111111111111111111" rank="12K" rating="600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="璐" grade="12K" name="刘" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="金" grade="12K" name="吴" participating="11111111111111111111" rank="12K" rating="600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="园" grade="12K" name="方" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="可瑞" grade="12K" name="赵" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="佳捷" grade="12K" name="秦" participating="11111111111111111111" rank="12K" rating="700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="雨芯" grade="12K" name="杨" participating="11111111111111111111" rank="12K" rating="600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="婷婷" grade="12K" name="谢" participating="11111111111111111111" rank="12K" rating="1100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="31Ba" country="FR" egfPin="10437350" ffgLicence="" ffgLicenceStatus="" firstName="Luc" grade=" 3K" name="Vannier" participating="11111111111111111111" rank="4K" rating="1723" ratingOrigin="EGF : 1723" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="凡" grade="4K" name="李" participating="11111111111111111111" rank="4K" rating="1700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="马超" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="VANNIERREMI"/>
+<Game blackPlayer="李凡" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="赵敏"/>
+<Game blackPlayer="徐云" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="3" whitePlayer="卢遥"/>
+<Game blackPlayer="仇志梅" handicap="0" knownColor="true" result="RESULT_BOTHWIN" roundNumber="1" tableNumber="4" whitePlayer="方丽"/>
+<Game blackPlayer="刘璐" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="秦佳捷"/>
+<Game blackPlayer="吴金" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="6" whitePlayer="房曼玲"/>
+<Game blackPlayer="周广兰" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="7" whitePlayer="李立"/>
+<Game blackPlayer="屈盼盼" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="8" whitePlayer="谢婷婷"/>
+<Game blackPlayer="杨雨芯" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="9" whitePlayer="方园"/>
+<Game blackPlayer="杨晨耀" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="10" whitePlayer="袁柯湘"/>
+<Game blackPlayer="赵可瑞" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="11" whitePlayer="马雪艳"/>
+<Game blackPlayer="VANNIERLUC" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="12" whitePlayer="高传德"/>
+</Games>
+<Teams>
+<Team teamName="Chine" teamNumber="2">
+<Board boardNumber="1" player="马超" roundNumber="1"/>
+<Board boardNumber="2" player="高传德" roundNumber="1"/>
+<Board boardNumber="3" player="李凡" roundNumber="1"/>
+<Board boardNumber="4" player="赵敏" roundNumber="1"/>
+<Board boardNumber="1" player="马超" roundNumber="2"/>
+<Board boardNumber="2" player="高传德" roundNumber="2"/>
+<Board boardNumber="3" player="李凡" roundNumber="2"/>
+<Board boardNumber="4" player="赵敏" roundNumber="2"/>
+<Board boardNumber="1" player="马超" roundNumber="3"/>
+<Board boardNumber="2" player="高传德" roundNumber="3"/>
+<Board boardNumber="3" player="李凡" roundNumber="3"/>
+<Board boardNumber="4" player="赵敏" roundNumber="3"/>
+<Board boardNumber="1" player="马超" roundNumber="4"/>
+<Board boardNumber="2" player="高传德" roundNumber="4"/>
+<Board boardNumber="3" player="李凡" roundNumber="4"/>
+<Board boardNumber="4" player="赵敏" roundNumber="4"/>
+<Board boardNumber="1" player="马超" roundNumber="5"/>
+<Board boardNumber="2" player="高传德" roundNumber="5"/>
+<Board boardNumber="3" player="李凡" roundNumber="5"/>
+<Board boardNumber="4" player="赵敏" roundNumber="5"/>
+<Board boardNumber="1" player="马超" roundNumber="6"/>
+<Board boardNumber="2" player="高传德" roundNumber="6"/>
+<Board boardNumber="3" player="李凡" roundNumber="6"/>
+<Board boardNumber="4" player="赵敏" roundNumber="6"/>
+<Board boardNumber="1" player="马超" roundNumber="7"/>
+<Board boardNumber="2" player="高传德" roundNumber="7"/>
+<Board boardNumber="3" player="李凡" roundNumber="7"/>
+<Board boardNumber="4" player="赵敏" roundNumber="7"/>
+<Board boardNumber="1" player="马超" roundNumber="8"/>
+<Board boardNumber="2" player="高传德" roundNumber="8"/>
+<Board boardNumber="3" player="李凡" roundNumber="8"/>
+<Board boardNumber="4" player="赵敏" roundNumber="8"/>
+<Board boardNumber="1" player="马超" roundNumber="9"/>
+<Board boardNumber="2" player="高传德" roundNumber="9"/>
+<Board boardNumber="3" player="李凡" roundNumber="9"/>
+<Board boardNumber="4" player="赵敏" roundNumber="9"/>
+<Board boardNumber="1" player="马超" roundNumber="10"/>
+<Board boardNumber="2" player="高传德" roundNumber="10"/>
+<Board boardNumber="3" player="李凡" roundNumber="10"/>
+<Board boardNumber="4" player="赵敏" roundNumber="10"/>
+<Board boardNumber="1" player="马超" roundNumber="11"/>
+<Board boardNumber="2" player="高传德" roundNumber="11"/>
+<Board boardNumber="3" player="李凡" roundNumber="11"/>
+<Board boardNumber="4" player="赵敏" roundNumber="11"/>
+<Board boardNumber="1" player="马超" roundNumber="12"/>
+<Board boardNumber="2" player="高传德" roundNumber="12"/>
+<Board boardNumber="3" player="李凡" roundNumber="12"/>
+<Board boardNumber="4" player="赵敏" roundNumber="12"/>
+<Board boardNumber="1" player="马超" roundNumber="13"/>
+<Board boardNumber="2" player="高传德" roundNumber="13"/>
+<Board boardNumber="3" player="李凡" roundNumber="13"/>
+<Board boardNumber="4" player="赵敏" roundNumber="13"/>
+<Board boardNumber="1" player="马超" roundNumber="14"/>
+<Board boardNumber="2" player="高传德" roundNumber="14"/>
+<Board boardNumber="3" player="李凡" roundNumber="14"/>
+<Board boardNumber="4" player="赵敏" roundNumber="14"/>
+<Board boardNumber="1" player="马超" roundNumber="15"/>
+<Board boardNumber="2" player="高传德" roundNumber="15"/>
+<Board boardNumber="3" player="李凡" roundNumber="15"/>
+<Board boardNumber="4" player="赵敏" roundNumber="15"/>
+<Board boardNumber="1" player="马超" roundNumber="16"/>
+<Board boardNumber="2" player="高传德" roundNumber="16"/>
+<Board boardNumber="3" player="李凡" roundNumber="16"/>
+<Board boardNumber="4" player="赵敏" roundNumber="16"/>
+<Board boardNumber="1" player="马超" roundNumber="17"/>
+<Board boardNumber="2" player="高传德" roundNumber="17"/>
+<Board boardNumber="3" player="李凡" roundNumber="17"/>
+<Board boardNumber="4" player="赵敏" roundNumber="17"/>
+<Board boardNumber="1" player="马超" roundNumber="18"/>
+<Board boardNumber="2" player="高传德" roundNumber="18"/>
+<Board boardNumber="3" player="李凡" roundNumber="18"/>
+<Board boardNumber="4" player="赵敏" roundNumber="18"/>
+<Board boardNumber="1" player="马超" roundNumber="19"/>
+<Board boardNumber="2" player="高传德" roundNumber="19"/>
+<Board boardNumber="3" player="李凡" roundNumber="19"/>
+<Board boardNumber="4" player="赵敏" roundNumber="19"/>
+<Board boardNumber="1" player="马超" roundNumber="20"/>
+<Board boardNumber="2" player="高传德" roundNumber="20"/>
+<Board boardNumber="3" player="李凡" roundNumber="20"/>
+<Board boardNumber="4" player="赵敏" roundNumber="20"/>
+</Team>
+<Team teamName="France" teamNumber="1">
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="1"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="1"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="2"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="2"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="3"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="3"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="4"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="4"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="5"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="5"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="6"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="6"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="7"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="7"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="8"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="8"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="9"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="9"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="10"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="10"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="11"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="11"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="12"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="12"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="13"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="13"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="14"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="14"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="15"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="15"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="16"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="16"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="17"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="17"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="18"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="18"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="19"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="19"/>
+<Board boardNumber="1" player="VANNIERREMI" roundNumber="20"/>
+<Board boardNumber="2" player="VANNIERLUC" roundNumber="20"/>
+</Team>
+</Teams>
+<TournamentParameterSet>
+<GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-09-15" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Director name" endDate="2020-09-15" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Location name" name="Tournoi chinois" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="TournoiChinois" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

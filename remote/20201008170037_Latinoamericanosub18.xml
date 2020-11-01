@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="201.141.179.91" fullVersionNumber="3.50" runningMode="SAL" saveDT="20201008170037">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="" country="VE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Yendervy" grade="12K" name="Palomino" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Mateo" grade="2K" name="Nava Rivera" participating="11111111111111111111" rank="2K" rating="1900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ruben Emilio" grade="12K" name="Henández López" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Iktan Leonardo" grade="18K" name="Cordero Paz" participating="11111111111111111111" rank="18K" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Yaretzi" grade="16K" name="Alvarez Sandoval" participating="11111111111111111111" rank="16K" rating="500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Emiliano" grade="8K" name="Alvarado" participating="11111111111111111111" rank="8K" rating="1300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="UY" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ian" grade="17K" name="Tomasini" participating="11111111111111111111" rank="17K" rating="400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Renato" grade="15K" name="Alegría" participating="11111111111111111111" rank="15K" rating="600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Anna" grade="9K" name="Zhou" participating="11111111111111111111" rank="9K" rating="1200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Andy" grade="5K" name="Zhou" participating="11111111111111111111" rank="5K" rating="1600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alen" grade="12K" name="Vásquez Quiroga" participating="11110111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Diego Armando" grade="1D" name="Luciano Cortes" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Franco" grade="12K" name="Cárdenas" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Angel" grade="12K" name="Zhou" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Paola Yaretzi" grade="12K" name="Ortega Campbell" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gabriel" grade="14K" name="Argel" participating="11111111111111111111" rank="14K" rating="700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="UY" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gonzalo" grade="19K" name="Gaite" participating="11111111111111111111" rank="19K" rating="200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ian Manuel" grade="12K" name="Hernandez" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="CU" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Carlos Manuel" grade="8K" name="Alfonso Basabe" participating="11111111111111111111" rank="8K" rating="1300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="BR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Klaus" grade="15K" name="de Aguiar Izidoro" participating="11111111111111111111" rank="15K" rating="600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alan Yeray" grade="8K" name="Cortés Sarmiento" participating="11011111111111111111" rank="8K" rating="1300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="ALEGRÍARENATO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="CORTÉSSARMIENTOALANYERAY"/>
+        <Game blackPlayer="ALFONSOBASABECARLOSMANUEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="ZHOUANGEL"/>
+        <Game blackPlayer="ARGELGABRIEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="ALVARADOEMILIANO"/>
+        <Game blackPlayer="ALVAREZSANDOVALYARETZI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="CÁRDENASFRANCO"/>
+        <Game blackPlayer="HERNANDEZIANMANUEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="5" whitePlayer="CORDEROPAZIKTANLEONARDO"/>
+        <Game blackPlayer="HENÁNDEZLÓPEZRUBENEMILIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="6" whitePlayer="TOMASINIIAN"/>
+        <Game blackPlayer="ORTEGACAMPBELLPAOLAYARETZI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="7" whitePlayer="LUCIANOCORTESDIEGOARMANDO"/>
+        <Game blackPlayer="PALOMINOYENDERVY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="8" whitePlayer="NAVARIVERAMATEO"/>
+        <Game blackPlayer="ZHOUANDY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="9" whitePlayer="VÁSQUEZQUIROGAALEN"/>
+        <Game blackPlayer="ZHOUANNA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="10" whitePlayer="DEAGUIARIZIDOROKLAUS"/>
+        <Game blackPlayer="NAVARIVERAMATEO" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="1" whitePlayer="LUCIANOCORTESDIEGOARMANDO"/>
+        <Game blackPlayer="HENÁNDEZLÓPEZRUBENEMILIO" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="2" whitePlayer="ZHOUANDY"/>
+        <Game blackPlayer="ALFONSOBASABECARLOSMANUEL" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="3" whitePlayer="CORTÉSSARMIENTOALANYERAY"/>
+        <Game blackPlayer="ZHOUANGEL" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="4" whitePlayer="ALVARADOEMILIANO"/>
+        <Game blackPlayer="ORTEGACAMPBELLPAOLAYARETZI" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="5" whitePlayer="CÁRDENASFRANCO"/>
+        <Game blackPlayer="ALEGRÍARENATO" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="6" whitePlayer="ZHOUANNA"/>
+        <Game blackPlayer="PALOMINOYENDERVY" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="7" whitePlayer="TOMASINIIAN"/>
+        <Game blackPlayer="HERNANDEZIANMANUEL" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="8" whitePlayer="DEAGUIARIZIDOROKLAUS"/>
+        <Game blackPlayer="ARGELGABRIEL" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="9" whitePlayer="CORDEROPAZIKTANLEONARDO"/>
+        <Game blackPlayer="GAITEGONZALO" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="5" tableNumber="10" whitePlayer="ALVAREZSANDOVALYARETZI"/>
+        <Game blackPlayer="LUCIANOCORTESDIEGOARMANDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="1" whitePlayer="ALFONSOBASABECARLOSMANUEL"/>
+        <Game blackPlayer="ZHOUANDY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="2" whitePlayer="ZHOUANNA"/>
+        <Game blackPlayer="ALVARADOEMILIANO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="3" whitePlayer="CÁRDENASFRANCO"/>
+        <Game blackPlayer="NAVARIVERAMATEO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="4" whitePlayer="VÁSQUEZQUIROGAALEN"/>
+        <Game blackPlayer="CORTÉSSARMIENTOALANYERAY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="5" whitePlayer="ZHOUANGEL"/>
+        <Game blackPlayer="HENÁNDEZLÓPEZRUBENEMILIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="6" whitePlayer="GAITEGONZALO"/>
+        <Game blackPlayer="PALOMINOYENDERVY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="7" whitePlayer="ARGELGABRIEL"/>
+        <Game blackPlayer="ALEGRÍARENATO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="8" whitePlayer="HERNANDEZIANMANUEL"/>
+        <Game blackPlayer="ORTEGACAMPBELLPAOLAYARETZI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="9" whitePlayer="CORDEROPAZIKTANLEONARDO"/>
+        <Game blackPlayer="DEAGUIARIZIDOROKLAUS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="10" whitePlayer="ALVAREZSANDOVALYARETZI"/>
+        <Game blackPlayer="NAVARIVERAMATEO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="1" whitePlayer="ALVARADOEMILIANO"/>
+        <Game blackPlayer="LUCIANOCORTESDIEGOARMANDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="2" whitePlayer="ZHOUANDY"/>
+        <Game blackPlayer="ALFONSOBASABECARLOSMANUEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="3" whitePlayer="PALOMINOYENDERVY"/>
+        <Game blackPlayer="ZHOUANNA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="4" whitePlayer="HERNANDEZIANMANUEL"/>
+        <Game blackPlayer="ZHOUANGEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="5" whitePlayer="ALEGRÍARENATO"/>
+        <Game blackPlayer="CÁRDENASFRANCO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="6" whitePlayer="GAITEGONZALO"/>
+        <Game blackPlayer="CORDEROPAZIKTANLEONARDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="7" whitePlayer="HENÁNDEZLÓPEZRUBENEMILIO"/>
+        <Game blackPlayer="VÁSQUEZQUIROGAALEN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="8" whitePlayer="DEAGUIARIZIDOROKLAUS"/>
+        <Game blackPlayer="ALVAREZSANDOVALYARETZI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="9" whitePlayer="ARGELGABRIEL"/>
+        <Game blackPlayer="TOMASINIIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="10" whitePlayer="ORTEGACAMPBELLPAOLAYARETZI"/>
+        <Game blackPlayer="ALVARADOEMILIANO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="HERNANDEZIANMANUEL"/>
+        <Game blackPlayer="CÁRDENASFRANCO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="ZHOUANDY"/>
+        <Game blackPlayer="NAVARIVERAMATEO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="HENÁNDEZLÓPEZRUBENEMILIO"/>
+        <Game blackPlayer="LUCIANOCORTESDIEGOARMANDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="4" whitePlayer="ZHOUANNA"/>
+        <Game blackPlayer="GAITEGONZALO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="5" whitePlayer="ALFONSOBASABECARLOSMANUEL"/>
+        <Game blackPlayer="CORTÉSSARMIENTOALANYERAY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="6" whitePlayer="ARGELGABRIEL"/>
+        <Game blackPlayer="TOMASINIIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="7" whitePlayer="ALEGRÍARENATO"/>
+        <Game blackPlayer="VÁSQUEZQUIROGAALEN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="8" whitePlayer="ALVAREZSANDOVALYARETZI"/>
+        <Game blackPlayer="ZHOUANGEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="9" whitePlayer="ORTEGACAMPBELLPAOLAYARETZI"/>
+        <Game blackPlayer="DEAGUIARIZIDOROKLAUS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="10" whitePlayer="PALOMINOYENDERVY"/>
+    </Games>
+    <ByePlayers>
+        <ByePlayer player="GAITEGONZALO" roundNumber="1"/>
+        <ByePlayer player="CORDEROPAZIKTANLEONARDO" roundNumber="2"/>
+        <ByePlayer player="TOMASINIIAN" roundNumber="4"/>
+    </ByePlayers>
+    <TournamentParameterSet>
+        <GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-10-07" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Sid Avila" endDate="2020-10-08" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="LATAM" name="6to Torneo Latinoamericano sub-18 de las Tres Águilas" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="6" shortName="Latinoamericano sub18" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="NBW" number="1"/>
+                <PlacementCriterion name="SOSW" number="2"/>
+                <PlacementCriterion name="SOSOSW" number="3"/>
+                <PlacementCriterion name="NULL" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="4"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

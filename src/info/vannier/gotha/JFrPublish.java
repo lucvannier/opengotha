@@ -645,8 +645,11 @@ public class JFrPublish extends javax.swing.JFrame {
             }
         }
         if (nbPWithoutId > 0) {
-            String strPrompt = "" + nbPWithoutId + " players have no AGA Id."
-            + "\nOpenGotha will generate dummy AGA Ids in the \"99xxx\" range.";
+            String str1 = "" + nbPWithoutId + " players have no AGA Id.";
+            if (nbPWithoutId == 1) str1 = "" + nbPWithoutId + " player has no AGA Id.";
+            String strPrompt = str1        
+            + "\nOpenGotha will generate dummy AGA Ids in the \"99xxx\" range."
+            + "\nPlayers must have valid AGA memberships before they will be rated.";
             int response = JOptionPane.showConfirmDialog(this, strPrompt, "Message", JOptionPane.OK_CANCEL_OPTION);
 
             if (response == JOptionPane.CANCEL_OPTION) {

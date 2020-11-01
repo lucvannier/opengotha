@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="78.193.59.42" gothaMinorVersion="0" gothaVersion="349" saveDT="20200928185734">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="B" country="DE" egfPin="18601946" ffgLicence="" ffgLicenceStatus="" firstName="Lennart" grade=" 9K" name="Weiss" participating="11111111111111111111" rank="8K" rating="1315" ratingOrigin="EGF : 1315" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="B" country="DE" egfPin="16837359" ffgLicence="" ffgLicenceStatus="" firstName="Isabel" grade=" 1D" name="Donle" participating="11111111111111111111" rank="1D" rating="2116" ratingOrigin="EGF : 2116" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="B" country="DE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Max" grade="18K" name="Schneider" participating="11111111111111111111" rank="18K" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="B" country="DE" egfPin="12386748" ffgLicence="" ffgLicenceStatus="" firstName="Volker" grade=" 4K" name="Stuhr" participating="11111111111111111111" rank="4K" rating="1676" ratingOrigin="EGF : 1676" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="B" country="DE" egfPin="18025436" ffgLicence="" ffgLicenceStatus="" firstName="David" grade="12K" name="Koenig" participating="11111111111111111111" rank="11K" rating="985" ratingOrigin="EGF : 985" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="B" country="DE" egfPin="12062765" ffgLicence="" ffgLicenceStatus="" firstName="Emilia" grade=" 7K" name="Stalinski" participating="11111111111111111111" rank="7K" rating="1357" ratingOrigin="EGF : 1357" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="HD" country="DE" egfPin="19413416" ffgLicence="" ffgLicenceStatus="" firstName="Hiroki" grade=" 3D" name="Yamashita" participating="11111111111111111111" rank="3D" rating="2289" ratingOrigin="EGF : 2289" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="HH" country="DE" egfPin="17537971" ffgLicence="" ffgLicenceStatus="" firstName="Hannah" grade=" 8K" name="Hebsacker" participating="11111111111111111111" rank="9K" rating="1155" ratingOrigin="EGF : 1155" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="B" country="DE" egfPin="16833938" ffgLicence="" ffgLicenceStatus="" firstName="Daniel" grade=" 6K" name="Borgwardt" participating="11111111111111111111" rank="6K" rating="1457" ratingOrigin="EGF : 1457" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="HH" country="DE" egfPin="10662729" ffgLicence="" ffgLicenceStatus="" firstName="Tobias" grade=" 3D" name="Berben" participating="11111111111111111111" rank="2D" rating="2244" ratingOrigin="EGF : 2244" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="B" country="DE" egfPin="17986023" ffgLicence="" ffgLicenceStatus="" firstName="Torben" grade=" 1K" name="Peters" participating="11111111111111111111" rank="2K" rating="1897" ratingOrigin="EGF : 1897" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="B" country="DE" egfPin="19386543" ffgLicence="" ffgLicenceStatus="" firstName="Sho" grade="20K" name="Kobayashi" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="EGF : 100" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="B" country="DE" egfPin="18013435" ffgLicence="" ffgLicenceStatus="" firstName="Riku" grade=" 5K" name="Kobayashi" participating="11111111111111111111" rank="5K" rating="1563" ratingOrigin="EGF : 1563" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="B" country="DE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Till" grade="20K" name="Schlich" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="HEBSACKERHANNAH" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="STALINSKIEMILIA"/>
+        <Game blackPlayer="KOBAYASHIRIKU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="STUHRVOLKER"/>
+        <Game blackPlayer="SCHNEIDERMAX" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="KOENIGDAVID"/>
+        <Game blackPlayer="KOBAYASHISHO" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="SCHLICHTILL"/>
+        <Game blackPlayer="YAMASHITAHIROKI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="BERBENTOBIAS"/>
+        <Game blackPlayer="PETERSTORBEN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="6" whitePlayer="DONLEISABEL"/>
+        <Game blackPlayer="STALINSKIEMILIA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="WEISSLENNART"/>
+        <Game blackPlayer="BORGWARDTDANIEL" handicap="1" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="STUHRVOLKER"/>
+        <Game blackPlayer="SCHLICHTILL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="3" whitePlayer="KOENIGDAVID"/>
+        <Game blackPlayer="KOBAYASHISHO" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="4" whitePlayer="SCHNEIDERMAX"/>
+        <Game blackPlayer="DONLEISABEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="5" whitePlayer="BERBENTOBIAS"/>
+        <Game blackPlayer="PETERSTORBEN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="6" whitePlayer="YAMASHITAHIROKI"/>
+        <Game blackPlayer="WEISSLENNART" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="HEBSACKERHANNAH"/>
+        <Game blackPlayer="BORGWARDTDANIEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="2" whitePlayer="KOBAYASHIRIKU"/>
+        <Game blackPlayer="KOBAYASHISHO" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="KOENIGDAVID"/>
+        <Game blackPlayer="BERBENTOBIAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="4" whitePlayer="PETERSTORBEN"/>
+        <Game blackPlayer="DONLEISABEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="5" whitePlayer="YAMASHITAHIROKI"/>
+    </Games>
+    <TournamentParameterSet>
+        <GeneralParameterSet basicTime="30" beginDate="2020-09-12" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Youngsam Kim" endDate="2020-09-13" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Berlin" name="Berlin Go Camp" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="3" shortName="BerlinGoCamp" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="0" hdNoHdRankThreshold="1D"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="MMS" number="1"/>
+                <PlacementCriterion name="SOSM" number="2"/>
+                <PlacementCriterion name="SOSOSM" number="3"/>
+                <PlacementCriterion name="NULL" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="4"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

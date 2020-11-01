@@ -21,6 +21,8 @@ public class Player implements java.io.Serializable{
      */
     private int rank = -20;
     
+    static final int MAX_CLUB_LENGTH = 4;
+
     /**
      * Rating.
      * from -900 to 2949
@@ -81,7 +83,11 @@ public class Player implements java.io.Serializable{
         if (country.length() == 1 || country.length() > 2) throw new PlayerException("Country name should either have 2 characters\n"
                 + "or be absent");
         this.country = country;
-        if (club.length() > 4) throw new PlayerException("Club name should have at most 4 character");
+        if (club.length() > MAX_CLUB_LENGTH){
+//            System.out.println("club = " + club + " club.length = " + club.length());
+            club = club.substring(0, MAX_CLUB_LENGTH); 
+        } 
+//            throw new PlayerException("Club name should have at most " + MAX_CLUB_LENGTH + " character");
         this.club = club;
         this.egfPin = egfPin;
         this.ffgLicence = ffgLicence;  

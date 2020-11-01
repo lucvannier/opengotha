@@ -2,7 +2,7 @@
  * RatingList.java
  *
  * Represents a rating list.
- * A rating list may come from EGF or from FFG
+ * A rating list may come from EGF, FFG or AGA
  */
 
 package info.vannier.gotha;

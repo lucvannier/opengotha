@@ -1,5 +1,11 @@
+OpenGothaV3.51
+**************
+01/11/2020
+Improvement When publishing to AGA rating, a warning is issued when some players have no valid AGA ID.
+Bug fix     Fixes a bug related to Thinking time in Games Options
+ 
 OpenGothaV3.50
-*****************
+**************
 24/09/2020
 Improvement In pairing algorithm, the code related to geographical criteria is rewritten.
 Bug fix     Fixes a bug related to Chinese names

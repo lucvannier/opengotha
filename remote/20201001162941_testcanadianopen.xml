@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="24.192.88.133" fullVersionNumber="3.50" runningMode="SAL" saveDT="20201001162941">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="8K" name="Bctest08" participating="11111111111111111111" rank="8K" rating="1300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="19K" name="Bctest19" participating="11111111111111111111" rank="19K" rating="200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="9K" name="Bctest09" participating="11111111111111111111" rank="9K" rating="1200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="6K" name="Bctest06" participating="11111111111111111111" rank="6K" rating="1500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="17K" name="Bctest17" participating="11111111111111111111" rank="17K" rating="400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="7K" name="Bctest07" participating="11111111111111111111" rank="7K" rating="1400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="18K" name="Bctest18" participating="11111111111111111111" rank="18K" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="11K" name="Bctest11" participating="11111111111111111111" rank="11K" rating="1000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="1K" name="Bctest01" participating="11111111111111111111" rank="1K" rating="2000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="12K" name="Bctest12" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="20K" name="Bctest20" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="10K" name="Bctest10" participating="11111111111111111111" rank="10K" rating="1100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="4K" name="Bctest04" participating="11111111111111111111" rank="4K" rating="1700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="15" name="Bctest15" participating="11111111111111111111" rank="15K" rating="600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="5K" name="Bctest05" participating="11111111111111111111" rank="5K" rating="1600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="16K" name="Bctest16" participating="11111111111111111111" rank="16K" rating="500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="2K" name="Bctest02" participating="11111111111111111111" rank="2K" rating="1900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="13K" name="Bctest13" participating="11111111111111111111" rank="13K" rating="800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="3K" name="Bctest03" participating="11111111111111111111" rank="3K" rating="1800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="X" grade="14" name="Bctest14" participating="11111111111111111111" rank="14K" rating="700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="BCTEST01X" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="BCTEST02X"/>
+        <Game blackPlayer="BCTEST03X" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="2" whitePlayer="BCTEST04X"/>
+        <Game blackPlayer="BCTEST05X" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="3" whitePlayer="BCTEST06X"/>
+        <Game blackPlayer="BCTEST07X" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="4" whitePlayer="BCTEST08X"/>
+        <Game blackPlayer="BCTEST09X" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="5" whitePlayer="BCTEST10X"/>
+        <Game blackPlayer="BCTEST12X" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="6" whitePlayer="BCTEST11X"/>
+        <Game blackPlayer="BCTEST14X" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="7" whitePlayer="BCTEST13X"/>
+        <Game blackPlayer="BCTEST16X" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="8" whitePlayer="BCTEST15X"/>
+        <Game blackPlayer="BCTEST18X" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="9" whitePlayer="BCTEST17X"/>
+        <Game blackPlayer="BCTEST20X" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="10" whitePlayer="BCTEST19X"/>
+    </Games>
+    <TournamentParameterSet>
+        <GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-09-27" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Devin" endDate="2020-09-27" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Canada" name="Test Canadian Open" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="6" shortName="testcanadianopen" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="MMS" number="1"/>
+                <PlacementCriterion name="SOSM" number="2"/>
+                <PlacementCriterion name="SOSOSM" number="3"/>
+                <PlacementCriterion name="NULL" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="rank" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="true" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="false"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="4"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

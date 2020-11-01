@@ -1,0 +1,503 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="190.19.115.94" gothaMinorVersion="3" gothaVersion="349" runningMode="SAL" saveDT="20201006182833">
+<Players>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sebastian" grade="10K" name="Jimenez" participating="11111111111111111111" rank="10K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Dulce" grade="9K" name="Rocío Pérez Cottín" participating="11111111111111111111" rank="9K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Emma" grade="11K" name="Palma" participating="11111111111111111111" rank="11K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Nahuel" grade="1D" name="Garcia" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="BR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Tomás" grade="4K" name="de Oliveira Fava" participating="10000000000000000000" rank="4K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ian" grade="12K" name="Manuel Hernandez" participating="11000000000000000000" rank="12K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Edgar" grade="4K" name="Barrientos" participating="10000000000000000000" rank="4K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alvaro" grade="1K" name="Leonardo Bravo Espejo" participating="11111111111111111111" rank="1K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Adriaan" grade="2K" name="Ludl" participating="11111111111111111111" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Andres" grade="8K" name="Kilstein" participating="11111111111111111111" rank="8K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="BR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Laércio" grade="1D" name="Pereira" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sofía" grade="25K" name="Castro" participating="11000000000000000000" rank="25K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="PY" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ariel" grade="14K" name="Estigarribia" participating="11111111111111111111" rank="14K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alejandro" grade="24K" name="Ivan Martinez Mateos" participating="11111111111111111111" rank="24K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Lucia" grade="16K" name="Gorosito" participating="11111111111111111111" rank="16K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Miguel" grade="3K" name="Bejarano" participating="11111111111111111111" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="PA" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Omar" grade="5K" name="Juliao" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Fabian" grade="15K" name="Andres Chavez Gonzalez" participating="11111111111111111111" rank="15K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="ES" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Víctor" grade="10K" name="Gutiérrez Manrique" participating="10100000000000000000" rank="10K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gustavo" grade="9K" name="Gibbons" participating="11111111111111111111" rank="9K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Nicolás" grade="9K" name="Marengo" participating="11111111111111111111" rank="9K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Leandro" grade="15K" name="Cusnir" participating="11111111111111111111" rank="15K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Matias" grade="2K" name="Salinas" participating="11100000000000000000" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="María" grade="11K" name="Belén Janiot" participating="11111111111111111111" rank="11K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Nicholas" grade="20K" name="Liddington" participating="11111111111111111111" rank="20K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Pablo" grade="2K" name="Schumovich" participating="11111111111111111111" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Toranosuke" grade="5D" name="Ozawa" participating="11101111111111111111" rank="5D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Miguel" grade="3K" name="Muñoz Piña" participating="11111111111111111111" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Manuel" grade="10K" name="Rodríguez" participating="11101111111111111111" rank="10K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Rosario" grade="4K" name="Papeschi" participating="11111111111111111111" rank="4K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Oscar" grade="2K" name="Rodríguez" participating="10000000000000000000" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Francisco" grade="9K" name="Rodriguez" participating="11111111111111111111" rank="9K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="León" grade="5K" name="Qainkoñe'n Aguilar" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="VE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Loli" grade="6K" name="Puerta" participating="11111111111111111111" rank="6K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="EC" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Edisson" grade="2D" name="Vasquez" participating="11111111111111111111" rank="2D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ignacio" grade="2D" name="Iglesis" participating="11111111111111111111" rank="2D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Héctor" grade="16K" name="Celis" participating="11111111111111111111" rank="16K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Juan" grade="15K" name="Rodriguez" participating="11111111111111111111" rank="15K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ariel" grade="10K" name="Cristal" participating="11000000000000000000" rank="10K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Itzel" grade="16K" name="Berenice Martínez Palacios" participating="11110000000000000000" rank="16K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="EC" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ernesto" grade="13K" name="Mirt" participating="10111111111111111111" rank="13K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Benjamin" grade="7K" name="Mimiza" participating="11111111111111111111" rank="7K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CN" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Qing" grade="3K" name="Mu" participating="11111111111111111111" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="JUAN" grade="3D" name="BURGOS" participating="11111111111111111111" rank="3D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Santiago" grade="1D" name="Laplagne" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="VE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Abel" grade="8K" name="Pérez Rico" participating="11111111111111111111" rank="8K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Yuly" grade="13K" name="Jiménez Usuga" participating="11111111111111111111" rank="13K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="PE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Antony" grade="19K" name="Flores" participating="11000000000000000000" rank="19K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Camilo" grade="9K" name="Betancur" participating="10000000000000000000" rank="9K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="BR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Julio" grade="8K" name="Gabriel Otterback Pinheiro" participating="11110000000000000000" rank="8K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="RO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Laura" grade="2D" name="Avram" participating="11000000000000000000" rank="2D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="GT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="José" grade="2K" name="Daniel Romero" participating="11111111111111111111" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sebastián" grade="10K" name="Figueroa" participating="11111111111111111111" rank="10K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gonzalo" grade="5K" name="Pereira" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Matias" grade="1K" name="Navarro" participating="11111111111111111111" rank="1K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jorge" grade="13K" name="Boher" participating="11111111111111111111" rank="13K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Hector" grade="4K" name="Rebagliatti" participating="11111111111111111111" rank="4K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="PA" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Osvaldo" grade="10K" name="Morales" participating="11100000000000000000" rank="10K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Daniel" grade="14K" name="Crespo" participating="11111111111111111111" rank="14K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Pablo" grade="7K" name="Longa" participating="11111111111111111111" rank="7K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="VE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Abel" grade="5K" name="José Pérez Wilke" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alan" grade="20K" name="Hernández" participating="11111111111111111111" rank="20K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Juan" grade="3D" name="Felipe Samper" participating="11111111111111111111" rank="3D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Valeria" grade="5K" name="Millapán" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Nahuel" grade="6K" name="Laluce" participating="11111111111111111111" rank="6K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CU" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jose" grade="5D" name="Manuel Zayas Saracho" participating="11111111111111111111" rank="5D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sebastián" grade="6K" name="Dossow" participating="11111111111111111111" rank="6K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Vicente" grade="19K" name="Aguirre" participating="10000000000000000000" rank="19K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Emiliano" grade="8K" name="Alvarado" participating="11111111111111111111" rank="8K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="BR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Thiago" grade="1D" name="Augusto Gomes da Silva" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sergio" grade="22K" name="Hidalgo" participating="11111111111111111111" rank="22K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alen" grade="12K" name="Vásquez Quiroga" participating="11111111111111111111" rank="12K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Claudia" grade="6K" name="Flores Coronado" participating="11111111111111111111" rank="6K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="BR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Diego" grade="7K" name="Luiz de Figueiredo" participating="11111111111111111111" rank="7K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Mario" grade="1D" name="Alberto Mercado Sánchez" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Mauricio" grade="23K" name="Fuentealba" participating="11111111111111111111" rank="23K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="diego" grade="1D" name="armando luciano cortés" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Anthony" grade="2K" name="Park" participating="11111111111111111111" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="PE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Carlos" grade="4K" name="Gálvez" participating="11111111111111111111" rank="4K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alex" grade="6K" name="Mitrani" participating="11111111111111111111" rank="6K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Francisco" grade="3K" name="González" participating="11111111111111111111" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Franco" grade="4K" name="Ignacio Correa" participating="11111111111111111111" rank="4K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="PE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jorge" grade="3K" name="Marín" participating="10000000000000000000" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="RU" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Elizaveta" grade="3K" name="Antonova" participating="11111111111111111111" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="VE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Francisco" grade="10K" name="Quiaro" participating="11000000000000000000" rank="10K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="NO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Stian" grade="1D" name="Valle" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Yixian" grade="6D" name="Zhou" participating="11111111111111111111" rank="6D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Guillermo" grade="5K" name="Pasqualetti" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gabriel" grade="15K" name="Vásquez" participating="11111111111111111111" rank="15K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Michael" grade="5K" name="Lash" participating="01111111111111111111" rank="5K" rating="1600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Marco" grade="4K" name="Antonio Hernández Cisneros" participating="11111111111111111111" rank="4K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Farlan" grade="1D" name="Marín Andrade" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Andy" grade="5K" name="Zhou" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="VE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Keinny" grade="1K" name="Cristobal" participating="11111111111111111111" rank="1K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Stephanie" grade="10K" name="Basualto" participating="10000000000000000000" rank="10K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="PA" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Rolando" grade="30K" name="José Rodríguez de León" participating="10000000000000000000" rank="30K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jeremiah" grade="5D" name="donley" participating="11111111111111111111" rank="5D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="BR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Helcio" grade="2D" name="Alexandre Pacheco" participating="11111111111111111111" rank="2D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Julieta" grade="8K" name="Molina" participating="10000000000000000000" rank="8K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Daniel" grade="8K" name="A. Guzmán" participating="11111111111111111111" rank="8K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="John" grade="2D" name="Harriman" participating="11111111111111111111" rank="2D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="David" grade="2D" name="Pollitzer" participating="11111111111111111111" rank="2D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jacqueline" grade="17K" name="Lobatón" participating="10000000000000000000" rank="17K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Juan" grade="24K" name="Manuel Laurino" participating="11111111111111111111" rank="24K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ricardo" grade="3D" name="Quintero Zazueta" participating="11111111111111111111" rank="3D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ruben" grade="12K" name="Emilio Henández López" participating="11111111111111111111" rank="12K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Pablo" grade="3K" name="A. Tapia Silva" participating="11111111111111111111" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="VE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ángel" grade="3K" name="Gutiérrez" participating="01110000000000000000" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="VE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ayrton" grade="2D" name="Reyes" participating="11111111111111111111" rank="2D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="BR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="PAULO" grade="8K" name="CAMARGO" participating="11111111111111111111" rank="8K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Deisy" grade="19K" name="Lorena Rojas Olivar" participating="10111111111111111111" rank="19K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Luis" grade="9K" name="Rangel" participating="11111111111111111111" rank="9K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="GT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Hector" grade="2K" name="Paiz" participating="11111111111111111111" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="GT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Mario" grade="4K" name="Gómez" participating="11111111111111111111" rank="4K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Rebeca" grade="15K" name="Montserrat Peña Murillo" participating="10000000000000000000" rank="15K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Anna" grade="9K" name="Zhou" participating="11111111111111111111" rank="9K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CU" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Yordan" grade="5D" name="Jose Cruz Sanchez" participating="11111111111111111111" rank="5D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Fernando" grade="3D" name="Manrique" participating="11111111111111111111" rank="3D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="VE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Tomás" grade="7K" name="Rosario" participating="11111111111111111111" rank="7K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Siddhartha" grade="1K" name="Avila" participating="11111111111111111111" rank="1K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Enrique" grade="6K" name="Lindenbaum" participating="11111111111111111111" rank="6K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="ES" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Antonio" grade="7K" name="Eloy Martín Ventura" participating="11111111111111111111" rank="7K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="José" grade="8K" name="María ONEGA" participating="11111111111111111111" rank="8K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BGA" country="UK" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Colin" grade="5K" name="Williams" participating="01111111111111111111" rank="5K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Erika" grade="13K" name="Reyes" participating="01111111111111111111" rank="13K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="ES" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ian" grade="4K" name="Kamisama" participating="11100000000000000000" rank="4K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="PE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ana" grade="28K" name="flores" participating="11111111111111111111" rank="28K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="UK" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gerry" grade="10K" name="Gavigan" participating="11111111111111111111" rank="10K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alan" grade="8K" name="Yeray Cortés Sarmiento" participating="11111111111111111111" rank="8K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="carlos" grade="7K" name="andres cruz perilla" participating="11111111111111111111" rank="7K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Emilio" grade="2K" name="Gutiérrez" participating="11000000000000000000" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ernesto" grade="2K" name="Agustin Cepeda" participating="11111111111111111111" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Renate" grade="1D" name="Reisenegger" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Edgar" grade="13K" name="Andrés Acosa Pinzón" participating="11111111111111111111" rank="13K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Juan" grade="14K" name="Jilberto" participating="11111111111111111111" rank="14K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Paola" grade="12K" name="Yaretzi Ortega Campbell" participating="10111111111111111111" rank="12K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="PT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Paulo" grade="20K" name="Mota" participating="11111111111111111111" rank="20K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alfonso" grade="11K" name="Brito" participating="11111111111111111111" rank="11K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Enrique" grade="3K" name="Garcia" participating="10000000000000000000" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Camilo" grade="1K" name="Acuña" participating="11111111111111111111" rank="1K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Juani" grade="12K" name="Geoffroy" participating="11100000000000000000" rank="12K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Federico" grade="5K" name="Olivieri" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="VE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ramón" grade="4K" name="Núñez" participating="11111111111111111111" rank="4K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Oscar" grade="2K" name="Urrego" participating="11111111111111111111" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Abraham" grade="6D" name="Florencia" participating="11111111111111111111" rank="6D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Mauricio" grade="7K" name="Salinas Rodríguez" participating="10000000000000000000" rank="7K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Fernando" grade="7D" name="Aguilar" participating="11111111111111111111" rank="7D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alfredo" grade="3K" name="Valenzuela" participating="11111111111111111111" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Axel" grade="15K" name="Brzostowski" participating="11111111111111111111" rank="15K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Mateo" grade="2K" name="Nava Rivera" participating="11000000000000000000" rank="2K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Santiago" grade="3D" name="Tabares" participating="11111111111111111111" rank="3D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="BR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Felipe" grade="2D" name="Herman Ferreira van Riemsdijk" participating="11001111111111111111" rank="2D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="EC" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Bryan" grade="1K" name="Guillen" participating="11111111111111111111" rank="1K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Demetrio" grade="11K" name="Curiel" participating="11111111111111111111" rank="11K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="PA" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Cesar" grade="30K" name="Leon" participating="11111111111111111111" rank="30K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Manuel" grade="30K" name="David Robles Rodriguez" participating="11100000000000000000" rank="30K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="VE" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gerardo" grade="6K" name="Useche" participating="11111111111111111111" rank="6K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="GT" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="LEster" grade="14K" name="Guerra" participating="11111111111111111111" rank="14K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Luz" grade="9K" name="Sanchez" participating="11111111111111111111" rank="9K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Martin" grade="3K" name="Garrofe" participating="11111111111111111111" rank="3K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Matias" grade="16K" name="De la Puente" participating="11111111111111111111" rank="16K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="EC" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Winston" grade="9K" name="Ramirez" participating="10000000000000000000" rank="9K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Angel" grade="12K" name="Zhou" participating="11111111111111111111" rank="12K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="UY" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Líber" grade="14K" name="Sebastián Magallanes" participating="11111111111111111111" rank="14K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="PA" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Edgar" grade="5K" name="Escobar" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Alejandro" grade="1D" name="Curiel" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="FIG" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Miguel" grade="5K" name="Hernández" participating="11111111111111111111" rank="5K" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="AGUILARFERNANDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="MARÍNANDRADEFARLAN"/>
+<Game blackPlayer="MUQING" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="25" whitePlayer="PARKANTHONY"/>
+<Game blackPlayer="LEONCESAR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="49" whitePlayer="YERAYCORTÉSSARMIENTOALAN"/>
+<Game blackPlayer="ALBERTOMERCADOSÁNCHEZMARIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="REISENEGGERRENATE"/>
+<Game blackPlayer="ANTONIOHERNÁNDEZCISNEROSMARCO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="26" whitePlayer="PAIZHECTOR"/>
+<Game blackPlayer="SANCHEZLUZ" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="50" whitePlayer="ZHOUANGEL"/>
+<Game blackPlayer="ALEXANDREPACHECOHELCIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="QUINTEROZAZUETARICARDO"/>
+<Game blackPlayer="GÓMEZMARIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="27" whitePlayer="GARROFEMARTIN"/>
+<Game blackPlayer="ZHOUANNA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="51" whitePlayer="BELÉNJANIOTMARÍA"/>
+<Game blackPlayer="AUGUSTOGOMESDASILVATHIAGO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="MANUELZAYASSARACHOJOSE"/>
+<Game blackPlayer="GONZÁLEZFRANCISCO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="28" whitePlayer="IGNACIOCORREAFRANCO"/>
+<Game blackPlayer="RANGELLUIS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="52" whitePlayer="GOROSITOLUCIA"/>
+<Game blackPlayer="AVRAMLAURA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="ARMANDOLUCIANOCORTÉSDIEGO"/>
+<Game blackPlayer="NÚÑEZRAMÓN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="29" whitePlayer="VALENZUELAALFREDO"/>
+<Game blackPlayer="MARENGONICOLÁS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="53" whitePlayer="FIGUEROASEBASTIÁN"/>
+<Game blackPlayer="BURGOSJUAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="6" whitePlayer="POLLITZERDAVID"/>
+<Game blackPlayer="PAPESCHIROSARIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="30" whitePlayer="GUTIÉRREZÁNGEL"/>
+<Game blackPlayer="GUERRALESTER" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="54" whitePlayer="JIMENEZSEBASTIAN"/>
+<Game blackPlayer="CURIELALEJANDRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="7" whitePlayer="ZHOUYIXIAN"/>
+<Game blackPlayer="GÁLVEZCARLOS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="31" whitePlayer="JULIAOOMAR"/>
+<Game blackPlayer="JILBERTOJUAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="55" whitePlayer="IVANMARTINEZMATEOSALEJANDRO"/>
+<Game blackPlayer="REYESAYRTON" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="8" whitePlayer="FELIPESAMPERJUAN"/>
+<Game blackPlayer="PEREIRAGONZALO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="32" whitePlayer="KAMISAMAIAN"/>
+<Game blackPlayer="SEBASTIÁNMAGALLANESLÍBER" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="56" whitePlayer="GAVIGANGERRY"/>
+<Game blackPlayer="PEREIRALAÉRCIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="9" whitePlayer="FLORENCIAABRAHAM"/>
+<Game blackPlayer="MILLAPÁNVALERIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="33" whitePlayer="REBAGLIATTIHECTOR"/>
+<Game blackPlayer="GEOFFROYJUANI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="57" whitePlayer="FUENTEALBAMAURICIO"/>
+<Game blackPlayer="GARCIANAHUEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="10" whitePlayer="OZAWATORANOSUKE"/>
+<Game blackPlayer="QAINKOÑE'NAGUILARLEÓN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="34" whitePlayer="JOSÉPÉREZWILKEABEL"/>
+<Game blackPlayer="BRZOSTOWSKIAXEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="58" whitePlayer="GIBBONSGUSTAVO"/>
+<Game blackPlayer="ANTONOVAELIZAVETA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="11" whitePlayer="GONZÁLEZFRANCISCO"/>
+<Game blackPlayer="OLIVIERIFEDERICO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="35" whitePlayer="LASHMICHAEL"/>
+<Game blackPlayer="MANUELLAURINOJUAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="59" whitePlayer="BOHERJORGE"/>
+<Game blackPlayer="TABARESSANTIAGO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="12" whitePlayer="HARRIMANJOHN"/>
+<Game blackPlayer="ZHOUANDY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="36" whitePlayer="WILLIAMSCOLIN"/>
+<Game blackPlayer="PALMAEMMA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="60" whitePlayer="JIMÉNEZUSUGAYULY"/>
+<Game blackPlayer="VASQUEZEDISSON" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="13" whitePlayer="IGLESISIGNACIO"/>
+<Game blackPlayer="MITRANIALEX" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="37" whitePlayer="ESCOBAREDGAR"/>
+<Game blackPlayer="ESTIGARRIBIAARIEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="61" whitePlayer="CRESPODANIEL"/>
+<Game blackPlayer="DONLEYJEREMIAH" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="14" whitePlayer="JOSECRUZSANCHEZYORDAN"/>
+<Game blackPlayer="HERNÁNDEZMIGUEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="38" whitePlayer="DOSSOWSEBASTIÁN"/>
+<Game blackPlayer="LIDDINGTONNICHOLAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="62" whitePlayer="ANDRESCHAVEZGONZALEZFABIAN"/>
+<Game blackPlayer="VALLESTIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="15" whitePlayer="LAPLAGNESANTIAGO"/>
+<Game blackPlayer="PASQUALETTIGUILLERMO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="39" whitePlayer="USECHEGERARDO"/>
+<Game blackPlayer="RODRIGUEZJUAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="63" whitePlayer="RODRÍGUEZMANUEL"/>
+<Game blackPlayer="MANRIQUEFERNANDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="16" whitePlayer="GUILLENBRYAN"/>
+<Game blackPlayer="ELOYMARTÍNVENTURAANTONIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="40" whitePlayer="LALUCENAHUEL"/>
+<Game blackPlayer="VÁSQUEZQUIROGAALEN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="64" whitePlayer="CUSNIRLEANDRO"/>
+<Game blackPlayer="NAVARROMATIAS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="17" whitePlayer="ACUÑACAMILO"/>
+<Game blackPlayer="PUERTALOLI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="41" whitePlayer="LONGAPABLO"/>
+<Game blackPlayer="EMILIOHENÁNDEZLÓPEZRUBEN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="65" whitePlayer="LORENAROJASOLIVARDEISY"/>
+<Game blackPlayer="LEONARDOBRAVOESPEJOALVARO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="18" whitePlayer="AVILASIDDHARTHA"/>
+<Game blackPlayer="FLORESCORONADOCLAUDIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="42" whitePlayer="ANDRESCRUZPERILLACARLOS"/>
+<Game blackPlayer="DAVIDROBLESRODRIGUEZMANUEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="66" whitePlayer="CELISHÉCTOR"/>
+<Game blackPlayer="PAIZHECTOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="19" whitePlayer="CRISTOBALKEINNY"/>
+<Game blackPlayer="MIMIZABENJAMIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="43" whitePlayer="LINDENBAUMENRIQUE"/>
+<Game blackPlayer="ANDRÉSACOSAPINZÓNEDGAR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="67" whitePlayer="REYESERIKA"/>
+<Game blackPlayer="AGUSTINCEPEDAERNESTO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="20" whitePlayer="RODRÍGUEZOSCAR"/>
+<Game blackPlayer="LUIZDEFIGUEIREDODIEGO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="44" whitePlayer="A.GUZMÁNDANIEL"/>
+<Game blackPlayer="MOTAPAULO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="68" whitePlayer="HIDALGOSERGIO"/>
+<Game blackPlayer="DANIELROMEROJOSÉ" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="21" whitePlayer="SALINASMATIAS"/>
+<Game blackPlayer="MARÍAONEGAJOSÉ" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="45" whitePlayer="ROSARIOTOMÁS"/>
+<Game blackPlayer="FLORESANA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="69" whitePlayer="DELAPUENTEMATIAS"/>
+<Game blackPlayer="GUTIÉRREZEMILIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="22" whitePlayer="SCHUMOVICHPABLO"/>
+<Game blackPlayer="ALVARADOEMILIANO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="46" whitePlayer="SANCHEZLUZ"/>
+<Game blackPlayer="HERNÁNDEZALAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="70" whitePlayer="MIRTERNESTO"/>
+<Game blackPlayer="PARKANTHONY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="23" whitePlayer="LUDLADRIAAN"/>
+<Game blackPlayer="RODRIGUEZFRANCISCO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="47" whitePlayer="CAMARGOPAULO"/>
+<Game blackPlayer="CURIELDEMETRIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="71" whitePlayer="GUTIÉRREZMANRIQUEVÍCTOR"/>
+<Game blackPlayer="NAVARIVERAMATEO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="24" whitePlayer="URREGOOSCAR"/>
+<Game blackPlayer="GABRIELOTTERBACKPINHEIROJULIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="48" whitePlayer="ZHOUANNA"/>
+<Game blackPlayer="YARETZIORTEGACAMPBELLPAOLA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="72" whitePlayer="MORALESOSVALDO"/>
+<Game blackPlayer="MARÍNJORGE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="25" whitePlayer="A.TAPIASILVAPABLO"/>
+<Game blackPlayer="ROCÍOPÉREZCOTTÍNDULCE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="49" whitePlayer="YERAYCORTÉSSARMIENTOALAN"/>
+<Game blackPlayer="BEJARANOMIGUEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="26" whitePlayer="VALENZUELAALFREDO"/>
+<Game blackPlayer="PÉREZRICOABEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="50" whitePlayer="RANGELLUIS"/>
+<Game blackPlayer="MUQING" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="27" whitePlayer="GARCIAENRIQUE"/>
+<Game blackPlayer="GAVIGANGERRY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="51" whitePlayer="KILSTEINANDRES"/>
+<Game blackPlayer="MUÑOZPIÑAMIGUEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="28" whitePlayer="GARROFEMARTIN"/>
+<Game blackPlayer="VÁSQUEZGABRIEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="52" whitePlayer="GEOFFROYJUANI"/>
+<Game blackPlayer="ANDRESCRUZPERILLACARLOS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="29" whitePlayer="ALVARADOEMILIANO"/>
+<Game blackPlayer="GIBBONSGUSTAVO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="53" whitePlayer="LEONCESAR"/>
+<Game blackPlayer="REBAGLIATTIHECTOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="30" whitePlayer="ANTONIOHERNÁNDEZCISNEROSMARCO"/>
+<Game blackPlayer="JIMÉNEZUSUGAYULY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="54" whitePlayer="MARENGONICOLÁS"/>
+<Game blackPlayer="BARRIENTOSEDGAR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="31" whitePlayer="PAPESCHIROSARIO"/>
+<Game blackPlayer="ANDRÉSACOSAPINZÓNEDGAR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="55" whitePlayer="IVANMARTINEZMATEOSALEJANDRO"/>
+<Game blackPlayer="GÁLVEZCARLOS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="32" whitePlayer="NÚÑEZRAMÓN"/>
+<Game blackPlayer="BELÉNJANIOTMARÍA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="56" whitePlayer="PALMAEMMA"/>
+<Game blackPlayer="DEOLIVEIRAFAVATOMÁS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="33" whitePlayer="GÓMEZMARIO"/>
+<Game blackPlayer="MANUELLAURINOJUAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="57" whitePlayer="BERENICEMARTÍNEZPALACIOSITZEL"/>
+<Game blackPlayer="KAMISAMAIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="34" whitePlayer="IGNACIOCORREAFRANCO"/>
+<Game blackPlayer="BOHERJORGE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="58" whitePlayer="JIMENEZSEBASTIAN"/>
+<Game blackPlayer="QAINKOÑE'NAGUILARLEÓN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="35" whitePlayer="ESCOBAREDGAR"/>
+<Game blackPlayer="BRITOALFONSO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="59" whitePlayer="FUENTEALBAMAURICIO"/>
+<Game blackPlayer="PEREIRAGONZALO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="36" whitePlayer="HERNÁNDEZMIGUEL"/>
+<Game blackPlayer="GUERRALESTER" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="60" whitePlayer="BRZOSTOWSKIAXEL"/>
+<Game blackPlayer="JOSÉPÉREZWILKEABEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="37" whitePlayer="OLIVIERIFEDERICO"/>
+<Game blackPlayer="CELISHÉCTOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="61" whitePlayer="JILBERTOJUAN"/>
+<Game blackPlayer="JULIAOOMAR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="38" whitePlayer="ZHOUANDY"/>
+<Game blackPlayer="GOROSITOLUCIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="62" whitePlayer="CRESPODANIEL"/>
+<Game blackPlayer="MILLAPÁNVALERIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="39" whitePlayer="PASQUALETTIGUILLERMO"/>
+<Game blackPlayer="ZHOUANGEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="63" whitePlayer="ESTIGARRIBIAARIEL"/>
+<Game blackPlayer="DOSSOWSEBASTIÁN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="40" whitePlayer="PUERTALOLI"/>
+<Game blackPlayer="LIDDINGTONNICHOLAS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="64" whitePlayer="FIGUEROASEBASTIÁN"/>
+<Game blackPlayer="USECHEGERARDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="41" whitePlayer="FLORESCORONADOCLAUDIA"/>
+<Game blackPlayer="HIDALGOSERGIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="65" whitePlayer="RODRÍGUEZMANUEL"/>
+<Game blackPlayer="LALUCENAHUEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="42" whitePlayer="MITRANIALEX"/>
+<Game blackPlayer="ANDRESCHAVEZGONZALEZFABIAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="66" whitePlayer="MORALESOSVALDO"/>
+<Game blackPlayer="LINDENBAUMENRIQUE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="43" whitePlayer="LUIZDEFIGUEIREDODIEGO"/>
+<Game blackPlayer="QUIAROFRANCISCO" handicap="0" knownColor="true" result="RESULT_BOTHLOSE" roundNumber="2" tableNumber="67" whitePlayer="CASTROSOFÍA"/>
+<Game blackPlayer="GEOFFROYJUANI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="44" whitePlayer="MOLINAJULIETA"/>
+<Game blackPlayer="SEBASTIÁNMAGALLANESLÍBER" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="68" whitePlayer="CURIELDEMETRIO"/>
+<Game blackPlayer="SALINASRODRÍGUEZMAURICIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="45" whitePlayer="ELOYMARTÍNVENTURAANTONIO"/>
+<Game blackPlayer="CUSNIRLEANDRO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="69" whitePlayer="FLORESANA"/>
+<Game blackPlayer="ROSARIOTOMÁS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="46" whitePlayer="LONGAPABLO"/>
+<Game blackPlayer="DELAPUENTEMATIAS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="70" whitePlayer="RODRIGUEZJUAN"/>
+<Game blackPlayer="KILSTEINANDRES" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="47" whitePlayer="MIMIZABENJAMIN"/>
+<Game blackPlayer="MOTAPAULO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="71" whitePlayer="EMILIOHENÁNDEZLÓPEZRUBEN"/>
+<Game blackPlayer="YERAYCORTÉSSARMIENTOALAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="48" whitePlayer="A.GUZMÁNDANIEL"/>
+<Game blackPlayer="HERNÁNDEZALAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="72" whitePlayer="VÁSQUEZQUIROGAALEN"/>
+<Game blackPlayer="FLORESANTONY" handicap="0" knownColor="true" result="RESULT_BOTHLOSE" roundNumber="2" tableNumber="73" whitePlayer="MANUELHERNANDEZIAN"/>
+<Game blackPlayer="CAMARGOPAULO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="50" whitePlayer="PÉREZRICOABEL"/>
+<Game blackPlayer="REYESERIKA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="74" whitePlayer="CRISTALARIEL"/>
+<Game blackPlayer="GABRIELOTTERBACKPINHEIROJULIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="51" whitePlayer="MARÍAONEGAJOSÉ"/>
+<Game blackPlayer="ROCÍOPÉREZCOTTÍNDULCE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="52" whitePlayer="BETANCURCAMILO"/>
+<Game blackPlayer="ZHOUANNA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="53" whitePlayer="GIBBONSGUSTAVO"/>
+<Game blackPlayer="MARENGONICOLÁS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="54" whitePlayer="RODRIGUEZFRANCISCO"/>
+<Game blackPlayer="SANCHEZLUZ" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="55" whitePlayer="RAMIREZWINSTON"/>
+<Game blackPlayer="HIDALGOSERGIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="56" whitePlayer="RANGELLUIS"/>
+<Game blackPlayer="JIMENEZSEBASTIAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="57" whitePlayer="ANDRESCHAVEZGONZALEZFABIAN"/>
+<Game blackPlayer="FLORESANA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="58" whitePlayer="ANDRÉSACOSAPINZÓNEDGAR"/>
+<Game blackPlayer="BASUALTOSTEPHANIE" handicap="0" knownColor="true" result="RESULT_BOTHLOSE" roundNumber="1" tableNumber="59" whitePlayer="YARETZIORTEGACAMPBELLPAOLA"/>
+<Game blackPlayer="JOSÉRODRÍGUEZDELEÓNROLANDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="60" whitePlayer="BELÉNJANIOTMARÍA"/>
+<Game blackPlayer="BERENICEMARTÍNEZPALACIOSITZEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="61" whitePlayer="SEBASTIÁNMAGALLANESLÍBER"/>
+<Game blackPlayer="VÁSQUEZQUIROGAALEN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="62" whitePlayer="BOHERJORGE"/>
+<Game blackPlayer="RODRÍGUEZMANUEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="63" whitePlayer="BRITOALFONSO"/>
+<Game blackPlayer="BRZOSTOWSKIAXEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="64" whitePlayer="MOTAPAULO"/>
+<Game blackPlayer="CASTROSOFÍA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="65" whitePlayer="LIDDINGTONNICHOLAS"/>
+<Game blackPlayer="MORALESOSVALDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="66" whitePlayer="CELISHÉCTOR"/>
+<Game blackPlayer="CRESPODANIEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="67" whitePlayer="QUIAROFRANCISCO"/>
+<Game blackPlayer="CRISTALARIEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="68" whitePlayer="JIMÉNEZUSUGAYULY"/>
+<Game blackPlayer="CURIELDEMETRIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="69" whitePlayer="PALMAEMMA"/>
+<Game blackPlayer="JILBERTOJUAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="70" whitePlayer="CUSNIRLEANDRO"/>
+<Game blackPlayer="LORENAROJASOLIVARDEISY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="71" whitePlayer="DAVIDROBLESRODRIGUEZMANUEL"/>
+<Game blackPlayer="DELAPUENTEMATIAS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="72" whitePlayer="ZHOUANGEL"/>
+<Game blackPlayer="EMILIOHENÁNDEZLÓPEZRUBEN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="73" whitePlayer="VÁSQUEZGABRIEL"/>
+<Game blackPlayer="RODRIGUEZJUAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="74" whitePlayer="ESTIGARRIBIAARIEL"/>
+<Game blackPlayer="FIGUEROASEBASTIÁN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="75" whitePlayer="FLORESANTONY"/>
+<Game blackPlayer="FUENTEALBAMAURICIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="76" whitePlayer="LOBATÓNJACQUELINE"/>
+<Game blackPlayer="MANUELHERNANDEZIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="77" whitePlayer="GAVIGANGERRY"/>
+<Game blackPlayer="MIRTERNESTO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="79" whitePlayer="GOROSITOLUCIA"/>
+<Game blackPlayer="MONTSERRATPEÑAMURILLOREBECA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="80" whitePlayer="GUERRALESTER"/>
+<Game blackPlayer="GUTIÉRREZMANRIQUEVÍCTOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="81" whitePlayer="MANUELLAURINOJUAN"/>
+<Game blackPlayer="LEONCESAR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="82" whitePlayer="HERNÁNDEZALAN"/>
+<Game blackPlayer="IVANMARTINEZMATEOSALEJANDRO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="83" whitePlayer="AGUIRREVICENTE"/>
+<Game blackPlayer="ZHOUYIXIAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="1" whitePlayer="IGLESISIGNACIO"/>
+<Game blackPlayer="MANRIQUEFERNANDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="2" whitePlayer="AGUILARFERNANDO"/>
+<Game blackPlayer="FLORENCIAABRAHAM" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="3" whitePlayer="ALEXANDREPACHECOHELCIO"/>
+<Game blackPlayer="QUINTEROZAZUETARICARDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="4" whitePlayer="FELIPESAMPERJUAN"/>
+<Game blackPlayer="MANUELZAYASSARACHOJOSE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="5" whitePlayer="HARRIMANJOHN"/>
+<Game blackPlayer="REISENEGGERRENATE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="6" whitePlayer="DONLEYJEREMIAH"/>
+<Game blackPlayer="ARMANDOLUCIANOCORTÉSDIEGO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="7" whitePlayer="ACUÑACAMILO"/>
+<Game blackPlayer="PEREIRALAÉRCIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="8" whitePlayer="BURGOSJUAN"/>
+<Game blackPlayer="VALLESTIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="9" whitePlayer="TABARESSANTIAGO"/>
+<Game blackPlayer="JOSECRUZSANCHEZYORDAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="10" whitePlayer="ALBERTOMERCADOSÁNCHEZMARIO"/>
+<Game blackPlayer="GARCIANAHUEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="11" whitePlayer="NAVARROMATIAS"/>
+<Game blackPlayer="LAPLAGNESANTIAGO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="12" whitePlayer="CRISTOBALKEINNY"/>
+<Game blackPlayer="MARÍNANDRADEFARLAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="13" whitePlayer="AVILASIDDHARTHA"/>
+<Game blackPlayer="GUILLENBRYAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="14" whitePlayer="POLLITZERDAVID"/>
+<Game blackPlayer="REYESAYRTON" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="15" whitePlayer="LEONARDOBRAVOESPEJOALVARO"/>
+<Game blackPlayer="LUDLADRIAAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="16" whitePlayer="CURIELALEJANDRO"/>
+<Game blackPlayer="VASQUEZEDISSON" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="17" whitePlayer="SCHUMOVICHPABLO"/>
+<Game blackPlayer="AUGUSTOGOMESDASILVATHIAGO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="18" whitePlayer="AGUSTINCEPEDAERNESTO"/>
+<Game blackPlayer="ANTONOVAELIZAVETA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="19" whitePlayer="URREGOOSCAR"/>
+<Game blackPlayer="MUÑOZPIÑAMIGUEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="20" whitePlayer="BEJARANOMIGUEL"/>
+<Game blackPlayer="GONZÁLEZFRANCISCO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="21" whitePlayer="PAIZHECTOR"/>
+<Game blackPlayer="DANIELROMEROJOSÉ" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="22" whitePlayer="MUQING"/>
+<Game blackPlayer="GARROFEMARTIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="23" whitePlayer="ANTONIOHERNÁNDEZCISNEROSMARCO"/>
+<Game blackPlayer="PARKANTHONY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="24" whitePlayer="PAPESCHIROSARIO"/>
+<Game blackPlayer="OZAWATORANOSUKE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="1" whitePlayer="FELIPESAMPERJUAN"/>
+<Game blackPlayer="IGNACIOCORREAFRANCO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="25" whitePlayer="A.TAPIASILVAPABLO"/>
+<Game blackPlayer="IGLESISIGNACIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="2" whitePlayer="QUINTEROZAZUETARICARDO"/>
+<Game blackPlayer="VALENZUELAALFREDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="26" whitePlayer="GÓMEZMARIO"/>
+<Game blackPlayer="AGUILARFERNANDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="3" whitePlayer="MANUELZAYASSARACHOJOSE"/>
+<Game blackPlayer="NÚÑEZRAMÓN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="27" whitePlayer="MILLAPÁNVALERIA"/>
+<Game blackPlayer="ZHOUYIXIAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="4" whitePlayer="FLORENCIAABRAHAM"/>
+<Game blackPlayer="GUTIÉRREZÁNGEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="28" whitePlayer="PEREIRAGONZALO"/>
+<Game blackPlayer="BURGOSJUAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="5" whitePlayer="GARCIANAHUEL"/>
+<Game blackPlayer="JULIAOOMAR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="29" whitePlayer="WILLIAMSCOLIN"/>
+<Game blackPlayer="TABARESSANTIAGO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="6" whitePlayer="MANRIQUEFERNANDO"/>
+<Game blackPlayer="JOSÉPÉREZWILKEABEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="30" whitePlayer="MITRANIALEX"/>
+<Game blackPlayer="JOSECRUZSANCHEZYORDAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="7" whitePlayer="HARRIMANJOHN"/>
+<Game blackPlayer="DOSSOWSEBASTIÁN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="31" whitePlayer="USECHEGERARDO"/>
+<Game blackPlayer="DONLEYJEREMIAH" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="8" whitePlayer="MARÍNANDRADEFARLAN"/>
+<Game blackPlayer="LALUCENAHUEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="32" whitePlayer="GÁLVEZCARLOS"/>
+<Game blackPlayer="POLLITZERDAVID" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="9" whitePlayer="ALEXANDREPACHECOHELCIO"/>
+<Game blackPlayer="LASHMICHAEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="33" whitePlayer="REBAGLIATTIHECTOR"/>
+<Game blackPlayer="PEREIRALAÉRCIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="10" whitePlayer="REISENEGGERRENATE"/>
+<Game blackPlayer="PASQUALETTIGUILLERMO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="34" whitePlayer="MIMIZABENJAMIN"/>
+<Game blackPlayer="ACUÑACAMILO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="11" whitePlayer="LAPLAGNESANTIAGO"/>
+<Game blackPlayer="LONGAPABLO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="35" whitePlayer="OLIVIERIFEDERICO"/>
+<Game blackPlayer="ARMANDOLUCIANOCORTÉSDIEGO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="12" whitePlayer="LEONARDOBRAVOESPEJOALVARO"/>
+<Game blackPlayer="LUIZDEFIGUEIREDODIEGO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="36" whitePlayer="QAINKOÑE'NAGUILARLEÓN"/>
+<Game blackPlayer="CRISTOBALKEINNY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="13" whitePlayer="CURIELALEJANDRO"/>
+<Game blackPlayer="ZHOUANDY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="37" whitePlayer="ELOYMARTÍNVENTURAANTONIO"/>
+<Game blackPlayer="AVILASIDDHARTHA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="14" whitePlayer="REYESAYRTON"/>
+<Game blackPlayer="HERNÁNDEZMIGUEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="38" whitePlayer="MARÍAONEGAJOSÉ"/>
+<Game blackPlayer="NAVARROMATIAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="15" whitePlayer="VASQUEZEDISSON"/>
+<Game blackPlayer="PÉREZRICOABEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="39" whitePlayer="ESCOBAREDGAR"/>
+<Game blackPlayer="GUILLENBRYAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="16" whitePlayer="AUGUSTOGOMESDASILVATHIAGO"/>
+<Game blackPlayer="FLORESCORONADOCLAUDIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="40" whitePlayer="LINDENBAUMENRIQUE"/>
+<Game blackPlayer="URREGOOSCAR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="17" whitePlayer="VALLESTIAN"/>
+<Game blackPlayer="PUERTALOLI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="41" whitePlayer="ALVARADOEMILIANO"/>
+<Game blackPlayer="ALBERTOMERCADOSÁNCHEZMARIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="18" whitePlayer="PARKANTHONY"/>
+<Game blackPlayer="ANDRESCRUZPERILLACARLOS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="42" whitePlayer="ROCÍOPÉREZCOTTÍNDULCE"/>
+<Game blackPlayer="PAIZHECTOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="19" whitePlayer="LUDLADRIAAN"/>
+<Game blackPlayer="YERAYCORTÉSSARMIENTOALAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="43" whitePlayer="RODRIGUEZFRANCISCO"/>
+<Game blackPlayer="SCHUMOVICHPABLO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="20" whitePlayer="BEJARANOMIGUEL"/>
+<Game blackPlayer="ROSARIOTOMÁS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="44" whitePlayer="MARENGONICOLÁS"/>
+<Game blackPlayer="SALINASMATIAS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="21" whitePlayer="ANTONOVAELIZAVETA"/>
+<Game blackPlayer="A.GUZMÁNDANIEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="45" whitePlayer="JILBERTOJUAN"/>
+<Game blackPlayer="AGUSTINCEPEDAERNESTO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="22" whitePlayer="MUÑOZPIÑAMIGUEL"/>
+<Game blackPlayer="ZHOUANGEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="46" whitePlayer="GABRIELOTTERBACKPINHEIROJULIO"/>
+<Game blackPlayer="GARROFEMARTIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="23" whitePlayer="DANIELROMEROJOSÉ"/>
+<Game blackPlayer="JIMENEZSEBASTIAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="47" whitePlayer="KILSTEINANDRES"/>
+<Game blackPlayer="VALENZUELAALFREDO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="24" whitePlayer="MUQING"/>
+<Game blackPlayer="GAVIGANGERRY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="48" whitePlayer="CAMARGOPAULO"/>
+<Game blackPlayer="REISENEGGERRENATE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="AGUILARFERNANDO"/>
+<Game blackPlayer="PAPESCHIROSARIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="25" whitePlayer="GONZÁLEZFRANCISCO"/>
+<Game blackPlayer="RANGELLUIS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="49" whitePlayer="BELÉNJANIOTMARÍA"/>
+<Game blackPlayer="QUINTEROZAZUETARICARDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="BURGOSJUAN"/>
+<Game blackPlayer="A.TAPIASILVAPABLO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="26" whitePlayer="NÚÑEZRAMÓN"/>
+<Game blackPlayer="ESTIGARRIBIAARIEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="50" whitePlayer="LEONCESAR"/>
+<Game blackPlayer="FLORENCIAABRAHAM" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="TABARESSANTIAGO"/>
+<Game blackPlayer="ANTONIOHERNÁNDEZCISNEROSMARCO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="27" whitePlayer="JOSÉPÉREZWILKEABEL"/>
+<Game blackPlayer="JIMÉNEZUSUGAYULY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="51" whitePlayer="SANCHEZLUZ"/>
+<Game blackPlayer="OZAWATORANOSUKE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="4" whitePlayer="JOSECRUZSANCHEZYORDAN"/>
+<Game blackPlayer="GUTIÉRREZÁNGEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="28" whitePlayer="MILLAPÁNVALERIA"/>
+<Game blackPlayer="CUSNIRLEANDRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="52" whitePlayer="ZHOUANNA"/>
+<Game blackPlayer="LAPLAGNESANTIAGO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="5" whitePlayer="ZHOUYIXIAN"/>
+<Game blackPlayer="IGNACIOCORREAFRANCO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="29" whitePlayer="JULIAOOMAR"/>
+<Game blackPlayer="BERENICEMARTÍNEZPALACIOSITZEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="53" whitePlayer="RODRIGUEZJUAN"/>
+<Game blackPlayer="MANUELZAYASSARACHOJOSE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="6" whitePlayer="ARMANDOLUCIANOCORTÉSDIEGO"/>
+<Game blackPlayer="GÓMEZMARIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="30" whitePlayer="PEREIRAGONZALO"/>
+<Game blackPlayer="BOHERJORGE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="54" whitePlayer="BRZOSTOWSKIAXEL"/>
+<Game blackPlayer="FELIPESAMPERJUAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="7" whitePlayer="HERMANFERREIRAVANRIEMSDIJKFELIPE"/>
+<Game blackPlayer="WILLIAMSCOLIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="31" whitePlayer="GÁLVEZCARLOS"/>
+<Game blackPlayer="CELISHÉCTOR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="55" whitePlayer="BRITOALFONSO"/>
+<Game blackPlayer="IGLESISIGNACIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="8" whitePlayer="MANRIQUEFERNANDO"/>
+<Game blackPlayer="REBAGLIATTIHECTOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="32" whitePlayer="USECHEGERARDO"/>
+<Game blackPlayer="FUENTEALBAMAURICIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="56" whitePlayer="GUERRALESTER"/>
+<Game blackPlayer="POLLITZERDAVID" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="9" whitePlayer="ALBERTOMERCADOSÁNCHEZMARIO"/>
+<Game blackPlayer="MITRANIALEX" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="33" whitePlayer="KAMISAMAIAN"/>
+<Game blackPlayer="FIGUEROASEBASTIÁN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="57" whitePlayer="ANDRÉSACOSAPINZÓNEDGAR"/>
+<Game blackPlayer="ALEXANDREPACHECOHELCIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="10" whitePlayer="VALLESTIAN"/>
+<Game blackPlayer="OLIVIERIFEDERICO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="34" whitePlayer="DOSSOWSEBASTIÁN"/>
+<Game blackPlayer="GOROSITOLUCIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="58" whitePlayer="LIDDINGTONNICHOLAS"/>
+<Game blackPlayer="CURIELALEJANDRO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="11" whitePlayer="DONLEYJEREMIAH"/>
+<Game blackPlayer="FLORESCORONADOCLAUDIA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="35" whitePlayer="PASQUALETTIGUILLERMO"/>
+<Game blackPlayer="IVANMARTINEZMATEOSALEJANDRO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="59" whitePlayer="LORENAROJASOLIVARDEISY"/>
+<Game blackPlayer="HARRIMANJOHN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="12" whitePlayer="VASQUEZEDISSON"/>
+<Game blackPlayer="LALUCENAHUEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="36" whitePlayer="ZHOUANDY"/>
+<Game blackPlayer="CRESPODANIEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="60" whitePlayer="VÁSQUEZGABRIEL"/>
+<Game blackPlayer="MARÍNANDRADEFARLAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="13" whitePlayer="REYESAYRTON"/>
+<Game blackPlayer="LONGAPABLO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="37" whitePlayer="HERNÁNDEZMIGUEL"/>
+<Game blackPlayer="GIBBONSGUSTAVO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="61" whitePlayer="MANUELLAURINOJUAN"/>
+<Game blackPlayer="ACUÑACAMILO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="14" whitePlayer="AUGUSTOGOMESDASILVATHIAGO"/>
+<Game blackPlayer="ESCOBAREDGAR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="38" whitePlayer="LUIZDEFIGUEIREDODIEGO"/>
+<Game blackPlayer="PALMAEMMA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="62" whitePlayer="MOTAPAULO"/>
+<Game blackPlayer="LEONARDOBRAVOESPEJOALVARO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="15" whitePlayer="AVRAMLAURA"/>
+<Game blackPlayer="MIMIZABENJAMIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="39" whitePlayer="QAINKOÑE'NAGUILARLEÓN"/>
+<Game blackPlayer="ANDRESCHAVEZGONZALEZFABIAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="63" whitePlayer="CURIELDEMETRIO"/>
+<Game blackPlayer="CRISTOBALKEINNY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="16" whitePlayer="GARCIANAHUEL"/>
+<Game blackPlayer="LASHMICHAEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="40" whitePlayer="ANDRESCRUZPERILLACARLOS"/>
+<Game blackPlayer="MIRTERNESTO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="64" whitePlayer="EMILIOHENÁNDEZLÓPEZRUBEN"/>
+<Game blackPlayer="LUDLADRIAAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="17" whitePlayer="PEREIRALAÉRCIO"/>
+<Game blackPlayer="MARÍAONEGAJOSÉ" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="41" whitePlayer="PUERTALOLI"/>
+<Game blackPlayer="REYESERIKA" handicap="0" knownColor="true" result="RESULT_BOTHWIN" roundNumber="4" tableNumber="65" whitePlayer="DELAPUENTEMATIAS"/>
+<Game blackPlayer="AVILASIDDHARTHA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="18" whitePlayer="SALINASMATIAS"/>
+<Game blackPlayer="LINDENBAUMENRIQUE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="42" whitePlayer="PÉREZRICOABEL"/>
+<Game blackPlayer="YARETZIORTEGACAMPBELLPAOLA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="66" whitePlayer="VÁSQUEZQUIROGAALEN"/>
+<Game blackPlayer="SCHUMOVICHPABLO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="19" whitePlayer="NAVARROMATIAS"/>
+<Game blackPlayer="ELOYMARTÍNVENTURAANTONIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="43" whitePlayer="GABRIELOTTERBACKPINHEIROJULIO"/>
+<Game blackPlayer="HIDALGOSERGIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="67" whitePlayer="FLORESANA"/>
+<Game blackPlayer="URREGOOSCAR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="20" whitePlayer="AGUSTINCEPEDAERNESTO"/>
+<Game blackPlayer="RODRIGUEZFRANCISCO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="44" whitePlayer="ROSARIOTOMÁS"/>
+<Game blackPlayer="SEBASTIÁNMAGALLANESLÍBER" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="68" whitePlayer="HERNÁNDEZALAN"/>
+<Game blackPlayer="A.TAPIASILVAPABLO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="21" whitePlayer="GUILLENBRYAN"/>
+<Game blackPlayer="A.GUZMÁNDANIEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="45" whitePlayer="ROCÍOPÉREZCOTTÍNDULCE"/>
+<Game blackPlayer="MUÑOZPIÑAMIGUEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="22" whitePlayer="DANIELROMEROJOSÉ"/>
+<Game blackPlayer="VÁSQUEZGABRIEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="46" whitePlayer="ALVARADOEMILIANO"/>
+<Game blackPlayer="GUTIÉRREZEMILIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="23" whitePlayer="ANTONOVAELIZAVETA"/>
+<Game blackPlayer="CAMARGOPAULO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="47" whitePlayer="BERENICEMARTÍNEZPALACIOSITZEL"/>
+<Game blackPlayer="BEJARANOMIGUEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="24" whitePlayer="NAVARIVERAMATEO"/>
+<Game blackPlayer="BRITOALFONSO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="48" whitePlayer="KILSTEINANDRES"/>
+</Games>
+<ByePlayers>
+<ByePlayer player="HERMANFERREIRAVANRIEMSDIJKFELIPE" roundNumber="1"/>
+<ByePlayer player="DAVIDROBLESRODRIGUEZMANUEL" roundNumber="2"/>
+</ByePlayers>
+<TournamentParameterSet>
+<GeneralParameterSet bInternet="true" basicTime="45" beginDate="2020-10-03" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Michel Martens" endDate="2020-10-10" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="1D" genMMFloor="10K" genMMS2ValueAbsent="0" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="Online" name="Campeonato Iberoamericano Virtual 2020" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="congreso 2020" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="0" hdCorrection="1" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="DC" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

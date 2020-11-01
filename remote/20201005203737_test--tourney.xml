@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="72.224.53.125" fullVersionNumber="3.50" runningMode="SAL" saveDT="20201005203737">
+<Players>
+<Player agaExpirationDate="12/31/2199" agaId="20133" club="Columbus Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Devin" grade="1K" name="Fraze" participating="11111111111111111111" rank="1K" rating="1979" ratingOrigin="AGA : -1.71" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/31/2199" agaId="12443" club="Seattle AGA Chapter" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Andrew" grade="4D" name="Jackson" participating="11111111111111111111" rank="4D" rating="2420" ratingOrigin="AGA : 4.70" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="8/16/2023" agaId="3688" club="Albuquerque Go" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Robert" grade="6K" name="Gilman" participating="11111111111111111111" rank="6K" rating="1495" ratingOrigin="AGA : -6.55" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="1/30/2023" agaId="439" club="San Diego Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Lester C" grade="2K" name="Lanphear Iii" participating="11111111111111111111" rank="2K" rating="1874" ratingOrigin="AGA : -2.76" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/31/2199" agaId="16597" club="Univ. of Maryland Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Justin" grade="6D" name="Teng" participating="11111111111111111111" rank="6D" rating="2588" ratingOrigin="AGA : 6.38" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/31/2199" agaId="11442" club="Boulder Kids and Teens Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Paul" grade="2K" name="Barchilon" participating="11111111111111111111" rank="2K" rating="1879" ratingOrigin="AGA : -2.71" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="6/30/2021" agaId="1632" club="St. Louis Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Myron P" grade="1D" name="Souris" participating="11111111111111111111" rank="1D" rating="2062" ratingOrigin="AGA : 1.12" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="9/18/2022" agaId="4679" club="Triangle Go Group" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Charles" grade="1D" name="Alden" participating="11111111111111111111" rank="1D" rating="2099" ratingOrigin="AGA : 1.49" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/31/2099" agaId="19270" club="New York Go Association" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Mingming Stephanie" grade="8D" name="Yin" participating="11111111111111111111" rank="8D" rating="2830" ratingOrigin="AGA : 8.80" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="7/17/2022" agaId="3024" club="XYZ Private Go Group" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Chris" grade="3D" name="Garlock" participating="11111111111111111111" rank="3D" rating="2257" ratingOrigin="AGA : 3.07" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/31/2199" agaId="9220" club="Davis/Sacramento Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Karoline" grade="5K" name="Burrall Li" participating="11111111111111111111" rank="5K" rating="1551" ratingOrigin="AGA : -5.99" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="4/14/2022" agaId="14837" club="Womxn's Online Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Lisa" grade="2K" name="Scott" participating="11111111111111111111" rank="2K" rating="1879" ratingOrigin="AGA : -2.71" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="3/12/2009" agaId="16423" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Hajin" grade="8K" name="Lee" participating="11111111111111111111" rank="8K" rating="1267" ratingOrigin="AGA : -8.83" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="5/31/2023" agaId="261" club="Baltimore Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Arnold" grade="4K" name="Eudell" participating="11111111111111111111" rank="4K" rating="1692" ratingOrigin="AGA : -4.58" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/31/2199" agaId="11121" club="Santa Monica Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Andrew" grade="1D" name="Okun" participating="11111111111111111111" rank="1D" rating="2103" ratingOrigin="AGA : 1.53" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/31/2199" agaId="81" club="Baltimore Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Keith L" grade="4D" name="Arnold" participating="11111111111111111111" rank="4D" rating="2373" ratingOrigin="AGA : 4.23" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/31/2199" agaId="138" club="Brooklyn Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Terence G" grade="1K" name="Benson" participating="11111111111111111111" rank="1K" rating="1957" ratingOrigin="AGA : -1.93" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/31/2199" agaId="17" club="Austin Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jeff" grade="2D" name="Shaevel" participating="11111111111111111111" rank="2D" rating="2249" ratingOrigin="AGA : 2.99" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="5/7/2022" agaId="416" club="Seattle AGA Chapter" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Christopher" grade="3D" name="Kirschner" participating="11111111111111111111" rank="3D" rating="2258" ratingOrigin="AGA : 3.08" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="6/5/2023" agaId="2507" club="Empty Sky Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Thomas Y" grade="6D" name="Hsiang" participating="11111111111111111111" rank="6D" rating="2615" ratingOrigin="AGA : 6.65" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/5/2020" agaId="20943" club="Massachusetts Go Association" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Dan" grade="6K" name="Ritter" participating="11111111111111111111" rank="6K" rating="1535" ratingOrigin="AGA : -6.15" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/31/2199" agaId="12011" club="Empty Sky Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Steve" grade="4K" name="Colburn" participating="11111111111111111111" rank="4K" rating="1668" ratingOrigin="AGA : -4.82" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="4/1/2022" agaId="754" club="Luther College Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Theodore B" grade="5K" name="Terpstra" participating="11111111111111111111" rank="5K" rating="1568" ratingOrigin="AGA : -5.82" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="8/3/2021" agaId="13614" club="Womxn's Online Go Club" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Samantha" grade="5K" name="Fede" participating="11111111111111111111" rank="5K" rating="1649" ratingOrigin="AGA : -5.01" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games/>
+<TournamentParameterSet>
+<GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-10-05" canByoYomiTime="300" complementaryTimeSystem="CANBYOYOMI" director="" endDate="2020-10-05" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="1D" genMMFloor="1D" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="1D" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="" name="Undefined" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="test--tourney" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="0" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NULL" number="1"/>
+<PlacementCriterion name="NULL" number="2"/>
+<PlacementCriterion name="NULL" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="20000000000000" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDFOLD" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="0" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NULL" number="1"/>
+<PlacementCriterion name="NULL" number="2"/>
+<PlacementCriterion name="NULL" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

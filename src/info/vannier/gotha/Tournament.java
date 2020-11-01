@@ -3202,12 +3202,12 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
                 at = bt;
                 break;
             case GeneralParameterSet.GEN_GP_CTS_STDBYOYOMI:
-//                at = bt + 45 * gps.getStdByoYomiTime();
-                at = bt + 120 * gps.getStdByoYomiTime();
+                at = bt + 45 * gps.getStdByoYomiTime();
+//                at = bt + 120 * gps.getStdByoYomiTime();
                 break;
             case GeneralParameterSet.GEN_GP_CTS_CANBYOYOMI:
-//                at = bt + (60 * gps.getCanByoYomiTime()) / gps.getNbMovesCanTime();
-                at = bt + (120 * gps.getCanByoYomiTime()) / gps.getNbMovesCanTime();
+                at = bt + (60 * gps.getCanByoYomiTime()) / gps.getNbMovesCanTime();
+//                at = bt + (120 * gps.getCanByoYomiTime()) / gps.getNbMovesCanTime();
                 break;
             case GeneralParameterSet.GEN_GP_CTS_FISCHER:
                 at = bt + 120 * gps.getFischerTime();

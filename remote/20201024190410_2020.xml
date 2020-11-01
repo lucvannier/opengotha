@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="116.226.106.59" gothaMinorVersion="3" gothaVersion="349" runningMode="SAL" saveDT="20201024190410">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="归元" grade="6D" name="蒋" participating="11111111111111111111" rank="6D" rating="2600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="超" grade="6D" name="严" participating="11111111111111111111" rank="6D" rating="2600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="锴" grade="5D" name="颜" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="凡" grade="2D" name="陈" participating="11111111111111111111" rank="2D" rating="2200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="操" grade="4D" name="何" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="广" grade="5D" name="葛" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="岩军" grade="5D" name="刘" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="东宇" grade="7D" name="史" participating="11111111111111111111" rank="6D" rating="2600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="勇" grade="6D" name="何" participating="11111111111111111111" rank="6D" rating="2600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="学锋" grade="2D" name="陶" participating="11111111111111111111" rank="2D" rating="2200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="飞" grade="8D" name="齐" participating="11111111111111111111" rank="8D" rating="2800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="宇翔" grade="6D" name="赖" participating="11111111111111111111" rank="6D" rating="2600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="林峰" grade="3D" name="邹" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="通" grade="8D" name="沈" participating="11111111111111111111" rank="8D" rating="2800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="自兵" grade="5D" name="赵" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="雁培" grade="8D" name="赵" participating="11111111111111111111" rank="8D" rating="2800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="昌民" grade="7D" name="余" participating="11111111111111111111" rank="7D" rating="2700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="鹏" grade="2D" name="咏" participating="11111111111111111111" rank="2D" rating="2200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="丰" grade="8D" name="徐" participating="11111111111111111111" rank="8D" rating="2800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="祖江" grade="6D" name="尹" participating="11111111111111111111" rank="6D" rating="2600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="家齐" grade="4D" name="郭" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="宁" grade="3D" name="梁" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="振江" grade="3D" name="邵" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="南" grade="3D" name="戴" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="建国" grade="6D" name="王" participating="11111111111111111111" rank="6D" rating="2600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="恒星" grade="2D" name="谢" participating="11111111111111111111" rank="2D" rating="2200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="磊" grade="5D" name="刘" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="佳" grade="10D" name="陈" participating="11111111111111111111" rank="9D" rating="2900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="建国" grade="3D" name="杨" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="承乾" grade="6D" name="李" participating="11111111111111111111" rank="6D" rating="2600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="卫权" grade="3D" name="王" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="燕生" grade="4D" name="刘" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="青云" grade="5D" name="林" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="钘" grade="8D" name="陈" participating="11111111111111111111" rank="8D" rating="2800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="桓" grade="8D" name="李" participating="11111111111111111111" rank="8D" rating="2800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="欣阳" grade="7D" name="刘" participating="11111111111111111111" rank="7D" rating="2700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="源" grade="5D" name="于" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="书阳" grade="6D" name="肖" participating="11111111111111111111" rank="6D" rating="2600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="旻" grade="10D" name="张" participating="11111111111111111111" rank="9D" rating="2900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="贝恩" grade="4D" name="邵" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="建" grade="5D" name="诺" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="INI" registeringStatus="PRE" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="修勋" grade="3D" name="王" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="庆博" grade="3D" name="温" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="立" grade="7D" name="伍" participating="11111111111111111111" rank="7D" rating="2700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="惠泽" grade="2D" name="王" participating="11111111111111111111" rank="2D" rating="2200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="锋" grade="3D" name="夏" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="天舒" grade="4D" name="李" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="成" grade="7D" name="陈" participating="11111111111111111111" rank="7D" rating="2700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="小川" grade="6D" name="由" participating="11111111111111111111" rank="6D" rating="2600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="世兵" grade="4D" name="潘" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="晓川" grade="5D" name="孙" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="升光" grade="5D" name="冯" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="洋" grade="3D" name="汪" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="帆" grade="3D" name="张" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="雷" grade="6D" name="段" participating="11111111111111111111" rank="6D" rating="2600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="宇琪" grade="6D" name="王" participating="11111111111111111111" rank="6D" rating="2600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="岩" grade="4D" name="陈" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="晔" grade="5D" name="霍" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="敬弘" grade="7D" name="梁" participating="11111111111111111111" rank="7D" rating="2700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="林" grade="9D" name="左" participating="11111111111111111111" rank="9D" rating="2900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="恒" grade="5D" name="梁" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="健峰" grade="3D" name="赵" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="金涛" grade="4D" name="张" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="志垚" grade="8D" name="李" participating="11111111111111111111" rank="8D" rating="2800" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="宏平" grade="5D" name="马" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="赵雁培" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="1" whitePlayer="左林"/>
+        <Game blackPlayer="沈通" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="2" whitePlayer="张旻"/>
+        <Game blackPlayer="齐飞" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="3" whitePlayer="徐丰"/>
+        <Game blackPlayer="李志垚" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="4" whitePlayer="李桓"/>
+        <Game blackPlayer="陈钘" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="5" whitePlayer="陈佳"/>
+        <Game blackPlayer="梁敬弘" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="6" whitePlayer="伍立"/>
+        <Game blackPlayer="陈成" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="7" whitePlayer="余昌民"/>
+        <Game blackPlayer="段雷" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="8" whitePlayer="刘欣阳"/>
+        <Game blackPlayer="严超" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="9" whitePlayer="由小川"/>
+        <Game blackPlayer="何勇" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="10" whitePlayer="赖宇翔"/>
+        <Game blackPlayer="史东宇" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="11" whitePlayer="肖书阳"/>
+        <Game blackPlayer="王建国" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="12" whitePlayer="尹祖江"/>
+        <Game blackPlayer="蒋归元" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="13" whitePlayer="李承乾"/>
+        <Game blackPlayer="孙晓川" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="14" whitePlayer="王宇琪"/>
+        <Game blackPlayer="于源" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="15" whitePlayer="霍晔"/>
+        <Game blackPlayer="颜锴" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="16" whitePlayer="冯升光"/>
+        <Game blackPlayer="马宏平" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="17" whitePlayer="刘岩军"/>
+        <Game blackPlayer="刘磊" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="18" whitePlayer="葛广"/>
+        <Game blackPlayer="梁恒" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="19" whitePlayer="林青云"/>
+        <Game blackPlayer="何操" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="20" whitePlayer="邵贝恩"/>
+        <Game blackPlayer="陈岩" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="21" whitePlayer="刘燕生"/>
+        <Game blackPlayer="张金涛" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="22" whitePlayer="赵自兵"/>
+        <Game blackPlayer="郭家齐" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="23" whitePlayer="李天舒"/>
+        <Game blackPlayer="夏锋" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="24" whitePlayer="王修勋"/>
+        <Game blackPlayer="王卫权" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="25" whitePlayer="张帆"/>
+        <Game blackPlayer="邵振江" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="26" whitePlayer="戴南"/>
+        <Game blackPlayer="邹林峰" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="27" whitePlayer="杨建国"/>
+        <Game blackPlayer="赵健峰" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="28" whitePlayer="梁宁"/>
+        <Game blackPlayer="汪洋" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="29" whitePlayer="潘世兵"/>
+        <Game blackPlayer="温庆博" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="30" whitePlayer="谢恒星"/>
+        <Game blackPlayer="陶学锋" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="31" whitePlayer="咏鹏"/>
+        <Game blackPlayer="王惠泽" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="32" whitePlayer="陈凡"/>
+    </Games>
+    <TournamentParameterSet>
+        <GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-10-24" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Director name" endDate="2020-10-24" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="8D" genMMFloor="1D" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Location name" name="清华校友围棋联赛" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="6" shortName="2020清华校友围棋" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="3" hdNoHdRankThreshold="1D"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="MMS" number="1"/>
+                <PlacementCriterion name="SOSM" number="2"/>
+                <PlacementCriterion name="SOSOSM" number="3"/>
+                <PlacementCriterion name="NULL" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDFOLD" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="4"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

@@ -173,7 +173,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
      * returns the tounament found in this file 
      */
     private TournamentInterface downloadTournament(String strURL, File fDestination){
-        System.out.println("downloadTournament. strURL = " + strURL);
+//        System.out.println("downloadTournament. strURL = " + strURL);
         PrintWriter out = null;
         try {
             out = new PrintWriter(fDestination);
@@ -186,7 +186,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
 //            try(BufferedReader in = new BufferedReader(new InputStreamReader(urlTournament.openStream()))){
                 String inputLine;
                 while ((inputLine = in.readLine()) != null){
-                    System.out.println("inputLine = " + inputLine);
+//                    System.out.println("inputLine = " + inputLine);
                     if (inputLine.length() < 3) continue;
                     out.println(inputLine);
                 }
@@ -301,7 +301,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
                 String strTournamentURL = "http://opengotha.info/tournaments/" + strSubDir + "/" + strTournament;
                 
                 File fDestination = new File(Gotha.runningDirectory + "/remote/" + strTournament);
-                System.out.println("JFrRemoteTournaments.downloadTournaments fDestination = " + fDestination);
+//                System.out.println("JFrRemoteTournaments.downloadTournaments fDestination = " + fDestination);
                 if (fDestination.exists()){    
                     TournamentInterface t = null;
                     try {

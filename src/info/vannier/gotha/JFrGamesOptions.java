@@ -15,6 +15,7 @@ import java.util.logging.Logger;
  */
 public class JFrGamesOptions extends javax.swing.JFrame {
 
+//    private static final long REFRESH_DELAY = 2000;
     private static final long REFRESH_DELAY = 2000;
     private long lastComponentsUpdateTime = 0;
     private TournamentInterface tournament;
@@ -26,6 +27,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
+//                System.out.println("running = " + running);
                 if (!running){
                     timer.stop();
                 }
@@ -148,7 +150,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
 
         jLabel1.setText("Basic time (min)");
         pnlTime.add(jLabel1);
-        jLabel1.setBounds(10, 60, 120, 14);
+        jLabel1.setBounds(10, 70, 120, 14);
 
         txfBasicTime.setText("0");
         txfBasicTime.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -157,7 +159,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfBasicTime);
-        txfBasicTime.setBounds(280, 50, 40, 20);
+        txfBasicTime.setBounds(280, 60, 40, 20);
 
         grpComplTimeSystem.add(rdbSuddenDeath);
         rdbSuddenDeath.setSelected(true);
@@ -168,7 +170,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(rdbSuddenDeath);
-        rdbSuddenDeath.setBounds(10, 90, 200, 20);
+        rdbSuddenDeath.setBounds(10, 100, 200, 20);
 
         grpComplTimeSystem.add(rdbStdByoYomi);
         rdbStdByoYomi.setText("Standard Byo-yomi system");
@@ -178,7 +180,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(rdbStdByoYomi);
-        rdbStdByoYomi.setBounds(10, 120, 280, 20);
+        rdbStdByoYomi.setBounds(10, 130, 280, 20);
 
         grpComplTimeSystem.add(rdbCanByoYomi);
         rdbCanByoYomi.setText("Canadian Byo-yomi system");
@@ -188,7 +190,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(rdbCanByoYomi);
-        rdbCanByoYomi.setBounds(10, 170, 210, 20);
+        rdbCanByoYomi.setBounds(10, 180, 210, 20);
 
         grpComplTimeSystem.add(rdbFischer);
         rdbFischer.setText("Fischer system");
@@ -198,11 +200,11 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(rdbFischer);
-        rdbFischer.setBounds(10, 220, 200, 20);
+        rdbFischer.setBounds(10, 230, 200, 20);
 
         lblFischerTime.setText("Bonus time(seconds)");
         pnlTime.add(lblFischerTime);
-        lblFischerTime.setBounds(110, 240, 160, 20);
+        lblFischerTime.setBounds(110, 250, 160, 20);
 
         txfFischerTime.setText("5");
         txfFischerTime.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -211,11 +213,11 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfFischerTime);
-        txfFischerTime.setBounds(280, 240, 40, 20);
+        txfFischerTime.setBounds(280, 250, 40, 20);
 
         lblStdTime.setText("Time(seconds)");
         pnlTime.add(lblStdTime);
-        lblStdTime.setBounds(140, 140, 130, 20);
+        lblStdTime.setBounds(140, 150, 130, 20);
 
         txfStdTime.setText("30");
         txfStdTime.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -224,11 +226,11 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfStdTime);
-        txfStdTime.setBounds(280, 140, 40, 20);
+        txfStdTime.setBounds(280, 150, 40, 20);
 
         lblCanTime.setText("Time(seconds)");
         pnlTime.add(lblCanTime);
-        lblCanTime.setBounds(140, 190, 130, 20);
+        lblCanTime.setBounds(140, 200, 130, 20);
 
         txfCanTime.setText("300");
         txfCanTime.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -237,7 +239,7 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfCanTime);
-        txfCanTime.setBounds(280, 190, 40, 20);
+        txfCanTime.setBounds(280, 200, 40, 20);
 
         txfCanNbMoves.setText("15");
         txfCanNbMoves.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -246,25 +248,25 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(txfCanNbMoves);
-        txfCanNbMoves.setBounds(30, 190, 40, 20);
+        txfCanNbMoves.setBounds(30, 200, 40, 20);
 
         lblEGFClass.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         lblEGFClass.setForeground(new java.awt.Color(255, 0, 0));
         lblEGFClass.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblEGFClass.setText("EGF class X");
         pnlTime.add(lblEGFClass);
-        lblEGFClass.setBounds(10, 310, 290, 30);
+        lblEGFClass.setBounds(10, 320, 290, 30);
 
         jLabel7.setText("moves");
         pnlTime.add(jLabel7);
-        jLabel7.setBounds(80, 190, 50, 20);
+        jLabel7.setBounds(80, 200, 50, 20);
 
         lblAT.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         lblAT.setForeground(new java.awt.Color(255, 0, 0));
         lblAT.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
         lblAT.setText("Adjusted time = 0");
         pnlTime.add(lblAT);
-        lblAT.setBounds(10, 290, 290, 20);
+        lblAT.setBounds(10, 300, 290, 20);
 
         cbInternet.setText("Internet game");
         cbInternet.addFocusListener(new java.awt.event.FocusAdapter() {
@@ -273,13 +275,13 @@ public class JFrGamesOptions extends javax.swing.JFrame {
             }
         });
         pnlTime.add(cbInternet);
-        cbInternet.setBounds(10, 30, 120, 23);
+        cbInternet.setBounds(110, 20, 120, 23);
 
         pnlGam.add(pnlTime);
         pnlTime.setBounds(10, 90, 340, 350);
 
         getContentPane().add(pnlGam);
-        pnlGam.setBounds(20, 0, 500, 500);
+        pnlGam.setBounds(223, 0, 350, 500);
 
         pack();
     }// </editor-fold>//GEN-END:initComponents

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="31.5.142.215" gothaMinorVersion="0" gothaVersion="349" saveDT="20201006184758">
+<Players>
+<Player agaExpirationDate="" agaId="" club="Brsv" country="RO" egfPin="10786259" ffgLicence="" ffgLicenceStatus="" firstName="Claudiu" grade=" 1K" name="Nuteanu" participating="11111111111111111111" rank="1K" rating="2017" ratingOrigin="EGF : 2017" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ciprian" grade="8K" name="Caila" participating="11000000000000000000" rank="8K" rating="1300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Bucu" country="RO" egfPin="12662320" ffgLicence="" ffgLicenceStatus="" firstName="Radu" grade="2K" name="Popescu" participating="11111111111111111111" rank="2K" rating="1779" ratingOrigin="EGF : 1779" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Bucu" country="RO" egfPin="12325324" ffgLicence="" ffgLicenceStatus="" firstName="Stefan" grade=" 4K" name="Clenciu" participating="11111111111111111111" rank="4K" rating="1708" ratingOrigin="EGF : 1708" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TgMs" country="RO" egfPin="14913096" ffgLicence="" ffgLicenceStatus="" firstName="Arpad" grade=" 4K" name="Balazs" participating="11111111111111111111" rank="4K" rating="1675" ratingOrigin="EGF : 1675" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Brsv" country="RO" egfPin="16386348" ffgLicence="" ffgLicenceStatus="" firstName="Theodor" grade="13K" name="Calota" participating="11000000000000000000" rank="13K" rating="847" ratingOrigin="EGF : 847" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="10898943" ffgLicence="" ffgLicenceStatus="" firstName="Ferenc" grade=" 5K" name="Toth" participating="11111111111111111111" rank="5K" rating="1581" ratingOrigin="EGF : 1581" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cara" country="RO" egfPin="18374719" ffgLicence="" ffgLicenceStatus="" firstName="Rares_Andrei" grade=" 3K" name="Pituru" participating="11111111111111111111" rank="3K" rating="1756" ratingOrigin="EGF : 1756" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cara" country="RO" egfPin="18374708" ffgLicence="" ffgLicenceStatus="" firstName="Madalin_Alexandru" grade=" 5K" name="Gheorghe" participating="11111111111111111111" rank="5K" rating="1645" ratingOrigin="EGF : 1645" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="16433527" ffgLicence="" ffgLicenceStatus="" firstName="Patrik" grade=" 4K" name="Menczel" participating="11111111111111111111" rank="4K" rating="1714" ratingOrigin="EGF : 1714" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="BALAZSARPAD" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="NUTEANUCLAUDIU"/>
+<Game blackPlayer="POPESCURADU" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="GHEORGHEMADALIN_ALEXANDRU"/>
+<Game blackPlayer="TOTHFERENC" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="PITURURARES_ANDREI"/>
+<Game blackPlayer="MENCZELPATRIK" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="4" whitePlayer="CAILACIPRIAN"/>
+<Game blackPlayer="CALOTATHEODOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="CLENCIUSTEFAN"/>
+<Game blackPlayer="PITURURARES_ANDREI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="BALAZSARPAD"/>
+<Game blackPlayer="GHEORGHEMADALIN_ALEXANDRU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="MENCZELPATRIK"/>
+<Game blackPlayer="CLENCIUSTEFAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="NUTEANUCLAUDIU"/>
+<Game blackPlayer="CAILACIPRIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS_BYDEF" roundNumber="2" tableNumber="4" whitePlayer="POPESCURADU"/>
+<Game blackPlayer="CALOTATHEODOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="5" whitePlayer="TOTHFERENC"/>
+<Game blackPlayer="PITURURARES_ANDREI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="1" whitePlayer="CLENCIUSTEFAN"/>
+<Game blackPlayer="GHEORGHEMADALIN_ALEXANDRU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="2" whitePlayer="BALAZSARPAD"/>
+<Game blackPlayer="TOTHFERENC" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="MENCZELPATRIK"/>
+<Game blackPlayer="NUTEANUCLAUDIU" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="4" whitePlayer="POPESCURADU"/>
+<Game blackPlayer="PITURURARES_ANDREI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="1" whitePlayer="GHEORGHEMADALIN_ALEXANDRU"/>
+<Game blackPlayer="CLENCIUSTEFAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="2" whitePlayer="POPESCURADU"/>
+<Game blackPlayer="MENCZELPATRIK" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="3" whitePlayer="BALAZSARPAD"/>
+<Game blackPlayer="NUTEANUCLAUDIU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="4" whitePlayer="TOTHFERENC"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="45" beginDate="2020-09-12" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Lucrețiu Calotă" endDate="2020-09-13" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="KGS" name="Semifinala Cupa României" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="4" shortName="semifinalacn2020" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="SOSW" number="2"/>
+<PlacementCriterion name="SODOSW" number="3"/>
+<PlacementCriterion name="Rating" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="false" paiMaDUDDLowerMode="TOP" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

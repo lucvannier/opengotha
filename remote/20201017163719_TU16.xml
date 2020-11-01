@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="195.155.195.235" gothaMinorVersion="0" gothaVersion="349" saveDT="20201017163719">
+<Players>
+<Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="18501307" ffgLicence="" ffgLicenceStatus="" firstName="Ruzgar_Deniz" grade="18K" name="Ozbay" participating="11111111111111111111" rank="18K" rating="371" ratingOrigin="EGF : 371" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="17313428" ffgLicence="" ffgLicenceStatus="" firstName="Gun" grade="13K" name="Urkmez" participating="11111111111111111111" rank="13K" rating="605" ratingOrigin="EGF : 605" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="18086563" ffgLicence="" ffgLicenceStatus="" firstName="Bugra" grade="15K" name="Yalcin" participating="11111111111111111111" rank="15K" rating="747" ratingOrigin="EGF : 747" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="19286806" ffgLicence="" ffgLicenceStatus="" firstName="Ayse_Nil" grade="15K" name="Oncel" participating="11111111111111111111" rank="15K" rating="550" ratingOrigin="EGF : 550" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="18737235" ffgLicence="" ffgLicenceStatus="" firstName="Emre" grade="16K" name="Aviyente" participating="11111111111111111111" rank="16K" rating="554" ratingOrigin="EGF : 554" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="18301206" ffgLicence="" ffgLicenceStatus="" firstName="Asha_Acin" grade="10K" name="Kanbolat" participating="11111111111111111111" rank="10K" rating="355" ratingOrigin="EGF : 355" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="17601804" ffgLicence="" ffgLicenceStatus="" firstName="Mehmet_Ali" grade="15K" name="Goktas" participating="11111111111111111111" rank="15K" rating="904" ratingOrigin="EGF : 904" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="19474059" ffgLicence="" ffgLicenceStatus="" firstName="Burak" grade="16K" name="Akbas" participating="10000000000000000000" rank="16K" rating="100" ratingOrigin="EGF : 100" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="18586304" ffgLicence="" ffgLicenceStatus="" firstName="Ahmet_Emir" grade="13K" name="Aydin" participating="10000000000000000000" rank="13K" rating="831" ratingOrigin="EGF : 831" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="URKMEZGUN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="AKBASBURAK"/>
+<Game blackPlayer="ONCELAYSE_NİL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="1" whitePlayer="GOKTASMEHMET_ALİ"/>
+<Game blackPlayer="GOKTASMEHMET_ALİ" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="AVİYENTEEMRE"/>
+<Game blackPlayer="AVİYENTEEMRE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="2" whitePlayer="URKMEZGUN"/>
+<Game blackPlayer="AYDİNAHMET_EMİR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="ONCELAYSE_NİL"/>
+<Game blackPlayer="OZBAYRUZGAR_DENİZ" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="KANBOLATASHA_ACİN"/>
+<Game blackPlayer="KANBOLATASHA_ACİN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="4" whitePlayer="YALCİNBUGRA"/>
+<Game blackPlayer="KANBOLATASHA_ACİN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="GOKTASMEHMET_ALİ"/>
+<Game blackPlayer="OZBAYRUZGAR_DENİZ" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="URKMEZGUN"/>
+<Game blackPlayer="ONCELAYSE_NİL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="YALCİNBUGRA"/>
+</Games>
+<ByePlayers>
+<ByePlayer player="OZBAYRUZGAR_DENİZ" roundNumber="1"/>
+<ByePlayer player="AVİYENTEEMRE" roundNumber="2"/>
+<ByePlayer player="YALCİNBUGRA" roundNumber="3"/>
+</ByePlayers>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-10-17" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Ugur Arikan" endDate="2020-10-18" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="KGS" name="Turkish Under 16 divison" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="TU16" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="SOSW" number="2"/>
+<PlacementCriterion name="SOSOSW" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

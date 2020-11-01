@@ -1,0 +1,19 @@
+Tourney	EssaiLVLu15h27, Les Oustalous
+location='Les Oustalous'
+	start=2020-08-31
+	finish=2020-08-31
+PLAYERS
+99999	Vañnier, Luc	30K
+
+GAMES 1
+
+GAMES 2
+
+GAMES 3
+
+GAMES 4
+
+GAMES 5
+
+
+END

@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="5.12.24.47" gothaMinorVersion="0" gothaVersion="349" saveDT="20201119155024">
+<Players>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="12550043" ffgLicence="" ffgLicenceStatus="" firstName="Cristian" grade="16K" name="Dumitrescu" participating="11111111111111111111" rank="15K" rating="562" ratingOrigin="EGF : 562" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="18549652" ffgLicence="" ffgLicenceStatus="" firstName="Eduard" grade="18K" name="Iugulescu" participating="11111111111111111111" rank="18K" rating="304" ratingOrigin="EGF : 304" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="DNRO" country="RO" egfPin="19501064" ffgLicence="" ffgLicenceStatus="" firstName="Ayan" grade="20K" name="Gal" participating="11111111111111111111" rank="20K" rating="131" ratingOrigin="EGF : 131" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19025765" ffgLicence="" ffgLicenceStatus="" firstName="Matei" grade="17K" name="Sincari" participating="11111111111111111111" rank="17K" rating="383" ratingOrigin="EGF : 383" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Saka" country="RO" egfPin="18313702" ffgLicence="" ffgLicenceStatus="" firstName="Alissa" grade="19K" name="Fodorean" participating="11111111111111111111" rank="19K" rating="215" ratingOrigin="EGF : 215" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19525418" ffgLicence="" ffgLicenceStatus="" firstName="Alesia" grade="20K" name="Ungureanu" participating="11111111111111111111" rank="20K" rating="131" ratingOrigin="EGF : 131" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="ATSU" country="RO" egfPin="17962461" ffgLicence="" ffgLicenceStatus="" firstName="Matei_Stefan" grade=" 9K" name="Baldea" participating="11111111111111111111" rank="9K" rating="1213" ratingOrigin="EGF : 1213" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="18533504" ffgLicence="" ffgLicenceStatus="" firstName="Mihai-Florin" grade="15K" name="Pop" participating="11111111111111111111" rank="15K" rating="572" ratingOrigin="EGF : 572" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="18750391" ffgLicence="" ffgLicenceStatus="" firstName="Mihnea" grade="15K" name="Burlacu-Zane" participating="11111111111111111111" rank="15K" rating="557" ratingOrigin="EGF : 557" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="18513517" ffgLicence="" ffgLicenceStatus="" firstName="Alexandru-Nicolas" grade="13K" name="Patrascu" participating="11111111111111111111" rank="13K" rating="837" ratingOrigin="EGF : 837" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19001763" ffgLicence="" ffgLicenceStatus="" firstName="Gruia" grade="20K" name="Taranu" participating="11111111111111111111" rank="20K" rating="144" ratingOrigin="EGF : 144" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TMWS" country="RO" egfPin="18437639" ffgLicence="" ffgLicenceStatus="" firstName="Maria" grade="15K" name="Irhasiu" participating="11111111111111111111" rank="15K" rating="583" ratingOrigin="EGF : 583" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="ATSU" country="RO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Mihnea" grade="20" name="Catana" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Saka" country="RO" egfPin="19533602" ffgLicence="" ffgLicenceStatus="" firstName="Sara_Maria" grade="19K" name="Ghetu" participating="11111111111111111111" rank="18K" rating="314" ratingOrigin="EGF : 314" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19662192" ffgLicence="" ffgLicenceStatus="" firstName="Flavia" grade="20K" name="Mazga" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="EGF : 100" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19586413" ffgLicence="" ffgLicenceStatus="" firstName="Maria" grade="20K" name="Sincari" participating="11111111111111111111" rank="20K" rating="131" ratingOrigin="EGF : 131" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19674193" ffgLicence="" ffgLicenceStatus="" firstName="Albert" grade="20K" name="Bruckner" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="EGF : 100" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Saka" country="RO" egfPin="19501603" ffgLicence="" ffgLicenceStatus="" firstName="Maia" grade="20K" name="Peter" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="EGF : 100" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19013764" ffgLicence="" ffgLicenceStatus="" firstName="Luca" grade="17K" name="Sincari" participating="11111111111111111111" rank="17K" rating="386" ratingOrigin="EGF : 386" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="18625728" ffgLicence="" ffgLicenceStatus="" firstName="Edvin-Matei" grade="12K" name="Petre" participating="11111111111111111111" rank="12K" rating="904" ratingOrigin="EGF : 904" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Saka" country="RO" egfPin="19525605" ffgLicence="" ffgLicenceStatus="" firstName="Denis_Mihai" grade="20K" name="Ghetu" participating="11111111111111111111" rank="19K" rating="163" ratingOrigin="EGF : 163" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="ATSU" country="RO" egfPin="17937458" ffgLicence="" ffgLicenceStatus="" firstName="Bogdan_Stefan" grade=" 7K" name="Tifrea" participating="11111111111111111111" rank="7K" rating="1390" ratingOrigin="EGF : 1390" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="GIRO" country="RO" egfPin="18337704" ffgLicence="" ffgLicenceStatus="" firstName="Ovidiu" grade="10K" name="Berceanu" participating="11111111111111111111" rank="10K" rating="1078" ratingOrigin="EGF : 1078" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19501416" ffgLicence="" ffgLicenceStatus="" firstName="Andrei" grade="18K" name="Boiarinof" participating="11111111111111111111" rank="18K" rating="275" ratingOrigin="EGF : 275" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="19349902" ffgLicence="" ffgLicenceStatus="" firstName="Mihail" grade="17K" name="Patrascuta" participating="11111111111111111111" rank="17K" rating="445" ratingOrigin="EGF : 445" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TMWS" country="RO" egfPin="18625145" ffgLicence="" ffgLicenceStatus="" firstName="Rares-Mihai" grade="17K" name="Irhasiu" participating="11111111111111111111" rank="17K" rating="354" ratingOrigin="EGF : 354" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Boto" country="RO" egfPin="19062769" ffgLicence="" ffgLicenceStatus="" firstName="David" grade="20K" name="Rotarita" participating="11111111111111111111" rank="20K" rating="103" ratingOrigin="EGF : 103" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19062164" ffgLicence="" ffgLicenceStatus="" firstName="Maria" grade="18K" name="Macovei" participating="11111111111111111111" rank="18K" rating="328" ratingOrigin="EGF : 328" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="UNRO" country="RO" egfPin="18350706" ffgLicence="" ffgLicenceStatus="" firstName="Marco" grade="14K" name="Aranghelovici" participating="11111111111111111111" rank="14K" rating="697" ratingOrigin="EGF : 697" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19433843" ffgLicence="" ffgLicenceStatus="" firstName="Stefania" grade="20K" name="Lostun" participating="11111111111111111111" rank="20K" rating="101" ratingOrigin="EGF : 101" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="18362278" ffgLicence="" ffgLicenceStatus="" firstName="Robert-Andrei" grade=" 3K" name="Grosu" participating="11111111111111111111" rank="3K" rating="1757" ratingOrigin="EGF : 1757" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="18637729" ffgLicence="" ffgLicenceStatus="" firstName="David" grade="19K" name="Arnautu" participating="11111111111111111111" rank="19K" rating="238" ratingOrigin="EGF : 238" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="DNRO" country="RO" egfPin="19533063" ffgLicence="" ffgLicenceStatus="" firstName="Andi" grade="20K" name="Gal" participating="11111111111111111111" rank="20K" rating="143" ratingOrigin="EGF : 143" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="19533415" ffgLicence="" ffgLicenceStatus="" firstName="Ilinca-Stefania" grade="20K" name="Pop" participating="11111111111111111111" rank="20K" rating="112" ratingOrigin="EGF : 112" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="18398237" ffgLicence="" ffgLicenceStatus="" firstName="Matei_Alexandru" grade="16K" name="Arnautu" participating="11111111111111111111" rank="16K" rating="458" ratingOrigin="EGF : 458" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="C361" country="RO" egfPin="19425362" ffgLicence="" ffgLicenceStatus="" firstName="Tudor-Petru" grade="19K" name="Postelnicu" participating="11111111111111111111" rank="18K" rating="279" ratingOrigin="EGF : 279" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games/>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-11-21" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="FRGO" endDate="2020-11-22" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="KGS" name="CNJ-2020-U12" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="6" shortName="CNJ-2020-U12" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="SOSW" number="2"/>
+<PlacementCriterion name="SOSOSW" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

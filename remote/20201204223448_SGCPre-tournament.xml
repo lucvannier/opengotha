@@ -1,0 +1,63 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="213.55.241.34" fullVersionNumber="3.51" runningMode="SAL" saveDT="20201204223448">
+<Players>
+<Player agaExpirationDate="" agaId="" club="Kogo" country="CH" egfPin="14774254" ffgLicence="" ffgLicenceStatus="" firstName="Rose-Marguerite" grade=" 4K" name="Martin" participating="11111111111111111111" rank="4K" rating="1689" ratingOrigin="EGF : 1689" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Kogo" country="CH" egfPin="18998628" ffgLicence="" ffgLicenceStatus="" firstName="Laurent" grade=" 7K" name="Bellini" participating="11111111111111111111" rank="8K" rating="1308" ratingOrigin="EGF : 1308" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Laus" country="CH" egfPin="17374214" ffgLicence="" ffgLicenceStatus="" firstName="Yoshiaki" grade=" 9K" name="Saito" participating="11111111111111111111" rank="9K" rating="1159" ratingOrigin="EGF : 1159" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="CH" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Chenyinxia" grade="1D" name="Zuo" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Yver" country="CH" egfPin="14733246" ffgLicence="" ffgLicenceStatus="" firstName="David" grade=" 5K" name="Rosat" participating="11111111111111111111" rank="6K" rating="1529" ratingOrigin="EGF : 1529" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TAv" country="IL" egfPin="18986627" ffgLicence="" ffgLicenceStatus="" firstName="Eshkar" grade=" 6K" name="Gutkind" participating="11111111111111111111" rank="6K" rating="1494" ratingOrigin="EGF : 1494" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="IGC" country="CH" egfPin="13949815" ffgLicence="" ffgLicenceStatus="" firstName="John" grade=" 4D" name="Walch" participating="11111111111111111111" rank="4D" rating="2407" ratingOrigin="EGF : 2407" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="CH" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ramon" grade="10K" name="Velazquez" participating="11111111111111111111" rank="10K" rating="1100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="nwg" country="CH" egfPin="17686581" ffgLicence="" ffgLicenceStatus="" firstName="Hanspeter" grade=" 9K" name="Schmid" participating="11111111111111111111" rank="9K" rating="1168" ratingOrigin="EGF : 1168" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="CH" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Umasuthasharma" grade="18K" name="Mohonanasarma" participating="11111111111111111111" rank="18K" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Zur" country="CH" egfPin="10513492" ffgLicence="" ffgLicenceStatus="" firstName="Lorenz" grade=" 1K" name="Trippel" participating="11111111111111111111" rank="1K" rating="1992" ratingOrigin="EGF : 1992" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Ishi" country="CH" egfPin="13701578" ffgLicence="" ffgLicenceStatus="" firstName="Flavien" grade=" 2D" name="Aubelle" participating="11111111111111111111" rank="2D" rating="2204" ratingOrigin="EGF : 2204" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Madr" country="ES" egfPin="15686671" ffgLicence="" ffgLicenceStatus="" firstName="Hakuba" grade=" 3D" name="Kuwano" participating="11111111111111111111" rank="3D" rating="2325" ratingOrigin="EGF : 2325" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="kogo" country="CH" egfPin="14850418" ffgLicence="" ffgLicenceStatus="" firstName="Benoit" grade=" 1D" name="Felix" participating="11111111111111111111" rank="1D" rating="2059" ratingOrigin="EGF : 2059" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Zuri" country="PL" egfPin="14813139" ffgLicence="" ffgLicenceStatus="" firstName="Cezary" grade=" 3D" name="Czernecki" participating="11111111111111111111" rank="3D" rating="2295" ratingOrigin="EGF : 2295" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Kogo" country="CH" egfPin="15086104" ffgLicence="" ffgLicenceStatus="" firstName="Sandra" grade=" 5K" name="Woelffel" participating="11111111111111111111" rank="6K" rating="1495" ratingOrigin="EGF : 1495" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="CH" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Michael" grade="7K" name="Sun" participating="11111111111111111111" rank="7K" rating="1400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Pei" country="CH" egfPin="14613445" ffgLicence="" ffgLicenceStatus="" firstName="Rick" grade=" 1K" name="Wertenbroek" participating="11111111111111111111" rank="1K" rating="1969" ratingOrigin="EGF : 1969" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="KoGo" country="CH" egfPin="16398547" ffgLicence="" ffgLicenceStatus="" firstName="Francois" grade=" 2K" name="van_Walleghem" participating="11111111111111111111" rank="2K" rating="1870" ratingOrigin="EGF : 1870" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Zur" country="CH" egfPin="10998394" ffgLicence="" ffgLicenceStatus="" firstName="Adrian" grade=" 2D" name="Zweig" participating="11111111111111111111" rank="2K" rating="1945" ratingOrigin="EGF : 1945" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="LLN" country="BE" egfPin="15262852" ffgLicence="" ffgLicenceStatus="" firstName="Thibault" grade=" 1D" name="Pillon" participating="11111111111111111111" rank="1K" rating="2034" ratingOrigin="EGF : 2034" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Zur" country="CH" egfPin="16350961" ffgLicence="" ffgLicenceStatus="" firstName="Frederic" grade=" 2D" name="Schlattner" participating="11111111111111111111" rank="1D" rating="2142" ratingOrigin="EGF : 2142" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Neu" country="CH" egfPin="15650547" ffgLicence="" ffgLicenceStatus="" firstName="Sylvain" grade=" 2D" name="Praz" participating="11111111111111111111" rank="1D" rating="2137" ratingOrigin="EGF : 2137" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="zur" country="CH" egfPin="18074815" ffgLicence="" ffgLicenceStatus="" firstName="Stijn" grade=" 2K" name="Vermeeren" participating="11111111111111111111" rank="2K" rating="1917" ratingOrigin="EGF : 1917" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="CH" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ivan" grade="1D" name="Bozin" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Roma" country="IT" egfPin="16974903" ffgLicence="" ffgLicenceStatus="" firstName="Sofia" grade=" 3K" name="Malatesta" participating="11111111111111111111" rank="3K" rating="1791" ratingOrigin="EGF : 1791" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="CH" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Aline" grade="17K" name="Pilet" participating="11111111111111111111" rank="17K" rating="400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games/>
+<TournamentParameterSet>
+<GeneralParameterSet bInternet="true" basicTime="60" beginDate="2020-12-05" canByoYomiTime="600" complementaryTimeSystem="CANBYOYOMI" director="SwissGo" endDate="2020-12-06" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="1K" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="Online" name="Swiss Go Championship Test" nbMovesCanTime="25" numberOfCategories="1" numberOfRounds="5" shortName="SGC Pre-tournament" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="3" hdNoHdRankThreshold="1K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="DC" number="3"/>
+<PlacementCriterion name="SOSOSM" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="92.171.76.159" fullVersionNumber="3.51" runningMode="SAL" saveDT="20201116214341">
+<Players>
+<Player agaExpirationDate="" agaId="" club="63Ce" country="FR" egfPin="" ffgLicence="2100032" ffgLicenceStatus="L" firstName="William" grade="15K" name="Dupré" participating="11111111111111111111" rank="15K" rating="-900" ratingOrigin="FFG : -9999" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="63Ce" country="FR" egfPin="" ffgLicence="9838001" ffgLicenceStatus="L" firstName="Chantal" grade="5K" name="Gajdos" participating="11111111111111111111" rank="5K" rating="1580" ratingOrigin="FFG : -470" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="63Ce" country="FR" egfPin="" ffgLicence="8410200" ffgLicenceStatus="C" firstName="André" grade="7K" name="Amblard" participating="11111111111111111111" rank="7K" rating="1410" ratingOrigin="FFG : -640" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="63Ce" country="FR" egfPin="" ffgLicence="1900032" ffgLicenceStatus="L" firstName="Benoit" grade="2K" name="Munoz" participating="11111111111111111111" rank="2K" rating="1871" ratingOrigin="FFG : -179" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="63Ce" country="FR" egfPin="" ffgLicence="1800129" ffgLicenceStatus="L" firstName="Guillaume" grade="11K" name="Delplace" participating="11111111111111111111" rank="11K" rating="964" ratingOrigin="FFG : -1086" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="63Ce" country="FR" egfPin="" ffgLicence="0700287" ffgLicenceStatus="-" firstName="Patrick" grade="11K" name="Bossut" participating="11111111111111111111" rank="11K" rating="950" ratingOrigin="FFG : -1100" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="63Ce" country="FR" egfPin="" ffgLicence="0660508" ffgLicenceStatus="L" firstName="Etienne" grade="5K" name="Crubellier" participating="11111111111111111111" rank="5K" rating="1616" ratingOrigin="FFG : -434" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="DUPRÉWILLIAM" handicap="3" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="BOSSUTPATRICK"/>
+<Game blackPlayer="GAJDOSCHANTAL" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="MUNOZBENOIT"/>
+<Game blackPlayer="DELPLACEGUILLAUME" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="AMBLARDANDRÉ"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet bInternet="true" basicTime="60" beginDate="2020-11-16" canByoYomiTime="300" complementaryTimeSystem="CANBYOYOMI" director="" endDate="2020-12-20" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="1D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Clermont-Ferrand" name="Tournoi internet" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="TournoiInternetGRAUG2020" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="31.5.142.215" gothaMinorVersion="0" gothaVersion="349" saveDT="20201115211600">
+<Players>
+<Player agaExpirationDate="" agaId="" club="ATSU" country="RO" egfPin="15049716" ffgLicence="" ffgLicenceStatus="" firstName="Darius" grade=" 3D" name="Dobranis" participating="11111111111111111111" rank="2D" rating="2208" ratingOrigin="EGF : 2208" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="C361" country="RO" egfPin="14998104" ffgLicence="" ffgLicenceStatus="" firstName="Mihnea" grade="6K" name="Radulescu" participating="11111111111111111111" rank="6K" rating="1543" ratingOrigin="EGF : 1543" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="10398267" ffgLicence="" ffgLicenceStatus="" firstName="Marius" grade=" 2D" name="Danila" participating="11111111111111111111" rank="1K" rating="1974" ratingOrigin="EGF : 1974" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="C361" country="RO" egfPin="14213716" ffgLicence="" ffgLicenceStatus="" firstName="Dragos" grade=" 4K" name="Minjina" participating="11111111111111111111" rank="4K" rating="1663" ratingOrigin="EGF : 1663" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="C361" country="RO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ionete" grade="20K" name="Catalin" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TMWS" country="RO" egfPin="15725380" ffgLicence="" ffgLicenceStatus="" firstName="Gabriela_Viorica" grade=" 1D" name="Vlad" participating="11111111111111111111" rank="2K" rating="1887" ratingOrigin="EGF : 1887" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="10362396" ffgLicence="" ffgLicenceStatus="" firstName="Liviu" grade=" 4D" name="Oprisan" participating="11111111111111111111" rank="3D" rating="2347" ratingOrigin="EGF : 2347" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Giar" country="RO" egfPin="15333802" ffgLicence="" ffgLicenceStatus="" firstName="Ruxandra" grade="11K" name="Ciora" participating="11111111111111111111" rank="11K" rating="957" ratingOrigin="EGF : 957" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Brsv" country="RO" egfPin="14650449" ffgLicence="" ffgLicenceStatus="" firstName="Cezar" grade=" 2K" name="Ungurean" participating="11111111111111111111" rank="2K" rating="1927" ratingOrigin="EGF : 1927" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="12698620" ffgLicence="" ffgLicenceStatus="" firstName="Laura" grade=" 2D" name="Avram" participating="11111111111111111111" rank="2D" rating="2225" ratingOrigin="EGF : 2225" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="ATSU" country="RO" egfPin="15313056" ffgLicence="" ffgLicenceStatus="" firstName="Vasile" grade=" 8K" name="Dobranis" participating="11111111111111111111" rank="8K" rating="1261" ratingOrigin="EGF : 1261" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="12662320" ffgLicence="" ffgLicenceStatus="" firstName="Radu" grade=" 3K" name="Popescu" participating="11111111111111111111" rank="3K" rating="1784" ratingOrigin="EGF : 1784" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Brsv" country="RO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Adrian" grade="1K" name="Ionita" participating="11111111111111111111" rank="1K" rating="2000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Brsv" country="RO" egfPin="16386348" ffgLicence="" ffgLicenceStatus="" firstName="Theodor" grade="12K" name="Calota" participating="11111111111111111111" rank="12K" rating="894" ratingOrigin="EGF : 894" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="12513754" ffgLicence="" ffgLicenceStatus="" firstName="Theodor" grade=" 2D" name="Toma" participating="11111111111111111111" rank="2D" rating="2151" ratingOrigin="EGF : 2151" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TMWS" country="RO" egfPin="18437639" ffgLicence="" ffgLicenceStatus="" firstName="Maria" grade="15K" name="Irhasiu" participating="11111111111111111111" rank="15K" rating="581" ratingOrigin="EGF : 581" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="ATSU" country="RO" egfPin="15350038" ffgLicence="" ffgLicenceStatus="" firstName="Denis" grade=" 4D" name="Dobranis" participating="11111111111111111111" rank="4D" rating="2358" ratingOrigin="EGF : 2358" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="C361" country="RO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Coseraru" grade="20K" name="Vasile Ciprian" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="ATSU" country="RO" egfPin="17937458" ffgLicence="" ffgLicenceStatus="" firstName="Bogdan_Stefan" grade=" 7K" name="Tifrea" participating="11111111111111111111" rank="7K" rating="1392" ratingOrigin="EGF : 1392" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TMWS" country="RO" egfPin="12837253" ffgLicence="" ffgLicenceStatus="" firstName="Adrian" grade=" 1D" name="Martin" participating="11111111111111111111" rank="2K" rating="1939" ratingOrigin="EGF : 1939" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="12674519" ffgLicence="" ffgLicenceStatus="" firstName="Stefan" grade=" 1K" name="Radu" participating="11111111111111111111" rank="1K" rating="2003" ratingOrigin="EGF : 2003" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="10562145" ffgLicence="" ffgLicenceStatus="" firstName="Dragos" grade=" 1D" name="Fofirca" participating="11111111111111111111" rank="1K" rating="2005" ratingOrigin="EGF : 2005" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Brsv" country="RO" egfPin="18374719" ffgLicence="" ffgLicenceStatus="" firstName="Rares_Andrei" grade=" 3K" name="Pituru" participating="11111111111111111111" rank="3K" rating="1803" ratingOrigin="EGF : 1803" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="15974420" ffgLicence="" ffgLicenceStatus="" firstName="Elian_Ioan" grade=" 5D" name="Grigoriu" participating="11111111111111111111" rank="5D" rating="2535" ratingOrigin="EGF : 2535" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="10398410" ffgLicence="" ffgLicenceStatus="" firstName="Iulian" grade=" 3D" name="Toma" participating="11111111111111111111" rank="1D" rating="2077" ratingOrigin="EGF : 2077" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="16433527" ffgLicence="" ffgLicenceStatus="" firstName="Patrik" grade=" 4K" name="Menczel" participating="11111111111111111111" rank="4K" rating="1706" ratingOrigin="EGF : 1706" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="BaMa" country="RO" egfPin="18350761" ffgLicence="" ffgLicenceStatus="" firstName="Daniel" grade=" 2K" name="Dobridoreanu" participating="11111111111111111111" rank="2K" rating="1896" ratingOrigin="EGF : 1896" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="13062258" ffgLicence="" ffgLicenceStatus="" firstName="Mihai_Valentin" grade=" 5D" name="Serban" participating="11111111111111111111" rank="5D" rating="2452" ratingOrigin="EGF : 2452" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="13233825" ffgLicence="" ffgLicenceStatus="" firstName="Codrin" grade=" 1D" name="Vasiloanca-Smirnov" participating="11111111111111111111" rank="1K" rating="2040" ratingOrigin="EGF : 2040" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Brsv" country="RO" egfPin="18374708" ffgLicence="" ffgLicenceStatus="" firstName="Madalin_Alexandru" grade=" 4K" name="Gheorghe" participating="11111111111111111111" rank="4K" rating="1699" ratingOrigin="EGF : 1699" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="10350263" ffgLicence="" ffgLicenceStatus="" firstName="Sergiu_Dan" grade=" 3D" name="Iugulescu" participating="11111111111111111111" rank="2D" rating="2184" ratingOrigin="EGF : 2184" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="10925684" ffgLicence="" ffgLicenceStatus="" firstName="Catalin" grade=" 3K" name="Albu" participating="11111111111111111111" rank="3K" rating="1754" ratingOrigin="EGF : 1754" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="16750349" ffgLicence="" ffgLicenceStatus="" firstName="Dragos" grade=" 2D" name="Boldeanu" participating="11111111111111111111" rank="1D" rating="2072" ratingOrigin="EGF : 2072" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="IONITAADRIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="TOMAIULIAN"/>
+<Game blackPlayer="BOLDEANUDRAGOS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="PITURURARES_ANDREI"/>
+<Game blackPlayer="GHEORGHEMADALIN_ALEXANDRU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="VASILOANCA-SMIRNOVCODRIN"/>
+<Game blackPlayer="RADUSTEFAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS_BYDEF" roundNumber="1" tableNumber="4" whitePlayer="CALOTATHEODOR"/>
+<Game blackPlayer="DOBRANISDENIS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="5" whitePlayer="SERBANMIHAI_VALENTIN"/>
+<Game blackPlayer="OPRISANLIVIU" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="6" whitePlayer="DOBRANISDARIUS"/>
+<Game blackPlayer="TIFREABOGDAN_STEFAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="7" whitePlayer="AVRAMLAURA"/>
+<Game blackPlayer="IUGULESCUSERGIU_DAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="8" whitePlayer="DOBRANISVASILE"/>
+<Game blackPlayer="MARTINADRIAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="9" whitePlayer="TOMATHEODOR"/>
+<Game blackPlayer="SERBANMIHAI_VALENTIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="6" tableNumber="1" whitePlayer="IONITAADRIAN"/>
+<Game blackPlayer="FOFIRCADRAGOS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="10" whitePlayer="DOBRIDOREANUDANIEL"/>
+<Game blackPlayer="PITURURARES_ANDREI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="2" whitePlayer="OPRISANLIVIU"/>
+<Game blackPlayer="VLADGABRIELA_VIORICA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="11" whitePlayer="DANILAMARIUS"/>
+<Game blackPlayer="AVRAMLAURA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="3" whitePlayer="GHEORGHEMADALIN_ALEXANDRU"/>
+<Game blackPlayer="ALBUCATALIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="12" whitePlayer="CIORARUXANDRA"/>
+<Game blackPlayer="CALOTATHEODOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="4" whitePlayer="IUGULESCUSERGIU_DAN"/>
+<Game blackPlayer="MINJINADRAGOS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="5" whitePlayer="DOBRIDOREANUDANIEL"/>
+<Game blackPlayer="VLADGABRIELA_VIORICA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="6" tableNumber="6" whitePlayer="RADULESCUMIHNEA"/>
+<Game blackPlayer="CATALINIONETE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="7" whitePlayer="CIORARUXANDRA"/>
+<Game blackPlayer="IRHASIUMARIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="6" tableNumber="8" whitePlayer="VASILECIPRIANCOSERARU"/>
+<Game blackPlayer="DOBRANISDENIS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="6" tableNumber="9" whitePlayer="TOMATHEODOR"/>
+<Game blackPlayer="FOFIRCADRAGOS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="10" whitePlayer="DOBRANISDARIUS"/>
+<Game blackPlayer="TIFREABOGDAN_STEFAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="11" whitePlayer="POPESCURADU"/>
+<Game blackPlayer="ALBUCATALIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="6" tableNumber="12" whitePlayer="DOBRANISVASILE"/>
+<Game blackPlayer="MARTINADRIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="1" whitePlayer="SERBANMIHAI_VALENTIN"/>
+<Game blackPlayer="OPRISANLIVIU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="2" whitePlayer="DOBRIDOREANUDANIEL"/>
+<Game blackPlayer="VLADGABRIELA_VIORICA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="3" whitePlayer="AVRAMLAURA"/>
+<Game blackPlayer="IUGULESCUSERGIU_DAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="4" whitePlayer="CIORARUXANDRA"/>
+<Game blackPlayer="TOMATHEODOR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="5" whitePlayer="UNGUREANCEZAR"/>
+<Game blackPlayer="PITURURARES_ANDREI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="6" whitePlayer="FOFIRCADRAGOS"/>
+<Game blackPlayer="DANILAMARIUS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="7" whitePlayer="GHEORGHEMADALIN_ALEXANDRU"/>
+<Game blackPlayer="CALOTATHEODOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="8" whitePlayer="ALBUCATALIN"/>
+<Game blackPlayer="MINJINADRAGOS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="9" whitePlayer="GRIGORIUELIAN_IOAN"/>
+<Game blackPlayer="BOLDEANUDRAGOS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="10" whitePlayer="RADULESCUMIHNEA"/>
+<Game blackPlayer="CATALINIONETE" handicap="0" knownColor="true" result="RESULT_WHITEWINS_BYDEF" roundNumber="5" tableNumber="11" whitePlayer="VASILOANCA-SMIRNOVCODRIN"/>
+<Game blackPlayer="RADUSTEFAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="12" whitePlayer="VASILECIPRIANCOSERARU"/>
+<Game blackPlayer="SERBANMIHAI_VALENTIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="1" whitePlayer="TOMATHEODOR"/>
+<Game blackPlayer="FOFIRCADRAGOS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="2" whitePlayer="OPRISANLIVIU"/>
+<Game blackPlayer="AVRAMLAURA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="3" whitePlayer="DANILAMARIUS"/>
+<Game blackPlayer="POPESCURADU" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="4" whitePlayer="IUGULESCUSERGIU_DAN"/>
+<Game blackPlayer="GRIGORIUELIAN_IOAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="5" whitePlayer="DOBRANISDENIS"/>
+<Game blackPlayer="DOBRANISDARIUS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="6" whitePlayer="TOMAIULIAN"/>
+<Game blackPlayer="BOLDEANUDRAGOS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="7" whitePlayer="TIFREABOGDAN_STEFAN"/>
+<Game blackPlayer="DOBRANISVASILE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="8" whitePlayer="RADUSTEFAN"/>
+<Game blackPlayer="UNGUREANCEZAR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="9" whitePlayer="MINJINADRAGOS"/>
+<Game blackPlayer="RADULESCUMIHNEA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="10" whitePlayer="PITURURARES_ANDREI"/>
+<Game blackPlayer="GHEORGHEMADALIN_ALEXANDRU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="11" whitePlayer="CATALINIONETE"/>
+<Game blackPlayer="VASILECIPRIANCOSERARU" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="12" whitePlayer="CALOTATHEODOR"/>
+<Game blackPlayer="SERBANMIHAI_VALENTIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="1" whitePlayer="GRIGORIUELIAN_IOAN"/>
+<Game blackPlayer="TOMAIULIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="2" whitePlayer="OPRISANLIVIU"/>
+<Game blackPlayer="IUGULESCUSERGIU_DAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="3" whitePlayer="BOLDEANUDRAGOS"/>
+<Game blackPlayer="RADUSTEFAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="4" whitePlayer="MENCZELPATRIK"/>
+<Game blackPlayer="MARTINADRIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="5" whitePlayer="DOBRANISDENIS"/>
+<Game blackPlayer="DOBRANISDARIUS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="6" whitePlayer="DOBRIDOREANUDANIEL"/>
+<Game blackPlayer="VLADGABRIELA_VIORICA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="7" whitePlayer="TIFREABOGDAN_STEFAN"/>
+<Game blackPlayer="DOBRANISVASILE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="8" whitePlayer="CIORARUXANDRA"/>
+<Game blackPlayer="TOMATHEODOR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="9" whitePlayer="MINJINADRAGOS"/>
+<Game blackPlayer="RADULESCUMIHNEA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="10" whitePlayer="FOFIRCADRAGOS"/>
+<Game blackPlayer="POPESCURADU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="11" whitePlayer="CATALINIONETE"/>
+<Game blackPlayer="VASILECIPRIANCOSERARU" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="12" whitePlayer="ALBUCATALIN"/>
+<Game blackPlayer="GRIGORIUELIAN_IOAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="MARTINADRIAN"/>
+<Game blackPlayer="DOBRIDOREANUDANIEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="TOMAIULIAN"/>
+<Game blackPlayer="VASILOANCA-SMIRNOVCODRIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="VLADGABRIELA_VIORICA"/>
+<Game blackPlayer="CIORARUXANDRA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="4" whitePlayer="RADUSTEFAN"/>
+<Game blackPlayer="DOBRANISDENIS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="5" whitePlayer="IONITAADRIAN"/>
+<Game blackPlayer="PITURURARES_ANDREI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="6" whitePlayer="DOBRANISDARIUS"/>
+<Game blackPlayer="TIFREABOGDAN_STEFAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="7" whitePlayer="GHEORGHEMADALIN_ALEXANDRU"/>
+<Game blackPlayer="CALOTATHEODOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="8" whitePlayer="DOBRANISVASILE"/>
+<Game blackPlayer="SERBANMIHAI_VALENTIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="9" whitePlayer="MINJINADRAGOS"/>
+<Game blackPlayer="RADULESCUMIHNEA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="10" whitePlayer="OPRISANLIVIU"/>
+<Game blackPlayer="AVRAMLAURA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="11" whitePlayer="CATALINIONETE"/>
+<Game blackPlayer="VASILECIPRIANCOSERARU" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="12" whitePlayer="IUGULESCUSERGIU_DAN"/>
+</Games>
+<Teams>
+<Team teamName="ATARI 1" teamNumber="1">
+<Board boardNumber="1" player="TOMAIULIAN" roundNumber="1"/>
+<Board boardNumber="2" player="BOLDEANUDRAGOS" roundNumber="1"/>
+<Board boardNumber="3" player="VASILOANCA-SMIRNOVCODRIN" roundNumber="1"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="1"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="2"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="2"/>
+<Board boardNumber="3" player="VASILOANCA-SMIRNOVCODRIN" roundNumber="2"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="2"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="3"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="3"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="3"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="3"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="4"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="4"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="4"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="4"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="5"/>
+<Board boardNumber="2" player="BOLDEANUDRAGOS" roundNumber="5"/>
+<Board boardNumber="3" player="VASILOANCA-SMIRNOVCODRIN" roundNumber="5"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="5"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="6"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="6"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="6"/>
+<Board boardNumber="4" player="VASILOANCA-SMIRNOVCODRIN" roundNumber="6"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="7"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="7"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="7"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="7"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="8"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="8"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="8"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="8"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="9"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="9"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="9"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="9"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="10"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="10"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="10"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="10"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="11"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="11"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="11"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="11"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="12"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="12"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="12"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="12"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="13"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="13"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="13"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="13"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="14"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="14"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="14"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="14"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="15"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="15"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="15"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="15"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="16"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="16"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="16"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="16"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="17"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="17"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="17"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="17"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="18"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="18"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="18"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="18"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="19"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="19"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="19"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="19"/>
+<Board boardNumber="1" player="GRIGORIUELIAN_IOAN" roundNumber="20"/>
+<Board boardNumber="2" player="TOMAIULIAN" roundNumber="20"/>
+<Board boardNumber="3" player="BOLDEANUDRAGOS" roundNumber="20"/>
+<Board boardNumber="4" player="RADUSTEFAN" roundNumber="20"/>
+</Team>
+<Team teamName="ATSUMI" teamNumber="5">
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="1"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="1"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="1"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="1"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="2"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="2"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="2"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="2"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="3"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="3"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="3"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="3"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="4"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="4"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="4"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="4"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="5"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="5"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="5"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="5"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="6"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="6"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="6"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="6"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="7"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="7"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="7"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="7"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="8"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="8"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="8"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="8"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="9"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="9"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="9"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="9"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="10"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="10"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="10"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="10"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="11"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="11"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="11"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="11"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="12"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="12"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="12"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="12"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="13"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="13"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="13"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="13"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="14"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="14"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="14"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="14"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="15"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="15"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="15"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="15"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="16"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="16"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="16"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="16"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="17"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="17"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="17"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="17"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="18"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="18"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="18"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="18"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="19"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="19"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="19"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="19"/>
+<Board boardNumber="1" player="DOBRANISDENIS" roundNumber="20"/>
+<Board boardNumber="2" player="DOBRANISDARIUS" roundNumber="20"/>
+<Board boardNumber="3" player="TIFREABOGDAN_STEFAN" roundNumber="20"/>
+<Board boardNumber="4" player="DOBRANISVASILE" roundNumber="20"/>
+</Team>
+<Team teamName="ATARI 2" teamNumber="3">
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="1"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="1"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="1"/>
+<Board boardNumber="4" player="ALBUCATALIN" roundNumber="1"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="2"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="2"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="2"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="2"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="3"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="3"/>
+<Board boardNumber="3" player="POPESCURADU" roundNumber="3"/>
+<Board boardNumber="4" player="ALBUCATALIN" roundNumber="3"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="4"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="4"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="4"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="4"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="5"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="5"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="5"/>
+<Board boardNumber="4" player="ALBUCATALIN" roundNumber="5"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="6"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="6"/>
+<Board boardNumber="3" player="POPESCURADU" roundNumber="6"/>
+<Board boardNumber="4" player="ALBUCATALIN" roundNumber="6"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="7"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="7"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="7"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="7"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="8"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="8"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="8"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="8"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="9"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="9"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="9"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="9"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="10"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="10"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="10"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="10"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="11"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="11"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="11"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="11"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="12"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="12"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="12"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="12"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="13"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="13"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="13"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="13"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="14"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="14"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="14"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="14"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="15"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="15"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="15"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="15"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="16"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="16"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="16"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="16"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="17"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="17"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="17"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="17"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="18"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="18"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="18"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="18"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="19"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="19"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="19"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="19"/>
+<Board boardNumber="1" player="TOMATHEODOR" roundNumber="20"/>
+<Board boardNumber="2" player="FOFIRCADRAGOS" roundNumber="20"/>
+<Board boardNumber="3" player="DANILAMARIUS" roundNumber="20"/>
+<Board boardNumber="4" player="POPESCURADU" roundNumber="20"/>
+</Team>
+<Team teamName="C361" teamNumber="7">
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="1"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="1"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="1"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="1"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="2"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="2"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="2"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="2"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="3"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="3"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="3"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="3"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="4"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="4"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="4"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="4"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="5"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="5"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="5"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="5"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="6"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="6"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="6"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="6"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="7"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="7"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="7"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="7"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="8"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="8"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="8"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="8"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="9"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="9"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="9"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="9"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="10"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="10"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="10"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="10"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="11"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="11"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="11"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="11"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="12"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="12"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="12"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="12"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="13"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="13"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="13"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="13"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="14"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="14"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="14"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="14"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="15"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="15"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="15"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="15"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="16"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="16"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="16"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="16"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="17"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="17"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="17"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="17"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="18"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="18"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="18"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="18"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="19"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="19"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="19"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="19"/>
+<Board boardNumber="1" player="MINJINADRAGOS" roundNumber="20"/>
+<Board boardNumber="2" player="RADULESCUMIHNEA" roundNumber="20"/>
+<Board boardNumber="3" player="CATALINIONETE" roundNumber="20"/>
+<Board boardNumber="4" player="VASILECIPRIANCOSERARU" roundNumber="20"/>
+</Team>
+<Team teamName="TENGEN" teamNumber="4">
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="1"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="1"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="1"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="1"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="2"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="2"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="2"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="2"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="3"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="3"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="3"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="3"/>
+<Board boardNumber="1" player="UNGUREANCEZAR" roundNumber="4"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="4"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="4"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="4"/>
+<Board boardNumber="1" player="UNGUREANCEZAR" roundNumber="5"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="5"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="5"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="5"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="6"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="6"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="6"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="6"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="7"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="7"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="7"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="7"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="8"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="8"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="8"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="8"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="9"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="9"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="9"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="9"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="10"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="10"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="10"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="10"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="11"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="11"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="11"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="11"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="12"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="12"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="12"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="12"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="13"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="13"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="13"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="13"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="14"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="14"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="14"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="14"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="15"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="15"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="15"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="15"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="16"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="16"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="16"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="16"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="17"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="17"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="17"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="17"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="18"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="18"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="18"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="18"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="19"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="19"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="19"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="19"/>
+<Board boardNumber="1" player="IONITAADRIAN" roundNumber="20"/>
+<Board boardNumber="2" player="PITURURARES_ANDREI" roundNumber="20"/>
+<Board boardNumber="3" player="GHEORGHEMADALIN_ALEXANDRU" roundNumber="20"/>
+<Board boardNumber="4" player="CALOTATHEODOR" roundNumber="20"/>
+</Team>
+<Team teamName="TIMI" teamNumber="6">
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="1"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="1"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="1"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="1"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="2"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="2"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="2"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="2"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="3"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="3"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="3"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="3"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="4"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="4"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="4"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="4"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="5"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="5"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="5"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="5"/>
+<Board boardNumber="1" player="DOBRIDOREANUDANIEL" roundNumber="6"/>
+<Board boardNumber="2" player="VLADGABRIELA_VIORICA" roundNumber="6"/>
+<Board boardNumber="3" player="CIORARUXANDRA" roundNumber="6"/>
+<Board boardNumber="4" player="IRHASIUMARIA" roundNumber="6"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="7"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="7"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="7"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="7"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="8"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="8"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="8"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="8"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="9"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="9"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="9"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="9"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="10"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="10"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="10"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="10"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="11"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="11"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="11"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="11"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="12"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="12"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="12"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="12"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="13"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="13"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="13"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="13"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="14"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="14"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="14"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="14"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="15"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="15"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="15"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="15"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="16"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="16"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="16"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="16"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="17"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="17"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="17"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="17"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="18"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="18"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="18"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="18"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="19"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="19"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="19"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="19"/>
+<Board boardNumber="1" player="MARTINADRIAN" roundNumber="20"/>
+<Board boardNumber="2" player="DOBRIDOREANUDANIEL" roundNumber="20"/>
+<Board boardNumber="3" player="VLADGABRIELA_VIORICA" roundNumber="20"/>
+<Board boardNumber="4" player="CIORARUXANDRA" roundNumber="20"/>
+</Team>
+<Team teamName="SAKATA" teamNumber="2">
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="1"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="1"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="1"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="1"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="2"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="2"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="2"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="2"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="3"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="3"/>
+<Board boardNumber="3" player="IUGULESCUSERGIU_DAN" roundNumber="3"/>
+<Board boardNumber="4" player="MENCZELPATRIK" roundNumber="3"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="4"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="4"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="4"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="4"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="5"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="5"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="5"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="5"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="6"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="6"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="6"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="6"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="7"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="7"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="7"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="7"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="8"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="8"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="8"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="8"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="9"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="9"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="9"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="9"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="10"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="10"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="10"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="10"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="11"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="11"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="11"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="11"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="12"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="12"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="12"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="12"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="13"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="13"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="13"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="13"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="14"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="14"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="14"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="14"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="15"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="15"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="15"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="15"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="16"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="16"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="16"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="16"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="17"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="17"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="17"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="17"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="18"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="18"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="18"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="18"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="19"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="19"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="19"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="19"/>
+<Board boardNumber="1" player="SERBANMIHAI_VALENTIN" roundNumber="20"/>
+<Board boardNumber="2" player="OPRISANLIVIU" roundNumber="20"/>
+<Board boardNumber="3" player="AVRAMLAURA" roundNumber="20"/>
+<Board boardNumber="4" player="IUGULESCUSERGIU_DAN" roundNumber="20"/>
+</Team>
+</Teams>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-11-14" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Dan Groza" endDate="2020-11-15" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="KGS" name="CN Echipe" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="6" shortName="ull" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="SOSW" number="2"/>
+<PlacementCriterion name="SOSOSW" number="3"/>
+<PlacementCriterion name="DC" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW1U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW3U" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

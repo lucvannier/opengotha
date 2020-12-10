@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="201.141.178.155" fullVersionNumber="3.50" runningMode="SAL" saveDT="20201206114635">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Unido" grade="15K" name="México" participating="11111111111111111111" rank="15K" rating="600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="de México Taller de Go" grade="20K" name="Biblioteca" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="UY" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Uruguaya de Go" grade="18K" name="Federación" participating="11111111111111111111" rank="18K" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="EC" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="de Go la Piedra En el Lago" grade="16K" name="Academia" participating="11111111111111111111" rank="16K" rating="500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Serapio Rendón" grade="18K" name="Colegio" participating="11111111111111111111" rank="18K" rating="300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="CO" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Centro de Inteligencias" grade="10K" name="Coin" participating="11111111111111111111" rank="10K" rating="1100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="AR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="de Los Niños" grade="20K" name="Ciudad" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="de México" grade="16K" name="Estudiosas" participating="11111111111111111111" rank="16K" rating="500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Mexicana de Go" grade="1K" name="Academia" participating="11111111111111111111" rank="1K" rating="2000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="de Go Bmx" grade="17K" name="Taller" participating="11111111111111111111" rank="17K" rating="400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="BR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Brasil Nippon Kiin" grade="16K" name="Associação" participating="11111111111111111111" rank="16K" rating="500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="MX" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Arte Pipiolo" grade="12K" name="Ciea" participating="11111111111111111111" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="ESTUDIOSASDEMÉXICO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="ACADEMIAMEXICANADEGO"/>
+        <Game blackPlayer="ACADEMIADEGOLAPIEDRAENELLAGO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="BIBLIOTECADEMÉXICOTALLERDEGO"/>
+        <Game blackPlayer="CIUDADDELOSNIÑOS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="ASSOCIAÇÃOBRASILNIPPONKIIN"/>
+        <Game blackPlayer="COLEGIOSERAPIORENDÓN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="CIEAARTEPIPIOLO"/>
+        <Game blackPlayer="TALLERDEGOBMX" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="COINCENTRODEINTELIGENCIAS"/>
+        <Game blackPlayer="FEDERACIÓNURUGUAYADEGO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="6" whitePlayer="MÉXICOUNIDO"/>
+        <Game blackPlayer="CIEAARTEPIPIOLO" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="1" whitePlayer="COINCENTRODEINTELIGENCIAS"/>
+        <Game blackPlayer="ACADEMIAMEXICANADEGO" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="2" whitePlayer="COLEGIOSERAPIORENDÓN"/>
+        <Game blackPlayer="ASSOCIAÇÃOBRASILNIPPONKIIN" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="3" whitePlayer="ESTUDIOSASDEMÉXICO"/>
+        <Game blackPlayer="BIBLIOTECADEMÉXICOTALLERDEGO" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="4" whitePlayer="CIUDADDELOSNIÑOS"/>
+        <Game blackPlayer="TALLERDEGOBMX" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="5" whitePlayer="FEDERACIÓNURUGUAYADEGO"/>
+        <Game blackPlayer="MÉXICOUNIDO" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="6" tableNumber="6" whitePlayer="ACADEMIADEGOLAPIEDRAENELLAGO"/>
+        <Game blackPlayer="ACADEMIAMEXICANADEGO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="1" whitePlayer="COINCENTRODEINTELIGENCIAS"/>
+        <Game blackPlayer="CIEAARTEPIPIOLO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="2" whitePlayer="ESTUDIOSASDEMÉXICO"/>
+        <Game blackPlayer="BIBLIOTECADEMÉXICOTALLERDEGO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="FEDERACIÓNURUGUAYADEGO"/>
+        <Game blackPlayer="MÉXICOUNIDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="4" whitePlayer="COLEGIOSERAPIORENDÓN"/>
+        <Game blackPlayer="ASSOCIAÇÃOBRASILNIPPONKIIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="5" whitePlayer="ACADEMIADEGOLAPIEDRAENELLAGO"/>
+        <Game blackPlayer="TALLERDEGOBMX" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="6" whitePlayer="CIUDADDELOSNIÑOS"/>
+        <Game blackPlayer="COINCENTRODEINTELIGENCIAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="1" whitePlayer="ASSOCIAÇÃOBRASILNIPPONKIIN"/>
+        <Game blackPlayer="FEDERACIÓNURUGUAYADEGO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="2" whitePlayer="ACADEMIAMEXICANADEGO"/>
+        <Game blackPlayer="CIEAARTEPIPIOLO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="3" whitePlayer="MÉXICOUNIDO"/>
+        <Game blackPlayer="COLEGIOSERAPIORENDÓN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="4" whitePlayer="ESTUDIOSASDEMÉXICO"/>
+        <Game blackPlayer="CIUDADDELOSNIÑOS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="5" whitePlayer="ACADEMIADEGOLAPIEDRAENELLAGO"/>
+        <Game blackPlayer="TALLERDEGOBMX" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="6" whitePlayer="BIBLIOTECADEMÉXICOTALLERDEGO"/>
+        <Game blackPlayer="ASSOCIAÇÃOBRASILNIPPONKIIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="ACADEMIAMEXICANADEGO"/>
+        <Game blackPlayer="BIBLIOTECADEMÉXICOTALLERDEGO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="CIEAARTEPIPIOLO"/>
+        <Game blackPlayer="COINCENTRODEINTELIGENCIAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="FEDERACIÓNURUGUAYADEGO"/>
+        <Game blackPlayer="COLEGIOSERAPIORENDÓN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="4" whitePlayer="ACADEMIADEGOLAPIEDRAENELLAGO"/>
+        <Game blackPlayer="ESTUDIOSASDEMÉXICO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="5" whitePlayer="CIUDADDELOSNIÑOS"/>
+        <Game blackPlayer="MÉXICOUNIDO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="6" whitePlayer="TALLERDEGOBMX"/>
+        <Game blackPlayer="ACADEMIAMEXICANADEGO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="1" whitePlayer="CIEAARTEPIPIOLO"/>
+        <Game blackPlayer="FEDERACIÓNURUGUAYADEGO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="2" whitePlayer="ASSOCIAÇÃOBRASILNIPPONKIIN"/>
+        <Game blackPlayer="COINCENTRODEINTELIGENCIAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="3" whitePlayer="MÉXICOUNIDO"/>
+        <Game blackPlayer="ESTUDIOSASDEMÉXICO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="4" whitePlayer="BIBLIOTECADEMÉXICOTALLERDEGO"/>
+        <Game blackPlayer="CIUDADDELOSNIÑOS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="5" whitePlayer="COLEGIOSERAPIORENDÓN"/>
+        <Game blackPlayer="ACADEMIADEGOLAPIEDRAENELLAGO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="6" whitePlayer="TALLERDEGOBMX"/>
+    </Games>
+    <TournamentParameterSet>
+        <GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-12-05" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="SID AVILA" endDate="2020-12-06" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="LATINOAAMERICA" name="ORION EQUIPOS SUB18 LAT 2020" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="6" shortName="orionsub18lat2020" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="NBW" number="1"/>
+                <PlacementCriterion name="SOSW" number="2"/>
+                <PlacementCriterion name="SOSOSW" number="3"/>
+                <PlacementCriterion name="NULL" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="3"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

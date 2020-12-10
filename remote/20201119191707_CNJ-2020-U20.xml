@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="5.12.24.47" gothaMinorVersion="0" gothaVersion="349" saveDT="20201119191707">
+<Players>
+<Player agaExpirationDate="" agaId="" club="BaMa" country="RO" egfPin="18350761" ffgLicence="" ffgLicenceStatus="" firstName="Daniel" grade=" 2K" name="Dobridoreanu" participating="11111111111111111111" rank="2K" rating="1909" ratingOrigin="EGF : 1909" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Giar" country="RO" egfPin="15333802" ffgLicence="" ffgLicenceStatus="" firstName="Ruxandra" grade="11K" name="Ciora" participating="11111111111111111111" rank="11K" rating="973" ratingOrigin="EGF : 973" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="ATSU" country="RO" egfPin="15350038" ffgLicence="" ffgLicenceStatus="" firstName="Denis" grade=" 4D" name="Dobranis" participating="11111111111111111111" rank="4D" rating="2361" ratingOrigin="EGF : 2361" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="15974420" ffgLicence="" ffgLicenceStatus="" firstName="Elian_Ioan" grade=" 5D" name="Grigoriu" participating="11111111111111111111" rank="5D" rating="2532" ratingOrigin="EGF : 2532" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games/>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-11-21" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="FRGO" endDate="2020-11-22" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="0" genMMS2ValueBye="0" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="0" genRoundDownNBWMMS="true" komi="6.5" location="KGS" name="CNJ-2020-U20" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="3" shortName="CNJ-2020-U20" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="DC" number="2"/>
+<PlacementCriterion name="NULL" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="TOP" paiMaDUDDUpperMode="BOT" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

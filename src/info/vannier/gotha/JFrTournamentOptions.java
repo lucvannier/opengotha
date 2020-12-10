@@ -1100,6 +1100,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
 
         jScrollPane1.setBorder(null);
 
+        txaWarning.setEditable(false);
         txaWarning.setColumns(20);
         txaWarning.setForeground(new java.awt.Color(255, 0, 51));
         txaWarning.setLineWrap(true);
@@ -2004,10 +2005,10 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             paiPS.setPaiBaRandom(newRandom);
             bSomethingHasChanged = true;
         }
-        boolean oldDeterminitic = paiPS.isPaiBaDeterministic();
-        boolean newDeterminitic = this.ckbDeterministic.isSelected();
-        if (newDeterminitic != oldDeterminitic){
-            paiPS.setPaiBaDeterministic(newDeterminitic);
+        boolean oldDeterministic = paiPS.isPaiBaDeterministic();
+        boolean newDeterministic = this.ckbDeterministic.isSelected();
+        if (newDeterministic != oldDeterministic){
+            paiPS.setPaiBaDeterministic(newDeterministic);
             bSomethingHasChanged = true;
         }
         if (bSomethingHasChanged){
@@ -3473,15 +3474,15 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         
         if (paiPS.getPaiBaRandom() == 0){
             this.rdbNoRandom.setSelected(true);
-            this.ckbDeterministic.setSelected(false);
-            this.ckbDeterministic.setEnabled(false);
+            this.ckbDeterministic.setVisible(false);
         }
         else{
             this.rdbAcceptRandom.setSelected(true);
-            this.ckbDeterministic.setSelected(paiPS.isPaiBaDeterministic());
+            this.ckbDeterministic.setVisible(true);
             this.ckbDeterministic.setEnabled(true);
         }
-        
+        this.ckbDeterministic.setSelected(paiPS.isPaiBaDeterministic());
+
         this.ckbBalanceWB.setSelected(paiPS.getPaiBaBalanceWB() != 0);
         
         this.txfSeRankThreshold.setText(Player.convertIntToKD(paiPS.getPaiSeRankThreshold()));

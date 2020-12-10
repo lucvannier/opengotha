@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="82.79.157.78" gothaMinorVersion="0" gothaVersion="349" saveDT="20201108195513">
+<Players>
+<Player agaExpirationDate="" agaId="" club="ATSU" country="RO" egfPin="15049716" ffgLicence="" ffgLicenceStatus="" firstName="Darius" grade=" 3D" name="Dobranis" participating="11111111111111111111" rank="3D" rating="2204" ratingOrigin="EGF : 2204" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="10325293" ffgLicence="" ffgLicenceStatus="" firstName="George" grade=" 3D" name="Ghetu" participating="11111111111111111111" rank="3D" rating="2219" ratingOrigin="EGF : 2219" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cara" country="RO" egfPin="18374719" ffgLicence="" ffgLicenceStatus="" firstName="Rares_Andrei" grade=" 3K" name="Pituru" participating="11111111111111111111" rank="3K" rating="1782" ratingOrigin="EGF : 1782" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cara" country="RO" egfPin="18374708" ffgLicence="" ffgLicenceStatus="" firstName="Madalin_Alexandru" grade=" 4K" name="Gheorghe" participating="11111111111111111111" rank="4K" rating="1711" ratingOrigin="EGF : 1711" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="ATSU" country="RO" egfPin="15350038" ffgLicence="" ffgLicenceStatus="" firstName="Denis" grade="4D" name="Dobranis" participating="11111111111111111111" rank="4D" rating="2353" ratingOrigin="EGF : 2353" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="10350263" ffgLicence="" ffgLicenceStatus="" firstName="Sergiu_Dan" grade="3D" name="Iugulescu" participating="11111111111111111111" rank="3D" rating="2184" ratingOrigin="EGF : 2184" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Atar" country="RO" egfPin="15974420" ffgLicence="" ffgLicenceStatus="" firstName="Elian_Ioan" grade=" 5D" name="Grigoriu" participating="11111111111111111111" rank="5D" rating="2544" ratingOrigin="EGF : 2544" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Brsv" country="RO" egfPin="10350395" ffgLicence="" ffgLicenceStatus="" firstName="Lucretiu" grade=" 5D" name="Calota" participating="11111111111111111111" rank="5D" rating="2357" ratingOrigin="EGF : 2357" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="GHEORGHEMADALIN_ALEXANDRU" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="GRIGORIUELIAN_IOAN"/>
+<Game blackPlayer="DOBRANISDARIUS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="CALOTALUCRETIU"/>
+<Game blackPlayer="DOBRANISDENIS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="IUGULESCUSERGIU_DAN"/>
+<Game blackPlayer="PITURURARES_ANDREI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="GHETUGEORGE"/>
+<Game blackPlayer="GRIGORIUELIAN_IOAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="1" whitePlayer="DOBRANISDENIS"/>
+<Game blackPlayer="CALOTALUCRETIU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="6" tableNumber="2" whitePlayer="GHETUGEORGE"/>
+<Game blackPlayer="DOBRANISDARIUS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="3" whitePlayer="PITURURARES_ANDREI"/>
+<Game blackPlayer="GHEORGHEMADALIN_ALEXANDRU" handicap="0" knownColor="true" result="RESULT_WHITEWINS_BYDEF" roundNumber="6" tableNumber="4" whitePlayer="IUGULESCUSERGIU_DAN"/>
+<Game blackPlayer="IUGULESCUSERGIU_DAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="GRIGORIUELIAN_IOAN"/>
+<Game blackPlayer="PITURURARES_ANDREI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="2" whitePlayer="CALOTALUCRETIU"/>
+<Game blackPlayer="DOBRANISDENIS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="3" whitePlayer="GHEORGHEMADALIN_ALEXANDRU"/>
+<Game blackPlayer="DOBRANISDARIUS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="4" whitePlayer="GHETUGEORGE"/>
+<Game blackPlayer="GHETUGEORGE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="1" whitePlayer="GRIGORIUELIAN_IOAN"/>
+<Game blackPlayer="DOBRANISDENIS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="2" whitePlayer="CALOTALUCRETIU"/>
+<Game blackPlayer="DOBRANISDARIUS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="3" whitePlayer="GHEORGHEMADALIN_ALEXANDRU"/>
+<Game blackPlayer="IUGULESCUSERGIU_DAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="4" whitePlayer="PITURURARES_ANDREI"/>
+<Game blackPlayer="GRIGORIUELIAN_IOAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="PITURURARES_ANDREI"/>
+<Game blackPlayer="CALOTALUCRETIU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="GHEORGHEMADALIN_ALEXANDRU"/>
+<Game blackPlayer="DOBRANISDARIUS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="3" whitePlayer="DOBRANISDENIS"/>
+<Game blackPlayer="GHETUGEORGE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="4" whitePlayer="IUGULESCUSERGIU_DAN"/>
+<Game blackPlayer="CALOTALUCRETIU" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="7" tableNumber="1" whitePlayer="GRIGORIUELIAN_IOAN"/>
+<Game blackPlayer="GHETUGEORGE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="7" tableNumber="2" whitePlayer="DOBRANISDENIS"/>
+<Game blackPlayer="IUGULESCUSERGIU_DAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="7" tableNumber="3" whitePlayer="DOBRANISDARIUS"/>
+<Game blackPlayer="PITURURARES_ANDREI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="7" tableNumber="4" whitePlayer="GHEORGHEMADALIN_ALEXANDRU"/>
+<Game blackPlayer="GRIGORIUELIAN_IOAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="1" whitePlayer="DOBRANISDARIUS"/>
+<Game blackPlayer="CALOTALUCRETIU" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="2" whitePlayer="IUGULESCUSERGIU_DAN"/>
+<Game blackPlayer="PITURURARES_ANDREI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="3" whitePlayer="DOBRANISDENIS"/>
+<Game blackPlayer="GHETUGEORGE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="4" whitePlayer="GHEORGHEMADALIN_ALEXANDRU"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="90" beginDate="2020-11-04" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Dan Groza" endDate="2020-11-08" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="KGS" name="Finala CN individual 2020" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="7" shortName="FinalaCNindividual" size="19" stdByoYomiTime="60"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="SODOSW" number="2"/>
+<PlacementCriterion name="DC" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

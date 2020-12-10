@@ -221,6 +221,13 @@ public class JFrGamesPair extends javax.swing.JFrame {
             Collections.sort(alPairablePlayers, playerComparator);
         }
         this.txfNbPairablePlayers.setText("" + alPairablePlayers.size());
+            String sortType = "name";
+            switch(playersSortType){
+                case PlayerComparator.NAME_ORDER : sortType = "name"; break;
+                case PlayerComparator.RANK_ORDER : sortType = "rank"; break;
+                case PlayerComparator.SCORE_ORDER : sortType = "score"; break;           
+            }
+        this.lblPP.setText("pairable players sorted by " + sortType);
 
         this.txfNbUnPairablePlayers.setText("" + alNotPairablePlayers.size());
 
@@ -565,7 +572,7 @@ public class JFrGamesPair extends javax.swing.JFrame {
         jLabel9 = new javax.swing.JLabel();
         pnlPlayers = new javax.swing.JPanel();
         txfNbPairablePlayers = new javax.swing.JTextField();
-        jLabel1 = new javax.swing.JLabel();
+        lblPP = new javax.swing.JLabel();
         scpPairablePlayers = new javax.swing.JScrollPane();
         tblPairablePlayers = new javax.swing.JTable();
         pnlPreviousGames = new javax.swing.JPanel();
@@ -821,9 +828,9 @@ public class JFrGamesPair extends javax.swing.JFrame {
         pnlPlayers.add(txfNbPairablePlayers);
         txfNbPairablePlayers.setBounds(10, 20, 30, 20);
 
-        jLabel1.setText("pairable players");
-        pnlPlayers.add(jLabel1);
-        jLabel1.setBounds(50, 20, 200, 14);
+        lblPP.setText("pairable players sorted by score");
+        pnlPlayers.add(lblPP);
+        lblPP.setBounds(50, 20, 220, 14);
 
         tblPairablePlayers.setModel(new javax.swing.table.DefaultTableModel(
             new Object [][] {
@@ -1724,7 +1731,6 @@ public class JFrGamesPair extends javax.swing.JFrame {
     private javax.swing.JCheckBox ckbUnbalancedWB;
     private javax.swing.JDialog dlgPairingReport;
     private javax.swing.JButton jButton1;
-    private javax.swing.JLabel jLabel1;
     private javax.swing.JLabel jLabel2;
     private javax.swing.JLabel jLabel3;
     private javax.swing.JLabel jLabel4;
@@ -1737,6 +1743,7 @@ public class JFrGamesPair extends javax.swing.JFrame {
     private javax.swing.JSeparator jSeparator2;
     private javax.swing.JPopupMenu.Separator jSeparator5;
     private javax.swing.JLabel lblByePlayer;
+    private javax.swing.JLabel lblPP;
     private javax.swing.JLabel lblPreviousGames;
     private javax.swing.JMenuItem mniCancel;
     private javax.swing.JMenuItem mniCancel1;

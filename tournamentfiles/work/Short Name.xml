@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="77.128.107.78" fullVersionNumber="3.51.01" runningMode="SAL" saveDT="20201120163751">
+<Players>
+<Player agaExpirationDate="" agaId="" club="Brno" country="CZ" egfPin="14733180" ffgLicence="" ffgLicenceStatus="" firstName="Jiri" grade=" 4K" name="Tobias" participating="11111111111111111111" rank="5K" rating="1614" ratingOrigin="EGF : 1614" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Kyiv" country="UA" egfPin="13974950" ffgLicence="" ffgLicenceStatus="" firstName="Anton" grade=" 5K" name="Vedenskyi" participating="10111111111111111111" rank="5K" rating="1583" ratingOrigin="EGF : 1583" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TAv" country="IL" egfPin="18986627" ffgLicence="" ffgLicenceStatus="" firstName="Eshkar" grade=" 6K" name="Gutkind" participating="01011111111111111111" rank="6K" rating="1494" ratingOrigin="EGF : 1494" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="" club="Brno" country="CZ" egfPin="12850981" ffgLicence="" ffgLicenceStatus="" firstName="Jan" grade="9K" name="Novotny" participating="11111111111111111111" rank="9K" rating="682" ratingOrigin="EGF : 682" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Al" country="FR" egfPin="19262738" ffgLicence="" ffgLicenceStatus="" firstName="Tanguy" grade=" 8K" name="Weyland" participating="11111111111111111111" rank="8K" rating="1392" ratingOrigin="EGF : 1392" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="CHuS" country="UK" egfPin="18962658" ffgLicence="" ffgLicenceStatus="" firstName="Sam" grade=" 5K" name="Barnett" participating="11111111111111111111" rank="5K" rating="1451" ratingOrigin="EGF : 1451" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="08Ch" country="FR" egfPin="18713651" ffgLicence="" ffgLicenceStatus="" firstName="Maiky" grade=" 8K" name="Pineau" participating="11111111111111111111" rank="8K" rating="1315" ratingOrigin="EGF : 1315" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Le" country="FR" egfPin="13549569" ffgLicence="" ffgLicenceStatus="" firstName="Sylvain" grade=" 4K" name="Ravera" participating="10111111111111111111" rank="4K" rating="1604" ratingOrigin="EGF : 1604" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="7/15/2021" agaId="12895" club="PORT" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Neal" grade="4K" name="Wright" participating="11111111111111111111" rank="4K" rating="1553" ratingOrigin="AGA : -5.97" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="IClg" country="UK" egfPin="18650236" ffgLicence="" ffgLicenceStatus="" firstName="Alexander" grade="10K" name="Timperi" participating="11111111111111111111" rank="10K" rating="1074" ratingOrigin="EGF : 1074" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Olsz" country="PL" egfPin="16586647" ffgLicence="" ffgLicenceStatus="" firstName="Kamil" grade="15K" name="Banul" participating="11111111111111111111" rank="16K" rating="529" ratingOrigin="EGF : 529" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Toru" country="PL" egfPin="19537210" ffgLicence="" ffgLicenceStatus="" firstName="Kamil" grade="10K" name="Lewan" participating="11111111111111111111" rank="10K" rating="1091" ratingOrigin="EGF : 1091" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Bris" country="UK" egfPin="19325108" ffgLicence="" ffgLicenceStatus="" firstName="Colin" grade=" 5K" name="Williams" participating="11111111111111111111" rank="5K" rating="1564" ratingOrigin="EGF : 1564" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Lanc" country="UK" egfPin="19474037" ffgLicence="" ffgLicenceStatus="" firstName="Frankie" grade="10K" name="Higgs" participating="11111111111111111111" rank="10K" rating="1084" ratingOrigin="EGF : 1084" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Gliw" country="PL" egfPin="15398284" ffgLicence="" ffgLicenceStatus="" firstName="Jan" grade=" 6K" name="Baranek" participating="11111111111111111111" rank="6K" rating="1511" ratingOrigin="EGF : 1511" registeringStatus="FIN" smmsCorrection="1"/>
+</Players>
+<Games>
+<Game blackPlayer="BARANEKJAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="TOBIASJIRI"/>
+<Game blackPlayer="BARNETTSAM" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="VEDENSKYIANTON"/>
+<Game blackPlayer="WRIGHTNEAL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="RAVERASYLVAIN"/>
+<Game blackPlayer="PINEAUMAIKY" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="WILLIAMSCOLIN"/>
+<Game blackPlayer="NOVOTNYJAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="WEYLANDTANGUY"/>
+<Game blackPlayer="LEWANKAMIL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="6" whitePlayer="TIMPERIALEXANDER"/>
+<Game blackPlayer="BANULKAMIL" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="7" whitePlayer="HIGGSFRANKIE"/>
+<Game blackPlayer="TOBIASJIRI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="6" tableNumber="1" whitePlayer="GUTKINDESHKAR"/>
+<Game blackPlayer="VEDENSKYIANTON" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="2" whitePlayer="WILLIAMSCOLIN"/>
+<Game blackPlayer="WRIGHTNEAL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="3" whitePlayer="WEYLANDTANGUY"/>
+<Game blackPlayer="TIMPERIALEXANDER" handicap="2" knownColor="true" result="RESULT_BLACKWINS" roundNumber="6" tableNumber="4" whitePlayer="BARANEKJAN"/>
+<Game blackPlayer="NOVOTNYJAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="6" tableNumber="5" whitePlayer="HIGGSFRANKIE"/>
+<Game blackPlayer="LEWANKAMIL" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="6" tableNumber="6" whitePlayer="BARNETTSAM"/>
+<Game blackPlayer="BANULKAMIL" handicap="9" knownColor="true" result="RESULT_BLACKWINS" roundNumber="6" tableNumber="7" whitePlayer="RAVERASYLVAIN"/>
+<Game blackPlayer="TOBIASJIRI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="1" whitePlayer="WILLIAMSCOLIN"/>
+<Game blackPlayer="BARANEKJAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="2" whitePlayer="WRIGHTNEAL"/>
+<Game blackPlayer="RAVERASYLVAIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="3" whitePlayer="BARNETTSAM"/>
+<Game blackPlayer="VEDENSKYIANTON" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="4" whitePlayer="WEYLANDTANGUY"/>
+<Game blackPlayer="PINEAUMAIKY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="5" whitePlayer="HIGGSFRANKIE"/>
+<Game blackPlayer="NOVOTNYJAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="6" whitePlayer="LEWANKAMIL"/>
+<Game blackPlayer="BANULKAMIL" handicap="4" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="7" whitePlayer="TIMPERIALEXANDER"/>
+<Game blackPlayer="GUTKINDESHKAR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="1" whitePlayer="WILLIAMSCOLIN"/>
+<Game blackPlayer="BARNETTSAM" handicap="1" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="2" whitePlayer="WRIGHTNEAL"/>
+<Game blackPlayer="RAVERASYLVAIN" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="3" whitePlayer="TOBIASJIRI"/>
+<Game blackPlayer="WEYLANDTANGUY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="4" whitePlayer="BARANEKJAN"/>
+<Game blackPlayer="HIGGSFRANKIE" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="5" whitePlayer="VEDENSKYIANTON"/>
+<Game blackPlayer="PINEAUMAIKY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="6" whitePlayer="NOVOTNYJAN"/>
+<Game blackPlayer="BANULKAMIL" handicap="5" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="7" whitePlayer="LEWANKAMIL"/>
+<Game blackPlayer="TOBIASJIRI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="BARNETTSAM"/>
+<Game blackPlayer="WILLIAMSCOLIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="WRIGHTNEAL"/>
+<Game blackPlayer="GUTKINDESHKAR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="3" whitePlayer="BARANEKJAN"/>
+<Game blackPlayer="WEYLANDTANGUY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="4" whitePlayer="PINEAUMAIKY"/>
+<Game blackPlayer="HIGGSFRANKIE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="5" whitePlayer="LEWANKAMIL"/>
+<Game blackPlayer="TIMPERIALEXANDER" handicap="0" knownColor="true" result="RESULT_EQUAL" roundNumber="2" tableNumber="6" whitePlayer="NOVOTNYJAN"/>
+<Game blackPlayer="WRIGHTNEAL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="1" whitePlayer="TOBIASJIRI"/>
+<Game blackPlayer="WILLIAMSCOLIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="2" whitePlayer="BARANEKJAN"/>
+<Game blackPlayer="BARNETTSAM" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="3" whitePlayer="GUTKINDESHKAR"/>
+<Game blackPlayer="RAVERASYLVAIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="4" whitePlayer="VEDENSKYIANTON"/>
+<Game blackPlayer="HIGGSFRANKIE" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="5" whitePlayer="WEYLANDTANGUY"/>
+<Game blackPlayer="TIMPERIALEXANDER" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="6" whitePlayer="PINEAUMAIKY"/>
+<Game blackPlayer="BANULKAMIL" handicap="6" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="7" whitePlayer="NOVOTNYJAN"/>
+</Games>
+<ByePlayers>
+<ByePlayer player="BANULKAMIL" roundNumber="2"/>
+<ByePlayer player="LEWANKAMIL" roundNumber="4"/>
+<ByePlayer player="TIMPERIALEXANDER" roundNumber="5"/>
+<ByePlayer player="PINEAUMAIKY" roundNumber="6"/>
+</ByePlayers>
+<TournamentParameterSet>
+<GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-11-21" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Director name" endDate="2020-11-30" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="true" genMMBar="5K" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Online" name="CW BGA eCongress Test" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="6" shortName="Short Name" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

@@ -1038,6 +1038,8 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
                 ScoredPlayer sP1 = hmScoredPlayers.get(p1.getKeyString());
                 ScoredPlayer sP2 = hmScoredPlayers.get(p2.getKeyString());
                 costs[i][j] = costs[j][i] = costValue(sP1, sP2, roundNumber, alPreviousGames);
+//                String sCost = Gotha.formatLongNumberBy3digits(costs[i][j]);
+//                System.out.println("i = " + i + " j = " + j + " sCost = " +  sCost + " p1 = " + p1.getName() + " p2 = " + p2.getName());
             }
         }
 
@@ -1443,7 +1445,7 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
                 g.setWhitePlayer(p1);
                 g.setBlackPlayer(p2);
             } else { // choose color from a det random
-                if (Pairing.detRandom(1, sP1, sP2) == 0) {
+                if (Pairing.detRandom(1L, sP1, sP2) == 0) {
                     g.setWhitePlayer(p1);
                     g.setBlackPlayer(p2);
                 } else {
@@ -2093,7 +2095,7 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
         } else if (wbBalance0 < wbBalance1) {
             pt0IsWhite = true;
         } else { // choose color from a det random
-            if (Pairing.detRandom(1, pt0, pt1) == 0) {
+            if (Pairing.detRandom(1L, pt0, pt1) == 0) {
                 pt0IsWhite = true;
             } else {
                 pt0IsWhite = false;
@@ -2861,7 +2863,7 @@ public class Tournament extends UnicastRemoteObject implements TournamentInterfa
             sp.nbDU = sp.nbDD = 0;
         }
         if (roundNumber >= 1) {
-            // prepare an Array of scores before round r
+            // prepare an Array of scores before round roundNumber
             ArrayList<ScoredPlayer> alTempScoredPlayers = new ArrayList<ScoredPlayer>(hmScoredPlayers.values());
             int nbP = alTempScoredPlayers.size();
             int[][] scoreBefore = new int[roundNumber][nbP];

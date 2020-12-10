@@ -40,15 +40,30 @@ public class Pairing {
         return balance;
     }
 
+    /**
+     * returns a deterministic random number between 0 and max-1
+     * the number is calculated according to player names.
+     * Beware : The returned number is not the same for (..., p1, p2) and for (..., p2, p1)
+     */
+
     public static long detRandom(long max, Player p1, Player p2) {
         long nR = 0;
-        String s = p1.getName() + p1.getFirstName() + p2.getName() + p2.getFirstName();
+        String name1 = p1.getName() + p1.getFirstName();
+        String name2 = p2.getName() + p2.getFirstName();
+        boolean inverse = false;
+        if ( name1.compareTo(name2) > 0){
+            name1 = p2.getName() + p2.getFirstName();
+            name2 = p1.getName() + p1.getFirstName();
+            inverse = true;
+        }
+        String s = name1 + name2;
 
         for (int i = 0; i < s.length(); i++) {
             char c = s.charAt(i);
             nR += c * (i + 1);
         }
         nR = (nR * 1234567) % (max + 1);
+        if(inverse) nR = max - nR;
         return nR;
     }
 

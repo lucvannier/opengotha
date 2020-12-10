@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="5.51.10.131" fullVersionNumber="3.50" runningMode="SAL" saveDT="20201114161401">
+<Players>
+<Player agaExpirationDate="" agaId="" club="69Ly" country="FR" egfPin="" ffgLicence="1900247" ffgLicenceStatus="L" firstName="Christophe" grade="13K" name="Dugué" participating="11111111111111111111" rank="13K" rating="848" ratingOrigin="FFG : -1202" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="69Ly" country="FR" egfPin="" ffgLicence="1400317" ffgLicenceStatus="L" firstName="Alexandre" grade="9K" name="Sag" participating="11111111111111111111" rank="9K" rating="1224" ratingOrigin="FFG : -826" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="69Ly" country="FR" egfPin="" ffgLicence="1700314" ffgLicenceStatus="L" firstName="François" grade="3K" name="Poulet" participating="11111111111111111111" rank="3K" rating="1829" ratingOrigin="FFG : -221" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="69Ly" country="FR" egfPin="" ffgLicence="1300253" ffgLicenceStatus="L" firstName="Florent" grade="8K" name="Saint-Paul" participating="11111111111111111111" rank="8K" rating="1324" ratingOrigin="FFG : -726" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="69Ly" country="FR" egfPin="" ffgLicence="1900226" ffgLicenceStatus="L" firstName="Valentin" grade="14K" name="Hacquart" participating="11111111111111111111" rank="14K" rating="687" ratingOrigin="FFG : -1363" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="69Ly" country="FR" egfPin="" ffgLicence="1400267" ffgLicenceStatus="L" firstName="Guillaume" grade="9K" name="Largounez" participating="11111111111111111111" rank="9K" rating="1199" ratingOrigin="FFG : -851" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="69Ly" country="FR" egfPin="" ffgLicence="1900004" ffgLicenceStatus="L" firstName="Victor" grade="7K" name="Cordier" participating="11111111111111111111" rank="7K" rating="1361" ratingOrigin="FFG : -689" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="69Ly" country="FR" egfPin="" ffgLicence="0614107" ffgLicenceStatus="L" firstName="Denis" grade="2D" name="Kuperberg" participating="11111111111111111111" rank="2D" rating="2221" ratingOrigin="FFG : 171" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="69Ly" country="FR" egfPin="" ffgLicence="0900457" ffgLicenceStatus="L" firstName="Vincent" grade="4D" name="Godivier" participating="10000000000000000000" rank="4D" rating="2385" ratingOrigin="FFG : 335" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="69Ly" country="FR" egfPin="" ffgLicence="1600070" ffgLicenceStatus="L" firstName="Abdallah" grade="2D" name="Mezouar" participating="10000000000000000000" rank="2D" rating="2153" ratingOrigin="FFG : 103" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="KUPERBERGDENIS" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="1" whitePlayer="GODIVIERVINCENT"/>
+<Game blackPlayer="POULETFRANÇOIS" handicap="2" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="2" whitePlayer="MEZOUARABDALLAH"/>
+<Game blackPlayer="SAINT-PAULFLORENT" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="3" whitePlayer="CORDIERVICTOR"/>
+<Game blackPlayer="SAGALEXANDRE" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="4" whitePlayer="LARGOUNEZGUILLAUME"/>
+<Game blackPlayer="DUGUÉCHRISTOPHE" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="5" whitePlayer="HACQUARTVALENTIN"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-11-14" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Robin Chauvin" endDate="2020-11-14" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Lyon" name="Tournoi Permanent Lyon 2020-2021 - Phase 2" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="2" shortName="TournoiPermanentLyonPhase2" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

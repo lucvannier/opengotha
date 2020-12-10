@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="24.133.132.59" fullVersionNumber="3.51" runningMode="SAL" saveDT="20201206174108">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="16225506" ffgLicence="" ffgLicenceStatus="" firstName="Meltem" grade="16K" name="Sari" participating="11111111111111111111" rank="16K" rating="522" ratingOrigin="EGF : 522" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="18050560" ffgLicence="" ffgLicenceStatus="" firstName="Engin" grade=" 5K" name="Yazilan" participating="11111111111111111111" rank="5K" rating="1572" ratingOrigin="EGF : 1572" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="18550290" ffgLicence="" ffgLicenceStatus="" firstName="Berk" grade=" 2K" name="Basgol" participating="11111111111111111111" rank="2K" rating="1777" ratingOrigin="EGF : 1777" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="14713589" ffgLicence="" ffgLicenceStatus="" firstName="Ozgur" grade=" 4D" name="Degirmenci" participating="11111111111111111111" rank="4D" rating="2411" ratingOrigin="EGF : 2411" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="16013536" ffgLicence="" ffgLicenceStatus="" firstName="Merve" grade=" 9K" name="Gurcan" participating="11111111111111111111" rank="9K" rating="1009" ratingOrigin="EGF : 1009" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="14098854" ffgLicence="" ffgLicenceStatus="" firstName="Volkan" grade="5K" name="Burc" participating="11111111111111111111" rank="5K" rating="1577" ratingOrigin="EGF : 1577" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Berna" grade="20K" name="Salman" participating="11111111111111111111" rank="20K" rating="100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="18674106" ffgLicence="" ffgLicenceStatus="" firstName="Fettah" grade=" 5K" name="Yalicli" participating="11111111111111111111" rank="5K" rating="1370" ratingOrigin="EGF : 1370" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="18586293" ffgLicence="" ffgLicenceStatus="" firstName="Banu" grade=" 9K" name="Kibar" participating="11111111111111111111" rank="9K" rating="1199" ratingOrigin="EGF : 1199" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="18398193" ffgLicence="" ffgLicenceStatus="" firstName="Berke" grade="9K" name="Uner" participating="11111111111111111111" rank="9K" rating="1342" ratingOrigin="EGF : 1342" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="19050647" ffgLicence="" ffgLicenceStatus="" firstName="Sait" grade=" 8K" name="Sevgi" participating="11111111111111111111" rank="8K" rating="1282" ratingOrigin="EGF : 1282" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="13701534" ffgLicence="" ffgLicenceStatus="" firstName="Barkin" grade=" 1D" name="Celebican" participating="11111111111111111111" rank="1D" rating="2077" ratingOrigin="EGF : 2077" registeringStatus="PRE" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="19513329" ffgLicence="" ffgLicenceStatus="" firstName="Semih" grade="9K" name="Bilki" participating="11111111111111111111" rank="9K" rating="1141" ratingOrigin="EGF : 1141" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="17637367" ffgLicence="" ffgLicenceStatus="" firstName="Servet" grade=" 2K" name="Dasdemir" participating="11111111111111111111" rank="2K" rating="1849" ratingOrigin="EGF : 1849" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="19513340" ffgLicence="" ffgLicenceStatus="" firstName="Etkin" grade=" 9K" name="Ozgan" participating="11111111111111111111" rank="9K" rating="1142" ratingOrigin="EGF : 1142" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="14825052" ffgLicence="" ffgLicenceStatus="" firstName="Dogac" grade=" 1D" name="Kose" participating="11111111111111111111" rank="1D" rating="2113" ratingOrigin="EGF : 2113" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="16249497" ffgLicence="" ffgLicenceStatus="" firstName="Nalan" grade=" 8K" name="Kayacan" participating="11111111111111111111" rank="8K" rating="1274" ratingOrigin="EGF : 1274" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="17401153" ffgLicence="" ffgLicenceStatus="" firstName="Ege" grade=" 1D" name="Kose" participating="11111111111111111111" rank="1D" rating="2082" ratingOrigin="EGF : 2082" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="15437840" ffgLicence="" ffgLicenceStatus="" firstName="Bilge" grade=" 4K" name="Goze" participating="11111111111111111111" rank="4K" rating="1636" ratingOrigin="EGF : 1636" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="19049041" ffgLicence="" ffgLicenceStatus="" firstName="Ilknur" grade="10K" name="Gursen" participating="11111111111111111111" rank="10K" rating="738" ratingOrigin="EGF : 738" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="Ist" country="TR" egfPin="18633208" ffgLicence="" ffgLicenceStatus="" firstName="Mustafa" grade="10K" name="Uzturk" participating="11111111111111111111" rank="10K" rating="770" ratingOrigin="EGF : 770" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="KOSEDOGAC" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="BASGOLBERK"/>
+        <Game blackPlayer="DEGIRMENCIOZGUR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="DASDEMIRSERVET"/>
+        <Game blackPlayer="GOZEBILGE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="KOSEEGE"/>
+        <Game blackPlayer="BURCVOLKAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="4" whitePlayer="YAZILANENGIN"/>
+        <Game blackPlayer="SEVGISAIT" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="YALICLIFETTAH"/>
+        <Game blackPlayer="UNERBERKE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="6" whitePlayer="KAYACANNALAN"/>
+        <Game blackPlayer="KIBARBANU" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="7" whitePlayer="BILKISEMIH"/>
+        <Game blackPlayer="GURCANMERVE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="8" whitePlayer="OZGANETKIN"/>
+        <Game blackPlayer="UZTURKMUSTAFA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="9" whitePlayer="GURSENILKNUR"/>
+        <Game blackPlayer="SALMANBERNA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="10" whitePlayer="SARIMELTEM"/>
+        <Game blackPlayer="KOSEEGE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="DEGIRMENCIOZGUR"/>
+        <Game blackPlayer="BURCVOLKAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="2" whitePlayer="DASDEMIRSERVET"/>
+        <Game blackPlayer="YALICLIFETTAH" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="GOZEBILGE"/>
+        <Game blackPlayer="KOSEDOGAC" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="4" whitePlayer="YAZILANENGIN"/>
+        <Game blackPlayer="KAYACANNALAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="5" whitePlayer="BASGOLBERK"/>
+        <Game blackPlayer="UNERBERKE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="6" whitePlayer="SEVGISAIT"/>
+        <Game blackPlayer="GURCANMERVE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="7" whitePlayer="KIBARBANU"/>
+        <Game blackPlayer="UZTURKMUSTAFA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="8" whitePlayer="BILKISEMIH"/>
+        <Game blackPlayer="SARIMELTEM" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="9" whitePlayer="GURSENILKNUR"/>
+        <Game blackPlayer="SALMANBERNA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="10" whitePlayer="OZGANETKIN"/>
+        <Game blackPlayer="DEGIRMENCIOZGUR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="KOSEDOGAC"/>
+        <Game blackPlayer="DASDEMIRSERVET" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="GOZEBILGE"/>
+        <Game blackPlayer="BASGOLBERK" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="3" whitePlayer="BURCVOLKAN"/>
+        <Game blackPlayer="KOSEEGE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="4" whitePlayer="YALICLIFETTAH"/>
+        <Game blackPlayer="YAZILANENGIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="5" whitePlayer="KAYACANNALAN"/>
+        <Game blackPlayer="BILKISEMIH" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="6" whitePlayer="GURCANMERVE"/>
+        <Game blackPlayer="SEVGISAIT" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="7" whitePlayer="KIBARBANU"/>
+        <Game blackPlayer="OZGANETKIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="8" whitePlayer="UNERBERKE"/>
+        <Game blackPlayer="SARIMELTEM" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="9" whitePlayer="UZTURKMUSTAFA"/>
+        <Game blackPlayer="GURSENILKNUR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="10" whitePlayer="SALMANBERNA"/>
+    </Games>
+    <TournamentParameterSet>
+        <GeneralParameterSet bInternet="true" basicTime="30" beginDate="2020-12-06" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Barkin Celebican" endDate="2020-12-06" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4K" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="Istanbul, KGS, TR" name="N8 Championship Istanbul Prep" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="3" shortName="N8Ist_2020" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="0" hdNoHdRankThreshold="20K"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="MMS" number="1"/>
+                <PlacementCriterion name="SOSM" number="2"/>
+                <PlacementCriterion name="SOSOSM" number="3"/>
+                <PlacementCriterion name="NULL" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="TOP" paiMaDUDDUpperMode="BOT" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="4"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="86.121.56.222" gothaMinorVersion="0" gothaVersion="349" saveDT="20201206132129">
+<Players>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="19525605" ffgLicence="" ffgLicenceStatus="" firstName="Denis_Mihai" grade="19K" name="Ghetu" participating="11111111111111111111" rank="19K" rating="164" ratingOrigin="EGF : 164" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="18549652" ffgLicence="" ffgLicenceStatus="" firstName="Eduard" grade="18K" name="Iugulescu" participating="11111111111111111111" rank="18K" rating="309" ratingOrigin="EGF : 309" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19413845" ffgLicence="" ffgLicenceStatus="" firstName="Denisa" grade="19K" name="Rusu" participating="11111111111111111111" rank="19K" rating="161" ratingOrigin="EGF : 161" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19525418" ffgLicence="" ffgLicenceStatus="" firstName="Alesia" grade="19K" name="Ungureanu" participating="11111111111111111111" rank="19K" rating="168" ratingOrigin="EGF : 168" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19062164" ffgLicence="" ffgLicenceStatus="" firstName="Maria" grade="18K" name="Macovei" participating="11111111111111111111" rank="18K" rating="340" ratingOrigin="EGF : 340" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="18701386" ffgLicence="" ffgLicenceStatus="" firstName="Razvan-Cristian-Ionut" grade="19K" name="Savu" participating="11111111111111111111" rank="19K" rating="210" ratingOrigin="EGF : 210" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="17849612" ffgLicence="" ffgLicenceStatus="" firstName="Bogdan" grade="18K" name="Pirlea" participating="11111111111111111111" rank="18K" rating="308" ratingOrigin="EGF : 308" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="19574742" ffgLicence="" ffgLicenceStatus="" firstName="Damian" grade="19K" name="Grecu" participating="11111111111111111111" rank="19K" rating="180" ratingOrigin="EGF : 180" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="VaDo" country="RO" egfPin="19001763" ffgLicence="" ffgLicenceStatus="" firstName="Gruia" grade="19K" name="Taranu" participating="11111111111111111111" rank="19K" rating="178" ratingOrigin="EGF : 178" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="18637729" ffgLicence="" ffgLicenceStatus="" firstName="David" grade="19K" name="Arnautu" participating="11111111111111111111" rank="19K" rating="244" ratingOrigin="EGF : 244" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="19533415" ffgLicence="" ffgLicenceStatus="" firstName="Ilinca-Stefania" grade="20K" name="Pop" participating="11111111111111111111" rank="20K" rating="139" ratingOrigin="EGF : 139" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="17874274" ffgLicence="" ffgLicenceStatus="" firstName="Tudor" grade="17K" name="Pirlea" participating="11111111111111111111" rank="17K" rating="380" ratingOrigin="EGF : 380" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Cluj" country="RO" egfPin="19533602" ffgLicence="" ffgLicenceStatus="" firstName="Sara_Maria" grade="18K" name="Ghetu" participating="11111111111111111111" rank="18K" rating="324" ratingOrigin="EGF : 324" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Hika" country="RO" egfPin="19413361" ffgLicence="" ffgLicenceStatus="" firstName="David" grade="19K" name="Militaru" participating="11111111111111111111" rank="19K" rating="249" ratingOrigin="EGF : 249" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="POPILINCA-STEFANIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="ARNAUTUDAVID"/>
+<Game blackPlayer="GHETUDENIS_MIHAI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="PIRLEABOGDAN"/>
+<Game blackPlayer="GHETUSARA_MARIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="TARANUGRUIA"/>
+<Game blackPlayer="MACOVEIMARIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="4" whitePlayer="GRECUDAMIAN"/>
+<Game blackPlayer="UNGUREANUALESIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="5" whitePlayer="IUGULESCUEDUARD"/>
+<Game blackPlayer="RUSUDENISA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="6" whitePlayer="MILITARUDAVID"/>
+<Game blackPlayer="SAVURAZVAN-CRISTIAN-IONUT" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="7" whitePlayer="PIRLEATUDOR"/>
+<Game blackPlayer="UNGUREANUALESIA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="GHETUSARA_MARIA"/>
+<Game blackPlayer="MILITARUDAVID" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="2" whitePlayer="POPILINCA-STEFANIA"/>
+<Game blackPlayer="PIRLEABOGDAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="MACOVEIMARIA"/>
+<Game blackPlayer="ARNAUTUDAVID" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="4" whitePlayer="PIRLEATUDOR"/>
+<Game blackPlayer="GRECUDAMIAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="5" whitePlayer="TARANUGRUIA"/>
+<Game blackPlayer="SAVURAZVAN-CRISTIAN-IONUT" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="6" whitePlayer="IUGULESCUEDUARD"/>
+<Game blackPlayer="GHETUDENIS_MIHAI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="7" whitePlayer="RUSUDENISA"/>
+<Game blackPlayer="POPILINCA-STEFANIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="1" whitePlayer="GHETUSARA_MARIA"/>
+<Game blackPlayer="GRECUDAMIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="2" whitePlayer="MILITARUDAVID"/>
+<Game blackPlayer="PIRLEATUDOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="3" whitePlayer="MACOVEIMARIA"/>
+<Game blackPlayer="UNGUREANUALESIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="4" whitePlayer="GHETUDENIS_MIHAI"/>
+<Game blackPlayer="ARNAUTUDAVID" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="5" whitePlayer="SAVURAZVAN-CRISTIAN-IONUT"/>
+<Game blackPlayer="IUGULESCUEDUARD" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="6" whitePlayer="TARANUGRUIA"/>
+<Game blackPlayer="RUSUDENISA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="7" whitePlayer="PIRLEABOGDAN"/>
+<Game blackPlayer="PIRLEATUDOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="GHETUSARA_MARIA"/>
+<Game blackPlayer="MILITARUDAVID" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="MACOVEIMARIA"/>
+<Game blackPlayer="PIRLEABOGDAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="3" whitePlayer="UNGUREANUALESIA"/>
+<Game blackPlayer="IUGULESCUEDUARD" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="4" whitePlayer="POPILINCA-STEFANIA"/>
+<Game blackPlayer="ARNAUTUDAVID" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="5" whitePlayer="GHETUDENIS_MIHAI"/>
+<Game blackPlayer="GRECUDAMIAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="6" whitePlayer="RUSUDENISA"/>
+<Game blackPlayer="TARANUGRUIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="7" whitePlayer="SAVURAZVAN-CRISTIAN-IONUT"/>
+<Game blackPlayer="GHETUSARA_MARIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="1" whitePlayer="MILITARUDAVID"/>
+<Game blackPlayer="MACOVEIMARIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="2" whitePlayer="UNGUREANUALESIA"/>
+<Game blackPlayer="PIRLEATUDOR" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="3" whitePlayer="POPILINCA-STEFANIA"/>
+<Game blackPlayer="PIRLEABOGDAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="4" whitePlayer="GRECUDAMIAN"/>
+<Game blackPlayer="TARANUGRUIA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="5" whitePlayer="ARNAUTUDAVID"/>
+<Game blackPlayer="SAVURAZVAN-CRISTIAN-IONUT" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="6" whitePlayer="GHETUDENIS_MIHAI"/>
+<Game blackPlayer="RUSUDENISA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="7" whitePlayer="IUGULESCUEDUARD"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-12-05" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Hikaru" endDate="2020-12-06" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="0" genMMS2ValueBye="0" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="0" genRoundDownNBWMMS="true" komi="7.5" location="KGS" name="Cupa Hikaru 2020 - Grupa C" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="hikaru-2020-C" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="DC" number="2"/>
+<PlacementCriterion name="SOSW" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="TOP" paiMaDUDDUpperMode="BOT" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

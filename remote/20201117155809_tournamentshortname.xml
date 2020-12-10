@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="141.156.160.241" fullVersionNumber="3.51" runningMode="SRV" saveDT="20201117155809">
+<Players>
+<Player agaExpirationDate="10/31/2020" agaId="24909" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ivy" grade="20K" name="Zhang" participating="11111111111111111111" rank="20K" rating="-700" ratingOrigin="AGA : -28.50" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="7/29/2022" agaId="19978" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Frederick" grade="5D" name="Bao" participating="11111111111111111111" rank="6D" rating="2516" ratingOrigin="AGA : 5.66" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="4/8/2022" agaId="7971" club="NOVA" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="James" grade="2K" name="Bonomo" participating="11111111111111111111" rank="2K" rating="1889" ratingOrigin="AGA : -2.61" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="10/31/2020" agaId="12869" club="RICH" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Yaming" grade="7D" name="Wang" participating="11111111111111111111" rank="7D" rating="2673" ratingOrigin="AGA : 7.23" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="10/7/2022" agaId="14474" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Joshua" grade="6D" name="Lee" participating="11111111111111111111" rank="6D" rating="2565" ratingOrigin="AGA : 6.15" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="2/10/2021" agaId="20277" club="HAGC" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sarah" grade="5K" name="Crites" participating="11111111111111111111" rank="4K" rating="1645" ratingOrigin="AGA : -5.05" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="9/26/2020" agaId="24835" club="NOVA" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Evan" grade="24K" name="Moore" participating="11111111111111111111" rank="24K" rating="-700" ratingOrigin="AGA : -28.50" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="10/31/2020" agaId="24908" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Daniel" grade="28K" name="Correa" participating="11111111111111111111" rank="12K" rating="-700" ratingOrigin="AGA : -28.50" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="9/28/2021" agaId="24842" club="CAPA" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Austin" grade="28K" name="Feng" participating="11111111111111111111" rank="5D" rating="-700" ratingOrigin="AGA : -28.50" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="6/22/2032" agaId="23299" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jiayang" grade="1K" name="Su" participating="11111111111111111111" rank="1K" rating="2045" ratingOrigin="AGA : -1.05" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="8/22/2031" agaId="23477" club="XYZG" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Derek Hounong" grade="7K" name="Zhou" participating="11111111111111111111" rank="7K" rating="1377" ratingOrigin="AGA : -7.73" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="10/31/2020" agaId="24910" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="James" grade="15K" name="Han" participating="11111111111111111111" rank="15K" rating="-700" ratingOrigin="AGA : -28.50" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="9/30/2021" agaId="24849" club="CAPA" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jialong" grade="3D" name="Qing" participating="11111111111111111111" rank="3D" rating="2322" ratingOrigin="AGA : 3.72" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="5/5/2020" agaId="24587" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Raymond" grade="3D" name="Hong" participating="11111111111111111111" rank="3D" rating="2307" ratingOrigin="AGA : 3.57" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="2/27/2015" agaId="18654" club="XYZG" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Hongchun" grade="2D" name="Liu" participating="11111111111111111111" rank="2D" rating="2206" ratingOrigin="AGA : 2.56" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="10/31/2020" agaId="23656" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ran" grade="5D" name="Zhao" participating="11111111111111111111" rank="5D" rating="2468" ratingOrigin="AGA : 5.18" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/25/2020" agaId="20137" club="CAPA" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Liang" grade="6D" name="Yu" participating="11111111111111111111" rank="6D" rating="2582" ratingOrigin="AGA : 6.32" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="9/6/2021" agaId="24804" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Adam" grade="15K" name="King" participating="11111111111111111111" rank="15K" rating="600" ratingOrigin="AGA : -15.50" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/31/2199" agaId="16597" club="UMD" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Justin" grade="6D" name="Teng" participating="11111111111111111111" rank="6D" rating="2590" ratingOrigin="AGA : 6.40" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="11/1/2020" agaId="22896" club="NOVA" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Qingbo" grade="5D" name="Zhang" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="AGA : 5.50" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="6/17/2029" agaId="7673" club="BALT" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Eric" grade="8D" name="Lui" participating="11111111111111111111" rank="8D" rating="2820" ratingOrigin="AGA : 8.70" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="12/12/2022" agaId="14906" club="CAPA" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Zhiyuan [Edward" grade="5D" name="Zhang" participating="11111111111111111111" rank="5D" rating="2536" ratingOrigin="AGA : 5.86" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="9/28/2021" agaId="23512" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="John" grade="7K" name="Christensen" participating="11111111111111111111" rank="6K" rating="1429" ratingOrigin="AGA : -7.21" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="10/31/2020" agaId="24911" club="" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ryan" grade="15K" name="Guo" participating="11111111111111111111" rank="15K" rating="-700" ratingOrigin="AGA : -28.50" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="2/18/2022" agaId="18348" club="HAGC" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Bob" grade="5K" name="Crites" participating="11111111111111111111" rank="4K" rating="1618" ratingOrigin="AGA : -5.32" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="10/1/2021" agaId="24851" club="CAPA" country="US" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Xuhui" grade="3D" name="Zhang" participating="11111111111111111111" rank="3D" rating="-700" ratingOrigin="AGA : -28.50" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games/>
+<TournamentParameterSet>
+<GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-11-17" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Director name" endDate="2020-11-17" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Location name" name="Tournament name" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="3" shortName="tournamentshortname" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

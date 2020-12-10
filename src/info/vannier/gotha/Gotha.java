@@ -39,8 +39,8 @@ public class Gotha {
     
     static Locale locale = Locale.getDefault();
     static final long GOTHA_VERSION = 351L;
-    static final long GOTHA_MINOR_VERSION = 0L;
-    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2020, Calendar.NOVEMBER, 1)).getTime();
+    static final long GOTHA_MINOR_VERSION = 1L;
+    static final java.util.Date GOTHA_RELEASE_DATE = (new GregorianCalendar(2020, Calendar.DECEMBER, 10)).getTime();
     // Data version for serialization. Since 3.23 version, not used because xml and compatibility is always granted in both senses
     static final long GOTHA_DATA_VERSION = 201L;
     
@@ -212,6 +212,25 @@ public class Gotha {
             else if (f1 == 3) strF1 = "¾";
         }
         return strI1 + strF1;
+    }
+    /**
+     * converts à long number into a String representation with 3 digits slices
+     * @param nb
+     * @return 
+     */
+    public static String formatLongNumberBy3digits(long nb){
+        String s = "";
+        long nbCurrent = nb;
+        while (nbCurrent > 0){
+            long quot = nbCurrent / 1000;
+            long rem = nbCurrent - quot * 1000;
+            String sRem = "" + rem;
+            if(rem < 100) sRem = "0" + sRem;
+            if(rem < 10 ) sRem = "0" + sRem;
+            s = " " + sRem + s;
+            nbCurrent = quot;
+        } 
+        return s;
     }
     
     public static String forceToASCII(String s){

@@ -5,7 +5,7 @@ package info.vannier.gotha;
  * @author Luc Vannier
  */
 public class TeamPlacementParameterSet implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
 
     final static int TPL_MAX_NUMBER_OF_CRITERIA = 6;
 

@@ -96,7 +96,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         grpSeedingLatter = new javax.swing.ButtonGroup();
         dlgChangeSystem = new javax.swing.JDialog();
         rdbMcMahon = new javax.swing.JRadioButton();
-        rdbSwiss = new javax.swing.JRadioButton();
+        rdbCup = new javax.swing.JRadioButton();
         rdbSwissCat = new javax.swing.JRadioButton();
         lblNewSystem = new javax.swing.JLabel();
         jLabel19 = new javax.swing.JLabel();
@@ -105,6 +105,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         jLabel27 = new javax.swing.JLabel();
         lblRecommended = new javax.swing.JLabel();
         ckbResetParameters = new javax.swing.JCheckBox();
+        rdbSwiss = new javax.swing.JRadioButton();
         grpNewSystem = new javax.swing.ButtonGroup();
         grpHdBase = new javax.swing.ButtonGroup();
         dlgEditClubsGroups = new javax.swing.JDialog();
@@ -287,16 +288,16 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         rdbMcMahon.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         rdbMcMahon.setMargin(new java.awt.Insets(0, 0, 0, 0));
         dlgChangeSystem.getContentPane().add(rdbMcMahon);
-        rdbMcMahon.setBounds(180, 110, 170, 13);
+        rdbMcMahon.setBounds(180, 80, 170, 13);
 
-        grpNewSystem.add(rdbSwiss);
-        rdbSwiss.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        rdbSwiss.setText("Swiss");
-        rdbSwiss.setToolTipText("Good system for championships");
-        rdbSwiss.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
-        rdbSwiss.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        dlgChangeSystem.getContentPane().add(rdbSwiss);
-        rdbSwiss.setBounds(180, 140, 170, 13);
+        grpNewSystem.add(rdbCup);
+        rdbCup.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        rdbCup.setText("Cup");
+        rdbCup.setToolTipText("Good system for championships");
+        rdbCup.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        rdbCup.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        dlgChangeSystem.getContentPane().add(rdbCup);
+        rdbCup.setBounds(180, 170, 170, 13);
 
         grpNewSystem.add(rdbSwissCat);
         rdbSwissCat.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
@@ -305,11 +306,11 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         rdbSwissCat.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         rdbSwissCat.setMargin(new java.awt.Insets(0, 0, 0, 0));
         dlgChangeSystem.getContentPane().add(rdbSwissCat);
-        rdbSwissCat.setBounds(180, 170, 170, 13);
+        rdbSwissCat.setBounds(180, 140, 170, 13);
 
         lblNewSystem.setText("New system :");
         dlgChangeSystem.getContentPane().add(lblNewSystem);
-        lblNewSystem.setBounds(180, 80, 110, 14);
+        lblNewSystem.setBounds(180, 50, 110, 14);
 
         jLabel19.setFont(new java.awt.Font("Tahoma", 2, 11)); // NOI18N
         jLabel19.setHorizontalAlignment(javax.swing.SwingConstants.CENTER);
@@ -344,7 +345,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         lblRecommended.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         lblRecommended.setText("(recommended for ancilliary standings only)");
         dlgChangeSystem.getContentPane().add(lblRecommended);
-        lblRecommended.setBounds(220, 180, 250, 13);
+        lblRecommended.setBounds(220, 150, 250, 13);
 
         ckbResetParameters.setText("Keep current system but reset settings to their default values");
         ckbResetParameters.addActionListener(new java.awt.event.ActionListener() {
@@ -353,7 +354,16 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         dlgChangeSystem.getContentPane().add(ckbResetParameters);
-        ckbResetParameters.setBounds(80, 50, 400, 23);
+        ckbResetParameters.setBounds(80, 20, 400, 23);
+
+        grpNewSystem.add(rdbSwiss);
+        rdbSwiss.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        rdbSwiss.setText("Swiss");
+        rdbSwiss.setToolTipText("");
+        rdbSwiss.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        rdbSwiss.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        dlgChangeSystem.getContentPane().add(rdbSwiss);
+        rdbSwiss.setBounds(180, 110, 170, 13);
 
         dlgEditClubsGroups.getContentPane().setLayout(null);
 
@@ -867,7 +877,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlGen.add(btnHelpGeneral);
-        btnHelpGeneral.setBounds(420, 400, 110, 30);
+        btnHelpGeneral.setBounds(420, 390, 110, 30);
 
         tpnParameters.addTab("General", pnlGen);
 
@@ -1017,7 +1027,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlHan.add(btnHelpHandicap);
-        btnHelpHandicap.setBounds(420, 400, 110, 30);
+        btnHelpHandicap.setBounds(420, 390, 110, 30);
 
         tpnParameters.addTab("Handicap", pnlHan);
 
@@ -1156,14 +1166,14 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         rdbNoRandom.setText("No random");
         rdbNoRandom.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         rdbNoRandom.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        rdbNoRandom.addActionListener(new java.awt.event.ActionListener() {
-            public void actionPerformed(java.awt.event.ActionEvent evt) {
-                rdbNoRandomActionPerformed(evt);
-            }
-        });
         rdbNoRandom.addFocusListener(new java.awt.event.FocusAdapter() {
             public void focusLost(java.awt.event.FocusEvent evt) {
                 rdbRandomFocusLost(evt);
+            }
+        });
+        rdbNoRandom.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                rdbNoRandomActionPerformed(evt);
             }
         });
         pnlBase.add(rdbNoRandom);
@@ -1551,7 +1561,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlSecondary.add(ckbSeMinimizeHandicap);
-        ckbSeMinimizeHandicap.setBounds(10, 230, 170, 13);
+        ckbSeMinimizeHandicap.setBounds(10, 210, 170, 13);
 
         jLabel26.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
         jLabel26.setHorizontalAlignment(javax.swing.SwingConstants.TRAILING);
@@ -1593,7 +1603,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         btnEditClubsGroups.setBounds(10, 172, 150, 15);
 
         pnlPai.add(pnlSecondary);
-        pnlSecondary.setBounds(420, 150, 350, 260);
+        pnlSecondary.setBounds(420, 150, 350, 240);
 
         btnHelpPairing.setIcon(new javax.swing.ImageIcon(getClass().getResource("/info/vannier/gotha/gothalogo16.jpg"))); // NOI18N
         btnHelpPairing.setText("help");
@@ -1603,7 +1613,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             }
         });
         pnlPai.add(btnHelpPairing);
-        btnHelpPairing.setBounds(430, 410, 110, 30);
+        btnHelpPairing.setBounds(430, 390, 110, 30);
 
         tpnParameters.addTab("Pairing", pnlPai);
 
@@ -1763,6 +1773,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         if (this.rdbMcMahon.isSelected()) system = TournamentParameterSet.TYPE_MCMAHON;
         if (this.rdbSwiss.isSelected()) system = TournamentParameterSet.TYPE_SWISS;
         if (this.rdbSwissCat.isSelected()) system = TournamentParameterSet.TYPE_SWISSCAT;
+        if (this.rdbCup.isSelected()) system = TournamentParameterSet.TYPE_CUP;
         
         TournamentParameterSet tps;
         try {
@@ -1798,11 +1809,20 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
                 paiPS.initForSwissCat();
                 dpps.initForSwissCat();
                 break;
+            case TournamentParameterSet.TYPE_CUP:
+                gps.initForCup();
+                hps.initForCup();
+                pps.initForCup();
+                paiPS.initForCup();
+                dpps.initForCup();
+                break;
             default :
                 gps.initForMM();
                 hps.initForMM();
                 pps.initForMM();
                 paiPS.initForMM();
+                dpps.initForMM();              
+
         }
         
         try {
@@ -1820,6 +1840,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         this.rdbMcMahon.setEnabled(true);
         this.rdbSwiss.setEnabled(true);
         this.rdbSwissCat.setEnabled(true);
+        this.rdbCup.setEnabled(true);
         this.lblRecommended.setEnabled(true);
 
         int tournamentType = TournamentParameterSet.TYPE_UNDEFINED;
@@ -1831,6 +1852,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
         if (tournamentType == TournamentParameterSet.TYPE_MCMAHON) rdbMcMahon.setSelected(true);
         if (tournamentType == TournamentParameterSet.TYPE_SWISS) rdbSwiss.setSelected(true);
         if (tournamentType == TournamentParameterSet.TYPE_SWISSCAT) rdbSwissCat.setSelected(true);
+        if (tournamentType == TournamentParameterSet.TYPE_CUP) rdbCup.setSelected(true);
          
         dlgChangeSystem.setVisible(true);
         dlgChangeSystem.setTitle("Change tournament system");
@@ -2718,7 +2740,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
 
         this.lblNewSystem.setEnabled(!bResetSelected);
         this.rdbMcMahon.setEnabled(!bResetSelected);
-        this.rdbSwiss.setEnabled(!bResetSelected);
+        this.rdbCup.setEnabled(!bResetSelected);
         this.rdbSwissCat.setEnabled(!bResetSelected);
         this.lblRecommended.setEnabled(!bResetSelected);
         
@@ -2730,7 +2752,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
                 Logger.getLogger(JFrTournamentOptions.class.getName()).log(Level.SEVERE, null, ex);
             }
             if (tournamentType == TournamentParameterSet.TYPE_MCMAHON) rdbMcMahon.setSelected(true);
-            if (tournamentType == TournamentParameterSet.TYPE_SWISS) rdbSwiss.setSelected(true);
+            if (tournamentType == TournamentParameterSet.TYPE_SWISS) rdbCup.setSelected(true);
             if (tournamentType == TournamentParameterSet.TYPE_SWISSCAT) rdbSwissCat.setSelected(true);
         }
 
@@ -3240,7 +3262,14 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
             this.pnlCategories.setVisible(true);                      
             this.pnlMcMahon.setVisible(false);
         }
-        
+        if (tournamentType == TournamentParameterSet.TYPE_CUP){
+            this.pnlTournamentDetails.setVisible(true);
+            this.lblSystemName.setVisible(true);
+            this.lblSystemName.setText("Cup system");
+            this.pnlCategories.setVisible(false);
+            this.pnlMcMahon.setVisible(false);
+        }
+       
         // Identification Panel
         this.txfShortName.setText(gps.getShortName());
         this.txfName.setText(gps.getName());
@@ -3753,6 +3782,7 @@ public class JFrTournamentOptions extends javax.swing.JFrame{
     private javax.swing.JRadioButton rdbByeNBW0;
     private javax.swing.JRadioButton rdbByeNBW1;
     private javax.swing.JRadioButton rdbByeNBW2;
+    private javax.swing.JRadioButton rdbCup;
     private javax.swing.JRadioButton rdbDUDDLGBot;
     private javax.swing.JRadioButton rdbDUDDLGMid;
     private javax.swing.JRadioButton rdbDUDDLGTop;

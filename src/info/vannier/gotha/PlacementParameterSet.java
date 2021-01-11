@@ -1,7 +1,7 @@
 package info.vannier.gotha;
 
 public class PlacementParameterSet implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     
     final static int PLA_MAX_NUMBER_OF_CRITERIA = 6; 
     
@@ -14,6 +14,7 @@ public class PlacementParameterSet implements java.io.Serializable{
     final static int PLA_CRIT_NBW    = 100;	// Number of Wins
     final static int PLA_CRIT_MMS    = 200;	// McMahon score
     final static int PLA_CRIT_STS    = 300;     // Strasbourg score
+    final static int PLA_CRIT_CPS    = 400;     // Cup score
     
     final static int PLA_CRIT_SOSW   = 110;	// Sum of Opponents NbW
     final static int PLA_CRIT_SOSWM1 = 111;	// Sum of (n-1)Opponents NbW
@@ -31,16 +32,17 @@ public class PlacementParameterSet implements java.io.Serializable{
 
     final static int PLA_CRIT_SOSTS  = 310;     // Sum of Opponents Strasbourg scores
 
-    final static int PLA_CRIT_EXT    = 401;     // Exploits Reussis
-    final static int PLA_CRIT_EXR    = 402;     // Exploits Tentes
+    final static int PLA_CRIT_EXT    = 501;     // Exploits Reussis
+    final static int PLA_CRIT_EXR    = 502;     // Exploits Tentes
     
-    final static int PLA_CRIT_SDC    = 501;     // Simplified Direct Confrontation 
-    final static int PLA_CRIT_DC     = 502;     // Direct Confrontation 
+    final static int PLA_CRIT_SDC    = 601;     // Simplified Direct Confrontation 
+    final static int PLA_CRIT_DC     = 602;     // Direct Confrontation 
 
     final static PlacementCriterion[] allPlacementCriteria = {
         new PlacementCriterion(PLA_CRIT_NUL, "NULL", "NULL", "No tie break", 1),
         new PlacementCriterion(PLA_CRIT_CAT, "CAT", "CAT", "Category", -1),
         new PlacementCriterion(PLA_CRIT_NBW, "NBW", "NBW", "Number of Wins", 2),
+        new PlacementCriterion(PLA_CRIT_CPS, "CPS", "CPS", "Cup Score", 2),
         new PlacementCriterion(PLA_CRIT_MMS, "MMS", "MMS", "McMahon Score", 2),
         new PlacementCriterion(PLA_CRIT_STS, "STS", "STS", "Strasbourg Score", 2),
         new PlacementCriterion(PLA_CRIT_RANK, "Rank", "Rank", "Rank from 30K to 9D", 1),
@@ -118,6 +120,16 @@ public class PlacementParameterSet implements java.io.Serializable{
         plaCriteria[5] = PLA_CRIT_NUL;
     }
     
+        public void initForCup(){
+        plaCriteria = new int[PLA_MAX_NUMBER_OF_CRITERIA];
+        plaCriteria[0] = PLA_CRIT_CPS;
+        plaCriteria[1] = PLA_CRIT_NUL;
+        plaCriteria[2] = PLA_CRIT_NUL;
+        plaCriteria[3] = PLA_CRIT_NUL;
+        plaCriteria[4] = PLA_CRIT_NUL;
+        plaCriteria[5] = PLA_CRIT_NUL;
+    }
+
     public String checkCriteriaCoherence(javax.swing.JFrame jfr){
         // DIR Coherence
         boolean bOK = true;
@@ -137,6 +149,7 @@ public class PlacementParameterSet implements java.io.Serializable{
         // 2nd coherence test : Criteria should not mix elements from McMahon group with elements from Swiss group
         int nbSWCriteria = 0;
         int nbMMCriteria = 0;
+        int nbCPCriteria = 0;
         for (int i = 0; i < crit.length; i++){
             switch(crit[i]){
                 case PlacementParameterSet.PLA_CRIT_CAT:
@@ -162,9 +175,16 @@ public class PlacementParameterSet implements java.io.Serializable{
                 case PlacementParameterSet.PLA_CRIT_SOSTS:
                     nbMMCriteria++;
                     break;
+                case PlacementParameterSet.PLA_CRIT_CPS:
+                    nbCPCriteria++;
             } 
         }
-        if (nbSWCriteria > 0 && nbMMCriteria > 0){
+        if (nbCPCriteria > 0){
+            if (nbSWCriteria > 0 || nbMMCriteria > 0){
+                strMes += "\nCup and other mixed";
+                bOK = false;
+            }
+        }else if (nbSWCriteria > 0 && nbMMCriteria > 0){
             strMes += "\nMcMahon and Swiss Criteria mixed";
             bOK = false;
         }
@@ -284,13 +304,16 @@ public class PlacementParameterSet implements java.io.Serializable{
             if (crit[iC] == PlacementParameterSet.PLA_CRIT_MMS){
                 return PlacementParameterSet.PLA_CRIT_MMS;
             }
+            if (crit[iC] == PlacementParameterSet.PLA_CRIT_CPS){
+                return PlacementParameterSet.PLA_CRIT_CPS;
+            }
         }  
         return mainCrit;
     }
 }
     
 class PlacementCriterion implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     
     public int uid;
     public String shortName;

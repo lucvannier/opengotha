@@ -9,7 +9,7 @@ package info.vannier.gotha;
  * @author Luc Vannier
  */
 public class Club implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     private String name;
 
     public Club(String name){

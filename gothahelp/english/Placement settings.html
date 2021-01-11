@@ -14,6 +14,10 @@
             <li><a name="NBW">NBW</a>
                 <br>Number Of Wins.
             </li>
+            <li><a name="CPS">CPS</a>
+                <br>Cup Score.
+                <br>Designed for Cup Tournaments. A Win in a given round has always a bigger weight than all Wins in following rounds.
+            </li>
 
             <li><a name="MMS">MMS</a>
                 <br>McMahon Score
@@ -61,8 +65,8 @@
                     <li>if AH = NH +1 then coef = 2 ( difficult game)</li>
                     <li>if AH &gt;= NH +2 then coef = 3 (very difficult game)</li>
                 </ul>
-                ET is the sum of opponents scores, with coef as a weight factor
-                <br>ER is the sum of defeated opponents scores, with coef as a weight factor
+                EXT is the sum of opponents scores, with coef as a weight factor
+                <br>EXR is the sum of defeated opponents scores, with coef as a weight factor
             </li>
             <li>DC
                 <br>Direct Confrontation. This performs a special sort on players having the same score for higher priority parameters than DC, so that a player is above the ones he has defeated.

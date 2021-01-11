@@ -10,7 +10,7 @@ package info.vannier.gotha;
  * @author Luc Vannier
  */
 public class HandicapParameterSet implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     /** 
      * if hdBasedOnMMS is false, hd will be based on rank
      */
@@ -70,7 +70,14 @@ public class HandicapParameterSet implements java.io.Serializable{
         hdCorrection = 1;       
         hdCeiling = 9;
     }
-    
+        
+    public void initForCup(){
+        hdBasedOnMMS = false;
+        hdNoHdRankThreshold = -30;
+        hdCorrection = 0;       
+        hdCeiling = 0;
+    }
+
     public boolean isHdBasedOnMMS() {
         return hdBasedOnMMS;
     }

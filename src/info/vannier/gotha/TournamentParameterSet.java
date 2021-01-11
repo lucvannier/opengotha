@@ -10,12 +10,14 @@ package info.vannier.gotha;
  * @author Luc Vannier
  */
 public class TournamentParameterSet implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     
-    public final static int TYPE_UNDEFINED       = 0;
-    public final static int TYPE_MCMAHON         = 1;
-    public final static int TYPE_SWISS           = 2;
-    public final static int TYPE_SWISSCAT        = 3;
+    public final static int TYPE_UNDEFINED  = 0;
+    public final static int TYPE_MCMAHON    = 1;
+    public final static int TYPE_SWISS      = 2;
+    public final static int TYPE_SWISSCAT   = 3;
+    public final static int TYPE_CUP        = 4;
+
     
     private GeneralParameterSet generalParameterSet = new GeneralParameterSet();
     private HandicapParameterSet handicapParameterSet = new HandicapParameterSet();
@@ -48,6 +50,7 @@ public class TournamentParameterSet implements java.io.Serializable{
             case PlacementParameterSet.PLA_CRIT_MMS : return TournamentParameterSet.TYPE_MCMAHON;
             case PlacementParameterSet.PLA_CRIT_NBW : return TournamentParameterSet.TYPE_SWISS;
             case PlacementParameterSet.PLA_CRIT_CAT : return TournamentParameterSet.TYPE_SWISSCAT;
+            case PlacementParameterSet.PLA_CRIT_CPS : return TournamentParameterSet.TYPE_CUP;
             default : return TournamentParameterSet.TYPE_UNDEFINED;
         }
     }
@@ -89,6 +92,16 @@ public class TournamentParameterSet implements java.io.Serializable{
         dpParameterSet.initForSwissCat();
         publishParameterSet.initForSwissCat();
     }
+        
+    public void initForCup(){
+        generalParameterSet.initForCup();
+        handicapParameterSet.initForCup();
+        placementParameterSet.initForCup();
+        pairingParameterSet.initForCup();
+        dpParameterSet.initForCup();
+        publishParameterSet.initForCup();
+    }
+
 
     public HandicapParameterSet getHandicapParameterSet() {
         return handicapParameterSet;

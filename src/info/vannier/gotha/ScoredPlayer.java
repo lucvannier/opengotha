@@ -14,7 +14,7 @@ import java.util.HashMap;
  * @author Luc Vannier
  */
 public class ScoredPlayer extends Player implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
 
     // For a given round and a given player, the status should be one and only one of the status below  
 
@@ -37,11 +37,13 @@ public class ScoredPlayer extends Player implements java.io.Serializable{
     private int[] nbwX2;       // number of wins * 2
     private int[] mmsX2;       // mcmahon score * 2
     private int[] stsX2;       // strasbourg score *2
+    private int[] cpsX2;       // strasbourg score *2
         // Virtual scores : half points are given for not played games
     private int[] nbwVirtualX2;       // number of wins * 2
     private int[] mmsVirtualX2;       // mcmahon score * 2
     private int[] stsVirtualX2;       // Strasbourg score * 2
-    
+    private int[] cpsVirtualX2;       // number of wins * 2
+
     // Second level scores
     private int[] cuswX2;      // Sum of successive nbw2
     private int[] cusmX2;      // Sum of successive mms2
@@ -57,11 +59,12 @@ public class ScoredPlayer extends Player implements java.io.Serializable{
 
     private int[] extX2;      // Exploits tentes (based on nbw2, with a weight factor)
     private int[] exrX2;      // Exploits reussis(based on nbw2, with a weight factor)
+    
     // Third level scores
     private int[] ssswX2;      // Sum of opponents sosw2 * 2
     private int[] sssmX2;      // Sum of opponents sosm2 * 2
+    
     // Special Scores
-
     private int dc;            // Direct Confrontation
     private int sdc;           // Simplified Direct Confrontation
 
@@ -114,6 +117,13 @@ public class ScoredPlayer extends Player implements java.io.Serializable{
     public void setNBWX2(int rn, int value){
         if (isValidRoundNumber(rn)) nbwX2[rn] = value;
     }
+    public int getCPSX2(int rn){
+        if (isValidRoundNumber(rn)) return cpsX2[rn];
+        else return 0;
+    }
+    public void setCPSX2(int rn, int value){
+        if (isValidRoundNumber(rn)) cpsX2[rn] = value;
+    }
     public int getMMSX2(int rn){
         if (isValidRoundNumber(rn)) return mmsX2[rn];
         else return 0;
@@ -135,6 +145,13 @@ public class ScoredPlayer extends Player implements java.io.Serializable{
     }
     public void setNBWVirtualX2(int rn, int value){
         if (isValidRoundNumber(rn)) nbwVirtualX2[rn] = value;
+    }
+    public int getCPSVirtualX2(int rn){
+        if (isValidRoundNumber(rn)) return cpsVirtualX2[rn];
+        else return 0;
+    }
+    public void setCPSVirtualX2(int rn, int value){
+        if (isValidRoundNumber(rn)) cpsVirtualX2[rn] = value;
     }
     public int getMMSVirtualX2(int rn){
         if (isValidRoundNumber(rn)) return mmsVirtualX2[rn];
@@ -280,9 +297,11 @@ public class ScoredPlayer extends Player implements java.io.Serializable{
         participation = new int[numberOfRounds];
         gameArray = new Game[numberOfRounds];
         nbwX2  = new int[numberOfRounds];
+        cpsX2  = new int[numberOfRounds];
         mmsX2  = new int[numberOfRounds];
         stsX2  = new int[numberOfRounds];
         nbwVirtualX2  = new int[numberOfRounds];
+        cpsVirtualX2  = new int[numberOfRounds];
         mmsVirtualX2  = new int[numberOfRounds];
         stsVirtualX2  = new int[numberOfRounds];
         
@@ -313,9 +332,11 @@ public class ScoredPlayer extends Player implements java.io.Serializable{
             participation[r] = 0;
             gameArray[r] = null;
             nbwX2[r] = 0;
+            cpsX2[r] = 0;
             mmsX2[r] = 0;
             stsX2[r] = 0;
             nbwVirtualX2[r] = 0;
+            cpsVirtualX2[r] = 0;
             mmsVirtualX2[r] = 0;
             stsVirtualX2[r] = 0;
             
@@ -350,6 +371,7 @@ public class ScoredPlayer extends Player implements java.io.Serializable{
             case PlacementParameterSet.PLA_CRIT_RANK   : return  getRank();      // Rank
             case PlacementParameterSet.PLA_CRIT_RATING : return  getRating();    // Rating
             case PlacementParameterSet.PLA_CRIT_NBW    : return  (rn >= 0) ? nbwX2[rn] : 0;                     // Number of Wins
+            case PlacementParameterSet.PLA_CRIT_CPS    : return  (rn >= 0) ? cpsX2[rn] : 0;                     // Cup score
             case PlacementParameterSet.PLA_CRIT_MMS    : return  (rn >= 0) ? mmsX2[rn] : 2 * smms(generalParameterSet);  // McMahon score
             case PlacementParameterSet.PLA_CRIT_STS    : return  (rn >= 0) ? stsX2[rn] : 2 * smms(generalParameterSet);  // STS score 
                 
@@ -517,7 +539,7 @@ public static String[][] halfGamesStrings(ArrayList<ScoredPlayer> alOrderedScore
     }
 
     /**
-     * Generate a array of strings representing placement inside category between 1 and number of players.
+     * Generate an array of strings representing placement inside category between 1 and number of players.
      * Basically placement is the position in alOrderedScoredPlayers + 1.
      * Except for ex-aequos
      */

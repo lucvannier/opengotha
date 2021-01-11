@@ -4,7 +4,7 @@
 package info.vannier.gotha;
 
 public class Player implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     private String name;
     private String firstName;
     /** keyString is computed at creation/modification time */
@@ -87,8 +87,7 @@ public class Player implements java.io.Serializable{
 //            System.out.println("club = " + club + " club.length = " + club.length());
             club = club.substring(0, MAX_CLUB_LENGTH); 
         } 
-//            throw new PlayerException("Club name should have at most " + MAX_CLUB_LENGTH + " character");
-        this.club = club;
+       this.club = club;
         this.egfPin = egfPin;
         this.ffgLicence = ffgLicence;  
         this.ffgLicenceStatus = ffgLicenceStatus;  
@@ -173,13 +172,10 @@ public class Player implements java.io.Serializable{
     public String augmentedPlayerName(DPParameterSet dpps){
         String strNF = shortenedFullName();
             
-//        String strRk = Player.convertIntToKD(this.getRank());
-//        String strGr = this.getStrGrade();
         String strRk = Player.convertIntToKD(this.getRank());
         String strCo = Gotha.leftString(this.getCountry(), 2);
         String strCl = Gotha.leftString(this.getClub(), 4);
 
-//        boolean bRk = dpps.isShowPlayerRank();
         boolean bGr = dpps.isShowPlayerRank();
         boolean bCo = dpps.isShowPlayerCountry();
         boolean bCl = dpps.isShowPlayerClub();
@@ -188,7 +184,6 @@ public class Player implements java.io.Serializable{
         String strPl = strNF + "(";
         boolean bFirst = true;
         if (bGr){
-//            strPl += strGr;
             strPl += strRk;
             bFirst = false;
         }

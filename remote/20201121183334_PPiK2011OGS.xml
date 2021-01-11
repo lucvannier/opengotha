@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="178.182.240.48" gothaMinorVersion="0" gothaVersion="349" saveDT="20201121183334">
+<Players>
+<Player agaExpirationDate="" agaId="" club="Wroc" country="PL" egfPin="18774954" ffgLicence="" ffgLicenceStatus="" firstName="Marcin" grade=" 4K" name="Kosz" participating="11111111111111111111" rank="4K" rating="1664" ratingOrigin="EGF : 1664" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Soso" country="PL" egfPin="14962629" ffgLicence="" ffgLicenceStatus="" firstName="Marek" grade="5K" name="Kunek" participating="11111111111111111111" rank="5K" rating="1530" ratingOrigin="EGF : 1530" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Toru" country="PL" egfPin="17237407" ffgLicence="" ffgLicenceStatus="" firstName="Cezary" grade=" 8K" name="Malkiewicz" participating="11111111111111111111" rank="8K" rating="1219" ratingOrigin="EGF : 1219" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Pozn" country="PL" egfPin="18913829" ffgLicence="" ffgLicenceStatus="" firstName="Damian" grade="10K" name="Mrozowski" participating="11111111111111111111" rank="10K" rating="879" ratingOrigin="EGF : 879" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Bydg" country="PL" egfPin="10801835" ffgLicence="" ffgLicenceStatus="" firstName="Wojciech" grade=" 4K" name="Szychowiak" participating="11111111111111111111" rank="4K" rating="1676" ratingOrigin="EGF : 1676" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Pozn" country="PL" egfPin="18737928" ffgLicence="" ffgLicenceStatus="" firstName="Tymoteusz" grade=" 8K" name="Barcicki" participating="11111111111111111111" rank="8K" rating="1266" ratingOrigin="EGF : 1266" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="KOSZMARCIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="SZYCHOWIAKWOJCIECH"/>
+<Game blackPlayer="MROZOWSKIDAMIAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="SZYCHOWIAKWOJCIECH"/>
+<Game blackPlayer="KUNEKMAREK" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="BARCICKITYMOTEUSZ"/>
+<Game blackPlayer="KUNEKMAREK" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="2" whitePlayer="KOSZMARCIN"/>
+<Game blackPlayer="MROZOWSKIDAMIAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="MALKIEWICZCEZARY"/>
+<Game blackPlayer="BARCICKITYMOTEUSZ" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="3" whitePlayer="MALKIEWICZCEZARY"/>
+<Game blackPlayer="SZYCHOWIAKWOJCIECH" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="KUNEKMAREK"/>
+<Game blackPlayer="MALKIEWICZCEZARY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="1" whitePlayer="SZYCHOWIAKWOJCIECH"/>
+<Game blackPlayer="BARCICKITYMOTEUSZ" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="MROZOWSKIDAMIAN"/>
+<Game blackPlayer="KUNEKMAREK" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="2" whitePlayer="MROZOWSKIDAMIAN"/>
+<Game blackPlayer="MALKIEWICZCEZARY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="3" whitePlayer="KOSZMARCIN"/>
+<Game blackPlayer="KOSZMARCIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="3" whitePlayer="BARCICKITYMOTEUSZ"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="30" beginDate="2020-11-21" canByoYomiTime="300" complementaryTimeSystem="FISCHER" director="Szychowiak" endDate="2020-11-21" fischerTime="20" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="10K" genMMFloor="10K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="6.5" location="OGS" name="Puchar Pomorza i Kujaw na OGS" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="4" shortName="PPiK_20_11_OGS" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="0" hdNoHdRankThreshold="11K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="DC" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

@@ -28,6 +28,10 @@ public class PublishParameterSet implements java.io.Serializable{
         commonInit();
     }
     
+    public void initForCup(){
+        commonInit();
+    }
+
     public void commonInit(){
         this.print = true;
         this.exportToLocalFile = true;

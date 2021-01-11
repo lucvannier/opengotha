@@ -10,7 +10,7 @@ package info.vannier.gotha;
  * @author Luc Vannier
  */
 public class TeamTournamentParameterSet implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
 
     private TeamGeneralParameterSet teamGeneralParameterSet = new TeamGeneralParameterSet();
     private TeamPlacementParameterSet teamPlacementParameterSet = new TeamPlacementParameterSet();

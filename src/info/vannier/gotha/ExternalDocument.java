@@ -239,9 +239,6 @@ public class ExternalDocument {
 
     public static String importTournamentFromXMLFile(File sourceFile, TournamentInterface tournament, 
             boolean bPlayers, boolean bGames, boolean bTPS, boolean bTeams, boolean bClubsGroups) {
-        
-//        System.out.println("importTournamentFromXMLFile. sourceFile = " + sourceFile);
-//        System.out.println("importTournamentFromXMLFile. Appel de ExternalDocument.importRemoteRunningModeFromXMLFile");
           
         String remoteRunningMode = ExternalDocument.importRemoteRunningModeFromXMLFile(sourceFile);
 
@@ -251,7 +248,6 @@ public class ExternalDocument {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
         }
         
-//        System.out.println("importTournamentFromXMLFile. Appel de ExternalDocument.importRemoteFullVersionNumberFromXMLFile");
         String remoteFullVersionNumber = ExternalDocument.importRemoteFullVersionNumberFromXMLFile(sourceFile);
         try {
             tournament.setRemoteFullVersionNumber(remoteFullVersionNumber);
@@ -259,10 +255,7 @@ public class ExternalDocument {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
         }
                 
-//        System.out.println("importTournamentFromXMLFile. remoteRunningMode = " + remoteRunningMode + " remoteFullVersionNumber = " + remoteFullVersionNumber);
-
         Date saveDT = ExternalDocument.importSaveDTFromXMLFile(sourceFile);
-//        System.out.println("importTournamentFromXMLFile. Appel de ExternalDocument.importExternalIPAddressFromXMLFile");
         String externalIPAddress = ExternalDocument.importExternalIPAddressFromXMLFile(sourceFile);
         try {
             tournament.setSaveDT(saveDT);
@@ -513,14 +506,12 @@ public class ExternalDocument {
     private static String importRemoteRunningModeFromXMLFile(File sourceFile) {
         Document doc = getDocumentFromXMLFile(sourceFile);
         if (doc == null) {
-//            System.out.println("importRemoteRunningModeFromXMLFile. doc = null");
             return "---";
         }
         NodeList nl = doc.getElementsByTagName("Tournament");
         Node n = nl.item(0);
         NamedNodeMap nnm = n.getAttributes();
         String strRRM = extractNodeValue(nnm, "runningMode", "---");
-//        System.out.println("importRemoteRunningModeFromXMLFile. strRRM = " + strRRM);
 
         return strRRM;
     }
@@ -2255,7 +2246,6 @@ public class ExternalDocument {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
         }
         try {
-
             output.write("<h4 align=center>" + Gotha.getGothaVersionnedName() + "<br>" + new SimpleDateFormat("dd-MM-yyyy HH:mm").format(new Date()) + "</h4>");
         } catch (IOException ex) {
             Logger.getLogger(ExternalDocument.class.getName()).log(Level.SEVERE, null, ex);
@@ -2959,7 +2949,7 @@ public class ExternalDocument {
         rootElement.setAttribute("fullVersionNumber", "" + strFVN);
         
         rootElement.setAttribute("runningMode", "" + strRM);
-        rootElement.setAttribute("dataVersion", "" + Gotha.GOTHA_DATA_VERSION);
+//        rootElement.setAttribute("dataVersion", "" + Gotha.GOTHA_DATA_VERSION);
         
         Date currentDate = Calendar.getInstance().getTime();
         SimpleDateFormat sdf = new SimpleDateFormat("yyyyMMddHHmmss");

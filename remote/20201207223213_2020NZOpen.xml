@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="121.74.20.38" gothaMinorVersion="4" gothaVersion="348" saveDT="20201207223213">
+<Players>
+<Player agaExpirationDate="" agaId="" club="AKL" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Punn" grade="1D" name="Roongnirandon" participating="11100000000000000000" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="AKL" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Juhua" grade="5D" name="Zhou" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Akl" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Weiran" grade="4D" name="Lin" participating="11111111111111111111" rank="4D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="AKL" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Hanping" grade="4D" name="Li" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="AKL" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Chaoqun" grade="4D" name="Zhou" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="AKL" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jinhyeon" grade="4D" name="Kim" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="AKL" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Lei" grade="4D" name="Zixiang (Jerry" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="AKL" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Kelvin" grade="3D" name="Li" participating="11111111111111111111" rank="3D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Akl" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Don" grade="4D" name="Wan" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="AKL" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jeong Min" grade="4D" name="Kim" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="WTN" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sato" grade="2D" name="Mitsutaka" participating="11111111111111111111" rank="2D" rating="2200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="AKL" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Richard" grade="3D" name="Luo" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Akl" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Colin" grade="4D" name="Grierson" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="AKL" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Longyang" grade="5D" name="Li" participating="11111111111111111111" rank="5D" rating="2500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="AKL" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Jae" grade="3D" name="Kim" participating="11111111111111111111" rank="3D" rating="2300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="AKL" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Selwyn" grade="2D" name="Xin" participating="11101111111111111111" rank="2D" rating="2200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Akl" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gang" grade="5D" name="Du" participating="11111111111111111111" rank="4D" rating="2400" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Akl" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ray (Xiayang" grade="1D" name="Fan" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="ZIXIANG(JERRYLEI" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="DUGANG"/>
+<Game blackPlayer="FANRAY(XIAYANG" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="LILONGYANG"/>
+<Game blackPlayer="KIMJAE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="GRIERSONCOLIN"/>
+<Game blackPlayer="KIMJEONGMIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="LINWEIRAN"/>
+<Game blackPlayer="KIMJINHYEON" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="LUORICHARD"/>
+<Game blackPlayer="MITSUTAKASATO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="6" whitePlayer="LIHANPING"/>
+<Game blackPlayer="WANDON" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="7" whitePlayer="ROONGNIRANDONPUNN"/>
+<Game blackPlayer="ZHOUCHAOQUN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="8" whitePlayer="ZHOUJUHUA"/>
+<Game blackPlayer="XINSELWYN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="9" whitePlayer="LIKELVIN"/>
+<Game blackPlayer="LUORICHARD" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="LIKELVIN"/>
+<Game blackPlayer="ZHOUJUHUA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="2" whitePlayer="LILONGYANG"/>
+<Game blackPlayer="KIMJAE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="DUGANG"/>
+<Game blackPlayer="LINWEIRAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="4" whitePlayer="LIHANPING"/>
+<Game blackPlayer="MITSUTAKASATO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="5" whitePlayer="WANDON"/>
+<Game blackPlayer="KIMJEONGMIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="6" whitePlayer="ZHOUCHAOQUN"/>
+<Game blackPlayer="ZIXIANG(JERRYLEI" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="7" whitePlayer="KIMJINHYEON"/>
+<Game blackPlayer="ROONGNIRANDONPUNN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="8" whitePlayer="FANRAY(XIAYANG"/>
+<Game blackPlayer="GRIERSONCOLIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="9" whitePlayer="XINSELWYN"/>
+<Game blackPlayer="DUGANG" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="1" whitePlayer="LILONGYANG"/>
+<Game blackPlayer="LIKELVIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="2" whitePlayer="ZIXIANG(JERRYLEI"/>
+<Game blackPlayer="FANRAY(XIAYANG" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="3" whitePlayer="ZHOUJUHUA"/>
+<Game blackPlayer="LINWEIRAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="4" whitePlayer="ZHOUCHAOQUN"/>
+<Game blackPlayer="WANDON" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="5" whitePlayer="LUORICHARD"/>
+<Game blackPlayer="KIMJINHYEON" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="6" whitePlayer="GRIERSONCOLIN"/>
+<Game blackPlayer="KIMJAE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="7" whitePlayer="MITSUTAKASATO"/>
+<Game blackPlayer="LIHANPING" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="8" whitePlayer="XINSELWYN"/>
+<Game blackPlayer="DUGANG" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="1" whitePlayer="LUORICHARD"/>
+<Game blackPlayer="LILONGYANG" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="KIMJAE"/>
+<Game blackPlayer="LIKELVIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="MITSUTAKASATO"/>
+<Game blackPlayer="ZHOUJUHUA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="4" whitePlayer="LINWEIRAN"/>
+<Game blackPlayer="ZHOUCHAOQUN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="5" whitePlayer="WANDON"/>
+<Game blackPlayer="LIHANPING" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="6" whitePlayer="FANRAY(XIAYANG"/>
+<Game blackPlayer="GRIERSONCOLIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="7" whitePlayer="ZIXIANG(JERRYLEI"/>
+<Game blackPlayer="XINSELWYN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="8" whitePlayer="KIMJEONGMIN"/>
+<Game blackPlayer="ROONGNIRANDONPUNN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="9" whitePlayer="KIMJINHYEON"/>
+<Game blackPlayer="LILONGYANG" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="1" whitePlayer="LIKELVIN"/>
+<Game blackPlayer="DUGANG" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="2" whitePlayer="ZHOUJUHUA"/>
+<Game blackPlayer="LUORICHARD" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="3" whitePlayer="LINWEIRAN"/>
+<Game blackPlayer="WANDON" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="4" whitePlayer="ZIXIANG(JERRYLEI"/>
+<Game blackPlayer="LIHANPING" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="5" whitePlayer="ZHOUCHAOQUN"/>
+<Game blackPlayer="KIMJINHYEON" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="6" whitePlayer="KIMJAE"/>
+<Game blackPlayer="FANRAY(XIAYANG" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="7" whitePlayer="MITSUTAKASATO"/>
+<Game blackPlayer="GRIERSONCOLIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="8" whitePlayer="KIMJEONGMIN"/>
+</Games>
+<ByePlayers>
+<ByePlayer player="KIMJEONGMIN" roundNumber="5"/>
+</ByePlayers>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="20" beginDate="2020-11-20" canByoYomiTime="300" complementaryTimeSystem="FISCHER" director="Colin Grierson" endDate="2020-11-21" fischerTime="15" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7" location="Aucklaand" name="2020 NZ Open" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="2020 NZ Open" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="DC" number="2"/>
+<PlacementCriterion name="SOSW" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

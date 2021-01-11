@@ -24,7 +24,7 @@ import java.util.logging.Logger;
  * @author Luc Vannier
  */
 public class ScoredTeamsSet implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     private TournamentInterface tournament;
     private long lastUpdateTimeMillis = 0;
 

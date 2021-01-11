@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="179.9.77.72" gothaMinorVersion="0" gothaVersion="349" saveDT="20201220011739">
+<Players>
+<Player agaExpirationDate="" agaId="" club="Indp" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Claudia" grade="6K" name="Flores" participating="11111111111111111111" rank="6K" rating="1500" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Indp" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Macarena" grade="21K" name="Tapia" participating="11111111111111111111" rank="21K" rating="0" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Aonk" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Franco" grade="14K" name="Cárdenas" participating="11111111111111111111" rank="14K" rating="700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Roni" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Juan" grade="14K" name="Ureta" participating="11111111111111111111" rank="14K" rating="700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="AONK" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Matias" grade="2K" name="Salinas" participating="11111111111111111111" rank="2K" rating="1900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Aonk" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Esteban" grade="1K" name="Sánchez" participating="11111111111111111111" rank="1K" rating="2000" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Aonk" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Benjamín" grade="5K" name="Mimiza" participating="11111111111111111111" rank="5K" rating="1600" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Aonk" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gabriel" grade="14K" name="Argel" participating="11111111111111111111" rank="14K" rating="700" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Aonk" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Sebastián" grade="2D" name="Montiel" participating="11111111111111111111" rank="2D" rating="2200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Aonk" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Claudio" grade="10K" name="Mesias" participating="11111111111111111111" rank="10K" rating="1100" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Aonk" country="CL" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Gustavo" grade="8K" name="Gibbons" participating="11111111111111111111" rank="8K" rating="1300" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="Madr" country="ES" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Victor" grade="9K" name="Gutierrez" participating="11111111111111111111" rank="9K" rating="1200" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="MIMIZABENJAMÍN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="1" whitePlayer="FLORESCLAUDIA"/>
+<Game blackPlayer="GUTIERREZVICTOR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="TAPIAMACARENA"/>
+<Game blackPlayer="ARGELGABRIEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="3" whitePlayer="MONTIELSEBASTIÁN"/>
+<Game blackPlayer="SÁNCHEZESTEBAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="5" whitePlayer="MESIASCLAUDIO"/>
+<Game blackPlayer="MIMIZABENJAMÍN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="1" whitePlayer="GUTIERREZVICTOR"/>
+<Game blackPlayer="URETAJUAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="2" whitePlayer="MONTIELSEBASTIÁN"/>
+<Game blackPlayer="GIBBONSGUSTAVO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="SÁNCHEZESTEBAN"/>
+<Game blackPlayer="SALINASMATIAS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="4" whitePlayer="CÁRDENASFRANCO"/>
+<Game blackPlayer="MESIASCLAUDIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="5" whitePlayer="FLORESCLAUDIA"/>
+<Game blackPlayer="ARGELGABRIEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="6" whitePlayer="TAPIAMACARENA"/>
+<Game blackPlayer="MONTIELSEBASTIÁN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="1" whitePlayer="GUTIERREZVICTOR"/>
+<Game blackPlayer="SÁNCHEZESTEBAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="2" whitePlayer="FLORESCLAUDIA"/>
+<Game blackPlayer="MIMIZABENJAMÍN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="5" tableNumber="3" whitePlayer="TAPIAMACARENA"/>
+<Game blackPlayer="GIBBONSGUSTAVO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="4" whitePlayer="SALINASMATIAS"/>
+<Game blackPlayer="CÁRDENASFRANCO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="5" whitePlayer="MESIASCLAUDIO"/>
+<Game blackPlayer="ARGELGABRIEL" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="5" tableNumber="6" whitePlayer="URETAJUAN"/>
+<Game blackPlayer="GUTIERREZVICTOR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="SÁNCHEZESTEBAN"/>
+<Game blackPlayer="MONTIELSEBASTIÁN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="MIMIZABENJAMÍN"/>
+<Game blackPlayer="CÁRDENASFRANCO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="ARGELGABRIEL"/>
+<Game blackPlayer="FLORESCLAUDIA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="4" whitePlayer="SALINASMATIAS"/>
+<Game blackPlayer="MESIASCLAUDIO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="5" whitePlayer="GIBBONSGUSTAVO"/>
+<Game blackPlayer="TAPIAMACARENA" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="6" whitePlayer="URETAJUAN"/>
+<Game blackPlayer="SÁNCHEZESTEBAN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="1" whitePlayer="MIMIZABENJAMÍN"/>
+<Game blackPlayer="MONTIELSEBASTIÁN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="2" whitePlayer="SALINASMATIAS"/>
+<Game blackPlayer="URETAJUAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="3" whitePlayer="GUTIERREZVICTOR"/>
+<Game blackPlayer="FLORESCLAUDIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="4" whitePlayer="GIBBONSGUSTAVO"/>
+<Game blackPlayer="TAPIAMACARENA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="5" whitePlayer="CÁRDENASFRANCO"/>
+<Game blackPlayer="MESIASCLAUDIO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="6" whitePlayer="ARGELGABRIEL"/>
+</Games>
+<TournamentParameterSet>
+<GeneralParameterSet basicTime="60" beginDate="2020-07-25" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Club Aonken" endDate="2020-07-26" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="KGS" name="Torneo de Invierno 2020" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="invierno2020final" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="NBW" number="1"/>
+<PlacementCriterion name="SOSW" number="2"/>
+<PlacementCriterion name="SOSOSW" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameClubsGroup="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

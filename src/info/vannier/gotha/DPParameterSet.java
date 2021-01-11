@@ -5,7 +5,7 @@ package info.vannier.gotha;
  * @author Luc Vannier
  */
 public class DPParameterSet implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     
     private int playerSortType = PlayerComparator.NAME_ORDER;
     
@@ -72,6 +72,12 @@ public class DPParameterSet implements java.io.Serializable{
         this.gameFormat = DPParameterSet.DP_GAME_FORMAT_FULL;
         commonInit();
     }
+    
+    public void initForCup(){
+        this.gameFormat = DPParameterSet.DP_GAME_FORMAT_SHORT;
+        commonInit();
+    }
+
     
     public void commonInit(){
         this.displayNPPlayers = false;

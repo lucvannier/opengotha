@@ -1,0 +1,466 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="77.128.107.78" fullVersionNumber="3.51.02" runningMode="SAL" saveDT="20210110153608">
+<Players>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1500104" ffgLicenceStatus="L" firstName="Manuela" grade="18K" name="Rebelo" participating="11111111111111111111" rank="18K" rating="276" ratingOrigin="FFG : -1774" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="95Va" country="FR" egfPin="" ffgLicence="1100070" ffgLicenceStatus="L" firstName="Olga" grade="5K" name="Vargas" participating="01111111111111111111" rank="5K" rating="1603" ratingOrigin="FFG : -447" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="49An" country="FR" egfPin="" ffgLicence="1800220" ffgLicenceStatus="L" firstName="Etienne" grade="3K" name="Perroux" participating="11111111111111111111" rank="3K" rating="1840" ratingOrigin="FFG : -210" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Le" country="FR" egfPin="" ffgLicence="1800151" ffgLicenceStatus="L" firstName="David" grade="7K" name="Sebouk" participating="11111111111111111111" rank="7K" rating="1374" ratingOrigin="FFG : -676" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Op" country="FR" egfPin="" ffgLicence="0427814" ffgLicenceStatus="L" firstName="Pierre-Luc" grade="9K" name="Sarocchi" participating="11111111111111111111" rank="9K" rating="1164" ratingOrigin="FFG : -886" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Ge" country="FR" egfPin="" ffgLicence="1700109" ffgLicenceStatus="L" firstName="Alexandre" grade="5K" name="Pinchard" participating="11111111111111111111" rank="5K" rating="1582" ratingOrigin="FFG : -468" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="78Ve" country="FR" egfPin="" ffgLicence="0027700" ffgLicenceStatus="L" firstName="André" grade="2K" name="Nemo" participating="11111111111111111111" rank="2K" rating="1853" ratingOrigin="FFG : -197" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="10Tr" country="FR" egfPin="" ffgLicence="1800226" ffgLicenceStatus="L" firstName="Oscar" grade="6K" name="Yung" participating="11111111111111111111" rank="6K" rating="1516" ratingOrigin="FFG : -534" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Le" country="FR" egfPin="" ffgLicence="0700348" ffgLicenceStatus="L" firstName="Louise" grade="2K" name="Roullier" participating="11111111111111111111" rank="2K" rating="1894" ratingOrigin="FFG : -156" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Le" country="FR" egfPin="" ffgLicence="0424601" ffgLicenceStatus="L" firstName="Sylvain" grade="5K" name="Ravera" participating="11111111111111111111" rank="5K" rating="1586" ratingOrigin="FFG : -464" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Op" country="FR" egfPin="" ffgLicence="1800022" ffgLicenceStatus="L" firstName="Boyuan" grade="2D" name="Li" participating="11111111111111111111" rank="2D" rating="2160" ratingOrigin="FFG : 110" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75OB" country="FR" egfPin="" ffgLicence="1900040" ffgLicenceStatus="L" firstName="François" grade="4K" name="Burq" participating="11111111111111111111" rank="4K" rating="1653" ratingOrigin="FFG : -397" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="49An" country="FR" egfPin="" ffgLicence="1800102" ffgLicenceStatus="L" firstName="Theo" grade="1D" name="Lemoine" participating="11111111111111111111" rank="1D" rating="2142" ratingOrigin="FFG : 92" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Al" country="FR" egfPin="" ffgLicence="1900204" ffgLicenceStatus="L" firstName="Timothy" grade="3K" name="Eden" participating="11111111111111111111" rank="3K" rating="1763" ratingOrigin="FFG : -287" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="78Ve" country="FR" egfPin="" ffgLicence="1800180" ffgLicenceStatus="L" firstName="Maxime" grade="4K" name="Bourgin" participating="11111111111111111111" rank="4K" rating="1671" ratingOrigin="FFG : -379" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Ju" country="FR" egfPin="" ffgLicence="1800014" ffgLicenceStatus="L" firstName="Davide" grade="3D" name="Minieri" participating="11111111111111111111" rank="3D" rating="2322" ratingOrigin="FFG : 272" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="75Ju" country="FR" egfPin="" ffgLicence="1900227" ffgLicenceStatus="L" firstName="Léo" grade="3K" name="Moscardo" participating="11111111111111111111" rank="3K" rating="1796" ratingOrigin="FFG : -254" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="91SM" country="FR" egfPin="17033126" ffgLicence="" ffgLicenceStatus="" firstName="Giovanni" grade="11K" name="Nicita" participating="11111111111111111111" rank="10K" rating="1114" ratingOrigin="EGF : 1114" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="92Le" country="FR" egfPin="" ffgLicence="0621020" ffgLicenceStatus="L" firstName="Mathieu" grade="3D" name="Daguenet" participating="10000000000000000000" rank="3D" rating="2274" ratingOrigin="FFG : 224" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="DAGUENETMATHIEU" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="MINIERIDAVIDE"/>
+<Game blackPlayer="REBELOMANUELA" handicap="9" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="9" whitePlayer="RAVERASYLVAIN"/>
+<Game blackPlayer="ROULLIERLOUISE" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="NEMOANDRÉ"/>
+<Game blackPlayer="BOURGINMAXIME" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="RAVERASYLVAIN"/>
+<Game blackPlayer="PINCHARDALEXANDRE" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="MOSCARDOLÉO"/>
+<Game blackPlayer="SEBOUKDAVID" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="5" whitePlayer="BURQFRANÇOIS"/>
+<Game blackPlayer="REBELOMANUELA" handicap="7" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="6" whitePlayer="NICITAGIOVANNI"/>
+<Game blackPlayer="LEMOINETHEO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="7" whitePlayer="LIBOYUAN"/>
+<Game blackPlayer="EDENTIMOTHY" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="8" whitePlayer="PERROUXETIENNE"/>
+<Game blackPlayer="SAROCCHIPIERRE-LUC" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="9" whitePlayer="YUNGOSCAR"/>
+<Game blackPlayer="MOSCARDOLÉO" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="1" whitePlayer="LEMOINETHEO"/>
+<Game blackPlayer="PERROUXETIENNE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="2" whitePlayer="BURQFRANÇOIS"/>
+<Game blackPlayer="NICITAGIOVANNI" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="3" whitePlayer="YUNGOSCAR"/>
+<Game blackPlayer="LIBOYUAN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="4" whitePlayer="MINIERIDAVIDE"/>
+<Game blackPlayer="ROULLIERLOUISE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="5" whitePlayer="EDENTIMOTHY"/>
+<Game blackPlayer="SAROCCHIPIERRE-LUC" handicap="3" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="6" whitePlayer="RAVERASYLVAIN"/>
+<Game blackPlayer="PINCHARDALEXANDRE" handicap="4" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="7" whitePlayer="NEMOANDRÉ"/>
+<Game blackPlayer="SEBOUKDAVID" handicap="2" knownColor="true" result="RESULT_WHITEWINS" roundNumber="3" tableNumber="8" whitePlayer="BOURGINMAXIME"/>
+<Game blackPlayer="REBELOMANUELA" handicap="9" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="9" whitePlayer="VARGASOLGA"/>
+<Game blackPlayer="NEMOANDRÉ" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="MOSCARDOLÉO"/>
+<Game blackPlayer="BURQFRANÇOIS" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="2" whitePlayer="BOURGINMAXIME"/>
+<Game blackPlayer="NICITAGIOVANNI" handicap="3" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="3" whitePlayer="VARGASOLGA"/>
+<Game blackPlayer="MINIERIDAVIDE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="4" whitePlayer="LEMOINETHEO"/>
+<Game blackPlayer="PERROUXETIENNE" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="5" whitePlayer="ROULLIERLOUISE"/>
+<Game blackPlayer="RAVERASYLVAIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="6" whitePlayer="YUNGOSCAR"/>
+<Game blackPlayer="PINCHARDALEXANDRE" handicap="4" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="7" whitePlayer="LIBOYUAN"/>
+<Game blackPlayer="SEBOUKDAVID" handicap="4" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="8" whitePlayer="EDENTIMOTHY"/>
+<Game blackPlayer="REBELOMANUELA" handicap="8" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="9" whitePlayer="SAROCCHIPIERRE-LUC"/>
+<Game blackPlayer="LEMOINETHEO" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="1" whitePlayer="NEMOANDRÉ"/>
+<Game blackPlayer="BOURGINMAXIME" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="2" whitePlayer="PERROUXETIENNE"/>
+<Game blackPlayer="YUNGOSCAR" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="3" whitePlayer="VARGASOLGA"/>
+<Game blackPlayer="MOSCARDOLÉO" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="4" whitePlayer="LIBOYUAN"/>
+<Game blackPlayer="EDENTIMOTHY" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="5" whitePlayer="BURQFRANÇOIS"/>
+<Game blackPlayer="NICITAGIOVANNI" handicap="1" knownColor="true" result="RESULT_BLACKWINS" roundNumber="4" tableNumber="6" whitePlayer="SAROCCHIPIERRE-LUC"/>
+<Game blackPlayer="PINCHARDALEXANDRE" handicap="4" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="7" whitePlayer="MINIERIDAVIDE"/>
+<Game blackPlayer="SEBOUKDAVID" handicap="4" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="8" whitePlayer="ROULLIERLOUISE"/>
+</Games>
+<Teams>
+<Team teamName="FLG" teamNumber="4">
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="1"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="1"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="1"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="2"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="2"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="2"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="3"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="3"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="3"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="4"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="4"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="4"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="5"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="5"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="5"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="6"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="6"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="6"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="7"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="7"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="7"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="8"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="8"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="8"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="9"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="9"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="9"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="10"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="10"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="10"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="11"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="11"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="11"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="12"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="12"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="12"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="13"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="13"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="13"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="14"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="14"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="14"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="15"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="15"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="15"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="16"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="16"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="16"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="17"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="17"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="17"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="18"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="18"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="18"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="19"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="19"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="19"/>
+<Board boardNumber="1" player="MOSCARDOLÉO" roundNumber="20"/>
+<Board boardNumber="2" player="BURQFRANÇOIS" roundNumber="20"/>
+<Board boardNumber="3" player="NICITAGIOVANNI" roundNumber="20"/>
+</Team>
+<Team teamName="GELE" teamNumber="5">
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="1"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="1"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="1"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="2"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="2"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="2"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="3"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="3"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="3"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="4"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="4"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="4"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="5"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="5"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="5"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="6"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="6"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="6"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="7"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="7"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="7"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="8"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="8"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="8"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="9"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="9"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="9"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="10"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="10"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="10"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="11"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="11"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="11"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="12"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="12"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="12"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="13"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="13"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="13"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="14"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="14"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="14"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="15"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="15"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="15"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="16"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="16"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="16"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="17"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="17"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="17"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="18"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="18"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="18"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="19"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="19"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="19"/>
+<Board boardNumber="1" player="PINCHARDALEXANDRE" roundNumber="20"/>
+<Board boardNumber="2" player="SEBOUKDAVID" roundNumber="20"/>
+<Board boardNumber="3" player="REBELOMANUELA" roundNumber="20"/>
+</Team>
+<Team teamName="Olga's team" teamNumber="2">
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="1"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="1"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="1"/>
+<Board boardNumber="1" player="NEMOANDRÉ" roundNumber="2"/>
+<Board boardNumber="2" player="BOURGINMAXIME" roundNumber="2"/>
+<Board boardNumber="3" player="VARGASOLGA" roundNumber="2"/>
+<Board boardNumber="1" player="NEMOANDRÉ" roundNumber="3"/>
+<Board boardNumber="2" player="BOURGINMAXIME" roundNumber="3"/>
+<Board boardNumber="3" player="VARGASOLGA" roundNumber="3"/>
+<Board boardNumber="1" player="NEMOANDRÉ" roundNumber="4"/>
+<Board boardNumber="2" player="BOURGINMAXIME" roundNumber="4"/>
+<Board boardNumber="3" player="VARGASOLGA" roundNumber="4"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="5"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="5"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="5"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="6"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="6"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="6"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="7"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="7"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="7"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="8"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="8"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="8"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="9"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="9"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="9"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="10"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="10"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="10"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="11"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="11"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="11"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="12"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="12"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="12"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="13"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="13"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="13"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="14"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="14"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="14"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="15"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="15"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="15"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="16"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="16"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="16"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="17"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="17"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="17"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="18"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="18"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="18"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="19"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="19"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="19"/>
+<Board boardNumber="1" player="DAGUENETMATHIEU" roundNumber="20"/>
+<Board boardNumber="2" player="NEMOANDRÉ" roundNumber="20"/>
+<Board boardNumber="3" player="BOURGINMAXIME" roundNumber="20"/>
+</Team>
+<Team teamName="ROBOCOP" teamNumber="3">
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="1"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="1"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="1"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="2"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="2"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="2"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="3"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="3"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="3"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="4"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="4"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="4"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="5"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="5"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="5"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="6"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="6"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="6"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="7"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="7"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="7"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="8"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="8"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="8"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="9"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="9"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="9"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="10"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="10"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="10"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="11"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="11"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="11"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="12"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="12"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="12"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="13"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="13"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="13"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="14"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="14"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="14"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="15"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="15"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="15"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="16"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="16"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="16"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="17"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="17"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="17"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="18"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="18"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="18"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="19"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="19"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="19"/>
+<Board boardNumber="1" player="LIBOYUAN" roundNumber="20"/>
+<Board boardNumber="2" player="EDENTIMOTHY" roundNumber="20"/>
+<Board boardNumber="3" player="SAROCCHIPIERRE-LUC" roundNumber="20"/>
+</Team>
+<Team teamName="Levallois-Jussieu" teamNumber="1">
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="1"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="1"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="1"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="2"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="2"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="2"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="3"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="3"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="3"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="4"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="4"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="4"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="5"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="5"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="5"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="6"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="6"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="6"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="7"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="7"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="7"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="8"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="8"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="8"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="9"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="9"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="9"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="10"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="10"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="10"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="11"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="11"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="11"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="12"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="12"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="12"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="13"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="13"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="13"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="14"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="14"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="14"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="15"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="15"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="15"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="16"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="16"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="16"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="17"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="17"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="17"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="18"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="18"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="18"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="19"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="19"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="19"/>
+<Board boardNumber="1" player="MINIERIDAVIDE" roundNumber="20"/>
+<Board boardNumber="2" player="ROULLIERLOUISE" roundNumber="20"/>
+<Board boardNumber="3" player="RAVERASYLVAIN" roundNumber="20"/>
+</Team>
+<Team teamName="Poilâne" teamNumber="6">
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="1"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="1"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="1"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="2"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="2"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="2"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="3"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="3"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="3"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="4"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="4"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="4"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="5"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="5"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="5"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="6"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="6"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="6"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="7"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="7"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="7"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="8"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="8"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="8"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="9"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="9"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="9"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="10"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="10"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="10"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="11"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="11"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="11"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="12"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="12"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="12"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="13"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="13"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="13"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="14"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="14"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="14"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="15"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="15"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="15"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="16"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="16"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="16"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="17"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="17"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="17"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="18"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="18"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="18"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="19"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="19"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="19"/>
+<Board boardNumber="1" player="LEMOINETHEO" roundNumber="20"/>
+<Board boardNumber="2" player="PERROUXETIENNE" roundNumber="20"/>
+<Board boardNumber="3" player="YUNGOSCAR" roundNumber="20"/>
+</Team>
+</Teams>
+<TournamentParameterSet>
+<GeneralParameterSet bInternet="false" basicTime="60" beginDate="2019-10-26" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Brice CHARTIER" endDate="2019-10-28" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Juvisy" name="Tournoi de Juvisy" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="4" shortName="Tournoi de Juvisy" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="3"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

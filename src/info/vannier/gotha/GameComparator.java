@@ -7,7 +7,8 @@ public class GameComparator implements Comparator<Game>, Serializable{
     public final static int NO_ORDER = 0;
 //    public final static int GAME_NUMBER_ORDER = 1;
     public final static int TABLE_NUMBER_ORDER = 2;
-    public final static int BEST_SCO_ORDER = 11;
+    public final static int BEST_SCO_ORDER = 11; // Best Score
+    public final static int BEST_SCR_ORDER = 12; // Best Score then Rating
 
     int gameOrderType = GameComparator.NO_ORDER;
     HashMap<String, ScoredPlayer> hmScoredPlayers;
@@ -35,23 +36,32 @@ public class GameComparator implements Comparator<Game>, Serializable{
         Player bP1 = g1.getBlackPlayer();
         Player wP2 = g2.getWhitePlayer();
         Player bP2 = g2.getBlackPlayer();
-        int best1, best2;
         switch (gameOrderType){
             case TABLE_NUMBER_ORDER :
                 if (g1.getTableNumber() < g2.getTableNumber()) return -1;
                 else if (g1.getTableNumber() > g2.getTableNumber()) return 1;
                 else return 0;
-            case BEST_SCO_ORDER :   // Order according to PlacementParameterSet
+            case BEST_SCO_ORDER :   // Order according to Score
+            case BEST_SCR_ORDER :   // Order according to Score and rating
                 ScoredPlayer wSP1 = hmScoredPlayers.get(wP1.getKeyString());
                 ScoredPlayer bSP1 = hmScoredPlayers.get(bP1.getKeyString());
                 ScoredPlayer wSP2 = hmScoredPlayers.get(wP2.getKeyString());
                 ScoredPlayer bSP2 = hmScoredPlayers.get(bP2.getKeyString());
                 ScoredPlayerComparator spc = new ScoredPlayerComparator(pps, roundNumber, true);
                 ScoredPlayer bestSP1 = wSP1;
+                if (gameOrderType == BEST_SCR_ORDER && spc.compare(wSP1, bSP1)== 0 && wSP1.getRating() < bSP1.getRating()) bestSP1 = bSP1;
                 if (spc.compare(wSP1, bSP1)== -1) bestSP1 = bSP1;
                 ScoredPlayer bestSP2 = wSP2;
+                if (gameOrderType == BEST_SCR_ORDER && spc.compare(wSP2, bSP2)== 0 && wSP2.getRating() < bSP2.getRating()) bestSP2 = bSP2;
                 if (spc.compare(wSP2, bSP2)== -1) bestSP2 = bSP2;
-                return spc.compare(bestSP1, bestSP2);
+                
+                int compareScore = spc.compare(bestSP1, bestSP2);
+                int compareTotal = compareScore;
+                if (gameOrderType == BEST_SCR_ORDER && compareScore == 0){
+                    if (bestSP1.getRating() > bestSP2.getRating()) compareTotal = -1;
+                    else compareTotal = 1;
+                }
+                return compareTotal;
             default :
                 return 0;
 

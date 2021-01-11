@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="220.248.243.59" fullVersionNumber="3.50" runningMode="SAL" saveDT="20201126103159">
+<Players>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="张文耀" grade="21K" name="1827" participating="11111111111111111111" rank="21K" rating="0" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="胡盛昊" grade="6D" name="1791" participating="11111111111111111111" rank="6D" rating="2599" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Fei Yang" grade="21K" name="1859" participating="11111111111111111111" rank="21K" rating="0" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="沈尧" grade="6D" name="1794" participating="11111111111111111111" rank="6D" rating="2608" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="游客6740" grade="21K" name="1863" participating="11111111111111111111" rank="21K" rating="0" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="范小康" grade="20K" name="1793" participating="11111111111111111111" rank="20K" rating="103" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="柳耸" grade="7D" name="1858" participating="11111111111111111111" rank="7D" rating="2716" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="游客4186" grade="21K" name="1862" participating="11111111111111111111" rank="21K" rating="0" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="游客5632" grade="21K" name="1860" participating="11111111111111111111" rank="21K" rating="0" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="游客971" grade="21K" name="1861" participating="11111111111111111111" rank="21K" rating="0" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="游客275" grade="21K" name="1866" participating="11111111111111111111" rank="21K" rating="0" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="游客437" grade="21K" name="1865" participating="11111111111111111111" rank="21K" rating="0" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="佩佩佩" grade="18K" name="1812" participating="11111111111111111111" rank="18K" rating="278" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="游客7702" grade="21K" name="1864" participating="11111111111111111111" rank="21K" rating="0" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="哈哈" grade="9K" name="1815" participating="11111111111111111111" rank="9K" rating="1167" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+</Players>
+<Games>
+<Game blackPlayer="1791胡盛昊" handicap="1" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="1793范小康"/>
+<Game blackPlayer="1791胡盛昊" handicap="0" knownColor="true" result="RESULT_EQUAL" roundNumber="1" tableNumber="2" whitePlayer="1793范小康"/>
+<Game blackPlayer="1791胡盛昊" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="1793范小康"/>
+<Game blackPlayer="1791胡盛昊" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="1793范小康"/>
+<Game blackPlayer="1793范小康" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="5" whitePlayer="1794沈尧"/>
+<Game blackPlayer="1793范小康" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="6" whitePlayer="1794沈尧"/>
+<Game blackPlayer="1793范小康" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="7" whitePlayer="1794沈尧"/>
+<Game blackPlayer="1793范小康" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="8" whitePlayer="1794沈尧"/>
+<Game blackPlayer="1793范小康" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="9" whitePlayer="1794沈尧"/>
+<Game blackPlayer="1793范小康" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="1812佩佩佩"/>
+<Game blackPlayer="1793范小康" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="10" whitePlayer="1794沈尧"/>
+<Game blackPlayer="1793范小康" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="1812佩佩佩"/>
+<Game blackPlayer="1793范小康" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="11" whitePlayer="1794沈尧"/>
+<Game blackPlayer="1794沈尧" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="1" whitePlayer="1791胡盛昊"/>
+<Game blackPlayer="1815哈哈" handicap="8" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="2" whitePlayer="1858柳耸"/>
+<Game blackPlayer="1827张文耀" handicap="7" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="3" whitePlayer="1793范小康"/>
+<Game blackPlayer="1862游客4186" handicap="2" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="4" whitePlayer="1812佩佩佩"/>
+<Game blackPlayer="1859FEIYANG" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="5" whitePlayer="1863游客6740"/>
+<Game blackPlayer="1860游客5632" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="6" whitePlayer="1864游客7702"/>
+<Game blackPlayer="1861游客971" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="3" tableNumber="7" whitePlayer="1865游客437"/>
+</Games>
+<ByePlayers>
+<ByePlayer player="1866游客275" roundNumber="3"/>
+</ByePlayers>
+<TournamentParameterSet>
+<GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-11-26" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Director name" endDate="2020-11-26" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Location name" name="Tournament name" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="round3" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

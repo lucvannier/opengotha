@@ -10,7 +10,7 @@ package info.vannier.gotha;
  * @author Luc Vannier
  */
 public class TeamGeneralParameterSet implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     private int teamSize = 4; 
 
     /** Creates a new instance of GeneralParameterSet */

@@ -99,18 +99,12 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         String strPreviousBD = "";
 
         for (TournamentInterface t : alTournaments) {
-//            try {
-//                System.out.println("t.getFullName() = " + t.getFullName() + " Debut");
-//            } catch (RemoteException ex) {
-//                Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
-//            }
             int line = alTournaments.indexOf(t);
             try {
                 String strRRM = "---";
                 strRRM = t.getRemoteRunningMode();
                 String strRVM = t.getRemoteFullVersionNumber()+ "_" + strRRM;
                 model.setValueAt(strRVM, line, JFrRemoteTournaments.RVM_COL);    
-//                System.out.println("  strRVM = " + strRVM);
                 GeneralParameterSet gps = t.getTournamentParameterSet().getGeneralParameterSet();
                 String shortName = t.getShortName();
                 String strBeginDate = (new SimpleDateFormat("yyyy-MM-dd")).format(gps.getBeginDate());  
@@ -134,9 +128,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
                 model.setValueAt(externalIPAddress, line, JFrRemoteTournaments.IP_COL);
                 
                 // Constituer un ArrayList
-//                System.out.println("Avant readStringFromURL");
                 String strLoc = readStringFromURL(externalIPAddress);
-//                System.out.println("Apres readStringFromURL");
 
                 String strCity;        
                 String strCountry;        
@@ -158,13 +150,7 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
             } catch (IOException ex) {
                 Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
             }
-//            try {
-//                System.out.println("t.getFullName() = " + t.getFullName() + " Fin");
-//            } catch (RemoteException ex) {
-//                Logger.getLogger(JFrRemoteTournaments.class.getName()).log(Level.SEVERE, null, ex);
-//            }
         }
-//        System.out.println("updatePnlTournaments. Fin");
 
     }
  
@@ -173,7 +159,6 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
      * returns the tounament found in this file 
      */
     private TournamentInterface downloadTournament(String strURL, File fDestination){
-//        System.out.println("downloadTournament. strURL = " + strURL);
         PrintWriter out = null;
         try {
             out = new PrintWriter(fDestination);
@@ -183,10 +168,8 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
         try {
             URL urlTournament = new URL(strURL);
             try(BufferedReader in = new BufferedReader(new InputStreamReader(urlTournament.openStream(), StandardCharsets.UTF_8))){
-//            try(BufferedReader in = new BufferedReader(new InputStreamReader(urlTournament.openStream()))){
                 String inputLine;
                 while ((inputLine = in.readLine()) != null){
-//                    System.out.println("inputLine = " + inputLine);
                     if (inputLine.length() < 3) continue;
                     out.println(inputLine);
                 }
@@ -301,7 +284,6 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
                 String strTournamentURL = "http://opengotha.info/tournaments/" + strSubDir + "/" + strTournament;
                 
                 File fDestination = new File(Gotha.runningDirectory + "/remote/" + strTournament);
-//                System.out.println("JFrRemoteTournaments.downloadTournaments fDestination = " + fDestination);
                 if (fDestination.exists()){    
                     TournamentInterface t = null;
                     try {
@@ -451,7 +433,6 @@ public class JFrRemoteTournaments extends javax.swing.JFrame {
 
     private void btnRefreshActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_btnRefreshActionPerformed
         downloadTournaments();
-//        System.out.println("btnRefreshActionPerformed. Apres donloadTournaments()");
          this.updateAllViews(); 
     }//GEN-LAST:event_btnRefreshActionPerformed
 

@@ -8,7 +8,7 @@ package info.vannier.gotha;
  * @author Luc Vannier
  */
 public class ScoredTeam extends Team implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     private int[] critValue = new int[TeamPlacementParameterSet.TPL_MAX_NUMBER_OF_CRITERIA];
     public ScoredTeam(Team team, int[] valCrit){
         super(team);

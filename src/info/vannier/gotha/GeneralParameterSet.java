@@ -12,7 +12,7 @@ import java.util.Date;
  * @author Luc Vannier
  */
 public class GeneralParameterSet implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
    
     final static int GEN_MM_FLOOR_MIN   = -30;  // 30K
     final static int GEN_MM_FLOOR_MAX   =  0;   // 1D
@@ -88,6 +88,9 @@ public class GeneralParameterSet implements java.io.Serializable{
     private boolean genRoundDownNBWMMS = true;
     private boolean genCountNotPlayedGamesAsHalfPoint = false;
     
+    private int genCPS2ValueAbsent    = 0;  // 2 * Number of NBW points for a player absent of a round
+    private int genCPS2ValueBye = 0;        // 2 * Number of NBW points for a player not paired in a round (uneven)
+
     public GeneralParameterSet() {
     }
     public GeneralParameterSet(GeneralParameterSet gps) {
@@ -154,11 +157,15 @@ public class GeneralParameterSet implements java.io.Serializable{
         genMMFloor              = -20;      // 20K
         genMMBar                = 3;        // 4D    
         genMMZero               = -30;      //30K
+        
         genNBW2ValueAbsent      = 0;        
         genNBW2ValueBye         = 2;       
 
         genMMS2ValueAbsent      = 1;       
         genMMS2ValueBye         = 2; 
+
+        genCPS2ValueAbsent      = 0;    // Not relevant
+        genCPS2ValueBye         = 0;    // Not relevant
         
         this.genRoundDownNBWMMS = true;
         this.genCountNotPlayedGamesAsHalfPoint = false;
@@ -175,6 +182,9 @@ public class GeneralParameterSet implements java.io.Serializable{
 
         genMMS2ValueAbsent      = 1;    // Not relevant
         genMMS2ValueBye         = 2;    // Not relevant     
+        
+        genCPS2ValueAbsent      = 0;    // Not relevant
+        genCPS2ValueBye         = 0;    // Not relevant
 
         this.genRoundDownNBWMMS = true;
         this.genCountNotPlayedGamesAsHalfPoint = false;
@@ -192,11 +202,34 @@ public class GeneralParameterSet implements java.io.Serializable{
         genNBW2ValueBye         = 2;    // 2 * Number of NBW points for a player not paired in a round (uneven)
 
         genMMS2ValueAbsent      = 1;    // Not relevant
-        genMMS2ValueBye         = 2;    // Not relevant     
+        genMMS2ValueBye         = 2;    // Not relevant  
         
+        genCPS2ValueAbsent      = 0;    // Not relevant
+        genCPS2ValueBye         = 0;    // Not relevant
+
         this.genRoundDownNBWMMS = true;
         this.genCountNotPlayedGamesAsHalfPoint = false;
     }
+    
+        public void initForCup(){
+        setNumberOfCategories(1);
+        genMMFloor              = -30;    // Not relevant
+        genMMBar                = 8;      // Not relevant
+        genMMZero               = -30;    // Not relevant
+
+        genNBW2ValueAbsent      = 0;    // Not relevant
+        genNBW2ValueBye         = 0;    // Not relevant
+
+        genMMS2ValueAbsent      = 0;    // Not relevant
+        genMMS2ValueBye         = 0;    // Not relevant  
+        
+        genCPS2ValueAbsent      = 0;    
+        genCPS2ValueBye         = 0;    
+
+        this.genRoundDownNBWMMS = true;
+        this.genCountNotPlayedGamesAsHalfPoint = false;
+    }
+
         
     public String getShortName() {
         return shortName;

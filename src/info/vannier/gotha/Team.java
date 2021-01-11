@@ -5,7 +5,7 @@ package info.vannier.gotha;
  * @author Luc Vannier
  */
 public class Team implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     private int teamNumber;
     private String teamName;
     private Player[][] teamMembers = new Player[Gotha.MAX_NUMBER_OF_ROUNDS][Gotha.MAX_NUMBER_OF_MEMBERS_BY_TEAM];;

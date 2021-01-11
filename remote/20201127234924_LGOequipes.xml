@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="2.10.253.1" fullVersionNumber="3.51" runningMode="SAL" saveDT="20201127234924">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Trois" grade="11K" name="Rennes" participating="11111111111111111111" rank="11K" rating="933" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Un" grade="9K" name="la Rochelle" participating="11111111111111111111" rank="9K" rating="1133" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Cinq" grade="14K" name="Rennes" participating="11111111111111111111" rank="14K" rating="600" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Quatre" grade="13K" name="Rennes" participating="11111111111111111111" rank="13K" rating="766" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Deux" grade="8K" name="Rennes" participating="11111111111111111111" rank="8K" rating="1233" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Un" grade="7K" name="Rennes" participating="11111111111111111111" rank="7K" rating="1300" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Deux" grade="16K" name="la Rochelle" participating="11111111111111111111" rank="16K" rating="400" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Deux" grade="5K" name="Yosakura" participating="11111111111111111111" rank="5K" rating="1500" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Deux" grade="10K" name="Poitiers" participating="11111111111111111111" rank="10K" rating="1000" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Trois" grade="7K" name="Yosakura" participating="11111111111111111111" rank="7K" rating="1366" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Un" grade="2K" name="Poitiers" participating="11111111111111111111" rank="2K" rating="1833" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Un" grade="3K" name="Yosakura" participating="11111111111111111111" rank="3K" rating="1700" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Ort" grade="6K" name="Ni" participating="11111111111111111111" rank="6K" rating="1433" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Rs" grade="1K" name="Ange" participating="11111111111111111111" rank="1K" rating="1900" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="" country="" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Rient" grade="1K" name="Lo" participating="11111111111111111111" rank="1K" rating="1966" ratingOrigin="MAN" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="RENNESDEUX" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="ANGERS"/>
+        <Game blackPlayer="LORIENT" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="2" whitePlayer="RENNESUN"/>
+        <Game blackPlayer="NIORT" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="RENNESQUATRE"/>
+        <Game blackPlayer="POITIERSDEUX" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="4" whitePlayer="YOSAKURAUN"/>
+        <Game blackPlayer="POITIERSUN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="5" whitePlayer="LAROCHELLEUN"/>
+        <Game blackPlayer="RENNESCINQ" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="6" whitePlayer="YOSAKURATROIS"/>
+        <Game blackPlayer="YOSAKURADEUX" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="7" whitePlayer="RENNESTROIS"/>
+        <Game blackPlayer="ANGERS" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="1" whitePlayer="NIORT"/>
+        <Game blackPlayer="YOSAKURAUN" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="2" whitePlayer="LORIENT"/>
+        <Game blackPlayer="YOSAKURATROIS" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="3" whitePlayer="POITIERSUN"/>
+        <Game blackPlayer="LAROCHELLEDEUX" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="4" whitePlayer="YOSAKURADEUX"/>
+        <Game blackPlayer="RENNESUN" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="5" whitePlayer="POITIERSDEUX"/>
+        <Game blackPlayer="RENNESTROIS" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="6" whitePlayer="RENNESDEUX"/>
+        <Game blackPlayer="RENNESQUATRE" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="2" tableNumber="7" whitePlayer="LAROCHELLEUN"/>
+    </Games>
+    <ByePlayers>
+        <ByePlayer player="LAROCHELLEDEUX" roundNumber="1"/>
+        <ByePlayer player="RENNESCINQ" roundNumber="2"/>
+    </ByePlayers>
+    <TournamentParameterSet>
+        <GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-11-27" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Kevin" endDate="2020-11-27" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Ouest" name="LGO Equipes" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="5" shortName="LGO_equipes" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="NBW" number="1"/>
+                <PlacementCriterion name="SOSW" number="2"/>
+                <PlacementCriterion name="SOSOSW" number="3"/>
+                <PlacementCriterion name="NULL" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="Rating" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDSLIP" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="0" paiSeBarThresholdActive="true" paiSeDefSecCrit="20000000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="true" paiSePreferMMSDiffRatherThanSameClub="0" paiSePreferMMSDiffRatherThanSameCountry="0" paiSeRankThreshold="30K" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="short" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="4"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

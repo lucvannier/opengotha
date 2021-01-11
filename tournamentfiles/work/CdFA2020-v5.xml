@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<Tournament dataVersion="201" externalIPAddress="77.128.107.78" fullVersionNumber="3.51.01" runningMode="SAL" saveDT="20201206192128">
+<Tournament dataVersion="201" externalIPAddress="77.128.107.78" fullVersionNumber="3.51.01" runningMode="SAL" saveDT="20201211083409">
 <Players>
 <Player agaExpirationDate="" agaId="" club="75Op" country="FR" egfPin="" ffgLicence="9127003" ffgLicenceStatus="L" firstName="Eric" grade="1D" name="Martin" participating="11111111111111111111" rank="1D" rating="2100" ratingOrigin="FFG : 50" registeringStatus="FIN" smmsCorrection="0"/>
 <Player agaExpirationDate="" agaId="" club="38Gr" country="FR" egfPin="" ffgLicence="1200201" ffgLicenceStatus="L" firstName="Florent" grade="5D" name="Labouret" participating="11111111111111111111" rank="5D" rating="2460" ratingOrigin="FFG : 410" registeringStatus="FIN" smmsCorrection="0"/>
@@ -53,13 +53,13 @@
 <Game blackPlayer="LEMOINETHEO" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="4" tableNumber="8" whitePlayer="MARTINERIC"/>
 </Games>
 <TournamentParameterSet>
-<GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-12-05" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Fabien Lips" endDate="2020-12-06" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="0" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="OGS" name="Championnat de France amateur 2020" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="4" shortName="CdFA2020-v5" size="19" stdByoYomiTime="30"/>
+<GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-12-05" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Luc Vannier" endDate="2020-12-06" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="9D" genMMFloor="30K" genMMS2ValueAbsent="0" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="OGS" name="Championnat de France amateur 2020" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="4" shortName="CdFA2020-v5" size="19" stdByoYomiTime="30"/>
 <HandicapParameterSet hdBasedOnMMS="false" hdCeiling="0" hdCorrection="0" hdNoHdRankThreshold="30K"/>
 <PlacementParameterSet>
 <PlacementCriteria>
 <PlacementCriterion name="NBW" number="1"/>
-<PlacementCriterion name="STS" number="2"/>
-<PlacementCriterion name="SOSTS" number="3"/>
+<PlacementCriterion name="SOSW" number="2"/>
+<PlacementCriterion name="SOSOSW" number="3"/>
 <PlacementCriterion name="NULL" number="4"/>
 <PlacementCriterion name="NULL" number="5"/>
 <PlacementCriterion name="NULL" number="6"/>

@@ -27,7 +27,6 @@ public class JFrGamesOptions extends javax.swing.JFrame {
         taskPerformer = new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent evt) {
-//                System.out.println("running = " + running);
                 if (!running){
                     timer.stop();
                 }

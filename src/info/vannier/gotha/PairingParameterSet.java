@@ -1,7 +1,7 @@
 package info.vannier.gotha;
 
 public class PairingParameterSet implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
     // Standard NX1 factor ( = Rather N X 1 than 1 X N)
     private double paiStandardNX1Factor = 0.5;
     /**
@@ -362,7 +362,40 @@ public class PairingParameterSet implements java.io.Serializable{
         paiSePreferMMSDiffRatherThanSameCountry =   1;
 //        paiSePreferMMSDiffRatherThanSameClubsGroup =2;
         paiSePreferMMSDiffRatherThanSameClub    =   3;
-    }    
+    }   
+    
+        public void initForCup(){
+        paiBaAvoidDuplGame                      =   PAIBA_MAX_AVOIDDUPLGAME;    
+        paiBaRandom                             =   0;
+        paiBaDeterministic                      =   true;
+        paiBaBalanceWB                          =   PAIBA_MAX_BALANCEWB;
+    
+        paiMaAvoidMixingCategories              =   0;          // Not relevant         
+
+        paiMaMinimizeScoreDifference            =   PAIMA_MAX_MINIMIZE_SCORE_DIFFERENCE;
+
+        paiMaDUDDWeight                         =   PAIMA_MAX_DUDD_WEIGHT;
+            paiMaCompensateDUDD                 =   true;
+            paiMaDUDDUpperMode                  =   PAIMA_DUDD_MID;
+            paiMaDUDDLowerMode                  =   PAIMA_DUDD_MID;
+    
+        paiMaMaximizeSeeding                    =   PAIMA_MAX_MAXIMIZE_SEEDING;      // 10^5
+            paiMaLastRoundForSeedSystem1        =   1;
+            paiMaSeedSystem1                    =   PAIMA_SEED_SPLITANDFOLD;                              
+            paiMaSeedSystem2                    =   PAIMA_SEED_SPLITANDFOLD; 
+            paiMaAdditionalPlacementCritSystem1 =   PlacementParameterSet.PLA_CRIT_RATING;
+            paiMaAdditionalPlacementCritSystem2 =   PlacementParameterSet.PLA_CRIT_RATING;
+        
+        paiSeBarThresholdActive                 =   true;           // Not relevant
+        paiSeRankThreshold                      =   -30;            // Do not apply secondary criteria above rank 
+        setPaiSeNbWinsThresholdActive(true);           // Not Relevant
+        paiSeDefSecCrit                         =   PAIMA_MAX_AVOID_MIXING_CATEGORIES;
+        paiSeMinimizeHandicap                   =   0;     
+        paiSeAvoidSameGeo                       =   0;
+        paiSePreferMMSDiffRatherThanSameCountry =   0;              // Not Relevant
+//        paiSePreferMMSDiffRatherThanSameClubsGroup =0;              // Not Relevant
+        paiSePreferMMSDiffRatherThanSameClub    =   0;              // Not Relevant
+    }
 
     public long getPaiSeDefSecCrit() {
         return paiSeDefSecCrit;

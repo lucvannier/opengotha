@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="78.193.59.42" gothaMinorVersion="0" gothaVersion="349" saveDT="20201202170326">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="91Or" country="FR" egfPin="" ffgLicence="0526811" ffgLicenceStatus="L" firstName="Clement" grade="1K" name="Billoire" participating="11000000000000000000" rank="1K" rating="1988" ratingOrigin="FFG : -62" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="91Or" country="FR" egfPin="" ffgLicence="0526800" ffgLicenceStatus="L" firstName="Nicolas" grade="3K" name="Puyaubreau" participating="11000000000000000000" rank="3K" rating="1847" ratingOrigin="FFG : -203" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="75Op" country="FR" egfPin="" ffgLicence="1600222" ffgLicenceStatus="L" firstName="Romain" grade="3K" name="Tisserand" participating="11111111111111111111" rank="3K" rating="1795" ratingOrigin="FFG : -255" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="91Or" country="FR" egfPin="" ffgLicence="0900024" ffgLicenceStatus="L" firstName="Benjamin" grade="1K" name="Hellouin" participating="11111111111111111111" rank="1K" rating="2036" ratingOrigin="FFG : -14" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="75Al" country="FR" egfPin="" ffgLicence="0525011" ffgLicenceStatus="L" firstName="Elia" grade="2D" name="Gattullo" participating="01111111111111111111" rank="2D" rating="2245" ratingOrigin="FFG : 195" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="91Or" country="FR" egfPin="" ffgLicence="9826801" ffgLicenceStatus="L" firstName="Ralf" grade="2K" name="Wurzinger" participating="01111111111111111111" rank="2K" rating="1862" ratingOrigin="FFG : -188" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="91Or" country="FR" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="Léo" grade="12K" name="Vandendyck" participating="11000000000000000000" rank="12K" rating="900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="75Pa" country="FR" egfPin="" ffgLicence="1500138" ffgLicenceStatus="L" firstName="Abel" grade="10K" name="Mir" participating="10000000000000000000" rank="10K" rating="1060" ratingOrigin="FFG : -990" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="78Ve" country="FR" egfPin="" ffgLicence="1700217" ffgLicenceStatus="L" firstName="Richard" grade="22K" name="Ciccone" participating="01000000000000000000" rank="22K" rating="-84" ratingOrigin="FFG : -2134" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="PUYAUBREAUNICOLAS" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="1" whitePlayer="BILLOIRECLEMENT"/>
+        <Game blackPlayer="HELLOUINBENJAMIN" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="1" whitePlayer="WURZINGERRALF"/>
+        <Game blackPlayer="TISSERANDROMAIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="1" tableNumber="2" whitePlayer="HELLOUINBENJAMIN"/>
+        <Game blackPlayer="GATTULLOELIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="3" tableNumber="2" whitePlayer="TISSERANDROMAIN"/>
+        <Game blackPlayer="MIRABEL" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="1" tableNumber="3" whitePlayer="VANDENDYCKLÉO"/>
+        <Game blackPlayer="WURZINGERRALF" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="1" whitePlayer="PUYAUBREAUNICOLAS"/>
+        <Game blackPlayer="TISSERANDROMAIN" handicap="0" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="2" whitePlayer="BILLOIRECLEMENT"/>
+        <Game blackPlayer="GATTULLOELIA" handicap="0" knownColor="true" result="RESULT_BLACKWINS" roundNumber="2" tableNumber="3" whitePlayer="HELLOUINBENJAMIN"/>
+        <Game blackPlayer="CICCONERICHARD" handicap="4" knownColor="true" result="RESULT_WHITEWINS" roundNumber="2" tableNumber="4" whitePlayer="VANDENDYCKLÉO"/>
+    </Games>
+    <TournamentParameterSet>
+        <GeneralParameterSet basicTime="40" beginDate="2020-10-03" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Ralf Wurzinger" endDate="2020-10-04" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="4D" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Orsay" name="Stage Chûban d'Orsay" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="3" shortName="Stage Orsay" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="MMS" number="1"/>
+                <PlacementCriterion name="SOSM" number="2"/>
+                <PlacementCriterion name="SOSOSM" number="3"/>
+                <PlacementCriterion name="NULL" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameClubsGroup="2" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="4"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

@@ -90,7 +90,7 @@ public interface TournamentInterface extends Remote{
     public void assignByePlayer(Player p, int roundNumber) throws RemoteException;
     public void unassignByePlayer(int roundNumber) throws RemoteException;
     
-    public void renumberTablesByBestScore(int roundNumber, ArrayList<Game> alGamesToRenumber) throws RemoteException;
+    public void renumberTablesByBestScoreThenRating(int roundNumber, ArrayList<Game> alGamesToRenumber) throws RemoteException;
     public void setResult(Game g, int result)throws RemoteException;
     public void setRoundNumber(Game g, int rn) throws RemoteException;
     

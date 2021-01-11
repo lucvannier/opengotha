@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="95.140.124.202" fullVersionNumber="3.51" runningMode="SAL" saveDT="20201218173712">
+    <Players>
+        <Player agaExpirationDate="" agaId="" club="GkNS" country="RS" egfPin="19437385" ffgLicence="" ffgLicenceStatus="" firstName="Andrej" grade=" 8K" name="Skala" participating="11111111111111111111" rank="8K" rating="1289" ratingOrigin="EGF : 1289" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="BGmp" country="RS" egfPin="10337085" ffgLicence="" ffgLicenceStatus="" firstName="Milos" grade=" 4D" name="Bojanic" participating="11111111111111111111" rank="3D" rating="2296" ratingOrigin="EGF : 2296" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="NiSt" country="RS" egfPin="10649507" ffgLicence="" ffgLicenceStatus="" firstName="Dusan" grade=" 7D" name="Mitic" participating="11111111111111111111" rank="6D" rating="2640" ratingOrigin="EGF : 2640" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="BGmj" country="RS" egfPin="14333693" ffgLicence="" ffgLicenceStatus="" firstName="Ivana" grade=" 5K" name="Stojanovic" participating="11111111111111111111" rank="5K" rating="1636" ratingOrigin="EGF : 1636" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="BGmp" country="RS" egfPin="15233119" ffgLicence="" ffgLicenceStatus="" firstName="Nemanja" grade=" 2K" name="Antonijevic" participating="11111111111111111111" rank="2K" rating="1577" ratingOrigin="EGF : 1577" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="KGRa" country="RS" egfPin="10637451" ffgLicence="" ffgLicenceStatus="" firstName="Dragan" grade=" 3D" name="Dubakovic" participating="11111111111111111111" rank="2D" rating="2248" ratingOrigin="EGF : 2248" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="KGRa" country="RS" egfPin="12301652" ffgLicence="" ffgLicenceStatus="" firstName="Lazar" grade=" 5D" name="Manojlovic" participating="11111111111111111111" rank="5D" rating="2505" ratingOrigin="EGF : 2505" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="NiSt" country="RS" egfPin="10313083" ffgLicence="" ffgLicenceStatus="" firstName="Mijodrag" grade=" 5D" name="Stankovic" participating="11111111111111111111" rank="3D" rating="2340" ratingOrigin="EGF : 2340" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="NiSt" country="RS" egfPin="10801923" ffgLicence="" ffgLicenceStatus="" firstName="Nikola" grade=" 7D" name="Mitic" participating="11111111111111111111" rank="6D" rating="2632" ratingOrigin="EGF : 2632" registeringStatus="FIN" smmsCorrection="0"/>
+        <Player agaExpirationDate="" agaId="" club="BGbg" country="RS" egfPin="10413260" ffgLicence="" ffgLicenceStatus="" firstName="Mihajlo" grade=" 1D" name="Andjelic" participating="11111111111111111111" rank="1D" rating="2086" ratingOrigin="EGF : 2086" registeringStatus="FIN" smmsCorrection="0"/>
+    </Players>
+    <Games>
+        <Game blackPlayer="MITICDUSAN" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="1" whitePlayer="ANDJELICMIHAJLO"/>
+        <Game blackPlayer="ANTONIJEVICNEMANJA" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="2" whitePlayer="MITICNIKOLA"/>
+        <Game blackPlayer="MANOJLOVICLAZAR" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="3" whitePlayer="BOJANICMILOS"/>
+        <Game blackPlayer="DUBAKOVICDRAGAN" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="4" whitePlayer="STANKOVICMIJODRAG"/>
+        <Game blackPlayer="STOJANOVICIVANA" handicap="0" knownColor="true" result="RESULT_UNKNOWN" roundNumber="1" tableNumber="5" whitePlayer="SKALAANDREJ"/>
+    </Games>
+    <TournamentParameterSet>
+        <GeneralParameterSet bInternet="false" basicTime="60" beginDate="2020-12-19" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="Director name" endDate="2020-12-20" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="2K" genMMFloor="3K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="Location name" name="Pojedinacni kup Srbije 2020" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="6" shortName="GoSS_kup_2020_1" size="19" stdByoYomiTime="30"/>
+        <HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+        <PlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="MMS" number="1"/>
+                <PlacementCriterion name="SOSM" number="2"/>
+                <PlacementCriterion name="SOSOSM" number="3"/>
+                <PlacementCriterion name="NULL" number="4"/>
+                <PlacementCriterion name="NULL" number="5"/>
+                <PlacementCriterion name="NULL" number="6"/>
+            </PlacementCriteria>
+        </PlacementParameterSet>
+        <PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+        <DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+        <PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+    </TournamentParameterSet>
+    <TeamTournamentParameterSet>
+        <TeamGeneralParameterSet teamSize="4"/>
+        <TeamPlacementParameterSet>
+            <PlacementCriteria>
+                <PlacementCriterion name="TEAMP" number="1"/>
+                <PlacementCriterion name="BDW" number="2"/>
+                <PlacementCriterion name="BDW3U" number="3"/>
+                <PlacementCriterion name="BDW2U" number="4"/>
+                <PlacementCriterion name="BDW1U" number="5"/>
+                <PlacementCriterion name="MNR" number="6"/>
+            </PlacementCriteria>
+        </TeamPlacementParameterSet>
+    </TeamTournamentParameterSet>
+</Tournament>

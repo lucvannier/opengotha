@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<Tournament dataVersion="201" externalIPAddress="121.121.56.96" fullVersionNumber="3.51" runningMode="SAL" saveDT="20210108234156">
+<Players>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_36" grade="7D" name="ABS" participating="11111111111111111111" rank="7D" rating="550" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="2"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_20" grade="10K" name="ALH" participating="11111111111111111111" rank="10K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_28" grade="2K" name="AGH" participating="11111111111111111111" rank="2K" rating="-250" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_21" grade="9K" name="AKT" participating="11111111111111111111" rank="9K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_30" grade="1D" name="AFL" participating="11111111111111111111" rank="1D" rating="-50" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="" club="TUC" country="MY" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="20A04" grade="16K" name="Charles Chan" participating="11111111111111111111" rank="16K" rating="-850" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_20" grade="10K" name="ALQ" participating="11111111111111111111" rank="10K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_30" grade="1D" name="AFC" participating="11111111111111111111" rank="1D" rating="-50" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_34" grade="5D" name="ACO" participating="11111111111111111111" rank="5D" rating="350" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_27" grade="3K" name="AHE" participating="11111111111111111111" rank="3K" rating="-350" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_14" grade="16K" name="APA" participating="11111111111111111111" rank="16K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TUC" country="MY" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="20A02" grade="12K" name="Alex Tan" participating="11111111111111111111" rank="12K" rating="-250" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_26" grade="4K" name="AHN" participating="11111111111111111111" rank="4K" rating="-450" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TUC" country="MY" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="20A06" grade="14K" name="Evelyn Chin" participating="11111111111111111111" rank="14K" rating="-450" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TUC" country="MY" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="20A08" grade="22K" name="Gan Leong Hin" participating="11111111111111111111" rank="22K" rating="-750" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_14" grade="16K" name="APJ" participating="11111111111111111111" rank="16K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_35" grade="6D" name="ACF" participating="11111111111111111111" rank="6D" rating="450" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="2"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_29" grade="1K" name="AFU" participating="11111111111111111111" rank="1K" rating="-150" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_30" grade="1D" name="AEY" participating="11111111111111111111" rank="1D" rating="-50" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_22" grade="8K" name="AKB" participating="11111111111111111111" rank="8K" rating="-850" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_34" grade="5D" name="ACX" participating="11111111111111111111" rank="5D" rating="350" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_26" grade="4K" name="AHW" participating="11111111111111111111" rank="4K" rating="-450" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TUC" country="MY" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="20A05" grade="24K" name="Dennis Lim" participating="11111111111111111111" rank="24K" rating="-650" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_9" grade="21K" name="ASD" participating="11111111111111111111" rank="21K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_8" grade="22K" name="ASY" participating="11111111111111111111" rank="22K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_22" grade="8K" name="AJX" participating="11111111111111111111" rank="8K" rating="-850" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_15" grade="15K" name="AON" participating="11111111111111111111" rank="15K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_14" grade="16K" name="AOW" participating="11111111111111111111" rank="16K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_34" grade="5D" name="ADB" participating="11111111111111111111" rank="5D" rating="350" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_25" grade="5K" name="AIA" participating="11111111111111111111" rank="5K" rating="-550" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_23" grade="7K" name="AJO" participating="11111111111111111111" rank="7K" rating="-750" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_33" grade="4D" name="ADK" participating="11111111111111111111" rank="4D" rating="250" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_9" grade="21K" name="ARX" participating="11111111111111111111" rank="21K" rating="-900" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_24" grade="11K" name="AJF" participating="11111111111111111111" rank="11K" rating="-350" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="" club="TUC" country="MY" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="20A07" grade="13K" name="Fong Mi Mi" participating="11111111111111111111" rank="13K" rating="-550" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="0"/>
+<Player agaExpirationDate="" agaId="" club="TUC" country="MY" egfPin="" ffgLicence="" ffgLicenceStatus="" firstName="20A03" grade="11K" name="Beh Tian Ku" participating="11111111111111111111" rank="11K" rating="-350" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_32" grade="3D" name="ADT" participating="11111111111111111111" rank="3D" rating="150" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="1"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_15" grade="7D" name="AOE" participating="11111111111111111111" rank="7D" rating="550" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="2"/>
+<Player agaExpirationDate="" agaId="99999" club="76Ro" country="FR" egfPin="123456789" ffgLicence="87654321" ffgLicenceStatus="" firstName="p_7" grade="7D" name="ATE" participating="11111111111111111111" rank="7D" rating="550" ratingOrigin="INI" registeringStatus="FIN" smmsCorrection="2"/>
+</Players>
+<Games/>
+<TournamentParameterSet>
+<GeneralParameterSet bInternet="false" basicTime="60" beginDate="2021-01-08" canByoYomiTime="300" complementaryTimeSystem="STDBYOYOMI" director="" endDate="2021-01-08" fischerTime="10" genCountNotPlayedGamesAsHalfPoint="false" genMMBar="10K" genMMFloor="20K" genMMS2ValueAbsent="1" genMMS2ValueBye="2" genMMZero="30K" genNBW2ValueAbsent="0" genNBW2ValueBye="2" genRoundDownNBWMMS="true" komi="7.5" location="" name="Undefined" nbMovesCanTime="15" numberOfCategories="1" numberOfRounds="6" shortName="Test_MM_500_v2" size="19" stdByoYomiTime="30"/>
+<HandicapParameterSet hdBasedOnMMS="true" hdCeiling="9" hdCorrection="1" hdNoHdRankThreshold="1D"/>
+<PlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="MMS" number="1"/>
+<PlacementCriterion name="SOSM" number="2"/>
+<PlacementCriterion name="SOSOSM" number="3"/>
+<PlacementCriterion name="NULL" number="4"/>
+<PlacementCriterion name="NULL" number="5"/>
+<PlacementCriterion name="NULL" number="6"/>
+</PlacementCriteria>
+</PlacementParameterSet>
+<PairingParameterSet paiBaAvoidDuplGame="500000000000000" paiBaBalanceWB="1000000" paiBaDeterministic="true" paiBaRandom="0" paiMaAdditionalPlacementCritSystem1="Rating" paiMaAdditionalPlacementCritSystem2="NULL" paiMaAvoidMixingCategories="0" paiMaCompensateDUDD="true" paiMaDUDDLowerMode="MID" paiMaDUDDUpperMode="MID" paiMaDUDDWeight="100000000" paiMaLastRoundForSeedSystem1="2" paiMaMaximizeSeeding="5000000" paiMaMinimizeScoreDifference="100000000000" paiMaSeedSystem1="SPLITANDRANDOM" paiMaSeedSystem2="SPLITANDSLIP" paiSeAvoidSameGeo="100000000000" paiSeBarThresholdActive="true" paiSeDefSecCrit="100000000000" paiSeMinimizeHandicap="0" paiSeNbWinsThresholdActive="false" paiSePreferMMSDiffRatherThanSameClub="3" paiSePreferMMSDiffRatherThanSameCountry="1" paiSeRankThreshold="1D" paiStandardNX1Factor="0.5"/>
+<DPParameterSet displayClCol="true" displayCoCol="true" displayIndGamesInMatches="true" displayNPPlayers="false" displayNumCol="true" displayPlCol="true" gameFormat="full" playerSortType="name" showByePlayer="true" showNotFinallyRegisteredPlayers="true" showNotPairedPlayers="true" showNotParticipatingPlayers="false" showPlayerClub="true" showPlayerCountry="false" showPlayerGrade="true"/>
+<PublishParameterSet exportToLocalFile="true" htmlAutoScroll="false" print="true"/>
+</TournamentParameterSet>
+<TeamTournamentParameterSet>
+<TeamGeneralParameterSet teamSize="4"/>
+<TeamPlacementParameterSet>
+<PlacementCriteria>
+<PlacementCriterion name="TEAMP" number="1"/>
+<PlacementCriterion name="BDW" number="2"/>
+<PlacementCriterion name="BDW3U" number="3"/>
+<PlacementCriterion name="BDW2U" number="4"/>
+<PlacementCriterion name="BDW1U" number="5"/>
+<PlacementCriterion name="MNR" number="6"/>
+</PlacementCriteria>
+</TeamPlacementParameterSet>
+</TeamTournamentParameterSet>
+</Tournament>

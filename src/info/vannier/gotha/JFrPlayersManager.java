@@ -1428,18 +1428,7 @@ public class JFrPlayersManager extends javax.swing.JFrame {
     }//GEN-LAST:event_btnChangeRatingActionPerformed
 
     private void txfRankFocusLost(java.awt.event.FocusEvent evt) {//GEN-FIRST:event_txfRankFocusLost
-//        String strRank = this.txfRank.getText();
-//        int rank = Player.convertKDPToInt(strRank);
-//        this.txfRank.setText(Player.convertIntToKD(rank));
-//        
-//        // update rating from rank
-//        if (this.txfRating.getText().equals("")){
-//            int rating = rank * 100 + 2100;
-//            this.txfRating.setText("" + rating);
-//            this.txfRatingOrigin.setText("INI");
-//        }
-        
-        this.manageRankGradeAndRatingValues();
+               this.manageRankGradeAndRatingValues();
     }//GEN-LAST:event_txfRankFocusLost
 
     private void rdbRankFromGradeActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_rdbRankFromGradeActionPerformed

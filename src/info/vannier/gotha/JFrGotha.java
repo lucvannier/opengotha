@@ -179,11 +179,12 @@ public class JFrGotha extends javax.swing.JFrame {
         dlgNew = new javax.swing.JDialog();
         pnlSystem = new javax.swing.JPanel();
         rdbMcMahon = new javax.swing.JRadioButton();
-        rdbSwiss = new javax.swing.JRadioButton();
+        rdbCup = new javax.swing.JRadioButton();
         rdbSwissCat = new javax.swing.JRadioButton();
         jLabel13 = new javax.swing.JLabel();
         txfNumberOfRounds = new javax.swing.JTextField();
         lblRecommended = new javax.swing.JLabel();
+        rdbSwiss = new javax.swing.JRadioButton();
         pnlTournamentDetails = new javax.swing.JPanel();
         jLabel8 = new javax.swing.JLabel();
         txfShortName = new javax.swing.JTextField();
@@ -338,8 +339,49 @@ public class JFrGotha extends javax.swing.JFrame {
         rdbMcMahon.setToolTipText("Players will be paired according to their rank! The winner will be the strongest");
         rdbMcMahon.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
         rdbMcMahon.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        rdbMcMahon.setMaximumSize(new java.awt.Dimension(41, 13));
+        rdbMcMahon.setMinimumSize(new java.awt.Dimension(41, 13));
+        rdbMcMahon.setPreferredSize(new java.awt.Dimension(41, 13));
         pnlSystem.add(rdbMcMahon);
         rdbMcMahon.setBounds(50, 30, 170, 13);
+
+        grpPS.add(rdbCup);
+        rdbCup.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        rdbCup.setText("Cup");
+        rdbCup.setToolTipText("Good system for championships");
+        rdbCup.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        rdbCup.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        rdbCup.setMaximumSize(new java.awt.Dimension(41, 13));
+        rdbCup.setMinimumSize(new java.awt.Dimension(41, 13));
+        rdbCup.setPreferredSize(new java.awt.Dimension(41, 13));
+        pnlSystem.add(rdbCup);
+        rdbCup.setBounds(50, 120, 170, 13);
+
+        grpPS.add(rdbSwissCat);
+        rdbSwissCat.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        rdbSwissCat.setText("Swiss with categories");
+        rdbSwissCat.setToolTipText("Because of possible games with a big rank difference, this system is not usually recommended");
+        rdbSwissCat.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
+        rdbSwissCat.setMargin(new java.awt.Insets(0, 0, 0, 0));
+        rdbSwissCat.setMaximumSize(new java.awt.Dimension(41, 13));
+        rdbSwissCat.setMinimumSize(new java.awt.Dimension(41, 13));
+        rdbSwissCat.setPreferredSize(new java.awt.Dimension(41, 13));
+        pnlSystem.add(rdbSwissCat);
+        rdbSwissCat.setBounds(50, 90, 170, 13);
+
+        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        jLabel13.setText("Number of rounds");
+        pnlSystem.add(jLabel13);
+        jLabel13.setBounds(50, 170, 120, 13);
+
+        txfNumberOfRounds.setText("0");
+        pnlSystem.add(txfNumberOfRounds);
+        txfNumberOfRounds.setBounds(190, 170, 30, 20);
+
+        lblRecommended.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
+        lblRecommended.setText("(recommended for ancilliary standings only)");
+        pnlSystem.add(lblRecommended);
+        lblRecommended.setBounds(60, 100, 240, 13);
 
         grpPS.add(rdbSwiss);
         rdbSwiss.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
@@ -349,29 +391,6 @@ public class JFrGotha extends javax.swing.JFrame {
         rdbSwiss.setMargin(new java.awt.Insets(0, 0, 0, 0));
         pnlSystem.add(rdbSwiss);
         rdbSwiss.setBounds(50, 60, 170, 13);
-
-        grpPS.add(rdbSwissCat);
-        rdbSwissCat.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        rdbSwissCat.setText("Swiss with categories");
-        rdbSwissCat.setToolTipText("Because of possible games with a big rank difference, this system is not usually recommended");
-        rdbSwissCat.setBorder(javax.swing.BorderFactory.createEmptyBorder(0, 0, 0, 0));
-        rdbSwissCat.setMargin(new java.awt.Insets(0, 0, 0, 0));
-        pnlSystem.add(rdbSwissCat);
-        rdbSwissCat.setBounds(50, 90, 170, 13);
-
-        jLabel13.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        jLabel13.setText("Number of rounds");
-        pnlSystem.add(jLabel13);
-        jLabel13.setBounds(50, 140, 120, 13);
-
-        txfNumberOfRounds.setText("0");
-        pnlSystem.add(txfNumberOfRounds);
-        txfNumberOfRounds.setBounds(190, 140, 30, 20);
-
-        lblRecommended.setFont(new java.awt.Font("Tahoma", 0, 10)); // NOI18N
-        lblRecommended.setText("(recommended for ancilliary standings only)");
-        pnlSystem.add(lblRecommended);
-        lblRecommended.setBounds(60, 100, 240, 13);
 
         dlgNew.getContentPane().add(pnlSystem);
         pnlSystem.setBounds(410, 10, 300, 220);
@@ -1464,6 +1483,10 @@ public class JFrGotha extends javax.swing.JFrame {
         if (this.rdbSwissCat.isSelected()) {
             system = TournamentParameterSet.TYPE_SWISSCAT;
         }
+        if (this.rdbCup.isSelected()) {
+            system = TournamentParameterSet.TYPE_CUP;
+        }
+
 
         TournamentParameterSet tps = new TournamentParameterSet();
 
@@ -1498,6 +1521,10 @@ public class JFrGotha extends javax.swing.JFrame {
             case TournamentParameterSet.TYPE_SWISSCAT:
                 tps.initForSwissCat();
                 break;
+            case TournamentParameterSet.TYPE_CUP:
+                tps.initForCup();
+                break;
+
             default:
                 tps.initForMM();
 
@@ -1809,7 +1836,7 @@ public class JFrGotha extends javax.swing.JFrame {
                         // Logger.getLogger(JFrGotha.class.getName()).log(Level.SEVERE, null, ex);
                     } catch (Exception ex) {
                         String strMessage = "Some problem occured with file : " + f.getName();
-                        strMessage += "\nThe file was not found or The content of this file does not comply with OpenGotha Data version " + Gotha.GOTHA_DATA_VERSION;
+//                        strMessage += "\nThe file was not found or The content of this file does not comply with OpenGotha Data version " + Gotha.GOTHA_DATA_VERSION;
                         strMessage += "\nHint : Read the Compatibility issues in the OpenGotha help";
                         strMessage += "\n\nThe tournament has not been opened";
                         JOptionPane.showMessageDialog(JFrGotha.this, strMessage, "Message", JOptionPane.ERROR_MESSAGE);
@@ -2529,7 +2556,6 @@ public class JFrGotha extends javax.swing.JFrame {
 
             int response = JOptionPane.showConfirmDialog(this, "Do you want to save current tournament ?",
                     "Message", JOptionPane.YES_NO_CANCEL_OPTION);
-            System.out.println("response = " + response);
             if (response == JOptionPane.CANCEL_OPTION) {
                 return false;
             }
@@ -2539,7 +2565,7 @@ public class JFrGotha extends javax.swing.JFrame {
                     return false;
                 }
                 updateShortNameFromFile(f);
-                System.out.println("f = " + f);
+//                System.out.println("f = " + f);
                 this.saveTournament(f);
 
                 getTournament().setChangeSinceLastSaveAsFalse();
@@ -3041,7 +3067,7 @@ private void mniOpenActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST
     } catch (Exception ex) {
         System.out.println("mniOpenActionPerformed\n");
         String strMessage = "Some problem occured with file : " + f.getName();
-        strMessage += "\nThe file was not found or The content of this file does not comply with OpenGotha Data version " + Gotha.GOTHA_DATA_VERSION;
+//        strMessage += "\nThe file was not found or The content of this file does not comply with OpenGotha Data version " + Gotha.GOTHA_DATA_VERSION;
         strMessage += "\nHint : Read the Compatibility issues in the OpenGotha help";
         strMessage += "\n\nThe tournament has not been opened";
         JOptionPane.showMessageDialog(JFrGotha.this, strMessage, "Message", JOptionPane.ERROR_MESSAGE);
@@ -3637,6 +3663,7 @@ private void mniMemoryActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIR
     private javax.swing.JPanel pnlTournamentDetails;
     private javax.swing.JPanel pnlTournamentFile;
     private javax.swing.JPanel pnlWelcome;
+    private javax.swing.JRadioButton rdbCup;
     private javax.swing.JRadioButton rdbCurrentPS;
     private javax.swing.JRadioButton rdbCurrentTeamPS;
     private javax.swing.JRadioButton rdbMcMahon;

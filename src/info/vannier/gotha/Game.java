@@ -4,7 +4,7 @@ package info.vannier.gotha;
  * Game between two players.
  */
  public class Game implements java.io.Serializable{
-    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
+//    private static final long serialVersionUID = Gotha.GOTHA_DATA_VERSION;
 
     /**
      * round number .
